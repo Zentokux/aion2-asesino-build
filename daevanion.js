@@ -315,134 +315,73 @@ function buildProgressiveRoute(board) {
   return steps.join('');
 }
 
-// === Gráfico estilo tiles del juego Aion 2 ===
-// Grilla cuadrada de tiles con glifos rúnicos (como la captura in-game)
-// Nodos del route se muestran coloreados/brillantes, resto como tiles neutras
+// === v7: Gráfico simple estilo v1 (círculos coloreados numerados) ===
+// Snake pattern para posicionar los pasos del route sin huecos.
+// Mismos colores de v1: center=dorado, stat=gris, passive=azul, skill=morado, special=rojo
 
-// Glifo rúnico según tipo de nodo
-function glyph(type) {
-  if (type === 'center') return '✦';
-  if (type === 'special') return 'ν'; // U/V rune
-  if (type === 'skill') return 'Μ';   // M mayús
-  if (type === 'passive') return 'ν';
-  if (type === 'stat23') return 'Σ';  // sigma
-  return 'Μ'; // stat1 por default
+function colorByType(type) {
+  switch(type) {
+    case 'center': return '#d4af37';
+    case 'special': return '#ff4d6d';
+    case 'skill': return '#a855f7';
+    case 'passive': return '#22c55e';
+    case 'stat23': return '#4ea8de';
+    default: return '#5a6478'; // stat1
+  }
 }
 
-// Color del glifo según tipo + si está en route
-function glyphColor(type, inRoute) {
-  if (type === 'center') return '#f4c430';
-  if (type === 'special') return '#f4c430';
-  if (!inRoute) return '#3a4050'; // tiles neutras oscuras
-  if (type === 'skill') return '#4ea8de';
-  if (type === 'passive') return '#22c55e';
-  if (type === 'stat23') return '#4ea8de';
-  return '#d4b65a'; // stat1 route = dorado tenue
-}
-
-// Posición snake: layout 8 cols en grilla CENTRADA en una grilla visible más grande
 function buildSnakeSVG(board) {
-  const GRID_COLS = 11; // grilla visible 11×11 estilo juego
-  const GRID_ROWS = 11;
-  const ROUTE_COLS = 8;
-  const CELL = 56;
-  const PAD = 20;
-  const totalW = GRID_COLS * CELL + PAD * 2;
-  const totalH = GRID_ROWS * CELL + PAD * 2;
+  const COLS = 8;
+  const CELL = 44;
+  const PAD = 16;
   const route = board.route;
-
-  // Snake pattern dentro de la grilla, centrada
-  const startCol = Math.floor((GRID_COLS - ROUTE_COLS) / 2); // 1 u 2
-  const routeRows = Math.ceil(route.length / ROUTE_COLS);
-  const startRow = Math.floor((GRID_ROWS - routeRows) / 2);
+  const rows = Math.ceil(route.length / COLS);
+  const totalW = COLS * CELL + PAD * 2;
+  const totalH = rows * CELL + PAD * 2;
 
   function pos(idx) {
-    const r = Math.floor(idx / ROUTE_COLS);
-    const colInRow = idx % ROUTE_COLS;
-    const localX = r % 2 === 0 ? colInRow : (ROUTE_COLS - 1 - colInRow);
-    return [startCol + localX, startRow + r];
+    const r = Math.floor(idx / COLS);
+    const col = idx % COLS;
+    const x = r % 2 === 0 ? col : (COLS - 1 - col);
+    return [x, r];
   }
-
-  // Mapa de posiciones route por (x,y)
-  const routeMap = {};
-  route.forEach((step, idx) => {
-    const [x, y] = pos(idx);
-    routeMap[`${x},${y}`] = { step, idx };
-  });
 
   let svg = `<svg viewBox="0 0 ${totalW} ${totalH}" class="snake-svg" preserveAspectRatio="xMidYMin meet">`;
-  svg += `<defs>
-    <linearGradient id="tileGrad-${board.id}" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2a2a2e"/>
-      <stop offset="100%" stop-color="#15161a"/>
-    </linearGradient>
-    <radialGradient id="glowUnlock-${board.id}" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#4ea8de" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#4ea8de" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="tileShadow-${board.id}">
-      <feGaussianBlur stdDeviation="1"/>
-    </filter>
-  </defs>`;
-  svg += `<rect x="0" y="0" width="${totalW}" height="${totalH}" fill="#0a0b0f" rx="8"/>`;
+  svg += `<rect x="0" y="0" width="${totalW}" height="${totalH}" fill="#0b0d12" rx="12"/>`;
 
-  // === DIBUJAR TODAS las tiles de la grilla 11x11 estilo juego ===
-  for (let gy = 0; gy < GRID_ROWS; gy++) {
-    for (let gx = 0; gx < GRID_COLS; gx++) {
-      const cx = PAD + gx * CELL + CELL/2;
-      const cy = PAD + gy * CELL + CELL/2;
-      const key = `${gx},${gy}`;
-      const routeInfo = routeMap[key];
-      const tsz = CELL - 10;
-
-      // Fondo tile tipo piedra oscura (always visible)
-      svg += `<g class="tile ${routeInfo ? 'in-route' : 'neutral'}" ${routeInfo ? `data-board="${board.id}" data-order="${routeInfo.idx}" style="cursor:pointer"` : ''}>`;
-      svg += `<rect x="${cx - tsz/2}" y="${cy - tsz/2}" width="${tsz}" height="${tsz}" fill="url(#tileGrad-${board.id})" stroke="#3a3a40" stroke-width="1.5" rx="4"/>`;
-
-      // Glow azul si este tile está en el route (como "activable")
-      if (routeInfo) {
-        const step = routeInfo.step;
-        if (step.type !== 'center') {
-          // Borde azul brillante alrededor del tile
-          svg += `<rect x="${cx - tsz/2}" y="${cy - tsz/2}" width="${tsz}" height="${tsz}" fill="none" stroke="#4ea8de" stroke-width="2.5" rx="4" opacity="0.9"/>`;
-          svg += `<rect x="${cx - tsz/2 - 3}" y="${cy - tsz/2 - 3}" width="${tsz + 6}" height="${tsz + 6}" fill="none" stroke="#4ea8de" stroke-width="1" rx="6" opacity="0.4"/>`;
-        }
-
-        // Contenido del tile según tipo
-        if (step.type === 'center') {
-          // Centro: emblema dorado grande
-          svg += `<circle cx="${cx}" cy="${cy}" r="${tsz/2 - 2}" fill="#f4c430" stroke="#fff8dc" stroke-width="2" opacity="0.95"/>`;
-          svg += `<text x="${cx}" y="${cy + 7}" text-anchor="middle" fill="#2b1810" font-size="22" font-weight="900" style="pointer-events:none">✦</text>`;
-        } else if (step.type === 'special') {
-          // Esquina especial dorada
-          svg += `<rect x="${cx - tsz/2 + 3}" y="${cy - tsz/2 + 3}" width="${tsz - 6}" height="${tsz - 6}" fill="#f4c430" stroke="#fff8dc" stroke-width="1.5" rx="3" opacity="0.85"/>`;
-          svg += `<text x="${cx}" y="${cy + 7}" text-anchor="middle" fill="#2b1810" font-size="20" font-weight="900" style="pointer-events:none">ν</text>`;
-        } else if ((step.type === 'skill' || step.type === 'passive') && step.skill && SKILL_ICON[step.skill]) {
-          // Skill/Passive: icono real
-          const iconSz = tsz - 10;
-          svg += `<image href="icons/${SKILL_ICON[step.skill]}" x="${cx - iconSz/2}" y="${cy - iconSz/2}" width="${iconSz}" height="${iconSz}" style="pointer-events:none"/>`;
-          // Badge número pequeño abajo derecha
-          svg += `<circle cx="${cx + tsz/2 - 6}" cy="${cy + tsz/2 - 6}" r="9" fill="#f4c430" stroke="#0a0b0f" stroke-width="1.5"/>`;
-          svg += `<text x="${cx + tsz/2 - 6}" y="${cy + tsz/2 - 3}" text-anchor="middle" fill="#000" font-size="9" font-weight="900" style="pointer-events:none">${routeInfo.idx}</text>`;
-        } else {
-          // Stat: glifo rúnico coloreado
-          const g = glyph(step.type);
-          const col = glyphColor(step.type, true);
-          svg += `<text x="${cx}" y="${cy + 8}" text-anchor="middle" fill="${col}" font-size="24" font-weight="900" style="pointer-events:none; font-family:serif">${g}</text>`;
-          // Badge número pequeño
-          svg += `<circle cx="${cx + tsz/2 - 6}" cy="${cy + tsz/2 - 6}" r="8" fill="#f4c430" stroke="#0a0b0f" stroke-width="1.5"/>`;
-          svg += `<text x="${cx + tsz/2 - 6}" y="${cy + tsz/2 - 3}" text-anchor="middle" fill="#000" font-size="8" font-weight="900" style="pointer-events:none">${routeInfo.idx}</text>`;
-        }
-      } else {
-        // Tile neutra (no route): glifo gris apagado aleatorio
-        const neutralGlyphs = ['Μ', 'ν', 'Σ', 'Μ', 'Μ']; // más Μ que otros, estilo juego
-        const seed = (gx * 7 + gy * 13) % neutralGlyphs.length;
-        svg += `<text x="${cx}" y="${cy + 7}" text-anchor="middle" fill="#3a4050" font-size="18" font-weight="700" style="pointer-events:none; font-family:serif">${neutralGlyphs[seed]}</text>`;
-      }
-
-      svg += `</g>`;
+  // Line segments conectando cada paso con el siguiente (siguen snake sin huecos)
+  for (let i = 0; i < route.length - 1; i++) {
+    const [x1, y1] = pos(i);
+    const [x2, y2] = pos(i + 1);
+    const cx1 = PAD + x1 * CELL + CELL/2;
+    const cy1 = PAD + y1 * CELL + CELL/2;
+    const cx2 = PAD + x2 * CELL + CELL/2;
+    const cy2 = PAD + y2 * CELL + CELL/2;
+    if (y1 === y2) {
+      svg += `<line x1="${cx1}" y1="${cy1}" x2="${cx2}" y2="${cy2}" stroke="${board.color}" stroke-width="3" stroke-opacity="0.5"/>`;
+    } else {
+      // Cambio de fila (snake): línea vertical en el borde
+      const midY = (cy1 + cy2) / 2;
+      svg += `<line x1="${cx1}" y1="${cy1}" x2="${cx1}" y2="${midY}" stroke="${board.color}" stroke-width="3" stroke-opacity="0.5"/>`;
+      svg += `<line x1="${cx1}" y1="${midY}" x2="${cx2}" y2="${midY}" stroke="${board.color}" stroke-width="3" stroke-opacity="0.5"/>`;
+      svg += `<line x1="${cx2}" y1="${midY}" x2="${cx2}" y2="${cy2}" stroke="${board.color}" stroke-width="3" stroke-opacity="0.5"/>`;
     }
   }
+
+  // Nodos = círculos coloreados con número (estilo v1 simple)
+  route.forEach((step, idx) => {
+    const [x, y] = pos(idx);
+    const cx = PAD + x * CELL + CELL/2;
+    const cy = PAD + y * CELL + CELL/2;
+    const color = colorByType(step.type);
+    const r = step.type === 'special' ? 15 : step.type === 'center' ? 14 : step.type === 'skill' ? 13 : 11;
+
+    svg += `<g class="snake-node ${step.type === 'center' ? 'is-center' : ''}" data-board="${board.id}" data-order="${idx}" style="cursor:${step.type === 'center' ? 'default' : 'pointer'}">`;
+    svg += `<circle cx="${cx}" cy="${cy}" r="${r + 2}" fill="${color}" opacity="0.25"/>`;
+    svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${color}" stroke="#fff" stroke-width="1.5"/>`;
+    svg += `<text x="${cx}" y="${cy + 4}" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" style="pointer-events:none">${idx}</text>`;
+    svg += `</g>`;
+  });
 
   svg += '</svg>';
   return svg;
