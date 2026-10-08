@@ -46,6 +46,7 @@ const SKILLS = {
   s_swift:      { name: 'Swift Contract',         color: '#a855f7', unlock: 27, cap: 20, type: 'Stigma Slot 2',      note: '+Attack Speed. Mini-burst cada ~45s.', keep1: false },
   s_triniel:    { name: "Triniel's Dagger",       color: '#a855f7', unlock: 32, cap: 20, type: 'Stigma Slot 3',      note: 'Reduce CDs 10%.', keep1: false },
   s_fang:       { name: 'Savage Fang',            color: '#a855f7', unlock: 37, cap: 20, type: 'Stigma Slot 4',      note: 'Carga 5 Insignias instantáneas.', keep1: false },
+  s_shadowblade:{ name: 'Throw Shadowblade',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Savage Fang para FARMING/leveling. Rk 10 resetea al matar enemigo (91.3% pick rate KR open-world). Para boss PvE puro, mantén Savage Fang.', keep1: true },
 };
 
 // Costo para subir A ese rango (skill activa/pasiva). Rk 11+ no con SP.

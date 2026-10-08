@@ -1366,6 +1366,16 @@ code {
     <strong>Convenciones:</strong> <code>Q</code> = Quick Slice (LMB spam constante), <code>→</code> = siguiente input inmediato, <code>weave</code> = intercalar Quick Slice entre skills para cancelar animaciones y generar crits.
   </div>
 
+  <div class="callout crit">
+    <strong>⚠️ REGLA DE ORO (meta fix oct-2026):</strong> <strong>NO esperes a 5 stacks</strong> de Insignia para detonar. <strong>Spamea Insignia Explosion cada vez que esté lista</strong> — la pasiva mantiene 2 stacks residuales después de detonar, así que esperar stacks pierde ventanas de daño. Press-on-ready = más DPS.
+  </div>
+
+  <div class="callout warn">
+    <strong>Macro priority confirmada (corpus.gg + meta top-tier):</strong><br>
+    Línea de daño (hold macro con <code>/queue</code>): <strong>Savage Roar (prio 4) → Ambush (3) → Heart Gore (2) → Insignia Explosion (1)</strong><br>
+    En paralelo <strong>LMB manual = Quick Slice spam</strong> para animation-cancel + generar crits que resetean Heart Gore.
+  </div>
+
   <div class="level-tabs">
     <button class="active" data-tab="r1">Lv 1-5</button>
     <button data-tab="r2">Lv 6-10</button>
@@ -1468,18 +1478,19 @@ Q (manual): Heart Gore (para asegurar trigger en cada crit visible)</div>
 
   <div class="tab-panel" id="r6">
     <h3>Lv 31-40 — Loadout completo</h3>
-    <h4>Opener completo</h4>
+    <h4>Opener completo (orden corregido oct-2026)</h4>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Illusive Clone + Swift Contract + Savage Fang</strong> (triple buff)</li>
-        <li><strong>Triniel's Dagger</strong> (reduce 10% CDs activos)</li>
-        <li><strong>Shadowstrike</strong> detrás</li>
-        <li><strong>Ambush</strong></li>
+        <li><strong>Swift Contract + Illusive Clone + Savage Fang</strong> (triple buff pre-pull)</li>
+        <li><strong>Shadowstrike</strong> → teleport detrás del boss (necesario para back-hit)</li>
+        <li><strong>Triniel's Dagger</strong> (reduce 10% CDs — en melee para asegurar back-hit)</li>
+        <li><strong>Ambush</strong> (bonus trasero)</li>
         <li><strong>Insignia Explosion</strong> (Savage Fang ya cargó 5 stacks)</li>
         <li><strong>Heart Gore → Heart Gore → Heart Gore</strong> (CD cero durante Clone)</li>
-        <li>Weave <strong>Quick Slice</strong></li>
+        <li>Weave <strong>Quick Slice</strong> constante entre todo</li>
       </ol>
     </div>
+    <div class="callout warn"><strong>Fix meta:</strong> Triniel's Dagger va DESPUÉS de Shadowstrike (en melee), NO antes. Si lo tiras antes del teleport pierdes el back-hit.</div>
     <h4>Macro de combat (confirmada)</h4>
     <div class="macro-box">Barra 1 (BUFFS, /queue 10ms):
   Illusive Clone → Swift Contract → Savage Fang → Triniel's Dagger
@@ -1492,17 +1503,17 @@ LMB manual: Quick Slice spam constante</div>
   </div>
 
   <div class="tab-panel" id="r7">
-    <h3>Lv 41-45 — Endgame max DPS</h3>
+    <h3>Lv 41-45 — Endgame max DPS (orden corregido oct-2026)</h3>
     <h4>Opener (burst 20s)</h4>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Illusive Clone + Swift Contract + Savage Fang</strong></li>
-        <li><strong>Triniel's Dagger</strong></li>
-        <li><strong>Shadowstrike</strong> detrás</li>
-        <li><strong>Ambush</strong></li>
-        <li><strong>Insignia Explosion</strong></li>
+        <li><strong>Swift Contract + Illusive Clone + Savage Fang</strong> (buffs pre-pull, mismo tick)</li>
+        <li><strong>Shadowstrike</strong> → teleport detrás (necesario antes de Triniel)</li>
+        <li><strong>Triniel's Dagger</strong> (reduce CDs — ya en melee, back-hit asegurado)</li>
+        <li><strong>Ambush</strong> (bonus trasero)</li>
+        <li><strong>Insignia Explosion</strong> (spameable, no esperes stacks)</li>
         <li><strong>Heart Gore × 6-8 veces</strong> durante los 20s de Clone</li>
-        <li><strong>Quick Slice</strong> entre cada input (animation-cancel)</li>
+        <li><strong>Quick Slice</strong> entre cada input (animation-cancel + genera crits)</li>
       </ol>
     </div>
     <h4>Rotación sostenida (los siguientes 70s)</h4>
@@ -1551,11 +1562,17 @@ LMB manual: Quick Slice spam constante</div>
 
   <h3>Stigmas alternativos (situacionales)</h3>
   <ul>
-    <li><strong>Throw Shadowblade</strong> — alternativa ranged DPS (farming/kiting)</li>
+    <li><strong>Throw Shadowblade</strong> ⭐ — <strong>91.3% pick rate top-tier KR en open-world PvE</strong>. Rank 10 lo resetea al matar enemigo = farming de packs imparable. <strong>Recomendado swap vs Savage Fang si tu contenido principal es farming/leveling, NO boss raids.</strong></li>
     <li><strong>Shadow Walk</strong> — stealth (swap para PvP)</li>
     <li><strong>Evasion Contract</strong> — swap PvP</li>
     <li><strong>Smoke Bomb / Aerial Bind / Spiral Slice</strong> — situacionales</li>
   </ul>
+
+  <div class="callout info">
+    <strong>¿Boss PvE o farming/leveling?</strong><br>
+    • <strong>Boss raids (Krao Cave, Draupnir, Ludra):</strong> loadout core = Illusive Clone + Swift Contract + Triniel's Dagger + <strong>Savage Fang</strong><br>
+    • <strong>Open-world farming / leveling:</strong> swap el Savage Fang por <strong>Throw Shadowblade</strong> (reset al matar = DPS infinito en packs)
+  </div>
 </section>
 
 <section id="daevanion">
