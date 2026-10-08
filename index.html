@@ -217,6 +217,61 @@ li { margin-bottom: 0.3rem; }
   transition: all 0.2s;
 }
 .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.aion-icon-img {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: #000;
+  display: block;
+  object-fit: cover;
+}
+.aion-icon.fallback {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: linear-gradient(135deg, #64748b, #334155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.skill-mini .aion-icon-img, .skill-mini .aion-icon {
+  border-radius: 8px;
+}
+
+/* Tooltip del Daevanion board */
+.board-tooltip {
+  position: fixed;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  max-width: 280px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.board-tooltip strong { color: var(--accent); }
+.board-tooltip em { color: var(--info); font-style: normal; }
+.board-tooltip small { color: var(--text-dim); display: block; margin-top: 0.3rem; }
+
+.board-nodes-list li.owned {
+  background: rgba(34, 197, 94, 0.15);
+  border-left: 3px solid var(--ok);
+  padding-left: 0.5rem;
+  text-decoration: line-through;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.board-nodes-list li { cursor: pointer; transition: background 0.15s; }
+.board-nodes-list li:hover { background: rgba(212, 175, 55, 0.08); }
+
+.badge.ok { color: var(--ok); border-color: var(--ok); background: rgba(34,197,94,0.1); }
+
+.board-tabs button small { color: var(--text-dim); font-size: 0.7rem; font-weight: normal; display: block; }
+
 .skill-card .icon {
   width: 48px;
   height: 48px;
@@ -1060,18 +1115,18 @@ code {
 
   <h3>Skills Activas (12)</h3>
   <div class="skill-grid">
-    <div class="skill-card"><div class="icon i-dps"><span class="glyph">⚔</span></div><div class="info"><div class="name">Corte Rápido <span class="tier s">S</span></div><div class="desc">LMB spam. Recupera 100 MP. Reduce CD de Insignia Explosion 1s/hit (desde rank 16).</div></div></div>
-    <div class="skill-card"><div class="icon i-mov"><span class="glyph">↯</span></div><div class="info"><div class="name">Golpe de Sombra <span class="tier a">A</span></div><div class="desc">Teletransporte detrás del enemigo + stun 3s. CD 20s. Opener principal.</div></div></div>
-    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">◉</span></div><div class="info"><div class="name">Rugido Salvaje <span class="tier a">A</span></div><div class="desc">AoE. Aplica 1 Insignia por 10s. Filler constante para apilar.</div></div></div>
-    <div class="skill-card"><div class="icon i-dps"><span class="glyph">↩</span></div><div class="info"><div class="name">Emboscada <span class="tier a">A</span></div><div class="desc">+30% daño por detrás. CD 10s. Core del combo trasero.</div></div></div>
-    <div class="skill-card"><div class="icon i-dps"><span class="glyph">♥</span></div><div class="info"><div class="name">Desgarro de Corazón <span class="tier s">S</span></div><div class="desc">~30% del daño endgame. Resetea CD en crit. Prioridad #1 de ranked.</div></div></div>
-    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">⚡</span></div><div class="info"><div class="name">Furia de Tormenta <span class="tier b">B</span></div><div class="desc">Daño vs objetivo staggered. Opción AoE/combo.</div></div></div>
-    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">✦</span></div><div class="info"><div class="name">Corte Torbellino <span class="tier b">B</span></div><div class="desc">AoE. 40% stun al evadir. Útil contra packs.</div></div></div>
-    <div class="skill-card"><div class="icon i-mov"><span class="glyph">⟳</span></div><div class="info"><div class="name">Corte Fugaz <span class="tier b">B</span></div><div class="desc">Reposicionamiento + blind 40%. Buen gap-filler.</div></div></div>
-    <div class="skill-card"><div class="icon i-def"><span class="glyph">✧</span></div><div class="info"><div class="name">Infiltrarse <span class="tier a">A</span></div><div class="desc">Esquiva + reposicionamiento + blind 50%. Panic defensiva.</div></div></div>
-    <div class="skill-card"><div class="icon i-util"><span class="glyph">▼</span></div><div class="info"><div class="name">Caída Sombría <span class="tier b">B</span></div><div class="desc">Knockdown sobre stun. Setup para combo con Shadowstrike.</div></div></div>
-    <div class="skill-card"><div class="icon i-dps"><span class="glyph">✸</span></div><div class="info"><div class="name">Explosión de Insignias <span class="tier s">S</span></div><div class="desc">~25% del daño endgame. Detona hasta 5 stacks. Prioridad #2 de ranked.</div></div></div>
-    <div class="skill-card"><div class="icon i-def"><span class="glyph">⛨</span></div><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
+    <div class="skill-card"><span data-icon="quick" data-size="48"></span><div class="info"><div class="name">Corte Rápido <span class="tier s">S</span></div><div class="desc">LMB spam. Recupera 100 MP. Reduce CD de Insignia Explosion 1s/hit (desde rank 16).</div></div></div>
+    <div class="skill-card"><span data-icon="shadow" data-size="48"></span><div class="info"><div class="name">Golpe de Sombra <span class="tier a">A</span></div><div class="desc">Teletransporte detrás del enemigo + stun 3s. CD 20s. Opener principal.</div></div></div>
+    <div class="skill-card"><span data-icon="savage" data-size="48"></span><div class="info"><div class="name">Rugido Salvaje <span class="tier a">A</span></div><div class="desc">AoE. Aplica 1 Insignia por 10s. Filler constante para apilar.</div></div></div>
+    <div class="skill-card"><span data-icon="ambush" data-size="48"></span><div class="info"><div class="name">Emboscada <span class="tier a">A</span></div><div class="desc">+30% daño por detrás. CD 10s. Core del combo trasero.</div></div></div>
+    <div class="skill-card"><span data-icon="heart" data-size="48"></span><div class="info"><div class="name">Desgarro de Corazón <span class="tier s">S</span></div><div class="desc">~30% del daño endgame. Resetea CD en crit. Prioridad #1 de ranked.</div></div></div>
+    <div class="skill-card"><span data-icon="storm" data-size="48"></span><div class="info"><div class="name">Furia de Tormenta <span class="tier b">B</span></div><div class="desc">Daño vs objetivo staggered. Opción AoE/combo.</div></div></div>
+    <div class="skill-card"><span data-icon="whirl" data-size="48"></span><div class="info"><div class="name">Corte Torbellino <span class="tier b">B</span></div><div class="desc">AoE. 40% stun al evadir. Útil contra packs.</div></div></div>
+    <div class="skill-card"><span data-icon="flash" data-size="48"></span><div class="info"><div class="name">Corte Fugaz <span class="tier b">B</span></div><div class="desc">Reposicionamiento + blind 40%. Buen gap-filler.</div></div></div>
+    <div class="skill-card"><span data-icon="infiltrate" data-size="48"></span><div class="info"><div class="name">Infiltrarse <span class="tier a">A</span></div><div class="desc">Esquiva + reposicionamiento + blind 50%. Panic defensiva.</div></div></div>
+    <div class="skill-card"><span data-icon="shadowfall" data-size="48"></span><div class="info"><div class="name">Caída Sombría <span class="tier b">B</span></div><div class="desc">Knockdown sobre stun. Setup para combo con Shadowstrike.</div></div></div>
+    <div class="skill-card"><span data-icon="insignia" data-size="48"></span><div class="info"><div class="name">Explosión de Insignias <span class="tier s">S</span></div><div class="desc">~25% del daño endgame. Detona hasta 5 stacks. Prioridad #2 de ranked.</div></div></div>
+    <div class="skill-card"><span data-icon="defiance" data-size="48"></span><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
   </div>
 
   <h3>Pasivas Clave</h3>
@@ -1091,10 +1146,10 @@ code {
 
   <h3>Stigmas PvE Core (desbloqueados Lv 22+)</h3>
   <div class="skill-grid">
-    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">☯</span></div><div class="info"><div class="name">Clon Ilusorio <span class="tier stigma">STIGMA S</span></div><div class="desc">20s duración, CD 90s. Durante activo: Heart Gore CD = 0. Subir a Lv20 PRIMERO.</div></div></div>
-    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚡</span></div><div class="info"><div class="name">Contrato Veloz <span class="tier stigma">STIGMA S</span></div><div class="desc">Buff +velocidad ataque. Mini-burst cada ~45s.</div></div></div>
-    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚒</span></div><div class="info"><div class="name">Colmillo Salvaje <span class="tier stigma">STIGMA A</span></div><div class="desc">Carga 5 Insignias instantáneas. Setup pre-Explosion.</div></div></div>
-    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚔</span></div><div class="info"><div class="name">Daga de Triniel <span class="tier stigma">STIGMA A</span></div><div class="desc">Reduce 10% CDs activos. Subir a Lv10 primero.</div></div></div>
+    <div class="skill-card"><span data-icon="s_clone" data-size="48"></span><div class="info"><div class="name">Clon Ilusorio <span class="tier stigma">STIGMA S</span></div><div class="desc">20s duración, CD 90s. Durante activo: Heart Gore CD = 0. Subir a Lv20 PRIMERO.</div></div></div>
+    <div class="skill-card"><span data-icon="s_swift" data-size="48"></span><div class="info"><div class="name">Contrato Veloz <span class="tier stigma">STIGMA S</span></div><div class="desc">Buff +velocidad ataque. Mini-burst cada ~45s.</div></div></div>
+    <div class="skill-card"><span data-icon="s_fang" data-size="48"></span><div class="info"><div class="name">Colmillo Salvaje <span class="tier stigma">STIGMA A</span></div><div class="desc">Carga 5 Insignias instantáneas. Setup pre-Explosion.</div></div></div>
+    <div class="skill-card"><span data-icon="s_triniel" data-size="48"></span><div class="info"><div class="name">Daga de Triniel <span class="tier stigma">STIGMA A</span></div><div class="desc">Reduce 10% CDs activos. Subir a Lv10 primero.</div></div></div>
   </div>
 </section>
 
@@ -1951,6 +2006,7 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
+<script src="icons.js"></script>
 <script src="planner.js"></script>
 <script src="daevanion.js"></script>
 </body>

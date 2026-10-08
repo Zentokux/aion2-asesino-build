@@ -192,7 +192,7 @@ function renderLevel(lv) {
   const unlocksEl = document.getElementById('plvUnlocks');
   if (s.unlocks.length) {
     unlocksEl.innerHTML = '<h4>🔓 Desbloqueado en este nivel:</h4>' + s.unlocks.map(u =>
-      `<div class="unlock-item"><span class="skill-mini" style="background:${u.color}">${u.glyph}</span><span><strong>${u.name}</strong> <em>(${u.type})</em><br><small>${u.note}</small></span></div>`
+      `<div class="unlock-item"><span class="skill-mini">${renderIcon(Object.entries(SKILLS).find(([k,v]) => v === u)[0], 40)}</span><span><strong>${u.name}</strong> <em>(${u.type})</em><br><small>${u.note}</small></span></div>`
     ).join('');
     unlocksEl.style.display = 'block';
   } else {
@@ -204,7 +204,7 @@ function renderLevel(lv) {
   if (s.investments.length) {
     invEl.innerHTML = '<h4>💰 Dónde invertir tus puntos:</h4>' + s.investments.map(inv =>
       `<div class="invest-item">
-        <span class="skill-mini" style="background:${inv.skill.color}">${inv.skill.glyph}</span>
+        <span class="skill-mini">${renderIcon(Object.entries(SKILLS).find(([k,v]) => v === inv.skill)[0], 40)}</span>
         <div class="invest-info">
           <strong>${inv.skill.name}</strong>
           <span class="invest-change">Rk <b>${inv.from}</b> → Rk <b>${inv.to}</b></span>
@@ -231,7 +231,7 @@ function renderLevel(lv) {
     const justChanged = s.investments.some(inv => inv.skill.name === sk.name);
     return `<div class="state-card ${unlocked ? '' : 'locked'} ${maxed ? 'maxed' : ''} ${justChanged ? 'just-changed' : ''}" title="${sk.note}">
       <div class="state-head">
-        <span class="skill-mini" style="background:${unlocked ? sk.color : '#333'}">${sk.glyph}</span>
+        <span class="skill-mini">${renderIcon(id, 40)}</span>
         <div class="state-info">
           <div class="state-name">${sk.name}</div>
           <div class="state-type">${sk.type}</div>
