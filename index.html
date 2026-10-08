@@ -217,13 +217,51 @@ li { margin-bottom: 0.3rem; }
   transition: all 0.2s;
 }
 .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.skill-card img {
+.skill-card .icon {
   width: 48px;
   height: 48px;
-  border-radius: 6px;
-  border: 1px solid var(--border);
-  background: #000;
+  border-radius: 8px;
+  border: 2px solid var(--border);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.skill-card .icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 50%);
+}
+.skill-card .icon.i-dps { background: linear-gradient(135deg, #ff4d6d, #c9184a); border-color: #ff4d6d; }
+.skill-card .icon.i-util { background: linear-gradient(135deg, #4ea8de, #1d4ed8); border-color: #4ea8de; }
+.skill-card .icon.i-buff { background: linear-gradient(135deg, #d4af37, #92400e); border-color: #d4af37; }
+.skill-card .icon.i-stigma { background: linear-gradient(135deg, #a855f7, #6b21a8); border-color: #a855f7; }
+.skill-card .icon.i-def { background: linear-gradient(135deg, #22c55e, #166534); border-color: #22c55e; }
+.skill-card .icon.i-mov { background: linear-gradient(135deg, #06b6d4, #0e7490); border-color: #06b6d4; }
+.skill-card .icon.i-aoe { background: linear-gradient(135deg, #f59e0b, #b45309); border-color: #f59e0b; }
+.skill-card .icon.i-passive { background: linear-gradient(135deg, #64748b, #334155); border-color: #64748b; }
+.skill-card .icon .glyph { position: relative; z-index: 2; }
+
+.pet-card .icon-pet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #d4af37, #78350f);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
 .skill-card .info { flex: 1; }
 .skill-card .name {
@@ -399,6 +437,7 @@ li { margin-bottom: 0.3rem; }
   margin-bottom: 0.5rem;
   background: #000;
   object-fit: cover;
+  display: none;
 }
 .pet-card .pet-name { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
 .pet-card .pet-genus { font-size: 0.75rem; color: var(--text-dim); }
@@ -500,6 +539,7 @@ code {
 }
 .planner-row:hover { background: rgba(212, 175, 55, 0.05); }
 .planner-row.empty { opacity: 0.4; }
+.planner-row.zero-sp { background: rgba(78, 168, 222, 0.05); border-left: 3px solid var(--info); }
 .planner-row.milestone { background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent); }
 .planner-level {
   font-weight: 700;
@@ -732,18 +772,18 @@ code {
 
   <h3>Skills Activas (12)</h3>
   <div class="skill-grid">
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13010000.webp" alt="Quick Slice" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Corte Rápido <span class="tier s">S</span></div><div class="desc">LMB spam. Recupera 100 MP. Reduce CD de Insignia Explosion 1s/hit (desde rank 16).</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13070000.webp" alt="Shadowstrike" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Golpe de Sombra <span class="tier a">A</span></div><div class="desc">Teletransporte detrás del enemigo + stun 3s. CD 20s. Opener principal.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13100000.webp" alt="Savage Roar" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Rugido Salvaje <span class="tier a">A</span></div><div class="desc">AoE. Aplica 1 Insignia por 10s. Filler constante para apilar.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13060000.webp" alt="Ambush" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Emboscada <span class="tier a">A</span></div><div class="desc">+30% daño por detrás. CD 10s. Core del combo trasero.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13350000.webp" alt="Heart Gore" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Desgarro de Corazón <span class="tier s">S</span></div><div class="desc">~30% del daño endgame. Resetea CD en crit. Prioridad #1 de ranked.</div></div></div>
-    <div class="skill-card"><img src="" alt="Storm Rampage" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Furia de Tormenta <span class="tier b">B</span></div><div class="desc">Daño vs objetivo staggered. Opción AoE/combo.</div></div></div>
-    <div class="skill-card"><img src="" alt="Whirlwind Slice" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Corte Torbellino <span class="tier b">B</span></div><div class="desc">AoE. 40% stun al evadir. Útil contra packs.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13050000.webp" alt="Flash Slice" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Corte Fugaz <span class="tier b">B</span></div><div class="desc">Reposicionamiento + blind 40%. Buen gap-filler.</div></div></div>
-    <div class="skill-card"><img src="" alt="Infiltrate" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Infiltrarse <span class="tier a">A</span></div><div class="desc">Esquiva + reposicionamiento + blind 50%. Panic defensiva.</div></div></div>
-    <div class="skill-card"><img src="" alt="Shadow Fall" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Caída Sombría <span class="tier b">B</span></div><div class="desc">Knockdown sobre stun. Setup para combo con Shadowstrike.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13130000.webp" alt="Insignia Explosion" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Explosión de Insignias <span class="tier s">S</span></div><div class="desc">~25% del daño endgame. Detona hasta 5 stacks. Prioridad #2 de ranked.</div></div></div>
-    <div class="skill-card"><img src="" alt="Defiance" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
+    <div class="skill-card"><div class="icon i-dps"><span class="glyph">⚔</span></div><div class="info"><div class="name">Corte Rápido <span class="tier s">S</span></div><div class="desc">LMB spam. Recupera 100 MP. Reduce CD de Insignia Explosion 1s/hit (desde rank 16).</div></div></div>
+    <div class="skill-card"><div class="icon i-mov"><span class="glyph">↯</span></div><div class="info"><div class="name">Golpe de Sombra <span class="tier a">A</span></div><div class="desc">Teletransporte detrás del enemigo + stun 3s. CD 20s. Opener principal.</div></div></div>
+    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">◉</span></div><div class="info"><div class="name">Rugido Salvaje <span class="tier a">A</span></div><div class="desc">AoE. Aplica 1 Insignia por 10s. Filler constante para apilar.</div></div></div>
+    <div class="skill-card"><div class="icon i-dps"><span class="glyph">↩</span></div><div class="info"><div class="name">Emboscada <span class="tier a">A</span></div><div class="desc">+30% daño por detrás. CD 10s. Core del combo trasero.</div></div></div>
+    <div class="skill-card"><div class="icon i-dps"><span class="glyph">♥</span></div><div class="info"><div class="name">Desgarro de Corazón <span class="tier s">S</span></div><div class="desc">~30% del daño endgame. Resetea CD en crit. Prioridad #1 de ranked.</div></div></div>
+    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">⚡</span></div><div class="info"><div class="name">Furia de Tormenta <span class="tier b">B</span></div><div class="desc">Daño vs objetivo staggered. Opción AoE/combo.</div></div></div>
+    <div class="skill-card"><div class="icon i-aoe"><span class="glyph">✦</span></div><div class="info"><div class="name">Corte Torbellino <span class="tier b">B</span></div><div class="desc">AoE. 40% stun al evadir. Útil contra packs.</div></div></div>
+    <div class="skill-card"><div class="icon i-mov"><span class="glyph">⟳</span></div><div class="info"><div class="name">Corte Fugaz <span class="tier b">B</span></div><div class="desc">Reposicionamiento + blind 40%. Buen gap-filler.</div></div></div>
+    <div class="skill-card"><div class="icon i-def"><span class="glyph">✧</span></div><div class="info"><div class="name">Infiltrarse <span class="tier a">A</span></div><div class="desc">Esquiva + reposicionamiento + blind 50%. Panic defensiva.</div></div></div>
+    <div class="skill-card"><div class="icon i-util"><span class="glyph">▼</span></div><div class="info"><div class="name">Caída Sombría <span class="tier b">B</span></div><div class="desc">Knockdown sobre stun. Setup para combo con Shadowstrike.</div></div></div>
+    <div class="skill-card"><div class="icon i-dps"><span class="glyph">✸</span></div><div class="info"><div class="name">Explosión de Insignias <span class="tier s">S</span></div><div class="desc">~25% del daño endgame. Detona hasta 5 stacks. Prioridad #2 de ranked.</div></div></div>
+    <div class="skill-card"><div class="icon i-def"><span class="glyph">⛨</span></div><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
   </div>
 
   <h3>Pasivas Clave</h3>
@@ -763,10 +803,10 @@ code {
 
   <h3>Stigmas PvE Core (desbloqueados Lv 22+)</h3>
   <div class="skill-grid">
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13310000.webp" alt="Illusive Clone" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Clon Ilusorio <span class="tier stigma">STIGMA S</span></div><div class="desc">20s duración, CD 90s. Durante activo: Heart Gore CD = 0. Subir a Lv20 PRIMERO.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13390000.webp" alt="Swift Contract" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Contrato Veloz <span class="tier stigma">STIGMA S</span></div><div class="desc">Buff +velocidad ataque. Mini-burst cada ~45s.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13270000.webp" alt="Savage Fang" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Colmillo Salvaje <span class="tier stigma">STIGMA A</span></div><div class="desc">Carga 5 Insignias instantáneas. Setup pre-Explosion.</div></div></div>
-    <div class="skill-card"><img src="https://metabot.gg/web/aion2/skills/13300000.webp" alt="Triniel's Dagger" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">Daga de Triniel <span class="tier stigma">STIGMA A</span></div><div class="desc">Reduce 10% CDs activos. Subir a Lv10 primero.</div></div></div>
+    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">☯</span></div><div class="info"><div class="name">Clon Ilusorio <span class="tier stigma">STIGMA S</span></div><div class="desc">20s duración, CD 90s. Durante activo: Heart Gore CD = 0. Subir a Lv20 PRIMERO.</div></div></div>
+    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚡</span></div><div class="info"><div class="name">Contrato Veloz <span class="tier stigma">STIGMA S</span></div><div class="desc">Buff +velocidad ataque. Mini-burst cada ~45s.</div></div></div>
+    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚒</span></div><div class="info"><div class="name">Colmillo Salvaje <span class="tier stigma">STIGMA A</span></div><div class="desc">Carga 5 Insignias instantáneas. Setup pre-Explosion.</div></div></div>
+    <div class="skill-card"><div class="icon i-stigma"><span class="glyph">⚔</span></div><div class="info"><div class="name">Daga de Triniel <span class="tier stigma">STIGMA A</span></div><div class="desc">Reduce 10% CDs activos. Subir a Lv10 primero.</div></div></div>
   </div>
 </section>
 
@@ -1233,22 +1273,22 @@ LMB manual: Quick Slice spam constante</div>
   <h3>Pets Cogni recomendadas (farmear primero)</h3>
   <div class="pet-grid">
     <div class="pet-card">
-      <img src="https://static0.fextralifeimages.com/file/aion2/a/ac/Ut_vehicle_portrait_krallwar_01.webp" alt="Krall Warrior" onerror="this.style.visibility='hidden'">
+      <div class="icon-pet">🐺</div>
       <div class="pet-name">Krall Warrior</div>
       <div class="pet-genus">Cogni</div>
     </div>
     <div class="pet-card">
-      <img src="https://static0.fextralifeimages.com/file/aion2/e/ec/Ut_vehicle_portrait_manduriwar_01.webp" alt="Manduri Fighter" onerror="this.style.visibility='hidden'">
+      <div class="icon-pet">🦁</div>
       <div class="pet-name">Manduri Fighter</div>
       <div class="pet-genus">Cogni</div>
     </div>
     <div class="pet-card">
-      <img src="https://static0.fextralifeimages.com/file/aion2/2/25/Ut_vehicle_portrait_neuth_01.webp" alt="Klaw" onerror="this.style.visibility='hidden'">
+      <div class="icon-pet">🦀</div>
       <div class="pet-name">Klaw</div>
       <div class="pet-genus">Cogni</div>
     </div>
     <div class="pet-card">
-      <img src="https://static0.fextralifeimages.com/file/aion2/3/39/Ut_vehicle_portrait_dratona_01.webp" alt="Dratona" onerror="this.style.visibility='hidden'">
+      <div class="icon-pet">🐉</div>
       <div class="pet-name">Dratona</div>
       <div class="pet-genus">Cogni</div>
     </div>

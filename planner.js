@@ -42,7 +42,10 @@ const STIGMAS = [
 // Formato: nivel: array de instrucciones de inversión [{skill, rankFrom, rankTo, cost}]
 // Esta tabla sigue el flowchart del agente: todo a Heart Gore y Quick Slice primero, hasta Rk 10, luego Insignia Explosion, etc.
 const PLAN = {
-  4: [{ skillId: 'heart', from: 1, to: 2, cost: 1 }],
+  1: [{ note: '📍 Lv 1-3 NO dan Skill Points. Práctica el combo básico: Shadowstrike → Ambush (desde Lv 3) → Heart Gore (desde Lv 4) → Savage Roar → spam Quick Slice. Golpea SIEMPRE por detrás.', special: 'NIVEL INICIAL — no hay puntos que invertir todavía' }],
+  2: [{ note: '📍 Lv 2: sigue sin ganar SP. Enfócate en aprender a cancelar animaciones intercalando Quick Slice (LMB) entre skills.' }],
+  3: [{ note: '🔓 Ambush desbloqueado! Pero no hay SP que gastar aún. Practica la secuencia Shadowstrike → Ambush para asegurar que siempre pegues por detrás.' }],
+  4: [{ skillId: 'heart', from: 1, to: 2, cost: 1, note: '🎯 PRIMER PUNTO DE SKILL! Heart Gore acabó de desbloquearse — invierte el único punto que ganas aquí a subirla de Rk 1 a Rk 2.', special: 'PRIMER SKILL POINT — todo a Heart Gore' }],
   5: [{ skillId: 'heart', from: 2, to: 3, cost: 1 }, { skillId: 'quick', from: 1, to: 2, cost: 1 }],
   6: [{ skillId: 'quick', from: 2, to: 3, cost: 1 }, { skillId: 'heart', from: 3, to: 4, cost: 1 }],
   7: [{ skillId: 'heart', from: 4, to: 5, cost: 2 }],
@@ -144,6 +147,7 @@ function buildPlanner() {
     const row = document.createElement('div');
     row.className = 'planner-row';
     if (spGained === 0 && actions.length === 0) row.classList.add('empty');
+    if (spGained === 0 && actions.length > 0) row.classList.add('zero-sp');
     if (actions.some(a => a.special)) row.classList.add('milestone');
 
     row.innerHTML = `
