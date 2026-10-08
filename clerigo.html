@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aion 2 — Guía Progresiva Clérigo PvE (Global S1)</title>
+<meta name="description" content="Guía progresiva de build Clérigo PvE para Aion 2 Global Season 1. Lv 1-45 con rotaciones, stigmas, pets y heal/DPS híbrido.">
+<style>
+:root {
+  --bg: #0b0d12;
+  --bg-2: #141822;
+  --bg-3: #1b2130;
+  --border: #2a3245;
+  --text: #e6eaf2;
+  --text-dim: #8f98a8;
+  --accent: #22c55e;
+  --accent-2: #16a34a;
+  --crit: #ff4d6d;
+  --poison: #7cfc8a;
+  --stigma: #a855f7;
+  --info: #4ea8de;
+  --warn: #f59e0b;
+  --ok: #22c55e;
+  --heal: #22d3ee;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: linear-gradient(180deg, #0b0d12 0%, #0f1b14 100%);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  min-height: 100vh;
+}
+header {
+  background: linear-gradient(135deg, #1a2e22 0%, #0d1911 100%);
+  border-bottom: 2px solid var(--accent);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  text-shadow: 0 2px 10px rgba(34, 197, 94, 0.3);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+header .subtitle {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+header .meta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+header .nav-home {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  z-index: 2;
+}
+header .nav-home:hover { color: var(--accent); border-color: var(--accent); }
+.badge {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: var(--text-dim);
+}
+.badge.ok { border-color: var(--ok); color: var(--ok); }
+.badge.warn { border-color: var(--warn); color: var(--warn); }
+.badge.heal { border-color: var(--heal); color: var(--heal); }
+
+nav.topnav {
+  background: rgba(20, 24, 34, 0.9);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+nav.topnav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav.topnav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+nav.topnav a:hover { color: var(--accent); background: var(--bg-3); }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  color: var(--accent-2);
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.2rem;
+}
+h4 {
+  color: var(--text);
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+p { margin-bottom: 0.75rem; color: #cfd4de; }
+strong { color: var(--text); }
+
+.callout {
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid;
+}
+.callout.info { background: rgba(78, 168, 222, 0.1); border-color: var(--info); }
+.callout.warn { background: rgba(245, 158, 11, 0.1); border-color: var(--warn); }
+.callout.crit { background: rgba(255, 77, 109, 0.1); border-color: var(--crit); }
+.callout.ok { background: rgba(34, 197, 94, 0.1); border-color: var(--ok); }
+.callout.heal { background: rgba(34, 211, 238, 0.1); border-color: var(--heal); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+th, td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+th {
+  background: #1e2a22;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+tr:last-child td { border-bottom: none; }
+tr:hover { background: rgba(34, 197, 94, 0.05); }
+
+.tier {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--bg-3);
+}
+.tier.s { background: var(--crit); color: #fff; }
+.tier.a { background: var(--accent); color: #000; }
+.tier.b { background: var(--info); color: #fff; }
+.tier.heal { background: var(--heal); color: #000; }
+.tier.stigma { background: var(--stigma); color: #fff; }
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+li { margin-bottom: 0.3rem; }
+
+.stigma-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--stigma);
+}
+.stigma-row > div { flex: 1; }
+
+.rotation-steps {
+  background: var(--bg-3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+  border-left: 4px solid var(--accent);
+}
+.rotation-steps ol {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+.rotation-steps li {
+  counter-increment: step;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  position: relative;
+  border-bottom: 1px dashed var(--border);
+}
+.rotation-steps li:last-child { border-bottom: none; }
+.rotation-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--accent);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.macro-box {
+  background: #000;
+  color: #a0e8af;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  border: 1px solid var(--border);
+  white-space: pre;
+}
+
+code {
+  background: #000;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--poison);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.coming-soon-panel {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-3);
+  border-radius: 12px;
+  border: 2px dashed var(--border);
+  color: var(--text-dim);
+  margin: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  header h1 { font-size: 1.8rem; }
+  main { padding: 1rem; }
+  section { padding: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="nav-home">← Volver al inicio</a>
+  <h1>Guía Progresiva Clérigo PvE</h1>
+  <div class="subtitle">Aion 2: The Second Era — Heal/DPS Híbrido Lv 1 → 45</div>
+  <div class="meta">
+    <span class="badge ok">Patch Global Season 1</span>
+    <span class="badge">Actualizado: 8-oct-2026</span>
+    <span class="badge warn">Cap Lv 45</span>
+    <span class="badge heal">PvE Healer Essential</span>
+  </div>
+</header>
+
+<nav class="topnav">
+  <ul>
+    <li><a href="#overview">Resumen</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#passives">Pasivas</a></li>
+    <li><a href="#rotations">Rotación</a></li>
+    <li><a href="#stigmas">Stigmas</a></li>
+    <li><a href="#daevanion">Daevanion</a></li>
+    <li><a href="#stats">Stats & Gear</a></li>
+    <li><a href="#macros">Macros</a></li>
+    <li><a href="#credits">Fuentes</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>Resumen del Clérigo</h2>
+  <p>El <strong>Clérigo (Cleric)</strong> es el <strong>único healer puro</strong> del Aion 2, pero el modelo de contribución lo <strong>fuerza a hacer daño</strong> en combate. couga54 textual: <em>"A Cleric who only heals can walk out with nothing"</em>.</p>
+
+  <div class="callout heal">
+    <strong>Rol dual:</strong> party-wide recovery + sustained holy DPS (Earth / Wind). Esencial para raids/dungeons organizados aunque no "obligatorio".
+  </div>
+
+  <div class="callout info">
+    <strong>Arma + armadura:</strong> Mace (una mano) + Chain armor + Shield/Guard.
+  </div>
+
+  <div class="callout warn">
+    <strong>Tipo de build:</strong> Offensive PvE (base couga54) — combina heals reactivos con rotación DPS Prayer-line + Divine-line. NO existe build "pure heal" viable en Aion 2.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills Activas (12 principales)</h2>
+  <p>Lista verificada contra metabot.gg y couga54. Las que suben con SP para max DPS/heal:</p>
+
+  <table>
+    <thead><tr><th>Lv</th><th>Skill</th><th>Tipo</th><th>Función</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Earth's Retribution</strong></td><td>DPS</td><td>50 (+48.3% Attack) Earth damage. Restaura 110 MP (sustain)</td></tr>
+      <tr><td>1</td><td><strong>Judgment Thunder</strong></td><td>AoE DPS</td><td>Wind AoE hasta 4 targets</td></tr>
+      <tr><td>1</td><td>Debilitating Mark</td><td>Debuff</td><td>−5% PvE Dmg Boost (couga: −15% Def)</td></tr>
+      <tr><td>3</td><td>Divine Aura</td><td>DPS</td><td>Aura estacionaria que pega periódicamente</td></tr>
+      <tr><td>4</td><td><strong>Chain of Torment</strong></td><td>Debuff/DPS</td><td>−5% PvE Dmg Tolerance; marca para Condemnation</td></tr>
+      <tr><td>5</td><td>Lightning Strike Scattershot</td><td>DPS</td><td>Burst stagger; −1s all CDs per hit (couga)</td></tr>
+      <tr><td>7</td><td><strong>Light of Regeneration</strong></td><td>HoT grupal</td><td>616-739 HP cada 2s durante 30s en party 40m</td></tr>
+      <tr><td>8</td><td><strong>Condemnation</strong></td><td>DPS core</td><td>325 (+192.1% Attack) Earth. <strong>Resetea CD al crit.</strong></td></tr>
+      <tr><td>10</td><td><strong>Healing Light</strong></td><td>Heal reactivo</td><td>Cura al miembro con HP más bajo</td></tr>
+      <tr><td>12</td><td>Radiant Recovery</td><td>Heal + cleanse</td><td>379-417 HP + remueve 1 debuff</td></tr>
+      <tr><td>14</td><td>Bolt</td><td>DPS cargado</td><td>3 niveles de carga, wind dmg + stagger</td></tr>
+      <tr><td>16</td><td>Defiance</td><td>Self-cleanse</td><td>Remueve Stun/KD/Airborne/Grab/Frost/Fear</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <strong>Chain abilities / combos clave:</strong><br>
+    • <strong>Prayer line:</strong> Prayer of Amplification → Earth Punishment → Chain of Torment → Condemnation<br>
+    • <strong>Divine line:</strong> Divine Aura → Judgment Thunder<br>
+    • <strong>Elite:</strong> Debilitating Mark → Chain of Torment → Bolt cargado → Condemnation
+  </div>
+
+  <div class="callout warn">
+    <strong>Res (resurrección):</strong> solo vía stigma <strong>Summon Resurrection</strong> (120s CD, 40m). NO hay res base.
+  </div>
+</section>
+
+<section id="passives">
+  <h2>Pasivas — 10 principales (prioridad de subida)</h2>
+  <table>
+    <thead><tr><th>Pasiva</th><th>Priority</th><th>Efecto</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Empyrean Lord's Grace</strong></td><td class="tier s">⭐ Prio 1</td><td>+100 Crit Hit, daño extra por hit (couga: Critical Damage + Double Chance)</td></tr>
+      <tr><td><strong>Earth's Grace</strong></td><td class="tier a">Prio 2</td><td>+10.5% Critical Damage Boost + Accuracy</td></tr>
+      <tr><td><strong>Healing Enhancement</strong></td><td class="tier a">Prio 3</td><td>Heal Boost 22,400% of Attack. <strong>Clave: tu Attack escala tu heal.</strong></td></tr>
+      <tr><td><strong>Radiant Benediction</strong></td><td class="tier a">Prio 4</td><td>Restaura 384-461 HP a party en 40m al pegar (5s CD)</td></tr>
+      <tr><td>Prayer of Concentration</td><td class="tier b">Situacional</td><td>Escudo + 20% Heal Boost cuando HP ≤ 50%</td></tr>
+      <tr><td>Warm Benediction</td><td class="tier b">Básica</td><td>+6% Max HP, +7 Max MP</td></tr>
+      <tr><td>Empyrean Lords' Benediction</td><td class="tier b">Pasiva base</td><td>Block heal (3s CD)</td></tr>
+      <tr><td>Immortal Veil</td><td class="tier b">Defensiva</td><td>+2% Def, +100 Crit Hit Resist</td></tr>
+      <tr><td>Survival Willpower</td><td class="tier b">Status resist</td><td>+17% Status Effect Resist</td></tr>
+      <tr><td>Heal Block</td><td class="tier b">⚠️ SKIP PvE</td><td>7% chance de reducir heal enemigo 32% (es pasiva PvP)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout crit">
+    <strong>Priority de subida (couga54):</strong> Empyrean Lord's Grace → Earth's Grace → Healing Enhancement → Radiant Benediction. <strong>SKIP Heal Block en PvE.</strong>
+  </div>
+</section>
+
+<section id="rotations">
+  <h2>Rotación / Priority List</h2>
+  <h3>Raid / Party (couga54)</h3>
+  <div class="rotation-steps">
+    <ol>
+      <li><strong>Pre-pull:</strong> Light of Protection + Noble Aura (buffs toggle)</li>
+      <li><strong>Prioridad siempre lista:</strong> Prayer of Amplification + Earth Punishment → spam <strong>Condemnation resets</strong> (CD reset al crit)</li>
+      <li><strong>Divine line:</strong> Divine Aura → Judgment Thunder weaving</li>
+      <li><strong>Bolt cargado manual</strong> en ventanas de daño</li>
+      <li><strong>Heals reactivos:</strong> Healing Light al más bajo · Radiant Recovery si hay debuff · Light of Regeneration pre-mecánica</li>
+      <li><strong>Chain of Torment en cooldown siempre</strong> (debuff grupal −5% PvE Dmg Tolerance)</li>
+    </ol>
+  </div>
+
+  <div class="callout info">
+    <strong>Solo PvE:</strong> misma rotación. couga54 dice <em>"deal damage for contribution; heal only the people who just got hit"</em> — no hay rotación DPS separada.
+  </div>
+</section>
+
+<section id="stigmas">
+  <h2>Stigmas PvE (4 slots)</h2>
+  <p>Loadout meta coincidencia couga54 + metabot.gg:</p>
+
+  <ol>
+    <li class="stigma-row"><div><span class="tier stigma">Slot 1 (Lv 22)</span> <strong>Light of Protection</strong> — Toggle 5s CD, +10.5% PvE Dmg Boost y Tolerance a ti y party</div></li>
+    <li class="stigma-row"><div><span class="tier stigma">Slot 2 (Lv 27)</span> <strong>Noble Aura</strong> — Aura que te sigue y pega con tu target</div></li>
+    <li class="stigma-row"><div><span class="tier stigma">Slot 3 (Lv 32)</span> <strong>Earth Punishment</strong> — Earth dmg + DoT. <strong>Condemnation always crits</strong> (couga54)</div></li>
+    <li class="stigma-row"><div><span class="tier stigma">Slot 4 (Lv 37)</span> <strong>Summon Resurrection</strong> — Res 40m, 120s CD (único res del clérigo)</div></li>
+  </ol>
+
+  <div class="callout warn">
+    <strong>Variante solo-DPS puro (couga54):</strong> swap slot 4 Summon Resurrection → <strong>Prayer of Amplification</strong> (+20% Attack con multiplicadores pasivos) cuando ya hay chanter en party o content solo.
+  </div>
+
+  <div class="callout info">
+    <strong>Swap si tu party tiene Chanter:</strong> Light of Protection → <strong>Absolution</strong> (couga54).<br>
+    <strong>PvP loadout:</strong> Absolution / Salvation / Yustiel's Power.
+  </div>
+
+  <h3>Pick rates top-tier KR (metabot.gg)</h3>
+  <ul>
+    <li><strong>Light of Protection</strong> — 98.4% uso</li>
+    <li><strong>Noble Aura</strong> — 93.6%</li>
+    <li><strong>Earth Punishment</strong> — 91.9%</li>
+    <li><strong>Benevolence</strong> — 86.8% (en Global S1 couga sustituye por Summon Resurrection o Prayer of Amplification)</li>
+  </ul>
+</section>
+
+<section id="daevanion">
+  <h2>Daevanion Boards — Clérigo</h2>
+  <p>Los 5 boards son los mismos que Asesino (Nezekan, Zikel, Vaizel, Triniel, Azphel) pero el camino prioriza nodos de Clérigo. couga54 total ~229 puntos PvE.</p>
+
+  <table>
+    <thead><tr><th>Board</th><th>Lv</th><th>DP objetivo</th><th>Foco Clérigo</th></tr></thead>
+    <tbody>
+      <tr><td>Nezekan</td><td>12</td><td><strong>63 DP</strong></td><td>Combat Speed + CDR. Blues: Healing Enhancement + Warm Benediction</td></tr>
+      <tr><td>Zikel</td><td>20</td><td><strong>62 DP</strong></td><td>Damage Boost + Damage Tolerance. Radiant Benediction para party heal on hit</td></tr>
+      <tr><td>Vaizel ⭐</td><td>30</td><td><strong>44 DP</strong></td><td>Critical Damage Boost (sinergia con Empyrean Lord's Grace)</td></tr>
+      <tr><td>Triniel</td><td>40</td><td><strong>60 DP</strong></td><td>Multi-Hit Chance</td></tr>
+      <tr><td>Azphel</td><td>45</td><td>— solo PvP</td><td>⚠️ SKIP en PvE puro</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <strong>Ruta por nodo (couga54):</strong> azules (skill) → naranjas (ataque) → pasivas → defensivos. Toma las 4 esquinas de Nezekan y Zikel. couga: <em>"Resetting a board is cheap"</em> — prioriza llenar los 229 pts.
+  </div>
+
+  <div class="callout warn">
+    <strong>Corner nodes exactos Vaizel/Triniel:</strong> no verificado públicamente — requiere mapa in-game. couga provee planner interactivo sin labels concretos.
+  </div>
+</section>
+
+<section id="stats">
+  <h2>Stats Prioritarios + Gear BiS</h2>
+
+  <h3>Gear lines (couga54 fuente directa Clérigo main)</h3>
+  <ol>
+    <li><strong>Weapon Damage Boost</strong></li>
+    <li><strong>Might (Attack)</strong> — tu Attack escala tu heal (via Healing Enhancement)</li>
+    <li><strong>Combat Speed</strong> — combina attack speed + cast speed</li>
+    <li><strong>Precision</strong></li>
+  </ol>
+
+  <h3>Character stats priority</h3>
+  <ol>
+    <li>Destruction</li>
+    <li>Wisdom (Crit Chance)</li>
+    <li>Illusion (CDR)</li>
+    <li>Time (Combat Speed)</li>
+    <li>Freedom (Accuracy)</li>
+    <li>Death (Crit Hit)</li>
+  </ol>
+
+  <div class="callout crit">
+    <strong>Breakpoints endgame:</strong> mínimo <strong>1,000 Accuracy</strong> y <strong>1,000 Critical Hit</strong>.
+  </div>
+
+  <h3>BiS Gear por slot</h3>
+  <table>
+    <thead><tr><th>Slot</th><th>BiS Global</th><th>Stats clave</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Arma (Mace)</strong></td><td>Ludra's Fatal Mace (ilvl 102)</td><td>Weapon Dmg + Might</td></tr>
+      <tr><td><strong>Shield/Guard</strong></td><td>Krao Cave / Draupnir</td><td>Weapon Dmg + Might + Combat Speed + Precision</td></tr>
+      <tr><td><strong>Armadura (Chain)</strong></td><td>Krao Cave / Draupnir</td><td>HP + Attack + Crit Hit</td></tr>
+      <tr><td><strong>Guantes</strong></td><td>Draupnir</td><td>Combat Speed</td></tr>
+      <tr><td><strong>Botas</strong></td><td>Draupnir</td><td>Movement Speed</td></tr>
+      <tr><td><strong>Anillos ×2</strong></td><td>Abyssal Forge + crafting</td><td>Líneas de skills activas: Condemnation, Radiant Recovery, Judgment Thunder, Healing Light</td></tr>
+      <tr><td><strong>Theostone</strong></td><td>Cualquier dmg type PvE</td><td>Stun/Seal si PvP</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <strong>Nota sobre Casting Speed / Mana Regen / Crit Heal:</strong> Aion 2 los funde en <strong>Combat Speed</strong> + <strong>Healing Enhancement</strong>. Attack = stat de curación efectiva.
+  </div>
+
+  <h3>Pet (Genus Insight) para Clérigo</h3>
+  <p>Priorities de wheel (couga54, no especifica genus):</p>
+  <ul>
+    <li><strong>Slots 1, 5:</strong> Attack Bonus</li>
+    <li><strong>Slot 2:</strong> HP (PvE) / Crit Hit Resist (PvP)</li>
+    <li><strong>Slots 3, 6, 9:</strong> Accuracy</li>
+    <li><strong>Slot 4:</strong> Damage Boost o Critical Damage</li>
+    <li><strong>Slot 7:</strong> Regeneration</li>
+    <li><strong>Special:</strong> Double Chance</li>
+  </ul>
+  <p><em>Genus específico (Cogni vs Natura vs Varlan) no verificado para Clérigo en fuentes aceptadas.</em></p>
+</section>
+
+<section id="macros">
+  <h2>Macros Esenciales</h2>
+
+  <h3>Macro Prayer line (DPS principal)</h3>
+  <div class="macro-box">/skill Prayer of Amplification
+/queue Earth Punishment
+/queue Chain of Torment
+/queue Condemnation</div>
+
+  <h3>Macro Divine line (AoE / sustain)</h3>
+  <div class="macro-box">/skill Divine Aura
+/queue Judgment Thunder</div>
+
+  <h3>Macro Elite (burst packs)</h3>
+  <div class="macro-box">/skill Debilitating Mark
+/queue Chain of Torment
+/queue Bolt
+/queue Condemnation</div>
+
+  <h3>Teclas recomendadas</h3>
+  <table>
+    <thead><tr><th>Tecla</th><th>Función</th></tr></thead>
+    <tbody>
+      <tr><td><code>LMB</code></td><td>Auto-attack mace</td></tr>
+      <tr><td><code>MMB</code></td><td>Macro Prayer line (/queue)</td></tr>
+      <tr><td><code>Q</code></td><td>Condemnation manual (asegurar trigger)</td></tr>
+      <tr><td><code>E</code></td><td>Divine line macro</td></tr>
+      <tr><td><code>R</code></td><td>Healing Light (reactivo)</td></tr>
+      <tr><td><code>F</code></td><td>Radiant Recovery (cleanse)</td></tr>
+      <tr><td><code>Shift+F</code></td><td>Defiance (CC break)</td></tr>
+      <tr><td><code>G</code></td><td>Light of Regeneration (HoT grupal)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="credits">
+  <h2>Fuentes y Verificación</h2>
+  <p>Esta guía refleja el meta del parche Global S1 (8-oct-2026). Fuentes aceptadas:</p>
+  <ul>
+    <li><a href="https://couga54.github.io/aion2-guides/en/cleric/" target="_blank" rel="noopener">couga54 — Cleric guide (fuente ancla)</a></li>
+    <li><a href="https://metabot.gg/en/aion-2/classes/cleric" target="_blank" rel="noopener">Metabot — Cleric</a></li>
+    <li><a href="https://aion2.run/en/classes/cleric" target="_blank" rel="noopener">aion2.run — Cleric</a></li>
+    <li><a href="https://aion2maps.com/guides/cleric/" target="_blank" rel="noopener">aion2maps — Cleric guides</a></li>
+  </ul>
+
+  <div class="callout warn">
+    <strong>Disclaimer:</strong> game8.co descartado por tier list incorrecta. Fextralife devolvió 404 en la ruta de Clérigo al momento de redactar.
+  </div>
+
+  <div class="callout info">
+    <strong>Lagunas no verificadas:</strong> corner nodes Vaizel/Triniel exactos · DP allocation granular por nodo · pet genus específico (Cogni vs Natura vs Varlan) · Casting Speed / Mana Regen / Crit Heal como stats discretos.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Guía Clérigo PvE · Aion 2 Global Season 1 · Actualizado 2026-10-08</p>
+  <p><a href="index.html">← Volver al inicio</a> · <a href="asesino.html">Ver Asesino</a> · <a href="https://github.com/Zentokux/aion2-asesino-build" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+
+</body>
+</html>
