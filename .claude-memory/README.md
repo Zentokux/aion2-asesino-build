@@ -24,6 +24,8 @@ cat >> ~/.claude/projects/-Users-<tu-usuario-local>/memory/MEMORY.md << 'EOF'
 - [Aion 2 project reference](reference_aion2_project.md) — Ubicación, repo, URL live, arquitectura, flujo deploy.
 - [Aion 2 Asesino build facts](project_aion2_build_facts.md) — Plan SP, 25 skills, stigmas, opener, Daevanion verificados.
 - [Aion 2 project workflow lessons](feedback_aion2_project_workflow.md) — 12 reglas aprendidas de errores pasados.
+- [Aion 2 current state 8-oct-2026](project_aion2_current_state.md) — Estado al cerrar sesión: multi-clase, Clérigo añadido, Daevanion insatisfactorio, backups.
+- [Aion 2 Daevanion visual lessons](feedback_aion2_daevanion_visual.md) — 7 iteraciones rechazadas del gráfico, qué NO intentar.
 EOF
 ```
 
@@ -48,6 +50,8 @@ Copy-Item .claude-memory\*.md "$HOME\.claude\projects\-Users-$env:USERNAME\memor
 | `project_aion2_sources_quality.md` | Fuentes aceptadas vs descartadas (game8 fuera) |
 | `project_aion2_build_facts.md` | Build Asesino PvE verificado: plan SP, 25 skills, stigmas, opener endgame, Daevanion, pet |
 | `reference_aion2_project.md` | Arquitectura de archivos, URLs, flujo deploy, cache-buster convention |
+| `project_aion2_current_state.md` | **Estado actual del proyecto al 8-oct-2026**: multi-clase (Asesino + Clérigo), backups disponibles, pendientes abiertos |
+| `feedback_aion2_daevanion_visual.md` | **IMPORTANTE**: 7 iteraciones del gráfico Daevanion rechazadas. No intentar más visuals sin wireframes previos |
 
 ## Actualización
 
