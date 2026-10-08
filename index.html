@@ -459,6 +459,203 @@ code {
   nav ul { gap: 0.5rem; }
   .skill-card img { width: 40px; height: 40px; }
 }
+
+/* ============ PLANIFICADOR INTERACTIVO ============ */
+.planner-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+.planner-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.planner-controls label {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.planner-controls input[type="range"] {
+  accent-color: var(--accent);
+}
+.planner-table {
+  background: var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.planner-row {
+  display: grid;
+  grid-template-columns: 70px 200px 1fr 1.5fr;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: background 0.15s;
+}
+.planner-row:hover { background: rgba(212, 175, 55, 0.05); }
+.planner-row.empty { opacity: 0.4; }
+.planner-row.milestone { background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent); }
+.planner-level {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.planner-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+.pts-gained { color: var(--ok); font-weight: 700; }
+.pts-cum { color: var(--text-dim); }
+.pts-bank { color: var(--info); }
+.planner-unlocks { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.unlock-chip {
+  background: var(--stigma);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.no-unlock, .no-action { color: var(--text-dim); font-style: italic; font-size: 0.85rem; }
+.planner-actions { display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-action {
+  background: var(--bg-2);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+  font-size: 0.85rem;
+}
+.plan-action strong { color: var(--accent); }
+.plan-action em { color: var(--ok); font-style: normal; }
+.plan-action small { color: var(--text-dim); display: block; margin-top: 0.2rem; }
+.plan-note {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.2rem 0.5rem;
+}
+.plan-special {
+  background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-left: 3px solid var(--crit);
+}
+@media (max-width: 720px) {
+  .planner-row { grid-template-columns: 60px 1fr; gap: 0.5rem; }
+  .planner-unlocks, .planner-actions { grid-column: 1 / -1; }
+  .planner-points { grid-column: 2; }
+}
+
+/* ============ DAEVANION BOARDS ============ */
+.board-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.board-tabs button {
+  background: var(--bg-3);
+  color: var(--text);
+  border: 2px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.board-tabs button:hover { background: var(--bg-2); }
+.board-tabs button.active { background: var(--accent); color: #000; }
+.board-panel { display: none; }
+.board-panel.active { display: block; animation: fade 0.3s ease; }
+.board-header h3 { margin-bottom: 0.5rem; font-size: 1.3rem; }
+.board-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.board-full { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; }
+.board-grid-wrap {
+  background: var(--bg-3);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+.board-svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.node-group {
+  transition: transform 0.15s;
+}
+.node-group:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+.node-group.unlocked circle:last-of-type {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { filter: drop-shadow(0 0 2px #22c55e); }
+  50% { filter: drop-shadow(0 0 8px #22c55e); }
+}
+.board-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.75rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.board-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.board-nodes-list {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+.board-nodes-list h4 { color: var(--accent); margin-bottom: 0.5rem; }
+.board-nodes-list ol { padding-left: 1.2rem; }
+.board-nodes-list li {
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px dashed var(--border);
+}
+.board-nodes-list li:last-child { border-bottom: none; }
+.board-nodes-list .chip {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+}
+.board-nodes-list em { color: var(--ok); font-style: normal; }
 </style>
 </head>
 <body>
@@ -574,7 +771,37 @@ code {
 </section>
 
 <section id="progression">
-  <h2>Progresión Punto a Punto (Lv 1 → 45)</h2>
+  <h2>Planificador Interactivo de Skill Points (Lv 1 → 45)</h2>
+  <p>Tabla <strong>nivel por nivel</strong> con los puntos exactos que recibes, los skills que se desbloquean, y <strong>dónde invertir cada punto</strong>. El "banco" muestra puntos no gastados (acumulables para subir skills caras).</p>
+
+  <div class="callout info">
+    <strong>Cómo leer la tabla:</strong><br>
+    <strong>+SP</strong> = puntos ganados en ese nivel · <strong>acum</strong> = total acumulado · <strong>banco</strong> = puntos no gastados (si es negativo = deuda a pagar en próximos niveles)<br>
+    <strong>Costos de rango de skill:</strong> Rk 2-4 = 1 pt c/u · Rk 5-7 = 2 pt c/u · Rk 8-10 = 4 pt c/u (abre Specialty en Rk 8). <strong>Rk 11-20 NO se compran con SP</strong> — se consiguen vía Daevanion Boards + Arcana + Soul Binding del gear.<br>
+    <strong>Stigmas:</strong> Rk 1-5 = 1 pt · Rk 6-10 = 2 pt · Rk 11-15 = 4 pt · Rk 16-20 = 8 pt (full 1→20 = 75 pts).
+  </div>
+
+  <div class="planner-summary" id="plannerSummary"></div>
+
+  <div class="callout warn">
+    <strong>Flowchart del Asesino PvE:</strong> todo a <strong>Heart Gore + Quick Slice</strong> hasta Rk 10 → luego <strong>Insignia Explosion</strong> → <strong>Ascensión Lv 22</strong> rushea Illusive Clone → sumar passives (Rear Smite, Exploit Weakness, Assault Stance). <strong>Specialty 1 (Rk 8)</strong> en Heart Gore primero.
+  </div>
+
+  <div class="planner-table" id="plannerBody"></div>
+
+  <div class="callout ok" style="margin-top:1rem">
+    <strong>Fuentes extra de Skill Points durante tu progresión:</strong>
+    <ul style="margin-top:0.5rem">
+      <li><strong>Wisdom Stones</strong> (1 SP cada una)</li>
+      <li><strong>61 Sealed Dungeons</strong> → 2 Wisdom Stones por clear = <strong>+122 SP máximo</strong> si farmeas todo</li>
+      <li><strong>~58 quests regionales</strong> con Wisdom Stones = <strong>+58 SP</strong></li>
+      <li><strong>Techo teórico total:</strong> 203 (nivel) + 122 (sealed) + 58 (quests) ≈ <strong>383 SP</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section id="progression_old_hidden" style="display:none">
+  <h2>_Progresión Punto a Punto (Lv 1 → 45)</h2>
   <p>Qué desbloqueas en cada nivel y <strong>dónde invertir tus Skill Points</strong> cuando los recibas (no esperes a cap). Rangos de skill llegan a 20; algunas skills tienen breakpoints importantes en rangos 12, 16 y 20.</p>
 
   <div class="callout info">
@@ -949,22 +1176,37 @@ LMB manual: Quick Slice spam constante</div>
 </section>
 
 <section id="daevanion">
-  <h2>Daevanion Boards (Árbol de habilidades)</h2>
-  <p>Aion 2 no usa "skill tree" tradicional sino <strong>Daevanion Boards</strong>. Son 5 tableros con nodos que suben el nivel efectivo de tus skills. Prioriza nodos que buffeen Heart Gore, Insignia Explosion y Quick Slice.</p>
-
-  <table>
-    <thead><tr><th>Board</th><th>Desbloqueo</th><th>Enfoque</th><th>Prioridad PvE</th></tr></thead>
-    <tbody>
-      <tr><td>Board Inicial</td><td>Lv 12</td><td>Nodos azules suben niveles de skill</td><td class="tier s">Alta</td></tr>
-      <tr><td>Vaizel Board</td><td>Lv 30</td><td>Critical Damage</td><td class="tier s">Alta — core PvE</td></tr>
-      <tr><td>Triniel Board</td><td>Lv 40 (~1000 GS)</td><td>Mixto DPS</td><td class="tier a">Media-Alta</td></tr>
-      <tr><td>Azphel Board</td><td>Lv 45</td><td>PvP</td><td class="tier b">Skip si PvE puro</td></tr>
-      <tr><td>Quinto Board</td><td>Detalle no público</td><td>—</td><td>—</td></tr>
-    </tbody>
-  </table>
+  <h2>Daevanion Boards — Gráfico Interactivo</h2>
+  <p>Aion 2 no usa "skill tree" tradicional sino <strong>5 tableros Daevanion</strong>, uno por cada deity. Son grillas 15×15 donde cada nodo cuesta <strong>Daevanion Points (DP)</strong>. Click en cualquier nodo para marcarlo como desbloqueado (se guarda en tu navegador).</p>
 
   <div class="callout info">
-    Los 4 primeros boards aportan en total <strong>+4 niveles</strong> repartidos entre ~22 skills. Enfócate en nodos que mejoren tus skills de alto daño.
+    <strong>Mecánica común:</strong><br>
+    • Nodo <strong>centro</strong> = gratis, inicio del board<br>
+    • Conexiones <strong>ortogonales</strong> — solo puedes desbloquear nodos adyacentes a uno ya abierto<br>
+    • <strong>Esquinas (unique)</strong> = los nodos más potentes (+1.5% stat)<br>
+    • Refund de nodo cuesta <strong>500 Kina</strong>
+  </div>
+
+  <div class="callout warn">
+    <strong>Costos por nodo:</strong>
+    <ul>
+      <li><span style="color:#5a6478">●</span> <strong>Común</strong> (stat flat +5/+10): 1 DP</li>
+      <li><span style="color:#4ea8de">●</span> <strong>Rare</strong> (Passive +1 nivel): 2 DP</li>
+      <li><span style="color:#a855f7">●</span> <strong>Epic</strong> (Active +1 nivel): 3 DP</li>
+      <li><span style="color:#ff4d6d">●</span> <strong>Unique esquina</strong> (+1.5% stat): 4 DP</li>
+    </ul>
+    <strong>Total farmeable a Lv 45:</strong> ~316 DP realistas (sealed + quests + nivel). Full completion de los 4 boards principales requeriría 570 DP.
+  </div>
+
+  <div id="boardsContainer"></div>
+
+  <div class="callout crit" style="margin-top:1rem">
+    <strong>Orden de prioridad PvE:</strong><br>
+    <strong>Vaizel (Lv 30)</strong> → el más valioso. Ambas esquinas de Crit Damage Boost + nodos de Heart Gore y Quick Slice.<br>
+    <strong>Triniel (Lv 40)</strong> → Multi-Hit Chance (sinergia con reset-on-crit de Heart Gore).<br>
+    <strong>Nezekan (Lv 12)</strong> → esquinas CDR + Rear Smite passive.<br>
+    <strong>Zikel (Lv 20)</strong> → esquinas Damage Boost.<br>
+    <strong>Azphel (Lv 45)</strong> → SKIP si eres PvE puro. Es PvP.
   </div>
 </section>
 
@@ -1363,6 +1605,10 @@ checks.forEach(check => {
 
 updateProgress();
 
+// Load progressive planner + Daevanion boards
+if (typeof buildPlanner === 'function') buildPlanner();
+if (typeof buildAllBoards === 'function') buildAllBoards();
+
 // Smooth scroll for nav
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', e => {
@@ -1377,5 +1623,7 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
+<script src="planner.js"></script>
+<script src="daevanion.js"></script>
 </body>
 </html>
