@@ -1058,6 +1058,28 @@ code {
 }
 .board-nodes-list em { color: var(--ok); font-style: normal; }
 
+/* === DAEVANION v5 — snake chart + vista progresiva === */
+.snake-wrap {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+}
+.snake-svg {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.snake-node { transition: transform 0.15s; }
+.snake-node:hover:not(.is-center) { transform: scale(1.12); transform-origin: center; }
+.snake-node.owned rect, .snake-node.owned circle:not(:last-child) {
+  stroke: #22c55e !important;
+  filter: drop-shadow(0 0 6px rgba(34,197,94,0.8));
+}
+
 /* === DAEVANION v4 — vista progresiva conectada === */
 .daev-intro { margin-bottom: 1rem; }
 .daev-totals-top {
@@ -2374,8 +2396,8 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
-<script src="icons.js?v=2026-10-08-j"></script>
-<script src="planner.js?v=2026-10-08-j"></script>
-<script src="daevanion.js?v=2026-10-08-j"></script>
+<script src="icons.js?v=2026-10-08-k"></script>
+<script src="planner.js?v=2026-10-08-k"></script>
+<script src="daevanion.js?v=2026-10-08-k"></script>
 </body>
 </html>

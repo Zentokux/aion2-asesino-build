@@ -315,6 +315,93 @@ function buildProgressiveRoute(board) {
   return steps.join('');
 }
 
+// Gráfico snake auto-conectado — SIEMPRE sin huecos
+function buildSnakeSVG(board) {
+  const COLS = 8;
+  const CELL = 68;
+  const PAD = 24;
+  const route = board.route;
+  const rows = Math.ceil(route.length / COLS);
+  const totalW = COLS * CELL + PAD * 2;
+  const totalH = rows * CELL + PAD * 2;
+
+  // Posición (x, y) de cada paso según snake pattern (izq→der, luego der→izq alternando)
+  function pos(idx) {
+    const row = Math.floor(idx / COLS);
+    const colInRow = idx % COLS;
+    const x = row % 2 === 0 ? colInRow : (COLS - 1 - colInRow);
+    return [x, row];
+  }
+
+  let svg = `<svg viewBox="0 0 ${totalW} ${totalH}" class="snake-svg" preserveAspectRatio="xMidYMin meet">`;
+  svg += `<rect x="0" y="0" width="${totalW}" height="${totalH}" fill="#0b0d12" rx="12"/>`;
+
+  // Route lines amarillas (conectar cada paso consecutivo)
+  for (let i = 0; i < route.length - 1; i++) {
+    const [x1, y1] = pos(i);
+    const [x2, y2] = pos(i + 1);
+    const cx1 = PAD + x1 * CELL + CELL/2;
+    const cy1 = PAD + y1 * CELL + CELL/2;
+    const cx2 = PAD + x2 * CELL + CELL/2;
+    const cy2 = PAD + y2 * CELL + CELL/2;
+    if (y1 === y2) {
+      // misma fila: línea horizontal
+      svg += `<line x1="${cx1}" y1="${cy1}" x2="${cx2}" y2="${cy2}" stroke="#f4c430" stroke-width="6" stroke-linecap="round" opacity="0.85"/>`;
+    } else {
+      // cambio de fila: línea en U (down + horizontal + up si fuera, pero snake solo baja)
+      const midY = cy1 + CELL/2;
+      svg += `<line x1="${cx1}" y1="${cy1}" x2="${cx1}" y2="${midY}" stroke="#f4c430" stroke-width="6" stroke-linecap="round" opacity="0.85"/>`;
+      svg += `<line x1="${cx1}" y1="${midY}" x2="${cx2}" y2="${midY}" stroke="#f4c430" stroke-width="6" stroke-linecap="round" opacity="0.85"/>`;
+      svg += `<line x1="${cx2}" y1="${midY}" x2="${cx2}" y2="${cy2}" stroke="#f4c430" stroke-width="6" stroke-linecap="round" opacity="0.85"/>`;
+    }
+  }
+
+  // Nodos
+  route.forEach((step, idx) => {
+    const [x, y] = pos(idx);
+    const cx = PAD + x * CELL + CELL/2;
+    const cy = PAD + y * CELL + CELL/2;
+    const isSkill = step.type === 'skill' || step.type === 'passive';
+    const isCorner = step.type === 'special';
+    const isCenter = step.type === 'center';
+    const color = nodeColor(step.type);
+    const borderColor = step.type === 'skill' ? '#4ea8de' : step.type === 'passive' ? '#22c55e' : color;
+
+    svg += `<g class="snake-node ${isCenter ? 'is-center' : ''}" data-board="${board.id}" data-order="${idx}" style="cursor:${isCenter ? 'default' : 'pointer'}">`;
+
+    if (isCorner) {
+      // Rombo dorado
+      const sz = 22;
+      svg += `<rect x="${cx-sz}" y="${cy-sz}" width="${sz*2}" height="${sz*2}" fill="#f4c430" stroke="#fff8dc" stroke-width="2" transform="rotate(45 ${cx} ${cy})" rx="3"/>`;
+      svg += `<text x="${cx}" y="${cy+5}" text-anchor="middle" fill="#2b1810" font-size="12" font-weight="900" style="pointer-events:none">${idx}</text>`;
+    } else if (isCenter) {
+      svg += `<circle cx="${cx}" cy="${cy}" r="22" fill="#f4c430" stroke="#fff8dc" stroke-width="3"/>`;
+      svg += `<text x="${cx}" y="${cy+5}" text-anchor="middle" fill="#2b1810" font-size="14" font-weight="900" style="pointer-events:none">●</text>`;
+    } else if (isSkill && step.skill && SKILL_ICON[step.skill]) {
+      // Skill con icono
+      const sz = 38;
+      svg += `<rect x="${cx-sz/2-3}" y="${cy-sz/2-3}" width="${sz+6}" height="${sz+6}" fill="#0b0d12" stroke="${borderColor}" stroke-width="2.5" rx="5"/>`;
+      svg += `<image href="icons/${SKILL_ICON[step.skill]}" x="${cx-sz/2}" y="${cy-sz/2}" width="${sz}" height="${sz}" style="pointer-events:none"/>`;
+      // Badge numero esquina superior izquierda
+      svg += `<circle cx="${cx-sz/2}" cy="${cy-sz/2}" r="10" fill="#f4c430" stroke="#0b0d12" stroke-width="2"/>`;
+      svg += `<text x="${cx-sz/2}" y="${cy-sz/2+4}" text-anchor="middle" fill="#000" font-size="10" font-weight="900" style="pointer-events:none">${idx}</text>`;
+    } else {
+      // Stat: círculo
+      const r = step.type === 'stat23' ? 16 : 14;
+      svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${step.type === 'stat23' ? '#1b2130' : '#1b2130'}" stroke="${step.type === 'stat23' ? '#4ea8de' : '#8a95a8'}" stroke-width="2.5"/>`;
+      if (step.type === 'stat23') {
+        svg += `<circle cx="${cx}" cy="${cy}" r="5" fill="#4ea8de"/>`;
+      }
+      svg += `<text x="${cx}" y="${cy+4}" text-anchor="middle" fill="#fff" font-size="11" font-weight="800" style="pointer-events:none">${idx}</text>`;
+    }
+
+    svg += `</g>`;
+  });
+
+  svg += '</svg>';
+  return svg;
+}
+
 function buildAllBoards() {
   const container = document.getElementById('boardsContainer');
   if (!container) return;
@@ -355,6 +442,7 @@ function buildAllBoards() {
     const totalSteps = b.route.length - 1; // sin centro
     const ownedCount = b.route.filter((_, idx) => idx > 0 && localStorage.getItem(`aion2_dv_${b.id}_${idx}`) === 'true').length;
 
+    const snakeSvg = b.totalDP > 0 ? buildSnakeSVG(b) : '';
     panel.innerHTML = `
       <div class="board-header">
         <h3 style="color:${b.color}">${b.name} <span class="muted">— Lv ${b.unlockLvl}</span></h3>
@@ -367,7 +455,12 @@ function buildAllBoards() {
         <div class="callout info"><strong>Guía couga54:</strong> ${b.tip}</div>
       </div>
 
-      <h4>Modo progresivo — paso 1, 2, 3, 4...</h4>
+      ${b.totalDP > 0 ? `
+      <h4>📊 Gráfico simple — ruta conectada (click en nodo para marcar)</h4>
+      <div class="snake-wrap">${snakeSvg}</div>
+      ` : ''}
+
+      <h4>📝 Modo progresivo — paso 1, 2, 3, 4...</h4>
       <ul class="progressive-route" data-board="${b.id}">
         ${buildProgressiveRoute(b)}
       </ul>
@@ -385,27 +478,47 @@ function buildAllBoards() {
     });
   });
 
-  // Click to mark
-  container.addEventListener('click', e => {
-    const node = e.target.closest('.route-node');
-    if (!node || node.classList.contains('center')) return;
-    const boardId = node.dataset.board;
-    const order = node.dataset.order;
+  // Click to mark (lista textual Y gráfico snake)
+  function toggleStep(boardId, order) {
+    if (order === '0' || order === 0) return; // centro no clickeable
     const key = `aion2_dv_${boardId}_${order}`;
     const current = localStorage.getItem(key) === 'true';
     const newState = !current;
     localStorage.setItem(key, newState);
-    node.classList.toggle('owned', newState);
-    // update counter
+    // Sincronizar lista textual
+    const listNode = container.querySelector(`.route-node[data-board="${boardId}"][data-order="${order}"]`);
+    if (listNode) listNode.classList.toggle('owned', newState);
+    // Sincronizar gráfico snake
+    const svgNode = container.querySelector(`.snake-node[data-board="${boardId}"][data-order="${order}"]`);
+    if (svgNode) svgNode.classList.toggle('owned', newState);
+    // Update counter
     const board = BOARDS.find(b => b.id === boardId);
     const totalSteps = board.route.length - 1;
     const ownedCount = board.route.filter((_, idx) => idx > 0 && localStorage.getItem(`aion2_dv_${board.id}_${idx}`) === 'true').length;
     const counter = document.getElementById('count-' + boardId);
     if (counter) counter.textContent = `${ownedCount} / ${totalSteps} pasos`;
+  }
+
+  container.addEventListener('click', e => {
+    // Click en lista textual
+    const node = e.target.closest('.route-node');
+    if (node && !node.classList.contains('center')) {
+      toggleStep(node.dataset.board, node.dataset.order);
+      return;
+    }
+    // Click en gráfico snake
+    const snake = e.target.closest('.snake-node');
+    if (snake && !snake.classList.contains('is-center')) {
+      toggleStep(snake.dataset.board, snake.dataset.order);
+    }
   });
 
-  // Load saved
+  // Load saved (ambos list y svg)
   container.querySelectorAll('.route-node').forEach(node => {
+    const key = `aion2_dv_${node.dataset.board}_${node.dataset.order}`;
+    if (localStorage.getItem(key) === 'true') node.classList.add('owned');
+  });
+  container.querySelectorAll('.snake-node').forEach(node => {
     const key = `aion2_dv_${node.dataset.board}_${node.dataset.order}`;
     if (localStorage.getItem(key) === 'true') node.classList.add('owned');
   });
