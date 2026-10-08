@@ -1057,6 +1057,109 @@ code {
   text-transform: uppercase;
 }
 .board-nodes-list em { color: var(--ok); font-style: normal; }
+
+/* === DAEVANION rewrite: tarjetas honestas por board === */
+.daevanion-intro { margin-bottom: 1.5rem; }
+.daevanion-order-summary {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border-left: 4px solid var(--accent);
+}
+.boards-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.board-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-left: 5px solid;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+.board-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.board-card h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+.board-card .muted { color: var(--text-dim); font-weight: normal; }
+.board-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.board-progress {
+  text-align: center;
+  background: var(--bg-2);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  min-width: 90px;
+}
+.progress-count {
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 800;
+  line-height: 1;
+}
+.board-focus, .board-corners { margin: 0.4rem 0; font-size: 0.9rem; }
+.board-focus strong, .board-corners strong { color: var(--accent); }
+.board-full-note { font-size: 0.85rem; color: var(--text-dim); margin: 0.75rem 0; }
+
+.blues-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.blue-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-2);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border-left: 3px solid var(--border);
+  transition: all 0.15s;
+}
+.blue-step:hover { border-left-color: var(--accent); }
+.blue-step.owned {
+  border-left-color: var(--ok);
+  background: rgba(34, 197, 94, 0.08);
+}
+.blue-step.owned .step-info strong { text-decoration: line-through; opacity: 0.7; }
+.blue-step.empty {
+  color: var(--text-dim);
+  font-style: italic;
+  cursor: default;
+  justify-content: center;
+}
+.step-num {
+  background: var(--accent);
+  color: #000;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.blue-step.owned .step-num { background: var(--ok); }
+.step-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid var(--stigma);
+  background: #000;
+  flex-shrink: 0;
+}
+.step-info { flex: 1; }
+.step-info strong { color: var(--text); font-size: 0.95rem; display: block; }
+.step-info small { color: var(--text-dim); font-size: 0.8rem; }
 </style>
 </head>
 <body>
@@ -2104,8 +2207,8 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
-<script src="icons.js?v=2026-10-08-g"></script>
-<script src="planner.js?v=2026-10-08-g"></script>
-<script src="daevanion.js?v=2026-10-08-g"></script>
+<script src="icons.js?v=2026-10-08-h"></script>
+<script src="planner.js?v=2026-10-08-h"></script>
+<script src="daevanion.js?v=2026-10-08-h"></script>
 </body>
 </html>
