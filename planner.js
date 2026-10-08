@@ -37,7 +37,7 @@ const SKILLS = {
   // Pasivas automáticas (no requieren SP para activar efecto base)
   poison:       { name: 'Apply Poison',           color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (Auto)',      note: '15% veneno + −12% healing en objetivo. Auto-activada, no gastes SP temprano.', keep1: true },
   ambushstance: { name: 'Ambush Stance',          color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Aux)',       note: 'Buff post-movimiento. Opcional, baja prioridad.', keep1: true },
-  defbreak:     { name: 'Defense Break',          color: '#d4af37', unlock: 21, cap: 10, type: 'Pasiva (Core)',      note: '−12% def a enemigos staggered. Pasiva Core PvE según meta.', keep1: false },
+  defbreak:     { name: 'Defense Break',          color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (Opcional)',  note: '−12% def a enemigos staggered. Opcional: couga54 la descarta, metabot/fextralife/aion2.run la consideran utility PvE. Déjalo Rk 1 por defecto.', keep1: true },
   determination:{ name: 'Determination',          color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Core)',      note: 'Bono de resiliencia. Pasiva Core PvE.', keep1: false },
   sixthsense:   { name: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1,  cap: 10, type: 'Pasiva (Base)',      note: '+Evasión base. Déjalo Rk 1.', keep1: true },
 
@@ -46,7 +46,7 @@ const SKILLS = {
   s_swift:      { name: 'Swift Contract',         color: '#a855f7', unlock: 27, cap: 20, type: 'Stigma Slot 2',      note: '+Attack Speed. Mini-burst cada ~45s.', keep1: false },
   s_triniel:    { name: "Triniel's Dagger",       color: '#a855f7', unlock: 32, cap: 20, type: 'Stigma Slot 3',      note: 'Reduce CDs 10%.', keep1: false },
   s_fang:       { name: 'Savage Fang',            color: '#a855f7', unlock: 37, cap: 20, type: 'Stigma Slot 4',      note: 'Carga 5 Insignias instantáneas.', keep1: false },
-  s_shadowblade:{ name: 'Throw Shadowblade',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Savage Fang para FARMING/leveling. Rk 10 resetea al matar enemigo (91.3% pick rate KR open-world). Para boss PvE puro, mantén Savage Fang.', keep1: true },
+  s_shadowblade:{ name: 'Throw Shadowblade',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Savage Fang para FARMING/leveling. Rk 10 resetea al matar enemigo (couga54/corpus.gg/aion2.run). Para boss PvE puro, mantén Savage Fang.', keep1: true },
 };
 
 // Costo para subir A ese rango (skill activa/pasiva). Rk 11+ no con SP.
@@ -110,11 +110,11 @@ const PLAN = {
   38: { actions: [{ s: 's_fang', to: 7 }, { s: 'assault', to: 7 }, { s: 'assault', to: 8 }], note: 'Assault Stance Rk 8 Specialty' },
   39: { actions: [{ s: 's_fang', to: 9 }, { s: 'assault', to: 9 }] },
   40: { special: '⭐ TRINIEL BOARD DESBLOQUEADO (Lv 40) — camino Multi-Hit Chance', actions: [{ s: 's_fang', to: 10 }, { s: 'assault', to: 10 }], note: 'Assault Stance + Savage Fang a Rk 10' },
-  41: { actions: [{ s: 'defbreak', to: 5 }, { s: 'savage', to: 6 }], note: 'META FIX: Defense Break es Core PvE (−12% def). Savage Roar NO vale Rk 10 — déjalo Rk 6 (filler).' },
-  42: { actions: [{ s: 'defbreak', to: 6 }, { s: 'defbreak', to: 7 }, { s: 'defbreak', to: 8 }], note: 'Defense Break Rk 8 Specialty' },
-  43: { actions: [{ s: 'defbreak', to: 9 }, { s: 'defbreak', to: 10 }], note: 'Defense Break Rk 10 MAX' },
-  44: { actions: [{ s: 'determination', to: 5 }, { s: 'determination', to: 6 }], note: 'Determination sube como última pasiva core. Impact Hit queda en Rk 1 (es PvP, no PvE).' },
-  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'determination', to: 7 }, { s: 'determination', to: 8 }], note: 'Determination Rk 8 Specialty. Impact Hit queda Rk 1 (correctamente, es PvP).' },
+  41: { actions: [{ s: 'savage', to: 6 }, { s: 'determination', to: 3 }, { s: 'determination', to: 4 }], note: 'FIX cross-check: Savage Roar sigue filler. Determination entra como pasiva core (couga54: "every boss ends there").' },
+  42: { actions: [{ s: 'determination', to: 5 }, { s: 'determination', to: 6 }, { s: 'determination', to: 7 }], note: 'Determination sube rápido — más valor que Defense Break (controvertido).' },
+  43: { actions: [{ s: 'determination', to: 8 }, { s: 'savage', to: 7 }], note: 'Determination Rk 8 Specialty. Savage Roar Rk 7 (hacia breakpoint 12).' },
+  44: { actions: [{ s: 'savage', to: 8 }, { s: 'savage', to: 9 }, { s: 'savage', to: 10 }], note: 'Savage Roar camino a Rk 12 (breakpoint real: −1s Shadowstrike CD on hit).' },
+  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'determination', to: 9 }, { s: 'determination', to: 10 }], note: 'Determination Rk 10. Savage Roar Rk 10 por SP (Rk 11-12 vía Daevanion). Impact Hit y Defense Break quedan Rk 1.' },
 };
 
 // Build cumulative state for each level
