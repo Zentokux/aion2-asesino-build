@@ -1147,19 +1147,18 @@ code {
     <div class="skill-card"><span data-icon="defiance" data-size="48"></span><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
   </div>
 
-  <h3>Pasivas Clave</h3>
+  <h3>Pasivas — Priority on Gear (couga54 estricto)</h3>
   <table>
-    <thead><tr><th>Lv</th><th>Pasiva</th><th>Efecto</th></tr></thead>
+    <thead><tr><th>Lv</th><th>Pasiva</th><th>Priority (Gear)</th><th>Why — couga54</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>Heightened Sixth Sense</td><td>Aumenta Evasión base</td></tr>
-      <tr><td>6</td><td>Exploit Weakness</td><td>+Crit Chance</td></tr>
-      <tr><td>9</td><td>Apply Poison</td><td>15% veneno + −12% healing en el objetivo</td></tr>
-      <tr><td>11</td><td>Rear Smite</td><td>+3% daño trasero, +3% daño PvE</td></tr>
-      <tr><td>13</td><td>Assault Stance</td><td>+Crit Damage</td></tr>
-      <tr><td>17</td><td>Ambush Stance</td><td>Buff tras moverse (reposicionar)</td></tr>
-      <tr><td>20</td><td>Impact Hit <span class="tier b">⚠️ Rk 1</span></td><td><strong>DÉJALA Rk 1 en PvE.</strong> Solo 3.3% proc extra a Rk 10 = SP desperdiciado (couga54). Es pasiva PvP.</td></tr>
-      <tr><td>21</td><td>Defense Break <span class="tier b">Opcional</span></td><td>−12% def a staggered. Controvertido: couga54 la descarta como PvP skip, metabot/fextralife/aion2.run la ven utility. <strong>Déjala Rk 1 por defecto.</strong></td></tr>
-      <tr><td>25</td><td>Determination <span class="tier s">⭐ Core</span></td><td>Bono fuerte sub-30% HP (couga54 priority 3: "every boss ends there"). Subir a Rk 10.</td></tr>
+      <tr><td>11</td><td><strong>Rear Smite</strong></td><td class="tier s">⭐ Prio 1</td><td>Back attack + PvE damage boost. La pasiva más fuerte; da daño incluso de frente.</td></tr>
+      <tr><td>6</td><td><strong>Exploit Weakness</strong></td><td class="tier a">Prio 2</td><td>Crit Hit + Attack buff activo casi todo el combate; Illusive Clone lo multiplica.</td></tr>
+      <tr><td>13</td><td><strong>Assault Stance</strong></td><td class="tier a">Prio 2</td><td>Critical Damage Boost; Swift Contract lo multiplica.</td></tr>
+      <tr><td>25</td><td><strong>Determination</strong></td><td class="tier a">Prio 3</td><td>Daño extra en target low-HP. aLuckyRO: "every boss ends there".</td></tr>
+      <tr><td>20</td><td><strong>Impact Hit</strong></td><td class="tier b">Prio 4 — PvP keep</td><td>Double Chance solo 3.3% a Rk 10, nada en PvE (aLuckyRO). <strong>Para PvE: Rk 1. Guárdala para PvP; en PvE gear sube Determination primero.</strong></td></tr>
+      <tr><td>17 / 1</td><td>Ambush Stance + Heightened Sixth Sense</td><td class="tier b">Points only</td><td><strong>Maxed by skill points</strong>; no vale la pena una línea de gear.</td></tr>
+      <tr><td>9 / 21</td><td>Apply Poison + Defense Break</td><td class="tier b">⚠️ SKIP</td><td>Poison &lt; 1% de tu daño; Defense Break es pasiva PvP. <strong>SKIP ambos (couga54).</strong></td></tr>
+      <tr><td>—</td><td>Revitalization Contract</td><td class="tier b">Spare only</td><td>Solo con puntos sobrantes (couga54).</td></tr>
     </tbody>
   </table>
 
@@ -1496,20 +1495,18 @@ Q (manual): Heart Gore (para asegurar trigger en cada crit visible)</div>
   </div>
 
   <div class="tab-panel" id="r6">
-    <h3>Lv 31-40 — Loadout completo</h3>
-    <h4>Opener completo (orden corregido oct-2026)</h4>
+    <h3>Lv 31-40 — Loadout completo (opener couga54 estricto)</h3>
+    <h4>Opener completo</h4>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Swift Contract + Illusive Clone + Savage Fang</strong> (triple buff pre-pull)</li>
-        <li><strong>Shadowstrike</strong> → teleport detrás del boss (necesario para back-hit)</li>
-        <li><strong>Triniel's Dagger</strong> (reduce 10% CDs — en melee para asegurar back-hit)</li>
-        <li><strong>Ambush</strong> (bonus trasero)</li>
-        <li><strong>Insignia Explosion</strong> (Savage Fang ya cargó 5 stacks)</li>
-        <li><strong>Heart Gore → Heart Gore → Heart Gore</strong> (CD cero durante Clone)</li>
-        <li>Weave <strong>Quick Slice</strong> constante entre todo</li>
+        <li><strong>Illusive Clone + Swift Contract + Savage Fang</strong> (triple buff pre-pull)</li>
+        <li><strong>Triniel's Dagger</strong> → <em>straight away</em> para cortar CDs de los buffs (couga54 textual)</li>
+        <li><strong>Shadowstrike</strong> → teleport detrás</li>
+        <li><strong>Insignia Explosion</strong> (5 stacks precargados por Savage Fang)</li>
+        <li><strong>Heart Gore → Heart Gore → Heart Gore</strong> (CD cero durante Clone 20s)</li>
+        <li>Spam <strong>Quick Slice (LMB)</strong> entre todo</li>
       </ol>
     </div>
-    <div class="callout warn"><strong>Fix meta:</strong> Triniel's Dagger va DESPUÉS de Shadowstrike (en melee), NO antes. Si lo tiras antes del teleport pierdes el back-hit.</div>
     <h4>Macro de combat (confirmada)</h4>
     <div class="macro-box">Barra 1 (BUFFS, /queue 10ms):
   Illusive Clone → Swift Contract → Savage Fang → Triniel's Dagger
@@ -1522,17 +1519,16 @@ LMB manual: Quick Slice spam constante</div>
   </div>
 
   <div class="tab-panel" id="r7">
-    <h3>Lv 41-45 — Endgame max DPS (orden corregido oct-2026)</h3>
+    <h3>Lv 41-45 — Endgame max DPS (opener couga54 estricto)</h3>
     <h4>Opener (burst 20s)</h4>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Swift Contract + Illusive Clone + Savage Fang</strong> (buffs pre-pull, mismo tick)</li>
-        <li><strong>Shadowstrike</strong> → teleport detrás (necesario antes de Triniel)</li>
-        <li><strong>Triniel's Dagger</strong> (reduce CDs — ya en melee, back-hit asegurado)</li>
-        <li><strong>Ambush</strong> (bonus trasero)</li>
-        <li><strong>Insignia Explosion</strong> (spameable, no esperes stacks)</li>
-        <li><strong>Heart Gore × 6-8 veces</strong> durante los 20s de Clone</li>
-        <li><strong>Quick Slice</strong> entre cada input (animation-cancel + genera crits)</li>
+        <li><strong>Illusive Clone + Swift Contract + Savage Fang</strong> (triple buff, mismo tick)</li>
+        <li><strong>Triniel's Dagger</strong> → <em>straight away</em> para cortar CDs de los 3 buffs anteriores (couga54 textual)</li>
+        <li><strong>Shadowstrike</strong> → teleport detrás</li>
+        <li><strong>Insignia Explosion</strong> (Savage Fang ya cargó 5 stacks)</li>
+        <li><strong>Heart Gore × 6-8 veces</strong> durante los 20s de Clone (CD=0 bajo Clone)</li>
+        <li><strong>Quick Slice (LMB)</strong> spam constante entre cada input (animation-cancel + crits que resetean HG)</li>
       </ol>
     </div>
     <h4>Rotación sostenida (los siguientes 70s)</h4>
@@ -1620,12 +1616,19 @@ LMB manual: Quick Slice spam constante</div>
   <div id="boardsContainer"></div>
 
   <div class="callout crit" style="margin-top:1rem">
-    <strong>Orden de prioridad PvE:</strong><br>
-    <strong>Vaizel (Lv 30)</strong> → el más valioso. Ambas esquinas de Crit Damage Boost + nodos de Heart Gore y Quick Slice.<br>
-    <strong>Triniel (Lv 40)</strong> → Multi-Hit Chance (sinergia con reset-on-crit de Heart Gore).<br>
-    <strong>Nezekan (Lv 12)</strong> → esquinas CDR + Rear Smite passive.<br>
-    <strong>Zikel (Lv 20)</strong> → esquinas Damage Boost.<br>
-    <strong>Azphel (Lv 45)</strong> → SKIP si eres PvE puro. Es PvP.
+    <strong>DP targets por board (couga54 estricto, ruta final PvE):</strong>
+    <table style="margin-top:0.5rem; width:100%">
+      <thead><tr><th>Board</th><th>DP objetivo</th><th>Prioridad PvE</th></tr></thead>
+      <tbody>
+        <tr><td>Nezekan (Lv 12)</td><td><strong>63 DP</strong></td><td>Esquinas CS/CDR + Rear Smite + Heart Gore blue + Shadowstrike blue + Flash Slice blue</td></tr>
+        <tr><td>Zikel (Lv 20)</td><td><strong>59-65 DP</strong></td><td>Esquinas DB + Quick Slice blue + Insignia Explosion blue + Storm Rampage blue</td></tr>
+        <tr><td>Vaizel (Lv 30) ⭐</td><td><strong>60-69 DP</strong></td><td>Ambas esquinas CDB + Heart Gore blue + Quick Slice blue (board #1 PvE)</td></tr>
+        <tr><td>Triniel (Lv 40)</td><td><strong>85-91 DP</strong></td><td>Esquinas Multi-Hit + Ambush blue + Defiance blue + Infiltrate blue</td></tr>
+        <tr><td>Azphel (Lv 45)</td><td>110 DP solo PvP</td><td>⚠️ SKIP PvE puro</td></tr>
+      </tbody>
+    </table>
+    <strong style="display:block;margin-top:0.5rem">Total ruta PvE: ~267-290 DP distribuidos en los 4 boards.</strong><br>
+    <strong>Orden sugerido:</strong> Vaizel → Triniel → Nezekan → Zikel (al desbloquearse — Vaizel es tu board #1 DPS).
   </div>
 </section>
 

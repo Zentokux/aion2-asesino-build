@@ -32,14 +32,15 @@ const SKILLS = {
   rear:         { name: 'Golpe Trasero',          nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
   exploit:      { name: 'Explotar Debilidad',     nameEn: 'Exploit Weakness',    color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva (Core)',      note: '+Crit Chance', keep1: false },
   assault:      { name: 'Postura de Asalto',      nameEn: 'Assault Stance',      color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva (Core)',      note: '+Crit Damage', keep1: false },
-  impact:       { name: 'Golpe de Impacto',       nameEn: 'Impact Hit',          color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (PvP)',       note: 'Solo 3.3% proc extra a Rk 10 — es pasiva PvP, baja prioridad PvE. Déjalo Rk 1.', keep1: true },
+  impact:       { name: 'Golpe de Impacto',       nameEn: 'Impact Hit',          color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (Prio 4 PvP)', note: 'Solo 3.3% proc extra a Rk 10, nada en PvE (aLuckyRO). Prio 4 en gear — guárdala para PvP. En PvE: Rk 1.', keep1: true },
 
   // Pasivas automáticas (no requieren SP para activar efecto base)
-  poison:       { name: 'Aplicar Veneno',         nameEn: 'Apply Poison',        color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (Auto)',      note: '15% veneno + −12% healing en objetivo. Auto-activada, no gastes SP temprano.', keep1: true },
-  ambushstance: { name: 'Postura de Emboscada',   nameEn: 'Ambush Stance',       color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Aux)',       note: 'Buff post-movimiento. Opcional, baja prioridad.', keep1: true },
-  defbreak:     { name: 'Ruptura de Defensa',     nameEn: 'Defense Break',       color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (Opcional)',  note: '−12% def a enemigos staggered. Opcional: couga54 la descarta, metabot/fextralife/aion2.run la consideran utility PvE. Déjalo Rk 1 por defecto.', keep1: true },
-  determination:{ name: 'Determinación',          nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Core)',      note: 'Bono de resiliencia. Pasiva Core PvE (couga54 priority 3).', keep1: false },
-  sixthsense:   { name: 'Sexto Sentido Agudizado',nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (Base)',    note: '+Evasión base. Déjalo Rk 1.', keep1: true },
+  poison:       { name: 'Aplicar Veneno',         nameEn: 'Apply Poison',        color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (SKIP)',      note: '⚠️ SKIP (couga54). Poison < 1% de tu daño, no vale SP.', keep1: true },
+  ambushstance: { name: 'Postura de Emboscada',   nameEn: 'Ambush Stance',       color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Points only)', note: 'Maxed by SP solamente — no vale una línea de gear. Rk 10 via SP si sobran puntos.', keep1: true },
+  defbreak:     { name: 'Ruptura de Defensa',     nameEn: 'Defense Break',       color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (SKIP)',      note: '⚠️ SKIP (couga54). Es pasiva PvP, no gastar SP ni gear en PvE.', keep1: true },
+  determination:{ name: 'Determinación',          nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Prio 3 Core)', note: 'Daño extra target low-HP. aLuckyRO: "every boss ends there". Priority 3 PvE.', keep1: false },
+  revitalization:{ name: 'Contrato Revitalizador',nameEn: 'Revitalization Contract', color: '#64748b', unlock: 30, cap: 10, type: 'Pasiva (Spare only)', note: 'Solo con puntos sobrantes (couga54). No priorizar.', keep1: true },
+  sixthsense:   { name: 'Sexto Sentido Agudizado',nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (Points only)', note: 'Maxed by SP — no vale gear line.', keep1: true },
 
   // Stigmas (4 slots)
   s_clone:      { name: 'Clon Ilusorio',          nameEn: 'Illusive Clone',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Slot 1',      note: 'Heart Gore CD=0 por 20s. Rushear a Rk 10.', keep1: false },
