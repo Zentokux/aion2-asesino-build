@@ -17,16 +17,16 @@ const SKILLS = {
   quick:        { name: 'Tajo Rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa (DPS Core)',  note: 'LMB spam + MP + reduce CD IE', keep1: false },
   insignia:     { name: 'Explosión de Insignia',  nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa (DPS Core)',  note: '~25% del daño endgame', keep1: false },
   // Activas secundarias
-  savage:       { name: 'Rugido Salvaje',         nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (AoE)',       note: 'Genera Insignias. Rk 12 = −1s Shadowstrike CD on hit (breakpoint).', keep1: false },
-  // Activas que SE DEJAN EN RK 1 (confirmado "damage loss" por meta)
-  shadow:       { name: 'Golpe de Sombra',        nameEn: 'Shadowstrike',        color: '#06b6d4', unlock: 1,  cap: 10, type: 'Activa (Opener)',    note: 'Opener + stun. Déjalo Rk 1-3, no vale la pena subir.', keep1: true },
-  ambush:       { name: 'Emboscada',              nameEn: 'Ambush',              color: '#06b6d4', unlock: 3,  cap: 10, type: 'Activa (Combo)',     note: '+30% daño trasero. Déjalo Rk 1 (damage loss según corpus.gg).', keep1: true },
-  flash:        { name: 'Tajo Relámpago',         nameEn: 'Flash Slice',         color: '#06b6d4', unlock: 8,  cap: 10, type: 'Activa (Movilidad)', note: 'Reposición + blind. Déjalo Rk 1.', keep1: true },
-  infiltrate:   { name: 'Infiltración',           nameEn: 'Infiltrate',          color: '#06b6d4', unlock: 10, cap: 10, type: 'Activa (Defensiva)', note: 'Panic esquiva. Déjalo Rk 1.', keep1: true },
-  shadowfall:   { name: 'Caída de Sombra',        nameEn: 'Shadow Fall',         color: '#475569', unlock: 12, cap: 10, type: 'Activa (CC)',        note: 'Knockdown. Déjalo Rk 1.', keep1: true },
-  storm:        { name: 'Furia Tormentosa',       nameEn: 'Storm Rampage',       color: '#f59e0b', unlock: 5,  cap: 10, type: 'Activa (AoE)',       note: 'Daño staggered. Déjalo Rk 1.', keep1: true },
-  whirl:        { name: 'Tajo Torbellino',        nameEn: 'Whirlwind Slice',     color: '#f59e0b', unlock: 7,  cap: 10, type: 'Activa (AoE)',       note: 'AoE packs. Déjalo Rk 1.', keep1: true },
-  defiance:     { name: 'Desafío',                nameEn: 'Defiance',            color: '#22c55e', unlock: 16, cap: 10, type: 'Activa (Panic)',     note: 'CC break + heal 20%. Déjalo Rk 1, úsalo como botón de pánico.', keep1: true },
+  savage:       { name: 'Rugido Salvaje',         nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Genera Insignias. couga54: Rk 12 breakpoint (−1s Shadowstrike CD on hit). Por SP cap Rk 10, resto vía Daevanion.', keep1: false },
+  // Activas secundarias (SP cap Rk 10, pero couga54 recomienda Rk 12-16 vía Daevanion/Arcana/gear)
+  shadow:       { name: 'Golpe de Sombra',        nameEn: 'Shadowstrike',        color: '#06b6d4', unlock: 1,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Opener + stun. couga54 objetivo: Rk 12 vía Daevanion (+20% Crit Damage 10s). Por SP déjalo Rk 1.', keep1: true },
+  ambush:       { name: 'Emboscada',              nameEn: 'Ambush',              color: '#06b6d4', unlock: 3,  cap: 10, type: 'Activa (Rk 16 Daevanion)', note: 'Combo trasero. couga54 objetivo: Rk 16 vía Daevanion (+2 consecutive uses). Por SP déjalo Rk 1.', keep1: true },
+  flash:        { name: 'Tajo Relámpago',         nameEn: 'Flash Slice',         color: '#06b6d4', unlock: 8,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Reposición + blind. couga54 objetivo: Rk 12 vía Daevanion (+1 consecutive use). Por SP déjalo Rk 1.', keep1: true },
+  infiltrate:   { name: 'Infiltración',           nameEn: 'Infiltrate',          color: '#06b6d4', unlock: 10, cap: 10, type: 'Activa (Rk 12 máx)',      note: 'Panic esquiva. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
+  shadowfall:   { name: 'Caída de Sombra',        nameEn: 'Shadow Fall',         color: '#475569', unlock: 12, cap: 10, type: 'Activa (Rk 12 máx)',      note: 'Knockdown. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
+  storm:        { name: 'Furia Tormentosa',       nameEn: 'Storm Rampage',       color: '#f59e0b', unlock: 5,  cap: 10, type: 'Activa (Rk 16 Daevanion)', note: 'AoE staggered. couga54 objetivo: Rk 16 vía Daevanion (−1s all skill CDs on hit). Por SP déjalo Rk 1.', keep1: true },
+  whirl:        { name: 'Tajo Torbellino',        nameEn: 'Whirlwind Slice',     color: '#f59e0b', unlock: 7,  cap: 10, type: 'Activa (Rk 12 máx)',      note: 'AoE packs. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
+  defiance:     { name: 'Desafío',                nameEn: 'Defiance',            color: '#22c55e', unlock: 16, cap: 10, type: 'Activa (Rk 12-16 Daevanion)', note: 'CC break + heal. couga54 Rk 12 unlock, Rk 16 swap heal por dmg tolerance. Por SP déjalo Rk 1, úsalo panic.', keep1: true },
 
   // Pasivas CORE PvE (subir a Rk 10)
   rear:         { name: 'Golpe Trasero',          nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
