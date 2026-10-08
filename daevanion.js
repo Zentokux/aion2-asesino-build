@@ -4,19 +4,25 @@
 
 const BOARD_SIZE = 15;
 
-// Patrón para generar nodos de fondo (stats common) que llenan la grilla
-// Se genera un nodo si cumple alguna de estas reglas (patrón radial + ortogonal)
+// Mapping skill key → icon file (localhost icons/)
+const SKILL_ICON_FILE = {
+  heart: 'heart_gore.webp', quick: 'quick_slice.webp', insignia: 'insignia_explosion.webp',
+  savage: 'savage_roar.webp', shadow: 'shadowstrike.webp', ambush: 'ambush.webp',
+  flash: 'flash_slice.webp', storm: 'storm_rampage.webp', whirl: 'whirlwind_slice.webp',
+  infiltrate: 'infiltrate.webp', shadowfall: 'shadow_fall.webp', defiance: 'defiance.webp',
+  rear: 'rear_smite.webp', exploit: 'exploit_weakness.webp', assault: 'assault_stance.webp',
+  impact: 'impact_hit.webp', poison: 'apply_poison.webp', sixthsense: 'sixth_sense.webp',
+  ambushstance: 'ambush_stance.webp', defbreak: 'defense_break.webp', determination: 'determination.webp',
+};
+
+// Pattern para generar stat nodes de fondo (densidad similar a couga54)
 function hasBackgroundNode(x, y) {
   const cx = 7, cy = 7;
   const dx = x - cx, dy = y - cy;
-  const manhattan = Math.abs(dx) + Math.abs(dy);
-  // Reglas: ejes verticales/horizontales principales + diagonales + anillos
-  if (x === cx || y === cy) return true;                     // cruz central
-  if (x === 0 || x === 14 || y === 0 || y === 14) return true; // bordes
-  if (Math.abs(dx) === Math.abs(dy)) return true;            // diagonales
-  if (manhattan === 4 && (x+y) % 2 === 0) return true;        // anillo
-  if (manhattan === 7 && (x+y) % 2 === 0) return true;        // anillo
-  if (manhattan === 10 && (x+y) % 2 === 0) return true;       // anillo
+  if (x === cx || y === cy) return true;
+  if (x === 0 || x === 14 || y === 0 || y === 14) return true;
+  if (Math.abs(dx) === Math.abs(dy)) return true;
+  if ((x + y) % 2 === 0 && Math.max(Math.abs(dx), Math.abs(dy)) <= 5) return true;
   return false;
 }
 
@@ -222,84 +228,125 @@ function typeLabel(type) {
 
 function buildBoard(board) {
   const SIZE = BOARD_SIZE;
-  const CELL = 36;
-  const PAD = 22;
+  const CELL = 42;
+  const PAD = 24;
   const total = SIZE * CELL + PAD * 2;
+  const ROUTE_STROKE = '#f4c430'; // amarillo cálido tipo couga54
 
   // Build map of path nodes by (x,y)
   const pathMap = {};
   board.path.forEach(n => { pathMap[`${n.x},${n.y}`] = n; });
 
+  // Corner positions (siempre pintar las 4 esquinas como rombos dorados aunque no estén en path)
+  const CORNERS = [[0,0],[14,0],[0,14],[14,14]];
+
   let svg = `<svg viewBox="0 0 ${total} ${total}" class="board-svg" preserveAspectRatio="xMidYMid meet">`;
   svg += `<defs>
-    <radialGradient id="glow-${board.id}" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="${board.color}" stop-opacity="0.4"/>
+    <radialGradient id="centerGlow-${board.id}" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="${board.color}" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="${board.color}" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f4c430" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f4c430" stop-opacity="0"/>
     </radialGradient>
   </defs>`;
   svg += `<rect x="0" y="0" width="${total}" height="${total}" fill="#0b0d12" rx="12"/>`;
 
-  // Background grid cells
-  for (let y = 0; y < SIZE; y++) {
-    for (let x = 0; x < SIZE; x++) {
-      const cx = PAD + x * CELL + CELL/2;
-      const cy = PAD + y * CELL + CELL/2;
-      const isCorner = (x === 0 || x === 14) && (y === 0 || y === 14);
-      const isCenter = (x === 7 && y === 7);
-      svg += `<rect x="${cx - CELL/2 + 2}" y="${cy - CELL/2 + 2}" width="${CELL - 4}" height="${CELL - 4}" fill="${isCenter ? '#1a1f2e' : '#141822'}" stroke="${isCorner ? '#ff4d6d' : '#1b2130'}" stroke-width="${isCorner ? 2 : 1}" rx="4"/>`;
-    }
+  // Center glow halo (sin cuadrículas visibles, estilo couga54)
+  const centerCx = PAD + 7 * CELL + CELL/2;
+  const centerCy = PAD + 7 * CELL + CELL/2;
+  svg += `<circle cx="${centerCx}" cy="${centerCy}" r="${CELL * 6}" fill="url(#centerGlow-${board.id})" opacity="0.4"/>`;
+
+  // Route path (línea amarilla gruesa continua siguiendo el path)
+  if (board.path.length > 1) {
+    let d = '';
+    board.path.forEach((n, i) => {
+      const px = PAD + n.x * CELL + CELL/2;
+      const py = PAD + n.y * CELL + CELL/2;
+      if (i === 0) {
+        d += `M ${px} ${py}`;
+      } else {
+        const prev = board.path[i-1];
+        const dx = Math.abs(prev.x - n.x);
+        const dy = Math.abs(prev.y - n.y);
+        if (dx + dy <= 2) d += ` L ${px} ${py}`;
+        else d += ` M ${px} ${py}`;
+      }
+    });
+    svg += `<path d="${d}" stroke="${ROUTE_STROKE}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>`;
   }
 
-  // Draw path connections first (lines)
-  for (let i = 1; i < board.path.length; i++) {
-    const prev = board.path[i-1];
-    const curr = board.path[i];
-    const dx = Math.abs(prev.x - curr.x);
-    const dy = Math.abs(prev.y - curr.y);
-    if (dx + dy <= 2) {
-      const x1 = PAD + prev.x * CELL + CELL/2;
-      const y1 = PAD + prev.y * CELL + CELL/2;
-      const x2 = PAD + curr.x * CELL + CELL/2;
-      const y2 = PAD + curr.y * CELL + CELL/2;
-      svg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${board.color}" stroke-width="3" stroke-opacity="0.6" stroke-linecap="round"/>`;
-    }
-  }
-
-  // Draw background stat nodes (small, dim) where not in path
+  // Background stat nodes (pequeños círculos grises) donde no haya path node ni esquina
   let bgCount = 0;
   for (let y = 0; y < SIZE; y++) {
     for (let x = 0; x < SIZE; x++) {
       const key = `${x},${y}`;
       if (pathMap[key]) continue;
+      if (CORNERS.some(c => c[0] === x && c[1] === y)) continue;
       if (!hasBackgroundNode(x, y)) continue;
       bgCount++;
       const cx = PAD + x * CELL + CELL/2;
       const cy = PAD + y * CELL + CELL/2;
-      svg += `<g class="node-group bg-node" data-board="${board.id}" data-order="bg_${x}_${y}" data-label="Stat secundario (${board.cornerType === 'PvP' ? '+PvP stat' : '+Attack / +Crit Hit / +HP'})" data-type="bg" data-cost="1" style="cursor:pointer">`;
-      svg += `<circle cx="${cx}" cy="${cy}" r="6" fill="#2a3245" stroke="#3e4a60" stroke-width="1"/>`;
+      svg += `<g class="node-group bg-node" data-board="${board.id}" data-order="bg_${x}_${y}" data-label="Stat secundario" data-type="bg" data-cost="1" style="cursor:pointer">`;
+      svg += `<circle cx="${cx}" cy="${cy}" r="7" fill="#2a3245" stroke="#4b5569" stroke-width="1.5"/>`;
       svg += `</g>`;
     }
   }
 
-  // Draw path nodes on top
-  board.path.forEach(node => {
-    const cx = PAD + node.x * CELL + CELL/2;
-    const cy = PAD + node.y * CELL + CELL/2;
-    const color = nodeColor(node.type);
-    const r = node.type === 'unique' ? 14 : node.type === 'center' ? 13 : (node.type === 'epic' || node.type === 'active') ? 12 : (node.type === 'rare' || node.type === 'passive') ? 11 : 9;
-
-    svg += `<g class="node-group path-node" data-board="${board.id}" data-order="${node.order}" data-label="${node.label.replace(/"/g, '&quot;')}" data-type="${node.type}" data-cost="${node.cost || 0}" style="cursor:pointer">`;
-    svg += `<circle cx="${cx}" cy="${cy}" r="${r + 5}" fill="url(#glow-${board.id})"/>`;
-    svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${color}" stroke="#fff" stroke-width="2"/>`;
-    svg += `<text x="${cx}" y="${cy + 4}" text-anchor="middle" fill="#fff" font-size="11" font-weight="800" style="pointer-events:none;user-select:none">${node.order}</text>`;
+  // 4 esquinas rombo doradas SIEMPRE visibles
+  CORNERS.forEach(([x, y]) => {
+    const key = `${x},${y}`;
+    const pathNode = pathMap[key];
+    const cx = PAD + x * CELL + CELL/2;
+    const cy = PAD + y * CELL + CELL/2;
+    const size = 22;
+    const order = pathNode ? pathNode.order : '•';
+    const label = pathNode ? pathNode.label : `Esquina unique (4 DP)`;
+    const dataOrder = pathNode ? pathNode.order : `corner_${x}_${y}`;
+    svg += `<g class="node-group corner-node" data-board="${board.id}" data-order="${dataOrder}" data-label="${label.replace(/"/g, '&quot;')}" data-type="unique" data-cost="4" style="cursor:pointer">`;
+    svg += `<circle cx="${cx}" cy="${cy}" r="${size + 6}" fill="url(#goldGlow)"/>`;
+    // Rombo (rect rotado 45°)
+    svg += `<rect x="${cx - size}" y="${cy - size}" width="${size * 2}" height="${size * 2}" fill="#f4c430" stroke="#fff8dc" stroke-width="2" transform="rotate(45 ${cx} ${cy})" rx="3"/>`;
+    svg += `<text x="${cx}" y="${cy + 5}" text-anchor="middle" fill="#2b1810" font-size="13" font-weight="900" style="pointer-events:none;user-select:none">${order}</text>`;
     svg += `</g>`;
   });
 
-  // Store counts for stats
+  // Nodo central dorado grande (gratis)
+  svg += `<g class="node-group center-node" data-board="${board.id}" data-order="0" data-label="Centro (gratis)" data-type="center" data-cost="0" style="cursor:default">`;
+  svg += `<circle cx="${centerCx}" cy="${centerCy}" r="22" fill="#f4c430" stroke="#fff8dc" stroke-width="2" opacity="0.95"/>`;
+  svg += `<circle cx="${centerCx}" cy="${centerCy}" r="12" fill="#fff8dc"/>`;
+  svg += `</g>`;
+
+  // Path nodes (NO center, NO corners — ya pintados)
+  board.path.forEach(node => {
+    if (node.type === 'center') return;
+    if (node.type === 'unique') return; // ya pintado como corner
+    const cx = PAD + node.x * CELL + CELL/2;
+    const cy = PAD + node.y * CELL + CELL/2;
+    const isSkill = (node.type === 'epic' || node.type === 'active' || node.type === 'rare' || node.type === 'passive') && node.skill;
+    const iconFile = isSkill ? SKILL_ICON_FILE[node.skill] : null;
+
+    svg += `<g class="node-group path-node" data-board="${board.id}" data-order="${node.order}" data-label="${node.label.replace(/"/g, '&quot;')}" data-type="${node.type}" data-cost="${node.cost || 0}" style="cursor:pointer">`;
+
+    if (iconFile) {
+      // Nodo de skill: imagen + marco cuadrado
+      const sz = 32;
+      const frameColor = (node.type === 'epic' || node.type === 'active') ? '#a855f7' : '#4ea8de';
+      svg += `<rect x="${cx - sz/2 - 3}" y="${cy - sz/2 - 3}" width="${sz + 6}" height="${sz + 6}" fill="#0b0d12" stroke="${frameColor}" stroke-width="2.5" rx="5"/>`;
+      svg += `<image href="icons/${iconFile}" x="${cx - sz/2}" y="${cy - sz/2}" width="${sz}" height="${sz}" style="pointer-events:none"/>`;
+    } else {
+      // Nodo stat: círculo pequeño con número
+      svg += `<circle cx="${cx}" cy="${cy}" r="10" fill="#f8fafc" stroke="#f4c430" stroke-width="2"/>`;
+      svg += `<text x="${cx}" y="${cy + 4}" text-anchor="middle" fill="#1a1f2e" font-size="10" font-weight="800" style="pointer-events:none;user-select:none">${node.order}</text>`;
+    }
+    svg += `</g>`;
+  });
+
+  // Counts
   const skillNodes = board.path.filter(n => n.type === 'epic' || n.type === 'rare').length;
-  const uniqueNodes = board.path.filter(n => n.type === 'unique').length;
-  const totalRendered = board.path.length + bgCount;
-  board._rendered = { bg: bgCount, skills: skillNodes, uniques: uniqueNodes, total: totalRendered };
+  const totalRendered = board.path.length + bgCount + 4; // + 4 esquinas
+  board._rendered = { bg: bgCount, skills: skillNodes, uniques: 4, total: totalRendered };
 
   svg += '</svg>';
   return svg;
@@ -347,12 +394,12 @@ function buildAllBoards() {
       </div>
       <div class="board-grid-wrap">${svgHtml}</div>
       <div class="board-legend">
-        <span><span class="dot" style="background:#d4af37"></span>Centro (gratis)</span>
-        <span><span class="dot" style="background:#5a6478"></span>Stat principal (1 DP)</span>
-        <span><span class="dot" style="background:#2a3245;width:8px;height:8px"></span>Stat secundario (fondo)</span>
+        <span><span class="dot" style="background:#f4c430"></span>Centro / Esquina Unique (gratis / 4 DP)</span>
+        <span><span class="dot" style="background:#f8fafc;border:1px solid #f4c430"></span>Stat principal (1 DP)</span>
+        <span><span class="dot" style="background:#2a3245"></span>Stat secundario (fondo)</span>
         <span><span class="dot" style="background:#4ea8de"></span>Pasiva +1 (2 DP)</span>
-        <span><span class="dot" style="background:#a855f7"></span>Activa +1 (3 DP)</span>
-        <span><span class="dot" style="background:#ff4d6d"></span>Unique esquina (4 DP)</span>
+        <span><span class="dot" style="background:#a855f7"></span>Skill +1 nivel (3 DP) — con icono</span>
+        <span><span style="display:inline-block;width:20px;height:4px;background:#f4c430;vertical-align:middle"></span>Route (camino recomendado)</span>
       </div>
       <div class="callout info"><strong>Camino recomendado PvE:</strong> ${b.tip}</div>
       <div class="board-nodes-list" id="list-${b.id}">
