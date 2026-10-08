@@ -32,6 +32,7 @@ const ICON_FILES = {
   sixthsense: 'sixth_sense.webp',
   ambushstance: 'ambush_stance.webp',
   defbreak: 'defense_break.webp',
+  determination: 'determination.webp',
 
   // Stigmas
   s_clone: 'illusive_clone.webp',
@@ -48,7 +49,7 @@ const FALLBACK_GLYPHS = {
   shadow: '🗡', flash: '⚡', infiltrate: '👤', shadowfall: '🌑',
   defiance: '🛡',
   rear: '🎯', exploit: '🔍', assault: '⚔', impact: '💢',
-  poison: '☠', sixthsense: '👁', ambushstance: '🥷', defbreak: '🛡',
+  poison: '☠', sixthsense: '👁', ambushstance: '🥷', defbreak: '🛡', determination: '💪',
   s_clone: '👥', s_swift: '📜', s_triniel: '🗡', s_fang: '🦷', s_shadowblade: '🏹',
 };
 
