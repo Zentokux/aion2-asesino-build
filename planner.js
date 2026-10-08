@@ -32,12 +32,13 @@ const SKILLS = {
   rear:         { name: 'Rear Smite',             color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
   exploit:      { name: 'Exploit Weakness',       color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva (Core)',      note: '+Crit Chance', keep1: false },
   assault:      { name: 'Assault Stance',         color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva (Core)',      note: '+Crit Damage', keep1: false },
-  impact:       { name: 'Impact Hit',             color: '#d4af37', unlock: 20, cap: 10, type: 'Pasiva (Core)',      note: 'Buff multi-hit (sinergia Heart Gore)', keep1: false },
+  impact:       { name: 'Impact Hit',             color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (PvP)',       note: 'Solo 3.3% proc extra a Rk 10 — es pasiva PvP, baja prioridad PvE. Déjalo Rk 1.', keep1: true },
 
   // Pasivas automáticas (no requieren SP para activar efecto base)
   poison:       { name: 'Apply Poison',           color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (Auto)',      note: '15% veneno + −12% healing en objetivo. Auto-activada, no gastes SP temprano.', keep1: true },
   ambushstance: { name: 'Ambush Stance',          color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Aux)',       note: 'Buff post-movimiento. Opcional, baja prioridad.', keep1: true },
-  defbreak:     { name: 'Defense Break',          color: '#ca8a04', unlock: 21, cap: 10, type: 'Pasiva (Aux)',       note: '−12% def a enemigos staggered. Opcional.', keep1: true },
+  defbreak:     { name: 'Defense Break',          color: '#d4af37', unlock: 21, cap: 10, type: 'Pasiva (Core)',      note: '−12% def a enemigos staggered. Pasiva Core PvE según meta.', keep1: false },
+  determination:{ name: 'Determination',          color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Core)',      note: 'Bono de resiliencia. Pasiva Core PvE.', keep1: false },
   sixthsense:   { name: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1,  cap: 10, type: 'Pasiva (Base)',      note: '+Evasión base. Déjalo Rk 1.', keep1: true },
 
   // Stigmas (4 slots)
@@ -108,11 +109,11 @@ const PLAN = {
   38: { actions: [{ s: 's_fang', to: 7 }, { s: 'assault', to: 7 }, { s: 'assault', to: 8 }], note: 'Assault Stance Rk 8 Specialty' },
   39: { actions: [{ s: 's_fang', to: 9 }, { s: 'assault', to: 9 }] },
   40: { special: '⭐ TRINIEL BOARD DESBLOQUEADO (Lv 40) — camino Multi-Hit Chance', actions: [{ s: 's_fang', to: 10 }, { s: 'assault', to: 10 }], note: 'Assault Stance + Savage Fang a Rk 10' },
-  41: { actions: [{ s: 'savage', to: 9 }, { s: 'savage', to: 10 }], note: 'Savage Roar Rk 10 MAX' },
-  42: { actions: [{ s: 'impact', to: 3 }, { s: 'impact', to: 4 }] },
-  43: { actions: [{ s: 'impact', to: 5 }, { s: 'impact', to: 6 }, { s: 'impact', to: 7 }] },
-  44: { actions: [{ s: 'impact', to: 8 }, { s: 'impact', to: 9 }], note: 'Impact Hit Rk 8 Specialty' },
-  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'impact', to: 10 }, { s: 'shadow', to: 3 }], note: 'Impact Hit Rk 10 MAX. SP sobrante → Shadowstrike' },
+  41: { actions: [{ s: 'defbreak', to: 5 }, { s: 'savage', to: 6 }], note: 'META FIX: Defense Break es Core PvE (−12% def). Savage Roar NO vale Rk 10 — déjalo Rk 6 (filler).' },
+  42: { actions: [{ s: 'defbreak', to: 6 }, { s: 'defbreak', to: 7 }, { s: 'defbreak', to: 8 }], note: 'Defense Break Rk 8 Specialty' },
+  43: { actions: [{ s: 'defbreak', to: 9 }, { s: 'defbreak', to: 10 }], note: 'Defense Break Rk 10 MAX' },
+  44: { actions: [{ s: 'determination', to: 5 }, { s: 'determination', to: 6 }], note: 'Determination sube como última pasiva core. Impact Hit queda en Rk 1 (es PvP, no PvE).' },
+  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'determination', to: 7 }, { s: 'determination', to: 8 }], note: 'Determination Rk 8 Specialty. Impact Hit queda Rk 1 (correctamente, es PvP).' },
 };
 
 // Build cumulative state for each level
