@@ -1139,8 +1139,9 @@ code {
       <tr><td>11</td><td>Rear Smite</td><td>+3% daño trasero, +3% daño PvE</td></tr>
       <tr><td>13</td><td>Assault Stance</td><td>+Crit Damage</td></tr>
       <tr><td>17</td><td>Ambush Stance</td><td>Buff tras moverse (reposicionar)</td></tr>
-      <tr><td>21</td><td>Defense Break</td><td>−12% defensa a enemigos staggered</td></tr>
-      <tr><td>25</td><td>Determination</td><td>Bonos de resiliencia varios</td></tr>
+      <tr><td>20</td><td>Impact Hit <span class="tier b">⚠️ Rk 1</span></td><td><strong>DÉJALA Rk 1 en PvE.</strong> Solo 3.3% proc extra a Rk 10 = SP desperdiciado (couga54). Es pasiva PvP.</td></tr>
+      <tr><td>21</td><td>Defense Break <span class="tier b">Opcional</span></td><td>−12% def a staggered. Controvertido: couga54 la descarta como PvP skip, metabot/fextralife/aion2.run la ven utility. <strong>Déjala Rk 1 por defecto.</strong></td></tr>
+      <tr><td>25</td><td>Determination <span class="tier s">⭐ Core</span></td><td>Bono fuerte sub-30% HP (couga54 priority 3: "every boss ends there"). Subir a Rk 10.</td></tr>
     </tbody>
   </table>
 
@@ -1722,6 +1723,7 @@ LMB manual: Quick Slice spam constante</div>
       <tr><td><strong>Daga off-hand</strong></td><td>Krao Cave / Draupnir (Unique)</td><td>Crit Hit, Attack</td><td class="tier s">#2</td></tr>
       <tr><td><strong>Pecho (chest)</strong></td><td>Krao Cave / Draupnir</td><td>HP, Attack, Crit Hit</td><td class="tier a">#3</td></tr>
       <tr><td><strong>Pantalones</strong></td><td>Krao Cave / Draupnir</td><td>HP, Crit Hit, Attack Speed</td><td class="tier a">#4</td></tr>
+      <tr><td><strong>Cinturón</strong></td><td>Krao Cave / Draupnir</td><td>HP, Attack, Crit Hit</td><td class="tier a">#4.5</td></tr>
       <tr><td><strong>Casco</strong></td><td>Draupnir boss drops</td><td>Crit Hit, Attack</td><td class="tier a">#5</td></tr>
       <tr><td><strong>Guantes</strong></td><td>Draupnir</td><td>Attack Speed, Crit Hit, Accuracy</td><td class="tier a">#6</td></tr>
       <tr><td><strong>Botas</strong></td><td>Draupnir</td><td>HP, Attack Speed, MR</td><td class="tier b">#7</td></tr>
@@ -1897,18 +1899,31 @@ LMB manual: Quick Slice spam constante</div>
   <h2>Macros Esenciales</h2>
   <p>El Asesino en Aion 2 depende fuertemente de macros con <code>/queue</code> para encadenar skills a 10ms sin perder frames de daño.</p>
 
-  <h3>Macro de buffs (opener)</h3>
-  <div class="macro-box">/skill Illusive Clone
-/queue Swift Contract
+  <h3>Macro de buffs (opener pre-pull)</h3>
+  <div class="macro-box">/skill Swift Contract
+/queue Illusive Clone
 /queue Savage Fang
 /queue Triniel's Dagger</div>
+  <p><em>Nota: Triniel's Dagger se queuea aquí pero DEBE ejecutarse DESPUÉS de Shadowstrike (manual). Si lo tiras pre-pull sin estar en melee, pierdes el back-hit.</em></p>
 
-  <h3>Macro de daño (línea sostenida)</h3>
-  <div class="macro-box">/skill Savage Fang
-/queue Insignia Explosion
+  <h3>Macro de daño principal (hold + queue 10ms)</h3>
+  <div class="macro-box">/skill Insignia Explosion
 /queue Heart Gore
 /queue Savage Roar
 /queue Ambush</div>
+  <p><strong>Prioridad del queue</strong> (confirmada corpus.gg + couga54): Insignia Explosion (1) → Heart Gore (2) → Savage Roar (3) → Ambush (4). El sistema ejecuta la de mayor prioridad disponible.</p>
+
+  <h3>Animation-cancel con Quick Slice</h3>
+  <div class="macro-box">LMB manual CONSTANTE = Quick Slice (Corte Rápido)
+Entre CADA input de la macro de daño,
+clickea LMB al menos 1-2 veces para
+cancelar la animación y generar crits
+(que resetean Heart Gore).</div>
+  <p><strong>Regla de oro:</strong> si no estás clickeando LMB, estás perdiendo DPS. Quick Slice weave es manual, no se puede automatizar.</p>
+
+  <h3>Macro de panic (defensiva)</h3>
+  <div class="macro-box">/skill Defiance
+/queue Infiltrate</div>
 
   <h3>Esquema de teclas recomendado</h3>
   <table>
@@ -1989,7 +2004,7 @@ LMB manual: Quick Slice spam constante</div>
     <li><a href="https://2upskill.com/aion-2-assassin-build-guide-2026-best-pvp-and-pve-skills-combos-and-meta-strategies/" target="_blank" rel="noopener">2UpSkill — Assassin Build 2026</a></li>
     <li><a href="https://aion2.gaming.tools/builds/assassin/leveling" target="_blank" rel="noopener">Gaming.tools — Assassin Leveling</a></li>
     <li><a href="https://wikily.gg/aion-2/genus-insight" target="_blank" rel="noopener">Wikily — Genus Insight</a></li>
-    <li><a href="https://game8.co/games/Aion-2/archives/624704" target="_blank" rel="noopener">Game8 — Pet List</a></li>
+    <li><a href="https://aion2.wiki.fextralife.com/Pets" target="_blank" rel="noopener">Fextralife Wiki — Pets</a></li>
     <li><a href="https://corpus.gg/blog/aion-2/assassin-pve-build" target="_blank" rel="noopener">Corpus — Assassin PvE Build</a></li>
     <li><a href="https://aion2hub.com/updates/aion-2-global-update-2026-10-05" target="_blank" rel="noopener">Aion2Hub — Patch 5-oct-2026</a></li>
   </ul>

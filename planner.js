@@ -94,8 +94,8 @@ const PLAN = {
   22: { special: '⭐ ASCENSIÓN! Slot stigma 1 → equipa Illusive Clone', actions: [{ s: 's_clone', to: 5 }] },
   23: { actions: [{ s: 'insignia', to: 9 }, { s: 'assault', to: 2 }] },
   24: { actions: [{ s: 'insignia', to: 10 }, { s: 'assault', to: 3 }], note: 'IE Rk 10 MAX por SP' },
-  25: { actions: [{ s: 's_clone', to: 7 }, { s: 'assault', to: 4 }] },
-  26: { actions: [{ s: 's_clone', to: 9 }, { s: 'assault', to: 5 }] },
+  25: { special: '🔓 Determination (passive) desbloqueada', actions: [{ s: 's_clone', to: 7 }, { s: 'determination', to: 2 }], note: 'Determination entra desde ahora (couga54 priority 3, boss endings low HP).' },
+  26: { actions: [{ s: 's_clone', to: 9 }, { s: 'determination', to: 3 }], note: 'Illusive Clone hacia Rk 10 + Determination avanza.' },
   27: { special: '⭐ Slot stigma 2 → equipa Swift Contract', actions: [{ s: 's_clone', to: 10 }, { s: 's_swift', to: 3 }] },
   28: { actions: [{ s: 's_swift', to: 5 }, { s: 'savage', to: 4 }, { s: 'savage', to: 5 }] },
   29: { actions: [{ s: 'savage', to: 6 }, { s: 'savage', to: 7 }, { s: 's_swift', to: 6 }] },
@@ -110,11 +110,11 @@ const PLAN = {
   38: { actions: [{ s: 's_fang', to: 7 }, { s: 'assault', to: 7 }, { s: 'assault', to: 8 }], note: 'Assault Stance Rk 8 Specialty' },
   39: { actions: [{ s: 's_fang', to: 9 }, { s: 'assault', to: 9 }] },
   40: { special: '⭐ TRINIEL BOARD DESBLOQUEADO (Lv 40) — camino Multi-Hit Chance', actions: [{ s: 's_fang', to: 10 }, { s: 'assault', to: 10 }], note: 'Assault Stance + Savage Fang a Rk 10' },
-  41: { actions: [{ s: 'savage', to: 6 }, { s: 'determination', to: 3 }, { s: 'determination', to: 4 }], note: 'FIX cross-check: Savage Roar sigue filler. Determination entra como pasiva core (couga54: "every boss ends there").' },
-  42: { actions: [{ s: 'determination', to: 5 }, { s: 'determination', to: 6 }, { s: 'determination', to: 7 }], note: 'Determination sube rápido — más valor que Defense Break (controvertido).' },
-  43: { actions: [{ s: 'determination', to: 8 }, { s: 'savage', to: 7 }], note: 'Determination Rk 8 Specialty. Savage Roar Rk 7 (hacia breakpoint 12).' },
-  44: { actions: [{ s: 'savage', to: 8 }, { s: 'savage', to: 9 }, { s: 'savage', to: 10 }], note: 'Savage Roar camino a Rk 12 (breakpoint real: −1s Shadowstrike CD on hit).' },
-  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'determination', to: 9 }, { s: 'determination', to: 10 }], note: 'Determination Rk 10. Savage Roar Rk 10 por SP (Rk 11-12 vía Daevanion). Impact Hit y Defense Break quedan Rk 1.' },
+  41: { actions: [{ s: 'determination', to: 6 }, { s: 'determination', to: 7 }, { s: 'exploit', to: 7 }], note: 'Determination avanza. Savage Roar ya en Rk 8 (desde Lv 30), suficiente — breakpoint Rk 12 vía Daevanion.' },
+  42: { actions: [{ s: 'determination', to: 8 }, { s: 'exploit', to: 8 }], note: 'Determination Rk 8 Specialty + Exploit Weakness Rk 8 Specialty.' },
+  43: { actions: [{ s: 'determination', to: 9 }, { s: 'exploit', to: 9 }, { s: 'exploit', to: 10 }], note: 'Exploit Weakness Rk 10 MAX.' },
+  44: { actions: [{ s: 'determination', to: 10 }, { s: 'rear', to: 10 }], note: 'Determination y Rear Smite Rk 10 MAX. Pasivas core completas.' },
+  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'assault', to: 9 }, { s: 'assault', to: 10 }], note: 'Assault Stance Rk 10 MAX. Impact Hit, Defense Break y Savage Roar quedan Rk 1-8 (correctamente, llegan a 12 vía Daevanion).' },
 };
 
 // Build cumulative state for each level
