@@ -13,40 +13,40 @@ const SP_PER_LEVEL = {
 
 const SKILLS = {
   // Activas DPS Core (prioridad #1)
-  heart:        { name: 'Heart Gore',             color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa (DPS Core)',  note: '~30% del daño endgame. Resetea CD en crit.', keep1: false },
-  quick:        { name: 'Quick Slice',            color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa (DPS Core)',  note: 'LMB spam + MP + reduce CD IE', keep1: false },
-  insignia:     { name: 'Insignia Explosion',     color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa (DPS Core)',  note: '~25% del daño endgame', keep1: false },
+  heart:        { name: 'Desgarro de Corazón',    nameEn: 'Heart Gore',          color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa (DPS Core)',  note: '~30% del daño endgame. Resetea CD en crit.', keep1: false },
+  quick:        { name: 'Tajo Rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa (DPS Core)',  note: 'LMB spam + MP + reduce CD IE', keep1: false },
+  insignia:     { name: 'Explosión de Insignia',  nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa (DPS Core)',  note: '~25% del daño endgame', keep1: false },
   // Activas secundarias
-  savage:       { name: 'Savage Roar',            color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (AoE)',       note: 'Genera Insignias', keep1: false },
+  savage:       { name: 'Rugido Salvaje',         nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (AoE)',       note: 'Genera Insignias. Rk 12 = −1s Shadowstrike CD on hit (breakpoint).', keep1: false },
   // Activas que SE DEJAN EN RK 1 (confirmado "damage loss" por meta)
-  shadow:       { name: 'Shadowstrike',           color: '#06b6d4', unlock: 1,  cap: 10, type: 'Activa (Opener)',    note: 'Opener + stun. Déjalo Rk 1-3, no vale la pena subir.', keep1: true },
-  ambush:       { name: 'Ambush',                 color: '#06b6d4', unlock: 3,  cap: 10, type: 'Activa (Combo)',     note: '+30% daño trasero. Déjalo Rk 1 (damage loss según corpus.gg).', keep1: true },
-  flash:        { name: 'Flash Slice',            color: '#06b6d4', unlock: 8,  cap: 10, type: 'Activa (Movilidad)', note: 'Reposición + blind. Déjalo Rk 1.', keep1: true },
-  infiltrate:   { name: 'Infiltrarse',            color: '#06b6d4', unlock: 10, cap: 10, type: 'Activa (Defensiva)', note: 'Panic esquiva. Déjalo Rk 1.', keep1: true },
-  shadowfall:   { name: 'Shadow Fall',            color: '#475569', unlock: 12, cap: 10, type: 'Activa (CC)',        note: 'Knockdown. Déjalo Rk 1.', keep1: true },
-  storm:        { name: 'Storm Rampage',          color: '#f59e0b', unlock: 5,  cap: 10, type: 'Activa (AoE)',       note: 'Daño staggered. Déjalo Rk 1.', keep1: true },
-  whirl:        { name: 'Whirlwind Slice',        color: '#f59e0b', unlock: 7,  cap: 10, type: 'Activa (AoE)',       note: 'AoE packs. Déjalo Rk 1.', keep1: true },
-  defiance:     { name: 'Defiance (Desafío)',     color: '#22c55e', unlock: 16, cap: 10, type: 'Activa (Panic)',     note: 'CC break + heal 20%. Déjalo Rk 1, úsalo como botón de pánico.', keep1: true },
+  shadow:       { name: 'Golpe de Sombra',        nameEn: 'Shadowstrike',        color: '#06b6d4', unlock: 1,  cap: 10, type: 'Activa (Opener)',    note: 'Opener + stun. Déjalo Rk 1-3, no vale la pena subir.', keep1: true },
+  ambush:       { name: 'Emboscada',              nameEn: 'Ambush',              color: '#06b6d4', unlock: 3,  cap: 10, type: 'Activa (Combo)',     note: '+30% daño trasero. Déjalo Rk 1 (damage loss según corpus.gg).', keep1: true },
+  flash:        { name: 'Tajo Relámpago',         nameEn: 'Flash Slice',         color: '#06b6d4', unlock: 8,  cap: 10, type: 'Activa (Movilidad)', note: 'Reposición + blind. Déjalo Rk 1.', keep1: true },
+  infiltrate:   { name: 'Infiltración',           nameEn: 'Infiltrate',          color: '#06b6d4', unlock: 10, cap: 10, type: 'Activa (Defensiva)', note: 'Panic esquiva. Déjalo Rk 1.', keep1: true },
+  shadowfall:   { name: 'Caída de Sombra',        nameEn: 'Shadow Fall',         color: '#475569', unlock: 12, cap: 10, type: 'Activa (CC)',        note: 'Knockdown. Déjalo Rk 1.', keep1: true },
+  storm:        { name: 'Furia Tormentosa',       nameEn: 'Storm Rampage',       color: '#f59e0b', unlock: 5,  cap: 10, type: 'Activa (AoE)',       note: 'Daño staggered. Déjalo Rk 1.', keep1: true },
+  whirl:        { name: 'Tajo Torbellino',        nameEn: 'Whirlwind Slice',     color: '#f59e0b', unlock: 7,  cap: 10, type: 'Activa (AoE)',       note: 'AoE packs. Déjalo Rk 1.', keep1: true },
+  defiance:     { name: 'Desafío',                nameEn: 'Defiance',            color: '#22c55e', unlock: 16, cap: 10, type: 'Activa (Panic)',     note: 'CC break + heal 20%. Déjalo Rk 1, úsalo como botón de pánico.', keep1: true },
 
   // Pasivas CORE PvE (subir a Rk 10)
-  rear:         { name: 'Rear Smite',             color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
-  exploit:      { name: 'Exploit Weakness',       color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva (Core)',      note: '+Crit Chance', keep1: false },
-  assault:      { name: 'Assault Stance',         color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva (Core)',      note: '+Crit Damage', keep1: false },
-  impact:       { name: 'Impact Hit',             color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (PvP)',       note: 'Solo 3.3% proc extra a Rk 10 — es pasiva PvP, baja prioridad PvE. Déjalo Rk 1.', keep1: true },
+  rear:         { name: 'Golpe Trasero',          nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
+  exploit:      { name: 'Explotar Debilidad',     nameEn: 'Exploit Weakness',    color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva (Core)',      note: '+Crit Chance', keep1: false },
+  assault:      { name: 'Postura de Asalto',      nameEn: 'Assault Stance',      color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva (Core)',      note: '+Crit Damage', keep1: false },
+  impact:       { name: 'Golpe de Impacto',       nameEn: 'Impact Hit',          color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (PvP)',       note: 'Solo 3.3% proc extra a Rk 10 — es pasiva PvP, baja prioridad PvE. Déjalo Rk 1.', keep1: true },
 
   // Pasivas automáticas (no requieren SP para activar efecto base)
-  poison:       { name: 'Apply Poison',           color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (Auto)',      note: '15% veneno + −12% healing en objetivo. Auto-activada, no gastes SP temprano.', keep1: true },
-  ambushstance: { name: 'Ambush Stance',          color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Aux)',       note: 'Buff post-movimiento. Opcional, baja prioridad.', keep1: true },
-  defbreak:     { name: 'Defense Break',          color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (Opcional)',  note: '−12% def a enemigos staggered. Opcional: couga54 la descarta, metabot/fextralife/aion2.run la consideran utility PvE. Déjalo Rk 1 por defecto.', keep1: true },
-  determination:{ name: 'Determination',          color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Core)',      note: 'Bono de resiliencia. Pasiva Core PvE.', keep1: false },
-  sixthsense:   { name: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1,  cap: 10, type: 'Pasiva (Base)',      note: '+Evasión base. Déjalo Rk 1.', keep1: true },
+  poison:       { name: 'Aplicar Veneno',         nameEn: 'Apply Poison',        color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (Auto)',      note: '15% veneno + −12% healing en objetivo. Auto-activada, no gastes SP temprano.', keep1: true },
+  ambushstance: { name: 'Postura de Emboscada',   nameEn: 'Ambush Stance',       color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Aux)',       note: 'Buff post-movimiento. Opcional, baja prioridad.', keep1: true },
+  defbreak:     { name: 'Ruptura de Defensa',     nameEn: 'Defense Break',       color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (Opcional)',  note: '−12% def a enemigos staggered. Opcional: couga54 la descarta, metabot/fextralife/aion2.run la consideran utility PvE. Déjalo Rk 1 por defecto.', keep1: true },
+  determination:{ name: 'Determinación',          nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Core)',      note: 'Bono de resiliencia. Pasiva Core PvE (couga54 priority 3).', keep1: false },
+  sixthsense:   { name: 'Sexto Sentido Agudizado',nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (Base)',    note: '+Evasión base. Déjalo Rk 1.', keep1: true },
 
   // Stigmas (4 slots)
-  s_clone:      { name: 'Illusive Clone',         color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Slot 1',      note: 'Heart Gore CD=0 por 20s. Rushear a Rk 10.', keep1: false },
-  s_swift:      { name: 'Swift Contract',         color: '#a855f7', unlock: 27, cap: 20, type: 'Stigma Slot 2',      note: '+Attack Speed. Mini-burst cada ~45s.', keep1: false },
-  s_triniel:    { name: "Triniel's Dagger",       color: '#a855f7', unlock: 32, cap: 20, type: 'Stigma Slot 3',      note: 'Reduce CDs 10%.', keep1: false },
-  s_fang:       { name: 'Savage Fang',            color: '#a855f7', unlock: 37, cap: 20, type: 'Stigma Slot 4',      note: 'Carga 5 Insignias instantáneas.', keep1: false },
-  s_shadowblade:{ name: 'Throw Shadowblade',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Savage Fang para FARMING/leveling. Rk 10 resetea al matar enemigo (couga54/corpus.gg/aion2.run). Para boss PvE puro, mantén Savage Fang.', keep1: true },
+  s_clone:      { name: 'Clon Ilusorio',          nameEn: 'Illusive Clone',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Slot 1',      note: 'Heart Gore CD=0 por 20s. Rushear a Rk 10.', keep1: false },
+  s_swift:      { name: 'Contrato Veloz',         nameEn: 'Swift Contract',      color: '#a855f7', unlock: 27, cap: 20, type: 'Stigma Slot 2',      note: '+Attack Speed. Mini-burst cada ~45s.', keep1: false },
+  s_triniel:    { name: 'Daga de Triniel',        nameEn: "Triniel's Dagger",    color: '#a855f7', unlock: 32, cap: 20, type: 'Stigma Slot 3',      note: 'Reduce CDs 10%.', keep1: false },
+  s_fang:       { name: 'Colmillo Salvaje',       nameEn: 'Savage Fang',         color: '#a855f7', unlock: 37, cap: 20, type: 'Stigma Slot 4',      note: 'Carga 5 Insignias instantáneas.', keep1: false },
+  s_shadowblade:{ name: 'Lanzar Hoja de Sombra',  nameEn: 'Throw Shadowblade',   color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Colmillo Salvaje para FARMING/leveling. Rk 10 resetea CD al matar enemigo (couga54/corpus.gg/aion2.run). Para boss PvE puro, mantén Colmillo Salvaje.', keep1: true },
 };
 
 // Costo para subir A ese rango (skill activa/pasiva). Rk 11+ no con SP.
@@ -256,7 +256,7 @@ function renderLevel(lv) {
         <span class="skill-mini">${renderIcon(id, 40)}</span>
         <div class="state-info">
           <div class="state-name">${sk.name}</div>
-          <div class="state-type">${sk.type}</div>
+          <div class="state-type">${sk.type}${sk.nameEn ? ' · <small style="color:var(--text-dim)">' + sk.nameEn + '</small>' : ''}</div>
         </div>
         <div class="state-rank">${unlocked ? 'Rk ' + rank + '/' + sk.cap : '🔒 Lv ' + sk.unlock}</div>
       </div>
