@@ -1,0 +1,516 @@
+[
+ {
+  "type": "heading",
+  "text": "Leveling progress"
+ },
+ {
+  "type": "heading",
+  "text": "Core skills"
+ },
+ {
+  "type": "heading",
+  "text": "Stigma loadout"
+ },
+ {
+  "type": "heading",
+  "text": "Key passives"
+ },
+ {
+  "type": "heading",
+  "text": "Core skills"
+ },
+ {
+  "type": "heading",
+  "text": "Stigma loadout"
+ },
+ {
+  "type": "heading",
+  "text": "Key passives"
+ },
+ {
+  "type": "heading",
+  "text": "Overview"
+ },
+ {
+  "type": "heading",
+  "text": "The build in one sentence"
+ },
+ {
+  "type": "heading",
+  "text": "Overview"
+ },
+ {
+  "type": "heading",
+  "text": "The build in one sentence"
+ },
+ {
+  "type": "heading",
+  "text": "Global Season 1: what changes"
+ },
+ {
+  "type": "heading",
+  "text": "Skills"
+ },
+ {
+  "type": "heading",
+  "text": "Skills"
+ },
+ {
+  "type": "heading",
+  "text": "Passives"
+ },
+ {
+  "type": "heading",
+  "text": "Gear & stats"
+ },
+ {
+  "type": "heading",
+  "text": "Genus Insight"
+ },
+ {
+  "type": "heading",
+  "text": "Gear & stats"
+ },
+ {
+  "type": "heading",
+  "text": "Arcana"
+ },
+ {
+  "type": "heading",
+  "text": "Daevanion boards"
+ },
+ {
+  "type": "heading",
+  "text": "The route on the boards"
+ },
+ {
+  "type": "heading",
+  "text": "Stigmas"
+ },
+ {
+  "type": "heading",
+  "text": "Stigmas"
+ },
+ {
+  "type": "heading",
+  "text": "Macro"
+ },
+ {
+  "type": "hotbar",
+  "cols": [
+   {
+    "key": "1",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     "debilitating-mark",
+     "lightning-strike-scattershot"
+    ]
+   },
+   {
+    "key": "2",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "3",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "radiant-recovery"
+    ]
+   },
+   {
+    "key": "4",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "bolt"
+    ]
+   },
+   {
+    "key": "5",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "light-of-protection"
+    ]
+   },
+   {
+    "key": "6",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "7",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "8",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "noble-aura"
+    ]
+   },
+   {
+    "key": "Q",
+    "macro": true,
+    "slots": [
+     "condemnation",
+     "chain-of-torment",
+     "earth-punishment",
+     "prayer-of-amplification"
+    ]
+   },
+   {
+    "key": "E",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     "healing-light",
+     "light-of-regeneration"
+    ]
+   },
+   {
+    "key": "LMB",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "earths-retribution"
+    ]
+   },
+   {
+    "key": "T",
+    "macro": true,
+    "slots": [
+     null,
+     null,
+     "judgment-thunder",
+     "divine-aura"
+    ]
+   }
+  ],
+  "gapsBefore": [
+   4,
+   8
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "1. Hotbar lines"
+ },
+ {
+  "type": "line",
+  "key": "Q",
+  "name": "Prayer line",
+  "skills_top_to_bottom": [
+   "condemnation",
+   "chain-of-torment",
+   "earth-punishment",
+   "prayer-of-amplification"
+  ],
+  "note": "Prayer whenever it is ready, then Earth Punishment and Chain of Torment, so every Condemnation crits and resets. Keep Light of Protection out of the line: it is a toggle, and every second press would switch it off."
+ },
+ {
+  "type": "line",
+  "key": "T",
+  "name": "Divine Aura line",
+  "skills_top_to_bottom": [
+   "judgment-thunder",
+   "divine-aura"
+  ],
+  "note": "The aura when it is ready, Judgment Thunder in between — after each Judgment Thunder Condemnation can crit and reset again."
+ },
+ {
+  "type": "line",
+  "key": "1",
+  "name": "Debuff line",
+  "skills_top_to_bottom": [
+   "debilitating-mark",
+   "lightning-strike-scattershot"
+  ],
+  "note": "Lightning Strike Scattershot on a staggered boss, otherwise Debilitating Mark — press it on cooldown."
+ },
+ {
+  "type": "line",
+  "key": "E",
+  "name": "Heal line",
+  "skills_top_to_bottom": [
+   "healing-light",
+   "light-of-regeneration"
+  ],
+  "note": "Light of Regeneration whenever it is ready, Healing Light (three charges) for the rest."
+ },
+ {
+  "type": "heading",
+  "text": "2. In-game macro"
+ },
+ {
+  "type": "macro",
+  "steps": [
+   "1Prayer linePrayer of Amplification",
+   "2Divine Aura lineDivine Aura"
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "3. Keys"
+ },
+ {
+  "type": "heading",
+  "text": "Another option: Whelps' macro (global)"
+ },
+ {
+  "type": "hotbar",
+  "cols": [
+   {
+    "key": "1",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "2",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "healing-light"
+    ]
+   },
+   {
+    "key": "3",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "radiant-recovery"
+    ]
+   },
+   {
+    "key": "4",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "bolt"
+    ]
+   },
+   {
+    "key": "Z",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "X",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "C",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "noble-aura"
+    ]
+   },
+   {
+    "key": "V",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "light-of-protection"
+    ]
+   },
+   {
+    "key": "Q",
+    "macro": true,
+    "slots": [
+     "judgment-thunder",
+     "light-of-regeneration",
+     "divine-aura",
+     "debilitating-mark"
+    ]
+   },
+   {
+    "key": "E",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "lightning-strike-scattershot"
+    ]
+   },
+   {
+    "key": "LMB",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "earths-retribution"
+    ]
+   },
+   {
+    "key": "—",
+    "macro": true,
+    "slots": [
+     "chain-of-torment",
+     "condemnation",
+     "prayer-of-amplification",
+     "earth-punishment"
+    ]
+   }
+  ],
+  "gapsBefore": [
+   4,
+   8
+  ]
+ },
+ {
+  "type": "line",
+  "key": "—",
+  "name": "Earth Punishment line",
+  "skills_top_to_bottom": [
+   "chain-of-torment",
+   "condemnation",
+   "prayer-of-amplification",
+   "earth-punishment"
+  ],
+  "note": "Earth Punishment and Prayer whenever they are ready, so Condemnation always crits and resets; Chain of Torment keeps the mark up. The line has no key — only the macro presses it."
+ },
+ {
+  "type": "line",
+  "key": "Q",
+  "name": "Debuff line",
+  "skills_top_to_bottom": [
+   "judgment-thunder",
+   "light-of-regeneration",
+   "divine-aura",
+   "debilitating-mark"
+  ],
+  "note": "The debuff, the aura and the heal over time on cooldown; Judgment Thunder fills the rest."
+ },
+ {
+  "type": "macro",
+  "steps": [
+   "1Earth Punishment line10 ms",
+   "2Earth Punishment line10 ms",
+   "3Earth Punishment line10 ms",
+   "4Debuff lineQ · 10 ms"
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "Recap"
+ },
+ {
+  "type": "heading",
+  "text": "Recap"
+ },
+ {
+  "type": "heading",
+  "text": "Overview"
+ },
+ {
+  "type": "heading",
+  "text": "Leveling in one sentence"
+ },
+ {
+  "type": "heading",
+  "text": "How to fight while leveling"
+ },
+ {
+  "type": "heading",
+  "text": "Leveling macro"
+ },
+ {
+  "type": "line",
+  "key": "RMB",
+  "name": "Chain line",
+  "skills_top_to_bottom": [
+   "judgment-thunder",
+   "condemnation",
+   "debilitating-mark",
+   "chain-of-torment"
+  ],
+  "note": "Chain of Torment goes first so Condemnation can hit; Judgment Thunder has no cooldown and fills the gaps."
+ },
+ {
+  "type": "macro",
+  "steps": [
+   "1Chain line10 ms"
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "Stigmas while leveling"
+ },
+ {
+  "type": "heading",
+  "text": "Sources"
+ },
+ {
+  "type": "heading",
+  "text": "You found the easter egg!"
+ },
+ {
+  "type": "heading",
+  "text": "What's new"
+ },
+ {
+  "type": "heading",
+  "text": "Send feedback"
+ }
+]

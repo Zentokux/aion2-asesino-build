@@ -1,0 +1,274 @@
+[
+ {
+  "type": "heading",
+  "text": "Leveling progress"
+ },
+ {
+  "type": "heading",
+  "text": "Core skills"
+ },
+ {
+  "type": "heading",
+  "text": "Stigma loadout"
+ },
+ {
+  "type": "heading",
+  "text": "Key passives"
+ },
+ {
+  "type": "heading",
+  "text": "Overview"
+ },
+ {
+  "type": "heading",
+  "text": "The build in one sentence"
+ },
+ {
+  "type": "heading",
+  "text": "What to expect in Season 1"
+ },
+ {
+  "type": "heading",
+  "text": "Global Season 1: what changes"
+ },
+ {
+  "type": "heading",
+  "text": "Skills"
+ },
+ {
+  "type": "heading",
+  "text": "Passives"
+ },
+ {
+  "type": "heading",
+  "text": "Gear & stats"
+ },
+ {
+  "type": "heading",
+  "text": "Arcana"
+ },
+ {
+  "type": "heading",
+  "text": "Daevanion boards"
+ },
+ {
+  "type": "heading",
+  "text": "The route on the boards"
+ },
+ {
+  "type": "heading",
+  "text": "Stigmas"
+ },
+ {
+  "type": "heading",
+  "text": "Macro & rotation"
+ },
+ {
+  "type": "hotbar",
+  "cols": [
+   {
+    "key": "N2",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "shadowstrike"
+    ]
+   },
+   {
+    "key": "Side",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "3",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "flash-slice"
+    ]
+   },
+   {
+    "key": "4",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "5",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "N4",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "6",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "key": "7",
+    "macro": false,
+    "slots": [
+     "triniels-dagger",
+     "savage-fang",
+     "swift-contract",
+     "illusive-clone"
+    ]
+   },
+   {
+    "key": "N1",
+    "macro": false,
+    "slots": [
+     null,
+     "shadow-fall",
+     "infiltrate",
+     "whirlwind-slice"
+    ]
+   },
+   {
+    "key": "N5",
+    "macro": false,
+    "slots": [
+     null,
+     null,
+     null,
+     "storm-rampage"
+    ]
+   },
+   {
+    "key": "1",
+    "macro": true,
+    "slots": [
+     null,
+     null,
+     null,
+     "quick-slice"
+    ]
+   },
+   {
+    "key": "E",
+    "macro": true,
+    "slots": [
+     "savage-roar",
+     "ambush",
+     "heart-gore",
+     "insignia-explosion"
+    ]
+   }
+  ],
+  "gapsBefore": [
+   4,
+   8
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "1. Hotbar lines"
+ },
+ {
+  "type": "line",
+  "key": "E",
+  "name": "Damage line",
+  "skills_top_to_bottom": [
+   "savage-roar",
+   "ambush",
+   "heart-gore",
+   "insignia-explosion"
+  ],
+  "note": "Insignia Explosion fires every time it is ready, Heart Gore on every crit. When neither is available the line falls to the fillers: Ambush first, Savage Roar last."
+ },
+ {
+  "type": "line",
+  "key": "7",
+  "name": "Buff line",
+  "skills_top_to_bottom": [
+   "triniels-dagger",
+   "savage-fang",
+   "swift-contract",
+   "illusive-clone"
+  ],
+  "note": "Arthars keeps all four stigmas on one button and presses it by hand — never from the macro, or the buffs go off out of sync."
+ },
+ {
+  "type": "heading",
+  "text": "2. In-game macro"
+ },
+ {
+  "type": "macro",
+  "steps": [
+   "1Damage line10 ms",
+   "2Quick Slice10 ms"
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "3. What you actually press"
+ },
+ {
+  "type": "heading",
+  "text": "Recap"
+ },
+ {
+  "type": "heading",
+  "text": "How to fight while leveling"
+ },
+ {
+  "type": "heading",
+  "text": "Leveling macro"
+ },
+ {
+  "type": "line",
+  "key": "MMB",
+  "name": "Insignia line",
+  "skills_top_to_bottom": [
+   "savage-roar",
+   "ambush",
+   "whirlwind-slice",
+   "insignia-explosion"
+  ],
+  "note": ""
+ },
+ {
+  "type": "heading",
+  "text": "Sources"
+ },
+ {
+  "type": "heading",
+  "text": "What's new"
+ },
+ {
+  "type": "heading",
+  "text": "Send feedback"
+ }
+]

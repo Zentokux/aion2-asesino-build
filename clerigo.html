@@ -1473,6 +1473,10 @@ code {
   .dv-stage { overflow-x: auto; padding: 0.4rem; }
   .dv-svg { min-width: 560px; }
 }
+.invest-spec{display:block;margin-top:4px;font-size:0.82rem;color:var(--accent)}
+.rotation-steps li > .iconized{display:inline-block;vertical-align:middle;margin-right:2px}
+.rotation-steps li > .iconized img,.ri img{display:inline-block!important;border-width:1px}
+.rotation-steps a{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -1600,13 +1604,13 @@ code {
     • <strong>Coste por rango:</strong> rangos 2-4 = 1 punto · 5-7 = 2 · 8-10 = 4 (21 puntos para llevar una habilidad a 10). El rango 8 abre la primera especialización. Del 11 al 20 no se usan puntos: suben con Daevanion, anillos y Arcana.<br>
     • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Condena (se aprende en el 8) y Gracia terrestre (en el 21) tardan en llegar a 10.<br>
     • <strong>Los estigmas no usan estos puntos:</strong> se suben con <strong>Esquirlas de Estigma</strong>.<br>
-    • <strong>Prioridad (Lucia y Whelps):</strong> Retribución terrestre y Rayo del juicio; Gracia terrestre en cuanto aparece; Condena, Centella y Aura divina; después Gracia empírea y Mejora curativa; las curaciones; y al final Enlace de dolor y Relámpagos sin puntería.
+    • <strong>Prioridad (couga54):</strong> Retribución terrestre y Rayo del juicio a 10 hacia el nivel 25; Gracia terrestre al tope en cuanto aparece; luego Condena, Centella y Luz de curación; después Aura divina, Gracia empírea y Mejora curativa, Resplandor de recobro, y al final Enlace de dolor y Relámpagos sin puntería.<br>• <strong>Especializaciones:</strong> cuando una habilidad llega a rango 8, el plan te dice cuál elegir (⚙️).
   </div>
 
   <div class="planner-summary" id="plannerSummary"></div>
 
   <div class="callout warn">
-    <strong>Navegación:</strong> usa las flechas ← → (o las del teclado) para avanzar nivel por nivel. La barra y los botones de salto te llevan a los hitos: nivel 8 (Condena), 14 (Centella), 21 (Gracia terrestre), 22 (Ascensión y estigmas), 30 (Vaizel), 37 (estigmas completos) y 45.
+    <strong>Navegación:</strong> usa las flechas ← → (o las del teclado) para avanzar nivel por nivel. La barra y los botones de salto te llevan a los hitos: nivel 8 (Condena), 14 (Centella), 21 (Gracia terrestre), 22 (Ascensión y estigmas), 25 (los dos ataques a 10), 30 (Vaizel), 37 (estigmas completos) y 45.
   </div>
 
   <div id="plannerBody"></div>
@@ -1627,116 +1631,50 @@ code {
 </section>
 
 <section id="rotations">
-  <h2>Rotaciones por tramo de nivel</h2>
-  <p>La rotación cambia según lo que ya tienes desbloqueado. En todos los tramos: <strong>Retribución terrestre en el clic izquierdo</strong> entre habilidades (es tu maná) y juega en <strong>modo objetivo</strong>, que mantiene el ataque básico.</p>
+  <h2>Rotación: de subir de nivel a jefes</h2>
+  <p>Todo según couga54 (Lucia, Kaeria, Whelps, aLuckyRO, Grobs). <strong>Subiendo en una frase:</strong> mantén Retribución terrestre para el maná, usa la línea de Enlace con la macro del juego y pon los puntos en ataques, no en curaciones. <strong>Al 45:</strong> Castigo terrestre hace que Condena sea siempre crítica, y cada crítico la restablece, así que la lanzas sin enfriamiento.</p>
 
   <div class="callout crit">
     <strong>Regla de oro:</strong> <strong>Enlace de dolor siempre antes que Condena</strong>. Condena solo golpea a objetivos marcados, así que van en la misma línea de la barra con Enlace abajo (la casilla de abajo es la de mayor prioridad).
   </div>
 
   <div class="level-tabs">
-    <button class="active" data-tab="r1">Nv. 1-7</button>
-    <button data-tab="r2">Nv. 8-13</button>
-    <button data-tab="r3">Nv. 14-21</button>
-    <button data-tab="r4">Nv. 22-31</button>
-    <button data-tab="r5">Nv. 32-44</button>
-    <button data-tab="r6">Nv. 45</button>
+    <button class="active" data-tab="r1">Nv. 1-21 · subiendo</button>
+    <button data-tab="r2">Nv. 22-44 · con estigmas</button>
+    <button data-tab="r3">Nv. 45 · jefes</button>
   </div>
 
   <div class="tab-panel active" id="r1">
-    <h3>Nv. 1-7 — Tus dos ataques sin enfriamiento</h3>
+    <h3>Nv. 1-21 — Juegas como DPS a distancia</h3>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Estigma debilitante</strong> (−Defensa) cada vez que esté lista</li>
-        <li><strong>Enlace de dolor</strong> (desde el 4): daño de Tierra hasta a 4 enemigos</li>
-        <li><strong>Aura divina</strong> (desde el 3): pega sola a tu lado</li>
-        <li><strong>Rayo del juicio</strong> para rellenar, intercalado con <strong>Retribución terrestre</strong></li>
+        <li><span data-icon="c_retribucion" data-size="28"></span> <strong>Nv. 1:</strong> sube primero tus dos ataques sin enfriamiento, <strong>Retribución terrestre</strong> (recupera PM) y <span data-icon="c_rayo" data-size="28"></span> <strong>Rayo del juicio</strong>. Juega en modo objetivo: mantiene el ataque básico entre habilidades.</li>
+        <li><span data-icon="c_enlace" data-size="28"></span> <strong>Enlace de dolor</strong> marca al objetivo y <span data-icon="c_condena" data-size="28"></span> <strong>Condena</strong> (nivel 8) solo golpea a objetivos con Enlace: los dos en una línea, con Enlace abajo.</li>
+        <li><strong>Primeras especializaciones (rango 8):</strong> +20 % de Descarga en Retribución terrestre · hasta +12 % de daño con menos objetivos en Rayo del juicio · +3 s de daño periódico en Enlace de dolor · −15 % de Defensa en Estigma debilitante.</li>
+        <li><span data-icon="c_centella" data-size="28"></span> <strong>Centella</strong> (nivel 14) para ráfaga y Tambaleo (toma +30 % de velocidad de habilidad); <span data-icon="c_curacion" data-size="28"></span> <strong>Luz de curación</strong> (nivel 10) para ti. Sube ataques, no curaciones: un Clérigo centrado en curar sube lento.</li>
+        <li><span data-icon="c_gracia_terrestre" data-size="28"></span> <strong>Nv. 21: Gracia terrestre</strong> (Daño Crítico y Precisión), al tope en cuanto la aprendas.</li>
       </ol>
     </div>
-    <p><strong>Puntos:</strong> todo a Retribución terrestre y Rayo del juicio. <strong>Poca vida:</strong> Luz de regeneración (desde el 7).</p>
+    <div class="mset" data-set="fightLeveling"></div>
   </div>
 
   <div class="tab-panel" id="r2">
-    <h3>Nv. 8-13 — Llega Condena</h3>
-    <h4>Grupos</h4>
+    <h3>Nv. 22-44 — Una ranura de estigma nueva en el 22, 27, 32 y 37 (orden de Whelps)</h3>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Enlace de dolor</strong> (marca hasta a 4)</li>
-        <li><strong>Condena</strong></li>
-        <li><strong>Aura divina</strong></li>
-        <li><strong>Rayo del juicio</strong> + Retribución terrestre hasta que vuelvan</li>
+        <li><span data-icon="cs_castigo" data-size="28"></span> <strong>22 · Castigo terrestre</strong>, abajo en la línea de Condena: a rango 5, Condena siempre hace crítico. Cuando Condena llega a 12, cada crítico la restablece.</li>
+        <li><span data-icon="cs_proteccion" data-size="28"></span> <strong>27 · Luz de protección</strong>: interruptor, actívala una vez y déjala fuera de líneas y macro.</li>
+        <li><span data-icon="cs_aura_noble" data-size="28"></span> <strong>32 · Aura noble</strong>: un aura que pelea a tu lado 5 minutos, daño gratis.</li>
+        <li><span data-icon="cs_oracion" data-size="28"></span> <strong>37 · Oración de amplificación</strong>: +20 % de Ataque. Estigmas completos: pasa a la macro de nivel 45.</li>
       </ol>
     </div>
-    <p>Pon la macro de subida (ver <a href="#macros">Macros</a>): Enlace → Estigma debilitante → Condena → Rayo del juicio en una sola línea. <strong>Poca vida:</strong> Luz de curación (desde el 10) y Resplandor de recobro (desde el 12).</p>
-    <div class="callout warn">Sube habilidades de ataque, no de curación: un Clérigo centrado en curar sube lento.</div>
+    <p>La pelea es la misma del tramo anterior, con <strong>Castigo terrestre → Enlace de dolor → Condena</strong> sin parar. Con Condena a 12, cambia a la macro de Whelps o de Lucia (sección <a href="#macros">Macros</a>).</p>
   </div>
 
   <div class="tab-panel" id="r3">
-    <h3>Nv. 14-21 — Centella para élites</h3>
-    <h4>Grupos</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Enlace de dolor</strong> → <strong>Condena</strong> → <strong>Aura divina</strong> (con la especialización de área si farmeas) → <strong>Rayo del juicio</strong></li>
-      </ol>
-    </div>
-    <h4>Élites</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Estigma debilitante</strong> (baja la Defensa)</li>
-        <li><strong>Enlace de dolor</strong></li>
-        <li><strong>Centella</strong> cargada del todo</li>
-        <li><strong>Condena</strong>, y Rayo del juicio entre medias</li>
-      </ol>
-    </div>
-    <p><strong>Tambaleo:</strong> Relámpagos sin puntería solo funciona con el objetivo en Tambaleo. <strong>Control:</strong> Eliminación de impacto (desde el 16). Al 21, Gracia terrestre al tope.</p>
-  </div>
-
-  <div class="tab-panel" id="r4">
-    <h3>Nv. 22-31 — Castigo terrestre: Condena siempre crítica</h3>
-    <p>En la ranura 1 va <strong>Castigo terrestre</strong>. A rango 5, Condena hace siempre crítico sobre objetivos con Castigo, y cuando Condena llega a rango 12 cada crítico la restablece.</p>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Castigo terrestre</strong> (abajo en la línea de Condena)</li>
-        <li><strong>Enlace de dolor</strong></li>
-        <li><strong>Condena</strong> → crítico → se restablece → <strong>Condena</strong></li>
-        <li><strong>Aura divina</strong> y <strong>Rayo del juicio</strong> entre medias</li>
-      </ol>
-    </div>
-    <p>Desde el 27, <strong>Luz de protección</strong> en la ranura 2: es un interruptor, actívala una vez y déjala fuera de las líneas y de la macro.</p>
-  </div>
-
-  <div class="tab-panel" id="r5">
-    <h3>Nv. 32-44 — Aura noble (32) y Oración de amplificación (37)</h3>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Aura noble</strong>: un orbe que ataca contigo 5 minutos. Úsala en cuanto esté lista</li>
-        <li><strong>Oración de amplificación</strong> (desde el 37): +20 % de Ataque y potencia tus dos Gracias</li>
-        <li><strong>Castigo terrestre</strong> → <strong>Enlace de dolor</strong> → <strong>Condena</strong> sin parar</li>
-        <li><strong>Aura divina</strong> cuando esté lista, <strong>Rayo del juicio</strong> entre medias</li>
-        <li><strong>Centella</strong> cargada cuando vuelva</li>
-      </ol>
-    </div>
-    <p>Desde el 37 ya puedes usar la macro de nivel 45 (ver <a href="#macros">Macros</a>).</p>
-  </div>
-
-  <div class="tab-panel" id="r6">
     <h3>Nv. 45 — Jefes (Lucia)</h3>
-    <p>Con la macro en el clic derecho y Retribución terrestre en el izquierdo, mantén ambos. Lo que pasa:</p>
-    <div class="priority-list">
-      <span class="chip p1">#1 Oración de amplificación (en cuanto esté)</span>
-      <span class="chip p1">#2 Castigo terrestre</span>
-      <span class="chip p1">#3 Enlace de dolor → Condena (se restablece en crítico)</span>
-      <span class="chip p2">#4 Aura divina</span>
-      <span class="chip p2">#5 Rayo del juicio</span>
-      <span class="chip p3">Retribución terrestre entre todo</span>
-    </div>
-    <h4>A mano</h4>
-    <ul style="margin:0.75rem 0 0 1.2rem">
-      <li><strong>Centella</strong> cargada del todo en cuanto vuelva (Retribución con Descarga le quita 7 s).</li>
-      <li><strong>Aura noble</strong> en cuanto esté lista.</li>
-      <li><strong>Estigma debilitante</strong> en enfriamiento; <strong>Relámpagos sin puntería</strong> sobre el jefe en Tambaleo.</li>
-      <li><strong>Curar:</strong> Luz de regeneración cuando esté lista, Luz de curación (3 cargas) para golpes pequeños, Resplandor de recobro para los grandes. Solo a quien acaba de recibir un golpe.</li>
-    </ul>
+    <p>En las mazmorras de AION 2 el Clérigo es un sanador que tiene que hacer daño: la recompensa depende de tu contribución. Tu grupo tiene esquivas e invulnerabilidades propias: cura tras los golpes y pon todo lo demás en daño.</p>
+    <div class="mset" data-set="fightBoss"></div>
     <div class="callout crit">
       <strong>Comprobación (Whelps):</strong> en el Análisis de combate, Condena debe golpear tantas veces como Rayo del juicio o más. Si golpea menos, falta crítico o Castigo terrestre no está siempre puesto.
     </div>
@@ -1922,86 +1860,23 @@ code {
 
 <section id="macros">
   <h2>Macros y barra de habilidades</h2>
+  <p>AION 2 tiene dos herramientas distintas:</p>
   <ul style="margin:0 0 1rem 1.2rem">
-    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>.</li>
+    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>. Las tarjetas muestran cada línea de arriba abajo, como en el juego.</li>
     <li><strong>Macro del juego:</strong> mientras mantienes su tecla, pulsa tus líneas en orden y se salta lo que esté en enfriamiento.</li>
   </ul>
   <div class="callout warn">
     <strong>Primero asigna la tecla:</strong> la macro no tiene tecla por defecto. Ve a <em>Ajustes → Teclas → General → Macro</em> y ponla en el <strong>clic derecho</strong>. Así la mantienes pulsada a la vez que Retribución terrestre en el clic izquierdo.
   </div>
 
-  <h3>Mientras subes de nivel (Grobs)</h3>
-  <div class="macro-box">Línea de Enlace (en la macro, clic derecho)
-  4  Rayo del juicio
-  3  Condena
-  2  Estigma debilitante
-  1  Enlace de dolor        ← la de mayor prioridad
-
-Macro: 1 paso → Línea de Enlace   10 ms
-Clic izquierdo: Retribución terrestre (mantener)
-A mano: Centella (se carga, déjala fuera de la macro), curaciones, estigmas</div>
-  <p>Enlace de dolor va primero para que Condena pueda golpear; Rayo del juicio no tiene enfriamiento y rellena los huecos. Cuando Condena llegue a rango 12 y se restablezca con crítico, pasa a la de nivel 45.</p>
-
-  <h3>Nivel 45 — configuración de Lucia</h3>
-  <p>Orden como en el juego, de arriba abajo. El 1 es la casilla de abajo, la de mayor prioridad.</p>
-  <div class="macro-box">Línea de Oración (tecla Q)
-  4  Condena
-  3  Enlace de dolor
-  2  Castigo terrestre
-  1  Oración de amplificación   ← la de mayor prioridad
-
-Línea de Aura (tecla T)
-  2  Rayo del juicio
-  1  Aura divina
-
-Línea de debilitación (tecla 1, a mano)
-  2  Estigma debilitante
-  1  Relámpagos sin puntería
-
-Línea de curación (tecla E, a mano)
-  2  Luz de curación
-  1  Luz de regeneración</div>
-  <div class="macro-box">Macro del juego (clic derecho), cada paso 10 ms:
-1  Línea de Oración
-2  Línea de Aura</div>
-  <p><strong>Teclas propias:</strong> clic izquierdo Retribución terrestre · 3 Resplandor de recobro · 4 Centella · 5 Luz de protección (interruptor) · 8 Aura noble.</p>
-  <div class="callout crit">
-    <strong>Luz de protección fuera de las líneas y de la macro:</strong> es un interruptor, y cada segunda pulsación la apagaría.
+  <div class="level-tabs">
+    <button class="active" data-tab="m1">Nivel 45 · Lucia</button>
+    <button data-tab="m2">Nivel 45 · Whelps</button>
+    <button data-tab="m3">Mientras subes de nivel</button>
   </div>
-
-  <h3>Otra opción: la macro de Whelps</h3>
-  <p>Con Condena a 12 y restableciéndose con crítico, la macro pulsa la línea de Castigo tres veces por cada vez que pulsa la de debilitación:</p>
-  <div class="macro-box">Línea de Castigo (sin tecla, solo la usa la macro)
-  4  Enlace de dolor
-  3  Condena
-  2  Oración de amplificación
-  1  Castigo terrestre          ← la de mayor prioridad
-
-Línea de debilitación (tecla Q)
-  4  Rayo del juicio
-  3  Luz de regeneración
-  2  Aura divina
-  1  Estigma debilitante
-
-Macro (clic derecho), cada paso 10 ms:
-1  Línea de Castigo
-2  Línea de Castigo
-3  Línea de Castigo
-4  Línea de debilitación</div>
-  <p>A mano: Centella cargada, Luz de curación para golpes pequeños, Resplandor de recobro para los grandes. Si en el Análisis de combate Condena golpea menos que Rayo del juicio, añade otro paso de la línea de Castigo (en el equipo de Whelps: 26k de DPS en vez de 22k).</p>
-
-  <h3>Teclas sugeridas</h3>
-  <table>
-    <thead><tr><th>Tecla</th><th>Función</th></tr></thead>
-    <tbody>
-      <tr><td><code>Clic izquierdo</code></td><td>Retribución terrestre, sin parar</td></tr>
-      <tr><td><code>Clic derecho</code></td><td>Macro del juego (mantener)</td></tr>
-      <tr><td><code>Q</code> / <code>T</code></td><td>Línea de Oración / línea de Aura</td></tr>
-      <tr><td><code>E</code></td><td>Línea de curación</td></tr>
-      <tr><td><code>1</code></td><td>Línea de debilitación</td></tr>
-      <tr><td><code>3</code> · <code>4</code> · <code>5</code> · <code>8</code></td><td>Resplandor de recobro · Centella · Luz de protección · Aura noble</td></tr>
-    </tbody>
-  </table>
+  <div class="tab-panel active" id="m1"><div class="mset" data-set="pve"></div></div>
+  <div class="tab-panel" id="m2"><div class="mset" data-set="whelps"></div></div>
+  <div class="tab-panel" id="m3"><div class="mset" data-set="leveling"></div></div>
 </section>
 
 <section id="progress">
@@ -2140,10 +2015,12 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
-<script src="icons.js?v=2026-10-08-r"></script>
-<script src="planner-clerigo.js?v=2026-10-08-r"></script>
-<script src="planner.js?v=2026-10-08-r"></script>
-<script src="daevanion-clerigo.js?v=2026-10-08-r"></script>
-<script src="daevanion.js?v=2026-10-08-r"></script>
+<script src="icons.js?v=2026-10-08-u"></script>
+<script src="planner-clerigo.js?v=2026-10-08-u"></script>
+<script src="planner.js?v=2026-10-08-u"></script>
+<script src="macros-clerigo.js?v=2026-10-08-u"></script>
+<script src="macros.js?v=2026-10-08-u"></script>
+<script src="daevanion-clerigo.js?v=2026-10-08-u"></script>
+<script src="daevanion.js?v=2026-10-08-u"></script>
 </body>
 </html>

@@ -1,0 +1,561 @@
+
+Assassin — AION 2 Global - Guides (PvE, Leveling)
+Skip to content
+ AION 2 Global - Guides
+Assassin
+ GladiatorMelee DPS · bruiser
+ RangerRanged DPS · kiter
+ TemplarTank · party buffer
+ AssassinMelee DPS · burst
+ SorcererRanged magic DPS
+ ElementalistSummoner · magic DPS
+ ClericHealer · earth and lightning damage
+ ChanterMelee support · buffer
+ Rift--:--
+ Reset--
+ --:--:--
+ Guides
+Progress
+ Week 1What to finish before the first reset
+ After 45Item level route to the raid
+ Gathering and craftingProfessions and gold blanks
+ Game settingsControls, keys, FPS and mass PvP
+ DungeonsBoss mechanics with arena diagrams
+ Tier listClasses ranked by content
+Trackers
+ WeeklyWeekly entries and energy
+ World bossesKill tracker and timers
+ Sources & creditsEveryone this site builds on
+ENLanguage
+ENEnglishRUРусскийUAУкраїнськаTRTürkçe 
+ All classes/Assassin
+PvEPvPLeveling · Global Season 1
+Assassin
+Insignia stacks, crits that fire Heart Gore and a clone that removes its cooldown — the highest burst in melee, if you stay behind the target.
+Updated: Oct 7, 2026Patch: Season 1
+Source: Arthars Gaming (TW client) · aLuckyROSource: Grobs 
+RoleMelee DPS · burst
+WeaponDaggers
+DifficultyHard
+ PvE
+ PvP
+ Leveling
+On this page
+Found a mistake or know a better build or guide? Suggest a change.
+No PvP guide for this class yet — know a good one from the global servers? Send a link. 
+Suggest a change 
+Leveling progress
+ 0/21 done
+ Reset progress
+Tick steps as you go. Progress is saved in this browser, separately for each class.
+ Start
+ Route
+ Follow yellow (main story) quests only. Side content scales with your level, so nothing is lost by doing it later.
+ Lv 1
+ Class
+ First points into Quick Slice (restores MP) and Savage Roar (engraves Insignias). At 8: +20% MP restored and +20% Skill Speed.
+ Lv 1–8
+ Class
+ Insignia Explosion → 12: +50% Multi-Hit on hit and Keep 2 stacks of Insignias after [Insignia Explosion]. Put it at the bottom of your main line.
+ After prologue
+ Route
+ Collect 40 feathers (120 shards) for an early amulet upgrade.
+ Heart Gore unlocked
+ Class
+ Heart Gore fires on crits — put it on Q and spam it. To 12 with Up to +20% Critical Hit when less targets hit.
+ Lv 12
+ Route
+ Daevanion unlocks (Nezekan board). Blue nodes = +1 skill level — see your class step below.
+ Lv 15 / 20 / 25
+ Route
+ Clear hideouts that are on your route — first clears give Enhance Stones and Daevanion Crystals.
+ ~Lv 17
+ Route
+ Amulet +10, then Morph it into the blue version.
+ Any time
+ Route
+ Weapon to ~+10 — the biggest damage jump while leveling. Don't push further before the cap.
+ Lv 20
+ Route
+ Zikel board opens — same node priority as before.
+ Lv ~22
+ Route
+ Ascension → stigmas unlock (4 slots in global Season 1). The slots open one at a time at levels 22, 27, 32 and 37 — you can learn more stigmas, but only that many fit on the bar. Which ones — see your class step.
+ Lv ~22
+ Class
+ Stigmas: Throw Shadowblade first (to 10 — it resets on a kill), then Savage Fang for packs, Illusive Clone and Swift Contract.
+ Acts 2–3
+ Route
+ Story only — don't get distracted by the map.
+ Lv 30
+ Route
+ Vaizel board opens (critical damage).
+ Act 4
+ Route
+ Side quests and solo dungeons are worth doing again here.
+ Lv 40
+ Route
+ Triniel board opens (multi-hit; mostly PvP — can wait). Krao Cave expects about 1000 Gear Score.
+ Lv 45
+ Route
+ Azphel board opens — PvP Damage Boost and Tolerance only, no skill nodes. For PvE keep filling the first four boards; global has no Ariel board.
+ Cap
+ Class
+ Start build done: Quick Slice, Savage Roar, Insignia Explosion, Heart Gore at 12. Next: those three toward 20 — see the PvE tab.
+ Cap
+ Route
+ Shugo activities for the full level-cap reward set (gold gear, materials).
+ Cap
+ Route
+ Sweep the map: question marks, bonfires, green quests, hidden cubes, feathers. Turn in feathers — altar Lv 30 gives a title.
+ Daily
+ Route
+ Nightmare entry, Transformation floors as your GS allows, dungeons T2 before T3 (watch your energy).
+Build at a glance
+Core skills
+ [Heart Gore] 
+ 1620
+ Heart Gore
+ [Insignia Explosion] 
+ 1620
+ Insignia Explosion
+ [Quick Slice] 
+ 1620
+ Quick Slice
+ [Ambush] 
+ 16
+ Ambush
+ [Storm Rampage] 
+ 16
+ Storm Rampage
+Stigma loadout
+ [Illusive Clone] 
+ Lv 20
+ Illusive Clone
+ [Swift Contract] 
+ Lv 15
+ Swift Contract
+ [Savage Fang] 
+ Lv 15
+ Savage Fang
+ [Triniel's Dagger] 
+ Lv 10
+ Triniel's Dagger
+Key passives
+Rear Smite
+Exploit Weakness
+Assault Stance
+Determination
+Overview
+The Assassin is a dagger burst class that lives on buffs. Hits engrave Insignias on the target, Insignia Explosion cashes them in, and Heart Gore fires on crits and resets itself on the next crit. The biggest damage bonus comes from hitting the target in the back, so positioning matters more than on any other class.
+The build in one sentence
+Stay behind the boss, weave Quick Slice all the time, press Insignia Explosion the moment it is ready and Heart Gore on every crit — and put everything you have into the 20 seconds of Illusive Clone, when Heart Gore has no cooldown at all.
+What to expect in Season 1
+Burst, then a gap. On KR/TW the level-25 tier of Illusive Clone lets good players keep it up permanently. Global stops at 20: about 20 seconds of burst on a 1 min 30 s cooldown, and between windows you play fillers while Heart Gore depends on crit luck.
+The buffs don't line up. Swift Contract and Savage Fang come back in a minute, Illusive Clone in a minute and a half — you keep deciding whether to wait or to press.
+Back uptime is damage. On a dummy it is 100%; in a real fight expect 60–80%, and every hit from the front loses the Rear Smite bonus.
+Fragile. No block, little defense — mistakes that a Gladiator survives kill you.
+Arthars' verdict: a fun, high-skill class that needs several times more work than a Gladiator or a Sorcerer for the same damage or less. Pick it because you like the playstyle, not for the numbers.
+The PvE mode follows Arthars Gaming's Assassin video for the global launch (September 30, recorded on the Taiwan server), read frame by frame; the video has no captions, so its text was taken from the audio by speech recognition and every name and number checked against the screen.
+Patch Season 1. The build is checked against guides from the global servers: 4 stigmas, cap 20.
+Global Season 1: what changes
+Global servers open on October 5, 2026 (Founder's early access from September 30). What that means for the Assassin:
+4 stigma slots, capped at 20. All four go to damage: Illusive Clone, Swift Contract, Savage Fang and Triniel's Dagger.
+No permanent Illusive Clone. The tier that shortens its cooldown on back crits is level 25 — not in global.
+Little cooldown reduction at the start. That is why Storm Rampage goes to 16 and Triniel's Dagger is used as a cooldown tool, not for its damage.
+Longer fights. Bosses that die in 30 seconds on Taiwan will take minutes — you will see several burst windows and the gaps between them.
+PvP: everyone starts on the same limited gear and no meta has formed yet.
+Active skills and passives are identical in the global and KR/TW data; stigmas lose their level-25 tier.
+Skills?Each skill card shows the specializations to take under its description; the dashed “20” chip is the pick for the third slot at skill level 20. “All specializations” lists every option.
+Only three skill levels matter: 12, 16 and 20. Skill points give 10, Daevanion +4, the two rings +2, arcana the rest. Get the five key skills to 16 first, then push Heart Gore and Insignia Explosion to 20.
+Heart Gore 16 20
+Your most important skill. It needs 16: a crit resets its cooldown, otherwise it waits 5 seconds. HP absorb keeps you alive; at 20 add Multi-Hit. If you are short on Critical Hit early, the +20% crit pick is an option instead of the absorb.
+8Absorbs 0.7% HP
+16Resets [Heart Gore] cooldown on landing a Critical Hit
+20Multi-Hit on hit 
+All specializations
+8Absorbs 0.7% HP
+8Engraves 1 Insignia for 10s on hit
+8Up to +20% Critical Hit when less targets hit
+12Multi-Hit on hit
+16Resets [Heart Gore] cooldown on landing a Critical Hit
+Insignia Explosion 16 20
+The other half of your damage. −3s cooldown and two Insignias kept after each explosion — press it every time it is ready, don't wait for stacks. At 20 add Multi-Hit.
+8Keep 2 stacks of Insignias after [Insignia Explosion]
+16-3s cooldown
+20+50% Multi-Hit on hit 
+All specializations
+8Adds rotate effect
+8+50% Multi-Hit on hit
+8Keep 2 stacks of Insignias after [Insignia Explosion]
+12+1s Stun duration
+16-3s cooldown
+Quick Slice 16 20
+The basic attack you weave between everything: guaranteed crit and −1s on Insignia Explosion per hit. At 20 the third slot is your choice — HP absorb or Multi-Hit.
+12-1s [Insignia Explosion] cooldown on hit
+16Ignores Block and Evasion and lands as a Critical Hit
+20+50% Multi-Hit on hit 
+All specializations
+8+20% MP restored
+8Absorbs 0.7% HP
+8+50% Multi-Hit on hit
+12-1s [Insignia Explosion] cooldown on hit
+16Ignores Block and Evasion and lands as a Critical Hit
+Ambush 16
+Your first filler when Heart Gore is closed: two extra uses at 16 and two Insignias per back hit. If it reaches 20, add the HP absorb.
+8Engraves 2 Insignias for 10s on landing as a Back attack
+16+2 consecutive uses 
+All specializations
+8Engraves 2 Insignias for 10s on landing as a Back attack
+8Absorbs 3% HP
+8Breaks Protective Shields on hit
+1250% chance to trigger [Whirlwind Slice] on hit
+16+2 consecutive uses
+Storm Rampage 16
+On other classes this is skippable; here it is not. While the boss is staggered every hit takes 1s off all cooldowns — it brings your buffs back, and this class does no damage without buffs.
+12Multi-Hit on hit
+16-1s all skill cooldowns on hit 
+All specializations
+8Absorbs 5% HP
+8Restores 120 MP on hit
+8Changes to mobile skill
+12Multi-Hit on hit
+16-1s all skill cooldowns on hit
+Defiance 12 16
+CC break: the heal and +2s Tenacity at 12; at 16 swap the heal for the damage tolerance.
+8Restores 20% HP on using [Defiance]
+12+2s Tenacity duration 
+All specializations
+8Adds [Storm Slice] Chain Skill
+8Restores 1000 Stamina on using [Defiance]
+8Restores 20% HP on using [Defiance]
+12+2s Tenacity duration
+16+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration
+Savage Roar 12
+The last filler in the line: faster, and every hit shortens Shadowstrike. Not worth more than 12–16.
+8+20% Skill Speed
+12-1s [Shadowstrike] cooldown on hit 
+All specializations
+8-20% MP consumed
+8+20% Skill Speed
+8Deals up to 12% more damage when less targets are hit
+12-1s [Shadowstrike] cooldown on hit
+16Pulls nearby targets on using [Savage Smash]
+Shadowstrike 12
+Teleport behind the target and +20% Critical Damage for 10s — a buff and your best way to the back. Keep it for repositioning instead of spending it on cooldown; the other picks are for PvP.
+8+20% caster Critical Damage Boost for 10s on hit 
+All specializations
+8+1s Stun duration
+8+20% caster Critical Damage Boost for 10s on hit
+850% chance to inflict Seal for 5s on hit
+1250% chance to inflict Root for 5s on hit
+16Changes to AoE Skill
+Flash Slice 12
+A second way to get behind the target: 10m range and two uses.
+8+6m Range
+12+1 consecutive use 
+All specializations
+8+2s Blind duration
+8+6m Range
+8Up to +20% damage when more targets hit
+12+1 consecutive use
+1650% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind
+Infiltrate 12
+Dodge → behind the target, and it pays the stamina back. Never take the follow-up chain.
+8Restores 300 Stamina on landing [Infiltrate]
+8+10m [Infiltrate] range 
+All specializations
+8Restores 300 Stamina on landing [Infiltrate]
+8+10m [Infiltrate] range
+8Breaks Protective Shields on landing [Infiltrate]
+12Adds [Dark Strike] Chain Skill
+16+20% [Infiltrate] Blind Chance
+Whirlwind Slice 12
+Long-range gap-closer. Hits hard on paper, but the animation is long — not part of the rotation.
+8+50% Multi-Hit on hit
+8+16m range 
+All specializations
+8+50% Multi-Hit on hit
+8Changes to AoE damage
+8+16m range
+12+20% Stun Chance
+1625% chance to reset [Whirlwind Slice] cooldown on Evasion
+Shadow Fall 12
+A PvP skill; in PvE only an emergency 10% heal.
+8Absorbs 10% HP
+8-5s cooldown 
+All specializations
+8Absorbs 10% HP
+8Engraves 3 Insignias for 10s on hit
+8-5s cooldown
+12+1s Knockdown duration
+16Can be used on targets afflicted with Blind
+Passives
+Skill points max almost all passives while you level. Gear lines are the scarce part: the class wants four passives there and only two or three fit.
+Passive
+Priority on gear
+Why
+Rear Smite
+1
+Back attack and PvE damage boost — the strongest passive; it gives damage even from the front.
+Exploit Weakness
+2
+Critical Hit and an Attack buff that is up almost all the time in combat; Illusive Clone multiplies it.
+Assault Stance
+2
+Critical Damage Boost; Swift Contract multiplies it.
+Determination
+3
+Extra damage on a low-HP target — aLuckyRO counts it among the most important: every boss spends the end of the fight there.
+Impact Hit
+4
+Double Chance — only 3.3% at level 10, next to nothing in PvE (aLuckyRO). Keep it for PvP; on PvE gear take Determination first.
+Ambush Stance, Heightened Sixth Sense
+points only
+Maxed by skill points; not worth a gear line.
+Apply Poison, Defense Break
+skip
+Poison is under 1% of your damage; Defense Break is a PvP passive. Revitalization Contract only with spare points.
+Gear & stats
+Rings: the only place for active skills — Heart Gore, Quick Slice, Insignia Explosion, Ambush. They take the key skills from 14 to 16.
+Weapon and guard: never put skills there — their damage lines are worth more than one skill level.
+Other pieces: Rear Smite first; any of the next three passives is fine. Don't chase a perfect set in Season 1 — global gear has one line less and also rolls Might, Precision and Combat Speed there.
+Critical Hit matters more than on other classes: Heart Gore resets only on a crit.
+Manastones: Attack, Critical Hit, Accuracy.
+Arcana
+Season 1 has five cards and two sets. The Assassin is the one class that must take Illusion (cooldowns) on the Mirror, which makes four Primal Vigor cards the natural set.
+Card
+Stat
+Set
+Roll for
+Chalice
+Time (Combat Speed)
+Primal Vigor
+Whichever of the three key skills is still short of 20
+Parchment
+Life
+Primal Vigor
+Quick Slice, Heart Gore, Insignia Explosion — all three
+Compass
+Freedom (Accuracy)
+Primal Vigor
+Storm Rampage, Ambush, Savage Roar — to reach 16
+Mirror
+Illusion (cooldowns)
+Primal Vigor
+Rear Smite, Exploit Weakness; Impact Hit
+Bell
+Destruction (Attack)
+Magic Armor
+Assault Stance
+The Parchment is the grind. All three skills you want at 20 sit on this one card, and a Season 1 card lets you choose only two of its four lines. Leveling the card adds four random +1s — hope for an even spread (+2 on each) rather than +4 on one: the Chalice can then add the missing +2. If it doesn't work out, keep Heart Gore and Insignia Explosion at 20 and leave Quick Slice at 16.
+The Compass and the Bell are relaxed: nothing on them has to reach 20. All these cards are replaced when Season 2 brings new ones.
+Daevanion boards
+Daevanion takes your skills from 10 to 14 and adds stats. Each blue node gives +1 level to its skill.
+Priority: blue nodes for Heart Gore, Insignia Explosion, Quick Slice, then Ambush and Storm Rampage; orange nodes next.
+Critical Damage early: for an Assassin the Vaizel orange Critical Damage Boost pays off from the start — it crits from day one, unlike most classes (aLuckyRO).
+Priority: blue nodes for Shadowstrike, Flash Slice, Defiance.
+No Ariel on global: there are five boards, and the level-45 one, Azphel, gives only PvP Damage Boost and Tolerance — in PvE finish the first four.
+Azphel (level 45) is all PvP Damage Boost and Tolerance — take it, and Triniel earlier.
+Board
+Unlock
+Orange nodes
+Nezekan
+Lv 12
+Combat Speed, Cooldown Reduction
+Zikel
+Lv 20
+Damage Boost, Damage Tolerance
+Vaizel
+Lv 30
+Critical Damage Boost and Tolerance
+Triniel
+Lv 40
+Multi-Hit Chance and Resist
+Azphel
+Lv 45
+PvP Damage Boost and Tolerance — no skill nodes
+The route on the boards
+The real global boards from the game data. Gold marks the cheapest path from Start to the nodes this guide takes — the blue nodes of the priority skills and the orange nodes; hover any node to see what it gives.
+NezekanLv 12 · 63 ptsZikelLv 20 · 65 ptsVaizelLv 30 · 69 ptsTrinielLv 40 · 91 ptsAzphelLv 45 · 0 pts 
+ [Exploit Weakness] [Shadow Fall] [Apply Poison] [Heart Gore] [Heightened Sixth Sense] [Shadowstrike] [Flash Slice] [Rear Smite] [Savage Roar] [Assault Stance] [Defiance] [Storm Rampage] [Rear Smite] [Quick Slice] [Assault Stance] [Infiltrate] [Ambush] [Exploit Weakness] [Whirlwind Slice] [Apply Poison] [Insignia Explosion] [Heightened Sixth Sense] 
+ [Storm Rampage] [Impact Hit] [Insignia Explosion] [Determination] [Quick Slice] [Shadowstrike] [Revitalization Contract] [Defense Break] [Ambush] [Ambush Stance] [Savage Roar] [Flash Slice] [Revitalization Contract] [Shadow Fall] [Determination] [Ambush Stance] [Infiltrate] [Whirlwind Slice] [Defense Break] [Heart Gore] [Impact Hit] [Defiance] 
+ [Heightened Sixth Sense] [Storm Rampage] [Apply Poison] [Shadowstrike] [Shadow Fall] [Flash Slice] [Assault Stance] [Defense Break] [Revitalization Contract] [Heart Gore] [Whirlwind Slice] [Quick Slice] [Insignia Explosion] [Determination] [Impact Hit] [Ambush Stance] [Savage Roar] [Ambush] [Infiltrate] [Rear Smite] [Defiance] [Exploit Weakness] 
+ [Ambush] [Determination] [Impact Hit] [Savage Roar] [Storm Rampage] [Exploit Weakness] [Infiltrate] [Rear Smite] [Flash Slice] [Ambush Stance] [Shadow Fall] [Insignia Explosion] [Assault Stance] [Heart Gore] [Apply Poison] [Whirlwind Slice] [Heightened Sixth Sense] [Defiance] [Shadowstrike] [Defense Break] [Revitalization Contract] [Quick Slice] 
+288 points in total skill levels
+Heart Gore +4Storm Rampage +4Quick Slice +4Ambush +4Insignia Explosion +4
+on the way:Apply Poison +3Rear Smite +2Exploit Weakness +2Defense Break +2Impact Hit +1Infiltrate +1Defiance +1Heightened Sixth Sense +1Ambush Stance +1Determination +1Flash Slice +1Assault Stance +1Revitalization Contract +1 
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+NezekanLv 12 · 63 ptsZikelLv 20 · 59 ptsVaizelLv 30 · 60 ptsTrinielLv 40 · 85 ptsAzphelLv 45 · 110 pts 
+ [Exploit Weakness] [Shadow Fall] [Apply Poison] [Heart Gore] [Heightened Sixth Sense] [Shadowstrike] [Flash Slice] [Rear Smite] [Savage Roar] [Assault Stance] [Defiance] [Storm Rampage] [Rear Smite] [Quick Slice] [Assault Stance] [Infiltrate] [Ambush] [Exploit Weakness] [Whirlwind Slice] [Apply Poison] [Insignia Explosion] [Heightened Sixth Sense] 
+ [Storm Rampage] [Impact Hit] [Insignia Explosion] [Determination] [Quick Slice] [Shadowstrike] [Revitalization Contract] [Defense Break] [Ambush] [Ambush Stance] [Savage Roar] [Flash Slice] [Revitalization Contract] [Shadow Fall] [Determination] [Ambush Stance] [Infiltrate] [Whirlwind Slice] [Defense Break] [Heart Gore] [Impact Hit] [Defiance] 
+ [Heightened Sixth Sense] [Storm Rampage] [Apply Poison] [Shadowstrike] [Shadow Fall] [Flash Slice] [Assault Stance] [Defense Break] [Revitalization Contract] [Heart Gore] [Whirlwind Slice] [Quick Slice] [Insignia Explosion] [Determination] [Impact Hit] [Ambush Stance] [Savage Roar] [Ambush] [Infiltrate] [Rear Smite] [Defiance] [Exploit Weakness] 
+ [Ambush] [Determination] [Impact Hit] [Savage Roar] [Storm Rampage] [Exploit Weakness] [Infiltrate] [Rear Smite] [Flash Slice] [Ambush Stance] [Shadow Fall] [Insignia Explosion] [Assault Stance] [Heart Gore] [Apply Poison] [Whirlwind Slice] [Heightened Sixth Sense] [Defiance] [Shadowstrike] [Defense Break] [Revitalization Contract] [Quick Slice] 
+377 points in total skill levels
+Shadowstrike +4Flash Slice +4Defiance +4
+on the way:Revitalization Contract +3Heightened Sixth Sense +2Savage Roar +2Whirlwind Slice +2Determination +2Defense Break +2Impact Hit +2Apply Poison +1Assault Stance +1Quick Slice +1Rear Smite +1Exploit Weakness +1Ambush +1 
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+Boards and costs come from the global client data (questlog.gg); the path is calculated, not taken from a video. Stat values may still change at launch — check the in-game board before committing a full route.
+Stigmas
+All four slots are buffs. Level Illusive Clone to 20 first — it eats most of your stigma shards — then the rest.
+Illusive Clone Lv 20
+Your burst: for 20 seconds Heart Gore has no cooldown and you deal 20% extra damage, with +20% Critical Damage and ×1.5 Exploit Weakness on top. Cooldown 1 min 30 s. Most of your damage happens inside it — use it on the boss, never on trash. aLuckyRO: essential until Heart Gore reaches 16; with enough crits Heart Gore resets by itself and the slot can be swapped for a while, but at 20 it comes back for its damage boost.
+5+10% Status Effect Chance for the duration
+10+20% Critical Damage Boost for the duration
+15x1.5 [Exploit Weakness] effect for the duration
+2050% chance to deal extra damage on Critical Hit for the duration 
+All specializations
+5+10% Status Effect Chance for the duration
+10+20% Critical Damage Boost for the duration
+15x1.5 [Exploit Weakness] effect for the duration
+2050% chance to deal extra damage on Critical Hit for the duration
+Swift Contract Lv 15 20
++20% Combat Speed, and ×1.5 Rear Smite and Assault Stance for the duration. 15 is enough to start; 20 adds 10% more Combat Speed.
+5-20% MP Cost for the duration
+10x1.5 [Rear Smite] effect for the duration
+15x1.5 [Assault Stance] effect for the duration 
+All specializations
+5-20% MP Cost for the duration
+10x1.5 [Rear Smite] effect for the duration
+15x1.5 [Assault Stance] effect for the duration
+20+10% additional Combat Speed
+Savage Fang Lv 15
+Five Insignias at once, big stagger damage and, at 15, +10% PvE Damage Boost for 10s. Same one-minute cooldown as Swift Contract — press them together.
+5Up to +20% damage when more targets hit
+10+50 Stagger Gauge Damage
+15+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit 
+All specializations
+5Up to +20% damage when more targets hit
+10+50 Stagger Gauge Damage
+15+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit
+20Critical Hit on hit
+Triniel's Dagger Lv 10
+Not for its damage: at 10 a hit cuts the remaining cooldown of all your skills by 10%. Press it right after your buffs, when their cooldowns are longest.
+5Changes to mobile skill
+10-10% all skill cooldowns on hit 
+All specializations
+5Changes to mobile skill
+10-10% all skill cooldowns on hit
+15Resets cooldown on defeating an enemy with [Triniel's Dagger]
+20+3% all skill cooldowns
+Evasion Stance Lv 5–10
+Guaranteed evasion of a big hit; two charges at 5, mobile at 10. The safe swap for one of the buffs while you learn a fight — the class is fragile.
+5+1 consecutive use
+10Changes to mobile skill 
+All specializations
+5+1 consecutive use
+10Changes to mobile skill
+15+20% Move Speed for 3s on Evasion
+20Restore 10% HP once after successfully evading
+Throw Shadowblade farming
+20m throw that resets on a kill at 10 — for open-world farming, not for bosses.
+5Adds [Shadowblade Pursuit] Chain Skill
+10Resets cooldown on defeating an enemy 
+All specializations
+5Adds [Shadowblade Pursuit] Chain Skill
+10Resets cooldown on defeating an enemy
+15Critical Hit on hit
+20Changes to AoE Skill
+Macro & rotation?The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+AION 2 has two separate tools:
+Hotbar line — several skills stacked on one hotbar button. Pressing it casts the highest-priority skill that's ready, and in AION 2 the bottom slot has the highest priority. The cards show each line top to bottom as in the game.
+In-game macro — while you hold its key, it presses your hotbar buttons in order and cancels animation tails. Skills on cooldown are skipped.
+ Example hotbar layout
+ [Shadowstrike] N2
+ Side
+ [Flash Slice] 3
+ 4
+ 5
+ N4
+ 6
+ [Triniel's Dagger] [Savage Fang] [Swift Contract] [Illusive Clone] 7
+ [Shadow Fall] [Infiltrate] [Whirlwind Slice] N1
+ [Storm Rampage] N5
+ [Quick Slice] 1
+ [Savage Roar] [Ambush] [Heart Gore] [Insignia Explosion] E
+As in the game: a stacked line fires its bottom skill first; gold lines are the ones the macro presses. Hover an icon for the skill. Keys are the author's own (side mouse buttons, numpad): copy the lines, bind them wherever you like.
+1. Hotbar lines
+EDamage line
+ 4
+ Savage Roar
+ 3
+ Ambush
+ 2
+ Heart Gore
+ 1
+ Insignia Explosion
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Insignia Explosion fires every time it is ready, Heart Gore on every crit. When neither is available the line falls to the fillers: Ambush first, Savage Roar last.
+7Buff line
+ 4
+ Triniel's Dagger
+ 3
+ Savage Fang
+ 2
+ Swift Contract
+ 1
+ Illusive Clone
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Arthars keeps all four stigmas on one button and presses it by hand — never from the macro, or the buffs go off out of sync. 
+2. In-game macro
+Two steps, 10 ms each, on a key you can hold all the time:
+1Damage line10 ms
+2Quick Slice10 ms
+The video shows the hotbar but not the macro window: this macro follows the setup from Arthars' Chanter guide (the main line, then the basic attack). The lines and keys are read from his hotbar.
+3. What you actually press
+HoldThe macro key, and spam Quick Slice yourself — every hit shortens Insignia Explosion.
+BurstIllusive Clone + Swift Contract + Savage Fang together, then Triniel's Dagger straight away to cut their cooldowns. For the next 20 seconds it is Heart Gore after Heart Gore.
+Between windowsSwift Contract and Savage Fang come back before Illusive Clone. Either hold them for the next Clone (bigger burst) or use them on cooldown (steadier damage) — there is no agreed answer; on short fights hold them.
+StaggerStorm Rampage on a staggered boss, weaving Quick Slice — it pulls every cooldown down by seconds.
+PositionShadowstrike, Flash Slice and Infiltrate all put you behind the target. Use them to stay there, not as damage buttons.
+Where the damage comes from in Arthars' test on a dummy: Heart Gore about 30%, Insignia Explosion about 25%, everything else 6% or less each.
+Recap
+Skills: Heart Gore, Insignia Explosion, Quick Slice 16 → 20; Ambush and Storm Rampage 16; the rest 12.
+Stigmas: Illusive Clone 20, Swift Contract 15 → 20, Savage Fang 15, Triniel's Dagger 10.
+Passives on gear: Rear Smite, then Exploit Weakness, Assault Stance, Impact Hit.
+Play: stay behind the boss, burst inside Illusive Clone, Triniel's Dagger right after the buffs.
+How to fight while leveling
+Packs: Savage Fang (5 Insignias) → Insignia Explosion → Whirlwind Slice; Throw Shadowblade resets on a kill for the next pull.
+Elites: get behind → Ambush → Savage Roar to stack Insignias → Insignia Explosion → Heart Gore on crits.
+Mana: Quick Slice restores MP — keep it on LMB.
+Low HP: Shadow Fall absorbs HP; Defiance heals when you're stuck.
+Leveling macro?The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+While leveling, before Heart Gore reaches 16, a simpler setup works from level 1: the Insignia line in the in-game macro on the middle mouse button, Quick Slice on LMB and Heart Gore on Q. For farming mobs use Throw Shadowblade (2) and RMB. Early build at 1–45: Quick Slice, Savage Roar, Insignia Explosion and Heart Gore to 12, everything else to 8.
+MMBInsignia line
+ 4
+ Savage Roar
+ 3
+ Ambush
+ 2
+ Whirlwind Slice
+ 1
+ Insignia Explosion
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Starting build 1–45 (aion2t) → · 45+ goal build →
+Sources
+Arthars Gaming — The Brutal Truth About Assassin in Aion 2 Global Launch — the PvE mode: skill levels and specializations, passives, arcana, stigmas, hotbar lines, how the class plays in Season 1
+TitanTheF — AION 2 progression sheet (Assassin tab) — builds, hotbar, macro, stats
+aion2t.com — TitanTheF's start and 45+ builds (skill levels, specializations, stigmas, passives)
+questlog.gg — skill data from the global client
+Grobs — AION 2 Macro Guide — how hotbar lines and the in-game macro work
+aLuckyRO — AION 2 Latest Assassin PVE Build for Global — early specializations (Quick Slice MP, Storm Rampage Multi-Hit), passive priority, Illusive Clone before Heart Gore 16, Throw Shadowblade for farming
+All sources and creators →
+ Send feedback 
+ AION 2 Global - Guides
+Unofficial fan site, not affiliated with NCSOFT. AION 2 and its skill icons are © NCSOFT.
+Guides are collected from content creators — all credit goes to them; the site is put together with the help of Claude (AI).
+Last checked: Oct 8, 2026.
+All sources and creators · Changelog · Send feedback
+ Esc
+What's new
+ Oct 8, 2026
+Cleric checked against Whelps' global guide — a second macro option with his hotbar (three Earth Punishment steps for every debuff step) and a Combat Analysis check, his order on the Daevanion boards, specialization options for Bolt, Divine Aura and Chain of Torment, stigma swaps for support; in Leveling: which stigma goes into each new slot and his starter macro. Kaeria's Taiwan macro is gone.
+ Got it
+Full changelog →
+Send feedback
+What is wrong or outdated, or which guide should be added? A link to a source or a screenshot helps a lot.
+ Your message
+ Contact for a reply (optional)
+Sent together with the message: 
+ Send
+ Cancel

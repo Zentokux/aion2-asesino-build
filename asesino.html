@@ -1473,6 +1473,10 @@ code {
   .dv-stage { overflow-x: auto; padding: 0.4rem; }
   .dv-svg { min-width: 560px; }
 }
+.invest-spec{display:block;margin-top:4px;font-size:0.82rem;color:var(--accent)}
+.rotation-steps li > .iconized{display:inline-block;vertical-align:middle;margin-right:2px}
+.rotation-steps li > .iconized img,.ri img{display:inline-block!important;border-width:1px}
+.rotation-steps a{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -1598,7 +1602,8 @@ code {
     • <strong>Coste por rango:</strong> rangos 2-4 = 1 punto · 5-7 = 2 · 8-10 = 4 (21 puntos para llevar una habilidad a 10). El rango 8 abre la primera especialización. Del 11 al 20 no se usan puntos: suben con Daevanion, anillos y Arcana.<br>
     • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Estocada al corazón (se aprende en el 4) no llega a 10 hasta el nivel 28, y Determinación (en el 25) se queda en 8 al llegar al 45.<br>
     • <strong>Los estigmas no usan estos puntos:</strong> se suben con <strong>Esquirlas de Estigma</strong> (rangos 1-5 = 1 · 6-10 = 2 · 11-15 = 4 · 16-20 = 8; 75 esquirlas hasta el 20).<br>
-    • <strong>Prioridad (couga54):</strong> Estocada al corazón, Explosión de insignia y Corte rápido; Rugido bestial a 8; Emboscada y Desenfreno de tormenta; y las pasivas Impacto trasero, Explotar debilidades, Postura de agresión y Determinación.
+    • <strong>Prioridad (couga54):</strong> primero Corte rápido y Rugido bestial a 8 (subida); luego Estocada al corazón y Explosión de insignia; Emboscada y Desenfreno de tormenta; y las pasivas Impacto trasero, Explotar debilidades, Postura de agresión y Determinación.<br>
+    • <strong>Especializaciones:</strong> cuando una habilidad llega a rango 8, el plan te dice cuál elegir (⚙️).
   </div>
 
   <div class="planner-summary" id="plannerSummary"></div>
@@ -1625,347 +1630,66 @@ code {
   </div>
 </section>
 
-<section id="progression_old_hidden" style="display:none">
-  <h2>_Progresión Punto a Punto (Lv 1 → 45)</h2>
-  <p>Qué desbloqueas en cada nivel y <strong>dónde invertir tus Skill Points</strong> cuando los recibas (no esperes a cap). Rangos de skill llegan a 20; algunas skills tienen breakpoints importantes en rangos 12, 16 y 20.</p>
-
-  <div class="callout info">
-    <strong>Regla de oro de la inversión:</strong> siempre lleva Heart Gore e Insignia Explosion al rango más alto que puedas pagar. Son el ~55% de tu daño total endgame.
-  </div>
-
-  <div class="level-tabs">
-    <button class="active" data-tab="t1">Lv 1-5</button>
-    <button data-tab="t2">Lv 6-10</button>
-    <button data-tab="t3">Lv 11-15</button>
-    <button data-tab="t4">Lv 16-21</button>
-    <button data-tab="t5">Lv 22-30</button>
-    <button data-tab="t6">Lv 31-40</button>
-    <button data-tab="t7">Lv 41-45 (cap)</button>
-  </div>
-
-  <div class="tab-panel active" id="t1">
-    <h3>Lv 1-5: Fundamentos</h3>
-    <h4>Qué desbloqueas</h4>
-    <ul>
-      <li><strong>Lv 1:</strong> Corte Rápido (LMB), Golpe de Sombra, Rugido Salvaje, Heightened Sixth Sense (pasiva)</li>
-      <li><strong>Lv 3:</strong> Emboscada</li>
-      <li><strong>Lv 4:</strong> Desgarro de Corazón (sin reset confiable todavía)</li>
-      <li><strong>Lv 5:</strong> Furia de Tormenta</li>
-    </ul>
-    <h4>Dónde invertir tus Skill Points</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Heart Gore → rank 5</span>
-      <span class="chip p2">#2 Ambush → rank 3</span>
-      <span class="chip p3">#3 Savage Roar → rank 3</span>
-    </div>
-    <div class="callout warn">
-      <strong>Enfoque:</strong> no estás haciendo max DPS aún — estás APRENDIENDO el ritmo. Practica golpear por detrás con Shadowstrike en cada mob. Si no dominas esto, el resto no funciona.
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t2">
-    <h3>Lv 6-10: Primera ventana de burst</h3>
-    <h4>Qué desbloqueas</h4>
-    <ul>
-      <li><strong>Lv 6:</strong> Exploit Weakness (pasiva — +Crit)</li>
-      <li><strong>Lv 7:</strong> Corte Torbellino (AoE)</li>
-      <li><strong>Lv 8:</strong> Corte Fugaz (reposición)</li>
-      <li><strong>Lv 9:</strong> Apply Poison (pasiva automática)</li>
-      <li><strong>Lv 10:</strong> Infiltrarse (esquiva + reposición)</li>
-    </ul>
-    <h4>Dónde invertir</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Heart Gore → rank 8</span>
-      <span class="chip p2">#2 Ambush → rank 5</span>
-      <span class="chip p2">#3 Quick Slice → rank 5</span>
-      <span class="chip p3">#4 Savage Roar → rank 5</span>
-    </div>
-    <div class="callout info">
-      <strong>Objetivo del tramo:</strong> dejar Heart Gore listo para rankear a 12 en el siguiente tramo (ahí despierta su reset-on-crit real).
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t3">
-    <h3>Lv 11-15: El inflection point (Insignia Explosion)</h3>
-    <h4>Qué desbloqueas</h4>
-    <ul>
-      <li><strong>Lv 11:</strong> Rear Smite (pasiva — +3% daño trasero, +3% PvE) ⭐</li>
-      <li><strong>Lv 12:</strong> Caída Sombría</li>
-      <li><strong>Lv 13:</strong> Assault Stance (pasiva — +Crit Damage)</li>
-      <li><strong>Lv 14:</strong> <strong>Explosión de Insignias</strong> — tu segundo skill clave</li>
-    </ul>
-    <h4>Dónde invertir — prioridad crítica</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Heart Gore → rank 12 (breakpoint)</span>
-      <span class="chip p1">#2 Insignia Explosion → rank 10</span>
-      <span class="chip p2">#3 Quick Slice → rank 8</span>
-      <span class="chip p3">#4 Ambush → rank 8</span>
-    </div>
-    <div class="callout crit">
-      <strong>Breakpoint Lv 12 de Heart Gore:</strong> aquí es donde el reset-on-crit se vuelve consistente. Antes de este rank, Heart Gore es un skill cualquiera. Después, es tu generador de daño principal.
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t4">
-    <h3>Lv 16-21: Consolidación pre-Ascensión</h3>
-    <h4>Qué desbloqueas</h4>
-    <ul>
-      <li><strong>Lv 16:</strong> Desafío (CC break + heal 20%)</li>
-      <li><strong>Lv 17:</strong> Ambush Stance (pasiva — buff post-movimiento)</li>
-      <li><strong>Lv 21:</strong> Defense Break (pasiva — −12% def a staggered)</li>
-    </ul>
-    <h4>Dónde invertir</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Heart Gore → rank 16</span>
-      <span class="chip p1">#2 Insignia Explosion → rank 16</span>
-      <span class="chip p2">#3 Quick Slice → rank 12</span>
-      <span class="chip p2">#4 Ambush → rank 10</span>
-      <span class="chip p3">#5 Savage Roar → rank 10</span>
-    </div>
-    <div class="callout warn">
-      <strong>Prepárate:</strong> en Lv 22 vas a hacer la quest de Ascensión <em>"The One Who Hears the Voice"</em>. Guarda al menos 10-15 Skill Points de reserva — vas a querer rankear Illusive Clone rápido.
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t5">
-    <h3>Lv 22-30: Post-Ascensión — Primeros Stigmas</h3>
-    <h4>Hitos</h4>
-    <ul>
-      <li><strong>Lv 22:</strong> Quest de Ascensión completada → <strong>Stigma slot #1</strong> + stigmas desbloqueadas</li>
-      <li><strong>Lv 25:</strong> Determination (pasiva)</li>
-      <li><strong>Lv 27:</strong> <strong>Stigma slot #2</strong></li>
-      <li>Entre Lv 23-39 ganas <strong>1 Stigma Shard por nivel</strong></li>
-    </ul>
-    <h4>Equipar primeros stigmas</h4>
-    <ol>
-      <li><strong>Slot 1 (Lv22):</strong> <span class="tier stigma">Illusive Clone</span> — tu burst principal</li>
-      <li><strong>Slot 2 (Lv27):</strong> <span class="tier stigma">Swift Contract</span> — buff velocidad ataque</li>
-    </ol>
-    <h4>Prioridad de ranks</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Illusive Clone → rank 10 ASAP</span>
-      <span class="chip p2">#2 Heart Gore → mantener en 16-18</span>
-      <span class="chip p2">#3 Insignia Explosion → rank 18</span>
-      <span class="chip p3">#4 Swift Contract → rank 5</span>
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t6">
-    <h3>Lv 31-40: Loadout completo de 4 stigmas</h3>
-    <h4>Hitos</h4>
-    <ul>
-      <li><strong>Lv 32:</strong> <strong>Stigma slot #3</strong> → equipar <span class="tier stigma">Triniel's Dagger</span></li>
-      <li><strong>Lv 37:</strong> <strong>Stigma slot #4</strong> → equipar <span class="tier stigma">Savage Fang</span></li>
-      <li><strong>Lv 40+:</strong> ganas <strong>2 Stigma Shards por nivel</strong> (acelera rankeo)</li>
-    </ul>
-    <h4>Prioridad de rankeo (en orden)</h4>
-    <ol>
-      <li>Triniel's Dagger → rank 10 (cuanto antes)</li>
-      <li>Illusive Clone → rank 15</li>
-      <li>Heart Gore → rank 20</li>
-      <li>Insignia Explosion → rank 20</li>
-      <li>Savage Fang → rank 10</li>
-      <li>Swift Contract → rank 10</li>
-      <li>Quick Slice → rank 16</li>
-    </ol>
-    <div class="callout ok">
-      <strong>A Lv 40 ya puedes correr dungeons endgame.</strong> Tu DPS ya es competitivo si mantienes la rotación limpia.
-    </div>
-  </div>
-
-  <div class="tab-panel" id="t7">
-    <h3>Lv 41-45: Cap global (endgame actual)</h3>
-    <h4>Hitos finales</h4>
-    <ul>
-      <li>Cap de nivel alcanzado</li>
-      <li>Enfoque total en <strong>gear + Arcana + Daevanion Boards</strong></li>
-      <li>Objetivo: todos los stigmas core en rangos 15-20</li>
-    </ul>
-    <h4>Setup objetivo</h4>
-    <table>
-      <thead><tr><th>Skill/Stigma</th><th>Rango objetivo</th><th>Por qué</th></tr></thead>
-      <tbody>
-        <tr><td>Illusive Clone</td><td><strong>Lv 20</strong></td><td>Cap global, duración y multiplicadores máximos</td></tr>
-        <tr><td>Heart Gore</td><td>Lv 20</td><td>~30% del daño total</td></tr>
-        <tr><td>Insignia Explosion</td><td>Lv 20</td><td>~25% del daño total</td></tr>
-        <tr><td>Quick Slice</td><td>Lv 20</td><td>Weaving + reducción de CD de Explosion</td></tr>
-        <tr><td>Swift Contract</td><td>Lv 15</td><td>Buff mini-burst</td></tr>
-        <tr><td>Savage Fang</td><td>Lv 15</td><td>Insignia stack instantáneo</td></tr>
-        <tr><td>Triniel's Dagger</td><td>Lv 10</td><td>Reducción de CDs</td></tr>
-      </tbody>
-    </table>
-    <div class="callout info">
-      <strong>Preview Lv 46-50:</strong> cuando NCSoft libere el contenido (zonas Eltnen/Morheim, dungeons de ese tier), el cap subirá a 50. Guarda Skill Points residuales para rankear stigmas al nuevo cap que probablemente sea Lv 25.
-    </div>
-  </div>
-</section>
-
 <section id="rotations">
-  <h2>Rotaciones Progresivas (Max DPS por tramo)</h2>
-  <p>La rotación evoluciona según los skills que ya tienes desbloqueados. No esperes a Lv 45 para "empezar a jugar bien" — en cada tramo hay un ritmo óptimo distinto.</p>
-
-  <div class="callout info">
-    <strong>Convenciones:</strong> <code>Q</code> = Quick Slice (LMB spam constante), <code>→</code> = siguiente input inmediato, <code>weave</code> = intercalar Quick Slice entre skills para cancelar animaciones y generar crits.
-  </div>
+  <h2>Rotación: de subir de nivel a jefes</h2>
+  <p>Todo según couga54 (Arthars Gaming y aLuckyRO). <strong>La build en una frase:</strong> quédate detrás del jefe, intercala Corte rápido todo el rato, pulsa Explosión de insignia en cuanto esté lista y Estocada al corazón en cada crítico, y pon todo lo que tienes en los 20 segundos del Clon ilusorio, cuando Estocada al corazón no tiene enfriamiento.</p>
 
   <div class="callout crit">
-    <strong>⚠️ REGLA DE ORO (meta fix oct-2026):</strong> <strong>NO esperes a 5 stacks</strong> de Insignia para detonar. <strong>Spamea Insignia Explosion cada vez que esté lista</strong> — la pasiva mantiene 2 stacks residuales después de detonar, así que esperar stacks pierde ventanas de daño. Press-on-ready = más DPS.
-  </div>
-
-  <div class="callout warn">
-    <strong>Línea de daño (couga54):</strong> de arriba abajo, Rugido bestial (4) → Emboscada (3) → Estocada al corazón (2) → Explosión de insignia (1, la casilla de abajo y la de mayor prioridad). Mantén la tecla de la macro y pulsa <strong>Corte rápido</strong> con el clic izquierdo sin parar. Detalle en <a href="#macros">Macros</a>.
+    <strong>Regla de oro:</strong> <strong>no esperes a acumular insignias</strong>. Con su especialización, Explosión de insignia conserva 2 insignias tras cada explosión: púlsala cada vez que esté lista.
   </div>
 
   <div class="level-tabs">
-    <button class="active" data-tab="r1">Lv 1-5</button>
-    <button data-tab="r2">Lv 6-10</button>
-    <button data-tab="r3">Lv 11-15</button>
-    <button data-tab="r4">Lv 16-21</button>
-    <button data-tab="r5">Nv. 22-31</button>
-    <button data-tab="r6">Nv. 32-44</button>
-    <button data-tab="r7">Nv. 45</button>
+    <button class="active" data-tab="r1">Nv. 1-21 · subiendo</button>
+    <button data-tab="r2">Nv. 22-44 · con estigmas</button>
+    <button data-tab="r3">Nv. 45 · jefes</button>
   </div>
 
   <div class="tab-panel active" id="r1">
-    <h3>Lv 1-5 — Opener básico</h3>
+    <h3>Nv. 1-21 — Corte rápido, insignias y Estocada al corazón</h3>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Shadowstrike</strong> (teleport detrás + stun)</li>
-        <li><strong>Ambush</strong> (bonus trasero)</li>
-        <li><strong>Heart Gore</strong></li>
-        <li><strong>Savage Roar</strong></li>
-        <li>Spam <strong>Quick Slice (Q)</strong> hasta CDs listos</li>
-        <li>Storm Rampage (Lv 5) si target staggered</li>
+        <li><span data-icon="quick" data-size="28"></span> <strong>Primeros puntos: Corte rápido</strong> (recupera PM) y <span data-icon="savage" data-size="28"></span> <strong>Rugido bestial</strong> (graba insignias). A rango 8: <em>+20 % de PM recuperados</em> en Corte rápido y <em>+20 % de velocidad de habilidad</em> en Rugido bestial.</li>
+        <li><span data-icon="heart" data-size="28"></span> <strong>Estocada al corazón</strong> sale con los críticos: ponla en la <strong>Q</strong> y úsala sin parar. Primera especialización: <em>hasta +20 % de Crítico con menos objetivos</em>.</li>
+        <li><span data-icon="insignia" data-size="28"></span> <strong>Explosión de insignia</strong> (nivel 14): abajo del todo en tu línea principal. Especialización: <em>conserva 2 insignias tras la explosión</em>; a 12, <em>+50 % de Multigolpe</em>.</li>
+        <li>Pon la <strong>línea de insignias</strong> en la macro del botón central (ver <a href="#macros">Macros</a>).</li>
       </ol>
     </div>
-    <p><strong>AoE (2+ mobs):</strong> Shadowstrike al centro → Storm Rampage → Quick Slice weave.</p>
-    <p><strong>Tip clave:</strong> Interioriza el patrón <em>"Quick Slice entre cada skill"</em>. Es el fundamento mecánico de toda la clase.</p>
+    <h4>Cómo pelear</h4>
+    <ul style="margin:0 0 0 1.2rem">
+      <li><strong>Élites:</strong> ponte detrás → Emboscada → Rugido bestial para acumular insignias → Explosión de insignia → Estocada al corazón en cada crítico.</li>
+      <li><strong>Grupos:</strong> Explosión de insignia → Corte torbellino.</li>
+      <li><strong>Maná:</strong> Corte rápido recupera PM; tenlo en el clic izquierdo.</li>
+      <li><strong>Poca vida:</strong> Caída sombría absorbe PV; Eliminación de impacto (nivel 16) te cura cuando estás atrapado.</li>
+    </ul>
   </div>
 
   <div class="tab-panel" id="r2">
-    <h3>Lv 6-10 — Introducción del reset de Heart Gore</h3>
+    <h3>Nv. 22-44 — Una ranura de estigma nueva en el 22, 27, 32 y 37</h3>
     <div class="rotation-steps">
       <ol>
-        <li><strong>Shadowstrike</strong> detrás</li>
-        <li><strong>Ambush</strong></li>
-        <li><strong>Heart Gore</strong></li>
-        <li><strong>Flash Slice</strong> (reposicionar + daño)</li>
-        <li><strong>Savage Roar</strong></li>
-        <li>Weave <strong>Quick Slice</strong> → Heart Gore cuando CD listo</li>
+        <li><span data-icon="s_shadowblade" data-size="28"></span> <strong>22 · Tiro de daga sombría</strong> a rango 10: se restablece al matar, así que vas de grupo en grupo sin esperar.</li>
+        <li><span data-icon="s_fang" data-size="28"></span> <strong>27 · Colmillo salvaje</strong> para los grupos: 5 insignias de golpe.</li>
+        <li><span data-icon="s_clone" data-size="28"></span> <strong>32 · Clon ilusorio</strong>: tu ráfaga contra jefes. Desde aquí las esquirlas van a él hasta 20.</li>
+        <li><span data-icon="s_swift" data-size="28"></span> <strong>37 · Pacto de celeridad</strong>: úsalo junto con el Clon y Colmillo salvaje.</li>
       </ol>
     </div>
-    <p><strong>Panic defensiva:</strong> <code>Infiltrarse</code> (Lv 10) — esquiva + reposiciona.</p>
-    <p><strong>AoE:</strong> Whirlwind Slice → Storm Rampage → Heart Gore (4 enemigos en 4m).</p>
-    <div class="callout warn">Heart Gore aún no tiene reset confiable. Trátala como skill con CD normal hasta rank 12.</div>
+    <h4>Cómo pelear</h4>
+    <ul style="margin:0 0 0 1.2rem">
+      <li><strong>Grupos:</strong> Colmillo salvaje (5 insignias) → Explosión de insignia → Corte torbellino; Tiro de daga sombría se restablece al matar para el siguiente grupo.</li>
+      <li><strong>Élites y jefes:</strong> detrás → Emboscada → Rugido bestial → Explosión de insignia → Estocada al corazón en cada crítico. Desde el 32, Clon ilusorio + Colmillo salvaje (y desde el 37 Pacto de celeridad) a la vez, y 20 s de Estocada al corazón sin enfriamiento.</li>
+      <li>El Clon se usa en el jefe, <strong>nunca en monstruos normales</strong>.</li>
+    </ul>
+    <div class="callout warn" style="margin-top:0.8rem">
+      <strong>aLuckyRO:</strong> el Clon ilusorio es imprescindible hasta que Estocada al corazón llega a rango 16 (con 16, un crítico la restablece; si no, espera 5 s).
+    </div>
   </div>
 
   <div class="tab-panel" id="r3">
-    <h3>Lv 11-15 — Insignia Explosion entra al juego</h3>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Shadowstrike</strong> → <strong>Ambush</strong> → <strong>Savage Roar</strong> (apila 1 Insignia)</li>
-        <li>Repetir Savage Roar + skills que generen Insignias hasta <strong>5 stacks</strong></li>
-        <li><strong>Insignia Explosion</strong> → detona</li>
-        <li><strong>Heart Gore</strong> (ahora con reset-on-crit real)</li>
-        <li>Weave <strong>Quick Slice</strong> + repetir</li>
-      </ol>
-    </div>
-    <p><strong>Prioridad sostenida:</strong> Insignia Explosion (siempre listo) > Heart Gore (en cada crit) > Ambush > Savage Roar (filler).</p>
-    <p><strong>Panic:</strong> Shadow Fall (Lv 12) absorbe ~10% HP; Infiltrarse para esquivar.</p>
-    <div class="callout crit">
-      <strong>DPS jump real:</strong> Heart Gore rank 12 + Insignia Explosion = de aquí en adelante haces daño serio en PvE.
-    </div>
-  </div>
-
-  <div class="tab-panel" id="r4">
-    <h3>Lv 16-21 — Rotación completa pre-stigma</h3>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Shadowstrike</strong> detrás</li>
-        <li><strong>Ambush</strong></li>
-        <li><strong>Savage Roar</strong> (apilar Insignias)</li>
-        <li><strong>Insignia Explosion</strong> al tener 5 stacks</li>
-        <li><strong>Heart Gore</strong> → resetea → Heart Gore</li>
-        <li>Weave <strong>Quick Slice</strong> para reducir CD de Explosion (desde rank 16)</li>
-      </ol>
-    </div>
-    <p><strong>Macro básica recomendada:</strong></p>
-    <div class="macro-box">Clic izquierdo: Corte rápido
-Botón central (macro), línea de insignias de arriba abajo:
-  Rugido bestial > Emboscada > Corte torbellino > Explosión de insignia
-Q: Estocada al corazón</div>
-    <p><strong>Panic:</strong> <code>Desafío</code> (Lv 16) — tu botón de pánico principal. Rompe CC + cura 20%.</p>
-  </div>
-
-  <div class="tab-panel" id="r5">
-    <h3>Nv. 22-31 — Farmeo con Tiro de daga sombría y Colmillo salvaje</h3>
-    <p>couga54 no pone el Clon ilusorio primero: mientras subes de nivel, lo que más rinde es ir de grupo en grupo.</p>
-    <h4>Grupos de monstruos</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li><strong>Colmillo salvaje</strong> (desde el 27): graba 5 insignias a todo el grupo</li>
-        <li><strong>Explosión de insignia</strong>: las detona</li>
-        <li><strong>Corte torbellino</strong> para rematar</li>
-        <li><strong>Tiro de daga sombría</strong> al siguiente grupo: a rango 10 se restablece al matar, así que encadena un grupo tras otro</li>
-      </ol>
-    </div>
-    <h4>Élites</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li>Ponte <strong>detrás</strong></li>
-        <li><strong>Emboscada</strong></li>
-        <li><strong>Rugido bestial</strong> para acumular insignias</li>
-        <li><strong>Explosión de insignia</strong></li>
-        <li><strong>Estocada al corazón</strong> cada vez que hagas crítico</li>
-      </ol>
-    </div>
-    <p><strong>Maná:</strong> Corte rápido recupera PM; tenlo en el clic izquierdo. <strong>Poca vida:</strong> Caída sombría absorbe PV y Eliminación de impacto te cura cuando estás atrapado.</p>
-  </div>
-
-  <div class="tab-panel" id="r6">
-    <h3>Nv. 32-44 — Llega el Clon ilusorio (32) y el Pacto de celeridad (37)</h3>
-    <p>Para farmear sigue igual que el tramo anterior. Contra jefes y élites duras ya tienes ventana de ráfaga:</p>
-    <h4>Ráfaga (20 s)</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li>Ponte <strong>detrás</strong> del objetivo (Ataque sigiloso si hace falta)</li>
-        <li><strong>Clon ilusorio + Colmillo salvaje</strong> a la vez (desde el 37, también <strong>Pacto de celeridad</strong>)</li>
-        <li>Durante 20 s: <strong>Estocada al corazón</strong> tras <strong>Estocada al corazón</strong> (sin enfriamiento con el Clon)</li>
-        <li><strong>Explosión de insignia</strong> cada vez que esté lista (Colmillo ya grabó 5 insignias)</li>
-        <li><strong>Corte rápido</strong> entre cada golpe: cada impacto acorta el enfriamiento de Explosión de insignia</li>
-      </ol>
-    </div>
-    <p>El Clon se usa en el jefe, <strong>nunca en monstruos normales</strong>: la mayor parte de tu daño sale de esos 20 segundos.</p>
-  </div>
-
-  <div class="tab-panel" id="r7">
-    <h3>Nv. 45 — Jefes con las 4 mejoras (couga54)</h3>
-    <p>Al 45 cambia <strong>Tiro de daga sombría</strong> por <strong>Puñal de Triniel</strong>. Lo que pulsas de verdad:</p>
-    <h4>Ráfaga (20 s)</h4>
-    <div class="rotation-steps">
-      <ol>
-        <li>Mantén pulsada la <strong>tecla de la macro</strong> y pulsa <strong>Corte rápido</strong> tú mismo todo el rato (ver <a href="#macros">Macros</a>)</li>
-        <li><strong>Clon ilusorio + Pacto de celeridad + Colmillo salvaje</strong> a la vez</li>
-        <li><strong>Puñal de Triniel</strong> justo después, para recortar los enfriamientos de esas tres mejoras cuando están más largos</li>
-        <li>Durante 20 s: <strong>Estocada al corazón</strong> tras <strong>Estocada al corazón</strong></li>
-      </ol>
-    </div>
-    <h4>Entre ráfagas</h4>
-    <div class="priority-list">
-      <span class="chip p1">#1 Explosión de insignia (cada vez que esté lista)</span>
-      <span class="chip p1">#2 Estocada al corazón (en cada crítico)</span>
-      <span class="chip p2">#3 Emboscada</span>
-      <span class="chip p2">#4 Rugido bestial</span>
-      <span class="chip p3">Corte rápido entre todo</span>
-    </div>
-    <ul style="margin:0.75rem 0 0 1.2rem">
-      <li><strong>Pacto y Colmillo vuelven antes que el Clon</strong> (1 min contra 1 min 30 s). Puedes guardarlos para el siguiente Clon (más ráfaga) o usarlos en cuanto estén listos (daño más estable). No hay una respuesta acordada; en peleas cortas, guárdalos.</li>
-      <li><strong>Tambaleo:</strong> Desenfreno de tormenta sobre el jefe tambaleado, con Corte rápido entre golpes: baja todos los enfriamientos varios segundos.</li>
-      <li><strong>Posición:</strong> Ataque sigiloso, Corte de destello e Infiltración te ponen detrás. Úsalos para quedarte ahí, no como botones de daño.</li>
-      <li><strong>Grupos:</strong> Colmillo salvaje → Explosión de insignia → Corte torbellino.</li>
-    </ul>
-    <div class="callout crit">
-      <strong>De dónde sale el daño</strong> (prueba de Arthars en un muñeco): Estocada al corazón ~30 %, Explosión de insignia ~25 %, todo lo demás 6 % o menos cada una. Quédate detrás del jefe: cada golpe de frente pierde el bono de Impacto trasero.
+    <h3>Nv. 45 — Jefes con las 4 mejoras</h3>
+    <p>Al 45, <strong>Tiro de daga sombría</strong> deja su ranura a <strong>Puñal de Triniel</strong>. Las cuatro ranuras son mejoras: Clon ilusorio 20, Pacto de celeridad 15 → 20, Colmillo salvaje 15, Puñal de Triniel 10.</p>
+    <div class="mset" data-set="boss"></div>
+    <div class="callout info">
+      <strong>Qué esperar en la Season 1:</strong> ráfaga y luego un hueco. En global el Clon se queda en rango 20 (unos 20 s de ráfaga cada 1 min 30 s); entre ventanas usas el relleno mientras Estocada al corazón depende de la suerte con los críticos. Las peleas son largas: verás varias ventanas. Estar detrás es daño: en un muñeco es el 100 %, en una pelea real cuenta con un 60-80 %.
     </div>
   </div>
 </section>
@@ -2331,71 +2055,25 @@ Q: Estocada al corazón</div>
 
 <section id="macros">
   <h2>Macros y barra de habilidades</h2>
-  <p>AION 2 tiene dos herramientas distintas (según couga54, que sigue la configuración de Arthars):</p>
+  <p>AION 2 tiene dos herramientas distintas (couga54, con la barra de Arthars):</p>
   <ul style="margin:0 0 1rem 1.2rem">
-    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un mismo botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>.</li>
+    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un mismo botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>. Las tarjetas muestran cada línea de arriba abajo, como en el juego.</li>
     <li><strong>Macro del juego:</strong> mientras mantienes su tecla, pulsa tus botones de la barra en orden y corta el final de las animaciones. Se salta lo que esté en enfriamiento.</li>
   </ul>
   <div class="callout warn">
     <strong>Primero asigna la tecla:</strong> la macro no tiene tecla por defecto. Ve a <em>Ajustes → Teclas → General → Macro</em> y ponla en el <strong>clic derecho</strong>. Así la mantienes pulsada a la vez que el ataque básico del clic izquierdo.
   </div>
 
-  <h3>1. Líneas de la barra (nivel 45)</h3>
-  <p>Orden como en el juego, de arriba abajo. El 1 es la casilla de abajo, la de mayor prioridad.</p>
-  <div class="macro-box">Línea de daño (tecla E)
-  4  Rugido bestial
-  3  Emboscada
-  2  Estocada al corazón
-  1  Explosión de insignia   ← la de mayor prioridad
-
-Línea de mejoras (tecla 7)
-  4  Puñal de Triniel
-  3  Colmillo salvaje
-  2  Pacto de celeridad
-  1  Clon ilusorio           ← la de mayor prioridad</div>
-  <p>Explosión de insignia sale cada vez que está lista y Estocada al corazón en cada crítico. Cuando ninguna está disponible, la línea pasa a las de relleno: primero Emboscada y al final Rugido bestial.</p>
-  <div class="callout crit">
-    <strong>Las mejoras van a mano, nunca en la macro.</strong> Arthars tiene los cuatro estigmas en un solo botón y lo pulsa él mismo. Si los metes en la macro, las mejoras se desincronizan.
+  <div class="level-tabs">
+    <button class="active" data-tab="m1">Nivel 45 (jefes)</button>
+    <button data-tab="m2">Mientras subes de nivel</button>
   </div>
-
-  <h3>2. Macro del juego</h3>
-  <p>Dos pasos de 10 ms cada uno, en una tecla que puedas mantener todo el rato (el clic derecho):</p>
-  <div class="macro-box">1  Línea de daño   10 ms
-2  Corte rápido    10 ms</div>
-
-  <h3>3. Lo que pulsas de verdad</h3>
-  <ul style="margin:0 0 1rem 1.2rem">
-    <li><strong>Mantén</strong> la tecla de la macro y <strong>pulsa Corte rápido tú mismo</strong> sin parar: cada golpe acorta el enfriamiento de Explosión de insignia.</li>
-    <li><strong>Ráfaga:</strong> Clon ilusorio + Pacto de celeridad + Colmillo salvaje juntos, y Puñal de Triniel justo después. Durante 20 s, Estocada al corazón tras Estocada al corazón.</li>
-    <li><strong>Tambaleo:</strong> Desenfreno de tormenta sobre el jefe tambaleado, con Corte rápido entre golpes.</li>
-    <li><strong>Posición:</strong> Ataque sigiloso, Corte de destello e Infiltración te ponen detrás. Úsalos para quedarte ahí.</li>
-  </ul>
-
-  <h3>Mientras subes de nivel</h3>
-  <p>Antes de que Estocada al corazón llegue a rango 16 basta con algo más simple, desde el nivel 1:</p>
-  <div class="macro-box">Línea de insignias en la macro, tecla: botón central del ratón
-  4  Rugido bestial
-  3  Emboscada
-  2  Corte torbellino
-  1  Explosión de insignia   ← la de mayor prioridad
-
-Clic izquierdo: Corte rápido
-Q: Estocada al corazón
-Para farmear: Tiro de daga sombría en el 2 y clic derecho</div>
-
-  <h3>Teclas sugeridas</h3>
-  <table>
-    <thead><tr><th>Tecla</th><th>Función</th></tr></thead>
-    <tbody>
-      <tr><td><code>Clic izquierdo</code></td><td>Corte rápido, sin parar</td></tr>
-      <tr><td><code>Clic derecho</code></td><td>Macro del juego (mantener)</td></tr>
-      <tr><td><code>E</code></td><td>Línea de daño</td></tr>
-      <tr><td><code>7</code></td><td>Línea de mejoras (los 4 estigmas, a mano)</td></tr>
-      <tr><td><code>Q</code></td><td>Estocada al corazón (subiendo de nivel)</td></tr>
-      <tr><td>A tu gusto</td><td>Ataque sigiloso, Corte de destello e Infiltración para ponerte detrás · Eliminación de impacto cuando te controlan</td></tr>
-    </tbody>
-  </table>
-  <p><small>Las teclas son las del autor (botones laterales y teclado numérico): copia las líneas y ponlas donde te resulte cómodo.</small></p>
+  <div class="tab-panel active" id="m1">
+    <div class="mset" data-set="pve"></div>
+  </div>
+  <div class="tab-panel" id="m2">
+    <div class="mset" data-set="leveling"></div>
+  </div>
 </section>
 
 <section id="progress">
@@ -2409,8 +2087,8 @@ Para farmear: Tiro de daga sombría en el 2 y clic derecho</div>
     <label class="progress-check"><input type="checkbox" data-key="p1"> Lv 5 alcanzado — fundamentos aprendidos</label>
     <label class="progress-check"><input type="checkbox" data-key="p2"> Lv 10 — Infiltrarse desbloqueado, panic defensiva lista</label>
     <label class="progress-check"><input type="checkbox" data-key="p3"> Lv 11 — Pet system desbloqueado (quest All Geared Up)</label>
-    <label class="progress-check"><input type="checkbox" data-key="p4"> Lv 12 — Heart Gore llevado a rank 12 (reset-on-crit real)</label>
-    <label class="progress-check"><input type="checkbox" data-key="p5"> Lv 14 — Insignia Explosion desbloqueado y en rotación</label>
+    <label class="progress-check"><input type="checkbox" data-key="p4"> Estocada al corazón a rango 16 (con Daevanion y anillos): un crítico la restablece</label>
+    <label class="progress-check"><input type="checkbox" data-key="p5"> Nv. 14 — Explosión de insignia abajo en la línea principal</label>
     <label class="progress-check"><input type="checkbox" data-key="p6"> Lv 16 — Desafío equipado como panic principal</label>
     <label class="progress-check"><input type="checkbox" data-key="p7"> Nv. 22 — Ascensión completada + Tiro de daga sombría equipado (súbelo a 10)</label>
     <label class="progress-check"><input type="checkbox" data-key="p8"> Nv. 27 — Colmillo salvaje en la ranura 2</label>
@@ -2420,7 +2098,7 @@ Para farmear: Tiro de daga sombría en el 2 y clic derecho</div>
     <label class="progress-check"><input type="checkbox" data-key="p12"> Lv 40 — Triniel Board desbloqueado (1000 GS)</label>
     <label class="progress-check"><input type="checkbox" data-key="p13"> Nv. 45 — Tiro de daga sombría cambiado por Puñal de Triniel para jefes</label>
     <label class="progress-check"><input type="checkbox" data-key="p14"> Clon ilusorio a rango 20</label>
-    <label class="progress-check"><input type="checkbox" data-key="p15"> Heart Gore + Insignia Explosion a rank 20</label>
+    <label class="progress-check"><input type="checkbox" data-key="p15"> Estocada al corazón y Explosión de insignia a rango 20</label>
     <label class="progress-check"><input type="checkbox" data-key="p16"> Estigmas de jefes completos: Clon 20 · Pacto 15 · Colmillo 15 · Puñal de Triniel 10</label>
   </div>
 
@@ -2442,7 +2120,7 @@ Para farmear: Tiro de daga sombría en el 2 y clic derecho</div>
     <label class="progress-check"><input type="checkbox" data-key="sys5"> Pecho a Enhancement cap</label>
     <label class="progress-check"><input type="checkbox" data-key="sys6"> Manastones en arma (Back Attack Boost prioritario)</label>
     <label class="progress-check"><input type="checkbox" data-key="sys7"> Arcana set 4-piece Primal Vigor equipado</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys8"> Arcanas rolleadas con Heart Gore / Insignia Explosion</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys8"> Arcanas con Estocada al corazón / Explosión de insignia</label>
     <label class="progress-check"><input type="checkbox" data-key="sys9"> Battle Pass actual al 100%</label>
     <label class="progress-check"><input type="checkbox" data-key="sys10"> Primer Theostone equipado en arma</label>
     <label class="progress-check"><input type="checkbox" data-key="sys11"> 50 Collection Milestones alcanzados</label>
@@ -2540,10 +2218,12 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
-<script src="icons.js?v=2026-10-08-r"></script>
-<script src="planner-asesino.js?v=2026-10-08-r"></script>
-<script src="planner.js?v=2026-10-08-r"></script>
-<script src="daevanion-asesino.js?v=2026-10-08-r"></script>
-<script src="daevanion.js?v=2026-10-08-r"></script>
+<script src="icons.js?v=2026-10-08-u"></script>
+<script src="planner-asesino.js?v=2026-10-08-u"></script>
+<script src="planner.js?v=2026-10-08-u"></script>
+<script src="macros-asesino.js?v=2026-10-08-u"></script>
+<script src="macros.js?v=2026-10-08-u"></script>
+<script src="daevanion-asesino.js?v=2026-10-08-u"></script>
+<script src="daevanion.js?v=2026-10-08-u"></script>
 </body>
 </html>

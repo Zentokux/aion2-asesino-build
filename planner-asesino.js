@@ -7,12 +7,12 @@ const PLANNER_KEY = 'aion2_planner_lvl';
 
 const SKILLS = {
   // Activas clave (a rango 10 con puntos)
-  heart:        { name: 'Estocada al corazón',     nameEn: 'Heart Gore',          color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa clave',  note: 'Tu golpe principal (~30 % del daño). Con crítico se restablece.' },
-  insignia:     { name: 'Explosión de insignia',   nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa clave',  note: 'Detona las insignias (~25 % del daño). Úsala cada vez que esté lista.' },
-  quick:        { name: 'Corte rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Ataque básico: recupera PM y entra entre cada habilidad.' },
-  ambush:       { name: 'Emboscada',               nameEn: 'Ambush',              color: '#ff4d6d', unlock: 3,  cap: 10, type: 'Activa clave',  note: 'Golpe por la espalda. Una de las 5 clave de couga54.' },
+  heart:        { name: 'Estocada al corazón',     nameEn: 'Heart Gore',          color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa clave',  note: 'Tu golpe principal (~30 % del daño). Con crítico se restablece.', spec8: 'Hasta +20 % de Crítico con menos objetivos (couga54, subida; al 45 couga toma absorber 0,7 % de PV si ya tienes crítico)' },
+  insignia:     { name: 'Explosión de insignia',   nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa clave',  note: 'Detona las insignias (~25 % del daño). Úsala cada vez que esté lista.', spec8: 'Conserva 2 insignias tras la explosión' },
+  quick:        { name: 'Corte rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Ataque básico: recupera PM y entra entre cada habilidad.', spec8: '+20 % de PM recuperados' },
+  ambush:       { name: 'Emboscada',               nameEn: 'Ambush',              color: '#ff4d6d', unlock: 3,  cap: 10, type: 'Activa clave',  note: 'Golpe por la espalda. Una de las 5 clave de couga54.', spec8: 'Graba 2 insignias al golpear por la espalda' },
   storm:        { name: 'Desenfreno de tormenta',  nameEn: 'Storm Rampage',       color: '#ff4d6d', unlock: 5,  cap: 10, type: 'Activa clave',  note: 'Ráfaga de golpes. Una de las 5 clave de couga54.' },
-  savage:       { name: 'Rugido bestial',          nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (a 8)',  note: 'Graba insignias. A rango 8 abre +20 % de velocidad de habilidad; el 9-10 solo con puntos extra.' },
+  savage:       { name: 'Rugido bestial',          nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (a 8)',  note: 'Graba insignias. A rango 8 abre +20 % de velocidad de habilidad; el 9-10 solo con puntos extra.', spec8: '+20 % de velocidad de habilidad' },
   // Activas que se quedan en rango 1
   shadow:       { name: 'Ataque sigiloso',         nameEn: 'Shadowstrike',        color: '#64748b', unlock: 1,  cap: 10, type: 'Activa (rango 1)', note: 'Apertura. Sube con Daevanion, no con puntos.' },
   whirl:        { name: 'Corte torbellino',        nameEn: 'Whirlwind Slice',     color: '#64748b', unlock: 7,  cap: 10, type: 'Activa (rango 1)', note: 'Área. No vale puntos en JcE.' },
@@ -45,8 +45,9 @@ const STIGMAS = {
 };
 
 // Orden de compra: cada nivel se gasta todo lo posible, de arriba abajo, sin pasar el tope ni el objetivo.
+// couga54 (subida): primeros puntos a Corte rápido (recupera PM) y Rugido bestial (graba insignias); luego Estocada al corazón e insignias.
 const PRIORITY = [
-  ['heart', 10], ['insignia', 10], ['quick', 10], ['savage', 8], ['ambush', 10], ['storm', 10],
+  ['quick', 10], ['savage', 8], ['heart', 10], ['insignia', 10], ['ambush', 10], ['storm', 10],
   ['rear', 10], ['exploit', 10], ['assault', 10], ['determination', 10],
 ];
 // Solo cuando lo de arriba ya está completo (o con piedras de sabiduría).
@@ -54,9 +55,9 @@ const EXTRA = [['savage', 10], ['sixthsense', 10], ['ambushstance', 10]];
 
 const MILESTONES = {
   1:  { special: '🎯 Empiezas sin puntos hasta el nivel 4. Practica: Ataque sigiloso → Emboscada → Rugido bestial → Corte rápido entre cada golpe, siempre por la espalda.' },
-  4:  { special: '🎯 Primer punto de habilidad. Estocada al corazón: ponla en la Q y úsala sin parar.' },
+  4:  { special: '🎯 Primer punto de habilidad: Corte rápido (recupera PM) y Rugido bestial (graba insignias). A rango 8: +20 % de PM recuperados y +20 % de velocidad de habilidad. Estocada al corazón sale con los críticos: ponla en la Q y úsala sin parar.' },
   12: { special: '⭐ Se abre el tablero Daevanion Nezekan (ver sección Daevanion).' },
-  14: { special: '🔓 Explosión de insignia: ponla en tu barra principal y súbela cada vez que puedas.' },
+  14: { special: '🔓 Explosión de insignia: abajo del todo en tu línea principal. Especialización: conserva 2 insignias tras la explosión. Púlsala cada vez que esté lista.' },
   20: { special: '⭐ Se abre el tablero Zikel.' },
   22: { special: '⭐ Ascensión: ranura de estigma 1 → Tiro de daga sombría, súbelo a 10 (se restablece al matar). Los estigmas se suben con Esquirlas de Estigma, no con estos puntos.' },
   27: { special: '⭐ Ranura de estigma 2 → Colmillo salvaje, para los grupos de monstruos.' },

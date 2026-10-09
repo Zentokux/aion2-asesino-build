@@ -69,3 +69,11 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 - Contenido desde `tools/fuentes-clerigo/couga-cleric.txt` (Lucia, Kaeria, Whelps, aLuckyRO, Grobs). Estigmas: 22 Castigo terrestre, 27 Luz de protección, 32 Aura noble, 37 Oración de amplificación; con Chanter, Luz de protección → Absolución.
 - Prueba: `tools/probar.ps1 -Page clerigo.html -Section progression` (ahora guarda en %TEMP%ion2-pruebas).
 - Versión anterior en `respaldo/clerigo-antes-v2.html`.
+
+**Macros y rotaciones al estilo couga54 (2026-10-08, cache-buster `-u`):**
+- Motor común `macros.js` (barra de ejemplo con iconos, líneas apiladas, pasos de macro, "lo que pulsas"); datos en `macros-<clase>.js` (window.MACRO_SETS) y se pinta en `<div class="mset" data-set="...">`. Texto con `[[clave]]` = icono + nombre.
+- Barras y líneas copiadas exactas de couga54 con `tools/extraer-macros.py` (JSON en tools/fuentes-*/macros-*.json; HTML original guardado).
+- Asesino: rotación en 3 pestañas (1-21, 22-44, 45) según couga54; macro Arthars (E línea de daño, 7 mejoras, macro 2 pasos) + subida (botón central). Se borró la sección oculta antigua (decía reinicio de Estocada a 12; es a 16).
+- Planificador del Asesino: prioridad de subida de couga54 = Corte rápido y Rugido bestial (a 8) primero; mismos rangos finales (203, 0 sobran).
+- Planificador: `spec8` por habilidad muestra la especialización al llegar a rango 8.
+- Clérigo: prioridad couga54 = Retribución, Rayo, Gracia terrestre, Condena, Centella, Luz de curación, Aura, Gracia empírea, Mejora, Resplandor, Enlace, Relámpagos (203, sobra 1). Macros Lucia / Whelps / subida (Grobs). Hitos de ruta por nivel (escondites 15/20/25, amuleto 17, Shugo al 45).

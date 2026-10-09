@@ -25,17 +25,17 @@ Object.assign(ICON_FILES, {
 
 const SKILLS = {
   // Activas de daño (a rango 10 con puntos)
-  c_retribucion: { name: 'Retribución terrestre',  nameEn: "Earth's Retribution",  color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Ataque básico sin enfriamiento: recupera PM y corta animaciones. Siempre en el clic izquierdo.' },
-  c_rayo:        { name: 'Rayo del juicio',        nameEn: 'Judgment Thunder',     color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Daño constante sin enfriamiento entre habilidades.' },
-  c_condena:     { name: 'Condena',                nameEn: 'Condemnation',         color: '#ff4d6d', unlock: 8,  cap: 10, type: 'Activa clave',  note: 'La más importante: solo golpea a un objetivo con Enlace de dolor y, con crítico, se restablece.' },
-  c_centella:    { name: 'Centella',               nameEn: 'Bolt',                 color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa clave',  note: 'Tu golpe más fuerte: cárgala del todo.' },
-  c_aura:        { name: 'Aura divina',            nameEn: 'Divine Aura',          color: '#ff4d6d', unlock: 3,  cap: 10, type: 'Activa clave',  note: 'Hace daño en paralelo contigo: cuanto más tiempo esté puesta, mejor.' },
-  c_enlace:      { name: 'Enlace de dolor',        nameEn: 'Chain of Torment',     color: '#a855f7', unlock: 4,  cap: 10, type: 'Activa (apoyo)', note: 'Marca al objetivo para que Condena pueda golpearlo. Va abajo en la misma línea que Condena.' },
+  c_retribucion: { name: 'Retribución terrestre',  nameEn: "Earth's Retribution",  color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Ataque básico sin enfriamiento: recupera PM y corta animaciones. Siempre en el clic izquierdo.', spec8: '+20 % de probabilidad de Descarga (luego, a 12: −7 s a Centella al acertar Descarga)' },
+  c_rayo:        { name: 'Rayo del juicio',        nameEn: 'Judgment Thunder',     color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Daño constante sin enfriamiento entre habilidades.', spec8: 'Hasta +12 % de daño con menos objetivos (a 16: Castigo divino 1 vez más)' },
+  c_condena:     { name: 'Condena',                nameEn: 'Condemnation',         color: '#ff4d6d', unlock: 8,  cap: 10, type: 'Activa clave',  note: 'La más importante: solo golpea a un objetivo con Enlace de dolor y, con crítico, se restablece.', spec8: 'Hasta +12 % de daño con menos objetivos (a 12: se restablece al hacer crítico)' },
+  c_centella:    { name: 'Centella',               nameEn: 'Bolt',                 color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa clave',  note: 'Tu golpe más fuerte: cárgala del todo.', spec8: '+30 % de velocidad de habilidad (segunda ranura: +300 de Precisión de habilidad)' },
+  c_aura:        { name: 'Aura divina',            nameEn: 'Divine Aura',          color: '#ff4d6d', unlock: 3,  cap: 10, type: 'Activa clave',  note: 'Hace daño en paralelo contigo: cuanto más tiempo esté puesta, mejor.', spec8: 'Mientras subes: cambia a habilidad de área (hasta 4 monstruos). Para jefes al 45: +50 % de velocidad de ataque del aura' },
+  c_enlace:      { name: 'Enlace de dolor',        nameEn: 'Chain of Torment',     color: '#a855f7', unlock: 4,  cap: 10, type: 'Activa (apoyo)', note: 'Marca al objetivo para que Condena pueda golpearlo. Va abajo en la misma línea que Condena.', spec8: '+3 s de daño periódico (Lucia, en Trascendencia: 20 % de Derribo)' },
   c_relampagos:  { name: 'Relámpagos sin puntería', nameEn: 'Lightning Strike Scattershot', color: '#a855f7', unlock: 5, cap: 10, type: 'Activa (tambaleo)', note: 'Solo con el jefe en Tambaleo, pero cada golpe baja 1 s todos tus enfriamientos.' },
   c_estigma:     { name: 'Estigma debilitante',    nameEn: 'Debilitating Mark',    color: '#64748b', unlock: 1,  cap: 10, type: 'Activa (rango 1)', note: '−15 % de Defensa del jefe mientras dura el daño periódico. Úsala cada vez que esté lista.' },
   // Curaciones
-  c_curacion:    { name: 'Luz de curación',        nameEn: 'Healing Light',        color: '#22c55e', unlock: 10, cap: 10, type: 'Curación',       note: 'Curación rápida casi sin enfriamiento. Antes de mazmorras en grupo, llévala a 16 (Daevanion, anillos, Arcana).' },
-  c_resplandor:  { name: 'Resplandor de recobro',  nameEn: 'Radiant Recovery',     color: '#22c55e', unlock: 12, cap: 10, type: 'Curación',       note: 'Tu curación más fuerte fuera de los estigmas; quita un efecto negativo.' },
+  c_curacion:    { name: 'Luz de curación',        nameEn: 'Healing Light',        color: '#22c55e', unlock: 10, cap: 10, type: 'Curación',       note: 'Curación rápida casi sin enfriamiento. Antes de mazmorras en grupo, llévala a 16 (Daevanion, anillos, Arcana).', spec8: '+2 usos seguidos' },
+  c_resplandor:  { name: 'Resplandor de recobro',  nameEn: 'Radiant Recovery',     color: '#22c55e', unlock: 12, cap: 10, type: 'Curación',       note: 'Tu curación más fuerte fuera de los estigmas; quita un efecto negativo.', spec8: '−3 s de enfriamiento' },
   c_regeneracion:{ name: 'Luz de regeneración',    nameEn: 'Light of Regeneration', color: '#64748b', unlock: 7, cap: 10, type: 'Curación (rango 1)', note: 'Curación en el tiempo: úsala cada vez que esté lista.' },
   c_eliminacion: { name: 'Eliminación de impacto', nameEn: 'Defiance',             color: '#64748b', unlock: 16, cap: 10, type: 'Activa (rango 1)', note: 'Rompe el control y cura un 10 %.' },
   // Pasivas clave
@@ -61,29 +61,34 @@ const STIGMAS = {
 };
 
 // Orden de compra: cada nivel se gasta todo lo posible, de arriba abajo, sin pasar el tope ni el objetivo.
+// couga54 (subida): los dos ataques sin enfriamiento primero; Gracia terrestre al tope en cuanto se aprende (21);
+// luego Condena, Centella y Luz de curación; después el resto del daño, las pasivas clave y las demás curaciones.
 const PRIORITY = [
-  ['c_retribucion', 10], ['c_rayo', 10], ['c_gracia_terrestre', 10], ['c_condena', 10], ['c_centella', 10], ['c_aura', 10],
-  ['c_gracia_empirea', 10], ['c_mejora', 10], ['c_curacion', 10], ['c_resplandor', 10], ['c_enlace', 10], ['c_relampagos', 10],
+  ['c_retribucion', 10], ['c_rayo', 10], ['c_gracia_terrestre', 10], ['c_condena', 10], ['c_centella', 10], ['c_curacion', 10],
+  ['c_aura', 10], ['c_gracia_empirea', 10], ['c_mejora', 10], ['c_resplandor', 10], ['c_enlace', 10], ['c_relampagos', 10],
 ];
 // Solo cuando lo de arriba ya está completo (o con piedras de sabiduría).
 const EXTRA = [['c_favor_radiante', 10], ['c_favor_calido', 10], ['c_velo', 10]];
 
 const MILESTONES = {
-  1:  { special: '🎯 Sube primero tus dos ataques sin enfriamiento: Retribución terrestre (recupera PM) y Rayo del juicio. Juega en modo objetivo: mantiene el ataque básico entre habilidades, y ese es tu maná.' },
-  4:  { special: '🔓 Enlace de dolor: marca al objetivo. Desde el 8, Condena solo golpea a objetivos con Enlace: ponlos en la misma línea de la barra, con Enlace abajo.' },
-  8:  { special: '🔓 Condena, tu habilidad más importante. Las especializaciones se abren cuando cada habilidad llega a rango 8.' },
+  1:  { special: '🎯 Sigue solo las misiones amarillas (historia). Sube primero tus dos ataques sin enfriamiento: Retribución terrestre (recupera PM) y Rayo del juicio. Juega en modo objetivo: mantiene el ataque básico entre habilidades, y ese es tu maná. Tras el prólogo, junta 40 plumas (120 esquirlas) para mejorar el amuleto.' },
+  4:  { special: '🔓 Enlace de dolor: marca al objetivo. Desde el 8, Condena solo golpea a objetivos con Enlace: ponlos en la misma línea de la barra, con Enlace abajo (macro de subida en la sección Macros).' },
+  8:  { special: '🔓 Condena, tu habilidad más importante. Las especializaciones se abren cuando cada habilidad llega a rango 8: el plan te dice cuál elegir.' },
   10: { special: '💚 Luz de curación, para ti. Sube habilidades de ataque, no de curación: un Clérigo que solo cura sube lento.' },
-  12: { special: '⭐ Se abre el tablero Daevanion Nezekan (ver sección Daevanion).' },
-  14: { special: '🔓 Centella: tu golpe más fuerte. Cárgala del todo; toma su especialización de +30 % de velocidad de habilidad.' },
-  20: { special: '⭐ Se abre el tablero Zikel.' },
+  12: { special: '⭐ Se abre el tablero Daevanion Nezekan: los nodos azules dan +1 a su habilidad (orden de clics en la sección Daevanion).' },
+  14: { special: '🔓 Centella: tu golpe más fuerte, para élites y Tambaleo. Cárgala del todo.' },
+  15: { special: '🏠 Limpia los escondites que te pillen de camino: la primera vez dan Piedras de mejora y Cristales Daevanion (también en el 20 y el 25).' },
+  17: { special: '📿 Amuleto a +10 y transfórmalo en la versión azul. Arma a ~+10 cuando puedas: es el mayor salto de daño mientras subes (no la subas más antes del tope).' },
+  20: { special: '⭐ Se abre el tablero Zikel: misma prioridad de nodos.' },
   21: { special: '🔓 Gracia terrestre (Daño Crítico y Precisión): súbela al tope en cuanto la aprendas.' },
-  22: { special: '⭐ Ascensión: ranura de estigma 1 → Castigo terrestre, abajo en la línea de Condena para que siempre sea crítica. Aprende también Resurrección de invocación (1 punto) y sube a 5 Aura noble, Poder de vida y Absolución. Los estigmas se suben con Esquirlas, no con estos puntos.' },
+  22: { special: '⭐ Ascensión: ranura de estigma 1 → Castigo terrestre, abajo en la línea de Condena para que siempre sea crítica (a rango 5). Aprende también Resurrección de invocación con 1 esquirla. Los estigmas se suben con Esquirlas, no con estos puntos.' },
+  25: { special: '🎯 Hacia aquí Retribución terrestre y Rayo del juicio llegan a 10 (couga54). Desde ahora, Condena, Centella y Luz de curación.' },
   27: { special: '⭐ Ranura de estigma 2 → Luz de protección. Es un interruptor: actívala una vez y déjala fuera de las líneas y de la macro.' },
-  30: { special: '⭐ Se abre Vaizel (Daño Crítico).' },
+  30: { special: '⭐ Se abre Vaizel (Daño Crítico). Acto 4: las misiones secundarias y las mazmorras en solitario vuelven a valer la pena.' },
   32: { special: '⭐ Ranura de estigma 3 → Aura noble: ataca contigo 5 minutos, daño gratis.' },
-  37: { special: '⭐ Ranura de estigma 4 → Oración de amplificación. Loadout completo.' },
-  40: { special: '⭐ Se abre Triniel (Multigolpe; sobre todo JcJ, puede esperar).' },
-  45: { special: '🏆 Nivel 45: antes de mazmorras en grupo lleva Luz de curación a 16 con Daevanion, anillos y Arcana. Azphel es JcJ: no le pongas puntos en JcE.' },
+  37: { special: '⭐ Ranura de estigma 4 → Oración de amplificación. Estigmas completos: ya puedes usar la macro de nivel 45.' },
+  40: { special: '⭐ Se abre Triniel (Multigolpe; sobre todo JcJ, puede esperar). La Cueva de Krao pide unos 1.000 de puntuación de equipo.' },
+  45: { special: '🏆 Nivel 45: antes de mazmorras en grupo lleva Luz de curación a 16 con Daevanion, anillos y Arcana. Azphel es JcJ: no le pongas puntos en JcE. Haz las actividades Shugo (set del tope) y barre el mapa (interrogaciones, hogueras, misiones verdes, cubos ocultos, plumas).' },
 };
 
 // Resumen de arriba y lista "cuándo llega cada habilidad a su rango final"
@@ -95,4 +100,4 @@ const PLANNER_SUMMARY = {
 };
 
 // Hitos de la barra y botones de salto del planificador
-const PLANNER_JUMPS = [1, 8, 14, 21, 22, 30, 37, 45];
+const PLANNER_JUMPS = [1, 8, 14, 21, 22, 25, 30, 37, 45];

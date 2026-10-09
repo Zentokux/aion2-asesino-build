@@ -5,6 +5,7 @@
 //   3. Los estigmas NO usan puntos de habilidad: se suben con Esquirlas de Estigma.
 // Los datos de cada clase (SKILLS, STIGMAS, PRIORITY, EXTRA, MILESTONES, PLANNER_SUMMARY, PLANNER_KEY)
 // van en planner-<clase>.js, que se carga antes que este archivo.
+// Opcional en cada habilidad: spec8 (qué especialización elegir al llegar a rango 8).
 // Opcional: PLANNER_JUMPS (hitos de la barra y botones de salto); si no está, se usan los del Asesino.
 const JUMPS = (typeof PLANNER_JUMPS !== 'undefined') ? PLANNER_JUMPS : [1, 4, 14, 22, 30, 40, 45];
 
@@ -128,8 +129,9 @@ function renderLevel(lv) {
         <span class="skill-mini">${renderIcon(inv.id, 40)}</span>
         <div class="invest-info">
           <strong>${inv.skill.name}</strong>
-          <span class="invest-change">Rango <b>${inv.from}</b> → <b>${inv.to}</b>${inv.to === 8 ? ' · abre especialización' : ''}</span>
+          <span class="invest-change">Rango <b>${inv.from}</b> → <b>${inv.to}</b>${inv.from < 8 && inv.to >= 8 ? ' · abre especialización' : ''}</span>
           <span class="invest-cost">−${inv.cost} pts</span>
+          ${inv.from < 8 && inv.to >= 8 && inv.skill.spec8 ? `<span class="invest-spec">⚙️ Especialización: <b>${inv.skill.spec8}</b></span>` : ''}
         </div>
       </div>`
     ).join('');
