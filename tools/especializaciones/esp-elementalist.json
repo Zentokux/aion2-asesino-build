@@ -1,0 +1,530 @@
+[
+ {
+  "slug": "elemental-fusion",
+  "mb": "elemental-fusion",
+  "nombre": "Fusión elemental",
+  "nombreEn": "Elemental Fusion",
+  "rango": "20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad de área",
+    "en": "Changes to AoE Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, daño adicional después de 3s",
+    "en": "Extra damage after 3s on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 10 % de Amplificación de Elementos (Todos)",
+    "en": "+10 all Element Boost on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Cambio a habilidad de carga y aumento de máx. 200 % de daño",
+    "en": "Changes to Charge Skill, dealing up to 200% more damage",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Reobtención de Cuatro elementos con un 25 % de prob.",
+    "en": "25% chance to regain Four Elements",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "combustion",
+  "mb": "combustion",
+  "nombre": "Combustión",
+  "nombreEn": "Combustion",
+  "rango": "20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 20 % de Consumo de Puntos de Maná",
+    "en": "-20% MP consumed",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 12 % de daño",
+    "en": "Deals up to 12% more damage when less targets are hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 100 de la Precisión de la habilidad",
+    "en": "+100 Skill Accuracy",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento del 20 % de velocidad de habilidad",
+    "en": "+20% Skill Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Adición de hab. de cadena «Llamado de ceniza» x2",
+    "en": "Adds [Ashy Call] Chain Skill",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "summon-fire-spirit",
+  "mb": "summon-fire-spirit",
+  "nombre": "Invocación: Espíritu de fuego",
+  "nombreEn": "Summon: Fire Spirit",
+  "rango": "20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 50 % de Consumo de Puntos de Maná",
+    "en": "-50% MP Cost",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de daño Crítico de Espíritu de fuego",
+    "en": "+20% Fire Spirit Critical Hit damage",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "(Espíritu de fuego) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad",
+    "en": "10% chance to activate skill when Fire Spirit lands attack",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "(Espíritu de fuego) Al acertar un ataque, estado de Derribo durante 3s con un 5 % de prob.",
+    "en": "5% chance to inflict Knockdown for 3s on landing Fire Spirit attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 20 % de estadísticas de Espíritu de fuego",
+    "en": "+20% Fire Spirit Stats",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "cold-shock",
+  "mb": "cold-shock",
+  "nombre": "Impacto helado",
+  "nombreEn": "Cold Shock",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Recuperación de Puntos de Maná",
+    "en": "+20% MP restored",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 100, 100 %",
+    "en": "Absorbs 1% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar «Temblor terrestre», aumento del 2 % de Ataque (acumulaciones máx.: 5)",
+    "en": "+2% Attack on landing [Earth Tremor] (Up to 5 stacks)",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar «Temblor terrestre», disipación de magia fortalecedora x1 con un 10 % de prob.",
+    "en": "10% chance to remove 1 buff on landing [Earth Tremor]",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "summon-water-spirit",
+  "mb": "summon-water-spirit",
+  "nombre": "Invocación: Espíritu de agua",
+  "nombreEn": "Summon: Water Spirit",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 50 % de Consumo de Puntos de Maná",
+    "en": "-50% MP Cost",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 10 % de Ataque de Espíritu de agua",
+    "en": "+10% Water Spirit Attack",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "(Espíritu de agua) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad",
+    "en": "10% chance to activate skill when Water Spirit lands attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "(Espíritu de agua) Al acertar un ataque, estado de Atadura durante 2s con un 5 % de prob.",
+    "en": "5% chance to inflict Root for 2s on landing Water Spirit attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 20 % de estadísticas de Espíritu de agua",
+    "en": "+20% Water Spirit Stats",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "jointstrike-curse",
+  "mb": "jointstrike-curse",
+  "nombre": "Golpe conjunto: Maldición",
+  "nombreEn": "Jointstrike: Curse",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento de 2 s de duración de Maldición",
+    "en": "+2s Curse duration",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Reducción de 2 s de Tiempo de Enfriamiento",
+    "en": "-2s cooldown",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "«Golpe conjunto: Maldición» ignora el Bloqueo y la Evasión y acierta con un golpe Crítico",
+    "en": "[Jointstrike: Curse] ignores Block and Evasion and lands as a Critical Hit",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "dimensional-control",
+  "mb": "dimensional-control",
+  "nombre": "Dominio espacial",
+  "nombreEn": "Dimensional Control",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de efecto de Ralentización",
+    "en": "+20% Slow effect",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, daño adicional después de 3s",
+    "en": "Extra damage after 3s on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de prob. de Multigolpe",
+    "en": "+50% Multi-Hit chance on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Atracción centrada en objetivo",
+    "en": "Pull in nearby targets",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, estado de Atadura durante 3s con un 30 % de prob.",
+    "en": "30% chance to inflict Root for 3s on hit",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "summon-earth-spirit",
+  "mb": "summon-earth-spirit",
+  "nombre": "Invocación: Espíritu de tierra",
+  "nombreEn": "Summon: Earth Spirit",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 50 % de Consumo de Puntos de Maná",
+    "en": "-50% MP Cost",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Tolerancia a Daño JcE y 10 % de Tolerancia a Daño JcJ de Espíritu de tierra",
+    "en": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "(Espíritu de tierra) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad",
+    "en": "10% chance to activate skill when Earth Spirit lands attack",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "(Espíritu de tierra) Al acertar un ataque, recuperación del 5 % de Puntos de Vida de Espíritu con un 5 % de prob.",
+    "en": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 20 % de estadísticas de Espíritu de tierra",
+    "en": "+20% Earth Spirit Stats",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "rapid-scattershot",
+  "mb": "rapid-scattershot",
+  "nombre": "Ráfaga continua",
+  "nombreEn": "Rapid Scattershot",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 500, 500 %",
+    "en": "Absorbs 5% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Recuperación de 120 de Puntos de Maná",
+    "en": "Restores 120 MP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades",
+    "en": "-1s all skill cooldowns on hit",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "defiance",
+  "mb": "defiance-spiritmaster",
+  "nombre": "Eliminación de impacto",
+  "nombreEn": "Defiance",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Añade [Maldición: Maldición de desesperación] como segunda habilidad de cadena.",
+    "en": "Adds [Curse of Despair] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor",
+    "en": "Restores 1000 Stamina on using [Defiance]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida",
+    "en": "Restores 20% HP on using [Defiance]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 2 s de duración de Robustez",
+    "en": "+2s Tenacity duration",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %",
+    "en": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "summon-wind-spirit",
+  "mb": "summon-wind-spirit",
+  "nombre": "Invocación: Espíritu de viento",
+  "nombreEn": "Summon: Wind Spirit",
+  "rango": "skip",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 50 % de Consumo de Puntos de Maná",
+    "en": "-50% MP Cost",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Crítico de Espíritu de viento",
+    "en": "+20% Wind Spirit Critical Hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "(Espíritu de viento) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad",
+    "en": "10% chance to activate skill when Wind Spirit lands attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "(Espíritu de viento) Al atacar, reducción del 30 % de Velocidad de Ataque durante 10s con un 5 % de prob.",
+    "en": "5% chance to reduce enemy Attack Speed by 30% for 10s on landing Wind Spirit attack",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 20 % de estadísticas de Espíritu de viento",
+    "en": "+20% Wind Spirit Stats",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "souls-cry",
+  "mb": "souls-cry",
+  "nombre": "Grito de alma",
+  "nombreEn": "Soul's Cry",
+  "rango": "PvP",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Efecto de Atadura durante 5s",
+    "en": "Inflicts Root for 5s",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Reducción de 10 s de Tiempo de Enfriamiento",
+    "en": "-10s cooldown",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento de 2 s de duración de Terror",
+    "en": "+2s Fear duration",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ }
+]

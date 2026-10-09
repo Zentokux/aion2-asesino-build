@@ -1,0 +1,530 @@
+[
+ {
+  "slug": "condemnation",
+  "mb": "condemnation",
+  "nombre": "Condena",
+  "nombreEn": "Condemnation",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al acertar, recuperación de 100 de Puntos de Maná",
+    "en": "Restores 100 MP on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 12 %",
+    "en": "Up to +12% damage when less targets hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "20 % de probabilidad de infligir Atadura durante 3s",
+    "en": "20% chance to inflict Root for 3s",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Reinicio del tiempo de espera de [Condena] al acertar un Crítico con [Condena]",
+    "en": "Resets cooldown on landing a Critical Hit with [Condemnation]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": false,
+    "a20": true
+   }
+  ]
+ },
+ {
+  "slug": "divine-aura",
+  "mb": "divine-aura",
+  "nombre": "Aura divina",
+  "nombreEn": "Divine Aura",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "-40 % de Velocidad de movimiento durante 3s hasta a 4 enemigos dentro de un rango de 4 m del aura",
+    "en": "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad de área",
+    "en": "Changes to AoE Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 50 % de velocidad de disparo de «Aura divina»",
+    "en": "+50% [Divine Aura] attacking speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 3 s de duración de «Aura divina»",
+    "en": "+3s [Divine Aura] duration",
+    "elige": false,
+    "a20": true
+   },
+   {
+    "nv": 16,
+    "es": "Reducción de 10 s de Tiempo de Enfriamiento",
+    "en": "-10s cooldown",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "bolt",
+  "mb": "bolt",
+  "nombre": "Centella",
+  "nombreEn": "Bolt",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al alcanzar la recarga máxima, estado de Aturdimiento durante 3s con un 30 % de prob.",
+    "en": "30% chance to inflict Stun for 3s when fully charged",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 300 de la Precisión de la habilidad",
+    "en": "+300 Skill Accuracy",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de la Velocidad de habilidad en un 30 %",
+    "en": "+30% Skill Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 20 % de daño",
+    "en": "Up to +20% damage when less targets hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, Crítico garantizado",
+    "en": "Critical Hit on hit",
+    "elige": false,
+    "a20": true
+   }
+  ]
+ },
+ {
+  "slug": "judgment-thunder",
+  "mb": "judgment-thunder",
+  "nombre": "Rayo del juicio",
+  "nombreEn": "Judgment Thunder",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 20 % de Consumo de Puntos de Maná",
+    "en": "-20% MP consumed",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 12 % de daño",
+    "en": "Deals up to 12% more damage when less targets are hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar «Castigo divino», reducción del 10 % de Velocidad de Hechizo durante 5s",
+    "en": "-10% enemy Combat Speed for 5s on landing [Divine Punishment]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar «Castigo divino», estado de Atadura durante 2s con un 10 % de prob.",
+    "en": "10% chance to inflict Root for 2s on landing [Divine Punishment]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Activación de «Castigo divino» +1",
+    "en": "Activates [Divine Punishment] 1 extra time",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "lightning-strike-scattershot",
+  "mb": "lightning-strike-scattershot",
+  "nombre": "Relámpagos sin puntería",
+  "nombreEn": "Lightning Strike Scattershot",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 500, 500 %",
+    "en": "Absorbs 5% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Recuperación de 120 de Puntos de Maná",
+    "en": "Restores 120 MP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades",
+    "en": "-1s all skill cooldowns on hit",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "healing-light",
+  "mb": "healing-light",
+  "nombre": "Luz de curación",
+  "nombreEn": "Healing Light",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Más de 2 usos consecutivos",
+    "en": "+2 consecutive uses",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de Recuperación en un 20 % cuando los Puntos de Vida están al 50 % o menos.",
+    "en": "+20% amount healed when HP is 50% or less",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Disipación de magia debilitante x1 con un 50 % de prob.",
+    "en": "50% chance to remove 1 debuff",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Recuperación adicional del 2 % de Puntos de Vida",
+    "en": "+2% HP restored",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Reducción de 2 s de Tiempo de Enfriamiento",
+    "en": "-2s cooldown",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "radiant-recovery",
+  "mb": "radiant-recovery",
+  "nombre": "Resplandor de recobro",
+  "nombreEn": "Radiant Recovery",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Elimina hasta 2 efectos negativos",
+    "en": "Removes up to 2 debuffs",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Lanzamientos en cadena +1",
+    "en": "+1 consecutive use",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Reducción de 3 s de Tiempo de Enfriamiento",
+    "en": "-3s cooldown",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "+10 % de Curación recibida durante 10s",
+    "en": "+10% Incoming Heal for 10s",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Restaura un 5 % adicional de Puntos de Vida",
+    "en": "+5% HP restored",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "earths-retribution",
+  "mb": "earths-retribution",
+  "nombre": "Retribución terrestre",
+  "nombreEn": "Earth's Retribution",
+  "rango": "12  16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Recuperación de Puntos de Maná",
+    "en": "+20% MP restored",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de prob. de activación de hab. de cadena «Descarga»",
+    "en": "+20% [Discharge] Chain Skill trigger chance",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": true
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar «Descarga», reducción de 7s de Tiempo de Enfriamiento de «Centella»",
+    "en": "-7s [Bolt] cooldown on landing [Discharge]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Ignora Bloqueo y Evasión",
+    "en": "Ignores Block and Evasion",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "debilitating-mark",
+  "mb": "debilitating-mark",
+  "nombre": "Estigma debilitante",
+  "nombreEn": "Debilitating Mark",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Eliminación del consumo de Puntos de Maná y recuperación de 150 de Puntos de Maná",
+    "en": "Removes MP Consumed and restores 150 MP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Reducción del 15 % de Defensa de objetivo durante daño continuo",
+    "en": "-15% target Defense for duration of Damage over Time",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Estado de Aturdimiento a objetivo durante 3s con un 20 % de prob.",
+    "en": "Has a 20% chance to inflict Stun on the target for 3s",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "+10 % de reducción de la Amplificación de Daño de JcE y +5 % de reducción de la Amplificación de Daño JcJ.",
+    "en": "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Ignora Bloqueo y Evasión, y reduce el intervalo de Daño continuo un 50 %.",
+    "en": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "chain-of-torment",
+  "mb": "chain-of-torment",
+  "nombre": "Enlace de dolor",
+  "nombreEn": "Chain of Torment",
+  "rango": "14",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Ralentización de objetivo durante 5s",
+    "en": "Slows target for 5s",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 3 s de daño continuo",
+    "en": "+3s Damage over Time",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Estado de Derribo a objetivo durante 3s con un 20 % de prob.",
+    "en": "Has a 20% chance to inflict Knockdown on the target for 3s",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Reducción adicional del 10 % de Tolerancia a Daño JcE y 5 % de Tolerancia a Daño JcJ",
+    "en": "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Ignora Bloqueo y Evasión, y reduce el intervalo de Daño continuo un 50 %.",
+    "en": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "light-of-regeneration",
+  "mb": "light-of-regeneration",
+  "nombre": "Luz de regeneración",
+  "nombreEn": "Light of Regeneration",
+  "rango": "12–16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 5 % de Defensa durante recuperación",
+    "en": "+5% Defense while healing",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de Recuperación en un 20 % cuando los Puntos de Vida están al 50 % o menos.",
+    "en": "+20% amount healed when HP is 50% or less",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 5 % de Curación Recibida durante recuperación",
+    "en": "+5% Incoming Heal during healing",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento del 5 % de Velocidad de Movimiento durante recuperación",
+    "en": "+5% Move Speed during healing",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 5 % de Tolerancia a Daño JcE y 2,5 % de Tolerancia a Daño JcJ durante recuperación",
+    "en": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "defiance",
+  "mb": "defiance-cleric",
+  "nombre": "Eliminación de impacto",
+  "nombreEn": "Defiance",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Añade [Bendición de regeneración] como segunda habilidad de cadena.",
+    "en": "Adds [Blessing of Regeneration] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor",
+    "en": "Restores 1000 Stamina on using [Defiance]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación del 10 % de Puntos de Vida",
+    "en": "Restores 10% HP on using [Defiance]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 2 s de duración de Robustez",
+    "en": "+2s Tenacity duration",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %",
+    "en": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ }
+]

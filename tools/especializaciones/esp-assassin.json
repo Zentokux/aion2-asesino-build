@@ -1,0 +1,530 @@
+[
+ {
+  "slug": "heart-gore",
+  "mb": "heart-gore",
+  "nombre": "Estocada al corazón",
+  "nombreEn": "Heart Gore",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 70, 70 %",
+    "en": "Absorbs 0.7% HP",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, grabación de 1 insignia durante 10s",
+    "en": "Engraves 1 Insignia for 10s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 20 % de Crítico",
+    "en": "Up to +20% Critical Hit when less targets hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": false,
+    "a20": true
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar un golpe Crítico, restablecimiento de Tiempo de Enfriamiento de «Estocada al corazón»",
+    "en": "Resets [Heart Gore] cooldown on landing a Critical Hit",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "insignia-explosion",
+  "mb": "insignia-explosion",
+  "nombre": "Explosión de insignia",
+  "nombreEn": "Insignia Explosion",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Adición de efecto giratorio",
+    "en": "Adds rotate effect",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": true
+   },
+   {
+    "nv": 8,
+    "es": "Después de «Explosión de insignia», mantenimiento de grabado de 2 acumulaciones de insignia",
+    "en": "Keep 2 stacks of Insignias after [Insignia Explosion]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 1 s de duración de Aturdimiento",
+    "en": "+1s Stun duration",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Reducción de 3 s de Tiempo de Enfriamiento",
+    "en": "-3s cooldown",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "quick-slice",
+  "mb": "quick-slice",
+  "nombre": "Corte rápido",
+  "nombreEn": "Quick Slice",
+  "rango": "16  20",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Recuperación de Puntos de Maná",
+    "en": "+20% MP restored",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 70, 70 %",
+    "en": "Absorbs 0.7% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": true
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de «Explosión de insignia»",
+    "en": "-1s [Insignia Explosion] cooldown on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Ignora el Bloqueo y Evasión / Acierto con golpe Crítico",
+    "en": "Ignores Block and Evasion and lands as a Critical Hit",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "ambush",
+  "mb": "ambush",
+  "nombre": "Emboscada",
+  "nombreEn": "Ambush",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al acertar por la parte trasera, grabación de 2 insignias durante 10s",
+    "en": "Engraves 2 Insignias for 10s on landing as a Back attack",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 300, 300 %",
+    "en": "Absorbs 3% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, destrucción de barreras",
+    "en": "Breaks Protective Shields on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, activación de «Corte torbellino» con un 50 % de prob.",
+    "en": "50% chance to trigger [Whirlwind Slice] on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Lanzamientos en cadena +2",
+    "en": "+2 consecutive uses",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "storm-rampage",
+  "mb": "storm-rampage",
+  "nombre": "Desenfreno de tormenta",
+  "nombreEn": "Storm Rampage",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 500, 500 %",
+    "en": "Absorbs 5% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, recuperación de 120 de Puntos de Maná",
+    "en": "Restores 120 MP on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades",
+    "en": "-1s all skill cooldowns on hit",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "defiance",
+  "mb": "defiance-assassin",
+  "nombre": "Eliminación de impacto",
+  "nombreEn": "Defiance",
+  "rango": "12  16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Añade [Corte de tormenta] como segunda habilidad de cadena.",
+    "en": "Adds [Storm Slice] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor",
+    "en": "Restores 1000 Stamina on using [Defiance]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida",
+    "en": "Restores 20% HP on using [Defiance]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 2 s de duración de Robustez",
+    "en": "+2s Tenacity duration",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %",
+    "en": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "savage-roar",
+  "mb": "savage-roar",
+  "nombre": "Rugido bestial",
+  "nombreEn": "Savage Roar",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 20 % de Consumo de Puntos de Maná",
+    "en": "-20% MP consumed",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de velocidad de habilidad",
+    "en": "+20% Skill Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, aumento máx. del 12 % de daño",
+    "en": "Deals up to 12% more damage when less targets are hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de «Ataque sigiloso»",
+    "en": "-1s [Shadowstrike] cooldown on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al usar «Azote bestial», atracción de objetivos alrededor de sí mismo",
+    "en": "Pulls nearby targets on using [Savage Smash]",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "shadowstrike",
+  "mb": "shadowstrike",
+  "nombre": "Ataque sigiloso",
+  "nombreEn": "Shadowstrike",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento de 1 s de duración de Aturdimiento",
+    "en": "+1s Stun duration",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento de un 20 % de Amplificación de Daño Crítico propia durante 10s",
+    "en": "+20% caster Critical Damage Boost for 10s on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, Sellado durante 5s con un 50 % de prob.",
+    "en": "50% chance to inflict Seal for 5s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, estado de Atadura durante 5s con un 50 % de prob.",
+    "en": "50% chance to inflict Root for 5s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Cambio a habilidad de área",
+    "en": "Changes to AoE Skill",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "flash-slice",
+  "mb": "flash-slice",
+  "nombre": "Corte de destello",
+  "nombreEn": "Flash Slice",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento de 2 s de duración de Ceguera",
+    "en": "+2s Blind duration",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 6 m de alcance",
+    "en": "+6m Range",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos más objetivos se acierten, aumento máx. del 20 % de daño",
+    "en": "Up to +20% damage when more targets hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Lanzamientos en cadena +1",
+    "en": "+1 consecutive use",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar un objetivo con Ceguera, hace girar y provoca Aturdimiento durante 3s con un 50 % de prob.",
+    "en": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "infiltrate",
+  "mb": "infiltrate",
+  "nombre": "Infiltración",
+  "nombreEn": "Infiltrate",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al acertar «Infiltración», recuperación de 300 de Vigor",
+    "en": "Restores 300 Stamina on landing [Infiltrate]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 10 m de alcance de «Infiltración»",
+    "en": "+10m [Infiltrate] range",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar «Infiltración», destrucción de barreras",
+    "en": "Breaks Protective Shields on landing [Infiltrate]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Adición de hab. de cadena «Golpe oscuro» x2",
+    "en": "Adds [Dark Strike] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 20 % de prob. de Ceguera de «Infiltración»",
+    "en": "+20% [Infiltrate] Blind Chance",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "whirlwind-slice",
+  "mb": "whirlwind-slice",
+  "nombre": "Corte torbellino",
+  "nombreEn": "Whirlwind Slice",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a daño de área",
+    "en": "Changes to AoE damage",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 16 m de alcance",
+    "en": "+16m range",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento del 20 % de prob. de Aturdimiento",
+    "en": "+20% Stun Chance",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al evadir con éxito, restablecimiento de Tiempo de Enfriamiento de «Corte torbellino» con un 25 % de prob.",
+    "en": "25% chance to reset [Whirlwind Slice] cooldown on Evasion",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "shadow-fall",
+  "mb": "shadow-fall",
+  "nombre": "Caída sombría",
+  "nombreEn": "Shadow Fall",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 1000, 1000 %",
+    "en": "Absorbs 10% HP",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, grabación de 3 insignias durante 10s",
+    "en": "Engraves 3 Insignias for 10s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Reducción de 5 s del Tiempo de Enfriamiento",
+    "en": "-5s cooldown",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 1 s de duración de Derribo",
+    "en": "+1s Knockdown duration",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Disponible con objetivos en estado de Ceguera",
+    "en": "Can be used on targets afflicted with Blind",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ }
+]
