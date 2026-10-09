@@ -1,0 +1,501 @@
+Ráfaga continua (Espiritualista) | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Ráfaga continua
+Ráfaga continua habilidad activa de Espiritualista · desde nivel 5 · nivel máx. 40
+Espiritualista Habilidad activa
+Ráfaga continua es una habilidad activa de Espiritualista en AION 2 que se obtiene a nivel 5 y sube hasta el nivel de habilidad 40.
+Inflige 116 (+82,5% Ataque) de daño a un objetivo en estado de Tambaleo en un radio de 20 m.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad activa
+Se aprende a Nv. 5
+Nivel máx. 40
+Enfriamiento Ninguno
+Alcance 20 m
+Qué hace Ráfaga continua
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 1532 (+82,5% Ataque) de daño a un objetivo en estado de Tambaleo en un radio de 20 m.
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Especializaciones de Ráfaga continua
+5 variantes cambian cómo funciona Ráfaga continua. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Absorción de Puntos de Vida del 500, 500 %
+Especialización 2 · requiere nivel de habilidad 8
+Recuperación de 120 de Puntos de Maná
+Especialización 3 · requiere nivel de habilidad 8
+Cambio a habilidad disponible en movimiento
+Especialización 4 · requiere nivel de habilidad 12
+Al acertar, Multigolpe garantizado
+Especialización 5 · requiere nivel de habilidad 16
+Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Ráfaga continua por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 116 Nv. 2 · 150 Nv. 3 · 202 Nv. 4 · 267 Nv. 5 · 344 Nv. 6 · 408 Nv. 7 · 472 Nv. 8 · 537 Nv. 9 · 601 Nv. 10 · 678 Nv. 11 · 742 Nv. 12 · 789 Nv. 13 · 824 Nv. 14 · 965 Nv. 15 · 1012 Nv. 16 · 1046 Nv. 17 · 1081 Nv. 18 · 1116 Nv. 19 · 1150 Nv. 20 · 1185 Nv. 21 · 1220 Nv. 22 · 1254 Nv. 23 · 1289 Nv. 24 · 1324 Nv. 25 · 1358 Nv. 26 · 1393 Nv. 27 · 1428 Nv. 28 · 1462 Nv. 29 · 1497 Nv. 30 · 1532 Nv. 31 · 1220 Nv. 32 · 1254 Nv. 33 · 1289 Nv. 34 · 1324 Nv. 35 · 1358 Nv. 36 · 1393 Nv. 37 · 1428 Nv. 38 · 1462 Nv. 39 · 1497 Nv. 40 · 1532
+Nv. 1 · 116 Nv. 40 · 1532
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+116 (+82,5% Ataque)
+5
+—
+—
+—
+2
+150 (+82,5% Ataque)
+5
+—
+—
+1
+3
+202 (+82,5% Ataque)
+8
+—
+—
+1
+4
+267 (+82,5% Ataque)
+11
+—
+—
+1
+5
+344 (+82,5% Ataque)
+14
+—
+—
+2
+6
+408 (+82,5% Ataque)
+17
+—
+—
+2
+7
+472 (+82,5% Ataque)
+20
+—
+—
+2
+8
+537 (+82,5% Ataque)
+23
+—
+—
+4
+9
+601 (+82,5% Ataque)
+26
+—
+—
+4
+10
+678 (+82,5% Ataque)
+29
+—
+—
+4
+11
+742 (+82,5% Ataque)
+—
+—
+—
+—
+12
+789 (+82,5% Ataque)
+—
+—
+—
+—
+13
+824 (+82,5% Ataque)
+—
+—
+—
+—
+14
+965 (+82,5% Ataque)
+—
+—
+—
+—
+15
+1012 (+82,5% Ataque)
+—
+—
+—
+—
+16
+1046 (+82,5% Ataque)
+—
+—
+—
+—
+17
+1081 (+82,5% Ataque)
+—
+—
+—
+—
+18
+1116 (+82,5% Ataque)
+—
+—
+—
+—
+19
+1150 (+82,5% Ataque)
+—
+—
+—
+—
+20
+1185 (+82,5% Ataque)
+—
+—
+—
+—
+21
+1220 (+82,5% Ataque)
+—
+—
+—
+—
+22
+1254 (+82,5% Ataque)
+—
+—
+—
+—
+23
+1289 (+82,5% Ataque)
+—
+—
+—
+—
+24
+1324 (+82,5% Ataque)
+—
+—
+—
+—
+25
+1358 (+82,5% Ataque)
+—
+—
+—
+—
+26
+1393 (+82,5% Ataque)
+—
+—
+—
+—
+27
+1428 (+82,5% Ataque)
+—
+—
+—
+—
+28
+1462 (+82,5% Ataque)
+—
+—
+—
+—
+29
+1497 (+82,5% Ataque)
+—
+—
+—
+—
+30
+1532 (+82,5% Ataque)
+—
+—
+—
+—
+31
+1220 (+82,5% Ataque)
+—
+—
+—
+—
+32
+1254 (+82,5% Ataque)
+—
+—
+—
+—
+33
+1289 (+82,5% Ataque)
+—
+—
+—
+—
+34
+1324 (+82,5% Ataque)
+—
+—
+—
+—
+35
+1358 (+82,5% Ataque)
+—
+—
+—
+—
+36
+1393 (+82,5% Ataque)
+—
+—
+—
+—
+37
+1428 (+82,5% Ataque)
+—
+—
+—
+—
+38
+1462 (+82,5% Ataque)
+—
+—
+—
+—
+39
+1497 (+82,5% Ataque)
+—
+—
+—
+—
+40
+1532 (+82,5% Ataque)
+—
+—
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Ráfaga continua
+Estos nodos suben Ráfaga continua por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Ráfaga continua: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Ráfaga continua.
+Espiritualista Habilidad activa 135 de 151 nv. medio 9,6 89%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+Impacto helado
+Nv. 1
+—
+Combustión
+Nv. 1
+—
+Invocación: Espíritu de fuego
+Nv. 1
+15 s
+Invocación: Espíritu de agua
+Nv. 3
+15 s
+Golpe conjunto: Maldición
+Nv. 4
+10 s
+Invocación: Espíritu de tierra
+Nv. 7
+15 s
+Dominio espacial
+Nv. 8
+—
+Invocación: Espíritu de viento
+Nv. 10
+15 s
+Grito de alma
+Nv. 12
+45 s
+Fusión elemental
+Nv. 14
+—
+Eliminación de impacto
+Nv. 16
+60 s
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Ráfaga continua
+Ráfaga continua es una habilidad activa de Espiritualista que se aprende a nivel 5 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Impacto helado Combustión Invocación: Espíritu de fuego Invocación: Espíritu de agua
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Ráfaga continua
+¿Qué hace Ráfaga continua en AION 2?
+A nivel 1: Inflige 116 (+82,5% Ataque) de daño a un objetivo en estado de Tambaleo en un radio de 20 m.
+¿Cuándo aprende Ráfaga continua el Espiritualista?
+A nivel de personaje 5. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Ráfaga continua?
+Ráfaga continua tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Ráfaga continua por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Ráfaga continua tiene 4 nodos así.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

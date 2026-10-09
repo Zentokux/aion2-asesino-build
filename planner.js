@@ -5,6 +5,7 @@
 //   3. Los estigmas NO usan puntos de habilidad: se suben con Esquirlas de Estigma.
 // Los datos de cada clase (SKILLS, STIGMAS, PRIORITY, EXTRA, MILESTONES, PLANNER_SUMMARY, PLANNER_KEY)
 // van en planner-<clase>.js, que se carga antes que este archivo.
+// Opcional en PLANNER_SUMMARY: passivesTarget (rango del recuadro de pasivas; por defecto 10).
 // Opcional en cada habilidad: spec8 (qué especialización elegir al llegar a rango 8).
 // Opcional: PLANNER_JUMPS (hitos de la barra y botones de salto); si no está, se usan los del Asesino.
 const JUMPS = (typeof PLANNER_JUMPS !== 'undefined') ? PLANNER_JUMPS : [1, 4, 14, 22, 30, 40, 45];
@@ -367,13 +368,13 @@ function initPlanner() {
     const final = STATES[MAX_LVL];
     const S = PLANNER_SUMMARY;
     const reach = (id, r) => { for (let l = 1; l <= MAX_LVL; l++) if (STATES[l].ranks[id] >= r) return l; return null; };
-    const at10 = ids => ids.filter(id => final.ranks[id] >= 10).length;
+    const at10 = (ids, r = 10) => ids.filter(id => final.ranks[id] >= r).length;
     const note = S.passivesNote ? ` <small>+ ${SKILLS[S.passivesNote].name} ${final.ranks[S.passivesNote]}</small>` : '';
     sum.innerHTML = `
       <div class="stat"><div class="label">Puntos del 1 al 45</div><div class="value">${final.cum}</div></div>
       <div class="stat"><div class="label">Sin gastar al 45</div><div class="value" style="color:var(--ok)">${final.bank}</div></div>
       <div class="stat"><div class="label">${S.activesLabel}</div><div class="value">${at10(S.actives)} / ${S.actives.length}</div></div>
-      <div class="stat"><div class="label">${S.passivesLabel}</div><div class="value">${at10(S.passives)} / ${S.passives.length}${note}</div></div>
+      <div class="stat"><div class="label">${S.passivesLabel}</div><div class="value">${at10(S.passives, S.passivesTarget || 10)} / ${S.passives.length}${note}</div></div>
     `;
     const when = document.getElementById('plannerWhen');
     if (when) {

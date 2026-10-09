@@ -1,0 +1,467 @@
+Descenso de Espíritu (Espiritualista) | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Herramientas Guardarropa Pruébate armaduras, trajes y tintes en 3D
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Descenso de Espíritu
+Descenso de Espíritu habilidad pasiva de Espiritualista · desde nivel 9 · nivel máx. 40
+Espiritualista Habilidad pasiva
+Descenso de Espíritu es una habilidad pasiva de Espiritualista en AION 2 que se obtiene a nivel 9 y sube hasta el nivel de habilidad 40.
+Tiene una probabilidad del 50 % de infligir 47 (+26% Ataque) de daño adicional cada vez que los ataques del Espiritualista impactan durante los 10 s posteriores a la invocación de un Espíritu. La duración aumenta a 30 s al invocar un Espíritu ancestral.
+Tiempo de espera: 1 s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad pasiva
+Se aprende a Nv. 9
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Descenso de Espíritu
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Tiene una probabilidad del 50 % de infligir 575 (+26% Ataque) de daño adicional cada vez que los ataques del Espiritualista impactan durante los 10 s posteriores a la invocación de un Espíritu. La duración aumenta a 30 s al invocar un Espíritu ancestral.
+Tiempo de espera: 1 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Descenso de Espíritu por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 47 Nv. 2 · 63 Nv. 3 · 84 Nv. 4 · 108 Nv. 5 · 128 Nv. 6 · 148 Nv. 7 · 169 Nv. 8 · 189 Nv. 9 · 213 Nv. 10 · 224 Nv. 11 · 239 Nv. 12 · 254 Nv. 13 · 269 Nv. 14 · 283 Nv. 15 · 294 Nv. 16 · 309 Nv. 17 · 324 Nv. 18 · 335 Nv. 19 · 346 Nv. 20 · 357 Nv. 21 · 368 Nv. 22 · 379 Nv. 23 · 390 Nv. 24 · 400 Nv. 25 · 411 Nv. 26 · 422 Nv. 27 · 433 Nv. 28 · 444 Nv. 29 · 455 Nv. 30 · 466 Nv. 31 · 477 Nv. 32 · 488 Nv. 33 · 499 Nv. 34 · 510 Nv. 35 · 521 Nv. 36 · 531 Nv. 37 · 542 Nv. 38 · 553 Nv. 39 · 564 Nv. 40 · 575
+Nv. 1 · 47 Nv. 40 · 575
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+47 (+26% Ataque)
+Nv. 9
+—
+2
+63 (+26% Ataque)
+Nv. 9
+1
+3
+84 (+26% Ataque)
+Nv. 12
+1
+4
+108 (+26% Ataque)
+Nv. 15
+1
+5
+128 (+26% Ataque)
+Nv. 18
+2
+6
+148 (+26% Ataque)
+Nv. 21
+2
+7
+169 (+26% Ataque)
+Nv. 24
+2
+8
+189 (+26% Ataque)
+Nv. 27
+4
+9
+213 (+26% Ataque)
+Nv. 30
+4
+10
+224 (+26% Ataque)
+Nv. 33
+4
+11
+239 (+26% Ataque)
+—
+—
+12
+254 (+26% Ataque)
+—
+—
+13
+269 (+26% Ataque)
+—
+—
+14
+283 (+26% Ataque)
+—
+—
+15
+294 (+26% Ataque)
+—
+—
+16
+309 (+26% Ataque)
+—
+—
+17
+324 (+26% Ataque)
+—
+—
+18
+335 (+26% Ataque)
+—
+—
+19
+346 (+26% Ataque)
+—
+—
+20
+357 (+26% Ataque)
+—
+—
+21
+368 (+26% Ataque)
+—
+—
+22
+379 (+26% Ataque)
+—
+—
+23
+390 (+26% Ataque)
+—
+—
+24
+400 (+26% Ataque)
+—
+—
+25
+411 (+26% Ataque)
+—
+—
+26
+422 (+26% Ataque)
+—
+—
+27
+433 (+26% Ataque)
+—
+—
+28
+444 (+26% Ataque)
+—
+—
+29
+455 (+26% Ataque)
+—
+—
+30
+466 (+26% Ataque)
+—
+—
+31
+477 (+26% Ataque)
+—
+—
+32
+488 (+26% Ataque)
+—
+—
+33
+499 (+26% Ataque)
+—
+—
+34
+510 (+26% Ataque)
+—
+—
+35
+521 (+26% Ataque)
+—
+—
+36
+531 (+26% Ataque)
+—
+—
+37
+542 (+26% Ataque)
+—
+—
+38
+553 (+26% Ataque)
+—
+—
+39
+564 (+26% Ataque)
+—
+—
+40
+575 (+26% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Descenso de Espíritu
+Estos nodos suben Descenso de Espíritu por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+2
+Nezekan
+Nv. 12
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Equipo que puede obtener Descenso de Espíritu
+920 piezas de equipo y Arcana en 11 categorías pueden obtener Descenso de Espíritu como opción de habilidad aleatoria para Espiritualista al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Campana
+8
+20%
+Nv. 4
+Campana de vitalidad
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Botas
+115
+10%
+Nv. 1
+Botas de rey dragón sabio brillante
+Capa
+115
+10%
+Nv. 1
+Capa de rey dragón sabio brillante
+Guantes
+115
+10%
+Nv. 1
+Guantes de rey dragón sabio brillante
+Yelmo
+115
+10%
+Nv. 1
+Yelmo de rey dragón sabio brillante
+Pieza inferior
+115
+10%
+Nv. 1
+Grebas de rey dragón sabio brillante
+Hombreras
+115
+10%
+Nv. 1
+Hombreras de rey dragón sabio brillante
+Pieza superior
+115
+10%
+Nv. 1
+Peto de rey dragón sabio brillante
+Pendientes
+50
+10%
+Nv. 1
+Pendientes de rey dragón sabio brillante
+Collar
+49
+10%
+Nv. 1
+Collar de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Descenso de Espíritu: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Descenso de Espíritu.
+Espiritualista Habilidad pasiva 150 de 151 nv. medio 12,4 99%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+Golpe de Espíritu
+Nv. 1
+—
+Protección de Espíritu
+Nv. 6
+—
+Erosión
+Nv. 11
+—
+Revitalización de Espíritu
+Nv. 13
+30 s
+Concentración mental
+Nv. 15
+—
+Retroceso continuo
+Nv. 17
+—
+Comunión de Espíritu
+Nv. 21
+—
+Pacto de resurrección
+Nv. 23
+—
+Unificación elemental
+Nv. 25
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Descenso de Espíritu
+Descenso de Espíritu es una habilidad pasiva de Espiritualista que se aprende a nivel 9 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Build de Espiritualista Golpe de Espíritu Protección de Espíritu Erosión Revitalización de Espíritu
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Descenso de Espíritu
+¿Qué hace Descenso de Espíritu en AION 2?
+A nivel 1: Tiene una probabilidad del 50 % de infligir 47 (+26% Ataque) de daño adicional cada vez que los ataques del Espiritualista impactan durante los 10 s posteriores a la invocación de un Espíritu. La duración aumenta a 30 s al invocar un Espíritu ancestral. Tiempo de espera: 1 s
+¿Cuándo aprende Descenso de Espíritu el Espiritualista?
+A nivel de personaje 9. Después se puede subir hasta el nivel 40.
+¿Cómo subo Descenso de Espíritu por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Vaizel y Triniel). Descenso de Espíritu tiene 4 nodos así.
+¿Qué equipo puede obtener Descenso de Espíritu?
+920 piezas de equipo y Arcana pueden obtener Descenso de Espíritu como opción de habilidad aleatoria, hasta Nv. 4, principalmente Campana, Cáliz, Botas y Capa.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

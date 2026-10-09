@@ -1,0 +1,604 @@
+Invocación: Espíritu de tierra | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Herramientas Guardarropa Pruébate armaduras, trajes y tintes en 3D
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Invocación: Espíritu de tierra
+Invocación: Espíritu de tierra habilidad activa de Espiritualista · desde nivel 7 · nivel máx. 40
+Espiritualista Habilidad activa
+Invocación: Espíritu de tierra es una habilidad activa de Espiritualista en AION 2 que se obtiene a nivel 7 y sube hasta el nivel de habilidad 40. Enfriamiento en el nivel 1: 15 s.
+Invoca un Espíritu de tierra.
+El Espíritu de tierra inflige 247 (+135% Ataque) de daño de Tierra a un objetivo en un radio de 20 m y usa una habilidad que aumenta 3750 de la Hostilidad. Si el objetivo es un PJ, le provoca el estado de Provocación durante 2s con un 30 % de prob.
+Después de usar la habilidad, continúa el combate con ataques básicos; cada vez que acierta un ataque, vuelve a usar la habilidad con un 10 % de prob. y aumenta la Hostilidad. Pulsa el icono de invocación para retirar el Espíritu.
+Cada vez que aumenta el nivel de la habilidad, aumenta un 2 % de la Defensa y los Puntos de Vida del Espíritu de tierra.
+7 de daño al medidor de Tambaleo
+Tiempo de Enfriamiento de habilidad de Espíritu: 3 s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad activa
+Se aprende a Nv. 7
+Nivel máx. 40
+Enfriamiento 15 s
+Alcance 20 m
+Qué hace Invocación: Espíritu de tierra
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Invoca un Espíritu de tierra.
+El Espíritu de tierra inflige 3017 (+135% Ataque) de daño de Tierra a un objetivo en un radio de 20 m y usa una habilidad que aumenta 33.000 de la Hostilidad. Si el objetivo es un PJ, le provoca el estado de Provocación durante 2s con un 30 % de prob.
+Después de usar la habilidad, continúa el combate con ataques básicos; cada vez que acierta un ataque, vuelve a usar la habilidad con un 10 % de prob. y aumenta la Hostilidad. Pulsa el icono de invocación para retirar el Espíritu.
+Cada vez que aumenta el nivel de la habilidad, aumenta un 2 % de la Defensa y los Puntos de Vida del Espíritu de tierra.
+7 de daño al medidor de Tambaleo
+Tiempo de Enfriamiento de habilidad de Espíritu: 3 s
+Enfriamiento 15 s
+PM 150
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Invocación
+Se puede usar en movimiento Sí
+Rasgos Disponible en movimiento
+Especializaciones de Invocación: Espíritu de tierra
+5 variantes cambian cómo funciona Invocación: Espíritu de tierra. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Reducción del 50 % de Consumo de Puntos de Maná
+Especialización 2 · requiere nivel de habilidad 8
+Aumento del 20 % de Tolerancia a Daño JcE y 10 % de Tolerancia a Daño JcJ de Espíritu de tierra
+Especialización 3 · requiere nivel de habilidad 8
+(Espíritu de tierra) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad
+Especialización 4 · requiere nivel de habilidad 12
+(Espíritu de tierra) Al acertar un ataque, recuperación del 5 % de Puntos de Vida de Espíritu con un 5 % de prob.
+Especialización 5 · requiere nivel de habilidad 16
+Aumento del 20 % de estadísticas de Espíritu de tierra
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Invocación: Espíritu de tierra por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 247 Nv. 2 · 332 Nv. 3 · 437 Nv. 4 · 562 Nv. 5 · 668 Nv. 6 · 773 Nv. 7 · 878 Nv. 8 · 984 Nv. 9 · 1109 Nv. 10 · 1215 Nv. 11 · 1291 Nv. 12 · 1348 Nv. 13 · 1425 Nv. 14 · 1502 Nv. 15 · 1579 Nv. 16 · 1656 Nv. 17 · 1713 Nv. 18 · 1769 Nv. 19 · 1826 Nv. 20 · 1883 Nv. 21 · 1939 Nv. 22 · 1996 Nv. 23 · 2053 Nv. 24 · 2110 Nv. 25 · 2166 Nv. 26 · 2223 Nv. 27 · 2280 Nv. 28 · 2336 Nv. 29 · 2393 Nv. 30 · 2450 Nv. 31 · 2506 Nv. 32 · 2563 Nv. 33 · 2620 Nv. 34 · 2677 Nv. 35 · 2733 Nv. 36 · 2790 Nv. 37 · 2847 Nv. 38 · 2903 Nv. 39 · 2960 Nv. 40 · 3017
+Nv. 1 · 247 Nv. 40 · 3017
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+247 (+135% Ataque)
+Nv. 7
+15 s
+150
+—
+2
+332 (+135% Ataque)
+Nv. 7
+15 s
+150
+1
+3
+437 (+135% Ataque)
+Nv. 10
+15 s
+150
+1
+4
+562 (+135% Ataque)
+Nv. 13
+15 s
+150
+1
+5
+668 (+135% Ataque)
+Nv. 16
+15 s
+150
+2
+6
+773 (+135% Ataque)
+Nv. 19
+15 s
+150
+2
+7
+878 (+135% Ataque)
+Nv. 22
+15 s
+150
+2
+8
+984 (+135% Ataque)
+Nv. 25
+15 s
+150
+4
+9
+1109 (+135% Ataque)
+Nv. 28
+15 s
+150
+4
+10
+1215 (+135% Ataque)
+Nv. 31
+15 s
+150
+4
+11
+1291 (+135% Ataque)
+—
+15 s
+150
+—
+12
+1348 (+135% Ataque)
+—
+15 s
+150
+—
+13
+1425 (+135% Ataque)
+—
+15 s
+150
+—
+14
+1502 (+135% Ataque)
+—
+15 s
+150
+—
+15
+1579 (+135% Ataque)
+—
+15 s
+150
+—
+16
+1656 (+135% Ataque)
+—
+15 s
+150
+—
+17
+1713 (+135% Ataque)
+—
+15 s
+150
+—
+18
+1769 (+135% Ataque)
+—
+15 s
+150
+—
+19
+1826 (+135% Ataque)
+—
+15 s
+150
+—
+20
+1883 (+135% Ataque)
+—
+15 s
+150
+—
+21
+1939 (+135% Ataque)
+—
+15 s
+150
+—
+22
+1996 (+135% Ataque)
+—
+15 s
+150
+—
+23
+2053 (+135% Ataque)
+—
+15 s
+150
+—
+24
+2110 (+135% Ataque)
+—
+15 s
+150
+—
+25
+2166 (+135% Ataque)
+—
+15 s
+150
+—
+26
+2223 (+135% Ataque)
+—
+15 s
+150
+—
+27
+2280 (+135% Ataque)
+—
+15 s
+150
+—
+28
+2336 (+135% Ataque)
+—
+15 s
+150
+—
+29
+2393 (+135% Ataque)
+—
+15 s
+150
+—
+30
+2450 (+135% Ataque)
+—
+15 s
+150
+—
+31
+2506 (+135% Ataque)
+—
+15 s
+150
+—
+32
+2563 (+135% Ataque)
+—
+15 s
+150
+—
+33
+2620 (+135% Ataque)
+—
+15 s
+150
+—
+34
+2677 (+135% Ataque)
+—
+15 s
+150
+—
+35
+2733 (+135% Ataque)
+—
+15 s
+150
+—
+36
+2790 (+135% Ataque)
+—
+15 s
+150
+—
+37
+2847 (+135% Ataque)
+—
+15 s
+150
+—
+38
+2903 (+135% Ataque)
+—
+15 s
+150
+—
+39
+2960 (+135% Ataque)
+—
+15 s
+150
+—
+40
+3017 (+135% Ataque)
+—
+15 s
+150
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Invocación: Espíritu de tierra
+Estos nodos suben Invocación: Espíritu de tierra por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Invocación: Espíritu de tierra
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Invocación: Espíritu de tierra como opción de habilidad aleatoria para Espiritualista al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,54%
+Nv. 4
+Cáliz de vitalidad
+Manuscrito
+8
+16,7%
+Nv. 4
+Pergamino de vitalidad
+Arco
+74
+8,33%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,33%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,33%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,33%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,33%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,33%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,33%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,33%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,33%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,33%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Invocación: Espíritu de tierra: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Invocación: Espíritu de tierra.
+Espiritualista Habilidad activa 145 de 151 nv. medio 11,8 96%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Impacto helado
+Nv. 1
+—
+—
+Combustión
+Nv. 1
+—
+120
+Invocación: Espíritu de fuego
+Nv. 1
+15 s
+150
+Invocación: Espíritu de agua
+Nv. 3
+15 s
+150
+Golpe conjunto: Maldición
+Nv. 4
+10 s
+80
+Ráfaga continua
+Nv. 5
+—
+—
+Dominio espacial
+Nv. 8
+—
+—
+Invocación: Espíritu de viento
+Nv. 10
+15 s
+150
+Grito de alma
+Nv. 12
+45 s
+150
+Fusión elemental
+Nv. 14
+—
+—
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Invocación: Espíritu de tierra
+Invocación: Espíritu de tierra es una habilidad activa de Espiritualista que se aprende a nivel 7 y sube hasta el 40. Su enfriamiento es de 15 s a nivel 1 y 15 s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Build de Espiritualista Impacto helado Combustión Invocación: Espíritu de fuego Invocación: Espíritu de agua
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Invocación: Espíritu de tierra
+¿Qué hace Invocación: Espíritu de tierra en AION 2?
+A nivel 1: Invoca un Espíritu de tierra. El Espíritu de tierra inflige 247 (+135% Ataque) de daño de Tierra a un objetivo en un radio de 20 m y usa una habilidad que aumenta 3750 de la Hostilidad. Si el objetivo es un PJ, le provoca el estado de Provocación durante 2s con un 30 % de prob. Después de usar la habilidad, continúa el combate con ataques básicos; cada vez que acierta un ataque, vuelve a usar la habilidad con un 10 % de prob. y aumenta la Hostilidad. Pulsa el icono de invocación para retirar el Espíritu. Cada vez que aumenta el nivel de la habilidad, aumenta un 2 % de la Defensa y los Puntos de Vida del Espíritu de tierra. 7 de daño al medidor de Tambaleo Tiempo de Enfriamiento de habilidad de Espíritu: 3 s
+¿Cuál es el enfriamiento de Invocación: Espíritu de tierra?
+15 segundos a nivel 1 y 15 segundos a nivel 40.
+¿Cuándo aprende Invocación: Espíritu de tierra el Espiritualista?
+A nivel de personaje 7. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Invocación: Espíritu de tierra?
+Invocación: Espíritu de tierra tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Invocación: Espíritu de tierra por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Invocación: Espíritu de tierra tiene 4 nodos así.
+¿Qué equipo puede obtener Invocación: Espíritu de tierra?
+689 piezas de equipo y Arcana pueden obtener Invocación: Espíritu de tierra como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Manuscrito, Arco y Bastón.
+¿Invocación: Espíritu de tierra es físico o mágico, y se puede usar en movimiento?
+Invocación: Espíritu de tierra inflige daño Mágico (Invocación) y se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

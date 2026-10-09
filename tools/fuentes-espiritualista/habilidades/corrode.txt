@@ -1,0 +1,482 @@
+Erosión: habilidad de Espiritualista | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Erosión
+Erosión habilidad pasiva de Espiritualista · desde nivel 11 · nivel máx. 40
+Espiritualista Habilidad pasiva
+Erosión es una habilidad pasiva de Espiritualista en AION 2 que se obtiene a nivel 11 y sube hasta el nivel de habilidad 40.
+Aumenta el Golpe crítico propio en 100 y tiene un 50 % de prob. de infligir 124 (+50,5% Ataque) de daño al acertar un Golpe crítico.
+Tiempo de espera: 1 s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad pasiva
+Se aprende a Nv. 11
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Erosión
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Aumenta el Golpe crítico propio en 490 y tiene un 50 % de prob. de infligir 1149 (+50,5% Ataque) de daño al acertar un Golpe crítico.
+Tiempo de espera: 1 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Erosión por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 124 Nv. 2 · 163 Nv. 3 · 210 Nv. 4 · 249 Nv. 5 · 289 Nv. 6 · 328 Nv. 7 · 368 Nv. 8 · 415 Nv. 9 · 454 Nv. 10 · 483 Nv. 11 · 504 Nv. 12 · 533 Nv. 13 · 562 Nv. 14 · 590 Nv. 15 · 619 Nv. 16 · 640 Nv. 17 · 662 Nv. 18 · 683 Nv. 19 · 704 Nv. 20 · 725 Nv. 21 · 746 Nv. 22 · 768 Nv. 23 · 789 Nv. 24 · 810 Nv. 25 · 831 Nv. 26 · 852 Nv. 27 · 874 Nv. 28 · 895 Nv. 29 · 916 Nv. 30 · 937 Nv. 31 · 958 Nv. 32 · 980 Nv. 33 · 1001 Nv. 34 · 1022 Nv. 35 · 1043 Nv. 36 · 1065 Nv. 37 · 1086 Nv. 38 · 1107 Nv. 39 · 1128 Nv. 40 · 1149
+Nv. 1 · 124 Nv. 40 · 1149
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+124 (+50,5% Ataque)
+11
+—
+—
+—
+2
+163 (+50,5% Ataque)
+11
+—
+—
+1
+3
+210 (+50,5% Ataque)
+14
+—
+—
+1
+4
+249 (+50,5% Ataque)
+17
+—
+—
+1
+5
+289 (+50,5% Ataque)
+20
+—
+—
+2
+6
+328 (+50,5% Ataque)
+23
+—
+—
+2
+7
+368 (+50,5% Ataque)
+26
+—
+—
+2
+8
+415 (+50,5% Ataque)
+29
+—
+—
+4
+9
+454 (+50,5% Ataque)
+32
+—
+—
+4
+10
+483 (+50,5% Ataque)
+35
+—
+—
+4
+11
+504 (+50,5% Ataque)
+—
+—
+—
+—
+12
+533 (+50,5% Ataque)
+—
+—
+—
+—
+13
+562 (+50,5% Ataque)
+—
+—
+—
+—
+14
+590 (+50,5% Ataque)
+—
+—
+—
+—
+15
+619 (+50,5% Ataque)
+—
+—
+—
+—
+16
+640 (+50,5% Ataque)
+—
+—
+—
+—
+17
+662 (+50,5% Ataque)
+—
+—
+—
+—
+18
+683 (+50,5% Ataque)
+—
+—
+—
+—
+19
+704 (+50,5% Ataque)
+—
+—
+—
+—
+20
+725 (+50,5% Ataque)
+—
+—
+—
+—
+21
+746 (+50,5% Ataque)
+—
+—
+—
+—
+22
+768 (+50,5% Ataque)
+—
+—
+—
+—
+23
+789 (+50,5% Ataque)
+—
+—
+—
+—
+24
+810 (+50,5% Ataque)
+—
+—
+—
+—
+25
+831 (+50,5% Ataque)
+—
+—
+—
+—
+26
+852 (+50,5% Ataque)
+—
+—
+—
+—
+27
+874 (+50,5% Ataque)
+—
+—
+—
+—
+28
+895 (+50,5% Ataque)
+—
+—
+—
+—
+29
+916 (+50,5% Ataque)
+—
+—
+—
+—
+30
+937 (+50,5% Ataque)
+—
+—
+—
+—
+31
+958 (+50,5% Ataque)
+—
+—
+—
+—
+32
+980 (+50,5% Ataque)
+—
+—
+—
+—
+33
+1001 (+50,5% Ataque)
+—
+—
+—
+—
+34
+1022 (+50,5% Ataque)
+—
+—
+—
+—
+35
+1043 (+50,5% Ataque)
+—
+—
+—
+—
+36
+1065 (+50,5% Ataque)
+—
+—
+—
+—
+37
+1086 (+50,5% Ataque)
+—
+—
+—
+—
+38
+1107 (+50,5% Ataque)
+—
+—
+—
+—
+39
+1128 (+50,5% Ataque)
+—
+—
+—
+—
+40
+1149 (+50,5% Ataque)
+—
+—
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Erosión
+Estos nodos suben Erosión por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+2
+Nezekan
+Nv. 12
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Erosión: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Erosión.
+Espiritualista Habilidad pasiva 150 de 151 nv. medio 12,7 99%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+Golpe de Espíritu
+Nv. 1
+—
+Protección de Espíritu
+Nv. 6
+—
+Descenso de Espíritu
+Nv. 9
+—
+Revitalización de Espíritu
+Nv. 13
+30 s
+Concentración mental
+Nv. 15
+—
+Retroceso continuo
+Nv. 17
+—
+Comunión de Espíritu
+Nv. 21
+—
+Pacto de resurrección
+Nv. 23
+—
+Unificación elemental
+Nv. 25
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Erosión
+Erosión es una habilidad pasiva de Espiritualista que se aprende a nivel 11 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Golpe de Espíritu Protección de Espíritu Descenso de Espíritu Revitalización de Espíritu
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Erosión
+¿Qué hace Erosión en AION 2?
+A nivel 1: Aumenta el Golpe crítico propio en 100 y tiene un 50 % de prob. de infligir 124 (+50,5% Ataque) de daño al acertar un Golpe crítico. Tiempo de espera: 1 s
+¿Cuándo aprende Erosión el Espiritualista?
+A nivel de personaje 11. Después se puede subir hasta el nivel 40.
+¿Cómo subo Erosión por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Vaizel y Triniel). Erosión tiene 4 nodos así.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

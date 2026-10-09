@@ -1,0 +1,437 @@
+Unificación elemental (Espiritualista) | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Unificación elemental
+Unificación elemental habilidad pasiva de Espiritualista · desde nivel 25 · nivel máx. 40
+Espiritualista Habilidad pasiva
+Unificación elemental es una habilidad pasiva de Espiritualista en AION 2 que se obtiene a nivel 25 y sube hasta el nivel de habilidad 40.
+Aumenta la Amplificación del daño crítico un 1,1% para sí mismo y el Espíritu durante 10s al acertar con un ataque de habilidad del Espíritu. Tiempo de espera: 1 s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad pasiva
+Se aprende a Nv. 25
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Unificación elemental
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Aumenta la Amplificación del daño crítico un 5% para sí mismo y el Espíritu durante 10s al acertar con un ataque de habilidad del Espíritu. Tiempo de espera: 1 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Unificación elemental por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nivel
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+25
+—
+—
+—
+2
+25
+—
+—
+1
+3
+25
+—
+—
+1
+4
+25
+—
+—
+1
+5
+25
+—
+—
+2
+6
+25
+—
+—
+2
+7
+25
+—
+—
+2
+8
+25
+—
+—
+4
+9
+25
+—
+—
+4
+10
+25
+—
+—
+4
+11
+—
+—
+—
+—
+12
+—
+—
+—
+—
+13
+—
+—
+—
+—
+14
+—
+—
+—
+—
+15
+—
+—
+—
+—
+16
+—
+—
+—
+—
+17
+—
+—
+—
+—
+18
+—
+—
+—
+—
+19
+—
+—
+—
+—
+20
+—
+—
+—
+—
+21
+—
+—
+—
+—
+22
+—
+—
+—
+—
+23
+—
+—
+—
+—
+24
+—
+—
+—
+—
+25
+—
+—
+—
+—
+26
+—
+—
+—
+—
+27
+—
+—
+—
+—
+28
+—
+—
+—
+—
+29
+—
+—
+—
+—
+30
+—
+—
+—
+—
+31
+—
+—
+—
+—
+32
+—
+—
+—
+—
+33
+—
+—
+—
+—
+34
+—
+—
+—
+—
+35
+—
+—
+—
+—
+36
+—
+—
+—
+—
+37
+—
+—
+—
+—
+38
+—
+—
+—
+—
+39
+—
+—
+—
+—
+40
+—
+—
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Unificación elemental
+Estos nodos suben Unificación elemental por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Zikel
+Nv. 20
++1
+2
+Zikel
+Nv. 20
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Unificación elemental: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Unificación elemental.
+Espiritualista Habilidad pasiva 150 de 151 nv. medio 13,2 99%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+Golpe de Espíritu
+Nv. 1
+—
+Protección de Espíritu
+Nv. 6
+—
+Descenso de Espíritu
+Nv. 9
+—
+Erosión
+Nv. 11
+—
+Revitalización de Espíritu
+Nv. 13
+30 s
+Concentración mental
+Nv. 15
+—
+Retroceso continuo
+Nv. 17
+—
+Comunión de Espíritu
+Nv. 21
+—
+Pacto de resurrección
+Nv. 23
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Unificación elemental
+Unificación elemental es una habilidad pasiva de Espiritualista que se aprende a nivel 25 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Golpe de Espíritu Protección de Espíritu Descenso de Espíritu Erosión
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Unificación elemental
+¿Qué hace Unificación elemental en AION 2?
+A nivel 1: Aumenta la Amplificación del daño crítico un 1,1% para sí mismo y el Espíritu durante 10s al acertar con un ataque de habilidad del Espíritu. Tiempo de espera: 1 s
+¿Cuándo aprende Unificación elemental el Espiritualista?
+A nivel de personaje 25. Después se puede subir hasta el nivel 40.
+¿Cómo subo Unificación elemental por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Zikel, Vaizel y Triniel). Unificación elemental tiene 4 nodos así.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

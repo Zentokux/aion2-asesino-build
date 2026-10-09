@@ -1,0 +1,566 @@
+Build de Espiritualista de AION 2: Estigmas… | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+… AION 2
+… Clases
+Espiritualista
+Build y guía de Espiritualista de AION 2 Build, habilidades y Estigmas de Espiritualista de AION 2
+Daño
+El Espiritualista es una clase de Daño de AION 2 que lucha con Orbe. Tiene 35 habilidades (12 activas, 10 pasivas y 13 de estigma) y 5 tableros Daevanion.
+El Espiritualista es un personaje que combate con habilidades especiales usando una criatura invocada y técnicas versátiles.
+Invoca un Espíritu que se encarga del combate directo, mientras el personaje lanza hechizos que causan efectos de estado y daño continuo en sus enemigos.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Rol Daño
+Arma principal Orbe
+Habilidades 12 activas · 10 pasivas · 13 estigma
+Estigmas desde Nv. 22
+Tableros Daevanion 5
+PV a nv. 100 11.000
+En esta página Build Cómo jugar Habilidades Pasivas Estigmas Planificador Daevanion Atributos Armas
+La mejor build de Espiritualista de AION 2
+La mejor build de Espiritualista de AION 2 invoca primero y lucha después: Invocación: Espíritu ancestral y tu Espíritu de fuego, Mejora: Favor de Espíritu, luego Golpe conjunto: Maldición y Golpe conjunto: Corrosión para el daño en el tiempo, con Fusión elemental como remate con cuatro acumulaciones de elemento. Sube Ataque y Crítico, conserva algo de PV para jugar en solitario y deja que los espíritus mantengan la aggro.
+Build PvE
+Mejores jugadores
+Basado en 151 de los mejores Espiritualista · actualizado hace 6 días · Cómo lo recopilamos
+Habilidades clave
+Impacto helado Nv. 7 99%
+Fusión elemental Nv. 7 99%
+Invocación: Espíritu de fuego Nv. 7 99%
+Dominio espacial Nv. 7 99%
+Golpe conjunto: Maldición Nv. 7 99%
+Estigmas por orden de desbloqueo
+Ranura 1 · Nv. 22 Invocación: Espíritu ancestral Nv. 7 96%
+Ranura 2 · Nv. 27 Mejora: Favor de Espíritu Nv. 7 95%
+Ranura 3 · Nv. 32 Golpe conjunto: Corrosión Nv. 5 83%
+Ranura 4 · Nv. 37 Bendición ardiente Nv. 5 74%
+Rotación
+Cambios para PvP: Grito de terror
+Abrir en el planificador de builds Comparar todas las builds de AION 2
+Prioridad de atributos
+Editorial
+Ataque El Ataque plano potencia tus golpes, los de tu espíritu y los ciclos de tu Maldición.
+Crítico Tu segundo atributo de daño. Quédate por debajo del límite del 50%.
+Precisión Adicional Tu daño en el tiempo tiene que acertar primero. Cógela si los jefes esquivan.
+Puntos de Vida Espíritu de viento te cura, pero una reserva mayor hace el juego en solitario más cómodo.
+Puntos de Maná Solo si los combates largos te dejan sin PM.
+Nuestro orden, a partir de las descripciones de atributos del cliente. Las Piedras de maná tiran estos atributos en armas y armaduras, y las Soulstones en accesorios. Probabilidades y tiradas de Piedras de maná
+Qué engastan los mejores
+Muestra pequeña
+Ataque 14%
+Puntos de Vida 13%
+Puntos de Maná 12%
+Crítico 12%
+Precisión Adicional 11%
+50 personajes Espiritualista de nivel 45 registrados · 2775 piedras · equipo obtenido 2 oct 2026 – 8 oct 2026 · Cómo lo recopilamos
+Los atributos de las piedras son tiradas aleatorias (alrededor del 10% cada una), así que estos porcentajes muestran lo que los jugadores conservaron, no un ranking.
+Camino de Daevanion
+Coge primero el par de nodos Golpe de Espíritu de Nezekan, y luego Retroceso continuo y Unificación elemental de Zikel.
+Abrir el planificador Daevanion de Espiritualista
+Arma y Piedra sagrada
+Arma principal Orbe
+Mayor nivel de objeto Joya abismal de Ludra
+Una Piedra sagrada de Veneno mantiene un efecto de daño en el tiempo más activo para que Retroceso continuo lo compruebe.
+Guía de la Piedra sagrada Equipo y meta de los mejores jugadores de Espiritualista
+Resumen de Espiritualista
+El Espiritualista es una clase de Daño que lucha con Orbe. Aprende 12 habilidades activas entre el nivel 1 y el 16 (la última es Eliminación de impacto), 10 pasivas y 13 habilidades de estigma que se desbloquean a nivel 22.
+El progreso del Espiritualista también pasa por 5 tableros Daevanion (Nezekan, Zikel, Vaizel, Triniel y Azphel), que se abren entre los niveles 12 y 45 y añaden atributos o niveles de habilidad. A nivel 100, un Espiritualista tiene 11.000 PV base sin equipo.
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Cómo jugar Espiritualista
+Ver las tres builds →
+Rotación básica, dónde brilla la clase en PvE y PvP y lo difícil que es aprenderla.
+Puntos fuertes en PvE
+La mejor clase para jugar en solitario: dos espíritus tanquean y golpean por ti mientras cada habilidad de espíritu activa tu propio ataque de seguimiento y alimenta la fusión. El estigma del espíritu ancestral y el de daño y tolerancia sostienen los combates largos, y las maldiciones añaden daño continuo.
+Puntos fuertes en PvP
+El miedo es el arma del Invocador: un miedo a un objetivo y un estigma de miedo en área rompen formaciones, el golpe conjunto de corrosión aumenta el daño que recibe el objetivo y los espíritus siguen golpeando mientras te recolocas. Vulnerable cuando un espíritu muere y las invocaciones están en enfriamiento.
+Dificultad
+Moderada. Subir de nivel perdona porque los espíritus hacen el trabajo, pero jugar bien implica seguir los enfriamientos de los espíritus, lanzar el ataque de seguimiento tras cada habilidad de espíritu y gastar la fusión en el momento adecuado.
+De un vistazo
+Daño ★★★★☆
+Supervivencia ★★★★☆
+Utilidad ★★★☆☆
+Facilidad de uso ★★★☆☆
+Valoraciones editoriales en una escala de 1 a 5; la guía de tier list de clases usa los mismos números.
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Habilidades activas de Espiritualista
+Las 12 habilidades activas en orden de desbloqueo, con enfriamiento y efecto a nivel 1. Abre una para ver todos los niveles y especializaciones.
+Icono de la habilidad Impacto helado Habilidad
+Se desbloquea
+Enfriamiento
+Nivel máx.
+Efecto (nivel 1)
+Impacto helado
+Nv. 1
+—
+40
+Inflige 54 (+51,5% Ataque) de daño de Agua a un objetivo en un radio de 20 m y recupera 100 de los Puntos de Maná.
+Combustión
+Nv. 1
+—
+40
+Inflige 63 (+67,3% Ataque) de daño de Fuego a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m. 3 de daño al medidor de Tambaleo
+Invocación: Espíritu de fuego
+Nv. 1
+15 s
+40
+Invoca un Espíritu de fuego. El Espíritu de fuego acomete contra un objetivo en un radio de 20 m y usa una habilidad que inflige 68 (+120% Ataque) de daño de Fuego a un máximo de…
+Invocación: Espíritu de agua
+Nv. 3
+15 s
+40
+Invoca un Espíritu de agua. El Espíritu de agua usa una habilidad que inflige 143 (+145% Ataque) de daño de Agua a un objetivo en un radio de 20 m. Después de usar la habilidad,…
+Golpe conjunto: Maldición
+Nv. 4
+10 s
+40
+Inflige 74 (+75% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Maldición. Maldición:…
+Ráfaga continua
+Nv. 5
+—
+40
+Inflige 116 (+82,5% Ataque) de daño a un objetivo en estado de Tambaleo en un radio de 20 m.
+Invocación: Espíritu de tierra
+Nv. 7
+15 s
+40
+Invoca un Espíritu de tierra. El Espíritu de tierra inflige 247 (+135% Ataque) de daño de Tierra a un objetivo en un radio de 20 m y usa una habilidad que aumenta 3750 de la…
+Dominio espacial
+Nv. 8
+—
+40
+Habilidad que se activa brevemente cada vez que el Espíritu utiliza una habilidad. Inflige 157 (+86% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un…
+Invocación: Espíritu de viento
+Nv. 10
+15 s
+40
+Invoca un Espíritu de viento. El Espíritu de viento inflige 273 (+111% Ataque) de daño de Viento a un máximo de 4 enemigos en un radio de 5 m centrados en un objetivo en un radio…
+Grito de alma
+Nv. 12
+45 s
+40
+Inflige 246 (+100% Ataque) de daño a un objetivo en un radio de 20 m y le provoca el estado de Terror durante 5s con un 70 % de prob. Si el objetivo es un NPC, acierta Terror con…
+Fusión elemental
+Nv. 14
+—
+40
+Cada vez que el Espíritu usa una habilidad, el Espiritualista obtiene un elemento. Al alcanzar 4 acumulaciones de elementos, entra en estado de Cuatro elementos y puede usar la…
+Eliminación de impacto
+Nv. 16
+60 s
+40
+Elimina Aturdimiento, Derribo, Atadura aérea, Agarre, Congelación y Terror de sí mismo y otorga Robustez durante 5s. Robustez: inmunidad a efectos de estado No se aplican efectos…
+Habilidades pasivas de Espiritualista
+10 bonificaciones permanentes que el Espiritualista aprende al subir de nivel.
+Icono de la habilidad Golpe de Espíritu Habilidad
+Se desbloquea
+Enfriamiento
+Nivel máx.
+Efecto (nivel 1)
+Golpe de Espíritu
+Nv. 1
+—
+40
+Aumenta un 6 % de la Amplificación de Daño de JcE, un 3 % de la Amplificación de Daño JcJ y un 0,4 % del Perforación propio, y un 6 % de la Amplificación de Daño de JcE, un 3 %…
+Protección de Espíritu
+Nv. 6
+—
+40
+Aumenta un 2 % de la Defensa propia y un 2 % de la Defensa del Espíritu.
+Descenso de Espíritu
+Nv. 9
+—
+40
+Tiene una probabilidad del 50 % de infligir 47 (+26% Ataque) de daño adicional cada vez que los ataques del Espiritualista impactan durante los 10 s posteriores a la invocación…
+Erosión
+Nv. 11
+—
+40
+Aumenta el Golpe crítico propio en 100 y tiene un 50 % de prob. de infligir 124 (+50,5% Ataque) de daño al acertar un Golpe crítico. Tiempo de espera: 1 s
+Revitalización de Espíritu
+Nv. 13
+30 s
+40
+Tiene una probabilidad del 11 % de reducir el tiempo de espera de las habilidades de invocación del Espíritu en 1s al acertar. Cura al instante al Espíritu un 12 % de sus Puntos…
+Concentración mental
+Nv. 15
+—
+40
+Aumenta un 11 % del Acierto de Tipo Mental propio y un 0,3 % de Golpe.
+Retroceso continuo
+Nv. 17
+—
+40
+Tiene un 50 % de prob. de infligir 97 (+23,5% Ataque) de daño adicional al acertar a un objetivo que esté recibiendo Daño continuo. Tiempo de espera: 1 s
+Comunión de Espíritu
+Nv. 21
+—
+40
+Aumenta la Precisión propia en 100. Tiene una probabilidad del 10 % de recuperar los Puntos de Vida del usuario y del Espíritu en 182 (+100% Ataque)-200 al acertar un ataque.…
+Pacto de resurrección
+Nv. 23
+—
+40
+Aumenta la Resistencia a efectos de estado propia un 17 %. Aumenta la Resistencia a efectos de estado un 10 % durante 5s al recibir un ataque mientras está afectado por…
+Unificación elemental
+Nv. 25
+—
+40
+Aumenta la Amplificación del daño crítico un 1,1% para sí mismo y el Espíritu durante 10s al acertar con un ataque de habilidad del Espíritu. Tiempo de espera: 1 s
+Habilidades de estigma de Espiritualista
+13 habilidades de estigma se desbloquean a nivel 22 y suben hasta el 25. Es donde más difieren las builds de Espiritualista.
+Icono de la habilidad Poder de Kaisinel Habilidad
+Se desbloquea
+Enfriamiento
+Nivel máx.
+Efecto (nivel 1)
+Poder de Kaisinel
+Nv. 22
+60 s
+25
+Aumenta un 20 % del Acierto de Efectos de Estado y un 20 % de la Resistencia a Efectos de Estado propia durante 10s.
+Bloqueo mágico
+Nv. 22
+60 s
+25
+Inflige 1071 (+187% Ataque) de daño a un objetivo en un radio de 20 m con un 75 % de probabilidad de infligir Sello durante 5s. 20 de daño al medidor de Tambaleo
+Golpe conjunto: Ofensiva de perdición
+Nv. 22
+60 s
+25
+Inflige 573 (+100% Ataque) de daño a un objetivo en un radio de 20 m. Realiza un golpe conjunto junto al Espíritu. Fuego: 664 (+116% Ataque) de daño de área Agua: 797 (+139,2%…
+Mejora: Favor de Espíritu
+Nv. 22
+60 s
+25
+Aumenta la Amplificación del daño en JcE un 20 %, la Amplificación del daño en JcJ un 10 %, la Tolerancia al daño en JcE un 20 % y la Tolerancia al daño en JcJ un 10 %, y…
+Terror de agresión
+Nv. 22
+120 s
+25
+Inflige 939 (+164% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Terror durante 5s con un…
+Drenaje
+Nv. 22
+30 s
+25
+Inflige 1180 (+206% Ataque) de daño y 300 de daño de Puntos de Maná a un objetivo en un radio de 20 m. Absorbe un 1000, 1000 % de los Puntos de Vida y recupera 300 de los Puntos…
+Orden: Sustituto
+Nv. 22
+60 s
+25
+Aumenta la Tolerancia al daño en JcE del Espíritu un 20 % y la Tolerancia al daño en JcJ un 10 % durante 4s. Además, redirige el daño recibido cada vez que el Espiritualista es…
+Bendición ardiente
+Nv. 22
+60 s
+25
+Cada vez que ataca, inflige 234 (+41% Ataque) de daño adicional a los enemigos con un 50 % de prob. durante 10s. Tiempo de Enfriamiento: 1s
+Grito de terror
+Nv. 22
+90 s
+25
+Inflige 859 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Terror durante 5s con un…
+Nube de maldición
+Nv. 22
+90 s
+25
+Inflige 601 (+105% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m. Los enemigos reciben 1203 (+210% Ataque) de daño…
+Invocación: Espíritu ancestral
+Nv. 22
+90 s
+25
+Invoca un Espíritu ancestral que se mantiene durante 30 s y obtiene el efecto de Cuatro elementos cada vez que usa una habilidad. El Espíritu ancestral usa una habilidad que…
+Usurpación mágica
+Nv. 22
+90 s
+25
+Inflige 1031 (+180% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y disipa máximo 2 magias fortalecedoras. Inflige 371…
+Golpe conjunto: Corrosión
+Nv. 22
+45 s
+25
+Inflige 429 (+75% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el efecto de Corrosión durante 20s.…
+Las ranuras de especialización se abren con la habilidad a nivel Nv. 8, Nv. 12 y Nv. 20.
+Tableros Daevanion de Espiritualista
+Planificador Daevanion →
+5 tableros del nivel 12 al 45. Planifícalos nodo a nodo en el Planificador Daevanion.
+Tablero
+Nivel requerido
+Nodos de atributo
+Nodos de habilidad
+Puntos totales
+Nezekan
+Nv. 12
+66
+22
+134
+Zikel
+Nv. 20
+66
+22
+134
+Vaizel
+Nv. 30
+66
+22
+134
+Triniel
+Nv. 40
+94
+22
+168
+Azphel
+Nv. 45
+152
+0
+232
+Atributos base de Espiritualista por nivel
+Lo que la clase gana solo al subir de nivel, sin equipo.
+Puntos de Vida Nv. 1 · 100 Nv. 2 · 200 Nv. 3 · 300 Nv. 4 · 401 Nv. 5 · 502 Nv. 6 · 603 Nv. 7 · 704 Nv. 8 · 806 Nv. 9 · 908 Nv. 10 · 1010 Nv. 11 · 1112 Nv. 12 · 1214 Nv. 13 · 1316 Nv. 14 · 1419 Nv. 15 · 1522 Nv. 16 · 1625 Nv. 17 · 1728 Nv. 18 · 1832 Nv. 19 · 1936 Nv. 20 · 2040 Nv. 21 · 2144 Nv. 22 · 2248 Nv. 23 · 2352 Nv. 24 · 2457 Nv. 25 · 2562 Nv. 26 · 2667 Nv. 27 · 2772 Nv. 28 · 2878 Nv. 29 · 2984 Nv. 30 · 3090 Nv. 31 · 3196 Nv. 32 · 3302 Nv. 33 · 3408 Nv. 34 · 3515 Nv. 35 · 3622 Nv. 36 · 3729 Nv. 37 · 3836 Nv. 38 · 3944 Nv. 39 · 4052 Nv. 40 · 4160 Nv. 41 · 4268 Nv. 42 · 4376 Nv. 43 · 4484 Nv. 44 · 4593 Nv. 45 · 4702 Nv. 46 · 4811 Nv. 47 · 4920 Nv. 48 · 5030 Nv. 49 · 5140 Nv. 50 · 5250 Nv. 51 · 5360 Nv. 52 · 5470 Nv. 53 · 5580 Nv. 54 · 5691 Nv. 55 · 5802 Nv. 56 · 5913 Nv. 57 · 6024 Nv. 58 · 6136 Nv. 59 · 6248 Nv. 60 · 6360 Nv. 61 · 6472 Nv. 62 · 6584 Nv. 63 · 6696 Nv. 64 · 6809 Nv. 65 · 6922 Nv. 66 · 7035 Nv. 67 · 7148 Nv. 68 · 7262 Nv. 69 · 7376 Nv. 70 · 7490 Nv. 71 · 7604 Nv. 72 · 7718 Nv. 73 · 7832 Nv. 74 · 7947 Nv. 75 · 8062 Nv. 76 · 8177 Nv. 77 · 8292 Nv. 78 · 8408 Nv. 79 · 8524 Nv. 80 · 8640 Nv. 81 · 8756 Nv. 82 · 8872 Nv. 83 · 8988 Nv. 84 · 9105 Nv. 85 · 9222 Nv. 86 · 9339 Nv. 87 · 9456 Nv. 88 · 9574 Nv. 89 · 9692 Nv. 90 · 9810 Nv. 91 · 9928 Nv. 92 · 10.046 Nv. 93 · 10.164 Nv. 94 · 10.283 Nv. 95 · 10.402 Nv. 96 · 10.521 Nv. 97 · 10.640 Nv. 98 · 10.760 Nv. 99 · 10.880 Nv. 100 · 11.000
+Nv. 1 · 100 Nv. 100 · 11.000
+Defensa Adicional Nv. 1 · 10 Nv. 2 · 20 Nv. 3 · 30 Nv. 4 · 40 Nv. 5 · 50 Nv. 6 · 60 Nv. 7 · 70 Nv. 8 · 80 Nv. 9 · 90 Nv. 10 · 100 Nv. 11 · 110 Nv. 12 · 120 Nv. 13 · 130 Nv. 14 · 140 Nv. 15 · 150 Nv. 16 · 160 Nv. 17 · 170 Nv. 18 · 180 Nv. 19 · 190 Nv. 20 · 200 Nv. 21 · 210 Nv. 22 · 220 Nv. 23 · 230 Nv. 24 · 240 Nv. 25 · 250 Nv. 26 · 260 Nv. 27 · 270 Nv. 28 · 280 Nv. 29 · 290 Nv. 30 · 300 Nv. 31 · 310 Nv. 32 · 320 Nv. 33 · 330 Nv. 34 · 340 Nv. 35 · 350 Nv. 36 · 360 Nv. 37 · 370 Nv. 38 · 380 Nv. 39 · 390 Nv. 40 · 400 Nv. 41 · 410 Nv. 42 · 420 Nv. 43 · 430 Nv. 44 · 440 Nv. 45 · 450 Nv. 46 · 460 Nv. 47 · 470 Nv. 48 · 480 Nv. 49 · 490 Nv. 50 · 500 Nv. 51 · 510 Nv. 52 · 520 Nv. 53 · 530 Nv. 54 · 540 Nv. 55 · 550 Nv. 56 · 560 Nv. 57 · 570 Nv. 58 · 580 Nv. 59 · 590 Nv. 60 · 600 Nv. 61 · 610 Nv. 62 · 620 Nv. 63 · 630 Nv. 64 · 640 Nv. 65 · 650 Nv. 66 · 660 Nv. 67 · 670 Nv. 68 · 680 Nv. 69 · 690 Nv. 70 · 700 Nv. 71 · 710 Nv. 72 · 720 Nv. 73 · 730 Nv. 74 · 740 Nv. 75 · 750 Nv. 76 · 760 Nv. 77 · 770 Nv. 78 · 780 Nv. 79 · 790 Nv. 80 · 800 Nv. 81 · 810 Nv. 82 · 820 Nv. 83 · 830 Nv. 84 · 840 Nv. 85 · 850 Nv. 86 · 860 Nv. 87 · 870 Nv. 88 · 880 Nv. 89 · 890 Nv. 90 · 900 Nv. 91 · 910 Nv. 92 · 920 Nv. 93 · 930 Nv. 94 · 940 Nv. 95 · 950 Nv. 96 · 960 Nv. 97 · 970 Nv. 98 · 980 Nv. 99 · 990 Nv. 100 · 1000
+Nv. 1 · 10 Nv. 100 · 1000
+Ataque Adicional Nv. 1 · 6 Nv. 2 · 7 Nv. 3 · 8 Nv. 4 · 10 Nv. 5 · 11 Nv. 6 · 12 Nv. 7 · 13 Nv. 8 · 15 Nv. 9 · 16 Nv. 10 · 17 Nv. 11 · 18 Nv. 12 · 20 Nv. 13 · 21 Nv. 14 · 22 Nv. 15 · 23 Nv. 16 · 25 Nv. 17 · 26 Nv. 18 · 27 Nv. 19 · 28 Nv. 20 · 30 Nv. 21 · 31 Nv. 22 · 32 Nv. 23 · 33 Nv. 24 · 35 Nv. 25 · 36 Nv. 26 · 37 Nv. 27 · 38 Nv. 28 · 40 Nv. 29 · 41 Nv. 30 · 42 Nv. 31 · 43 Nv. 32 · 45 Nv. 33 · 46 Nv. 34 · 47 Nv. 35 · 48 Nv. 36 · 50 Nv. 37 · 51 Nv. 38 · 52 Nv. 39 · 53 Nv. 40 · 55 Nv. 41 · 56 Nv. 42 · 57 Nv. 43 · 58 Nv. 44 · 60 Nv. 45 · 61 Nv. 46 · 62 Nv. 47 · 63 Nv. 48 · 65 Nv. 49 · 66 Nv. 50 · 67 Nv. 51 · 68 Nv. 52 · 70 Nv. 53 · 71 Nv. 54 · 72 Nv. 55 · 73 Nv. 56 · 75 Nv. 57 · 76 Nv. 58 · 77 Nv. 59 · 78 Nv. 60 · 80 Nv. 61 · 81 Nv. 62 · 82 Nv. 63 · 83 Nv. 64 · 85 Nv. 65 · 86 Nv. 66 · 87 Nv. 67 · 88 Nv. 68 · 90 Nv. 69 · 91 Nv. 70 · 92 Nv. 71 · 93 Nv. 72 · 95 Nv. 73 · 96 Nv. 74 · 97 Nv. 75 · 98 Nv. 76 · 100 Nv. 77 · 101 Nv. 78 · 102 Nv. 79 · 103 Nv. 80 · 105 Nv. 81 · 106 Nv. 82 · 107 Nv. 83 · 108 Nv. 84 · 110 Nv. 85 · 111 Nv. 86 · 112 Nv. 87 · 113 Nv. 88 · 115 Nv. 89 · 116 Nv. 90 · 117 Nv. 91 · 118 Nv. 92 · 120 Nv. 93 · 121 Nv. 94 · 122 Nv. 95 · 123 Nv. 96 · 125 Nv. 97 · 126 Nv. 98 · 127 Nv. 99 · 128 Nv. 100 · 130
+Nv. 1 · 6 Nv. 100 · 130
+Nivel
+Puntos de Vida
+Defensa Adicional
+Ataque Adicional
+1
+100
+10
+6
+10
+1010
+100
+17
+20
+2040
+200
+30
+30
+3090
+300
+42
+45
+4702
+450
+61
+60
+6360
+600
+80
+80
+8640
+800
+105
+100
+11.000
+1000
+130
+Mejores armas para Espiritualista
+Ver todo →
+83 armas del cliente global que un Espiritualista puede equipar, de mayor a menor nivel de objeto.
+Nombre
+Calidad
+Nivel de objeto
+Categoría
+Joya abismal de Ludra
+Único
+102
+Orbe
+Orbe de rey dragón sombrío brillante
+Único
+102
+Orbe
+Orbe de rey dragón sabio brillante
+Único
+102
+Orbe
+Orbe de rey dragón sombrío
+Único
+94
+Orbe
+Orbe de rey dragón sabio
+Único
+94
+Orbe
+Orbe abismal
+Único
+86
+Orbe
+Joya de Kromede iracunda
+Único
+86
+Orbe
+Orbe de rey dragón oscuro brillante
+Único
+86
+Orbe
+Orbe de rey dragón blanco brillante
+Único
+86
+Orbe
+Orbe de rey dragón oscuro
+Único
+78
+Orbe
+Orbe de rey dragón blanco
+Único
+78
+Orbe
+Orbe de Aulamus
+Único
+70
+Orbe
+Espiritualista de un vistazo
+El Espiritualista es una clase de Daño centrada en Orbe. Con 12 habilidades activas, 10 pasivas y 13 de estigma, más 5 tableros Daevanion, su poder depende de qué habilidades subes y qué nodos eliges. La mejor arma de Espiritualista del cliente global es Joya abismal de Ludra, de nivel de objeto 102.
+Ver también
+Guía de tier list de clases Guía de builds de clases Planificador de build de Espiritualista Todas las habilidades Planificador Daevanion de Espiritualista Todas las armas Gladiador Templario Asesino
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Espiritualista
+¿Qué rol cumple el Espiritualista en AION 2?
+El Espiritualista es una clase de Daño. Lucha con Orbe y aprende 12 habilidades activas al subir de nivel.
+¿Qué arma usa el Espiritualista?
+El arma principal del Espiritualista es Orbe. La más fuerte del cliente global es Joya abismal de Ludra, de nivel de objeto 102.
+¿Cuántas habilidades tiene el Espiritualista?
+35 habilidades: 12 activas, 10 pasivas y 13 de estigma. Las activas y pasivas suben hasta el nivel 40; las de estigma, hasta el 25.
+¿Cuándo desbloquea el Espiritualista las habilidades de estigma?
+Las habilidades de estigma se desbloquean a nivel de personaje 22. Después, las ranuras de especialización se abren con la habilidad a nivel Nv. 8, Nv. 12 y Nv. 20.
+¿Cómo funcionan los tableros Daevanion del Espiritualista?
+El Espiritualista tiene 5 tableros Daevanion (Nezekan, Zikel, Vaizel, Triniel y Azphel) que se abren del nivel 12 al 45. Gastar puntos Daevanion en nodos añade atributos o niveles de habilidad.
+¿Cuál es la mejor arma para Espiritualista?
+Por nivel de objeto, Joya abismal de Ludra (Único, nivel 102) es el arma de tipo Orbe más fuerte que un Espiritualista puede equipar en el cliente global.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

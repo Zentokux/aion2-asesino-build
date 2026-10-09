@@ -1,0 +1,415 @@
+Grito de terror (Espiritualista) | AION 2 | MetaBot.GG
+METABOT .gg •••
+TFT Valorant Deadlock Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM Marvel Rivals Counter-Strike 2 Dark and Darker MARVEL Tōkon RuneScape: Dragonwilds Palworld Slay the Spire 2 The Blood of Dawnwalker Valheim Aniimo WARDOGS Minecraft Dungeons II Permafrost SPAM
+Arcade App de escritorio Clases Todo en Clases Todas las clases Roles, armas y atributos de las 8 clases
+Habilidades Todas las habilidades con valores por nivel
+Planificador Daevanion Planifica los cinco tableros Daevanion
+Clases Gladiador Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario Tanque de espada y escudo: habilidades
+Asesino Ráfaga con dagas: habilidades y estigmas
+Arquero Daño con arco a distancia: habilidades
+Hechicero Daño mágico con grimorio: habilidades
+Espiritualista Invocador de espíritus: habilidades
+Clérigo Sanador con maza: curas y habilidades
+Cantor Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos Armas Todas las armas con atributos y botín
+Armadura Cascos a capas con atributos y fuentes
+Accesorios Anillos, pendientes, collares y más
+Arcana Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos Busca cualquier objeto del cliente global
+Estadísticas Estadísticas explicadas, divinas y calculadora
+Trascendencia Fases de temporada, nivel de objeto y efectos
+Herramientas Calculadora de mejora Probabilidades y coste hasta +15 y más
+Fabricación Recetas, materiales y árboles de creación
+Conversión Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo Mapa interactivo Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos Todas las ubicaciones de Cubos ocultos
+Mazmorras Mazmorras de grupo, banda y Pesadilla
+Jefes Ubicación de jefes, botín y desafíos
+Monstruos Niveles, apariciones y tablas de botín
+Misiones Pasos de misión, PNJ y recompensas
+Recolección Puntos de recolección y materiales
+Guías Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones Alas Todas las alas con atributos y facción
+Monturas Monturas por género, almas y velocidad
+Títulos Todos los títulos y sus bonos
+Aspectos y trajes Piezas de traje y conjuntos
+Piedras sagradas Efectos de Piedras sagradas en el equipo
+Gestos Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión Alquiler, decoraciones y sus efectos
+Metodología Cómo leemos el cliente global del juego
+Herramientas Guardarropa Pruébate armaduras, trajes y tintes en 3D
+Progresión Todo en Progresión Eventos y temporizadores Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva Recompensas de temporada, EXP del pase y misiones
+Logros Todos los logros con objetivos, niveles y títulos
+Monedas Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel EXP por nivel y puntos obtenidos, con calculadora
+Monolitos Rastros por nivel y estadísticas permanentes
+Desbloqueos Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal Límites de entrada y días de reinicio semanal
+Legión Niveles de legión, miembros máximos y ventajas
+Clasificaciones Rangos y recompensas de clasificación de la temporada 1
+Leyendas Notas, cartas y registros legibles del juego
+Servidores Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores Armería Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones Mayor poder de combate por región, servidor y clase
+Planificadores de build Gladiador Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario Tanque con espada: habilidades, estigmas, builds
+Asesino DPS con dagas: habilidades, estigmas, builds
+Arquero DPS con arco: habilidades, estigmas, builds
+Hechicero DPS con grimorio: habilidades, estigmas, builds
+Espiritualista DPS con orbe: habilidades, estigmas, builds
+Clérigo Sanador con maza: habilidades, estigmas, builds
+Cantor Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+AION 2
+… Habilidades
+… Espiritualista
+Grito de terror
+Grito de terror habilidad de estigma de Espiritualista · desde nivel 22 · nivel máx. 25
+Espiritualista Habilidad de estigma
+Grito de terror es una habilidad de estigma de Espiritualista en AION 2 que se obtiene a nivel 22 y sube hasta el nivel de habilidad 25. Enfriamiento en el nivel 1: 90 s.
+Inflige 859 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Terror durante 5s con un 50 % de prob.
+Si el objetivo es un NPC, acierta Terror con un 100 % de prob.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Espiritualista
+Tipo Habilidad de estigma
+Se aprende a Nv. 22
+Nivel máx. 25
+Enfriamiento 90 s
+Alcance 20 m
+Qué hace Grito de terror
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 2722 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Terror durante 5s con un 50 % de prob.
+Si el objetivo es un NPC, acierta Terror con un 100 % de prob.
+Enfriamiento 90 s
+PM 200
+Nivel 25 / 25
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque Perjuicio
+Se puede usar en movimiento No, hay que estar quieto
+Especializaciones de Grito de terror
+5 variantes cambian cómo funciona Grito de terror. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 5
+Al acertar, estado de Atadura durante 5s
+Especialización 2 · requiere nivel de habilidad 10
+Cuantos más objetivos se acierten, el daño aumenta un máximo del 20 %
+Especialización 3 · requiere nivel de habilidad 15
+Aumento de 2 s de duración de Terror
+Especialización 4 · requiere nivel de habilidad 20
+Aumento del 20 % de prob. de Terror
+◆ Especialización 5
+Reducción de 30 s de Tiempo de Enfriamiento
+MetaBot Desktop Ten tu build de Espiritualista abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Grito de terror por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 25 niveles.
+Nv. 1 · 859 Nv. 2 · 976 Nv. 3 · 1093 Nv. 4 · 1233 Nv. 5 · 1350 Nv. 6 · 1435 Nv. 7 · 1498 Nv. 8 · 1584 Nv. 9 · 1669 Nv. 10 · 1755 Nv. 11 · 1840 Nv. 12 · 1903 Nv. 13 · 1966 Nv. 14 · 2029 Nv. 15 · 2092 Nv. 16 · 2155 Nv. 17 · 2218 Nv. 18 · 2281 Nv. 19 · 2344 Nv. 20 · 2407 Nv. 21 · 2470 Nv. 22 · 2533 Nv. 23 · 2596 Nv. 24 · 2659 Nv. 25 · 2722
+Nv. 1 · 859 Nv. 25 · 2722
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+859 (+150% Ataque)
+Nv. 22
+90 s
+200
+1 ★
+2
+976 (+150% Ataque)
+Nv. 22
+90 s
+200
+1 ★
+3
+1093 (+150% Ataque)
+Nv. 22
+90 s
+200
+1 ★
+4
+1233 (+150% Ataque)
+Nv. 22
+90 s
+200
+1 ★
+5
+1350 (+150% Ataque)
+Nv. 22
+90 s
+200
+1 ★
+6
+1435 (+150% Ataque)
+Nv. 22
+90 s
+200
+2 ★
+7
+1498 (+150% Ataque)
+Nv. 22
+90 s
+200
+2 ★
+8
+1584 (+150% Ataque)
+Nv. 22
+90 s
+200
+2 ★
+9
+1669 (+150% Ataque)
+Nv. 22
+90 s
+200
+2 ★
+10
+1755 (+150% Ataque)
+Nv. 22
+90 s
+200
+2 ★
+11
+1840 (+150% Ataque)
+Nv. 22
+90 s
+200
+4 ★
+12
+1903 (+150% Ataque)
+Nv. 22
+90 s
+200
+4 ★
+13
+1966 (+150% Ataque)
+Nv. 22
+90 s
+200
+4 ★
+14
+2029 (+150% Ataque)
+Nv. 22
+90 s
+200
+4 ★
+15
+2092 (+150% Ataque)
+Nv. 22
+90 s
+200
+4 ★
+16
+2155 (+150% Ataque)
+Nv. 22
+90 s
+200
+8 ★
+17
+2218 (+150% Ataque)
+Nv. 22
+90 s
+200
+8 ★
+18
+2281 (+150% Ataque)
+Nv. 22
+90 s
+200
+8 ★
+19
+2344 (+150% Ataque)
+Nv. 22
+90 s
+200
+8 ★
+20
+2407 (+150% Ataque)
+Nv. 22
+90 s
+200
+8 ★
+21
+2470 (+150% Ataque)
+—
+90 s
+200
+—
+22
+2533 (+150% Ataque)
+—
+90 s
+200
+—
+23
+2596 (+150% Ataque)
+—
+90 s
+200
+—
+24
+2659 (+150% Ataque)
+—
+90 s
+200
+—
+25
+2722 (+150% Ataque)
+—
+90 s
+200
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Grito de terror: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Grito de terror.
+Espiritualista Estigma 3 de 151 nv. medio 3,3 2%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Espiritualista de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Golpe conjunto: Ofensiva de perdición
+Nv. 22
+60 s
+200
+Poder de Kaisinel
+Nv. 22
+60 s
+—
+Bloqueo mágico
+Nv. 22
+60 s
+200
+Mejora: Favor de Espíritu
+Nv. 22
+60 s
+—
+Drenaje
+Nv. 22
+30 s
+—
+Terror de agresión
+Nv. 22
+120 s
+—
+Orden: Sustituto
+Nv. 22
+60 s
+—
+Bendición ardiente
+Nv. 22
+60 s
+—
+Invocación: Espíritu ancestral
+Nv. 22
+90 s
+200
+Nube de maldición
+Nv. 22
+90 s
+200
+Golpe conjunto: Corrosión
+Nv. 22
+45 s
+200
+Usurpación mágica
+Nv. 22
+90 s
+200
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Grito de terror
+Grito de terror es una habilidad de estigma de Espiritualista que se aprende a nivel 22 y sube hasta el 25. Su enfriamiento es de 90 s a nivel 1 y 90 s al máximo. Tiene 5 especializaciones y 0 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Espiritualista Planificador Daevanion de Espiritualista Build de Espiritualista Guía de estigmas Golpe conjunto: Ofensiva de perdición Poder de Kaisinel Bloqueo mágico Mejora: Favor de Espíritu
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Grito de terror
+¿Qué hace Grito de terror en AION 2?
+A nivel 1: Inflige 859 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Terror durante 5s con un 50 % de prob. Si el objetivo es un NPC, acierta Terror con un 100 % de prob.
+¿Cuál es el enfriamiento de Grito de terror?
+90 segundos a nivel 1 y 90 segundos a nivel 25.
+¿Cuándo aprende Grito de terror el Espiritualista?
+A nivel de personaje 22. Después se puede subir hasta el nivel 25.
+¿Qué especializaciones tiene Grito de terror?
+Grito de terror tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Grito de terror es físico o mágico, y se puede usar en movimiento?
+Grito de terror inflige daño Mágico (Ataque y Perjuicio) y no se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

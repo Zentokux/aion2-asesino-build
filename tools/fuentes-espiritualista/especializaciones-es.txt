@@ -1,0 +1,147 @@
+== assault-terror | Terror de agresión
+  5: Aumento del 20 % de Ataque propio durante 5s
+  10: Al acertar, 500 de daño de Puntos de Maná
+  15: Aumento de 10 m de alcance
+  20: Aumento del 20 % de prob. de Terror
+== cold-shock | Impacto helado
+  8: Aumento del 20 % de Recuperación de Puntos de Maná
+  8: Absorción de Puntos de Vida del 100, 100 %
+  8: Al acertar, aumento del 50 % de Multigolpe
+  12: Al acertar «Temblor terrestre», aumento del 2 % de Ataque (acumulaciones máx.: 5)
+  16: Al acertar «Temblor terrestre», disipación de magia fortalecedora x1 con un 10 % de prob.
+== combustion | Combustión
+  8: Reducción del 20 % de Consumo de Puntos de Maná
+  8: Cuantos menos objetivos se acierten, aumento máx. del 12 % de daño
+  8: Aumento de 100 de la Precisión de la habilidad
+  12: Aumento del 20 % de velocidad de habilidad
+  16: Adición de hab. de cadena «Llamado de ceniza» x2
+== command-proxy | Orden: Sustituto
+  5: +2 s de duración de Orden: Sustitución
+  10: Aumento adicional del 10 % de Tolerancia a Daño JcE y 5 % de Tolerancia a Daño JcJ de Espíritu
+  15: Efecto de «Protección de Espíritu» x1,5 durante la duración de Orden: Sustituto
+  20: Restaura un 3 % de los Puntos de Vida del Espíritu cada 1 s durante la Consigna: Proxy
+== consecutive-countercurrent | 
+== corrode | 
+== cry-of-terror | Grito de terror
+  5: Al acertar, estado de Atadura durante 5s
+  10: Cuantos más objetivos se acierten, el daño aumenta un máximo del 20 %
+  15: Aumento de 2 s de duración de Terror
+  20: Aumento del 20 % de prob. de Terror
+== cursed-cloud | Nube de maldición
+  5: Durante daño continuo, reducción de 1000 de Vigor máx.
+  10: Al infligir daño continuo a PNJ, reducción del 20 % de Puntos de Vida Máximos
+  15: Aumento de 10 s de la duración de daño continuo
+  20: Durante daño continuo, reducción del 30 % de Resistencia a Efectos de Estado
+== defiance-spiritmaster | Eliminación de impacto
+  8: Añade [Maldición: Maldición de desesperación] como segunda habilidad de cadena.
+  8: Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor
+  8: Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida
+  12: Aumento de 2 s de duración de Robustez
+  16: Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %
+== dimensional-control | Dominio espacial
+  8: Aumento del 20 % de efecto de Ralentización
+  8: Al acertar, daño adicional después de 3s
+  8: Al acertar, aumento del 50 % de prob. de Multigolpe
+  12: Atracción centrada en objetivo
+  16: Al acertar, estado de Atadura durante 3s con un 30 % de prob.
+== element-unification | 
+== elemental-fusion | Fusión elemental
+  8: Cambio a habilidad de área
+  8: Al acertar, daño adicional después de 3s
+  8: Al acertar, aumento del 10 % de Amplificación de Elementos (Todos)
+  12: Cambio a habilidad de carga y aumento de máx. 200 % de daño
+  16: Reobtención de Cuatro elementos con un 25 % de prob.
+== enhance-spirits-benediction | Mejora: Favor de Espíritu
+  5: Al lanzar, recuperación del 10 % de Puntos de Vida
+  10: Aumento de efecto de Amplificación de Daño de hab. pasiva «Golpe de Espíritu» x1,5
+  15: Aumento de prob. de activación de «Comunión de Espíritu» y recuperación x1,5
+  20: Aumento del 25 % de Amplificación de Daño de JcE y Tolerancia a Daño JcE y de 12,5 % de Amplificación de Daño JcJ y Tolerancia a Daño JcJ propia y de Espíritu
+== flame-blessing | Bendición ardiente
+  5: Aumento de 100 de Precisión
+  10: Aumento de 100 de Crítico
+  15: Aumento del 10 % de Amplificación de Daño Crítico
+  20: Reducción del 50 % de Tiempo de Enfriamiento de daño adicional
+== jointstrike-corrode | Golpe conjunto: Corrosión
+  5: Aumento adicional del 15 % de daño recibido del Espíritu durante Corrosión
+  10: Al acertar, reducción del 20 % de Velocidad de Hechizo durante 10s
+  15: Durante Corrosión, reducción del 70 % de Curación Recibida
+  20: Aumento de 10 s de duración de efecto de Corrosión
+== jointstrike-curse | Golpe conjunto: Maldición
+  8: Aumento de 2 s de duración de Maldición
+  8: Al acertar, aumento del 50 % de Multigolpe
+  8: Cambio a habilidad disponible en movimiento
+  12: Reducción de 2 s de Tiempo de Enfriamiento
+  16: «Golpe conjunto: Maldición» ignora el Bloqueo y la Evasión y acierta con un golpe Crítico
+== jointstrike-destructive-attack | Golpe conjunto: Ofensiva de perdición
+  5: Cambio a habilidad de carga y aumento de máx. 200 % de daño de «Golpe conjunto: Ofensiva de perdición»
+  10: Aumento de la Velocidad de habilidad en un 30 %
+  15: Al acertar, Crítico garantizado
+  20: Al acertar el primer golpe de «Golpe conjunto: Ofensiva de perdición», restablecimiento de Tiempo de Enfriamiento de «Golpe conjunto: Maldición» y «Golpe conjunto: Corrosión»
+== kaisinels-power | Poder de Kaisinel
+  5: Aumento de 150 de Bloqueo y Evasión
+  10: Aumento del 15 % de Resistencia a Efectos de Estado
+  15: Aumento de 150 de Precisión
+  20: Aumento del 15 % de Acierto de Efectos de Estado
+== magic-block | Bloqueo mágico
+  5: Al acertar, estado de Atadura durante 5s con un 50 % de prob.
+  10: Al acertar, reducción de 1000 de Vigor máx. durante 5s
+  15: Aumento de 2 s de duración de Sellado
+  20: Aumento del 25 % de prob. de Sellado
+== mental-focus | 
+== rapid-scattershot | Ráfaga continua
+  8: Absorción de Puntos de Vida del 500, 500 %
+  8: Recuperación de 120 de Puntos de Maná
+  8: Cambio a habilidad disponible en movimiento
+  12: Al acertar, Multigolpe garantizado
+  16: Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades
+== revitalization-contract-spiritmaster | 
+== seize-magic | Usurpación mágica
+  5: Elimina hasta 3 magias fortalecedoras.
+  10: Al disipar 3 o más magias fortalecedoras, Sellado durante 5 s
+  15: Disipación de máx. 5 magias fortalecedoras
+  20: Reducción de 30 s de Tiempo de Enfriamiento
+== siphon | Drenaje
+  5: Aumento del 20 % de velocidad de habilidad
+  10: Aumento del 5 % de Absorción de Puntos de Vida
+  15: Al lanzar, obtención de barrera del 30 % de Puntos de Vida Máximos durante 30s
+  20: Al acertar, estado de Aturdimiento durante 3s
+== souls-cry | Grito de alma
+  8: Al acertar, aumento del 50 % de Multigolpe
+  8: Efecto de Atadura durante 5s
+  8: Cambio a habilidad disponible en movimiento
+  12: Reducción de 10 s de Tiempo de Enfriamiento
+  16: Aumento de 2 s de duración de Terror
+== spirit-communion | 
+== spirit-protection | 
+== spirit-revitalization | 
+== spirit-strike | 
+== spirits-descent | 
+== summon-ancient-spirit | Invocación: Espíritu ancestral
+  5: Aumento del 10 % de Ataque de Espíritu ancestral
+  10: Aumento de prob. de activación y daño de «Descenso de Espíritu» x1,5 durante 30s
+  15: Tras 5 ataques básicos de Espíritu ancestral, uso de habilidad
+  20: Aumento del 20 % de estadísticas de Espíritu ancestral
+== summon-earth-spirit | Invocación: Espíritu de tierra
+  8: Reducción del 50 % de Consumo de Puntos de Maná
+  8: Aumento del 20 % de Tolerancia a Daño JcE y 10 % de Tolerancia a Daño JcJ de Espíritu de tierra
+  8: (Espíritu de tierra) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad
+  12: (Espíritu de tierra) Al acertar un ataque, recuperación del 5 % de Puntos de Vida de Espíritu con un 5 % de prob.
+  16: Aumento del 20 % de estadísticas de Espíritu de tierra
+== summon-fire-spirit | Invocación: Espíritu de fuego
+  8: Reducción del 50 % de Consumo de Puntos de Maná
+  8: Aumento del 20 % de daño Crítico de Espíritu de fuego
+  8: (Espíritu de fuego) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad
+  12: (Espíritu de fuego) Al acertar un ataque, estado de Derribo durante 3s con un 5 % de prob.
+  16: Aumento del 20 % de estadísticas de Espíritu de fuego
+== summon-water-spirit | Invocación: Espíritu de agua
+  8: Reducción del 50 % de Consumo de Puntos de Maná
+  8: Aumento del 10 % de Ataque de Espíritu de agua
+  8: (Espíritu de agua) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad
+  12: (Espíritu de agua) Al acertar un ataque, estado de Atadura durante 2s con un 5 % de prob.
+  16: Aumento del 20 % de estadísticas de Espíritu de agua
+== summon-wind-spirit | Invocación: Espíritu de viento
+  8: Reducción del 50 % de Consumo de Puntos de Maná
+  8: Aumento del 20 % de Crítico de Espíritu de viento
+  8: (Espíritu de viento) Al acertar un ataque, aumento del 10 % de la prob. de activación de habilidad
+  12: (Espíritu de viento) Al atacar, reducción del 30 % de Velocidad de Ataque durante 10s con un 5 % de prob.
+  16: Aumento del 20 % de estadísticas de Espíritu de viento
