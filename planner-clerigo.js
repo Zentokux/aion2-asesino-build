@@ -55,7 +55,7 @@ const SKILLS = {
 // Estigmas (orden de Whelps en couga54) y rango objetivo. Se suben con Esquirlas de Estigma.
 const STIGMAS = {
   cs_castigo:    { name: 'Castigo terrestre',      nameEn: 'Earth Punishment',      unlock: 22, slot: 1, target: 20, note: 'Hace que Condena sea siempre crítica (y se restablezca). Súbelo a 20 el primero.' },
-  cs_proteccion: { name: 'Luz de protección',      nameEn: 'Light of Protection',   unlock: 27, slot: 2, target: 20, note: 'Tu mantra: es un interruptor, actívalo una vez. Con un Chanter en el grupo, cámbialo por Absolución.' },
+  cs_proteccion: { name: 'Luz de protección',      nameEn: 'Light of Protection',   unlock: 27, slot: 2, target: 20, note: 'Tu mantra: es un interruptor, actívalo una vez. Con un Cantor en el grupo, cámbialo por Absolución.' },
   cs_aura_noble: { name: 'Aura noble',             nameEn: 'Noble Aura',            unlock: 32, slot: 3, target: 10, note: 'Un orbe que ataca contigo durante 5 min: casi dobla tu daño. Cuanto más alto, mejor.' },
   cs_oracion:    { name: 'Oración de amplificación', nameEn: 'Prayer of Amplification', unlock: 37, slot: 4, target: 20, note: '+20 % de Ataque y potencia tus dos Gracias. Sin ella el Clérigo no tiene daño.' },
 };

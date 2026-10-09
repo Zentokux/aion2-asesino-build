@@ -1493,10 +1493,10 @@ code {
 
 <header>
   <h1>Guía Progresiva Asesino PvE</h1>
-  <div class="subtitle">Aion 2: The Second Era — Max DPS Build Lv 1 → 45</div>
+  <div class="subtitle">Aion 2: The Second Era — Ráfaga con dagas por la espalda · Nv. 1 → 45</div>
   <div class="meta">
     <span class="badge ok">Patch Global Season 1</span>
-    <span class="badge">Actualizado: 8-oct-2026</span>
+    <span class="badge">Actualizado: 9-oct-2026</span>
     <span class="badge warn">Cap Lv 45 (no 50)</span>
     <span class="badge">PvE Focus</span>
   </div>
@@ -1506,14 +1506,14 @@ code {
   <ul>
     <li><a href="#overview">Resumen</a></li>
     <li><a href="#patch">Patch Actual</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#skills">Habilidades</a></li>
     <li><a href="#progression">Progresión 1-45</a></li>
     <li><a href="#rotations">Rotaciones</a></li>
-    <li><a href="#stigmas">Stigmas</a></li>
+    <li><a href="#stigmas">Estigmas</a></li>
     <li><a href="#daevanion">Daevanion</a></li>
     <li><a href="#pets">Mascotas</a></li>
-    <li><a href="#stats">Stats & Gear</a></li>
-    <li><a href="#systems">Sistemas de Progresión</a></li>
+    <li><a href="#stats">Stats y equipo</a></li>
+    <li><a href="#systems">Sistemas</a></li>
     <li><a href="#macros">Macros</a></li>
     <li><a href="#progress">Mi Progreso</a></li>
   </ul>
@@ -1523,76 +1523,88 @@ code {
 
 <section id="overview">
   <h2>Resumen de la Clase</h2>
-  <p>El <strong>Asesino (Salseong — 살성)</strong> es un DPS cuerpo a cuerpo de dagas duales. En PvE del parche global actual se le considera <strong>Tier A</strong>, orientado a <em>burst y daño sostenido alto</em> con rotaciones basadas en apilar <strong>Insignias</strong> y detonarlas, combinado con el reseteo infinito de <strong>Heart Gore</strong> dentro de la ventana de <strong>Illusive Clone</strong>.</p>
+  <p>El <strong>Asesino</strong> es una clase de ráfaga con dagas que vive de sus mejoras. Cada golpe graba <strong>insignias</strong> en el objetivo, <em>Explosión de insignia</em> las cobra, y <em>Estocada al corazón</em> sale con los críticos y se restablece con el siguiente crítico. Su mayor bonificación de daño es golpear <strong>por la espalda</strong>: la posición importa más que en ninguna otra clase.</p>
 
-  <div class="callout info">
-    <strong>Posicionamiento:</strong> ataca SIEMPRE por detrás. La pasiva <em>Rear Smite</em> (Lv 11) y la pasiva <em>Ambush Stance</em> dan multiplicadores de daño directo trasero. Pierdes ~15% DPS si atacas de frente.
+  <div class="callout ok">
+    <strong>La build en una frase:</strong> quédate detrás del jefe, intercala <em>Corte rápido</em> todo el tiempo, pulsa <em>Explosión de insignia</em> en cuanto esté lista y <em>Estocada al corazón</em> en cada crítico, y pon todo lo que tengas en los 20 segundos de <em>Clon ilusorio</em>, cuando Estocada al corazón no tiene enfriamiento.
   </div>
 
-  <div class="callout warn">
-    <strong>Rol en grupos:</strong> DPS principal. No tienes utility de grupo (sin heals, sin buffs grupales grandes). Tu valor es matar al jefe rápido.
-  </div>
+  <h3>Qué esperar en la temporada 1</h3>
+  <ul>
+    <li><strong>Ráfaga y luego un hueco.</strong> En KR/TW el rango 25 de Clon ilusorio deja mantenerlo casi siempre. Global se queda en 20: unos 20 s de ráfaga cada 1 min 30 s, y entre ventanas juegas con las de relleno mientras Estocada al corazón depende de la suerte del crítico.</li>
+    <li><strong>Las mejoras no se alinean.</strong> Pacto de celeridad y Colmillo salvaje vuelven en un minuto; Clon ilusorio, en uno y medio. Siempre estás decidiendo si esperar o pulsar.</li>
+    <li><strong>Estar a la espalda es daño.</strong> En un muñeco es el 100 %; en una pelea real cuenta con un 60-80 %, y cada golpe de frente pierde la bonificación de Impacto trasero.</li>
+    <li><strong>Frágil.</strong> Sin bloqueo y con poca defensa: errores que un Gladiador aguanta a ti te matan.</li>
+  </ul>
 </section>
 
 <section id="patch">
   <h2>Patch Global Actual (Season 1)</h2>
-  <p>Esta guía refleja <strong>exclusivamente</strong> el estado del parche global vigente al 8-oct-2026. Toda info de versiones KR Chapter 1 que contradiga esto ha sido descartada.</p>
+  <p>Esta guía refleja el parche global vigente al 8-oct-2026 (servidores abiertos el 5-oct; acceso anticipado de fundadores desde el 30-sep). Lo que cambia para el Asesino respecto a Taiwán/Corea:</p>
 
   <table>
-    <thead><tr><th>Dato</th><th>Global Season 1</th><th>KR Chapter 1 (NO aplica)</th></tr></thead>
+    <thead><tr><th>Dato</th><th>Global Season 1</th><th>KR/TW Chapter 1 (NO aplica)</th></tr></thead>
     <tbody>
       <tr><td>Cap de nivel</td><td><strong class="tier s">45</strong></td><td>50</td></tr>
-      <tr><td>Stigma cap</td><td><strong>Lv 20</strong></td><td>Lv 25</td></tr>
-      <tr><td>Slots de stigma</td><td><strong>4</strong> (Lv 22/27/32/37)</td><td>6</td></tr>
-      <tr><td>Pet level cap</td><td><strong>Lv 3</strong></td><td>Lv 5</td></tr>
-      <tr><td>Clases</td><td><strong>8</strong> (sin Brawler)</td><td>9</td></tr>
-      <tr><td>Heroic rarity gear</td><td><strong>NO</strong> en S1</td><td>Sí</td></tr>
-      <tr><td>Zonas Eltnen/Morheim</td><td>Bloqueadas (requieren lv46+)</td><td>Accesibles</td></tr>
-      <tr><td>Dungeon Ludra</td><td>Removido temporal (vuelve ~16-oct)</td><td>Activo</td></tr>
+      <tr><td>Rango máximo de estigma</td><td><strong>20</strong></td><td>25</td></tr>
+      <tr><td>Ranuras de estigma</td><td><strong>4</strong> (Nv. 22/27/32/37), las cuatro de daño</td><td>6</td></tr>
+      <tr><td>Clon ilusorio permanente</td><td><strong>No</strong>: el rango que acorta su enfriamiento con críticos por la espalda es el 25</td><td>Sí</td></tr>
+      <tr><td>Tablero Ariel</td><td><strong>No existe</strong>: 5 tableros, el del 45 (Azphel) es solo JcJ</td><td>Sí</td></tr>
+      <tr><td>Habilidades activas y pasivas</td><td colspan="2">Idénticas en global y KR/TW</td></tr>
     </tbody>
   </table>
 
-  <div class="callout crit">
-    <strong>Importante:</strong> Illusive Clone Lv25 (clon permanente) <strong>NO existe</strong> en global. En global termina en Lv20 (duración 20s, CD 90s). Cualquier guía KR que asuma clon permanente está desactualizada para ti.
+  <div class="callout info">
+    <strong>Poca reducción de enfriamiento al principio:</strong> por eso <em>Desenfreno de tormenta</em> va a 16 y <em>Puñal de Triniel</em> se usa para recortar enfriamientos, no por su daño.<br>
+    <strong>Peleas más largas:</strong> jefes que en Taiwán mueren en 30 s aquí duran minutos: verás varias ventanas de ráfaga y los huecos entre ellas.
   </div>
 </section>
 
 <section id="skills">
-  <h2>Catálogo de Skills del Asesino</h2>
-  <p>Lista completa de skills activas, pasivas y stigmas disponibles en Global S1.</p>
+  <h2>Catálogo de habilidades del Asesino</h2>
+  <p>Rango objetivo y especializaciones según couga54 (vídeo de Arthars Gaming para el lanzamiento global, con aLuckyRO y TitanTheF). Nombres del cliente en español (metabot.gg/es_ES).</p>
 
-  <h3>Skills Activas (12)</h3>
+  <div class="callout info">
+    <strong>Solo importan tres niveles: 12, 16 y 20.</strong> Los puntos de habilidad dan 10, Daevanion +4, los dos anillos +2 y la Arcana el resto. Lleva primero las cinco habilidades clave a 16 y después Estocada al corazón y Explosión de insignia a 20.
+  </div>
+
+  <h3>Activas clave</h3>
   <div class="skill-grid">
-    <div class="skill-card"><span data-icon="quick" data-size="48"></span><div class="info"><div class="name">Corte Rápido <span class="tier s">S</span></div><div class="desc">LMB spam. Recupera 100 MP. Reduce CD de Insignia Explosion 1s/hit (desde rank 16).</div></div></div>
-    <div class="skill-card"><span data-icon="shadow" data-size="48"></span><div class="info"><div class="name">Golpe de Sombra <span class="tier a">A</span></div><div class="desc">Teletransporte detrás del enemigo + stun 3s. CD 20s. Opener principal.</div></div></div>
-    <div class="skill-card"><span data-icon="savage" data-size="48"></span><div class="info"><div class="name">Rugido Salvaje <span class="tier a">A</span></div><div class="desc">AoE. Aplica 1 Insignia por 10s. Filler constante para apilar.</div></div></div>
-    <div class="skill-card"><span data-icon="ambush" data-size="48"></span><div class="info"><div class="name">Emboscada <span class="tier a">A</span></div><div class="desc">+30% daño por detrás. CD 10s. Core del combo trasero.</div></div></div>
-    <div class="skill-card"><span data-icon="heart" data-size="48"></span><div class="info"><div class="name">Desgarro de Corazón <span class="tier s">S</span></div><div class="desc">~30% del daño endgame. Resetea CD en crit. Prioridad #1 de ranked.</div></div></div>
-    <div class="skill-card"><span data-icon="storm" data-size="48"></span><div class="info"><div class="name">Furia de Tormenta <span class="tier b">B</span></div><div class="desc">Daño vs objetivo staggered. Opción AoE/combo.</div></div></div>
-    <div class="skill-card"><span data-icon="whirl" data-size="48"></span><div class="info"><div class="name">Corte Torbellino <span class="tier b">B</span></div><div class="desc">AoE. 40% stun al evadir. Útil contra packs.</div></div></div>
-    <div class="skill-card"><span data-icon="flash" data-size="48"></span><div class="info"><div class="name">Corte Fugaz <span class="tier b">B</span></div><div class="desc">Reposicionamiento + blind 40%. Buen gap-filler.</div></div></div>
-    <div class="skill-card"><span data-icon="infiltrate" data-size="48"></span><div class="info"><div class="name">Infiltrarse <span class="tier a">A</span></div><div class="desc">Esquiva + reposicionamiento + blind 50%. Panic defensiva.</div></div></div>
-    <div class="skill-card"><span data-icon="shadowfall" data-size="48"></span><div class="info"><div class="name">Caída Sombría <span class="tier b">B</span></div><div class="desc">Knockdown sobre stun. Setup para combo con Shadowstrike.</div></div></div>
-    <div class="skill-card"><span data-icon="insignia" data-size="48"></span><div class="info"><div class="name">Explosión de Insignias <span class="tier s">S</span></div><div class="desc">~25% del daño endgame. Detona hasta 5 stacks. Prioridad #2 de ranked.</div></div></div>
-    <div class="skill-card"><span data-icon="defiance" data-size="48"></span><div class="info"><div class="name">Desafío <span class="tier a">A</span></div><div class="desc">CC break + inmunidad 5s + heal 20% HP. Botón de pánico #1.</div></div></div>
+    <div class="skill-card"><span data-icon="heart" data-size="48"></span><div class="info"><div class="name">Estocada al corazón <span class="tier s">16 → 20</span></div><div class="desc">Tu habilidad más importante (~30 % del daño). Necesita 16: con crítico se restablece; si no, espera 5 s. La absorción de PV te mantiene vivo; a 20, Multigolpe. Si te falta Crítico al principio, la de +20 % de Crítico en lugar de la absorción.<br><small>8: absorción de PV del 0.7 % · 16: se restablece al hacer crítico · 20: Multigolpe garantizado</small></div></div></div>
+    <div class="skill-card"><span data-icon="insignia" data-size="48"></span><div class="info"><div class="name">Explosión de insignia <span class="tier s">16 → 20</span></div><div class="desc">La otra mitad de tu daño (~25 %). Púlsala cada vez que esté lista, sin esperar acumulaciones.<br><small>8: conserva 2 insignias tras la explosión · 16: −3 s de enfriamiento · 20: +50 % de Multigolpe</small></div></div></div>
+    <div class="skill-card"><span data-icon="quick" data-size="48"></span><div class="info"><div class="name">Corte rápido <span class="tier s">16 → 20</span></div><div class="desc">El ataque básico que intercalas entre todo: crítico asegurado y −1 s a Explosión de insignia por golpe. A 20, la tercera ranura a tu gusto: absorción de PV o Multigolpe.<br><small>12: −1 s a Explosión de insignia · 16: ignora Bloqueo y Evasión y acierta con crítico · 20: +50 % de Multigolpe</small></div></div></div>
+    <div class="skill-card"><span data-icon="ambush" data-size="48"></span><div class="info"><div class="name">Emboscada <span class="tier a">16</span></div><div class="desc">Tu primer relleno cuando Estocada al corazón está en enfriamiento: dos usos extra a 16 y dos insignias por golpe trasero. Si llega a 20, añade la absorción de PV.<br><small>8: 2 insignias al golpear por la espalda · 16: lanzamientos en cadena +2</small></div></div></div>
+    <div class="skill-card"><span data-icon="storm" data-size="48"></span><div class="info"><div class="name">Desenfreno de tormenta <span class="tier a">16</span></div><div class="desc">En otras clases se puede saltar; aquí no. Con el jefe en Tambaleo, cada golpe quita 1 s a todos los enfriamientos: te devuelve las mejoras, y sin mejoras esta clase no hace daño.<br><small>12: Multigolpe garantizado · 16: −1 s a todos los enfriamientos al acertar</small></div></div></div>
+  </div>
+
+  <h3>Relleno, movilidad y defensa</h3>
+  <div class="skill-grid">
+    <div class="skill-card"><span data-icon="defiance" data-size="48"></span><div class="info"><div class="name">Eliminación de impacto <span class="tier b">12 → 16</span></div><div class="desc">Rompe el control. A 16, cambia la curación por la tolerancia al daño.<br><small>8: +20 % de PV al lanzarla · 12: +2 s de Robustez</small></div></div></div>
+    <div class="skill-card"><span data-icon="savage" data-size="48"></span><div class="info"><div class="name">Rugido bestial <span class="tier b">12</span></div><div class="desc">El último relleno de la línea: más rápido, y cada golpe acorta Ataque sigiloso. No vale más de 12-16.<br><small>8: +20 % de velocidad de habilidad · 12: −1 s a Ataque sigiloso</small></div></div></div>
+    <div class="skill-card"><span data-icon="shadow" data-size="48"></span><div class="info"><div class="name">Ataque sigiloso <span class="tier b">12</span></div><div class="desc">Te teletransporta detrás del objetivo y da +20 % de Daño Crítico durante 10 s: una mejora y tu mejor forma de llegar a la espalda. Guárdalo para recolocarte; las otras opciones son de JcJ.<br><small>8: +20 % de Amplificación de Daño Crítico 10 s</small></div></div></div>
+    <div class="skill-card"><span data-icon="flash" data-size="48"></span><div class="info"><div class="name">Corte de destello <span class="tier b">12</span></div><div class="desc">Otra forma de ponerte detrás del objetivo: 10 m de alcance y dos usos.<br><small>8: +6 m de alcance · 12: lanzamientos en cadena +1</small></div></div></div>
+    <div class="skill-card"><span data-icon="infiltrate" data-size="48"></span><div class="info"><div class="name">Infiltración <span class="tier b">12</span></div><div class="desc">Esquiva y quedas detrás del objetivo, y te devuelve el Vigor. Nunca tomes la cadena de seguimiento.<br><small>8: recupera 300 de Vigor · 8: +10 m de alcance</small></div></div></div>
+    <div class="skill-card"><span data-icon="whirl" data-size="48"></span><div class="info"><div class="name">Corte torbellino <span class="tier b">12</span></div><div class="desc">Para acercarte desde lejos. Pega fuerte sobre el papel, pero la animación es larga: no entra en la rotación.<br><small>8: +50 % de Multigolpe · 8: +16 m de alcance</small></div></div></div>
+    <div class="skill-card"><span data-icon="shadowfall" data-size="48"></span><div class="info"><div class="name">Caída sombría <span class="tier b">12</span></div><div class="desc">Habilidad de JcJ; en JcE solo una curación de emergencia del 10 %.<br><small>8: absorción de PV del 10 % · 8: −5 s de enfriamiento</small></div></div></div>
   </div>
 
   <h3>Especializaciones de cada habilidad</h3>
   <p>Las cinco opciones de cada habilidad activa, con el texto del juego en español, y cuál toma couga54.</p>
   <div id="specList"></div>
 
-  <h3>Pasivas — Priority on Gear (couga54 estricto)</h3>
+  <h3>Pasivas — prioridad en el equipo</h3>
+  <p>Los puntos de habilidad llevan casi todas las pasivas al máximo mientras subes. Lo escaso son las líneas del equipo: la clase quiere cuatro pasivas ahí y solo caben dos o tres.</p>
   <table>
-    <thead><tr><th>Lv</th><th>Pasiva</th><th>Priority (Gear)</th><th>Why — couga54</th></tr></thead>
+    <thead><tr><th>Nv.</th><th>Pasiva</th><th>En el equipo</th><th>Por qué</th></tr></thead>
     <tbody>
-      <tr><td>11</td><td><strong>Rear Smite</strong></td><td class="tier s">⭐ Prio 1</td><td>Back attack + PvE damage boost. La pasiva más fuerte; da daño incluso de frente.</td></tr>
-      <tr><td>6</td><td><strong>Exploit Weakness</strong></td><td class="tier a">Prio 2</td><td>Crit Hit + Attack buff activo casi todo el combate; Illusive Clone lo multiplica.</td></tr>
-      <tr><td>13</td><td><strong>Assault Stance</strong></td><td class="tier a">Prio 2</td><td>Critical Damage Boost; Swift Contract lo multiplica.</td></tr>
-      <tr><td>25</td><td><strong>Determination</strong></td><td class="tier a">Prio 3</td><td>Daño extra en target low-HP. aLuckyRO: "every boss ends there".</td></tr>
-      <tr><td>20</td><td><strong>Impact Hit</strong></td><td class="tier b">Prio 4 — PvP keep</td><td>Double Chance solo 3.3% a Rk 10, nada en PvE (aLuckyRO). <strong>Para PvE: Rk 1. Guárdala para PvP; en PvE gear sube Determination primero.</strong></td></tr>
-      <tr><td>17 / 1</td><td>Ambush Stance + Heightened Sixth Sense</td><td class="tier b">Points only</td><td><strong>Maxed by skill points</strong>; no vale la pena una línea de gear.</td></tr>
-      <tr><td>9 / 21</td><td>Apply Poison + Defense Break</td><td class="tier b">⚠️ SKIP</td><td>Poison &lt; 1% de tu daño; Defense Break es pasiva PvP. <strong>SKIP ambos (couga54).</strong></td></tr>
-      <tr><td>—</td><td>Revitalization Contract</td><td class="tier b">Spare only</td><td>Solo con puntos sobrantes (couga54).</td></tr>
+      <tr><td>11</td><td><span data-icon="rear" data-size="28"></span> <strong>Impacto trasero</strong></td><td class="tier s">⭐ Prio 1</td><td>Daño por la espalda y Amplificación de Daño JcE: la pasiva más fuerte; da daño incluso de frente.</td></tr>
+      <tr><td>6</td><td><span data-icon="exploit" data-size="28"></span> <strong>Explotar debilidades</strong></td><td class="tier a">Prio 2</td><td>Crítico y una mejora de Ataque activa casi todo el combate; Clon ilusorio la multiplica.</td></tr>
+      <tr><td>13</td><td><span data-icon="assault" data-size="28"></span> <strong>Postura de agresión</strong></td><td class="tier a">Prio 2</td><td>Amplificación de Daño Crítico; Pacto de celeridad la multiplica.</td></tr>
+      <tr><td>25</td><td><span data-icon="determination" data-size="28"></span> <strong>Determinación</strong></td><td class="tier a">Prio 3</td><td>Daño extra contra un objetivo con poca vida. aLuckyRO la cuenta entre las más importantes: todo jefe pasa el final de la pelea ahí.</td></tr>
+      <tr><td>15</td><td><span data-icon="impact" data-size="28"></span> <strong>Acierto de impacto</strong></td><td class="tier b">Prio 4</td><td>Doble golpe: solo un 3,3 % a nivel 10, casi nada en JcE (aLuckyRO). Guárdala para JcJ; en el equipo JcE, Determinación primero.</td></tr>
+      <tr><td>17 / 1</td><td>Postura de emboscada · Maximización de sexto sentido</td><td class="tier b">Solo puntos</td><td>Al máximo con puntos de habilidad; no valen una línea del equipo.</td></tr>
+      <tr><td>9 / 21</td><td>Aplicación de veneno · Grieta defensiva</td><td class="tier b">⚠️ SKIP</td><td>El veneno es menos del 1 % de tu daño; Grieta defensiva es una pasiva de JcJ.</td></tr>
+      <tr><td>23</td><td>Pacto de resurrección</td><td class="tier b">Sobrantes</td><td>Solo con puntos sobrantes.</td></tr>
     </tbody>
   </table>
 
@@ -1784,24 +1796,25 @@ code {
 </section>
 
 <section id="pets">
-  <h2>Sistema de Mascotas y Genus Insight</h2>
-  <p>Las mascotas en Aion 2 son <strong>server-wide por familia (Genus)</strong> — todas las pets del mismo genus comparten progreso de insight entre tus personajes del server. No son pets de combate; dan <strong>buffs pasivos permanentes</strong> aunque no estén equipadas (sistema "Owned Effects").</p>
+  <h2>Mascotas y Genus Insight</h2>
+  <p>Las mascotas dan <strong>bonificaciones pasivas permanentes</strong> aunque no estén equipadas (efectos de colección), y el progreso se comparte por familia (genus). Se desbloquean con la misión <em>"All Geared Up"</em> del Episodio 2 (~nivel 10-11), donde eliges una de tres mascotas Fera iniciales.</p>
 
   <div class="callout info">
-    <strong>Desbloqueo:</strong> Quest <em>"All Geared Up"</em> en Episodio 2 (tras <em>"Dawn Legion"</em>), aproximadamente nivel 10-11. Elegirás 1 de 3 pets Fera iniciales: Fossa, Armadon o Tog.
+    <strong>Sube todas las mascotas a nivel 3 pronto</strong> (consejo de Lucia en couga54): matar mascotas que ya subiste da los cristales para las líneas de Genus Insight. Cada mascota: 5 almas (nivel 1, montura) + 25 (nivel 2, planeo) + 75 (nivel 3, transformación) = 105.
   </div>
 
-  <h3>Los 5 Géneros</h3>
+  <h3>Las familias</h3>
   <table>
-    <thead><tr><th>Genus</th><th>Owned Effect base (Insight Lv3)</th><th>Prioridad Asesino PvE</th></tr></thead>
+    <thead><tr><th>Familia</th><th>Efecto de colección por mascota a nivel 3</th><th>En tu plan</th></tr></thead>
     <tbody>
-      <tr><td><strong>Cogni</strong></td><td>HP +30, Crit Hit +2, <strong>Might +1</strong></td><td class="tier s">#1 — ofensivo puro</td></tr>
-      <tr><td><strong>Natura</strong></td><td>Stamina +9, Crit Resist +2, <strong>Precision +1</strong></td><td class="tier a">#2 — accuracy + crit</td></tr>
-      <tr><td><strong>Fera</strong></td><td>Mount Speed +3, Accuracy +2, Dexterity +1</td><td class="tier b">#3 — utility</td></tr>
-      <tr><td><strong>Varian</strong></td><td>−0,3 % coste de aguante al esprintar en montura, Evasión +2, Constitution +1</td><td class="tier b">Baja</td></tr>
-      <tr><td><strong>Special</strong></td><td>7 pets sin type bonus, no transforman</td><td>Coleccionable</td></tr>
+      <tr><td><strong>Cogni</strong></td><td>PV +30, Crítico +2, Might +1</td><td class="tier s">3 de 5</td></tr>
+      <tr><td><strong>Fera</strong></td><td>Velocidad de montura +3, Precisión +2, Destreza +1</td><td class="tier a">1 de 5</td></tr>
+      <tr><td><strong>Natura</strong></td><td>Aguante +9, Resistencia Crítica +2, Precision +1</td><td class="tier a">1 de 5</td></tr>
+      <tr><td><strong>Varian</strong></td><td>−0,3 % de coste de aguante al esprintar en montura, Evasión +2, Constitución +1</td><td>—</td></tr>
+      <tr><td><strong>Especial</strong></td><td>Sin bonificación de familia; no se transforman</td><td>Coleccionable</td></tr>
     </tbody>
   </table>
+  <p><small>Might, Precision, Destreza y Constitución: nombres sin confirmar en el cliente en español.</small></p>
 
   <h3>Tus primeras 5 mascotas (Asesino)</h3>
   <p>Para el Asesino el <strong>Crítico</strong> importa más que en ninguna otra clase: Estocada al corazón solo se restablece con un golpe crítico (couga54). Por eso tres de las cinco son <strong>Cogni</strong> (Crítico y Might), una <strong>Fera</strong> (Precisión, la tercera estadística de sus piedras de maná) y una <strong>Natura</strong> (Precision). Son las más fáciles de cada familia en tu zona, en el orden en que te las encuentras subiendo de nivel. Después sube todas las demás a nivel 3 (Lucia): cada mascota subida da cristales para Genus Insight.</p>
@@ -1813,243 +1826,167 @@ code {
   <div id="petGallery" data-familia="Cogni" data-destacar="skyray,fungie,klaw,krall-laborer,krall-warrior,decomposed-lupyllini,armadon,rafflesia,biruta,dratona"></div>
   <p><small>Retratos y fuentes de almas: <a href="https://wikily.gg/aion-2/pets" target="_blank" rel="noopener">wikily.gg</a>. Verteron es la zona Elyos y Altgard la Asmodiana. Los nombres de mascotas y monstruos van en inglés: no están confirmados en el cliente en español.</small></p>
 
-  <h3>Progresión por pet individual</h3>
-  <ul>
-    <li><strong>Lv 1</strong> (5 Soul Fragments) → desbloquea pet + Riding</li>
-    <li><strong>Lv 2</strong> (+25 almas) → <strong>Mount Glide</strong></li>
-    <li><strong>Lv 3</strong> (+75 almas) → <strong>Transformación</strong> (cap global)</li>
-    <li>Total: <strong>105 almas por pet</strong></li>
-  </ul>
-
-  <h3>Genus Insight Board (tablero de puntos de mascota)</h3>
-  <ul>
-    <li><strong>9 slots</strong> por genus (se abren con los niveles de Insight 1-9; Lv 10 = max)</li>
-    <li><strong>Slots 3 y 9:</strong> stats ofensivos de alto impacto (prioridad reroll)</li>
-    <li><strong>Slots 1/4/7:</strong> defensivos (HP, resist)</li>
-    <li><strong>Slot 6:</strong> utilidad defensiva (Iron Wall / damage mitigation)</li>
-  </ul>
-
-  <h3>Build de Genus Insight para Asesino PvE</h3>
-  <ol>
-    <li><strong>Farmear Cogni primero</strong> → desbloquear todas las pets Cogni accesibles tempranas</li>
-    <li><strong>Rerollear Slots 3 y 9 de Cogni</strong> buscando <strong>Mighty Hit ≥ 2%</strong> (multiplicador crítico directo)</li>
-    <li><strong>Slot 6 de Cogni</strong> → Iron Wall / Damage Resist (supervivencia)</li>
-    <li><strong>Slots 2/5/8</strong> → buscar Multi-Hit Rate (perfecto para el Asesino por sus skills multi-hit: Heart Gore, Quick Slice, Insignia Explosion)</li>
-    <li>Siguiente familia: <strong>Natura</strong> para Precision</li>
-  </ol>
-
-  <h3>Pet activa recomendada</h3>
-  <p>Cualquier Cogni (visual que te guste). El bonus activo de montura es solo velocidad; lo relevante son los <strong>Owned Effects del pool completo</strong>, no cuál esté equipada.</p>
+  <h3>Qué tomar en cada rueda de Genus Insight (Lucia)</h3>
+  <p>Lucia lo explica en la guía del Clérigo de couga54, pero las ruedas son las mismas para todas las clases. Para el Asesino, la línea de daño de la ranura 4 es el <strong>Daño de ataque trasero</strong> cuando salga.</p>
+  <table>
+    <thead><tr><th>Ranura</th><th>Toma</th></tr></thead>
+    <tbody>
+      <tr><td>1, 5</td><td>Bonificación de Ataque (en la 5, o Ataque máximo)</td></tr>
+      <tr><td>2, 8</td><td>PV</td></tr>
+      <tr><td>3, 6, 9</td><td>Precisión, o Bloqueo si tu Precisión ya es alta</td></tr>
+      <tr><td>4</td><td>La línea de daño de esa rueda: Amplificación de Daño, Golpe perfecto o Daño de ataque trasero</td></tr>
+      <tr><td>7</td><td>Regeneración o Aguante</td></tr>
+      <tr><td>Especial</td><td><strong>Doble golpe</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn">
+    Busca el valor más alto y <strong>bloquea una línea solo cuando esté cerca del máximo</strong>, y nunca antes de que la rueda llegue a nivel 9-10.
+  </div>
 </section>
 
 <section id="stats">
-  <h2>Stats Prioritarios y Gear</h2>
-  <p>Orden de prioridad PvE confirmado del meta global:</p>
+  <h2>Stats y equipo</h2>
 
   <div class="stat-grid">
-    <div class="stat"><div class="label">#1 — Crítico</div><div class="value">Crit Hit</div></div>
-    <div class="stat"><div class="label">#2 — Daño Crit</div><div class="value">Crit DMG</div></div>
-    <div class="stat"><div class="label">#3 — Velocidad</div><div class="value">Atk Speed</div></div>
-    <div class="stat"><div class="label">#4 — Precisión</div><div class="value">Accuracy</div></div>
-    <div class="stat"><div class="label">#5 — Recovery</div><div class="value">MP Recovery</div></div>
-    <div class="stat"><div class="label">Baja prio.</div><div class="value">Evasión</div></div>
+    <div class="stat"><div class="label">Lo que más importa</div><div class="value">Crítico</div></div>
+    <div class="stat"><div class="label">Piedra de maná 1</div><div class="value">Ataque</div></div>
+    <div class="stat"><div class="label">Piedra de maná 2</div><div class="value">Crítico</div></div>
+    <div class="stat"><div class="label">Piedra de maná 3</div><div class="value">Precisión</div></div>
+    <div class="stat"><div class="label">Anillos</div><div class="value">Habilidades activas</div></div>
+    <div class="stat"><div class="label">Resto del equipo</div><div class="value">Pasivas</div></div>
   </div>
 
   <div class="callout info">
-    <strong>Por qué Crit es #1:</strong> Heart Gore solo resetea su CD si impacta como <strong>crítico</strong>. Sin crit, no hay reset. Sin reset, no hay rotación endgame.
+    <strong>El Crítico importa más que en otras clases:</strong> Estocada al corazón solo se restablece con un crítico. Sin crítico no hay reinicio, y sin reinicio no hay rotación.
   </div>
 
-  <h3>Gear por fase</h3>
+  <h3>Líneas de equipo</h3>
   <ul>
-    <li><strong>Lv 1-20:</strong> cualquier gear de quest. Prioriza <em>dagas</em> y piezas con Crit.</li>
-    <li><strong>Lv 20-30:</strong> gear de dungeons tempranas; empieza a juntar Soul Crystals y Kina para el sistema de Arcana.</li>
-    <li><strong>Lv 30-40:</strong> gear de dungeons mid-tier; prioriza Crit Hit y Crit DMG.</li>
-    <li><strong>Lv 40-45:</strong> farmear gear de Krao Cave (~1000 GS requerido para Triniel Board). Preparar Daevanion y Arcana. <strong>Nota: no hay gear Heroic en Season 1.</strong></li>
+    <li><strong>Anillos:</strong> el único sitio para habilidades activas: Estocada al corazón, Corte rápido, Explosión de insignia, Emboscada. Llevan las habilidades clave de 14 a 16.</li>
+    <li><strong>Arma y guarda:</strong> nunca pongas habilidades ahí: sus líneas de daño valen más que un nivel de habilidad.</li>
+    <li><strong>Resto de piezas:</strong> Impacto trasero primero; cualquiera de las tres siguientes (Explotar debilidades, Postura de agresión, Determinación) está bien.</li>
+    <li>No persigas un set perfecto en la temporada 1: el equipo global tiene una línea menos y además tira Might, Precisión y Velocidad de combate en ese hueco.</li>
+    <li><strong>Piedras de maná:</strong> Ataque, Crítico y Precisión.</li>
   </ul>
 
-  <h3>Arcana (reemplaza manastones de Aion 1)</h3>
-  <p>Las <strong>Arcana</strong> son cartas que buffean stats y añaden niveles efectivos a skills clave. Es el sistema equivalente a manastones del Aion original. Prioriza Arcanas que buffeen Heart Gore, Insignia Explosion y Crit Hit/Damage.</p>
-
-  <h3>BiS Gear por slot (Lv 45 endgame)</h3>
-  <div class="callout info">
-    <strong>Nota:</strong> en Global S1 no hay Heroic rarity. El techo real es <strong>Unique</strong>. BiS = Unique craftable + Soul Bind 100% + Enhance cap + Amplify +5.
-  </div>
+  <h3>Arcana</h3>
+  <p>La temporada 1 tiene cinco cartas y dos conjuntos. El Asesino es la única clase que debe llevar <strong>Fantasía</strong> (enfriamientos) en el Espejo, y por eso lo natural son cuatro cartas de <strong>Vitalidad primordial</strong>.</p>
   <table>
-    <thead><tr><th>Slot</th><th>Fuente BiS</th><th>Stats prioritarios</th><th>Prioridad</th></tr></thead>
+    <thead><tr><th>Carta</th><th>Estadística</th><th>Conjunto</th><th>Busca habilidades</th></tr></thead>
     <tbody>
-      <tr><td><strong>Daga main hand</strong></td><td>Krao Cave / Draupnir (Unique)</td><td>Crit Hit, Attack, Back Dmg Boost</td><td class="tier s">#1 ABSOLUTO</td></tr>
-      <tr><td><strong>Daga off-hand</strong></td><td>Krao Cave / Draupnir (Unique)</td><td>Crit Hit, Attack</td><td class="tier s">#2</td></tr>
-      <tr><td><strong>Pecho (chest)</strong></td><td>Krao Cave / Draupnir</td><td>HP, Attack, Crit Hit</td><td class="tier a">#3</td></tr>
-      <tr><td><strong>Pantalones</strong></td><td>Krao Cave / Draupnir</td><td>HP, Crit Hit, Attack Speed</td><td class="tier a">#4</td></tr>
-      <tr><td><strong>Cinturón</strong></td><td>Krao Cave / Draupnir</td><td>HP, Attack, Crit Hit</td><td class="tier a">#4.5</td></tr>
-      <tr><td><strong>Casco</strong></td><td>Draupnir boss drops</td><td>Crit Hit, Attack</td><td class="tier a">#5</td></tr>
-      <tr><td><strong>Guantes</strong></td><td>Draupnir</td><td>Attack Speed, Crit Hit, Accuracy</td><td class="tier a">#6</td></tr>
-      <tr><td><strong>Botas</strong></td><td>Draupnir</td><td>HP, Attack Speed, MR</td><td class="tier b">#7</td></tr>
-      <tr><td><strong>Anillos ×2</strong></td><td>Abyssal Forge + crafting</td><td>Crit Damage, Attack</td><td class="tier a">#5-6 (clave para skills ranks)</td></tr>
-      <tr><td><strong>Collar</strong></td><td>Shattered Arkanis / Ferocious Horn Den</td><td>Crit Hit, Crit Damage</td><td class="tier a">#7</td></tr>
-      <tr><td><strong>Pendientes ×2</strong></td><td>Draupnir drops</td><td>Attack, Crit</td><td class="tier b">#8</td></tr>
-      <tr><td><strong>Cinturón</strong></td><td>Deus Research Base</td><td>HP, Attack</td><td class="tier b">#9</td></tr>
-      <tr><td><strong>Pin / Insignia</strong></td><td>Battle Pass / Season Shop</td><td>Crit Hit, Crit Damage</td><td class="tier a">Alta ROI gratis</td></tr>
+      <tr><td><strong>Cáliz</strong></td><td>Tiempo (Velocidad de combate)</td><td>Vitalidad primordial</td><td>La de las tres clave que aún no llegue a 20</td></tr>
+      <tr><td><strong>Pergamino</strong></td><td>Vida</td><td>Vitalidad primordial</td><td>Corte rápido, Estocada al corazón, Explosión de insignia: las tres</td></tr>
+      <tr><td><strong>Brújula</strong></td><td>Libertad (Precisión)</td><td>Vitalidad primordial</td><td>Desenfreno de tormenta, Emboscada, Rugido bestial: para llegar a 16</td></tr>
+      <tr><td><strong>Espejo</strong></td><td>Fantasía (enfriamientos)</td><td>Vitalidad primordial</td><td>Impacto trasero, Explotar debilidades; Acierto de impacto</td></tr>
+      <tr><td><strong>Campana</strong></td><td>Destrucción (Ataque)</td><td>Armadura mágica</td><td>Postura de agresión</td></tr>
     </tbody>
   </table>
-
-  <h3>Orden recomendado de upgrade endgame</h3>
-  <ol>
-    <li>Arma principal (daga main hand) → Enhance +20 → Amplify +5 → Soul Bind 100%</li>
-    <li>Arma off-hand → mismo proceso</li>
-    <li>Pecho → Enhance +20 → Amplify +5</li>
-    <li>Pantalones → Enhance +15</li>
-    <li>Anillos ×2 → ambos Soul Bind 100%</li>
-    <li>Resto en paralelo según battle pass drops</li>
-  </ol>
-
-  <h3>Food & consumibles PvE (raids)</h3>
-  <ul>
-    <li><strong>Food Attack</strong>: +Attack % durante 30 min, usa pre-pull de boss</li>
-    <li><strong>Food Crit</strong>: +Crit Hit alternativa</li>
-    <li><strong>HP/MP Potions</strong>: cooldown 1s, slot binding en keybind</li>
-    <li><strong>Scroll de Crit Damage</strong>: si disponible en el patch, úsalo</li>
-    <li><strong>Legion Buff</strong>: entra a legion Lv 20 para +Attack +4 pasivo</li>
-  </ul>
-
-  <div class="callout warn">
-    <strong>Nota:</strong> nombres específicos de ítems en Aion 2 Global S1 cambian con cada patch. Verifica en el AH / crafting UI del cliente actual. Lo listado arriba es la fuente/zona general confirmada por metabot.gg y aion2.gaming.tools.
+  <div class="callout ok">
+    <strong>Bonos de conjunto (metabot):</strong> Vitalidad primordial: +60 de Ataque JcE con dos cartas y +150 con cuatro, mientras tengas un 70 % de PV o más. Armadura mágica: con dos, recupera 1.500 PM al bajar del 20 % (enfriamiento 30 s).
   </div>
+  <div class="callout warn">
+    <strong>El Pergamino es el trabajo duro.</strong> Las tres habilidades que quieres a 20 están en esa carta, y una carta de la temporada 1 solo deja elegir dos de sus cuatro líneas. Subir la carta añade cuatro +1 al azar: mejor un reparto parejo (+2 en cada una) que +4 en una sola, porque el Cáliz puede añadir los +2 que falten. Si no sale, deja Estocada al corazón y Explosión de insignia a 20 y Corte rápido a 16. La Brújula y la Campana son tranquilas: nada de lo suyo tiene que llegar a 20. Todas estas cartas se cambian cuando la temporada 2 traiga otras nuevas.
+  </div>
+
+  <h3>Mientras subes de nivel</h3>
+  <ul>
+    <li>Tras el prólogo: junta 40 plumas (120 esquirlas) para mejorar pronto el amuleto; hacia el 17, amuleto a +10 y transfórmalo en la versión azul.</li>
+    <li><strong>Arma a ~+10</strong> en cualquier momento: es el mayor salto de daño mientras subes. No la empujes más antes del tope.</li>
+    <li>Nv. 15 / 20 / 25: limpia los escondites que te pillen de camino: la primera vez dan Piedras de mejora y Cristales Daevanion.</li>
+    <li>Nv. 40: la Cueva de Krao pide unos 1.000 de puntuación de equipo.</li>
+  </ul>
 </section>
 
 <section id="systems">
-  <h2>Todos los Sistemas de Progresión (PvE)</h2>
-  <p>Aion 2 tiene <strong>más de 10 sistemas</strong> en los que inviertes puntos/recursos para mejorar tu personaje. Esta sección los cubre TODOS en orden de prioridad para Asesino PvE, para que no gastes recursos en lo que no rinde.</p>
+  <h2>Sistemas de progresión (PvE)</h2>
+  <p>AION 2 tiene más de diez sistemas en los que inviertes recursos. Son los mismos para todas las clases; esta es la referencia completa que enlazan las guías del Clérigo y del Espiritualista. Los nombres de objetos que no están confirmados en el cliente en español van en inglés.</p>
 
   <div class="callout crit">
-    <strong>Resumen de prioridades PvE:</strong><br>
-    <strong>Alta:</strong> Enhancement → Amplify → Soul Binding → Arcana → Manastones → Battle Pass<br>
-    <strong>Media:</strong> Collection Milestones, Theostones (endgame)<br>
-    <strong>Baja:</strong> Potential (PvP), Legion (individual)
+    <strong>Prioridades:</strong><br>
+    <strong>Alta:</strong> Mejora del equipo → Amplificación → Vinculación de alma → Arcana → Piedras de maná → Pase de temporada<br>
+    <strong>Media:</strong> Hitos de colección de mascotas, Teopiedras (endgame)<br>
+    <strong>Baja:</strong> Potencial (JcJ), Legión (individual)
   </div>
 
-  <h3>1. Enhancement (Mejora de Gear) <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <p>Sistema base para subir el nivel + de tu equipo. Es la columna del gear score.</p>
+  <h3>1. Mejora del equipo <span class="tier s">PRIORIDAD ALTA</span></h3>
   <ul>
-    <li><strong>Recursos:</strong> Enhance Stones + Kina</li>
-    <li><strong>Cap:</strong> +10 garantizado (nunca rompe). Yellow/Unique hasta +15; Orange/Heroic hasta +20</li>
-    <li><strong>Sistema "safe":</strong> fallos arriba de +10 NO destruyen ni downgradean el ítem</li>
-    <li><strong>Orden para Asesino PvE:</strong> arma principal (daga main hand) a +15/+20 ASAP → pecho → pantalones → accesorios al final</li>
+    <li><strong>Recursos:</strong> Piedras de mejora + Kina.</li>
+    <li><strong>Tope:</strong> +10 garantizado. Amarillo/Único hasta +15; Naranja/Heroico hasta +20.</li>
+    <li><strong>Sistema seguro:</strong> los fallos por encima de +10 no destruyen ni bajan el objeto.</li>
+    <li><strong>Orden del Asesino:</strong> las dagas primero, luego pecho y pantalones; los accesorios al final.</li>
   </ul>
 
-  <h3>2. Amplify (Amplificación) <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <p>Segunda capa de mejora de gear después de cap de Enhancement.</p>
+  <h3>2. Amplificación <span class="tier s">PRIORIDAD ALTA</span></h3>
   <ul>
-    <li><strong>Desbloqueo:</strong> cuando el ítem llega a su cap de Enhancement</li>
-    <li><strong>Recursos:</strong> Amplify Stones (= 4 Amplify Fragments + 2,500 Enhance Stones por morph) + Kina</li>
-    <li><strong>Dónde farmear fragments:</strong> Abyssal Forge → Ludra (100%) y 3 bosses de Draupnir (~99.9%)</li>
-    <li><strong>Cap:</strong> +5. Costo total 0→5: 62 Amplify Stones + ~7.9M Kina</li>
+    <li><strong>Se abre</strong> cuando el objeto llega a su tope de mejora.</li>
+    <li><strong>Recursos:</strong> Piedras de amplificación <small>(Amplify Stones: 4 fragmentos + 2.500 Piedras de mejora cada una)</small> + Kina.</li>
+    <li><strong>Fragmentos:</strong> Abyssal Forge → Ludra y los 3 jefes de Draupnir.</li>
+    <li><strong>Tope:</strong> +5. Del 0 al 5: 62 Piedras de amplificación y ~7,9 M de Kina.</li>
   </ul>
 
-  <h3>3. Soul Binding (Vinculación de Alma) <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <p>Donde sale "mucho del poder real del personaje" según guías del meta global.</p>
+  <h3>3. Vinculación de alma <span class="tier s">PRIORIDAD ALTA</span></h3>
   <ul>
-    <li><strong>Opciones por rareza:</strong> Common/Rare/Epic 1-3; Unique 3-5; Heroic 4-6 (Heroic no disponible S1)</li>
-    <li><strong>Bind:</strong> Soul Codex + ~30,000 Kina/intento. Sube Soul Binding Rate hasta 100%</li>
-    <li><strong>100% Rate:</strong> desbloquea +1 slot de Manastone extra y +1 línea de option</li>
-    <li><strong>Sync:</strong> Sync Stone para rerolear 1 stat específico</li>
-    <li><strong>Reset:</strong> Soul Codex: Reset para rerolear todas (~300,000 Kina)</li>
-    <li><strong>⚠️ Advertencia:</strong> Bindear hace el ítem untradable PERMANENTEMENTE</li>
-    <li><strong>Soul Codex drops:</strong> Krao Cave, Urugugu Canyon, Fire Temple, Draupnir, Vakron, Deus Research Base, Shattered Arkanis, Abyssal Forge, Battle Pass, Centuryroot (50), Season Shop (3,000 Oath Coin)</li>
+    <li><strong>Líneas por rareza:</strong> Común/Raro/Épico 1-3; Único 3-5; Heroico 4-6 (no hay Heroico en la temporada 1).</li>
+    <li><strong>Vincular:</strong> Soul Codex + ~30.000 Kina por intento, hasta el 100 % de vinculación.</li>
+    <li><strong>Al 100 %:</strong> +1 hueco de Piedra de maná y +1 línea.</li>
+    <li><strong>Sync Stone:</strong> vuelve a tirar una línea concreta. <strong>Soul Codex: Reset:</strong> todas (~300.000 Kina).</li>
+    <li><strong>⚠️ Vincular hace el objeto intransferible para siempre.</strong></li>
+    <li><strong>Soul Codex sale de:</strong> Cueva de Krao, Urugugu Canyon, Fire Temple, Draupnir, Vakron, Deus Research Base, Shattered Arkanis, Abyssal Forge, Pase de temporada, Centuryroot (50) y la tienda de temporada (3.000 Oath Coin).</li>
   </ul>
 
-  <h3>4. Arcana (Cartas Arcanas) <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <p>Reemplaza a los manastones de Aion 1 como segunda fuente de poder principal.</p>
+  <h3>4. Arcana <span class="tier s">PRIORIDAD ALTA</span></h3>
   <ul>
-    <li><strong>Desbloqueo:</strong> Nivel 45 para equipar. Farmeo real a GS 1,600 (Transcendence Stage 1)</li>
-    <li><strong>5 slots:</strong> Chalice, Parchment, Compass, Bell, Mirror</li>
-    <li><strong>Variantes:</strong> Vigor o Magic por cada slot</li>
-    <li><strong>Rarezas:</strong> Grey (20 GS, +2 cap), Green (40, +3), Blue (60, +4), Gold (80, +5)</li>
-    <li><strong>Recursos:</strong> Training Arcana (Lesser 200 XP → Exalted 5,000 XP), Mysterious Crystals, cartas duplicadas como fodder</li>
-    <li><strong>Sistema seguro:</strong> cada upgrade llena una barra de EXP, sin fallos</li>
+    <li><strong>Se equipa</strong> al nivel 45; se farmea de verdad desde 1.600 de puntuación de equipo (Trascendencia fase 1).</li>
+    <li><strong>5 cartas:</strong> Cáliz, Pergamino, Brújula, Campana y Espejo, cada una de vitalidad o de magia.</li>
+    <li><strong>Rarezas:</strong> gris, verde, azul y dorada.</li>
+    <li><strong>Sistema seguro:</strong> cada mejora llena una barra de EXP, sin fallos. Recursos: Training Arcana, Mysterious Crystals y cartas repetidas.</li>
+    <li><strong>Para el Asesino:</strong> cuatro de Vitalidad primordial con Fantasía en el Espejo y la Campana de magia (detalle en <a href="#stats">Stats y equipo</a>).</li>
   </ul>
-  <div class="callout ok">
-    <strong>Set recomendado Asesino PvE:</strong> 4-piece <strong>Primal Vigor</strong> (+150 PvE Attack con HP ≥70-78%) usando Chalice/Parchment/Compass/Mirror de Vigor, y Bell de Magic como 5ª. <strong>Mirror DEBE ser Vigor</strong> para scaling de cooldowns. Chalice de Vigor aparece en 79.7% de builds globales.<br>
-    <strong>Skills a rollear en cartas:</strong> Heart Gore, Quick Slice, Insignia Explosion.
-  </div>
 
-  <h3>5. Manastones & Soulstones (Socketing) <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <p>Equivalente directo a los manastones de Aion 1 Classic.</p>
+  <h3>5. Piedras de maná <span class="tier s">PRIORIDAD ALTA</span></h3>
   <ul>
-    <li><strong>Slots por rareza:</strong> Common 1 / Rare 2 / Epic 3 / Unique 4 / Heroic 5</li>
-    <li><strong>Mecánica:</strong> Cada stone rolea TODOS los slots simultáneamente (todo-o-nada)</li>
-    <li><strong>⚠️ NO transferibles:</strong> al upgradear gear, se pierden las stones (hazlo en gear que vayas a conservar)</li>
+    <li><strong>Huecos por rareza:</strong> Común 1 / Raro 2 / Épico 3 / Único 4 / Heroico 5.</li>
+    <li><strong>Cada piedra tira todos los huecos a la vez</strong> (todo o nada).</li>
+    <li><strong>⚠️ No se transfieren:</strong> al cambiar de pieza se pierden; ponlas en equipo que vayas a conservar.</li>
+    <li><strong>Asesino (couga54):</strong> Ataque, Crítico y Precisión.</li>
   </ul>
-  <h4>Prioridad de stats Asesino PvE (en orden):</h4>
+
+  <h3>6. Teopiedras <span class="tier b">PRIORIDAD BAJA-MEDIA</span></h3>
+  <ul>
+    <li><strong>Se abren</strong> en el endgame (Trascendencia y santuarios).</li>
+    <li>1 en el arma + 1 en la guarda (máx. 2). Grabar: 10.000 Kina. Grados Raro / Épico / Único: 4 repetidas suben un grado.</li>
+    <li><strong>En JcE:</strong> efectos de daño por debajo del 1 % del total.</li>
+  </ul>
+
+  <h3>7. Hitos de colección de mascotas <span class="tier a">PRIORIDAD MEDIA</span></h3>
+  <ul>
+    <li>Premios cada 5 mascotas registradas: 100 Soul Crystals; cada 50, 10 Empathy Candy.</li>
+    <li>Los efectos de colección son permanentes y se suman a todo. Plan de mascotas en la sección <a href="#pets">Mascotas</a>.</li>
+  </ul>
+
+  <h3>8. Pase de temporada <span class="tier s">PRIORIDAD ALTA</span></h3>
+  <ul>
+    <li>Da Soul Codex, Mysterious Crystals, Piedras de mejora y materiales para todos los sistemas anteriores: es la fuente gratis que lo alimenta todo. Haz todas las diarias y semanales.</li>
+  </ul>
+
+  <h3>9. Potencial <span class="tier b">PRIORIDAD BAJA (JcE)</span></h3>
+  <ul>
+    <li>Se abre tras la Amplificación. Potential Stones + ~100.000 Puntos del Abismo por nivel; 4 niveles; +0,5 % de daño JcJ por paso.</li>
+  </ul>
+
+  <h3>10. Legión <span class="tier b">PRIORIDAD BAJA (individual)</span></h3>
+  <ul>
+    <li>Nivel máximo 20; a nivel 20 todos los miembros reciben +3 % de EXP, +80 PV, +70 PM, +5 Evasión, +5 Precisión, +4 Ataque y +4 Defensa. Únete a una legión que ya esté a 20.</li>
+  </ul>
+
+  <h3>Orden de inversión endgame</h3>
   <ol>
-    <li><strong>Back Attack Damage Boost</strong> (ignora Block → prima sobre Accuracy)</li>
-    <li><strong>Weapon/Damage Boost</strong></li>
-    <li><strong>Attack</strong></li>
-    <li><strong>Accuracy</strong> (mínima requerida)</li>
-  </ol>
-
-  <h3>6. Theostones (equivalente Godstones) <span class="tier b">PRIORIDAD BAJA-MEDIA</span></h3>
-  <ul>
-    <li><strong>Desbloqueo:</strong> endgame (Transcendence + Sanctuary raids)</li>
-    <li><strong>Mecánica:</strong> 1 Theostone por arma + 1 en Guard (máx 2)</li>
-    <li><strong>Engrave:</strong> 10,000 Kina</li>
-    <li><strong>Grados:</strong> Rare / Epic / Unique. Combinar 4 duplicados sube de grado</li>
-    <li><strong>Impacto PvE:</strong> procs de daño, &lt;1% del DPS total — bajo</li>
-  </ul>
-
-  <h3>7. Collection Milestones (Códex) <span class="tier a">PRIORIDAD MEDIA</span></h3>
-  <p>Diferente del Genus Insight — estos son los <strong>premios de hito</strong> por completar colecciones de pets.</p>
-  <ul>
-    <li><strong>Total:</strong> 207 pets en Global S1</li>
-    <li><strong>Milestones:</strong> cada 5 pets (de 5 a 500)</li>
-    <li><strong>Recompensas:</strong> 100 Bound Soul Crystals cada 5 pets; 10 Bound Empathy Candy cada 50 pets</li>
-    <li><strong>Owned Effects:</strong> pasivos acumulativos permanentes que apilan con todo</li>
-    <li><strong>Enfoque Asesino:</strong> prioriza pets Fera (velocidad montura) y pets con Attack/Crit en Owned Effects</li>
-  </ul>
-
-  <h3>8. Battle Pass / Season Pass <span class="tier s">PRIORIDAD ALTA</span></h3>
-  <ul>
-    <li><strong>Qué da:</strong> Soul Codex, Mysterious Crystals, Enhance Stones, materiales para TODOS los sistemas anteriores</li>
-    <li><strong>Por qué alta prioridad:</strong> es el pipeline gratis de recursos que alimenta todo lo demás</li>
-    <li><strong>Hazlo:</strong> completar todas las dailies/weeklies</li>
-  </ul>
-
-  <h3>9. Potential (Potencial) <span class="tier b">PRIORIDAD BAJA (PvE)</span></h3>
-  <ul>
-    <li><strong>Desbloqueo:</strong> tras Amplify</li>
-    <li><strong>Recursos:</strong> Potential Stones + ~100,000 Abyss Points por nivel</li>
-    <li><strong>Cap:</strong> 4 niveles</li>
-    <li><strong>Efecto:</strong> +0.5% daño PvP por paso (es PvP-centric, baja prio PvE)</li>
-  </ul>
-
-  <h3>10. Legion (Legión) <span class="tier b">PRIORIDAD BAJA (individual)</span></h3>
-  <ul>
-    <li><strong>Max level:</strong> 20</li>
-    <li><strong>Perks al Lv 20:</strong> +3% EXP, +80 HP, +70 MP, +5 Evasion, +5 Accuracy, +4 Attack, +4 Defense (todos los miembros)</li>
-    <li><strong>Recursos:</strong> Legion XP (contribución semanal de miembros)</li>
-    <li><strong>Consejo:</strong> únete a una Legion ya al Lv 20. No "inviertes" tú individualmente</li>
-  </ul>
-
-  <h3>Sistemas que NO existen en Aion 2 Global S1</h3>
-  <ul>
-    <li><strong>Attribute points manuales:</strong> no hay asignación manual libre. Los atributos (Might, Dexterity, etc.) suben automáticamente vía gear/Daevanion/Arcana/Collections</li>
-    <li><strong>Transformation Contracts independientes:</strong> no existen como sistema separado (el rol lo cumplen Pets + Arcana)</li>
-    <li><strong>Elemental Spirits:</strong> exclusivo del Spiritmaster, no aplica al Asesino</li>
-    <li><strong>Heroic rarity gear:</strong> excluido de Season 1</li>
-  </ul>
-
-  <h3>Orden sugerido de inversión endgame</h3>
-  <ol>
-    <li>Enhance arma principal hasta su cap</li>
-    <li>Amplify arma hasta +5</li>
-    <li>Soul Bind arma hasta 100% rate</li>
-    <li>Manastones en arma (Back Attack Boost prioritario)</li>
-    <li>Repetir pasos 1-4 con pecho</li>
-    <li>En paralelo: battle pass completa + Arcana XP farming</li>
-    <li>Arcana set Primal Vigor 4-piece</li>
-    <li>Collection milestones de pets (farmeo pasivo)</li>
-    <li>Theostone endgame</li>
-    <li>Potential (opcional, PvP)</li>
+    <li>Mejora de las dagas hasta su tope → Amplificación +5 → Vinculación de alma al 100 %.</li>
+    <li>Piedras de maná en las dagas: Ataque, Crítico, Precisión.</li>
+    <li>Lo mismo con el pecho y los pantalones.</li>
+    <li>En paralelo: Pase de temporada completo y EXP de Arcana.</li>
+    <li>Arcana: cuatro de Vitalidad primordial + la Campana.</li>
+    <li>Hitos de colección de mascotas (farmeo pasivo), Teopiedras y, si haces JcJ, Potencial.</li>
   </ol>
 </section>
 
@@ -2084,18 +2021,18 @@ code {
 
   <h3>Hitos de progresión</h3>
   <div id="progressList">
-    <label class="progress-check"><input type="checkbox" data-key="p1"> Lv 5 alcanzado — fundamentos aprendidos</label>
-    <label class="progress-check"><input type="checkbox" data-key="p2"> Lv 10 — Infiltrarse desbloqueado, panic defensiva lista</label>
-    <label class="progress-check"><input type="checkbox" data-key="p3"> Lv 11 — Pet system desbloqueado (quest All Geared Up)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p1"> Nv. 1 — Corte rápido y Rugido bestial primero (Corte rápido en el clic izquierdo)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p2"> Nv. 4 — Estocada al corazón en la Q</label>
+    <label class="progress-check"><input type="checkbox" data-key="p3"> Nv. 11 — Mascotas desbloqueadas (misión All Geared Up)</label>
     <label class="progress-check"><input type="checkbox" data-key="p4"> Estocada al corazón a rango 16 (con Daevanion y anillos): un crítico la restablece</label>
     <label class="progress-check"><input type="checkbox" data-key="p5"> Nv. 14 — Explosión de insignia abajo en la línea principal</label>
-    <label class="progress-check"><input type="checkbox" data-key="p6"> Lv 16 — Desafío equipado como panic principal</label>
+    <label class="progress-check"><input type="checkbox" data-key="p6"> Nv. 16 — Eliminación de impacto en la barra</label>
     <label class="progress-check"><input type="checkbox" data-key="p7"> Nv. 22 — Ascensión completada + Tiro de daga sombría equipado (súbelo a 10)</label>
     <label class="progress-check"><input type="checkbox" data-key="p8"> Nv. 27 — Colmillo salvaje en la ranura 2</label>
-    <label class="progress-check"><input type="checkbox" data-key="p9"> Lv 30 — Vaizel Board desbloqueado (nodos Crit DMG)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p9"> Nv. 30 — Tablero Vaizel abierto (Amplificación de Daño Crítico)</label>
     <label class="progress-check"><input type="checkbox" data-key="p10"> Nv. 32 — Clon ilusorio en la ranura 3 (las esquirlas van a él cuando Tiro de daga sombría llegue a 10)</label>
     <label class="progress-check"><input type="checkbox" data-key="p11"> Nv. 37 — Pacto de celeridad en la ranura 4</label>
-    <label class="progress-check"><input type="checkbox" data-key="p12"> Lv 40 — Triniel Board desbloqueado (1000 GS)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p12"> Nv. 40 — Tablero Triniel abierto; ~1.000 de puntuación de equipo para la Cueva de Krao</label>
     <label class="progress-check"><input type="checkbox" data-key="p13"> Nv. 45 — Tiro de daga sombría cambiado por Puñal de Triniel para jefes</label>
     <label class="progress-check"><input type="checkbox" data-key="p14"> Clon ilusorio a rango 20</label>
     <label class="progress-check"><input type="checkbox" data-key="p15"> Estocada al corazón y Explosión de insignia a rango 20</label>
@@ -2104,55 +2041,51 @@ code {
 
   <h3>Hitos de mascotas</h3>
   <div id="progressPets">
-    <label class="progress-check"><input type="checkbox" data-key="pet1"> Primera pet Cogni desbloqueada (5 almas farmeadas)</label>
-    <label class="progress-check"><input type="checkbox" data-key="pet2"> Primera pet a Insight Lv3 (Transformación)</label>
-    <label class="progress-check"><input type="checkbox" data-key="pet3"> Genus Insight Cogni Lv5+ alcanzado</label>
-    <label class="progress-check"><input type="checkbox" data-key="pet4"> Slots 3 y 9 de Cogni rolleados con Mighty Hit ≥ 2%</label>
-    <label class="progress-check"><input type="checkbox" data-key="pet5"> Genus Natura empezado (segunda prioridad)</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet1"> Primera mascota a nivel 3 (transformación)</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet2"> Las 5 mascotas del plan a nivel 3</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet3"> Todas las mascotas disponibles a nivel 3</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet4"> Una rueda de Genus Insight a nivel 9-10</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet5"> Ranura especial con Doble golpe</label>
   </div>
 
-  <h3>Hitos de sistemas de progresión (endgame)</h3>
+  <h3>Hitos de equipo</h3>
   <div id="progressSystems">
-    <label class="progress-check"><input type="checkbox" data-key="sys1"> Arma principal a Enhancement +10</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys2"> Arma principal a Enhancement cap (+15 o +20)</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys3"> Arma principal Amplify +5</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys4"> Arma principal Soul Binding 100%</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys5"> Pecho a Enhancement cap</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys6"> Manastones en arma (Back Attack Boost prioritario)</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys7"> Arcana set 4-piece Primal Vigor equipado</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys8"> Arcanas con Estocada al corazón / Explosión de insignia</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys9"> Battle Pass actual al 100%</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys10"> Primer Theostone equipado en arma</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys11"> 50 Collection Milestones alcanzados</label>
-    <label class="progress-check"><input type="checkbox" data-key="sys12"> Legion Lv 20 (unido a legion con cap)</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys1"> Dagas a +10</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys2"> Dagas a su tope de mejora (+15 o +20)</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys3"> Dagas con Amplificación +5</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys4"> Dagas con Vinculación de alma al 100 %</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys5"> Pecho a su tope de mejora</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys6"> Piedras de maná en las dagas: Ataque, Crítico, Precisión</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys7"> Arcana: 4 cartas de Vitalidad primordial con Fantasía en el Espejo</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys8"> Pergamino con Estocada al corazón y Explosión de insignia</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys9"> Anillos con Estocada al corazón, Corte rápido, Explosión de insignia o Emboscada</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys10"> Pase de temporada actual al 100 %</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys11"> Legión a nivel 20</label>
   </div>
 </section>
 
 <section id="credits">
   <h2>Fuentes y Verificación</h2>
-  <p>Esta guía fue construida con investigación cruzada de múltiples agentes especializados en octubre 2026. Toda info del parche global S1 fue verificada contra fuentes oficiales y de comunidad activa:</p>
+  <p>La build sigue la guía del Asesino de couga54 (8-oct-2026, Season 1), que a su vez reúne a estos creadores. Nombres, iconos, especializaciones y bonos de Arcana en español del cliente: metabot.gg/es_ES.</p>
   <ul>
-    <li><a href="https://aion2.plaync.com/en-us/board/update/view?articleId=6ac5e6e8d97eae18cc40e34e" target="_blank" rel="noopener">PlayNC Patch Notes oficiales</a></li>
-    <li><a href="https://aion2.wiki.fextralife.com/Assassin" target="_blank" rel="noopener">Fextralife Wiki — Assassin</a></li>
-    <li><a href="https://metabot.gg/en/aion-2/classes/assassin" target="_blank" rel="noopener">Metabot — Assassin</a></li>
-    <li><a href="https://couga54.github.io/aion2-guides/en/assassin/" target="_blank" rel="noopener">Couga54 Aion 2 Guides</a></li>
-    <li><a href="https://2upskill.com/aion-2-assassin-build-guide-2026-best-pvp-and-pve-skills-combos-and-meta-strategies/" target="_blank" rel="noopener">2UpSkill — Assassin Build 2026</a></li>
-    <li><a href="https://aion2.gaming.tools/builds/assassin/leveling" target="_blank" rel="noopener">Gaming.tools — Assassin Leveling</a></li>
-    <li><a href="https://wikily.gg/aion-2/genus-insight" target="_blank" rel="noopener">Wikily — Genus Insight</a></li>
-    <li><a href="https://aion2.wiki.fextralife.com/Pets" target="_blank" rel="noopener">Fextralife Wiki — Pets</a></li>
-    <li><a href="https://corpus.gg/blog/aion-2/assassin-pve-build" target="_blank" rel="noopener">Corpus — Assassin PvE Build</a></li>
-    <li><a href="https://aion2hub.com/updates/aion-2-global-update-2026-10-05" target="_blank" rel="noopener">Aion2Hub — Patch 5-oct-2026</a></li>
+    <li><a href="https://couga54.github.io/aion2-guides/en/assassin/" target="_blank" rel="noopener">couga54 — Assassin (PvE, PvP, Leveling)</a></li>
+    <li><strong>Arthars Gaming</strong> — The Brutal Truth About Assassin in Aion 2 Global Launch: niveles y especializaciones, pasivas, Arcana, estigmas, líneas de la barra, cómo juega la clase en la temporada 1</li>
+    <li><strong>TitanTheF</strong> — hoja de progresión (pestaña del Asesino) y builds de inicio y de 45+ en aion2t.com</li>
+    <li><strong>aLuckyRO</strong> — Latest Assassin PVE Build for Global: especializaciones tempranas, prioridad de pasivas, Clon ilusorio antes de Estocada a 16, Tiro de daga sombría para farmear</li>
+    <li><strong>Grobs</strong> — AION 2 Macro Guide: cómo funcionan las líneas y la macro del juego</li>
+    <li><a href="https://metabot.gg/es_ES/aion-2/classes/assassin" target="_blank" rel="noopener">metabot.gg — Asesino</a> (nombres, iconos, especializaciones, Arcana, Esquirlas de Estigma) · <a href="https://questlog.gg" target="_blank" rel="noopener">questlog.gg</a> (datos de los tableros del cliente global) · <a href="https://wikily.gg/aion-2/pets" target="_blank" rel="noopener">wikily.gg</a> (mascotas)</li>
+    <li>Sistemas de progresión: <a href="https://aion2.wiki.fextralife.com/Assassin" target="_blank" rel="noopener">Fextralife</a>, <a href="https://corpus.gg/blog/aion-2/assassin-pve-build" target="_blank" rel="noopener">corpus.gg</a> y <a href="https://aion2.plaync.com/en-us/board/update/view?articleId=6ac5e6e8d97eae18cc40e34e" target="_blank" rel="noopener">notas de parche de PlayNC</a></li>
   </ul>
 
   <div class="callout warn">
-    <strong>Disclaimer:</strong> Aion 2 global está en Season 1 y los parches futuros pueden cambiar números. Verifica siempre contra el cliente oficial. Si una fuente externa menciona cap Lv 50, Illusive Clone permanente, 6 stigma slots o pet lv5 — es info de KR Chapter 1 y no aplica a global.
+    <strong>Disclaimer:</strong> si una fuente menciona cap 50, Clon ilusorio permanente, 6 ranuras de estigma o rango 25, es información de KR/TW y no aplica a global.
   </div>
 </section>
 
 </main>
 
 <footer>
-  <p>Guía Progresiva Asesino PvE · Aion 2 Global Season 1 · Última actualización 8-oct-2026</p>
+  <p>Guía Progresiva Asesino PvE · Aion 2 Global Season 1 · Última actualización 9-oct-2026</p>
   <p>Construida con investigación verificada por múltiples agentes · <a href="https://github.com/Zentokux" target="_blank" rel="noopener">github.com/Zentokux</a></p>
 </footer>
 
@@ -2222,7 +2155,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="planner-asesino.js?v=2026-10-08-w"></script>
 <script src="mascotas-datos.js?v=2026-10-08-y"></script>
 <script src="mascotas.js?v=2026-10-08-y"></script>
-<script src="planner.js?v=2026-10-08-w"></script>
+<script src="planner.js?v=2026-10-09-a"></script>
 <script src="macros-asesino.js?v=2026-10-08-w"></script>
 <script src="macros.js?v=2026-10-08-w"></script>
 <script src="especializaciones-asesino.js?v=2026-10-09-a"></script>
