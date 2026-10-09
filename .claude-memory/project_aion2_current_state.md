@@ -36,11 +36,17 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 
 **Cache-buster vigente:** `?v=2026-10-08-m` (bump al tocar JS)
 
+**Actualización 2026-10-08 (sesión en PC Windows, cache-buster `-o`):**
+- Daevanion v8: tablero real de couga54 con orden de clics numerado (ver feedback_aion2_daevanion_visual.md).
+- planner.js v2: el plan ya no está escrito a mano, se CALCULA respetando 3 reglas: presupuesto (203 SP, nunca negativo), tope de rango por nivel (rango 2 al aprender, +1 cada 3 niveles), y estigmas con Esquirlas de Estigma (NO con SP). Antes gastaba 260 SP con 203 y tenía bajadas de rango. Resultado: 5 activas clave + 3 pasivas a 10, Rugido bestial 8→9, Determinación 8 (tope al 45).
+- Nombres del planner y del Daevanion en español del cliente (metabot.gg/es_ES). El resto de la página aún mezcla nombres en inglés.
+- Corregido icono: determination.webp era el de Pacto de resurrección (13790000); ahora es 13800000 y revitalization_contract.webp existe.
+- Niveles de aprendizaje corregidos: Acierto de impacto 15, Pacto de resurrección 23.
+
 **Pendientes / problemas abiertos:**
-- Daevanion visual: 7 iteraciones rechazadas (ver feedback_aion2_daevanion_visual.md)
 - Clérigo: no tiene planner interactivo todavía (solo guía textual)
-- No se añadió icono de Revitalization Contract (sin ID metabot encontrado)
-- Posible fix pendiente: planner.js tenía bugs lógicos en PLAN SP (downgrades Lv 41-45) — última revisión aplicó fixes pero no se re-auditó
+- El resumen de la clase dice "Tier A" (las fuentes de confianza dicen Tier S)
+- Sección Estigmas de la página usa orden Clon 22 / Contrato 27 / Triniel 32 / Colmillo 37; couga54 (subida) dice Tiro de daga sombría primero. No se cambió.
 
 **URLs:**
 - Live: https://zentokux.github.io/aion2-asesino-build/

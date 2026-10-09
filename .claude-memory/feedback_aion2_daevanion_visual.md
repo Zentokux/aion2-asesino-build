@@ -20,6 +20,8 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 6. **v6 Tiles tipo juego con glifos rúnicos** — "quedó mal no me gustó hahaha"
 7. **v7 Restaurar v1 estilo simple** — también rechazada
 
+**v8 (2026-10-08, PC Windows):** el usuario mandó captura del tablero de couga54 como referencia exacta ("es la idea pero quedó mal hecho y no se entiende"). Se reconstruyó con los datos reales: posiciones, ruta y líneas extraídas del HTML de couga54 (`tools/extraer-tableros.ps1`) + textos en español de metabot cruzados por fila/columna. Totales 63/65/69/91/0 = 288, iguales a couga54. Añade números de orden de clic, barra de progreso, "siguiente clic" parpadeante, lista paso a paso y resumen de lo que da la ruta. Respaldo de v7 en `respaldo/`. Pendiente: confirmación del usuario.
+
 **Why:** El usuario describe el visual que quiere con palabras pero visualmente nada le queda. Posible gap entre su expectativa mental y lo que se puede lograr sin la topología exacta de couga54 (que no se publica textualmente).
 
 **How to apply en próxima sesión:**

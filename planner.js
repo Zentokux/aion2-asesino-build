@@ -1,6 +1,12 @@
-// Aion 2 Global S1 — Asesino PvE Progressive Planner
-// Plan corregido por agente verificador (consenso metabot.gg + corpus.gg + aion2-meta + couga54)
-// Skills core (HG, QS, IE) suben en paralelo; Rear Smite desde Lv 15; Illusive Clone a Rk 10 ASAP
+// Aion 2 Global S1 — Asesino PvE: planificador de puntos de habilidad nivel por nivel (v2)
+// El plan se CALCULA (no está escrito a mano), así que siempre respeta tres reglas del juego:
+//   1. Presupuesto: solo gastas los puntos que ya ganaste (203 subiendo del 1 al 45).
+//   2. Tope por nivel: al aprender una habilidad puede llegar a rango 2, y luego +1 cada 3 niveles de personaje
+//      (Estocada al corazón se aprende en el 4 → rango 10 en el 28).
+//   3. Los estigmas NO usan puntos de habilidad: se suben con Esquirlas de Estigma.
+// Prioridades de couga54: las 5 habilidades clave a 10 (Estocada al corazón, Explosión de insignia, Corte rápido,
+// Emboscada, Desenfreno de tormenta), Rugido bestial a 8 (especialización de +20 % de velocidad), y las 4 pasivas clave.
+// Nombres: cliente en español (metabot.gg/es_ES). Niveles de aprendizaje: metabot.
 
 const SP_PER_LEVEL = {
   1:0, 2:0, 3:0, 4:1, 5:2, 6:2, 7:2, 8:3, 9:3, 10:3,
@@ -10,47 +16,68 @@ const SP_PER_LEVEL = {
   31:6, 32:6, 33:6, 34:6, 35:6, 36:6, 37:6, 38:6, 39:6, 40:6,
   41:6, 42:6, 43:6, 44:7, 45:7
 };
+const MAX_LVL = 45;
 
 const SKILLS = {
-  // Activas DPS Core (prioridad #1)
-  heart:        { name: 'Desgarro de Corazón',    nameEn: 'Heart Gore',          color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa (DPS Core)',  note: '~30% del daño endgame. Resetea CD en crit.', keep1: false },
-  quick:        { name: 'Tajo Rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa (DPS Core)',  note: 'LMB spam + MP + reduce CD IE', keep1: false },
-  insignia:     { name: 'Explosión de Insignia',  nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa (DPS Core)',  note: '~25% del daño endgame', keep1: false },
-  // Activas secundarias
-  savage:       { name: 'Rugido Salvaje',         nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Genera Insignias. couga54: Rk 12 breakpoint (−1s Shadowstrike CD on hit). Por SP cap Rk 10, resto vía Daevanion.', keep1: false },
-  // Activas secundarias (SP cap Rk 10, pero couga54 recomienda Rk 12-16 vía Daevanion/Arcana/gear)
-  shadow:       { name: 'Golpe de Sombra',        nameEn: 'Shadowstrike',        color: '#06b6d4', unlock: 1,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Opener + stun. couga54 objetivo: Rk 12 vía Daevanion (+20% Crit Damage 10s). Por SP déjalo Rk 1.', keep1: true },
-  ambush:       { name: 'Emboscada',              nameEn: 'Ambush',              color: '#06b6d4', unlock: 3,  cap: 10, type: 'Activa (Rk 16 Daevanion)', note: 'Combo trasero. couga54 objetivo: Rk 16 vía Daevanion (+2 consecutive uses). Por SP déjalo Rk 1.', keep1: true },
-  flash:        { name: 'Tajo Relámpago',         nameEn: 'Flash Slice',         color: '#06b6d4', unlock: 8,  cap: 10, type: 'Activa (Rk 12 Daevanion)', note: 'Reposición + blind. couga54 objetivo: Rk 12 vía Daevanion (+1 consecutive use). Por SP déjalo Rk 1.', keep1: true },
-  infiltrate:   { name: 'Infiltración',           nameEn: 'Infiltrate',          color: '#06b6d4', unlock: 10, cap: 10, type: 'Activa (Rk 12 máx)',      note: 'Panic esquiva. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
-  shadowfall:   { name: 'Caída de Sombra',        nameEn: 'Shadow Fall',         color: '#475569', unlock: 12, cap: 10, type: 'Activa (Rk 12 máx)',      note: 'Knockdown. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
-  storm:        { name: 'Furia Tormentosa',       nameEn: 'Storm Rampage',       color: '#f59e0b', unlock: 5,  cap: 10, type: 'Activa (Rk 16 Daevanion)', note: 'AoE staggered. couga54 objetivo: Rk 16 vía Daevanion (−1s all skill CDs on hit). Por SP déjalo Rk 1.', keep1: true },
-  whirl:        { name: 'Tajo Torbellino',        nameEn: 'Whirlwind Slice',     color: '#f59e0b', unlock: 7,  cap: 10, type: 'Activa (Rk 12 máx)',      note: 'AoE packs. couga54: Rk 12 máx. Por SP déjalo Rk 1.', keep1: true },
-  defiance:     { name: 'Desafío',                nameEn: 'Defiance',            color: '#22c55e', unlock: 16, cap: 10, type: 'Activa (Rk 12-16 Daevanion)', note: 'CC break + heal. couga54 Rk 12 unlock, Rk 16 swap heal por dmg tolerance. Por SP déjalo Rk 1, úsalo panic.', keep1: true },
-
-  // Pasivas CORE PvE (subir a Rk 10)
-  rear:         { name: 'Golpe Trasero',          nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva (Core)',      note: '+3% dmg trasero + PvE. Pasiva #1.', keep1: false },
-  exploit:      { name: 'Explotar Debilidad',     nameEn: 'Exploit Weakness',    color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva (Core)',      note: '+Crit Chance', keep1: false },
-  assault:      { name: 'Postura de Asalto',      nameEn: 'Assault Stance',      color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva (Core)',      note: '+Crit Damage', keep1: false },
-  impact:       { name: 'Golpe de Impacto',       nameEn: 'Impact Hit',          color: '#a3a3a3', unlock: 20, cap: 10, type: 'Pasiva (Prio 4 PvP)', note: 'Solo 3.3% proc extra a Rk 10, nada en PvE (aLuckyRO). Prio 4 en gear — guárdala para PvP. En PvE: Rk 1.', keep1: true },
-
-  // Pasivas automáticas (no requieren SP para activar efecto base)
-  poison:       { name: 'Aplicar Veneno',         nameEn: 'Apply Poison',        color: '#84cc16', unlock: 9,  cap: 10, type: 'Pasiva (SKIP)',      note: '⚠️ SKIP (couga54). Poison < 1% de tu daño, no vale SP.', keep1: true },
-  ambushstance: { name: 'Postura de Emboscada',   nameEn: 'Ambush Stance',       color: '#a16207', unlock: 17, cap: 10, type: 'Pasiva (Points only)', note: 'Maxed by SP solamente — no vale una línea de gear. Rk 10 via SP si sobran puntos.', keep1: true },
-  defbreak:     { name: 'Ruptura de Defensa',     nameEn: 'Defense Break',       color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (SKIP)',      note: '⚠️ SKIP (couga54). Es pasiva PvP, no gastar SP ni gear en PvE.', keep1: true },
-  determination:{ name: 'Determinación',          nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva (Prio 3 Core)', note: 'Daño extra target low-HP. aLuckyRO: "every boss ends there". Priority 3 PvE.', keep1: false },
-  revitalization:{ name: 'Contrato Revitalizador',nameEn: 'Revitalization Contract', color: '#64748b', unlock: 30, cap: 10, type: 'Pasiva (Spare only)', note: 'Solo con puntos sobrantes (couga54). No priorizar.', keep1: true },
-  sixthsense:   { name: 'Sexto Sentido Agudizado',nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (Points only)', note: 'Maxed by SP — no vale gear line.', keep1: true },
-
-  // Stigmas (4 slots)
-  s_clone:      { name: 'Clon Ilusorio',          nameEn: 'Illusive Clone',      color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Slot 1',      note: 'Heart Gore CD=0 por 20s. Rushear a Rk 10.', keep1: false },
-  s_swift:      { name: 'Contrato Veloz',         nameEn: 'Swift Contract',      color: '#a855f7', unlock: 27, cap: 20, type: 'Stigma Slot 2',      note: '+Attack Speed. Mini-burst cada ~45s.', keep1: false },
-  s_triniel:    { name: 'Daga de Triniel',        nameEn: "Triniel's Dagger",    color: '#a855f7', unlock: 32, cap: 20, type: 'Stigma Slot 3',      note: 'Reduce CDs 10%.', keep1: false },
-  s_fang:       { name: 'Colmillo Salvaje',       nameEn: 'Savage Fang',         color: '#a855f7', unlock: 37, cap: 20, type: 'Stigma Slot 4',      note: 'Carga 5 Insignias instantáneas.', keep1: false },
-  s_shadowblade:{ name: 'Lanzar Hoja de Sombra',  nameEn: 'Throw Shadowblade',   color: '#a855f7', unlock: 22, cap: 20, type: 'Stigma Alt (Farming)', note: 'Swap vs Colmillo Salvaje para FARMING/leveling. Rk 10 resetea CD al matar enemigo (couga54/corpus.gg/aion2.run). Para boss PvE puro, mantén Colmillo Salvaje.', keep1: true },
+  // Activas clave (a rango 10 con puntos)
+  heart:        { name: 'Estocada al corazón',     nameEn: 'Heart Gore',          color: '#ff4d6d', unlock: 4,  cap: 10, type: 'Activa clave',  note: 'Tu golpe principal (~30 % del daño). Con crítico se restablece.' },
+  insignia:     { name: 'Explosión de insignia',   nameEn: 'Insignia Explosion',  color: '#ff4d6d', unlock: 14, cap: 10, type: 'Activa clave',  note: 'Detona las insignias (~25 % del daño). Úsala cada vez que esté lista.' },
+  quick:        { name: 'Corte rápido',            nameEn: 'Quick Slice',         color: '#ff4d6d', unlock: 1,  cap: 10, type: 'Activa clave',  note: 'Ataque básico: recupera PM y entra entre cada habilidad.' },
+  ambush:       { name: 'Emboscada',               nameEn: 'Ambush',              color: '#ff4d6d', unlock: 3,  cap: 10, type: 'Activa clave',  note: 'Golpe por la espalda. Una de las 5 clave de couga54.' },
+  storm:        { name: 'Desenfreno de tormenta',  nameEn: 'Storm Rampage',       color: '#ff4d6d', unlock: 5,  cap: 10, type: 'Activa clave',  note: 'Ráfaga de golpes. Una de las 5 clave de couga54.' },
+  savage:       { name: 'Rugido bestial',          nameEn: 'Savage Roar',         color: '#f59e0b', unlock: 1,  cap: 10, type: 'Activa (a 8)',  note: 'Graba insignias. A rango 8 abre +20 % de velocidad de habilidad; el 9-10 solo con puntos extra.' },
+  // Activas que se quedan en rango 1
+  shadow:       { name: 'Ataque sigiloso',         nameEn: 'Shadowstrike',        color: '#64748b', unlock: 1,  cap: 10, type: 'Activa (rango 1)', note: 'Apertura. Sube con Daevanion, no con puntos.' },
+  whirl:        { name: 'Corte torbellino',        nameEn: 'Whirlwind Slice',     color: '#64748b', unlock: 7,  cap: 10, type: 'Activa (rango 1)', note: 'Área. No vale puntos en JcE.' },
+  flash:        { name: 'Corte de destello',       nameEn: 'Flash Slice',         color: '#64748b', unlock: 8,  cap: 10, type: 'Activa (rango 1)', note: 'Desplazamiento. Sube con Daevanion.' },
+  infiltrate:   { name: 'Infiltración',            nameEn: 'Infiltrate',          color: '#64748b', unlock: 10, cap: 10, type: 'Activa (rango 1)', note: 'Te acerca al objetivo.' },
+  shadowfall:   { name: 'Caída sombría',           nameEn: 'Shadow Fall',         color: '#64748b', unlock: 12, cap: 10, type: 'Activa (rango 1)', note: 'Derribo.' },
+  defiance:     { name: 'Eliminación de impacto',  nameEn: 'Defiance',            color: '#64748b', unlock: 16, cap: 10, type: 'Activa (rango 1)', note: 'Libera de control. En JcE solo de emergencia.' },
+  // Pasivas clave (prioridad de couga54 para el equipo: 1 Impacto trasero, 2 Explotar / Postura de agresión, 3 Determinación)
+  rear:         { name: 'Impacto trasero',         nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva clave',  note: 'La pasiva más fuerte: daño por la espalda y JcE.' },
+  exploit:      { name: 'Explotar debilidades',    nameEn: 'Exploit Weakness',    color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva clave',  note: 'Más daño contra objetivos debilitados.' },
+  assault:      { name: 'Postura de agresión',     nameEn: 'Assault Stance',      color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva clave',  note: 'Aumenta tu daño.' },
+  determination:{ name: 'Determinación',           nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva clave',  note: 'Daño contra objetivos con poca vida. Se aprende en el 25: a nivel 45 su tope es 8.' },
+  // Pasivas solo con puntos sobrantes o que no se suben
+  sixthsense:   { name: 'Maximización de sexto sentido', nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo con puntos extra: no vale una línea de equipo.' },
+  ambushstance: { name: 'Postura de emboscada',    nameEn: 'Ambush Stance',       color: '#a3a3a3', unlock: 17, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo con puntos extra.' },
+  impact:       { name: 'Acierto de impacto',      nameEn: 'Impact Hit',          color: '#64748b', unlock: 15, cap: 10, type: 'Pasiva (JcJ)',  note: 'Solo 3,3 % a rango 10: guárdala para JcJ.' },
+  poison:       { name: 'Aplicación de veneno',    nameEn: 'Apply Poison',        color: '#64748b', unlock: 9,  cap: 10, type: 'Pasiva (no)',   note: 'Menos del 1 % de tu daño.' },
+  defbreak:     { name: 'Grieta defensiva',        nameEn: 'Defense Break',       color: '#64748b', unlock: 21, cap: 10, type: 'Pasiva (JcJ)',  note: 'Pasiva de JcJ.' },
+  revitalization:{ name: 'Pacto de resurrección',  nameEn: 'Revitalization Contract', color: '#64748b', unlock: 23, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo si te sobran puntos.' },
 };
 
-// Costo para subir A ese rango (skill activa/pasiva). Rk 11+ no con SP.
+// Estigmas: ranura que abre cada nivel y rango objetivo. Se suben con Esquirlas de Estigma (1-5: 1, 6-10: 2, 11-15: 4, 16-20: 8).
+const STIGMAS = {
+  s_clone:   { name: 'Clon ilusorio',       nameEn: 'Illusive Clone',   unlock: 22, slot: 1, target: 20, note: 'Tu ráfaga: Estocada al corazón sin enfriamiento. Gasta en él las esquirlas primero.' },
+  s_swift:   { name: 'Pacto de celeridad',  nameEn: 'Swift Contract',   unlock: 27, slot: 2, target: 15, note: 'Más velocidad. Siempre antes del Clon.' },
+  s_triniel: { name: 'Puñal de Triniel',    nameEn: "Triniel's Dagger", unlock: 32, slot: 3, target: 10, note: 'Reduce los enfriamientos.' },
+  s_fang:    { name: 'Colmillo salvaje',    nameEn: 'Savage Fang',      unlock: 37, slot: 4, target: 15, note: 'Graba 5 insignias de golpe.' },
+};
+
+// Orden de compra: cada nivel se gasta todo lo posible, de arriba abajo, sin pasar el tope ni el objetivo.
+const PRIORITY = [
+  ['heart', 10], ['insignia', 10], ['quick', 10], ['savage', 8], ['ambush', 10], ['storm', 10],
+  ['rear', 10], ['exploit', 10], ['assault', 10], ['determination', 10],
+];
+// Solo cuando lo de arriba ya está completo (o con piedras de sabiduría).
+const EXTRA = [['savage', 10], ['sixthsense', 10], ['ambushstance', 10]];
+
+const MILESTONES = {
+  1:  { special: '🎯 Empiezas sin puntos hasta el nivel 4. Practica: Ataque sigiloso → Emboscada → Rugido bestial → Corte rápido entre cada golpe, siempre por la espalda.' },
+  4:  { special: '🎯 Primer punto de habilidad. Estocada al corazón: ponla en la Q y úsala sin parar.' },
+  12: { special: '⭐ Se abre el tablero Daevanion Nezekan (ver sección Daevanion).' },
+  14: { special: '🔓 Explosión de insignia: ponla en tu barra principal y súbela cada vez que puedas.' },
+  20: { special: '⭐ Se abre el tablero Zikel.' },
+  22: { special: '⭐ Ascensión: ranura de estigma 1 → Clon ilusorio. Los estigmas se suben con Esquirlas de Estigma, no con estos puntos.' },
+  27: { special: '⭐ Ranura de estigma 2 → Pacto de celeridad.' },
+  30: { special: '⭐ Se abre Vaizel, el tablero n.º 1 del Asesino en JcE (Daño Crítico).' },
+  32: { special: '⭐ Ranura de estigma 3 → Puñal de Triniel.' },
+  37: { special: '⭐ Ranura de estigma 4 → Colmillo salvaje. Loadout completo.' },
+  40: { special: '⭐ Se abre Triniel (Multigolpe).' },
+  45: { special: '🏆 Nivel 45: Azphel es JcJ, no le pongas puntos en JcE.' },
+};
+
 function skillRankCost(toRank) {
   if (toRank <= 1) return 0;
   if (toRank <= 4) return 1;
@@ -58,228 +85,166 @@ function skillRankCost(toRank) {
   if (toRank <= 10) return 4;
   return 0;
 }
-function stigmaRankCost(toRank) {
-  if (toRank <= 1) return 0;
-  if (toRank <= 5) return 1;
-  if (toRank <= 10) return 2;
-  if (toRank <= 15) return 4;
-  if (toRank <= 20) return 8;
-  return 0;
+// Tope de rango por nivel de personaje
+function rankCap(lv, unlock) {
+  if (lv < unlock) return 0;
+  return Math.min(10, 2 + Math.floor((lv - unlock) / 3));
 }
 
-// PLAN NIVEL POR NIVEL (plan corregido por agente verificador: skills core en paralelo)
-// Formato: lvl: [ { skillId, to } ]  (sube a ese rango exacto; costo auto-calculado)
-// Mensajes especiales con { msg: '...', milestone: true }
-const PLAN = {
-  1:  { special: '🎯 NIVEL INICIAL — practica combo: Shadowstrike → Ambush → Heart Gore → Savage Roar → spam Quick Slice (LMB). Golpea SIEMPRE por detrás.' },
-  2:  { note: 'Sigue sin ganar SP. Aprende a cancelar animaciones intercalando Quick Slice entre skills.' },
-  3:  { special: '🔓 Ambush desbloqueado! Sin SP todavía. Practica la secuencia Shadowstrike + Ambush para dominar el posicionamiento trasero.' },
-  4:  { special: '🎯 PRIMER PUNTO DE SKILL!', actions: [{ s: 'heart', to: 2 }] },
-  5:  { actions: [{ s: 'quick', to: 2 }, { s: 'heart', to: 3 }] },
-  6:  { actions: [{ s: 'insignia_pre', skip: true }, { s: 'quick', to: 3 }, { s: 'heart', to: 4 }] },
-  7:  { actions: [{ s: 'heart', to: 5 }] },
-  8:  { actions: [{ s: 'quick', to: 4 }, { s: 'heart', to: 6 }] },
-  9:  { actions: [{ s: 'quick', to: 5 }], bank: 1 },
-  10: { actions: [{ s: 'heart', to: 7 }, { s: 'savage', to: 2 }] },
-  11: { special: '🔓 Rear Smite (passive) desbloqueada', actions: [{ s: 'heart', to: 8 }, { s: 'rear', to: 2 }], note: 'Heart Gore Rk 8: Specialty 1 desbloqueada (Absorb HP)' },
-  12: { actions: [{ s: 'quick', to: 6 }, { s: 'quick', to: 7 }] },
-  13: { actions: [{ s: 'quick', to: 8 }], note: 'Quick Slice Rk 8: Specialty 1' },
-  14: { special: '🔓 Insignia Explosion desbloqueada!', actions: [{ s: 'insignia', to: 2 }, { s: 'insignia', to: 3 }, { s: 'insignia', to: 4 }, { s: 'insignia', to: 5 }] },
-  15: { actions: [{ s: 'insignia', to: 6 }, { s: 'rear', to: 3 }, { s: 'exploit', to: 2 }] },
-  16: { actions: [{ s: 'insignia', to: 7 }, { s: 'insignia', to: 8 }], note: 'IE Rk 8: Specialty 1' },
-  17: { actions: [{ s: 'exploit', to: 3 }, { s: 'exploit', to: 4 }, { s: 'rear', to: 4 }, { s: 'savage', to: 3 }] },
-  18: { actions: [{ s: 'heart', to: 9 }, { s: 'rear', to: 5 }] },
-  19: { actions: [{ s: 'heart', to: 10 }], note: 'HEART GORE Rk 10 MAX por SP (Specialty 2 abre vía Daevanion)' },
-  20: { actions: [{ s: 'quick', to: 9 }, { s: 'exploit', to: 5 }] },
-  21: { actions: [{ s: 'quick', to: 10 }, { s: 'rear', to: 6 }], note: 'QUICK SLICE Rk 10 MAX por SP' },
-  22: { special: '⭐ ASCENSIÓN! Slot stigma 1 → equipa Illusive Clone', actions: [{ s: 's_clone', to: 5 }] },
-  23: { actions: [{ s: 'insignia', to: 9 }, { s: 'assault', to: 2 }] },
-  24: { actions: [{ s: 'insignia', to: 10 }, { s: 'assault', to: 3 }], note: 'IE Rk 10 MAX por SP' },
-  25: { special: '🔓 Determination (passive) desbloqueada', actions: [{ s: 's_clone', to: 7 }, { s: 'determination', to: 2 }], note: 'Determination entra desde ahora (couga54 priority 3, boss endings low HP).' },
-  26: { actions: [{ s: 's_clone', to: 9 }, { s: 'determination', to: 3 }], note: 'Illusive Clone hacia Rk 10 + Determination avanza.' },
-  27: { special: '⭐ Slot stigma 2 → equipa Swift Contract', actions: [{ s: 's_clone', to: 10 }, { s: 's_swift', to: 3 }] },
-  28: { actions: [{ s: 's_swift', to: 5 }, { s: 'savage', to: 4 }, { s: 'savage', to: 5 }] },
-  29: { actions: [{ s: 'savage', to: 6 }, { s: 'savage', to: 7 }, { s: 's_swift', to: 6 }] },
-  30: { special: '⭐ VAIZEL BOARD DESBLOQUEADO (Lv 30) — prioriza esquinas Crit Damage Boost', actions: [{ s: 's_swift', to: 8 }, { s: 'savage', to: 8 }] },
-  31: { actions: [{ s: 's_swift', to: 10 }, { s: 'exploit', to: 6 }], note: 'Swift Contract Rk 10' },
-  32: { special: '⭐ Slot stigma 3 → equipa Triniel\'s Dagger', actions: [{ s: 's_triniel', to: 5 }, { s: 'rear', to: 7 }] },
-  33: { actions: [{ s: 's_triniel', to: 7 }, { s: 'exploit', to: 7 }, { s: 'exploit', to: 8 }], note: 'Exploit Weakness Rk 8 Specialty' },
-  34: { actions: [{ s: 's_triniel', to: 9 }, { s: 'rear', to: 8 }], note: 'Rear Smite Rk 8 Specialty' },
-  35: { actions: [{ s: 's_triniel', to: 10 }, { s: 'rear', to: 9 }, { s: 'rear', to: 10 }], note: 'Rear Smite Rk 10 MAX + Triniel\'s Dagger Rk 10' },
-  36: { actions: [{ s: 'exploit', to: 9 }, { s: 'exploit', to: 10 }], note: 'Exploit Weakness Rk 10 MAX' },
-  37: { special: '⭐ Slot stigma 4 → equipa Savage Fang', actions: [{ s: 's_fang', to: 5 }, { s: 'assault', to: 6 }] },
-  38: { actions: [{ s: 's_fang', to: 7 }, { s: 'assault', to: 7 }, { s: 'assault', to: 8 }], note: 'Assault Stance Rk 8 Specialty' },
-  39: { actions: [{ s: 's_fang', to: 9 }, { s: 'assault', to: 9 }] },
-  40: { special: '⭐ TRINIEL BOARD DESBLOQUEADO (Lv 40) — camino Multi-Hit Chance', actions: [{ s: 's_fang', to: 10 }, { s: 'assault', to: 10 }], note: 'Assault Stance + Savage Fang a Rk 10' },
-  41: { actions: [{ s: 'determination', to: 6 }, { s: 'determination', to: 7 }, { s: 'exploit', to: 7 }], note: 'Determination avanza. Savage Roar ya en Rk 8 (desde Lv 30), suficiente — breakpoint Rk 12 vía Daevanion.' },
-  42: { actions: [{ s: 'determination', to: 8 }, { s: 'exploit', to: 8 }], note: 'Determination Rk 8 Specialty + Exploit Weakness Rk 8 Specialty.' },
-  43: { actions: [{ s: 'determination', to: 9 }, { s: 'exploit', to: 9 }, { s: 'exploit', to: 10 }], note: 'Exploit Weakness Rk 10 MAX.' },
-  44: { actions: [{ s: 'determination', to: 10 }, { s: 'rear', to: 10 }], note: 'Determination y Rear Smite Rk 10 MAX. Pasivas core completas.' },
-  45: { special: '🏆 CAP LV 45 ALCANZADO! Azphel Board disponible (SKIP para PvE puro)', actions: [{ s: 'assault', to: 9 }, { s: 'assault', to: 10 }], note: 'Assault Stance Rk 10 MAX. Impact Hit, Defense Break y Savage Roar quedan Rk 1-8 (correctamente, llegan a 12 vía Daevanion).' },
-};
-
-// Build cumulative state for each level
 function computeState() {
   const states = {};
   const ranks = {};
-  Object.keys(SKILLS).forEach(id => { ranks[id] = SKILLS[id].unlock <= 1 ? 1 : 0; });
-  let cum = 0;
-  let bank = 0;
+  Object.keys(SKILLS).forEach(id => { ranks[id] = 0; });
+  let cum = 0, bank = 0;
 
-  for (let lv = 1; lv <= 45; lv++) {
+  for (let lv = 1; lv <= MAX_LVL; lv++) {
     const spGained = SP_PER_LEVEL[lv];
     cum += spGained;
+    bank += spGained;
 
-    // Apply unlocks
     const unlocks = [];
     Object.entries(SKILLS).forEach(([id, s]) => {
-      if (s.unlock === lv && ranks[id] === 0) {
-        ranks[id] = 1;
-        unlocks.push(s);
-      }
+      if (s.unlock === lv) { ranks[id] = 1; unlocks.push(id); }
     });
+    Object.entries(STIGMAS).forEach(([id, s]) => { if (s.unlock === lv) unlocks.push(id); });
 
-    const plan = PLAN[lv] || {};
+    const bought = {};
     let spent = 0;
-    const investments = [];
-    if (plan.actions) {
-      plan.actions.forEach(act => {
-        if (act.skip) return;
-        const skill = SKILLS[act.s];
-        if (!skill) return;
-        const from = ranks[act.s];
-        const to = act.to;
-        let cost = 0;
-        for (let r = from + 1; r <= to; r++) {
-          cost += (skill.type === 'Stigma') ? stigmaRankCost(r) : skillRankCost(r);
+    const buy = list => {
+      for (let again = true; again;) {
+        again = false;
+        for (const [id, target] of list) {
+          const lim = Math.min(target, rankCap(lv, SKILLS[id].unlock));
+          if (ranks[id] >= lim) continue;
+          const c = skillRankCost(ranks[id] + 1);
+          if (bank < c) continue;
+          bank -= c; spent += c; ranks[id]++;
+          bought[id] = bought[id] || { from: ranks[id] - 1, cost: 0 };
+          bought[id].cost += c;
+          again = true;
+          break;
         }
-        ranks[act.s] = to;
-        spent += cost;
-        investments.push({ skill, from, to, cost });
-      });
-    }
-
-    bank += (spGained - spent);
-
-    states[lv] = {
-      lvl: lv,
-      spGained,
-      cum,
-      bank,
-      spent,
-      special: plan.special,
-      note: plan.note,
-      unlocks,
-      investments,
-      ranks: { ...ranks }
+      }
     };
+    buy(PRIORITY);
+    const coreDone = PRIORITY.every(([id, t]) => ranks[id] >= Math.min(t, rankCap(MAX_LVL, SKILLS[id].unlock)));
+    if (coreDone) buy(EXTRA);
+
+    const investments = Object.entries(bought).map(([id, b]) => ({ id, skill: SKILLS[id], from: b.from, to: ranks[id], cost: b.cost }));
+    const capped = PRIORITY.filter(([id, t]) => ranks[id] > 0 && ranks[id] < t && ranks[id] >= rankCap(lv, SKILLS[id].unlock)).map(([id]) => id);
+    const m = MILESTONES[lv] || {};
+    states[lv] = { lvl: lv, spGained, cum, bank, spent, special: m.special, note: m.note, unlocks, investments, capped, ranks: { ...ranks } };
   }
   return states;
 }
 
 const STATES = computeState();
-let currentLvl = parseInt(localStorage.getItem('aion2_planner_lvl') || '1', 10);
-if (currentLvl < 1 || currentLvl > 45) currentLvl = 1;
+function plGet(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : v; } catch (e) { return def; } }
+function plSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+let currentLvl = parseInt(plGet('aion2_planner_lvl', '1'), 10);
+if (!(currentLvl >= 1 && currentLvl <= MAX_LVL)) currentLvl = 1;
 
 function renderLevel(lv) {
   const s = STATES[lv];
   if (!s) return;
 
-  // Update level number display
   const lvlNum = document.getElementById('plvLvlNum');
   if (lvlNum) lvlNum.textContent = lv;
-
-  // Progress bar
   const prog = document.getElementById('plvProgress');
-  if (prog) prog.style.width = ((lv - 1) / 44 * 100).toFixed(1) + '%';
-
-  // Slider
+  if (prog) prog.style.width = ((lv - 1) / (MAX_LVL - 1) * 100).toFixed(1) + '%';
   const slider = document.getElementById('plvSlider');
   if (slider && slider.value != lv) slider.value = lv;
 
-  // Points row
   document.getElementById('plvSP').innerHTML = `
-    <div class="pts-box"><div class="label">+SP este nivel</div><div class="value gained">+${s.spGained}</div></div>
-    <div class="pts-box"><div class="label">Acumulado</div><div class="value">${s.cum}</div></div>
-    <div class="pts-box"><div class="label">Banco (no gastados)</div><div class="value" style="color:${s.bank >= 0 ? 'var(--info)' : 'var(--crit)'}">${s.bank}</div></div>
-    <div class="pts-box"><div class="label">Gastados aquí</div><div class="value">${s.spent}</div></div>
+    <div class="pts-box"><div class="label">Ganas en este nivel</div><div class="value gained">+${s.spGained}</div></div>
+    <div class="pts-box"><div class="label">Ganados en total</div><div class="value">${s.cum}</div></div>
+    <div class="pts-box"><div class="label">Gastas aquí</div><div class="value">${s.spent}</div></div>
+    <div class="pts-box"><div class="label">Te quedan sin gastar</div><div class="value" style="color:var(--info)">${s.bank}</div></div>
   `;
 
-  // Special/note
   const notesHtml = [];
-  if (s.special) notesHtml.push(`<div class="plv-special">⭐ ${s.special}</div>`);
-  if (s.note) notesHtml.push(`<div class="plv-note">💡 ${s.note}</div>`);
+  if (s.special) notesHtml.push(`<div class="plv-special">${s.special}</div>`);
+  if (s.capped.length && !s.investments.length && s.spGained > 0) {
+    notesHtml.push(`<div class="plv-note">💡 Todo lo importante está en su tope de este nivel: guarda los puntos para los próximos niveles.</div>`);
+  }
   document.getElementById('plvNotes').innerHTML = notesHtml.join('');
 
-  // Unlocks
   const unlocksEl = document.getElementById('plvUnlocks');
   if (s.unlocks.length) {
-    unlocksEl.innerHTML = '<h4>🔓 Desbloqueado en este nivel:</h4>' + s.unlocks.map(u =>
-      `<div class="unlock-item"><span class="skill-mini">${renderIcon(Object.entries(SKILLS).find(([k,v]) => v === u)[0], 40)}</span><span><strong>${u.name}</strong> <em>(${u.type})</em><br><small>${u.note}</small></span></div>`
-    ).join('');
+    unlocksEl.innerHTML = '<h4>🔓 Se desbloquea en este nivel:</h4>' + s.unlocks.map(id => {
+      const u = SKILLS[id] || STIGMAS[id];
+      const type = SKILLS[id] ? u.type : `Estigma · ranura ${u.slot}`;
+      return `<div class="unlock-item"><span class="skill-mini">${renderIcon(id, 40)}</span><span><strong>${u.name}</strong> <em>(${type})</em><br><small>${u.note}</small></span></div>`;
+    }).join('');
     unlocksEl.style.display = 'block';
   } else {
     unlocksEl.style.display = 'none';
   }
 
-  // Investments
   const invEl = document.getElementById('plvInvest');
   if (s.investments.length) {
-    invEl.innerHTML = '<h4>💰 Dónde invertir tus puntos:</h4>' + s.investments.map(inv =>
+    invEl.innerHTML = '<h4>💰 Dónde poner tus puntos:</h4>' + s.investments.map(inv =>
       `<div class="invest-item">
-        <span class="skill-mini">${renderIcon(Object.entries(SKILLS).find(([k,v]) => v === inv.skill)[0], 40)}</span>
+        <span class="skill-mini">${renderIcon(inv.id, 40)}</span>
         <div class="invest-info">
           <strong>${inv.skill.name}</strong>
-          <span class="invest-change">Rk <b>${inv.from}</b> → Rk <b>${inv.to}</b></span>
-          <span class="invest-cost">−${inv.cost} SP</span>
+          <span class="invest-change">Rango <b>${inv.from}</b> → <b>${inv.to}</b>${inv.to === 8 ? ' · abre especialización' : ''}</span>
+          <span class="invest-cost">−${inv.cost} pts</span>
         </div>
       </div>`
     ).join('');
-    invEl.style.display = 'block';
   } else if (s.spGained > 0) {
-    invEl.innerHTML = '<h4>💰 Puntos de este nivel:</h4><p class="empty-msg">Guardados en el banco para el próximo nivel.</p>';
-    invEl.style.display = 'block';
+    invEl.innerHTML = '<h4>💰 Puntos de este nivel:</h4><p class="empty-msg">Guárdalos: ninguna habilidad importante puede subir más todavía.</p>';
   } else {
-    invEl.innerHTML = '<p class="empty-msg">No ganas Skill Points en este nivel.</p>';
-    invEl.style.display = 'block';
+    invEl.innerHTML = '<p class="empty-msg">En este nivel no ganas puntos de habilidad.</p>';
   }
+  invEl.style.display = 'block';
 
-  // Current state grid - all skills with their rank
   const stateEl = document.getElementById('plvState');
+  const changed = new Set(s.investments.map(i => i.id));
   const skillCards = Object.entries(SKILLS).map(([id, sk]) => {
     const rank = s.ranks[id];
     const unlocked = rank > 0;
-    const maxed = rank >= sk.cap;
+    const cap = rankCap(lv, sk.unlock);
     const pct = (rank / sk.cap * 100).toFixed(0);
-    const justChanged = s.investments.some(inv => inv.skill.name === sk.name);
-    return `<div class="state-card ${unlocked ? '' : 'locked'} ${maxed ? 'maxed' : ''} ${justChanged ? 'just-changed' : ''}" title="${sk.note}">
+    const atCap = unlocked && rank >= cap && rank < 10;
+    return `<div class="state-card ${unlocked ? '' : 'locked'} ${rank >= 10 ? 'maxed' : ''} ${changed.has(id) ? 'just-changed' : ''}" title="${sk.note}">
       <div class="state-head">
         <span class="skill-mini">${renderIcon(id, 40)}</span>
         <div class="state-info">
           <div class="state-name">${sk.name}</div>
-          <div class="state-type">${sk.type}${sk.nameEn ? ' · <small style="color:var(--text-dim)">' + sk.nameEn + '</small>' : ''}</div>
+          <div class="state-type">${sk.type} · <small style="color:var(--text-dim)">${sk.nameEn}</small></div>
         </div>
-        <div class="state-rank">${unlocked ? 'Rk ' + rank + '/' + sk.cap : '🔒 Lv ' + sk.unlock}</div>
+        <div class="state-rank">${unlocked ? 'Rango ' + rank + '/10' + (atCap ? '<br><small style="color:var(--text-dim)">tope nv. ' + lv + '</small>' : '') : '🔒 Nv. ' + sk.unlock}</div>
       </div>
       <div class="state-bar"><div class="state-bar-fill" style="width:${unlocked ? pct : 0}%;background:${sk.color}"></div></div>
     </div>`;
   }).join('');
-  stateEl.innerHTML = '<h4>📊 Estado de todas tus skills al terminar Lv ' + lv + ':</h4><div class="state-grid">' + skillCards + '</div>';
+  const stigmaCards = Object.entries(STIGMAS).map(([id, st]) => {
+    const open = lv >= st.unlock;
+    return `<div class="state-card ${open ? '' : 'locked'}" title="${st.note}">
+      <div class="state-head">
+        <span class="skill-mini">${renderIcon(id, 40)}</span>
+        <div class="state-info">
+          <div class="state-name">${st.name}</div>
+          <div class="state-type">Estigma · ranura ${st.slot} · <small style="color:var(--text-dim)">${st.nameEn}</small></div>
+        </div>
+        <div class="state-rank">${open ? 'Objetivo ' + st.target + '<br><small style="color:var(--text-dim)">con esquirlas</small>' : '🔒 Nv. ' + st.unlock}</div>
+      </div>
+    </div>`;
+  }).join('');
+  stateEl.innerHTML = '<h4>📊 Cómo quedan tus habilidades al terminar el nivel ' + lv + ':</h4><div class="state-grid">' + skillCards + stigmaCards + '</div>';
 
-  // Prev/Next buttons state
   document.getElementById('plvPrev').disabled = (lv <= 1);
-  document.getElementById('plvNext').disabled = (lv >= 45);
-
-  // Save
-  localStorage.setItem('aion2_planner_lvl', String(lv));
+  document.getElementById('plvNext').disabled = (lv >= MAX_LVL);
+  plSet('aion2_planner_lvl', String(lv));
 }
 
 function changeLevel(delta) {
   const next = currentLvl + delta;
-  if (next < 1 || next > 45) return;
+  if (next < 1 || next > MAX_LVL) return;
   currentLvl = next;
   renderLevel(currentLvl);
-  // smooth scroll to top of planner
   document.getElementById('progression').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -293,13 +258,13 @@ function initPlanner() {
       <div class="plv-current">
         <span class="plv-label">NIVEL</span>
         <span class="plv-num" id="plvLvlNum">1</span>
-        <span class="plv-of">/ 45</span>
+        <span class="plv-of">/ ${MAX_LVL}</span>
       </div>
       <button id="plvNext" class="plv-arrow">Siguiente →</button>
     </div>
     <div class="plv-progress-wrap"><div class="plv-progress" id="plvProgress"></div></div>
     <div class="plv-slider-wrap">
-      <input type="range" id="plvSlider" min="1" max="45" value="1" class="plv-slider">
+      <input type="range" id="plvSlider" min="1" max="${MAX_LVL}" value="1" class="plv-slider">
       <div class="plv-slider-marks">
         <span data-lv="4">4</span><span data-lv="14">14</span><span data-lv="22">22</span><span data-lv="30">30</span><span data-lv="40">40</span><span data-lv="45">45</span>
       </div>
@@ -312,13 +277,7 @@ function initPlanner() {
     <div class="plv-nav plv-nav-bottom">
       <button id="plvPrev2" class="plv-arrow">← Anterior</button>
       <span class="plv-quick-jumps">
-        <button class="plv-jump" data-jump="1">Lv 1</button>
-        <button class="plv-jump" data-jump="4">Lv 4</button>
-        <button class="plv-jump" data-jump="14">Lv 14</button>
-        <button class="plv-jump" data-jump="22">Lv 22</button>
-        <button class="plv-jump" data-jump="30">Lv 30</button>
-        <button class="plv-jump" data-jump="40">Lv 40</button>
-        <button class="plv-jump" data-jump="45">Lv 45</button>
+        ${[1, 4, 14, 22, 30, 40, 45].map(l => `<button class="plv-jump" data-jump="${l}">Nv. ${l}</button>`).join('')}
       </span>
       <button id="plvNext2" class="plv-arrow">Siguiente →</button>
     </div>
@@ -328,56 +287,48 @@ function initPlanner() {
   document.getElementById('plvNext').addEventListener('click', () => changeLevel(1));
   document.getElementById('plvPrev2').addEventListener('click', () => changeLevel(-1));
   document.getElementById('plvNext2').addEventListener('click', () => changeLevel(1));
-
-  // Slider
   document.getElementById('plvSlider').addEventListener('input', e => {
     currentLvl = parseInt(e.target.value, 10);
     renderLevel(currentLvl);
   });
-
-  // Marks click
   document.querySelectorAll('.plv-slider-marks span').forEach(sp => {
-    sp.addEventListener('click', () => {
-      currentLvl = parseInt(sp.dataset.lv, 10);
-      renderLevel(currentLvl);
-    });
+    sp.addEventListener('click', () => { currentLvl = parseInt(sp.dataset.lv, 10); renderLevel(currentLvl); });
   });
-
-  // Quick jump buttons
   document.querySelectorAll('.plv-jump').forEach(btn => {
-    btn.addEventListener('click', () => {
-      currentLvl = parseInt(btn.dataset.jump, 10);
-      renderLevel(currentLvl);
-    });
+    btn.addEventListener('click', () => { currentLvl = parseInt(btn.dataset.jump, 10); renderLevel(currentLvl); });
   });
-
-  // Keyboard arrows
   document.addEventListener('keydown', e => {
     if (document.activeElement && document.activeElement.tagName === 'INPUT') return;
     const planner = document.getElementById('progression');
     if (!planner) return;
     const rect = planner.getBoundingClientRect();
-    const visible = rect.top < window.innerHeight && rect.bottom > 0;
-    if (!visible) return;
+    if (!(rect.top < window.innerHeight && rect.bottom > 0)) return;
     if (e.key === 'ArrowLeft') { e.preventDefault(); changeLevel(-1); }
     if (e.key === 'ArrowRight') { e.preventDefault(); changeLevel(1); }
   });
 
-  // Summary stats
   const sum = document.getElementById('plannerSummary');
   if (sum) {
-    const final = STATES[45];
+    const final = STATES[MAX_LVL];
+    const reach10 = id => { for (let l = 1; l <= MAX_LVL; l++) if (STATES[l].ranks[id] >= 10) return l; return null; };
+    const key = ['heart', 'insignia', 'quick', 'ambush', 'storm'];
     sum.innerHTML = `
-      <div class="stat"><div class="label">Total SP (Lv 45)</div><div class="value">${final.cum}</div></div>
-      <div class="stat"><div class="label">Banco final</div><div class="value" style="color:${final.bank >= 0 ? 'var(--ok)' : 'var(--crit)'}">${final.bank}</div></div>
-      <div class="stat"><div class="label">Skills a Rk 10</div><div class="value">${Object.entries(final.ranks).filter(([k,v]) => SKILLS[k].type !== 'Stigma' && v >= 10).length}</div></div>
-      <div class="stat"><div class="label">Stigmas a Rk 10</div><div class="value">${Object.entries(final.ranks).filter(([k,v]) => SKILLS[k].type === 'Stigma' && v >= 10).length}</div></div>
+      <div class="stat"><div class="label">Puntos del 1 al 45</div><div class="value">${final.cum}</div></div>
+      <div class="stat"><div class="label">Sin gastar al 45</div><div class="value" style="color:var(--ok)">${final.bank}</div></div>
+      <div class="stat"><div class="label">Activas clave a 10</div><div class="value">${key.filter(id => final.ranks[id] >= 10).length} / 5</div></div>
+      <div class="stat"><div class="label">Pasivas clave a 10</div><div class="value">${['rear', 'exploit', 'assault'].filter(id => final.ranks[id] >= 10).length} / 3 <small>+ Determinación ${final.ranks.determination}</small></div></div>
     `;
+    const when = document.getElementById('plannerWhen');
+    if (when) {
+      when.innerHTML = [...key, 'rear', 'exploit', 'assault'].map(id => `<li>${renderIcon(id, 22)} <strong>${SKILLS[id].name}</strong> a rango 10: nivel ${reach10(id)}</li>`).join('')
+        + `<li>${renderIcon('savage', 22)} <strong>Rugido bestial</strong> a rango 8: nivel ${(() => { for (let l = 1; l <= MAX_LVL; l++) if (STATES[l].ranks.savage >= 8) return l; })()}</li>`
+        + `<li>${renderIcon('determination', 22)} <strong>Determinación</strong> a rango ${final.ranks.determination} (su tope a nivel 45)</li>`;
+    }
   }
 
   renderLevel(currentLvl);
 }
 
 document.addEventListener('DOMContentLoaded', initPlanner);
-// Also expose for manual init after dynamic DOM
 window.buildPlanner = initPlanner;
+window.PLANNER_STATES = STATES;
