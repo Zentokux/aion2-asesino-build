@@ -81,7 +81,7 @@ const MILESTONES = {
   17: { special: '📿 Amuleto a +10 y transfórmalo en la versión azul. Arma a ~+10 cuando puedas: es el mayor salto de daño mientras subes (no la subas más antes del tope).' },
   20: { special: '⭐ Se abre el tablero Zikel: misma prioridad de nodos.' },
   21: { special: '🔓 Gracia terrestre (Daño Crítico y Precisión): súbela al tope en cuanto la aprendas.' },
-  22: { special: '⭐ Ascensión: ranura de estigma 1 → Castigo terrestre, abajo en la línea de Condena para que siempre sea crítica (a rango 5). Aprende también Resurrección de invocación con 1 esquirla. Los estigmas se suben con Esquirlas, no con estos puntos.' },
+  22: { special: '⭐ Ascensión: ranura de estigma 1 → Castigo terrestre, abajo en la línea de Condena para que siempre sea crítica (a rango 5). La 3.ª Ascensión te da 1 esquirla: justo para aprenderlo. Los estigmas se suben con Esquirlas, no con estos puntos (bloque 🔷). Si consigues esquirlas extra, Resurrección de invocación a 1 por si el grupo cae.' },
   25: { special: '🎯 Hacia aquí Retribución terrestre y Rayo del juicio llegan a 10 (couga54). Desde ahora, Condena, Centella y Luz de curación.' },
   27: { special: '⭐ Ranura de estigma 2 → Luz de protección. Es un interruptor: actívala una vez y déjala fuera de las líneas y de la macro.' },
   30: { special: '⭐ Se abre Vaizel (Daño Crítico). Acto 4: las misiones secundarias y las mazmorras en solitario vuelven a valer la pena.' },
@@ -101,3 +101,12 @@ const PLANNER_SUMMARY = {
 
 // Hitos de la barra y botones de salto del planificador
 const PLANNER_JUMPS = [1, 8, 14, 21, 22, 25, 30, 37, 45];
+
+// Orden de gasto de las Esquirlas de Estigma (couga54): Castigo terrestre a 5 primero (Condena siempre crítica);
+// aprender cada estigma cuando se abre su ranura; Aura noble y Oración a 5 (subida); después Whelps:
+// Castigo terrestre a 20, el resto parejo y Luz de protección al final.
+const STIGMA_ORDER = [
+  ['cs_castigo', 5], ['cs_proteccion', 1], ['cs_aura_noble', 1], ['cs_oracion', 1],
+  ['cs_aura_noble', 5], ['cs_oracion', 5], ['cs_castigo', 20], ['cs_oracion', 10], ['cs_aura_noble', 10],
+  ['cs_oracion', 20], ['cs_proteccion', 20],
+];

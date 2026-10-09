@@ -39,7 +39,7 @@ const SKILLS = {
 const STIGMAS = {
   s_shadowblade: { name: 'Tiro de daga sombría', nameEn: 'Throw Shadowblade', unlock: 22, slot: 1, target: 10, until: 44, note: 'Primero, a rango 10: se restablece al matar, ideal para ir de grupo en grupo. Solo para farmear, no para jefes.' },
   s_fang:    { name: 'Colmillo salvaje',    nameEn: 'Savage Fang',      unlock: 27, slot: 2, target: 15, note: 'Para grupos: 5 insignias de golpe. A 15 da +10 % de daño JcE durante 10 s.' },
-  s_clone:   { name: 'Clon ilusorio',       nameEn: 'Illusive Clone',   unlock: 32, slot: 3, target: 20, note: 'Tu ráfaga: 20 s sin enfriamiento de Estocada al corazón. Desde que lo tengas, gasta en él las esquirlas hasta 20.' },
+  s_clone:   { name: 'Clon ilusorio',       nameEn: 'Illusive Clone',   unlock: 32, slot: 3, target: 20, note: 'Tu ráfaga: 20 s sin enfriamiento de Estocada al corazón. Cuando Tiro de daga sombría llegue a 10, las esquirlas van a él hasta 20.' },
   s_swift:   { name: 'Pacto de celeridad',  nameEn: 'Swift Contract',   unlock: 37, slot: 4, target: 15, note: '+20 % de velocidad de combate. 15 basta para empezar; 20 da +10 % más.' },
   s_triniel: { name: 'Puñal de Triniel',    nameEn: "Triniel's Dagger", unlock: 45, slot: 1, target: 10, note: 'Entra en la ranura de Tiro de daga sombría para jefes. A 10, cada golpe recorta un 10 % los enfriamientos que quedan.' },
 };
@@ -62,7 +62,7 @@ const MILESTONES = {
   22: { special: '⭐ Ascensión: ranura de estigma 1 → Tiro de daga sombría, súbelo a 10 (se restablece al matar). Los estigmas se suben con Esquirlas de Estigma, no con estos puntos.' },
   27: { special: '⭐ Ranura de estigma 2 → Colmillo salvaje, para los grupos de monstruos.' },
   30: { special: '⭐ Se abre Vaizel, el tablero n.º 1 del Asesino en JcE (Daño Crítico).' },
-  32: { special: '⭐ Ranura de estigma 3 → Clon ilusorio. Desde ahora las esquirlas van a él hasta rango 20.' },
+  32: { special: '⭐ Ranura de estigma 3 → Clon ilusorio, tu ráfaga contra jefes. En cuanto Tiro de daga sombría llegue a 10, las esquirlas van al Clon hasta rango 20.' },
   37: { special: '⭐ Ranura de estigma 4 → Pacto de celeridad. Úsalo junto con Clon ilusorio y Colmillo salvaje.' },
   40: { special: '⭐ Se abre Triniel (Multigolpe; sobre todo JcJ, puede esperar).' },
   45: { special: '🏆 Nivel 45: para jefes, cambia Tiro de daga sombría por Puñal de Triniel (rango 10). Azphel es JcJ: no le pongas puntos en JcE.' },
@@ -74,3 +74,10 @@ const PLANNER_SUMMARY = {
   passives: ['rear', 'exploit', 'assault'], passivesLabel: 'Pasivas clave a 10', passivesNote: 'determination',
   when: [['heart', 10], ['insignia', 10], ['quick', 10], ['ambush', 10], ['storm', 10], ['rear', 10], ['exploit', 10], ['assault', 10], ['savage', 8], ['determination', 10]],
 };
+
+// Orden de gasto de las Esquirlas de Estigma (couga54): aprender cada estigma cuando se abre su ranura;
+// Tiro de daga sombría a 10 primero (subida); después el Clon ilusorio hasta 20, y Pacto, Colmillo y Puñal.
+const STIGMA_ORDER = [
+  ['s_shadowblade', 1], ['s_fang', 1], ['s_clone', 1], ['s_swift', 1], ['s_triniel', 1],
+  ['s_shadowblade', 10], ['s_clone', 20], ['s_swift', 15], ['s_fang', 15], ['s_triniel', 10], ['s_swift', 20],
+];

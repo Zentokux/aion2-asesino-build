@@ -1477,6 +1477,14 @@ code {
 .rotation-steps li > .iconized{display:inline-block;vertical-align:middle;margin-right:2px}
 .rotation-steps li > .iconized img,.ri img{display:inline-block!important;border-width:1px}
 .rotation-steps a{color:var(--accent)}
+.plv-mini-note{font-size:0.8rem;color:var(--text-dim);margin:0.5rem 0 0}
+.plv-dv-btn{background:var(--bg-3);border:1px solid var(--accent);color:var(--accent);border-radius:6px;padding:2px 8px;font:inherit;font-size:0.8rem;cursor:pointer;margin:2px}
+.plv-dv-list{list-style:none;margin:0.5rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.plv-dv-list li{display:flex;align-items:center;gap:8px;padding:4px 8px;border-radius:8px;background:var(--bg-3);border:1px solid var(--border);font-size:0.84rem}
+.plv-dv-list img{border-radius:6px;flex:none}
+.plv-dv-step{flex:none;min-width:24px;text-align:center;font:700 0.72rem monospace;color:#111;background:var(--accent);border-radius:10px;padding:1px 4px}
+.plv-dv-dot{flex:none;width:16px;height:16px;margin:5px;transform:rotate(45deg);background:#f59e0b;border-radius:3px}
+.dv-plus{color:var(--info)}
 </style>
 </head>
 <body>
@@ -1669,7 +1677,7 @@ code {
       <ol>
         <li><span data-icon="s_shadowblade" data-size="28"></span> <strong>22 · Tiro de daga sombría</strong> a rango 10: se restablece al matar, así que vas de grupo en grupo sin esperar.</li>
         <li><span data-icon="s_fang" data-size="28"></span> <strong>27 · Colmillo salvaje</strong> para los grupos: 5 insignias de golpe.</li>
-        <li><span data-icon="s_clone" data-size="28"></span> <strong>32 · Clon ilusorio</strong>: tu ráfaga contra jefes. Desde aquí las esquirlas van a él hasta 20.</li>
+        <li><span data-icon="s_clone" data-size="28"></span> <strong>32 · Clon ilusorio</strong>: tu ráfaga contra jefes. Cuando Tiro de daga sombría llegue a 10, las esquirlas van a él hasta 20.</li>
         <li><span data-icon="s_swift" data-size="28"></span> <strong>37 · Pacto de celeridad</strong>: úsalo junto con el Clon y Colmillo salvaje.</li>
       </ol>
     </div>
@@ -2093,7 +2101,7 @@ code {
     <label class="progress-check"><input type="checkbox" data-key="p7"> Nv. 22 — Ascensión completada + Tiro de daga sombría equipado (súbelo a 10)</label>
     <label class="progress-check"><input type="checkbox" data-key="p8"> Nv. 27 — Colmillo salvaje en la ranura 2</label>
     <label class="progress-check"><input type="checkbox" data-key="p9"> Lv 30 — Vaizel Board desbloqueado (nodos Crit DMG)</label>
-    <label class="progress-check"><input type="checkbox" data-key="p10"> Nv. 32 — Clon ilusorio en la ranura 3 (las esquirlas van a él)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p10"> Nv. 32 — Clon ilusorio en la ranura 3 (las esquirlas van a él cuando Tiro de daga sombría llegue a 10)</label>
     <label class="progress-check"><input type="checkbox" data-key="p11"> Nv. 37 — Pacto de celeridad en la ranura 4</label>
     <label class="progress-check"><input type="checkbox" data-key="p12"> Lv 40 — Triniel Board desbloqueado (1000 GS)</label>
     <label class="progress-check"><input type="checkbox" data-key="p13"> Nv. 45 — Tiro de daga sombría cambiado por Puñal de Triniel para jefes</label>
@@ -2218,12 +2226,12 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 </script>
-<script src="icons.js?v=2026-10-08-u"></script>
-<script src="planner-asesino.js?v=2026-10-08-u"></script>
-<script src="planner.js?v=2026-10-08-u"></script>
-<script src="macros-asesino.js?v=2026-10-08-u"></script>
-<script src="macros.js?v=2026-10-08-u"></script>
-<script src="daevanion-asesino.js?v=2026-10-08-u"></script>
-<script src="daevanion.js?v=2026-10-08-u"></script>
+<script src="icons.js?v=2026-10-08-w"></script>
+<script src="planner-asesino.js?v=2026-10-08-w"></script>
+<script src="planner.js?v=2026-10-08-w"></script>
+<script src="macros-asesino.js?v=2026-10-08-w"></script>
+<script src="macros.js?v=2026-10-08-w"></script>
+<script src="daevanion-asesino.js?v=2026-10-08-w"></script>
+<script src="daevanion.js?v=2026-10-08-w"></script>
 </body>
 </html>

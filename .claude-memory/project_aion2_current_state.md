@@ -77,3 +77,7 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 - Planificador del Asesino: prioridad de subida de couga54 = Corte rápido y Rugido bestial (a 8) primero; mismos rangos finales (203, 0 sobran).
 - Planificador: `spec8` por habilidad muestra la especialización al llegar a rango 8.
 - Clérigo: prioridad couga54 = Retribución, Rayo, Gracia terrestre, Condena, Centella, Luz de curación, Aura, Gracia empírea, Mejora, Resplandor, Enlace, Relámpagos (203, sobra 1). Macros Lucia / Whelps / subida (Grobs). Hitos de ruta por nivel (escondites 15/20/25, amuleto 17, Shugo al 45).
+
+**Planificador v3 (2026-10-08, cache-buster `-w`):** en cada nivel también muestra
+- 🔷 Esquirlas de Estigma: metabot (cliente global 2.0.3.0) = 1 con la 3.ª Ascensión (nv 22), 1/nivel 23-39, 2/nivel 40-45 (30 al 45); coste 1/2/4/8. Orden por clase en `STIGMA_ORDER`. Al 45: Asesino Tiro 10, Clon 8; Clérigo Castigo 11, Aura noble 5, Oración 5, Protección 1.
+- 🌌 Daevanion: al abrir cada tablero, sus nodos de habilidad/naranjas en orden de clic (dvOrder) y botón para ir al tablero; "+N Daevanion" en las tarjetas. No hay cifra de puntos Daevanion por nivel (salen de misiones secundarias, Mazmorras selladas, escondites, Festival Shugo).
