@@ -21,6 +21,16 @@
 .pg-lv{display:inline-block;font:700 0.68rem monospace;padding:0 5px;border-radius:5px;background:var(--bg-2);border:1px solid var(--border);color:var(--text);margin-right:3px}
 .pg-badge{display:inline-block;font-size:0.65rem;font-weight:700;color:#111;background:var(--accent);border-radius:5px;padding:0 5px;margin-left:4px;vertical-align:middle}
 .pg-count{font-size:0.8rem;color:var(--text-dim);margin-top:0.5rem}
+.pp{margin:0.6rem 0 1.2rem}
+.pp-tabs{display:flex;gap:6px;margin:0.5rem 0}
+.pp-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.pp-item{display:grid;grid-template-columns:34px 72px minmax(0,1fr);gap:10px;align-items:center;padding:8px 10px;border-radius:10px;background:var(--bg-3);border:1px solid var(--accent)}
+.pp-n{font:700 1.1rem monospace;color:#111;background:var(--accent);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center}
+.pp-item img{width:72px;height:72px;border-radius:50%;border:2px solid var(--accent);background:#0b0d12;object-fit:cover}
+.pp-name{font-weight:700;color:var(--accent)}
+.pp-g{font-size:0.72rem;font-weight:700;border:1px solid var(--border);border-radius:5px;padding:0 5px;margin-left:6px;color:var(--text-dim)}
+.pp-why{font-size:0.84rem;color:var(--text)}
+.pp-src{font-size:0.78rem;color:var(--text-dim)}
 `;
   const st = document.createElement('style');
   st.textContent = css;
@@ -69,6 +79,34 @@
     });
     paint();
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
-  else build();
+  // Plan de las primeras mascotas de la clase: window.PET_PLAN = { porque: {Cogni: '...'}, elyos: [claves], asmo: [claves] }
+  function buildPlan() {
+    const box = document.getElementById('petPlan');
+    const P = window.PET_PLAN;
+    if (!box || !P || !window.PETS) return;
+    const byK = Object.fromEntries(PETS.map(p => [p.k, p]));
+    let fac = 'elyos';
+    try { fac = localStorage.getItem('aion2_faccion') || 'elyos'; } catch (e) {}
+    box.innerHTML = `<div class="pp-tabs"><button type="button" class="pg-tab" data-f="elyos">Elyos · Verteron</button><button type="button" class="pg-tab" data-f="asmo">Asmodiano · Altgard</button></div><ol class="pp-list"></ol>`;
+    function paint() {
+      box.querySelectorAll('.pp-tabs .pg-tab').forEach(t => t.classList.toggle('active', t.dataset.f === fac));
+      box.querySelector('.pp-list').innerHTML = P[fac].map((k, i) => {
+        const p = byK[k];
+        if (!p) return '';
+        return `<li class="pp-item"><span class="pp-n">${i + 1}</span><img src="icons/pets/${p.k}.webp" width="72" height="72" alt="${esc(p.n)}">
+          <div><div><span class="pp-name">${esc(p.n)}</span><span class="pp-g">${p.g}</span></div>
+          <div class="pp-why">${P.porque[p.g] || ''}</div>
+          <div class="pp-src"><span class="pg-lv">Nv. ${p.lv}</span>Almas: ${esc(p.m)} · ${esc(p.z)}${p.mas ? ` (+${p.mas} monstruo${p.mas > 1 ? 's' : ''} más)` : ''}</div></div></li>`;
+      }).join('');
+    }
+    box.querySelectorAll('.pp-tabs .pg-tab').forEach(t => t.addEventListener('click', () => {
+      fac = t.dataset.f;
+      try { localStorage.setItem('aion2_faccion', fac); } catch (e) {}
+      paint();
+    }));
+    paint();
+  }
+  function start() { buildPlan(); build(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
 })();
