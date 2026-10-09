@@ -47,12 +47,14 @@ const SKILLS = {
   revitalization:{ name: 'Pacto de resurrección',  nameEn: 'Revitalization Contract', color: '#64748b', unlock: 23, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo si te sobran puntos.' },
 };
 
-// Estigmas: ranura que abre cada nivel y rango objetivo. Se suben con Esquirlas de Estigma (1-5: 1, 6-10: 2, 11-15: 4, 16-20: 8).
+// Estigmas (orden de subida de couga54): ranura que abre cada nivel y rango objetivo.
+// Se suben con Esquirlas de Estigma (1-5: 1, 6-10: 2, 11-15: 4, 16-20: 8). Al 45, Tiro de daga sombría deja su ranura a Puñal de Triniel.
 const STIGMAS = {
-  s_clone:   { name: 'Clon ilusorio',       nameEn: 'Illusive Clone',   unlock: 22, slot: 1, target: 20, note: 'Tu ráfaga: Estocada al corazón sin enfriamiento. Gasta en él las esquirlas primero.' },
-  s_swift:   { name: 'Pacto de celeridad',  nameEn: 'Swift Contract',   unlock: 27, slot: 2, target: 15, note: 'Más velocidad. Siempre antes del Clon.' },
-  s_triniel: { name: 'Puñal de Triniel',    nameEn: "Triniel's Dagger", unlock: 32, slot: 3, target: 10, note: 'Reduce los enfriamientos.' },
-  s_fang:    { name: 'Colmillo salvaje',    nameEn: 'Savage Fang',      unlock: 37, slot: 4, target: 15, note: 'Graba 5 insignias de golpe.' },
+  s_shadowblade: { name: 'Tiro de daga sombría', nameEn: 'Throw Shadowblade', unlock: 22, slot: 1, target: 10, until: 44, note: 'Primero, a rango 10: se restablece al matar, ideal para ir de grupo en grupo. Solo para farmear, no para jefes.' },
+  s_fang:    { name: 'Colmillo salvaje',    nameEn: 'Savage Fang',      unlock: 27, slot: 2, target: 15, note: 'Para grupos: 5 insignias de golpe. A 15 da +10 % de daño JcE durante 10 s.' },
+  s_clone:   { name: 'Clon ilusorio',       nameEn: 'Illusive Clone',   unlock: 32, slot: 3, target: 20, note: 'Tu ráfaga: 20 s sin enfriamiento de Estocada al corazón. Desde que lo tengas, gasta en él las esquirlas hasta 20.' },
+  s_swift:   { name: 'Pacto de celeridad',  nameEn: 'Swift Contract',   unlock: 37, slot: 4, target: 15, note: '+20 % de velocidad de combate. 15 basta para empezar; 20 da +10 % más.' },
+  s_triniel: { name: 'Puñal de Triniel',    nameEn: "Triniel's Dagger", unlock: 45, slot: 1, target: 10, note: 'Entra en la ranura de Tiro de daga sombría para jefes. A 10, cada golpe recorta un 10 % los enfriamientos que quedan.' },
 };
 
 // Orden de compra: cada nivel se gasta todo lo posible, de arriba abajo, sin pasar el tope ni el objetivo.
@@ -69,13 +71,13 @@ const MILESTONES = {
   12: { special: '⭐ Se abre el tablero Daevanion Nezekan (ver sección Daevanion).' },
   14: { special: '🔓 Explosión de insignia: ponla en tu barra principal y súbela cada vez que puedas.' },
   20: { special: '⭐ Se abre el tablero Zikel.' },
-  22: { special: '⭐ Ascensión: ranura de estigma 1 → Clon ilusorio. Los estigmas se suben con Esquirlas de Estigma, no con estos puntos.' },
-  27: { special: '⭐ Ranura de estigma 2 → Pacto de celeridad.' },
+  22: { special: '⭐ Ascensión: ranura de estigma 1 → Tiro de daga sombría, súbelo a 10 (se restablece al matar). Los estigmas se suben con Esquirlas de Estigma, no con estos puntos.' },
+  27: { special: '⭐ Ranura de estigma 2 → Colmillo salvaje, para los grupos de monstruos.' },
   30: { special: '⭐ Se abre Vaizel, el tablero n.º 1 del Asesino en JcE (Daño Crítico).' },
-  32: { special: '⭐ Ranura de estigma 3 → Puñal de Triniel.' },
-  37: { special: '⭐ Ranura de estigma 4 → Colmillo salvaje. Loadout completo.' },
-  40: { special: '⭐ Se abre Triniel (Multigolpe).' },
-  45: { special: '🏆 Nivel 45: Azphel es JcJ, no le pongas puntos en JcE.' },
+  32: { special: '⭐ Ranura de estigma 3 → Clon ilusorio. Desde ahora las esquirlas van a él hasta rango 20.' },
+  37: { special: '⭐ Ranura de estigma 4 → Pacto de celeridad. Úsalo junto con Clon ilusorio y Colmillo salvaje.' },
+  40: { special: '⭐ Se abre Triniel (Multigolpe; sobre todo JcJ, puede esperar).' },
+  45: { special: '🏆 Nivel 45: para jefes, cambia Tiro de daga sombría por Puñal de Triniel (rango 10). Azphel es JcJ: no le pongas puntos en JcE.' },
 };
 
 function skillRankCost(toRank) {
@@ -222,14 +224,17 @@ function renderLevel(lv) {
   }).join('');
   const stigmaCards = Object.entries(STIGMAS).map(([id, st]) => {
     const open = lv >= st.unlock;
-    return `<div class="state-card ${open ? '' : 'locked'}" title="${st.note}">
+    const out = st.until && lv > st.until;
+    const status = out ? 'Fuera<br><small style="color:var(--text-dim)">solo para farmear</small>'
+      : open ? 'Objetivo ' + st.target + '<br><small style="color:var(--text-dim)">con esquirlas</small>' : '🔒 Nv. ' + st.unlock;
+    return `<div class="state-card ${open && !out ? '' : 'locked'}" title="${st.note}">
       <div class="state-head">
         <span class="skill-mini">${renderIcon(id, 40)}</span>
         <div class="state-info">
           <div class="state-name">${st.name}</div>
           <div class="state-type">Estigma · ranura ${st.slot} · <small style="color:var(--text-dim)">${st.nameEn}</small></div>
         </div>
-        <div class="state-rank">${open ? 'Objetivo ' + st.target + '<br><small style="color:var(--text-dim)">con esquirlas</small>' : '🔒 Nv. ' + st.unlock}</div>
+        <div class="state-rank">${status}</div>
       </div>
     </div>`;
   }).join('');

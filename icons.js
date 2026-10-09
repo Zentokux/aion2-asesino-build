@@ -41,6 +41,7 @@ const ICON_FILES = {
   s_triniel: 'triniels_dagger.webp',
   s_fang: 'savage_fang.webp',
   s_shadowblade: 'throw_shadowblade.webp',
+  s_evasion: 'evasion_stance.webp',
 };
 
 // Fallback Unicode glyphs if image fails
@@ -51,7 +52,7 @@ const FALLBACK_GLYPHS = {
   defiance: '🛡',
   rear: '🎯', exploit: '🔍', assault: '⚔', impact: '💢',
   poison: '☠', sixthsense: '👁', ambushstance: '🥷', defbreak: '🛡', determination: '💪', revitalization: '✚',
-  s_clone: '👥', s_swift: '📜', s_triniel: '🗡', s_fang: '🦷', s_shadowblade: '🏹',
+  s_clone: '👥', s_swift: '📜', s_triniel: '🗡', s_fang: '🦷', s_shadowblade: '🏹', s_evasion: '💨',
 };
 
 function renderIcon(key, size) {

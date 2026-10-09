@@ -46,7 +46,8 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 **Pendientes / problemas abiertos:**
 - Clérigo: no tiene planner interactivo todavía (solo guía textual)
 - El resumen de la clase dice "Tier A" (las fuentes de confianza dicen Tier S)
-- Sección Estigmas de la página usa orden Clon 22 / Contrato 27 / Triniel 32 / Colmillo 37; couga54 (subida) dice Tiro de daga sombría primero. No se cambió.
+
+**Estigmas y macros según couga54 (2026-10-08, cache-buster `-p`):** subida 22 Tiro de daga sombría (a 10) → 27 Colmillo salvaje → 32 Clon ilusorio → 37 Pacto de celeridad; al 45, Tiro cambia por Puñal de Triniel (jefes: Clon 20, Pacto 15→20, Colmillo 15, Puñal 10). Clon a 20 primero. Postura de evasión como cambio seguro al aprender peleas. Macros: líneas de barra (la casilla de abajo = mayor prioridad), estigmas a mano y nunca en la macro, macro del juego = línea de daño + Corte rápido a 10 ms en el clic derecho. Se quitaron las macros inventadas con "/queue". Icono throw_shadowblade.webp corregido: era Corte en espiral (13280000), ahora 13020000. Añadido evasion_stance.webp.
 
 **URLs:**
 - Live: https://zentokux.github.io/aion2-asesino-build/
