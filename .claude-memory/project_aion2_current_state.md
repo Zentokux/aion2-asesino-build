@@ -45,7 +45,7 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 
 **Pendientes / problemas abiertos:**
 - Clérigo: no tiene planner interactivo todavía (solo guía textual)
-- El resumen de la clase dice "Tier A" (las fuentes de confianza dicen Tier S)
+- El resumen dice "Tier A": el usuario pidió ignorarlo (08-oct-2026). No volver a proponerlo.
 
 **Estigmas y macros según couga54 (2026-10-08, cache-buster `-p`):** subida 22 Tiro de daga sombría (a 10) → 27 Colmillo salvaje → 32 Clon ilusorio → 37 Pacto de celeridad; al 45, Tiro cambia por Puñal de Triniel (jefes: Clon 20, Pacto 15→20, Colmillo 15, Puñal 10). Clon a 20 primero. Postura de evasión como cambio seguro al aprender peleas. Macros: líneas de barra (la casilla de abajo = mayor prioridad), estigmas a mano y nunca en la macro, macro del juego = línea de daño + Corte rápido a 10 ms en el clic derecho. Se quitaron las macros inventadas con "/queue". Icono throw_shadowblade.webp corregido: era Corte en espiral (13280000), ahora 13020000. Añadido evasion_stance.webp.
 
@@ -62,3 +62,10 @@ originSessionId: f5d03218-43b7-4743-b870-a2c8b3b096f1
 - Si usuario pide seguir Clérigo, hacer planner interactivo similar al Asesino
 - Si usuario pide retomar Daevanion visual, OFRECER wireframes antes de implementar (ver lecciones)
 - No crear más branches de backup sin pedirlo
+
+**Clérigo v2 (2026-10-08, sesión Windows, cache-buster `-r`):** guía reescrita con el mismo esqueleto que el Asesino.
+- Motores comunes `planner.js` y `daevanion.js`; datos por clase en `planner-<clase>.js` y `daevanion-<clase>.js`. `planner.js` acepta `PLANNER_JUMPS` opcional (hitos de la barra); el Asesino usa los de siempre.
+- Clérigo: 203 SP, 1 sin gastar al 45, Retribución terrestre 10 al nv 25, Rayo 26, Condena 32; tableros couga54 63/62/44/60/0 = 229 pts (38/37/27/39 pasos). Iconos en `icons/clerigo/<id>.webp`. Progreso con clave `aion2_cleric_`.
+- Contenido desde `tools/fuentes-clerigo/couga-cleric.txt` (Lucia, Kaeria, Whelps, aLuckyRO, Grobs). Estigmas: 22 Castigo terrestre, 27 Luz de protección, 32 Aura noble, 37 Oración de amplificación; con Chanter, Luz de protección → Absolución.
+- Prueba: `tools/probar.ps1 -Page clerigo.html -Section progression` (ahora guarda en %TEMP%ion2-pruebas).
+- Versión anterior en `respaldo/clerigo-antes-v2.html`.

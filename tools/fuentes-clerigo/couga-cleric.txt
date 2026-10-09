@@ -1,0 +1,815 @@
+
+Cleric — AION 2 Global - Guides (PvE, PvP, Leveling)
+Skip to content
+AION 2 Global - Guides
+Cleric
+Gladiator Melee DPS · bruiser
+Ranger Ranged DPS · kiter
+Templar Tank · party buffer
+Assassin Melee DPS · burst
+Sorcerer Ranged magic DPS
+Elementalist Summoner · magic DPS
+Cleric Healer · earth and lightning damage
+Chanter Melee support · buffer
+Rift --:--
+Reset --
+--:--:--
+Guides
+Progress
+Week 1 What to finish before the first reset
+After 45 Item level route to the raid
+Gathering and crafting Professions and gold blanks
+Game settings Controls, keys, FPS and mass PvP
+Dungeons Boss mechanics with arena diagrams
+Tier list Classes ranked by content
+Trackers
+Weekly Weekly entries and energy
+World bosses Kill tracker and timers
+Sources & credits Everyone this site builds on
+EN Language
+EN English RU Русский UA Українська TR Türkçe
+All classes / Cleric
+PvE PvP Leveling · Global Season 1
+Cleric
+The healer who levels by hitting: Chain of Torment marks the target, Condemnation punishes it, and every hit heals the party.
+Updated: Oct 8, 2026 Patch: Season 1
+Source: Kaeria (TW client) · aLuckyRO · Lucia · Whelps Source: Lucia Source: Grobs · MMO Codex · Kaeria · Whelps
+Who to watch:
+Lucia all creators →
+Role Healer · earth and lightning damage
+Weapon Mace
+Difficulty Medium
+PvE
+PvP
+Leveling
+On this page
+Found a mistake or know a better build or guide? Suggest a change.
+Suggest a change
+Leveling progress
+0 /23 done
+Reset progress
+Tick steps as you go. Progress is saved in this browser, separately for each class.
+Start
+Route
+Follow yellow (main story) quests only . Side content scales with your level, so nothing is lost by doing it later.
+Lv 1
+Class
+Level your two no-cooldown attacks first: Earth's Retribution (restores MP) and Judgment Thunder . Play in target mode — it keeps the basic attack going between skills, and that is your mana.
+After prologue
+Route
+Collect 40 feathers (120 shards) for an early amulet upgrade.
+Lv ~6
+Class
+Chain of Torment marks the target; Condemnation only hits a target under Chain of Torment — put both in one hotbar line with Chain at the bottom.
+Lv 8
+Class
+First specializations: +20% [Discharge] Chain Skill trigger chance , Deals up to 12% more damage when less targets are hit , +3s Damage over Time , -15% target Defense for duration of Damage over Time .
+Lv 12
+Route
+Daevanion unlocks (Nezekan board). Blue nodes = +1 skill level — see your class step below.
+Lv 9–18
+Class
+Bolt for burst and stagger (take +30% Skill Speed ); Healing Light for yourself. Raise attack skills, not heals — a healing-focused Cleric levels slowly.
+Lv 15 / 20 / 25
+Route
+Clear hideouts that are on your route — first clears give Enhance Stones and Daevanion Crystals.
+~Lv 17
+Route
+Amulet +10 , then Morph it into the blue version.
+Any time
+Route
+Weapon to ~+10 — the biggest damage jump while leveling. Don't push further before the cap.
+Lv 20
+Route
+Zikel board opens — same node priority as before.
+Lv 21
+Class
+Passive Earth's Grace (Critical Damage and Accuracy) — straight to 10 the moment you learn it.
+Lv ~22
+Route
+Ascension → stigmas unlock (4 slots in global Season 1). The slots open one at a time at levels 22, 27, 32 and 37 — you can learn more stigmas, but only that many fit on the bar. Which ones — see your class step.
+Lv 22
+Class
+Stigmas: one point into Summon Resurrection , then Noble Aura , Earth Punishment , Benevolence and Absolution to 5.
+Acts 2–3
+Route
+Story only — don't get distracted by the map.
+Lv 30
+Route
+Vaizel board opens (critical damage).
+Act 4
+Route
+Side quests and solo dungeons are worth doing again here.
+Lv 40
+Route
+Triniel board opens (multi-hit; mostly PvP — can wait). Krao Cave expects about 1000 Gear Score.
+Lv 45
+Route
+Azphel board opens — PvP Damage Boost and Tolerance only, no skill nodes. For PvE keep filling the first four boards; global has no Ariel board.
+Cap
+Class
+Both clicks at 10 by level 25; then Condemnation , Bolt and Healing Light . Before group dungeons get Healing Light to 16.
+Cap
+Route
+Shugo activities for the full level-cap reward set (gold gear, materials).
+Cap
+Route
+Sweep the map: question marks, bonfires, green quests, hidden cubes, feathers. Turn in feathers — altar Lv 30 gives a title.
+Daily
+Route
+Nightmare entry, Transformation floors as your GS allows, dungeons T2 before T3 (watch your energy).
+Build at a glance
+Core skills
+Condemnation
+1620
+Condemnation
+Divine Aura
+1620
+Divine Aura
+Bolt
+1620
+Bolt
+Judgment Thunder
+16
+Judgment Thunder
+Lightning Strike Scattershot
+16
+Lightning Strike Scattershot
+Stigma loadout
+Earth Punishment
+Lv 20
+Earth Punishment
+Light of Protection
+Lv 20
+Light of Protection
+Prayer of Amplification
+Lv 20
+Prayer of Amplification
+Noble Aura
+Lv 10
+Noble Aura
+Key passives
+Empyrean Lord's Grace
+Earth's Grace
+Healing Enhancement
+Radiant Benediction
+Build at a glance
+Core skills
+Condemnation
+1620
+Condemnation
+Radiant Recovery
+1620
+Radiant Recovery
+Judgment Thunder
+16
+Judgment Thunder
+Bolt
+16
+Bolt
+Chain of Torment
+14
+Chain of Torment
+Stigma loadout
+Prayer of Amplification
+Lv 20
+Prayer of Amplification
+Light of Protection
+Lv 20
+Light of Protection
+Yustiel's Power
+Lv 15
+Yustiel's Power
+Voice of Doom
+Lv 10
+Voice of Doom
+Key passives
+Empyrean Lord's Grace
+Healing Enhancement
+Earth's Grace
+Survival Willpower
+Overview
+In AION 2 dungeons the Cleric is a healer that has to deal damage : rewards depend on your contribution, and a Cleric who only heals can walk out with nothing. Your party has plenty of dodges and invulnerabilities of its own — top people up after hits, and put everything else into damage.
+The build in one sentence
+Earth Punishment makes Condemnation always crit, and a crit resets Condemnation — so it fires with no cooldown, while Divine Aura , Bolt and Noble Aura add damage on top.
+This mode follows Kaeria's Cleric PvE video guide (Russian, recorded on the Taiwan client on September 28; she says it applies to global too), checked against the video frames on September 30, and against Lucia's guide (English, global, October 5 — a World's First Rank 1 Cleric at 2,160 item level). Skill picks are reversible for free — only arcana cost resources.
+Patch Season 1. The build is checked against guides from the global servers: 4 stigmas, cap 20.
+Overview
+In PvP the Cleric keeps the PvE core — Condemnation reset by crits, Judgment Thunder , the heals — and changes what the stigmas and a few picks are for: crowd control, cutting the enemy's healing, and keeping the party alive through a burst.
+The build in one sentence
+Buff with Prayer of Amplification and Light of Protection , put Voice of Doom on the healer or the tank you are killing, and save Yustiel's Power for the moment the enemy bursts.
+This mode follows the PvP part of Lucia's Cleric guide (English, global, October 5 — a World's First Rank 1 Cleric): stigmas for duels and group fights and the picks she changes for PvP. She promised a separate video on PvP combos; until then the rotation is the PvE one.
+Patch Season 1. The build is checked against guides from the global servers: 4 stigmas, cap 20.
+Global Season 1: what changes
+Global servers open on October 5, 2026 (Founder's early access from September 30). What that means for the Cleric:
+4 stigma slots, capped at 20. Kaeria's Taiwan bar has more; the four in this guide are her picks for global. The level-25 tiers (such as Double Chance on Light of Protection) don't exist here.
+You are paid for damage. Dungeon rewards depend on your contribution, so a Cleric who only heals can leave with nothing — this whole build is about dealing damage while healing on the side.
+Bigger groups (5-player expeditions, 10-player sanctuaries): with a Chanter in the party your mantra doesn't stack with theirs — swap Light of Protection out.
+Lower ping than on Taiwan: animations cancel better, so the macro can weave more basic attacks.
+Active skills and passives are identical in the global and KR/TW data; stigmas lose their level-25 tier. The source video was recorded on the Taiwan client with English skill names.
+Skills ? Each skill card shows the specializations to take under its description; the dashed “20” chip is the pick for the third slot at skill level 20. “All specializations” lists every option.
+Almost everything goes into damage. The heals that matter need 16: Healing Light and Radiant Recovery.
+Leveling order (Lucia): first the two skills you weave — Earth's Retribution and Judgment Thunder — then Condemnation , then the heals. After the regional quests at 45 every skill should be 12 or higher; from there take the specializations and push the heals.
+Condemnation 16 20
+The most important skill on your bar: +12% on a single target and a cooldown reset on crit. At 20 add MP if mana is short, Multi-Hit if not.
+8 Up to +12% damage when less targets hit
+12 Resets cooldown on landing a Critical Hit with [Condemnation]
+20 Multi-Hit on hit
+All specializations
+8 Restores 100 MP on hit
+8 Up to +12% damage when less targets hit
+8 20% chance to inflict Root for 3s
+12 Resets cooldown on landing a Critical Hit with [Condemnation]
+16 Multi-Hit on hit
+Divine Aura 16 20
+Underrated: it deals damage in parallel with you, so the longer it stays up the better. At 16 take the aura's attack speed and −10s cooldown, at 20 add +3s (Lucia). Option: Kaeria takes +3s instead of the attack speed at 16; for farming aLuckyRO takes the AoE pick (up to four mobs). Whelps (global) takes the AoE pick and −10s at 16, the same three as here at 20.
+8 +50% [Divine Aura] attacking speed
+16 -10s cooldown
+20 +3s [Divine Aura] duration
+All specializations
+8 -40% Move Speed for 3s to up to 4 enemies within 4m of the Aura
+8 Changes to AoE Skill
+8 +50% [Divine Aura] attacking speed
+12 +3s [Divine Aura] duration
+16 -10s cooldown
+Bolt 16 20
+Your strongest hit. Charge it fully. +300 Skill Accuracy, so it almost always lands, and +30% skill speed; at 20 add the guaranteed crit (Lucia). Option: once your accuracy is high, Kaeria's +20% single-target pick does more than the accuracy. Whelps (global): +30% skill speed and the crit at 16, the +20% single-target pick at 20.
+8 +300 Skill Accuracy
+8 +30% Skill Speed
+20 Critical Hit on hit
+All specializations
+8 30% chance to inflict Stun for 3s when fully charged
+8 +300 Skill Accuracy
+8 +30% Skill Speed
+12 Up to +20% damage when less targets hit
+16 Critical Hit on hit
+Judgment Thunder 16
+Constant damage and animation cancel; the Divine Punishment pick roughly doubles it. At 20 add −20% MP.
+8 Deals up to 12% more damage when less targets are hit
+16 Activates [Divine Punishment] 1 extra time
+All specializations
+8 -20% MP consumed
+8 Deals up to 12% more damage when less targets are hit
+8 -10% enemy Combat Speed for 5s on landing [Divine Punishment]
+12 10% chance to inflict Root for 2s on landing [Divine Punishment]
+16 Activates [Divine Punishment] 1 extra time
+Lightning Strike Scattershot 16
+Only during Stagger, but every hit cuts all your cooldowns by 1s.
+12 Multi-Hit on hit
+16 -1s all skill cooldowns on hit
+All specializations
+8 Absorbs 5% HP
+8 Restores 120 MP
+8 Changes to mobile skill
+12 Multi-Hit on hit
+16 -1s all skill cooldowns on hit
+Healing Light 16
+Near-cooldownless quick heal: +2 uses and +2% HP (scales with heal boost). At 20 add −2s.
+8 +2 consecutive uses
+12 +2% HP restored
+All specializations
+8 +2 consecutive uses
+8 +20% amount healed when HP is 50% or less
+8 50% chance to remove 1 debuff
+12 +2% HP restored
+16 -2s cooldown
+Radiant Recovery 16 20
+Your strongest heal outside stigmas; removes a debuff. Lucia: −3s cooldown and +10% Incoming Heal up to 16, then −3s and +5% HP — take it to 20 early. Option: +1 consecutive use instead of −3s, for two big heals in a row.
+8 -3s cooldown
+16 +5% HP restored
+All specializations
+8 Removes up to 2 debuffs
+8 +1 consecutive use
+8 -3s cooldown
+12 +10% Incoming Heal for 10s
+16 +5% HP restored
+Earth's Retribution 12 16
+Basic attack used to cancel animations: Discharge chance and −7s Bolt cooldown on Discharge — the more Discharge procs, the sooner Bolt is back. At 20 add Multi-Hit.
+8 +20% [Discharge] Chain Skill trigger chance
+12 -7s [Bolt] cooldown on landing [Discharge]
+20 +50% Multi-Hit on hit
+All specializations
+8 +20% MP restored
+8 +20% [Discharge] Chain Skill trigger chance
+8 +50% Multi-Hit on hit
+12 -7s [Bolt] cooldown on landing [Discharge]
+16 Ignores Block and Evasion
+Debilitating Mark 12
+−15% Defense on the boss while the damage over time lasts; Lucia adds the 20% stun for crowd control in Transcendence. Option: the pick that lowers the boss's damage instead of the stun — Lucia isn't sure it works as described.
+8 -15% target Defense for duration of Damage over Time
+8 Has a 20% chance to inflict Stun on the target for 3s
+All specializations
+8 Removes MP Consumed and restores 150 MP
+8 -15% target Defense for duration of Damage over Time
+8 Has a 20% chance to inflict Stun on the target for 3s
+12 +10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction
+16 Ignores Block and Evasion and reduces Damage over Time interval by 50%
+Chain of Torment 14
+Exists to enable Condemnation; −10% PvE damage tolerance on the boss. Lucia takes the 20% knockdown for crowd control in Transcendence. Option: +3s damage over time when you don't need the knockdown. At 16 Whelps takes the tolerance reduction and the halved damage-over-time interval.
+8 Has a 20% chance to inflict Knockdown on the target for 3s
+12 +10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction
+All specializations
+8 Slows target for 5s
+8 +3s Damage over Time
+8 Has a 20% chance to inflict Knockdown on the target for 3s
+12 +10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction
+16 Ignores Block and Evasion and reduces Damage over Time interval by 50%
+Light of Regeneration 12–16
+Recast on cooldown. +5% Incoming Heal; before 16 the second pick is +20% healing below 50% HP, at 16 the 5% tolerance pick.
+8 +5% Incoming Heal during healing
+16 +5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing
+All specializations
+8 +5% Defense while healing
+8 +20% amount healed when HP is 50% or less
+8 +5% Incoming Heal during healing
+12 +5% Move Speed during healing
+16 +5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing
+Defiance 12
+CC break; 10% HP and +2s immunity.
+8 Restores 10% HP on using [Defiance]
+12 +2s Tenacity duration
+All specializations
+8 Adds [Blessing of Regeneration] Chain Skill
+8 Restores 1000 Stamina on using [Defiance]
+8 Restores 10% HP on using [Defiance]
+12 +2s Tenacity duration
+16 +50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration
+Skills ? Each skill card shows the specializations to take under its description; the dashed “20” chip is the pick for the third slot at skill level 20. “All specializations” lists every option.
+Skill levels and most picks are the same as in PvE. What changes for PvP:
+Earth's Retribution 16 20
+The same Discharge and −7s Bolt picks; at 20 take Ignores Block and Evasion — in PvP your basic attack must land.
+8 +20% [Discharge] Chain Skill trigger chance
+12 -7s [Bolt] cooldown on landing [Discharge]
+20 Ignores Block and Evasion
+All specializations
+8 +20% MP restored
+8 +20% [Discharge] Chain Skill trigger chance
+8 +50% Multi-Hit on hit
+12 -7s [Bolt] cooldown on landing [Discharge]
+16 Ignores Block and Evasion
+Chain of Torment 14
+20% Knockdown on top of the −5% PvP damage tolerance pick: the crowd control is worth more than damage over time.
+8 Has a 20% chance to inflict Knockdown on the target for 3s
+12 +10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction
+All specializations
+8 Slows target for 5s
+8 +3s Damage over Time
+8 Has a 20% chance to inflict Knockdown on the target for 3s
+12 +10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction
+16 Ignores Block and Evasion and reduces Damage over Time interval by 50%
+Debilitating Mark 12
+−15% Defense and a 20% stun.
+8 -15% target Defense for duration of Damage over Time
+8 Has a 20% chance to inflict Stun on the target for 3s
+All specializations
+8 Removes MP Consumed and restores 150 MP
+8 -15% target Defense for duration of Damage over Time
+8 Has a 20% chance to inflict Stun on the target for 3s
+12 +10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction
+16 Ignores Block and Evasion and reduces Damage over Time interval by 50%
+Bolt 16
++300 Skill Accuracy matters even more against players with Evasion.
+8 +300 Skill Accuracy
+8 +30% Skill Speed
+All specializations
+8 30% chance to inflict Stun for 3s when fully charged
+8 +300 Skill Accuracy
+8 +30% Skill Speed
+12 Up to +20% damage when less targets hit
+16 Critical Hit on hit
+Light of Regeneration 16
+The tolerance pick gives 2.5% PvP damage tolerance while healing.
+8 +5% Incoming Heal during healing
+16 +5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing
+All specializations
+8 +5% Defense while healing
+8 +20% amount healed when HP is 50% or less
+8 +5% Incoming Heal during healing
+12 +5% Move Speed during healing
+16 +5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing
+Defiance 16
+Your answer to a stun or knockdown — in PvP it decides fights. Lucia: the picks don't matter much.
+8 Restores 10% HP on using [Defiance]
+12 +2s Tenacity duration
+All specializations
+8 Adds [Blessing of Regeneration] Chain Skill
+8 Restores 1000 Stamina on using [Defiance]
+8 Restores 10% HP on using [Defiance]
+12 +2s Tenacity duration
+16 +50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration
+Passives
+Empyrean Lord's Grace — the most important one: Critical Damage, Double Chance and extra damage on every hit. As high as you can.
+Earth's Grace — used to buff the party, now only you; still worth leveling.
+Healing Enhancement — heal boost as a share of your Attack, so a Cleric builds Attack rather than Defense.
+Radiant Benediction — heals nearby allies on attacks; take it if you go all-in on damage.
+Warm Benediction and Immortal Veil are fine to have; Empyrean Lords' Benediction is for PvP.
+Lucia levels these three first, before any other passive: Empyrean Lord's Grace , Healing Enhancement and Earth's Grace . Immortal Veil helps early and falls off once your armor scales.
+First days (aLuckyRO): level Radiant Benediction — it heals the whole party every few seconds while they hit — and Healing Enhancement first. The crit passives pay off only once your gear gives Critical Hit; until then you barely crit.
+Gear & stats
+Gear lines: Might (attack and heal), Combat Speed, Damage Boost; Weapon Damage Boost and Precision are strong too. Skip status resists, evasion and defensive lines in PvE.
+Weapon and guard (Lucia): Weapon Damage Boost, Might, Combat Speed, Precision. Gloves: Combat Speed; boots: Movement Speed. Accessories: Combat Speed, Might and Precision, plus one line for Earth's Grace or Empyrean Lord's Grace.
+Rings: craft them as soon as you can — crafted rings have one more line for active skills. Fill every line with active skills: Condemnation, Radiant Recovery, Judgment Thunder, and Healing Light or Divine Aura.
+Stats: Destruction, Wisdom (Double Chance), Illusion (cooldowns), Time (Combat Speed), Freedom (accuracy), plus Death (Critical Hit) — Kaeria's own pick, a Cleric is always short on crit; Might, Precision, Constitution. Lucia's four: Time, Illusion, Space, Destruction.
+For the Ludra raid: at least 1,000 Accuracy and 1,000 Critical Hit.
+Wings: Talisra Wings (Attack 60, Defense 400, Accuracy 35, −4% cooldowns) from the season shop for about 250,000 season points — save the points for them.
+Genus Insight
+Get every pet to level 3 early: killing pets you have leveled gives the crystals for these lines. Lucia's picks for each wheel:
+Slot Take
+1, 5 Attack Bonus (5: or Max Attack)
+2, 8 HP
+3, 6, 9 Accuracy, or Block if your accuracy is already high
+4 The damage line of that wheel: Damage Boost, Perfect Chance, Back Attack Damage
+7 Regeneration or Endurance
+Special Double Chance
+Roll for the highest value and lock a line only when it is close to the maximum — and never before the wheel is level 9–10.
+Gear & stats
+Gear lines as in PvE — Weapon Damage Boost, Might, Combat Speed, Precision on the weapon and guard; accessories Combat Speed, Might, Precision.
+Genus Insight: Critical Hit Resist instead of HP on slot 2, and Front Attack Damage Boost on the damage slot of that wheel — in PvP you face the target.
+Azphel , the level-45 Daevanion board, is all PvP Damage Boost and Tolerance — fill it for PvP.
+Arcana
+Arcana Set / stat Roll for
+Chalice Vigor (Combat Speed) Anything that takes your key skills to 16 → 20
+Parchment Destiny or Life Condemnation, Radiant Recovery, Earth's Retribution, Bolt
+Compass Death or Freedom Lightning Strike Scattershot, Healing Light, Divine Aura, Judgment Thunder
+Bell Destruction Empyrean Lord's Grace (avoid Survival Willpower)
+Mirror Wisdom (damage) or Illusion (cooldowns) Earth's Grace, Healing Enhancement
+Set bonuses: collect 2 + 2, or four cards of Primal Vigor (+60 PvE Attack with two, +150 with four, while your HP is 70% or more). Early on a card with the right skills beats a card from the right set — fix the sets later.
+Daevanion boards
+Daevanion takes your skills from 10 to 14 and adds stats. Each blue node gives +1 level to its skill.
+Priority: orange Cooldown and Combat Speed nodes first, then Attack and Critical, then the blue skill nodes, then the defensive orange nodes, passives last.
+Critical Damage Tolerance and Multi-Hit Resist do nothing in PvE — bosses don't crit or multi-hit.
+Resetting a board is cheap, and you will rebuild it many times.
+Lucia's order: on Nezekan and Zikel take all four corners and your skills; on Vaizel and Triniel skip the corners and go straight for the active skills you use.
+Whelps' order: first the blue nodes that take your active skills to 12 — the second specialization slot is a big power spike; then the orange attack nodes (Combat Speed, Cooldown Reduction, Damage Boost, Critical Damage Boost, Multi-Hit Chance), the Empyrean Lord's Grace and Earth's Grace nodes, Attack and Critical, and only then the defensive ones (Damage Tolerance, Critical Damage Tolerance, HP, Defense). Avoid the MP +50 nodes where you can.
+Azphel (level 45) is all PvP Damage Boost and Tolerance — take it for PvP.
+No Ariel on global: there are five boards, and the level-45 one, Azphel, gives only PvP Damage Boost and Tolerance — in PvE finish the first four.
+Board Unlock Orange nodes
+Nezekan Lv 12 Combat Speed, Cooldown Reduction
+Zikel Lv 20 Damage Boost, Damage Tolerance
+Vaizel Lv 30 Critical Damage Boost and Tolerance
+Triniel Lv 40 Multi-Hit Chance and Resist
+Azphel Lv 45 PvP Damage Boost and Tolerance — no skill nodes
+The route on the boards
+The real global boards from the game data. Gold marks the cheapest path from Start to the nodes this guide takes — the blue nodes of the priority skills and the orange nodes that matter in PvE (without Critical Damage Tolerance and Multi-Hit Resist); hover any node to see what it gives.
+Nezekan Lv 12 · 63 pts Zikel Lv 20 · 62 pts Vaizel Lv 30 · 44 pts Triniel Lv 40 · 60 pts Azphel Lv 45 · 0 pts
+229 points in total skill levels
+Condemnation +4 Divine Aura +4 Bolt +4
+on the way: Empyrean Lord's Grace +3 Radiant Benediction +3 Earth's Grace +3 Immortal Veil +2 Chain of Torment +1 Light of Regeneration +1 Lightning Strike Scattershot +1 Heal Block +1 Warm Benediction +1 Radiant Recovery +1 Empyrean Lords' Benediction +1 Prayer of Concentration +1 Defiance +1
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+Nezekan Lv 12 · 67 pts Zikel Lv 20 · 63 pts Vaizel Lv 30 · 64 pts Triniel Lv 40 · 87 pts Azphel Lv 45 · 110 pts
+391 points in total skill levels
+Radiant Recovery +4 Chain of Torment +4 Condemnation +4 Judgment Thunder +4
+on the way: Empyrean Lords' Benediction +2 Empyrean Lord's Grace +2 Light of Regeneration +2 Earth's Retribution +2 Survival Willpower +2 Heal Block +2 Divine Aura +2 Defiance +1 Immortal Veil +1 Prayer of Concentration +1 Warm Benediction +1 Radiant Benediction +1
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+Boards and costs come from the global client data (questlog.gg); the path is calculated, not taken from a video. Stat values may still change at launch — check the in-game board before committing a full route.
+Stigmas
+Earth Punishment Lv 15 20
+Condemnation always crits (so it has no cooldown), and the party gets Defense, Attack and Double Chance. One of your most important skills.
+5 [Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]
+10 +10% Double Chance to caster and +5% to party members from [Earth's Blessing]
+15 +10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]
+20 +10s [Earth Punishment] and [Earth's Blessing] duration
+All specializations
+5 [Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]
+10 +10% Double Chance to caster and +5% to party members from [Earth's Blessing]
+15 +10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]
+20 +10s [Earth Punishment] and [Earth's Blessing] duration
+Light of Protection Lv 20
+Your mantra: incoming heal, accuracy, +10% HP and Perfect Chance, no cooldown. Doesn't stack with a Chanter's mantra — with a Chanter in the party swap it out. A toggle: switch it on once and keep it out of hotbar lines and the macro.
+5 +10% Incoming Heal
+10 +100 Accuracy
+15 +10% Max HP
+20 +10% Perfect Chance
+All specializations
+5 +10% Incoming Heal
+10 +100 Accuracy
+15 +10% Max HP
+20 +10% Perfect Chance
+Prayer of Amplification Lv 10 20
++20% Attack on cooldown, and it boosts Empyrean Lord's Grace and Earth's Grace. Without it a Cleric has no damage. Lucia's first three stigmas at 20: this one, Earth Punishment and Light of Protection.
+5 +20% PvE Damage Boost and +10% PvP Damage Boost
+10 x1.5 [Empyrean Lord's Grace] effect for the duration
+15 x1.5 [Earth's Grace] effect for the duration
+20 +15% additional Attack
+All specializations
+5 +20% PvE Damage Boost and +10% PvP Damage Boost
+10 x1.5 [Empyrean Lord's Grace] effect for the duration
+15 x1.5 [Earth's Grace] effect for the duration
+20 +15% additional Attack
+Noble Aura Lv 10+
+An orb that attacks alongside you — about double your damage; the higher the better.
+5 +200 Aura Critical Hit
+10 +20 damage to targets afflicted with Debilitating Mark
+All specializations
+5 +200 Aura Critical Hit
+10 +20 damage to targets afflicted with Debilitating Mark
+15 +30% damage to targets with Incapacitated Immunity
+20 -1s Aura attack cooldown
+Absolution with a Chanter
+Strongest heal stigma, but only good at 15+: +5% HP restored, heals for 15–20k, 1-minute cooldown from level 5. Lucia's pick instead of Light of Protection when a Chanter is in the party.
+5 -30s cooldown
+10 Removes all debuffs
+15 +5% HP restored
+All specializations
+5 -30s cooldown
+10 Removes all debuffs
+15 +5% HP restored
+20 Restores 1.5% HP every 2s for 10s
+Benevolence sanctuary
+Heal over time for the whole party; like Absolution, worth a slot only from 15.
+5 +10s duration
+10 Restores 200 Stamina every 5s for the duration
+15 Restores 2% HP every 5s for the duration
+All specializations
+5 +10s duration
+10 Restores 200 Stamina every 5s for the duration
+15 Restores 2% HP every 5s for the duration
+20 Cleansing effect every 5s for the duration
+Yustiel's Power sanctuary
+Party damage tolerance for 10s — a sanctuary swap instead of Noble Aura or Prayer.
+5 10% Max HP Protective Shield
+10 +100 Block, Evasion
+15 +20% Status Effect Resist
+All specializations
+5 10% Max HP Protective Shield
+10 +100 Block, Evasion
+15 +20% Status Effect Resist
+20 +10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase
+Summon Resurrection Lv 5
+Keep it at 5 early; take it if your party keeps dying. In random groups Lucia skips it: if the player revives with a stone, the stigma still goes on a 2-minute cooldown.
+5 -1s casting time
+All specializations
+5 -1s casting time
+10 Invincible for 3s after resurrection
+15 Restores 20% of Max HP
+20 Invincible for 5s after resurrection
+Salvation skip
+3s of invulnerability on a long cooldown — red attacks go through it anyway; dodge instead.
+All specializations
+5 +100% Incoming Heal
+10 Restores 20% of Max HP at the end of [Salvation]
+15 Grants base effect of [Salvation] to the party member with the lowest HP
+20 Triggers [Salvation] when afflicted with Impact-type status
+With a Chanter in the party: replace Light of Protection with Absolution, another heal or Summon Resurrection. Voice of Doom (−200 Critical Hit Resist on the boss at 15) is an option in sanctuaries with a second healer, mostly early while everyone is short on crit; Power Burst only where the stagger bar has to be broken and nobody else can do it (Nightmare). Root and Assault Mark have no use in PvE.
+Whelps: level Earth Punishment to 20 first, then the others evenly, Light of Protection last. For a support role swap Noble Aura for Summon Resurrection or Yustiel's Power ; with a Chanter swap Light of Protection for one of them. He keeps two skill presets, with and without a Chanter — each preset holds its own skill levels.
+Stigmas
+Fight Stigmas
+Duels, small fights Prayer of Amplification, Light of Protection, Yustiel's Power, Voice of Doom
+Group PvP Absolution in place of Voice of Doom — the cleanse and the big heal
+Abyss, open world Summon Resurrection sometimes, in place of Absolution
+Prayer of Amplification Lv 20
++20% Attack — and it boosts your crit passives. For damage or for bigger heals.
+5 +20% PvE Damage Boost and +10% PvP Damage Boost
+10 x1.5 [Empyrean Lord's Grace] effect for the duration
+15 x1.5 [Earth's Grace] effect for the duration
+20 +15% additional Attack
+All specializations
+5 +20% PvE Damage Boost and +10% PvP Damage Boost
+10 x1.5 [Empyrean Lord's Grace] effect for the duration
+15 x1.5 [Earth's Grace] effect for the duration
+20 +15% additional Attack
+Light of Protection Lv 20
+PvP Damage Boost and Tolerance for the party, accuracy and Max HP. A toggle — switch it on once.
+5 +10% Incoming Heal
+10 +100 Accuracy
+15 +10% Max HP
+20 +10% Perfect Chance
+All specializations
+5 +10% Incoming Heal
+10 +100 Accuracy
+15 +10% Max HP
+20 +10% Perfect Chance
+Yustiel's Power Lv 15
+10s of damage tolerance for the party with a shield, Block and Evasion — press it when the enemy commits their burst.
+5 10% Max HP Protective Shield
+10 +100 Block, Evasion
+15 +20% Status Effect Resist
+All specializations
+5 10% Max HP Protective Shield
+10 +100 Block, Evasion
+15 +20% Status Effect Resist
+20 +10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase
+Voice of Doom Lv 10
+−60% incoming heal and HP potion recovery on the target for 20 seconds — it shuts down Clerics, Chanters and the self-heals of Gladiators and Templars. At 10 it also removes protective shields; +20% damage when it hits more targets helps in group fights.
+5 Up to +20% damage when more targets hit
+10 Removes Protective Shields on hit
+All specializations
+5 Up to +20% damage when more targets hit
+10 Removes Protective Shields on hit
+15 -200 Critical Hit Resist for duration
+20 -50% Damage over Time intervals
+Absolution group PvP
+The strongest heal stigma; from 10 it removes all debuffs — Lucia's pick for group fights.
+5 -30s cooldown
+10 Removes all debuffs
+15 +5% HP restored
+All specializations
+5 -30s cooldown
+10 Removes all debuffs
+15 +5% HP restored
+20 Restores 1.5% HP every 2s for 10s
+Summon Resurrection Abyss
+For the Abyss and the open world, where a revive turns a fight.
+5 -1s casting time
+All specializations
+5 -1s casting time
+10 Invincible for 3s after resurrection
+15 Restores 20% of Max HP
+20 Invincible for 5s after resurrection
+Macro ? The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+Lucia's global setup: only the in-game macro, two steps, and two hotbar lines read from her hotbar (frame 13:10). In AION 2 the bottom slot of a line has the highest priority ; the cards show each line top to bottom as in the game.
+Example hotbar layout
+Debilitating Mark Lightning Strike Scattershot 1
+2
+Radiant Recovery 3
+Bolt 4
+Light of Protection 5
+6
+7
+Noble Aura 8
+Condemnation Chain of Torment Earth Punishment Prayer of Amplification Q
+Healing Light Light of Regeneration E
+Earth's Retribution LMB
+Judgment Thunder Divine Aura T
+As in the game: a stacked line fires its bottom skill first; gold lines are the ones the macro presses. Hover an icon for the skill.
+1. Hotbar lines
+Q Prayer line
+4
+Condemnation
+3
+Chain of Torment
+2
+Earth Punishment
+1
+Prayer of Amplification
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Prayer whenever it is ready, then Earth Punishment and Chain of Torment, so every Condemnation crits and resets. Keep Light of Protection out of the line: it is a toggle, and every second press would switch it off.
+T Divine Aura line
+2
+Judgment Thunder
+1
+Divine Aura
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+The aura when it is ready, Judgment Thunder in between — after each Judgment Thunder Condemnation can crit and reset again.
+Outside the macro — the rest of her bar:
+1 Debuff line
+2
+Debilitating Mark
+1
+Lightning Strike Scattershot
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Lightning Strike Scattershot on a staggered boss, otherwise Debilitating Mark — press it on cooldown.
+E Heal line
+2
+Healing Light
+1
+Light of Regeneration
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Light of Regeneration whenever it is ready, Healing Light (three charges) for the rest.
+Own keys LMB Earth's Retribution , 3 Radiant Recovery , 4 Bolt , 5 Light of Protection (a toggle — switch it on once), 8 Noble Aura .
+2. In-game macro
+On RMB , every step with a 10 ms delay:
+1 Prayer line Prayer of Amplification
+2 Divine Aura line Divine Aura
+3. Keys
+Hold The macro on RMB together with Earth's Retribution on LMB — the basic attack, Judgment Thunder and Condemnation weave until the sequence starts again.
+By hand The Debuff line on cooldown; the Heal line and Radiant Recovery when someone just took a hit; fully charged Bolt ; Noble Aura on cooldown.
+Lucia notes that a third-party macro does more, but she sticks to the in-game one.
+Another option: Whelps' macro (global)
+Whelps' setup (video of Oct 5, frames 3:35 and 4:28): once Condemnation reaches 12 and resets on a crit, the macro spams the Earth Punishment line three times for every press of the debuff line.
+Example hotbar layout
+1
+Healing Light 2
+Radiant Recovery 3
+Bolt 4
+Z
+X
+Noble Aura C
+Light of Protection V
+Judgment Thunder Light of Regeneration Divine Aura Debilitating Mark Q
+Lightning Strike Scattershot E
+Earth's Retribution LMB
+Chain of Torment Condemnation Prayer of Amplification Earth Punishment —
+As in the game: a stacked line fires its bottom skill first; gold lines are the ones the macro presses. Hover an icon for the skill.
+— Earth Punishment line
+4
+Chain of Torment
+3
+Condemnation
+2
+Prayer of Amplification
+1
+Earth Punishment
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Earth Punishment and Prayer whenever they are ready, so Condemnation always crits and resets; Chain of Torment keeps the mark up. The line has no key — only the macro presses it.
+Q Debuff line
+4
+Judgment Thunder
+3
+Light of Regeneration
+2
+Divine Aura
+1
+Debilitating Mark
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+The debuff, the aura and the heal over time on cooldown; Judgment Thunder fills the rest.
+1 Earth Punishment line 10 ms
+2 Earth Punishment line 10 ms
+3 Earth Punishment line 10 ms
+4 Debuff line Q · 10 ms
+Hold The macro on RMB and Earth's Retribution on LMB ; fully charge Bolt whenever it is ready.
+By hand Healing Light for small heals, Radiant Recovery for big ones.
+Check In Combat Analysis, Condemnation should hit as often as Judgment Thunder or more. If it hits less, add another Earth Punishment line step — on Whelps' gear that is 26k DPS instead of 22k.
+Recap
+Skills: Condemnation, Radiant Recovery, Divine Aura, Bolt 16 → 20; Judgment Thunder, Lightning Strike Scattershot, Healing Light 16; the rest 12–14.
+Stigmas: Earth Punishment, Light of Protection, Prayer of Amplification (all three to 20), Noble Aura; with a Chanter swap Light of Protection for Absolution.
+Play: deal damage for contribution; heal only the people who just got hit.
+Recap
+Skills: as in PvE; Chain of Torment and Debilitating Mark take their crowd-control picks, Earth's Retribution ignores Block and Evasion at 20.
+Stigmas: Prayer of Amplification, Light of Protection, Yustiel's Power, Voice of Doom; in group PvP Absolution instead of Voice of Doom.
+Gear: PvE lines; Critical Hit Resist and Front Attack Damage on Genus Insight, the Azphel board.
+Overview
+The Cleric is the healer, but while leveling it plays as a ranged damage dealer: Chain of Torment marks the target, Condemnation punishes it, and the passive Radiant Benediction heals you and the party on every hit. Heal only when you need to.
+Leveling in one sentence
+Hold Earth's Retribution for mana, spam the Chain line with the in-game macro, and put your skill points into attacks rather than heals.
+Patch Season 1. The build is checked against guides from the global servers: 4 stigmas, cap 20.
+How to fight while leveling
+Packs: Chain of Torment (hits up to 4) → Condemnation → Divine Aura with the AoE pick → Judgment Thunder .
+Elites: Debilitating Mark (lower Defense) → Chain of Torment → Bolt charged → Condemnation .
+Mana: target mode, and weave Earth's Retribution — it restores MP on every cast.
+Low HP: Healing Light , and Radiant Benediction keeps ticking as long as you hit.
+Staggered bosses: Lightning Strike Scattershot only works while the target is staggered.
+Skill points: the attack skills first, heals later; spare points go into Empyrean Lord's Grace and Earth's Grace (Whelps).
+Leveling macro ? The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+Grobs' early-game setup: one hotbar line and a one-slot in-game macro. In AION 2 the bottom slot of a line has the highest priority — the card shows the line top to bottom as in the game.
+RMB Chain line
+4
+Judgment Thunder
+3
+Condemnation
+2
+Debilitating Mark
+1
+Chain of Torment
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Chain of Torment goes first so Condemnation can hit; Judgment Thunder has no cooldown and fills the gaps.
+In-game macro (Skill window → Macro), delay 10 ms :
+1 Chain line 10 ms
+Hold Earth's Retribution on LMB and the macro key together.
+By hand Bolt (charged skill — keep it out of the macro), heals, stigmas.
+Whelps' start from level 4: two lines in the macro on RMB — one with Condemnation at the bottom, one with Debilitating Mark . Once Condemnation reaches 12 and resets on a crit, switch to his PvE macro (PvE tab).
+Stigmas while leveling
+Stigmas unlock at level 22. Whelps' order for each new slot: 22 Earth Punishment (at the bottom of the Condemnation line, so Condemnation always crits), 27 Light of Protection , 32 Noble Aura , 37 Prayer of Amplification .
+Summon Resurrection Lv 1
+One point is enough at first; level 5 cuts the cast time later.
+All specializations
+5 -1s casting time
+10 Invincible for 3s after resurrection
+15 Restores 20% of Max HP
+20 Invincible for 5s after resurrection
+Noble Aura Lv 5
+An aura that fights next to you for 5 minutes — free damage.
+5 +200 Aura Critical Hit
+All specializations
+5 +200 Aura Critical Hit
+10 +20 damage to targets afflicted with Debilitating Mark
+15 +30% damage to targets with Incapacitated Immunity
+20 -1s Aura attack cooldown
+Earth Punishment Lv 5
+Damage over time; level 5 makes Condemnation crit.
+5 [Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]
+All specializations
+5 [Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]
+10 +10% Double Chance to caster and +5% to party members from [Earth's Blessing]
+15 +10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]
+20 +10s [Earth Punishment] and [Earth's Blessing] duration
+Benevolence Lv 5
+Heal over time for 20s — sustain between packs.
+5 +10s duration
+All specializations
+5 +10s duration
+10 Restores 200 Stamina every 5s for the duration
+15 Restores 2% HP every 5s for the duration
+20 Cleansing effect every 5s for the duration
+Absolution Lv 5
+Big heal and debuff removal.
+5 -30s cooldown
+All specializations
+5 -30s cooldown
+10 Removes all debuffs
+15 +5% HP restored
+20 Restores 1.5% HP every 2s for 10s
+Sources
+Kaeria — Cleric PvE guide (in Russian) — the PvE mode: skill levels and specializations, stigmas, passives, stats, Daevanion, arcana
+Grobs — AION 2 Macro Guide — the early-game macro slide (Cleric hotbar line and macro)
+MMO Codex — Aion 2 Cleric guide — skill order and specializations while leveling, stigmas at 22
+questlog.gg — skill data from the global client
+aLuckyRO — AION 2 Latest Cleric PVE Build for Global — early specializations (Divine Aura for farming and bosses, Earth's Retribution for mana), stigma swaps for dungeons, the Chain of Torment → Condemnation combo, early passives
+Lucia — Aion 2 Cleric Guide from a Worlds 1st Rank 1 — global skill picks, stigma levels, a two-step macro, gear lines, Genus Insight, wings; the PvP mode
+Whelps — Cleric Starter Guide - Skills, Macro, Daevanion Board — a global macro with three Earth Punishment steps and the Combat Analysis check, specializations, stigma order while leveling, stigma swaps, the board order
+All sources and creators →
+Send feedback ✦
+You found the easter egg!
+Mimisaki
+Cleric — main of the site's author. Mimisaki · Asmodian · Zikel
+<script type="application/json" 

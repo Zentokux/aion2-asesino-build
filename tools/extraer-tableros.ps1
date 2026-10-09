@@ -1,11 +1,11 @@
-﻿param([string]$Html, [string]$Metabot, [string]$Out)
+﻿param([string]$Html, [string]$Metabot, [string]$Out, [int[]]$Ids = @(41, 42, 43, 44, 46))
 # Extrae los tableros Daevanion PvE de couga54 (posiciones, ruta "on", líneas) y les pone
 # los textos en español del cliente (metabot.gg/es_ES) cruzando por fila/columna.
 $c = [IO.File]::ReadAllText($Html)
 $mb = [IO.File]::ReadAllText($Metabot) | ConvertFrom-Json
 $skData = [regex]::Match($c, '<script type="application/json" id="sk-data"[^>]*>(.*?)</script>', 'Singleline').Groups[1].Value | ConvertFrom-Json
 $boards = @()
-foreach ($id in 41, 42, 43, 44, 46) {
+foreach ($id in $Ids) {
   $start = $c.IndexOf("id=`"dvp-pve-$id`"")
   $end = $c.IndexOf('class="dvb-panel"', $start + 10)
   if ($end -lt 0) { $end = $c.IndexOf('</div></div>', $start) + 2000 }

@@ -1,0 +1,15 @@
+
+Habilidades pasivas de Clérigo
+10 bonificaciones permanentes que el Clérigo aprende al subir de nivel.
+Icono de la habilidad Favor cálido
+Habilidad Se desbloquea Enfriamiento Nivel máx. Efecto (nivel 1)
+[ID:17710000] Favor cálido Nv. 1 — 40 Aumenta un 6 % de los Puntos de Vida Máximos y un 7 % de los Puntos de Maná Máximos propios.
+[ID:17720000] Favor empíreo Nv. 6 — 40 Aumenta el bloqueo propio en 200 y recupera 53 (+100% Ataque)-64 Puntos de Vida al bloquear. Tiempo de espera: 3s
+[ID:17730000] Gracia empírea Nv. 9 — 40 Aumenta el Crítico del propio personaje en 100, Probabilidad de doble golpe en 0,2% y causa 71 (+42% Ataque) de daño adicional al atacar a un objetivo. Tiempo de Enfriamiento: 1s
+[ID:17740000] Mejora curativa Nv. 11 — 40 Aumenta la amplificación de curación del usuario un 22.400 % de Ataque.
+[ID:17750000] Velo inmortal Nv. 13 — 40 Aumenta un 2 % de la Defensa y 100 de la Resistencia Crítica propia.
+[ID:17760000] Bloqueo de recuperación Nv. 15 — 40 Tiene un 7 % de prob. de reducir la Curación recibida del objetivo un 32 % durante 5s al acertar un ataque. Tiempo de espera: 5s
+[ID:17770000] Oración de concentración Nv. 17 — 40 Forma una Barrera que bloquea 424 de daño y aumenta la Amplificación de cura de sí mismo en un 20 % durante 30s cuando los Puntos de Vida estén al 50% o menos. Tiempo de espera:…
+[ID:17780000] Gracia terrestre Nv. 21 — 40 Aumenta un 10,5 % de la Amplificación de Daño Crítico y 100 de la Precisión propia.
+[ID:17790000] Voluntad de supervivencia Nv. 23 — 40 Aumenta la Resistencia a efectos de estado propia un 17 %. Aumenta la Tolerancia al daño en JcE un 12 % y la Tolerancia al daño en JcJ un 6 % durante 5s al verse afectado por…
+[ID:17800000] Favor radiante Nv. 25 — 40 Recupera 384 (+100% Ataque)-461 Puntos de Vida para el usuario y los miembros del grupo dentro de un rango de 40 m cuando un ataque da en el blanco. Tiempo de espera: 5s

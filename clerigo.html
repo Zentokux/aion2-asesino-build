@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aion 2 — Guía Progresiva Clérigo PvE (Global S1)</title>
-<meta name="description" content="Guía progresiva de build Clérigo PvE para Aion 2 Global Season 1. Lv 1-45 con rotaciones, stigmas, pets y heal/DPS híbrido.">
+<meta name="description" content="Guía progresiva del Clérigo PvE para Aion 2 Global Season 1. Nivel 1-45: puntos por nivel, rotaciones, estigmas, Daevanion, macros y equipo.">
 <style>
 :root {
   --bg: #0b0d12;
@@ -13,20 +13,19 @@
   --border: #2a3245;
   --text: #e6eaf2;
   --text-dim: #8f98a8;
-  --accent: #22c55e;
-  --accent-2: #16a34a;
+  --accent: #d4af37;
+  --accent-2: #c99a2e;
   --crit: #ff4d6d;
   --poison: #7cfc8a;
   --stigma: #a855f7;
   --info: #4ea8de;
   --warn: #f59e0b;
   --ok: #22c55e;
-  --heal: #22d3ee;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  background: linear-gradient(180deg, #0b0d12 0%, #0f1b14 100%);
+  background: linear-gradient(180deg, #0b0d12 0%, #0f1420 100%);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
@@ -34,7 +33,7 @@ body {
   min-height: 100vh;
 }
 header {
-  background: linear-gradient(135deg, #1a2e22 0%, #0d1911 100%);
+  background: linear-gradient(135deg, #1a1f2e 0%, #0d1119 100%);
   border-bottom: 2px solid var(--accent);
   padding: 2rem 1.5rem;
   text-align: center;
@@ -45,13 +44,13 @@ header::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 header h1 {
   font-size: 2.5rem;
   color: var(--accent);
-  text-shadow: 0 2px 10px rgba(34, 197, 94, 0.3);
+  text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
 }
@@ -67,19 +66,6 @@ header .meta {
   flex-wrap: wrap;
   font-size: 0.85rem;
 }
-header .nav-home {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: var(--text-dim);
-  text-decoration: none;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  z-index: 2;
-}
-header .nav-home:hover { color: var(--accent); border-color: var(--accent); }
 .badge {
   background: var(--bg-3);
   border: 1px solid var(--border);
@@ -89,26 +75,27 @@ header .nav-home:hover { color: var(--accent); border-color: var(--accent); }
 }
 .badge.ok { border-color: var(--ok); color: var(--ok); }
 .badge.warn { border-color: var(--warn); color: var(--warn); }
-.badge.heal { border-color: var(--heal); color: var(--heal); }
 
-nav.topnav {
-  background: rgba(20, 24, 34, 0.9);
+nav {
+  background: var(--bg-2);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 1.5rem;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  background: rgba(20, 24, 34, 0.9);
 }
-nav.topnav ul {
+nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   max-width: 1200px;
   margin: 0 auto;
+  scrollbar-width: thin;
 }
-nav.topnav a {
+nav a {
   color: var(--text-dim);
   text-decoration: none;
   padding: 0.4rem 0.8rem;
@@ -117,7 +104,7 @@ nav.topnav a {
   white-space: nowrap;
   transition: all 0.2s;
 }
-nav.topnav a:hover { color: var(--accent); background: var(--bg-3); }
+nav a:hover { color: var(--accent); background: var(--bg-3); }
 
 main {
   max-width: 1200px;
@@ -140,6 +127,9 @@ h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 h3 {
   color: var(--accent-2);
@@ -164,7 +154,6 @@ strong { color: var(--text); }
 .callout.warn { background: rgba(245, 158, 11, 0.1); border-color: var(--warn); }
 .callout.crit { background: rgba(255, 77, 109, 0.1); border-color: var(--crit); }
 .callout.ok { background: rgba(34, 197, 94, 0.1); border-color: var(--ok); }
-.callout.heal { background: rgba(34, 211, 238, 0.1); border-color: var(--heal); }
 
 table {
   width: 100%;
@@ -181,7 +170,7 @@ th, td {
   border-bottom: 1px solid var(--border);
 }
 th {
-  background: #1e2a22;
+  background: #202738;
   color: var(--accent);
   font-weight: 600;
   text-transform: uppercase;
@@ -189,7 +178,7 @@ th {
   letter-spacing: 0.05em;
 }
 tr:last-child td { border-bottom: none; }
-tr:hover { background: rgba(34, 197, 94, 0.05); }
+tr:hover { background: rgba(212, 175, 55, 0.05); }
 
 .tier {
   display: inline-block;
@@ -202,7 +191,7 @@ tr:hover { background: rgba(34, 197, 94, 0.05); }
 .tier.s { background: var(--crit); color: #fff; }
 .tier.a { background: var(--accent); color: #000; }
 .tier.b { background: var(--info); color: #fff; }
-.tier.heal { background: var(--heal); color: #000; }
+.tier.passive { background: var(--bg-3); color: var(--text-dim); border: 1px solid var(--border); }
 .tier.stigma { background: var(--stigma); color: #fff; }
 
 ul, ol {
@@ -211,6 +200,77 @@ ul, ol {
 }
 li { margin-bottom: 0.3rem; }
 
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.skill-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  transition: all 0.2s;
+}
+.skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.aion-icon-img {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: #000;
+  display: block;
+  object-fit: cover;
+}
+.aion-icon.fallback {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: linear-gradient(135deg, #64748b, #334155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.skill-mini .aion-icon-img, .skill-mini .aion-icon {
+  border-radius: 8px;
+}
+
+/* Tooltip del Daevanion board */
+.board-tooltip {
+  position: fixed;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  max-width: 280px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.board-tooltip strong { color: var(--accent); }
+.board-tooltip em { color: var(--info); font-style: normal; }
+.board-tooltip small { color: var(--text-dim); display: block; margin-top: 0.3rem; }
+
+.board-nodes-list li.owned {
+  background: rgba(34, 197, 94, 0.15);
+  border-left: 3px solid var(--ok);
+  padding-left: 0.5rem;
+  text-decoration: line-through;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.board-nodes-list li { cursor: pointer; transition: background 0.15s; }
+.board-nodes-list li:hover { background: rgba(212, 175, 55, 0.08); }
+
+.badge.ok { color: var(--ok); border-color: var(--ok); background: rgba(34,197,94,0.1); }
+
+/* Stigma row (loadout list with icons) */
 .stigma-row {
   display: flex;
   align-items: center;
@@ -221,7 +281,105 @@ li { margin-bottom: 0.3rem; }
   margin-bottom: 0.5rem;
   border-left: 3px solid var(--stigma);
 }
+.stigma-row > span { flex-shrink: 0; }
 .stigma-row > div { flex: 1; }
+.stigma-row .aion-icon-img, .stigma-row .aion-icon {
+  border-radius: 6px;
+  border: 2px solid var(--stigma);
+}
+
+.board-tabs button small { color: var(--text-dim); font-size: 0.7rem; font-weight: normal; display: block; }
+
+.skill-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.skill-card .icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 50%);
+}
+.skill-card .icon.i-dps { background: linear-gradient(135deg, #ff4d6d, #c9184a); border-color: #ff4d6d; }
+.skill-card .icon.i-util { background: linear-gradient(135deg, #4ea8de, #1d4ed8); border-color: #4ea8de; }
+.skill-card .icon.i-buff { background: linear-gradient(135deg, #d4af37, #92400e); border-color: #d4af37; }
+.skill-card .icon.i-stigma { background: linear-gradient(135deg, #a855f7, #6b21a8); border-color: #a855f7; }
+.skill-card .icon.i-def { background: linear-gradient(135deg, #22c55e, #166534); border-color: #22c55e; }
+.skill-card .icon.i-mov { background: linear-gradient(135deg, #06b6d4, #0e7490); border-color: #06b6d4; }
+.skill-card .icon.i-aoe { background: linear-gradient(135deg, #f59e0b, #b45309); border-color: #f59e0b; }
+.skill-card .icon.i-passive { background: linear-gradient(135deg, #64748b, #334155); border-color: #64748b; }
+.skill-card .icon .glyph { position: relative; z-index: 2; }
+
+.pet-card .icon-pet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #d4af37, #78350f);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+.skill-card .info { flex: 1; }
+.skill-card .name {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+.skill-card .desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.level-tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.level-tabs button {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.level-tabs button:hover { color: var(--accent); border-color: var(--accent); }
+.level-tabs button.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fade 0.3s ease; }
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .rotation-steps {
   background: var(--bg-3);
@@ -259,6 +417,39 @@ li { margin-bottom: 0.3rem; }
   font-size: 0.85rem;
 }
 
+.progress-check {
+  display: block;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+.progress-check:hover { color: var(--text); }
+.progress-check input {
+  margin-right: 0.5rem;
+  accent-color: var(--accent);
+  transform: scale(1.1);
+}
+.progress-check.checked { color: var(--ok); text-decoration: line-through; opacity: 0.7; }
+
+.priority-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+.priority-list .chip {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.priority-list .chip.p1 { border-color: var(--crit); color: var(--crit); }
+.priority-list .chip.p2 { border-color: var(--accent); color: var(--accent); }
+.priority-list .chip.p3 { border-color: var(--info); color: var(--info); }
+
 .macro-box {
   background: #000;
   color: #a0e8af;
@@ -272,14 +463,57 @@ li { margin-bottom: 0.3rem; }
   white-space: pre;
 }
 
-code {
-  background: #000;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-  font-family: "SF Mono", Consolas, monospace;
-  font-size: 0.85rem;
-  color: var(--poison);
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
 }
+.stat {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.stat .label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat .value {
+  font-size: 1.3rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.pet-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.pet-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  margin-bottom: 0.5rem;
+  background: #000;
+  object-fit: cover;
+  display: none;
+}
+.pet-card .pet-name { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+.pet-card .pet-genus { font-size: 0.75rem; color: var(--text-dim); }
 
 footer {
   text-align: center;
@@ -292,315 +526,1624 @@ footer {
 footer a { color: var(--accent); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-.coming-soon-panel {
-  text-align: center;
-  padding: 2rem;
+.progress-bar {
+  width: 100%;
+  height: 8px;
   background: var(--bg-3);
-  border-radius: 12px;
-  border: 2px dashed var(--border);
-  color: var(--text-dim);
-  margin: 1rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+  transition: width 0.3s;
+  width: 0%;
+}
+
+details {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+}
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+details[open] summary { margin-bottom: 0.75rem; }
+
+code {
+  background: #000;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--poison);
 }
 
 @media (max-width: 640px) {
   header h1 { font-size: 1.8rem; }
   main { padding: 1rem; }
   section { padding: 1rem; }
+  nav ul { gap: 0.5rem; }
+  .skill-card img { width: 40px; height: 40px; }
+}
+
+/* ============ PLANIFICADOR INTERACTIVO (estilo metabot.gg) ============ */
+.planner-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+/* Nav con flechas */
+.plv-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  background: var(--bg-3);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.plv-nav-bottom { margin-top: 1.5rem; flex-wrap: wrap; }
+.plv-arrow {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  min-width: 110px;
+}
+.plv-arrow:hover:not(:disabled) {
+  background: var(--accent-2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4);
+}
+.plv-arrow:disabled {
+  background: var(--bg-2);
+  color: var(--text-dim);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.plv-current {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--text);
+}
+.plv-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+.plv-num {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: 800;
+  text-shadow: 0 2px 10px rgba(212,175,55,0.5);
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+}
+.plv-of {
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+/* Progress bar */
+.plv-progress-wrap {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem;
+}
+.plv-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--crit));
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* Slider */
+.plv-slider-wrap { margin: 0.5rem 0 1.5rem; }
+.plv-slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.plv-slider-marks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.plv-slider-marks span {
+  cursor: pointer;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.plv-slider-marks span:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Points row */
+.plv-points-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.pts-box {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.pts-box .label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.pts-box .value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-top: 0.25rem;
+  line-height: 1;
+}
+.pts-box .value.gained { color: var(--ok); }
+
+/* Special / note */
+.plv-special {
+  background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  border-left: 4px solid var(--accent);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+.plv-note {
+  background: rgba(78,168,222,0.1);
+  border-left: 4px solid var(--info);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: var(--text);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.plv-section {
+  background: var(--bg-3);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+}
+.plv-section h4 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+.empty-msg { color: var(--text-dim); font-style: italic; }
+
+/* Unlock / invest items */
+.unlock-item, .invest-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.6rem;
+  background: var(--bg-2);
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+}
+.skill-mini {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.invest-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.1rem;
+}
+.invest-change {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.invest-change b { color: var(--accent); }
+.invest-cost {
+  color: var(--ok);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.unlock-item em { color: var(--stigma); font-style: normal; font-size: 0.8rem; }
+
+/* State grid - all skills with rank bars */
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.6rem;
+}
+.state-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem;
+  transition: all 0.2s;
+}
+.state-card.locked { opacity: 0.4; }
+.state-card.maxed {
+  border-color: var(--ok);
+  background: rgba(34,197,94,0.08);
+}
+.state-card.just-changed {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(212,175,55,0.4);
+  animation: just-pulse 0.6s ease;
+}
+@keyframes just-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+.state-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.state-info { flex: 1; min-width: 0; }
+.state-name { font-weight: 600; font-size: 0.85rem; color: var(--text); }
+.state-type { font-size: 0.7rem; color: var(--text-dim); }
+.state-rank {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.state-bar {
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.state-bar-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* Quick jumps */
+.plv-quick-jumps {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plv-jump {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.15s;
+}
+.plv-jump:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+
+@media (max-width: 640px) {
+  .plv-num { font-size: 1.8rem; }
+  .plv-arrow { padding: 0.5rem 0.8rem; min-width: 90px; font-size: 0.85rem; }
+  .pts-box .value { font-size: 1.3rem; }
+  .state-grid { grid-template-columns: 1fr; }
+}
+.planner-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.planner-controls label {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.planner-controls input[type="range"] {
+  accent-color: var(--accent);
+}
+.planner-table {
+  background: var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.planner-row {
+  display: grid;
+  grid-template-columns: 70px 200px 1fr 1.5fr;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: background 0.15s;
+}
+.planner-row:hover { background: rgba(212, 175, 55, 0.05); }
+.planner-row.empty { opacity: 0.4; }
+.planner-row.zero-sp { background: rgba(78, 168, 222, 0.05); border-left: 3px solid var(--info); }
+.planner-row.milestone { background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent); }
+.planner-level {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.planner-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+.pts-gained { color: var(--ok); font-weight: 700; }
+.pts-cum { color: var(--text-dim); }
+.pts-bank { color: var(--info); }
+.planner-unlocks { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.unlock-chip {
+  background: var(--stigma);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.no-unlock, .no-action { color: var(--text-dim); font-style: italic; font-size: 0.85rem; }
+.planner-actions { display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-action {
+  background: var(--bg-2);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+  font-size: 0.85rem;
+}
+.plan-action strong { color: var(--accent); }
+.plan-action em { color: var(--ok); font-style: normal; }
+.plan-action small { color: var(--text-dim); display: block; margin-top: 0.2rem; }
+.plan-note {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.2rem 0.5rem;
+}
+.plan-special {
+  background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-left: 3px solid var(--crit);
+}
+@media (max-width: 720px) {
+  .planner-row { grid-template-columns: 60px 1fr; gap: 0.5rem; }
+  .planner-unlocks, .planner-actions { grid-column: 1 / -1; }
+  .planner-points { grid-column: 2; }
+}
+
+/* ============ DAEVANION BOARDS ============ */
+.board-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.board-tabs button {
+  background: var(--bg-3);
+  color: var(--text);
+  border: 2px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.board-tabs button:hover { background: var(--bg-2); }
+.board-tabs button.active { background: var(--accent); color: #000; }
+.board-panel { display: none; }
+.board-panel.active { display: block; animation: fade 0.3s ease; }
+.board-header h3 { margin-bottom: 0.5rem; font-size: 1.3rem; }
+.board-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.board-full { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; }
+.board-grid-wrap {
+  background: var(--bg-3);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+.board-svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.node-group {
+  transition: transform 0.15s;
+}
+.node-group:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+.node-group.unlocked circle:last-of-type {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { filter: drop-shadow(0 0 2px #22c55e); }
+  50% { filter: drop-shadow(0 0 8px #22c55e); }
+}
+.board-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.75rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.board-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.board-nodes-list {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+.board-nodes-list h4 { color: var(--accent); margin-bottom: 0.5rem; }
+.board-nodes-list ol { padding-left: 1.2rem; }
+.board-nodes-list li {
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px dashed var(--border);
+}
+.board-nodes-list li:last-child { border-bottom: none; }
+.board-nodes-list .chip {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+}
+.board-nodes-list em { color: var(--ok); font-style: normal; }
+
+/* === DAEVANION v5 — snake chart + vista progresiva === */
+.snake-wrap {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+}
+.snake-svg {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.snake-node { transition: transform 0.15s; }
+.snake-node:hover:not(.is-center) { transform: scale(1.12); transform-origin: center; }
+.snake-node.owned rect, .snake-node.owned circle:not(:last-child) {
+  stroke: #22c55e !important;
+  filter: drop-shadow(0 0 6px rgba(34,197,94,0.8));
+}
+
+/* === DAEVANION v6 — estilo tiles juego Aion 2 === */
+.tile {
+  transition: all 0.15s;
+}
+.tile.in-route {
+  cursor: pointer;
+}
+.tile.in-route:hover rect:first-child {
+  stroke: #f4c430;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(244,196,48,0.6));
+}
+.tile.owned rect {
+  stroke: #22c55e !important;
+  stroke-width: 2.5 !important;
+  filter: drop-shadow(0 0 8px rgba(34,197,94,0.9));
+}
+.snake-svg {
+  background: radial-gradient(ellipse at center, #1a1a1f 0%, #0a0b0f 100%);
+}
+
+/* === DAEVANION v4 — vista progresiva conectada === */
+.daev-intro { margin-bottom: 1rem; }
+.daev-totals-top {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin: 0.75rem 0;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.daev-totals-top small {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: normal;
+}
+.progressive-route {
+  list-style: none;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0.5rem 0;
+  position: relative;
+}
+.progressive-route::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  bottom: 1rem;
+  width: 4px;
+  background: linear-gradient(180deg, #f4c430 0%, #c99a2e 100%);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+.route-node {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  margin-bottom: 0.4rem;
+  background: var(--bg-3);
+  border-radius: 10px;
+  border-left: 4px solid var(--node-color, var(--border));
+  position: relative;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.route-node.center {
+  background: linear-gradient(90deg, rgba(244,196,48,0.15), var(--bg-3));
+  border-left-color: #f4c430;
+  cursor: default;
+}
+.route-node:hover:not(.center) {
+  transform: translateX(4px);
+  background: rgba(244,196,48,0.08);
+}
+.route-node.owned {
+  border-left-color: var(--ok);
+  background: rgba(34,197,94,0.08);
+}
+.route-node.owned .node-label { text-decoration: line-through; opacity: 0.6; }
+.route-node.owned .node-check { opacity: 1; }
+.node-number {
+  background: var(--node-color, var(--accent));
+  color: #000;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  box-shadow: 0 0 0 3px #0b0d12;
+  position: relative;
+  z-index: 2;
+}
+.route-node.owned .node-number { background: var(--ok); color: #fff; }
+.node-icon-wrap {
+  width: 42px;
+  height: 42px;
+  background: #000;
+  border-radius: 6px;
+  border: 2px solid var(--node-color, var(--border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.node-icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.step-glyph {
+  color: var(--node-color, #fff);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.node-info {
+  flex: 1;
+  min-width: 0;
+}
+.node-label {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.95rem;
+  margin-bottom: 0.1rem;
+}
+.node-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.node-type { color: var(--accent); }
+.node-cost { color: var(--ok); font-weight: 600; }
+.node-acum { color: var(--info); }
+.node-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ok);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .node-label { font-size: 0.85rem; }
+  .node-meta { font-size: 0.7rem; }
+  .node-icon-wrap { width: 32px; height: 32px; }
+  .node-number { width: 28px; height: 28px; font-size: 0.8rem; }
+}
+
+/* === DAEVANION v3 — mapeo visual estilo couga54 === */
+.board-grid-wrap { background: var(--bg-3); padding: 1rem; border-radius: 12px; margin: 1rem 0; overflow-x: auto; }
+.board-svg { width: 100%; max-width: 760px; height: auto; display: block; margin: 0 auto; }
+.daev-node { transition: transform 0.15s; cursor: pointer; }
+.daev-node:hover { transform: scale(1.1); transform-origin: center; }
+.daev-node.unlocked rect, .daev-node.unlocked circle { stroke: #22c55e !important; filter: drop-shadow(0 0 6px #22c55e); }
+.board-legend { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; padding: 0.75rem; background: var(--bg-3); border-radius: 8px; margin: 0.75rem 0; font-size: 0.8rem; color: var(--text-dim); }
+.board-legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 0.3rem; vertical-align: middle; border: 1px solid currentColor; }
+.board-legend .stat1-dot { background: #1b2130; border-color: #5a6478; }
+.board-legend .passive-dot { background: #22c55e; border-radius: 3px; }
+.board-legend .skill-dot { background: #4ea8de; border-radius: 3px; }
+.board-legend .special-dot { background: #f4c430; transform: rotate(45deg); border-radius: 2px; }
+.board-legend .stat23-dot { background: #4ea8de; }
+.board-legend .route-dot { background: #f4c430; height: 4px; border-radius: 2px; width: 20px; }
+.daev-totals { text-align: center; padding: 1rem; background: var(--bg-3); border-radius: 8px; margin-top: 1rem; color: var(--accent); font-size: 1.1rem; }
+.daev-totals small { color: var(--text-dim); font-size: 0.75rem; margin-left: 0.5rem; }
+.route-steps-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.4rem; margin-top: 0.5rem; }
+.route-step { display: flex; align-items: center; gap: 0.5rem; background: var(--bg-3); padding: 0.4rem 0.6rem; border-radius: 6px; cursor: pointer; border-left: 3px solid var(--border); font-size: 0.85rem; transition: all 0.15s; }
+.route-step:hover { border-left-color: var(--accent); }
+.route-step.owned { border-left-color: var(--ok); background: rgba(34,197,94,0.08); }
+.route-step.owned .step-label { text-decoration: line-through; opacity: 0.6; }
+.step-num { background: var(--accent); color: #000; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; flex-shrink: 0; }
+.route-step.owned .step-num { background: var(--ok); }
+.step-icon { width: 24px; height: 24px; border-radius: 4px; border: 1px solid var(--border); background: #000; flex-shrink: 0; }
+.step-dot { width: 10px; height: 10px; border-radius: 50%; background: #5a6478; flex-shrink: 0; }
+.step-label { flex: 1; color: var(--text-dim); font-size: 0.85rem; }
+
+/* === DAEVANION rewrite: tarjetas honestas por board === */
+.daevanion-intro { margin-bottom: 1.5rem; }
+.daevanion-order-summary {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border-left: 4px solid var(--accent);
+}
+.boards-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.board-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-left: 5px solid;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+.board-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.board-card h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+.board-card .muted { color: var(--text-dim); font-weight: normal; }
+.board-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.board-progress {
+  text-align: center;
+  background: var(--bg-2);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  min-width: 90px;
+}
+.progress-count {
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 800;
+  line-height: 1;
+}
+.board-focus, .board-corners { margin: 0.4rem 0; font-size: 0.9rem; }
+.board-focus strong, .board-corners strong { color: var(--accent); }
+.board-full-note { font-size: 0.85rem; color: var(--text-dim); margin: 0.75rem 0; }
+
+.blues-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.blue-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-2);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border-left: 3px solid var(--border);
+  transition: all 0.15s;
+}
+.blue-step:hover { border-left-color: var(--accent); }
+.blue-step.owned {
+  border-left-color: var(--ok);
+  background: rgba(34, 197, 94, 0.08);
+}
+.blue-step.owned .step-info strong { text-decoration: line-through; opacity: 0.7; }
+.blue-step.empty {
+  color: var(--text-dim);
+  font-style: italic;
+  cursor: default;
+  justify-content: center;
+}
+.step-num {
+  background: var(--accent);
+  color: #000;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.blue-step.owned .step-num { background: var(--ok); }
+.step-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid var(--stigma);
+  background: #000;
+  flex-shrink: 0;
+}
+.step-info { flex: 1; }
+.step-info strong { color: var(--text); font-size: 0.95rem; display: block; }
+.step-info small { color: var(--text-dim); font-size: 0.8rem; }
+
+/* === Daevanion v8: tablero estilo couga54 con orden de clics === */
+.planner-when { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.3rem 1rem; }
+.planner-when li { display: flex; align-items: center; gap: 0.45rem; }
+.planner-when li .aion-icon-img { border-radius: 4px; }
+.dv { background: #10141c; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin: 1rem 0; }
+.dv-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 6px; border-bottom: 1px solid var(--border); }
+.dv-tab { background: transparent; border: 0; border-radius: 8px; color: var(--text-dim); padding: 0.5rem 0.25rem; cursor: pointer; font: inherit; line-height: 1.25; }
+.dv-tab b { display: block; color: var(--text); font-size: 0.95rem; }
+.dv-tab span { font-size: 0.72rem; font-family: ui-monospace, Consolas, monospace; }
+.dv-tab i { font-style: normal; color: #e8b65a; }
+.dv-tab:hover { background: var(--bg-3); }
+.dv-tab.active { background: #1e2431; box-shadow: inset 0 -2px 0 #e8b65a; }
+.dv-body { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 1rem; padding: 1rem; align-items: start; }
+.dv-stage { background: #0a0c11; border-radius: 12px; padding: 0.6rem; border: 1px solid #1d2330; }
+.dv-svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+.dv-ring { fill: none; stroke: #e8b65a; stroke-opacity: 0.06; stroke-width: 0.02; }
+.dv-line { stroke: #3a4255; stroke-width: 0.05; }
+.dv-line.on { stroke: #e8b65a; stroke-width: 0.13; stroke-linecap: round; }
+.dv-stat { fill: #0e1117; stroke: #4a5368; stroke-width: 0.04; }
+.dv-node.on .dv-stat { fill: #d9dde6; stroke: #fff; }
+.dv-stat-core { fill: #6f9cff; opacity: 0.6; }
+.dv-special { fill: none; stroke: #f0a04b; stroke-width: 0.05; opacity: 0.55; }
+.dv-node.on .dv-special { fill: #f0a04b; stroke: #ffd29a; opacity: 1; }
+.dv-start { fill: #f3d58a; stroke: #fff3cf; stroke-width: 0.03; }
+.dv-skillbg { fill: #161b25; }
+.dv-skillframe { fill: none; stroke-width: 0.05; }
+.dv-node.tA .dv-skillframe { stroke: #6f9cff; }
+.dv-node.tP .dv-skillframe { stroke: #4fd18b; }
+.dv-node.off image { opacity: 0.32; }
+.dv-node.off .dv-skillframe { stroke-opacity: 0.35; }
+.dv-node.on.tA .dv-skillframe, .dv-node.on.tP .dv-skillframe { stroke-width: 0.07; }
+.dv-hit { cursor: pointer; }
+.dv-badge circle { fill: #e8b65a; stroke: #10141c; stroke-width: 0.035; }
+.dv-badge text { fill: #10141c; font-weight: 800; text-anchor: middle; font-family: ui-monospace, Consolas, monospace; pointer-events: none; }
+.dv-badge.done circle { fill: var(--ok); }
+.dv-badge.done text { fill: #fff; }
+.dv-badge.next circle { fill: #fff; }
+.dv-next-ring { fill: none; stroke: #fff; stroke-width: 0.06; animation: dv-pulse 1.2s ease-in-out infinite; pointer-events: none; }
+@keyframes dv-pulse { 0%, 100% { stroke-opacity: 1; } 50% { stroke-opacity: 0.15; } }
+.dv-side { display: flex; flex-direction: column; gap: 0.75rem; position: sticky; top: 4rem; }
+.dv-info { background: var(--bg-3); border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem; min-height: 6.5rem; }
+.dv-info-k { color: #e8b65a; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+.dv-info-t { color: var(--text); font-weight: 700; margin: 0.2rem 0; }
+.dv-info-m { color: var(--text-dim); font-size: 0.82rem; }
+.dv-info-w { color: var(--text); font-size: 0.85rem; margin-top: 0.35rem; }
+.dv-ctrl { background: var(--bg-3); border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem; }
+.dv-ctrl-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.dv-btn { width: 2.6rem; height: 2.6rem; border-radius: 8px; border: 1px solid var(--border); background: #10141c; color: var(--text); font-size: 1.2rem; cursor: pointer; }
+.dv-btn:hover:not(:disabled) { border-color: #e8b65a; color: #e8b65a; }
+.dv-btn:disabled { opacity: 0.35; cursor: default; }
+.dv-count { text-align: center; color: var(--text); }
+.dv-count b { color: #e8b65a; font-size: 1.2rem; }
+.dv-count small { display: block; color: var(--text-dim); font-family: ui-monospace, Consolas, monospace; }
+.dv-range { width: 100%; margin: 0.7rem 0 0.4rem; accent-color: #e8b65a; }
+.dv-hint { font-size: 0.78rem; color: var(--text-dim); line-height: 1.4; }
+.dv-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; padding: 0.7rem 1rem; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.85rem; }
+.dv-foot b { color: #e8b65a; font-size: 1rem; }
+.dv-legend { display: flex; flex-wrap: wrap; gap: 0.8rem; font-size: 0.78rem; }
+.dv-legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.dv .k { display: inline-block; width: 11px; height: 11px; flex-shrink: 0; font-style: normal; }
+.dv .k.k-stat { border-radius: 50%; background: #d9dde6; }
+.dv .k.k-pas { border: 2px solid #4fd18b; border-radius: 2px; }
+.dv .k.k-act { border: 2px solid #6f9cff; border-radius: 2px; }
+.dv .k.k-esp { background: #f0a04b; transform: rotate(45deg) scale(0.85); border-radius: 1px; }
+.dv .k.k-ruta { width: 18px; height: 4px; border-radius: 2px; background: #e8b65a; }
+.dv .k.k-num { width: 16px; height: 16px; border-radius: 50%; background: #e8b65a; color: #10141c; font-size: 0.65rem; font-weight: 800; text-align: center; line-height: 16px; }
+.dv-note { padding: 0 1rem 0.8rem; color: var(--text); font-size: 0.9rem; }
+.dv-note:empty { display: none; }
+.dv-list-wrap { border-top: 1px solid var(--border); padding: 0.8rem 1rem; }
+.dv-list-wrap summary { cursor: pointer; color: #e8b65a; font-weight: 700; }
+.dv-list { list-style: none; padding: 0; margin-top: 0.6rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.35rem; }
+.dv-list li { display: flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.5rem; border-radius: 6px; background: var(--bg-3); border-left: 3px solid transparent; cursor: pointer; font-size: 0.83rem; }
+.dv-list li:hover { border-left-color: #e8b65a; }
+.dv-list li .no { min-width: 1.6rem; height: 1.6rem; border-radius: 50%; background: #e8b65a; color: #10141c; font-weight: 800; font-size: 0.75rem; display: grid; place-items: center; }
+.dv-list li img { width: 22px; height: 22px; border-radius: 3px; }
+.dv-list li .k { margin: 0 5px; }
+.dv-list li .tx { flex: 1; color: var(--text); }
+.dv-list li .pt { color: var(--text-dim); font-family: ui-monospace, Consolas, monospace; font-size: 0.72rem; white-space: nowrap; }
+.dv-list li.tA img { outline: 2px solid #6f9cff; }
+.dv-list li.tP img { outline: 2px solid #4fd18b; }
+.dv-list li.done { opacity: 0.55; border-left-color: var(--ok); }
+.dv-list li.done .no { background: var(--ok); color: #fff; }
+.dv-list li.next { border-left-color: #fff; background: #242b3a; }
+.dv-list li.next .no { background: #fff; }
+.dv-sum { border-top: 1px solid var(--border); padding: 0.8rem 1rem 1rem; }
+.dv-sum h5 { color: var(--text-dim); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0.4rem 0; }
+.dv-sum ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.dv-chip { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--bg-3); border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.6rem; font-size: 0.8rem; color: var(--text); }
+.dv-chip img { width: 18px; height: 18px; border-radius: 3px; }
+.dv-chip b { color: #e8b65a; }
+.dv-chip.act { border-color: #6f9cff66; }
+.dv-chip.pas { border-color: #4fd18b66; }
+.dv-chip.esp { border-color: #f0a04b; }
+@media (max-width: 820px) {
+  .dv-body { grid-template-columns: 1fr; padding: 0.6rem; }
+  .dv-side { position: static; }
+  .dv-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .dv-tab b { font-size: 0.8rem; }
+  .dv-tab span { font-size: 0.62rem; }
+  .dv-stage { overflow-x: auto; padding: 0.4rem; }
+  .dv-svg { min-width: 560px; }
 }
 </style>
 </head>
 <body>
 
 <header>
-  <a href="index.html" class="nav-home">← Volver al inicio</a>
   <h1>Guía Progresiva Clérigo PvE</h1>
-  <div class="subtitle">Aion 2: The Second Era — Heal/DPS Híbrido Lv 1 → 45</div>
+  <div class="subtitle">Aion 2: The Second Era — Sanador que sube pegando · Nv. 1 → 45</div>
   <div class="meta">
     <span class="badge ok">Patch Global Season 1</span>
     <span class="badge">Actualizado: 8-oct-2026</span>
-    <span class="badge warn">Cap Lv 45</span>
-    <span class="badge heal">PvE Healer Essential</span>
+    <span class="badge warn">Cap Lv 45 (no 50)</span>
+    <span class="badge">PvE Focus</span>
   </div>
 </header>
 
-<nav class="topnav">
+<nav>
   <ul>
     <li><a href="#overview">Resumen</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#passives">Pasivas</a></li>
-    <li><a href="#rotations">Rotación</a></li>
-    <li><a href="#stigmas">Stigmas</a></li>
+    <li><a href="#patch">Patch Actual</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#progression">Progresión 1-45</a></li>
+    <li><a href="#rotations">Rotaciones</a></li>
+    <li><a href="#stigmas">Estigmas</a></li>
     <li><a href="#daevanion">Daevanion</a></li>
-    <li><a href="#stats">Stats & Gear</a></li>
+    <li><a href="#pets">Mascotas</a></li>
+    <li><a href="#stats">Stats y equipo</a></li>
+    <li><a href="#systems">Sistemas</a></li>
     <li><a href="#macros">Macros</a></li>
-    <li><a href="#credits">Fuentes</a></li>
+    <li><a href="#progress">Mi Progreso</a></li>
   </ul>
 </nav>
 
 <main>
 
 <section id="overview">
-  <h2>Resumen del Clérigo</h2>
-  <p>El <strong>Clérigo (Cleric)</strong> es el <strong>único healer puro</strong> del Aion 2, pero el modelo de contribución lo <strong>fuerza a hacer daño</strong> en combate. couga54 textual: <em>"A Cleric who only heals can walk out with nothing"</em>.</p>
+  <h2>Resumen de la Clase</h2>
+  <p>El <strong>Clérigo</strong> es el sanador de AION 2, con maza y daño de Tierra y Viento. Pero en las mazmorras <strong>la recompensa depende de tu contribución</strong>: un Clérigo que solo cura puede salir sin nada. Tu grupo tiene esquivas e invulnerabilidades propias, así que <strong>cura a quien acaba de recibir un golpe y pon todo lo demás en daño</strong>.</p>
 
-  <div class="callout heal">
-    <strong>Rol dual:</strong> party-wide recovery + sustained holy DPS (Earth / Wind). Esencial para raids/dungeons organizados aunque no "obligatorio".
+  <div class="callout ok">
+    <strong>La build en una frase:</strong> <em>Castigo terrestre</em> hace que <em>Condena</em> sea siempre crítica, y cada crítico restablece Condena, así que la lanzas sin enfriamiento; <em>Aura divina</em>, <em>Centella</em> y <em>Aura noble</em> suman daño encima.
   </div>
 
   <div class="callout info">
-    <strong>Arma + armadura:</strong> Mace (una mano) + Chain armor + Shield/Guard.
+    <strong>Mientras subes de nivel juegas como DPS a distancia:</strong> <em>Enlace de dolor</em> marca al objetivo, <em>Condena</em> lo castiga y la pasiva <em>Favor radiante</em> te cura a ti y al grupo en cada golpe. Mantén <em>Retribución terrestre</em> en el clic izquierdo para el maná.
   </div>
 
   <div class="callout warn">
-    <strong>Tipo de build:</strong> Offensive PvE (base couga54) — combina heals reactivos con rotación DPS Prayer-line + Divine-line. NO existe build "pure heal" viable en Aion 2.
+    <strong>Rol en grupos:</strong> sanador que hace daño. Las curaciones que importan llegan a 16 (Luz de curación y Resplandor de recobro); casi todo lo demás va a daño. Escoger habilidades y especializaciones es gratis y reversible: solo la Arcana cuesta recursos.
+  </div>
+</section>
+
+<section id="patch">
+  <h2>Patch Global Actual (Season 1)</h2>
+  <p>Esta guía refleja el parche global vigente al 8-oct-2026 (servidores abiertos el 5-oct). Lo que cambia para el Clérigo respecto a Taiwán/Corea:</p>
+
+  <table>
+    <thead><tr><th>Dato</th><th>Global Season 1</th><th>KR/TW Chapter 1 (NO aplica)</th></tr></thead>
+    <tbody>
+      <tr><td>Cap de nivel</td><td><strong class="tier s">45</strong></td><td>50</td></tr>
+      <tr><td>Rango máximo de estigma</td><td><strong>20</strong></td><td>25 (p. ej. Doble golpe en Luz de protección)</td></tr>
+      <tr><td>Ranuras de estigma</td><td><strong>4</strong> (Nv. 22/27/32/37)</td><td>6</td></tr>
+      <tr><td>Tablero Ariel</td><td><strong>No existe</strong>: 5 tableros, el del 45 (Azphel) es solo JcJ</td><td>Sí</td></tr>
+      <tr><td>Habilidades activas y pasivas</td><td colspan="2">Idénticas en global y KR/TW</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <strong>Grupos grandes</strong> (expediciones de 5, santuarios de 10): si hay un <strong>Chanter</strong> (Cantor) en el grupo, tu mantra no se apila con el suyo → cambia <em>Luz de protección</em> por <em>Absolución</em>.<br>
+    <strong>Menos ping que en Taiwán:</strong> las animaciones se cancelan mejor, así que la macro intercala más ataques básicos.
   </div>
 </section>
 
 <section id="skills">
-  <h2>Skills Activas (12 principales)</h2>
-  <p>Lista verificada contra metabot.gg y couga54. Las que suben con SP para max DPS/heal:</p>
-
-  <table>
-    <thead><tr><th>Lv</th><th>Skill</th><th>Tipo</th><th>Función</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td><strong>Earth's Retribution</strong></td><td>DPS</td><td>50 (+48.3% Attack) Earth damage. Restaura 110 MP (sustain)</td></tr>
-      <tr><td>1</td><td><strong>Judgment Thunder</strong></td><td>AoE DPS</td><td>Wind AoE hasta 4 targets</td></tr>
-      <tr><td>1</td><td>Debilitating Mark</td><td>Debuff</td><td>−5% PvE Dmg Boost (couga: −15% Def)</td></tr>
-      <tr><td>3</td><td>Divine Aura</td><td>DPS</td><td>Aura estacionaria que pega periódicamente</td></tr>
-      <tr><td>4</td><td><strong>Chain of Torment</strong></td><td>Debuff/DPS</td><td>−5% PvE Dmg Tolerance; marca para Condemnation</td></tr>
-      <tr><td>5</td><td>Lightning Strike Scattershot</td><td>DPS</td><td>Burst stagger; −1s all CDs per hit (couga)</td></tr>
-      <tr><td>7</td><td><strong>Light of Regeneration</strong></td><td>HoT grupal</td><td>616-739 HP cada 2s durante 30s en party 40m</td></tr>
-      <tr><td>8</td><td><strong>Condemnation</strong></td><td>DPS core</td><td>325 (+192.1% Attack) Earth. <strong>Resetea CD al crit.</strong></td></tr>
-      <tr><td>10</td><td><strong>Healing Light</strong></td><td>Heal reactivo</td><td>Cura al miembro con HP más bajo</td></tr>
-      <tr><td>12</td><td>Radiant Recovery</td><td>Heal + cleanse</td><td>379-417 HP + remueve 1 debuff</td></tr>
-      <tr><td>14</td><td>Bolt</td><td>DPS cargado</td><td>3 niveles de carga, wind dmg + stagger</td></tr>
-      <tr><td>16</td><td>Defiance</td><td>Self-cleanse</td><td>Remueve Stun/KD/Airborne/Grab/Frost/Fear</td></tr>
-    </tbody>
-  </table>
+  <h2>Catálogo de habilidades del Clérigo</h2>
+  <p>Debajo de cada habilidad, las especializaciones que tomar (se abren a rango 8, 12 y 20). Rango objetivo según Lucia (Rango 1 mundial en global) y Kaeria. Nombres del cliente en español (metabot.gg/es_ES).</p>
 
   <div class="callout info">
-    <strong>Chain abilities / combos clave:</strong><br>
-    • <strong>Prayer line:</strong> Prayer of Amplification → Earth Punishment → Chain of Torment → Condemnation<br>
-    • <strong>Divine line:</strong> Divine Aura → Judgment Thunder<br>
-    • <strong>Elite:</strong> Debilitating Mark → Chain of Torment → Bolt cargado → Condemnation
+    <strong>Orden de subida (Lucia):</strong> primero las dos que intercalas, <em>Retribución terrestre</em> y <em>Rayo del juicio</em>; luego <em>Condena</em>; luego las curaciones. Tras las misiones regionales del 45, todo debería estar a 12 o más; desde ahí toma las especializaciones y empuja las curaciones.
   </div>
 
+  <h3>Activas de daño</h3>
+  <div class="skill-grid">
+    <div class="skill-card"><span data-icon="c_condena" data-size="48"></span><div class="info"><div class="name">Condena <span class="tier s">16 → 20</span></div><div class="desc">La más importante: solo golpea a un objetivo con Enlace de dolor, y con crítico se restablece.<br><small>8: hasta +12 % de daño con menos objetivos · 12: se restablece al hacer crítico · 20: Multigolpe al golpear (o +100 PM si te falta maná)</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_aura" data-size="48"></span><div class="info"><div class="name">Aura divina <span class="tier s">16 → 20</span></div><div class="desc">Infravalorada: hace daño en paralelo contigo, cuanto más tiempo esté puesta mejor.<br><small>8: +50 % velocidad de ataque del aura · 16: −10 s de enfriamiento · 20: +3 s de duración. Para farmear: la de área (hasta 4 monstruos).</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_centella" data-size="48"></span><div class="info"><div class="name">Centella <span class="tier s">16 → 20</span></div><div class="desc">Tu golpe más fuerte. Cárgala del todo.<br><small>8: +300 Precisión de habilidad y +30 % velocidad de habilidad · 20: golpe crítico asegurado. Con mucha Precisión, cambia la de precisión por +20 % a un solo objetivo.</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_rayo" data-size="48"></span><div class="info"><div class="name">Rayo del juicio <span class="tier a">16</span></div><div class="desc">Daño constante sin enfriamiento y cancela animaciones.<br><small>8: hasta +12 % de daño con menos objetivos · 16: Castigo divino 1 vez más (casi dobla su daño) · 20: −20 % de PM</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_relampagos" data-size="48"></span><div class="info"><div class="name">Relámpagos sin puntería <span class="tier a">16</span></div><div class="desc">Solo con el objetivo en Tambaleo, pero cada golpe baja 1 s todos tus enfriamientos.<br><small>12: Multigolpe al golpear · 16: −1 s a todos los enfriamientos al golpear</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_retribucion" data-size="48"></span><div class="info"><div class="name">Retribución terrestre <span class="tier a">12 → 16</span></div><div class="desc">Ataque básico sin enfriamiento: recupera PM y corta animaciones. Cuantas más Descargas, antes vuelve Centella.<br><small>8: +20 % prob. de Descarga · 12: −7 s a Centella al acertar Descarga · 20: +50 % Multigolpe</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_estigma" data-size="48"></span><div class="info"><div class="name">Estigma debilitante <span class="tier b">12</span></div><div class="desc">−15 % de Defensa del jefe mientras dura el daño periódico. Úsala cada vez que esté lista.<br><small>8: −15 % de Defensa del objetivo · 8: 20 % de Aturdimiento 3 s (control en Trascendencia)</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_enlace" data-size="48"></span><div class="info"><div class="name">Enlace de dolor <span class="tier b">14</span></div><div class="desc">Existe para habilitar Condena; −10 % de tolerancia al daño JcE del jefe.<br><small>8: 20 % de Derribo 3 s (o +3 s de daño periódico si no necesitas control) · 12: −10 % Tolerancia al daño JcE</small></div></div></div>
+  </div>
+
+  <h3>Curaciones y utilidad</h3>
+  <div class="skill-grid">
+    <div class="skill-card"><span data-icon="c_resplandor" data-size="48"></span><div class="info"><div class="name">Resplandor de recobro <span class="tier s">16 → 20</span></div><div class="desc">Tu curación más fuerte fuera de los estigmas; quita un efecto negativo. Llévala a 20 pronto.<br><small>8: −3 s de enfriamiento (o +1 uso seguido) · 12: +10 % de curación recibida 10 s · 16: +5 % de PV restaurados</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_curacion" data-size="48"></span><div class="info"><div class="name">Luz de curación <span class="tier a">16</span></div><div class="desc">Curación rápida casi sin enfriamiento. Antes de mazmorras en grupo, a 16.<br><small>8: +2 usos seguidos · 12: +2 % de PV restaurados · 20: −2 s de enfriamiento</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_regeneracion" data-size="48"></span><div class="info"><div class="name">Luz de regeneración <span class="tier b">12 → 16</span></div><div class="desc">Curación en el tiempo: vuelve a lanzarla en cuanto esté lista.<br><small>8: +5 % de curación recibida · 8 (hasta 16): +20 % de curación con PV ≤ 50 % · 16: +5 % Tolerancia al daño JcE</small></div></div></div>
+    <div class="skill-card"><span data-icon="c_eliminacion" data-size="48"></span><div class="info"><div class="name">Eliminación de impacto <span class="tier b">12</span></div><div class="desc">Rompe el control (Aturdimiento, Derribo, Agarre…) y da Robustez.<br><small>8: recupera 10 % de PV · 12: +2 s de Robustez</small></div></div></div>
+  </div>
+
+  <h3>Pasivas — prioridad</h3>
+  <table>
+    <thead><tr><th>Nv.</th><th>Pasiva</th><th>Prioridad</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td>9</td><td><span data-icon="c_gracia_empirea" data-size="28"></span> <strong>Gracia empírea</strong></td><td class="tier s">⭐ Prio 1</td><td>La más importante: Crítico, Doble golpe y daño extra en cada golpe. Lo más alta que puedas.</td></tr>
+      <tr><td>11</td><td><span data-icon="c_mejora" data-size="28"></span> <strong>Mejora curativa</strong></td><td class="tier a">Prio 2</td><td>Tus curaciones escalan con tu Ataque: el Clérigo sube Ataque, no Defensa.</td></tr>
+      <tr><td>21</td><td><span data-icon="c_gracia_terrestre" data-size="28"></span> <strong>Gracia terrestre</strong></td><td class="tier a">Prio 2</td><td>Amplificación de Daño Crítico y Precisión. A 10 en cuanto la aprendas.</td></tr>
+      <tr><td>25</td><td><span data-icon="c_favor_radiante" data-size="28"></span> <strong>Favor radiante</strong></td><td class="tier b">Prio 3</td><td>Cura a todo el grupo cada pocos segundos mientras pegas. aLuckyRO la sube primero los primeros días.</td></tr>
+      <tr><td>1 / 13</td><td>Favor cálido · Velo inmortal</td><td class="tier b">Con puntos extra</td><td>Bien tenerlas; Velo inmortal ayuda al principio y pierde valor con mejor armadura.</td></tr>
+      <tr><td>6 / 15 / 23</td><td>Favor empíreo · Bloqueo de recuperación · Voluntad de supervivencia</td><td class="tier b">⚠️ JcJ</td><td>No les pongas puntos en JcE.</td></tr>
+      <tr><td>17</td><td>Oración de concentración</td><td class="tier b">SKIP</td><td>No está entre las recomendadas.</td></tr>
+    </tbody>
+  </table>
   <div class="callout warn">
-    <strong>Res (resurrección):</strong> solo vía stigma <strong>Summon Resurrection</strong> (120s CD, 40m). NO hay res base.
+    <strong>Ojo los primeros días (aLuckyRO):</strong> las pasivas de crítico solo rinden cuando el equipo te da Crítico; hasta entonces apenas haces críticos. Por eso Favor radiante y Mejora curativa pagan antes.
   </div>
 </section>
 
-<section id="passives">
-  <h2>Pasivas — 10 principales (prioridad de subida)</h2>
-  <table>
-    <thead><tr><th>Pasiva</th><th>Priority</th><th>Efecto</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Empyrean Lord's Grace</strong></td><td class="tier s">⭐ Prio 1</td><td>+100 Crit Hit, daño extra por hit (couga: Critical Damage + Double Chance)</td></tr>
-      <tr><td><strong>Earth's Grace</strong></td><td class="tier a">Prio 2</td><td>+10.5% Critical Damage Boost + Accuracy</td></tr>
-      <tr><td><strong>Healing Enhancement</strong></td><td class="tier a">Prio 3</td><td>Heal Boost 22,400% of Attack. <strong>Clave: tu Attack escala tu heal.</strong></td></tr>
-      <tr><td><strong>Radiant Benediction</strong></td><td class="tier a">Prio 4</td><td>Restaura 384-461 HP a party en 40m al pegar (5s CD)</td></tr>
-      <tr><td>Prayer of Concentration</td><td class="tier b">Situacional</td><td>Escudo + 20% Heal Boost cuando HP ≤ 50%</td></tr>
-      <tr><td>Warm Benediction</td><td class="tier b">Básica</td><td>+6% Max HP, +7 Max MP</td></tr>
-      <tr><td>Empyrean Lords' Benediction</td><td class="tier b">Pasiva base</td><td>Block heal (3s CD)</td></tr>
-      <tr><td>Immortal Veil</td><td class="tier b">Defensiva</td><td>+2% Def, +100 Crit Hit Resist</td></tr>
-      <tr><td>Survival Willpower</td><td class="tier b">Status resist</td><td>+17% Status Effect Resist</td></tr>
-      <tr><td>Heal Block</td><td class="tier b">⚠️ SKIP PvE</td><td>7% chance de reducir heal enemigo 32% (es pasiva PvP)</td></tr>
-    </tbody>
-  </table>
+<section id="progression">
+  <h2>Planificador de puntos de habilidad (nivel 1 → 45)</h2>
+  <p>Te dice, <strong>nivel por nivel</strong>, cuántos puntos ganas y <strong>en qué habilidad ponerlos</strong>. Solo cuenta los puntos que da subir de nivel: así el plan funciona aunque no hagas contenido extra.</p>
 
-  <div class="callout crit">
-    <strong>Priority de subida (couga54):</strong> Empyrean Lord's Grace → Earth's Grace → Healing Enhancement → Radiant Benediction. <strong>SKIP Heal Block en PvE.</strong>
+  <div class="callout info">
+    <strong>Reglas del juego que respeta el plan:</strong><br>
+    • <strong>Coste por rango:</strong> rangos 2-4 = 1 punto · 5-7 = 2 · 8-10 = 4 (21 puntos para llevar una habilidad a 10). El rango 8 abre la primera especialización. Del 11 al 20 no se usan puntos: suben con Daevanion, anillos y Arcana.<br>
+    • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Condena (se aprende en el 8) y Gracia terrestre (en el 21) tardan en llegar a 10.<br>
+    • <strong>Los estigmas no usan estos puntos:</strong> se suben con <strong>Esquirlas de Estigma</strong>.<br>
+    • <strong>Prioridad (Lucia y Whelps):</strong> Retribución terrestre y Rayo del juicio; Gracia terrestre en cuanto aparece; Condena, Centella y Aura divina; después Gracia empírea y Mejora curativa; las curaciones; y al final Enlace de dolor y Relámpagos sin puntería.
+  </div>
+
+  <div class="planner-summary" id="plannerSummary"></div>
+
+  <div class="callout warn">
+    <strong>Navegación:</strong> usa las flechas ← → (o las del teclado) para avanzar nivel por nivel. La barra y los botones de salto te llevan a los hitos: nivel 8 (Condena), 14 (Centella), 21 (Gracia terrestre), 22 (Ascensión y estigmas), 30 (Vaizel), 37 (estigmas completos) y 45.
+  </div>
+
+  <div id="plannerBody"></div>
+
+  <div class="callout ok" style="margin-top:1rem">
+    <strong>Cuándo llega cada habilidad a su rango final:</strong>
+    <ul id="plannerWhen" class="planner-when" style="margin-top:0.5rem"></ul>
+  </div>
+
+  <div class="callout ok" style="margin-top:1rem">
+    <strong>Puntos extra (Piedras de sabiduría, 1 punto cada una):</strong> salen de las mazmorras selladas y de algunas misiones. El plan no los cuenta. Con ellos adelantas lo que esté por debajo de su tope, en el mismo orden de prioridad, y lo que sobre va a:
+    <ol style="margin-top:0.5rem; padding-left:1.4rem">
+      <li><strong>Favor radiante</strong>: cura al grupo mientras pegas.</li>
+      <li><strong>Favor cálido</strong> y <strong>Velo inmortal</strong>.</li>
+    </ol>
+    No pongas puntos en Favor empíreo, Bloqueo de recuperación ni Voluntad de supervivencia: son de JcJ.
   </div>
 </section>
 
 <section id="rotations">
-  <h2>Rotación / Priority List</h2>
-  <h3>Raid / Party (couga54)</h3>
-  <div class="rotation-steps">
-    <ol>
-      <li><strong>Pre-pull:</strong> Light of Protection + Noble Aura (buffs toggle)</li>
-      <li><strong>Prioridad siempre lista:</strong> Prayer of Amplification + Earth Punishment → spam <strong>Condemnation resets</strong> (CD reset al crit)</li>
-      <li><strong>Divine line:</strong> Divine Aura → Judgment Thunder weaving</li>
-      <li><strong>Bolt cargado manual</strong> en ventanas de daño</li>
-      <li><strong>Heals reactivos:</strong> Healing Light al más bajo · Radiant Recovery si hay debuff · Light of Regeneration pre-mecánica</li>
-      <li><strong>Chain of Torment en cooldown siempre</strong> (debuff grupal −5% PvE Dmg Tolerance)</li>
-    </ol>
+  <h2>Rotaciones por tramo de nivel</h2>
+  <p>La rotación cambia según lo que ya tienes desbloqueado. En todos los tramos: <strong>Retribución terrestre en el clic izquierdo</strong> entre habilidades (es tu maná) y juega en <strong>modo objetivo</strong>, que mantiene el ataque básico.</p>
+
+  <div class="callout crit">
+    <strong>Regla de oro:</strong> <strong>Enlace de dolor siempre antes que Condena</strong>. Condena solo golpea a objetivos marcados, así que van en la misma línea de la barra con Enlace abajo (la casilla de abajo es la de mayor prioridad).
   </div>
 
-  <div class="callout info">
-    <strong>Solo PvE:</strong> misma rotación. couga54 dice <em>"deal damage for contribution; heal only the people who just got hit"</em> — no hay rotación DPS separada.
+  <div class="level-tabs">
+    <button class="active" data-tab="r1">Nv. 1-7</button>
+    <button data-tab="r2">Nv. 8-13</button>
+    <button data-tab="r3">Nv. 14-21</button>
+    <button data-tab="r4">Nv. 22-31</button>
+    <button data-tab="r5">Nv. 32-44</button>
+    <button data-tab="r6">Nv. 45</button>
+  </div>
+
+  <div class="tab-panel active" id="r1">
+    <h3>Nv. 1-7 — Tus dos ataques sin enfriamiento</h3>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Estigma debilitante</strong> (−Defensa) cada vez que esté lista</li>
+        <li><strong>Enlace de dolor</strong> (desde el 4): daño de Tierra hasta a 4 enemigos</li>
+        <li><strong>Aura divina</strong> (desde el 3): pega sola a tu lado</li>
+        <li><strong>Rayo del juicio</strong> para rellenar, intercalado con <strong>Retribución terrestre</strong></li>
+      </ol>
+    </div>
+    <p><strong>Puntos:</strong> todo a Retribución terrestre y Rayo del juicio. <strong>Poca vida:</strong> Luz de regeneración (desde el 7).</p>
+  </div>
+
+  <div class="tab-panel" id="r2">
+    <h3>Nv. 8-13 — Llega Condena</h3>
+    <h4>Grupos</h4>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Enlace de dolor</strong> (marca hasta a 4)</li>
+        <li><strong>Condena</strong></li>
+        <li><strong>Aura divina</strong></li>
+        <li><strong>Rayo del juicio</strong> + Retribución terrestre hasta que vuelvan</li>
+      </ol>
+    </div>
+    <p>Pon la macro de subida (ver <a href="#macros">Macros</a>): Enlace → Estigma debilitante → Condena → Rayo del juicio en una sola línea. <strong>Poca vida:</strong> Luz de curación (desde el 10) y Resplandor de recobro (desde el 12).</p>
+    <div class="callout warn">Sube habilidades de ataque, no de curación: un Clérigo centrado en curar sube lento.</div>
+  </div>
+
+  <div class="tab-panel" id="r3">
+    <h3>Nv. 14-21 — Centella para élites</h3>
+    <h4>Grupos</h4>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Enlace de dolor</strong> → <strong>Condena</strong> → <strong>Aura divina</strong> (con la especialización de área si farmeas) → <strong>Rayo del juicio</strong></li>
+      </ol>
+    </div>
+    <h4>Élites</h4>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Estigma debilitante</strong> (baja la Defensa)</li>
+        <li><strong>Enlace de dolor</strong></li>
+        <li><strong>Centella</strong> cargada del todo</li>
+        <li><strong>Condena</strong>, y Rayo del juicio entre medias</li>
+      </ol>
+    </div>
+    <p><strong>Tambaleo:</strong> Relámpagos sin puntería solo funciona con el objetivo en Tambaleo. <strong>Control:</strong> Eliminación de impacto (desde el 16). Al 21, Gracia terrestre al tope.</p>
+  </div>
+
+  <div class="tab-panel" id="r4">
+    <h3>Nv. 22-31 — Castigo terrestre: Condena siempre crítica</h3>
+    <p>En la ranura 1 va <strong>Castigo terrestre</strong>. A rango 5, Condena hace siempre crítico sobre objetivos con Castigo, y cuando Condena llega a rango 12 cada crítico la restablece.</p>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Castigo terrestre</strong> (abajo en la línea de Condena)</li>
+        <li><strong>Enlace de dolor</strong></li>
+        <li><strong>Condena</strong> → crítico → se restablece → <strong>Condena</strong></li>
+        <li><strong>Aura divina</strong> y <strong>Rayo del juicio</strong> entre medias</li>
+      </ol>
+    </div>
+    <p>Desde el 27, <strong>Luz de protección</strong> en la ranura 2: es un interruptor, actívala una vez y déjala fuera de las líneas y de la macro.</p>
+  </div>
+
+  <div class="tab-panel" id="r5">
+    <h3>Nv. 32-44 — Aura noble (32) y Oración de amplificación (37)</h3>
+    <div class="rotation-steps">
+      <ol>
+        <li><strong>Aura noble</strong>: un orbe que ataca contigo 5 minutos. Úsala en cuanto esté lista</li>
+        <li><strong>Oración de amplificación</strong> (desde el 37): +20 % de Ataque y potencia tus dos Gracias</li>
+        <li><strong>Castigo terrestre</strong> → <strong>Enlace de dolor</strong> → <strong>Condena</strong> sin parar</li>
+        <li><strong>Aura divina</strong> cuando esté lista, <strong>Rayo del juicio</strong> entre medias</li>
+        <li><strong>Centella</strong> cargada cuando vuelva</li>
+      </ol>
+    </div>
+    <p>Desde el 37 ya puedes usar la macro de nivel 45 (ver <a href="#macros">Macros</a>).</p>
+  </div>
+
+  <div class="tab-panel" id="r6">
+    <h3>Nv. 45 — Jefes (Lucia)</h3>
+    <p>Con la macro en el clic derecho y Retribución terrestre en el izquierdo, mantén ambos. Lo que pasa:</p>
+    <div class="priority-list">
+      <span class="chip p1">#1 Oración de amplificación (en cuanto esté)</span>
+      <span class="chip p1">#2 Castigo terrestre</span>
+      <span class="chip p1">#3 Enlace de dolor → Condena (se restablece en crítico)</span>
+      <span class="chip p2">#4 Aura divina</span>
+      <span class="chip p2">#5 Rayo del juicio</span>
+      <span class="chip p3">Retribución terrestre entre todo</span>
+    </div>
+    <h4>A mano</h4>
+    <ul style="margin:0.75rem 0 0 1.2rem">
+      <li><strong>Centella</strong> cargada del todo en cuanto vuelva (Retribución con Descarga le quita 7 s).</li>
+      <li><strong>Aura noble</strong> en cuanto esté lista.</li>
+      <li><strong>Estigma debilitante</strong> en enfriamiento; <strong>Relámpagos sin puntería</strong> sobre el jefe en Tambaleo.</li>
+      <li><strong>Curar:</strong> Luz de regeneración cuando esté lista, Luz de curación (3 cargas) para golpes pequeños, Resplandor de recobro para los grandes. Solo a quien acaba de recibir un golpe.</li>
+    </ul>
+    <div class="callout crit">
+      <strong>Comprobación (Whelps):</strong> en el Análisis de combate, Condena debe golpear tantas veces como Rayo del juicio o más. Si golpea menos, falta crítico o Castigo terrestre no está siempre puesto.
+    </div>
   </div>
 </section>
 
 <section id="stigmas">
-  <h2>Stigmas PvE (4 slots)</h2>
-  <p>Loadout meta coincidencia couga54 + metabot.gg:</p>
+  <h2>Estigmas</h2>
+  <p>En global tienes <strong>4 ranuras</strong> (se abren en los niveles 22, 27, 32 y 37) y los estigmas llegan como máximo a <strong>rango 20</strong>. Puedes aprender más estigmas, pero solo caben cuatro en la barra. Se suben con <strong>Esquirlas de Estigma</strong>, no con puntos de habilidad.</p>
 
+  <h3>Mientras subes de nivel (orden de Whelps)</h3>
   <ol>
-    <li class="stigma-row"><div><span class="tier stigma">Slot 1 (Lv 22)</span> <strong>Light of Protection</strong> — Toggle 5s CD, +10.5% PvE Dmg Boost y Tolerance a ti y party</div></li>
-    <li class="stigma-row"><div><span class="tier stigma">Slot 2 (Lv 27)</span> <strong>Noble Aura</strong> — Aura que te sigue y pega con tu target</div></li>
-    <li class="stigma-row"><div><span class="tier stigma">Slot 3 (Lv 32)</span> <strong>Earth Punishment</strong> — Earth dmg + DoT. <strong>Condemnation always crits</strong> (couga54)</div></li>
-    <li class="stigma-row"><div><span class="tier stigma">Slot 4 (Lv 37)</span> <strong>Summon Resurrection</strong> — Res 40m, 120s CD (único res del clérigo)</div></li>
+    <li class="stigma-row"><span data-icon="cs_castigo" data-size="36"></span><div><span class="tier stigma">Nv. 22</span> <strong>Castigo terrestre</strong> <small>(Earth Punishment)</small> — abajo en la línea de Condena. A <strong>rango 5</strong> Condena hace siempre crítico.</div></li>
+    <li class="stigma-row"><span data-icon="cs_proteccion" data-size="36"></span><div><span class="tier stigma">Nv. 27</span> <strong>Luz de protección</strong> <small>(Light of Protection)</small> — tu mantra. Interruptor: actívalo una vez.</div></li>
+    <li class="stigma-row"><span data-icon="cs_aura_noble" data-size="36"></span><div><span class="tier stigma">Nv. 32</span> <strong>Aura noble</strong> <small>(Noble Aura)</small> — ataca contigo 5 minutos: daño gratis.</div></li>
+    <li class="stigma-row"><span data-icon="cs_oracion" data-size="36"></span><div><span class="tier stigma">Nv. 37</span> <strong>Oración de amplificación</strong> <small>(Prayer of Amplification)</small> — +20 % de Ataque. Loadout completo.</div></li>
   </ol>
+  <p>Al llegar al 22 aprende también <strong>Resurrección de invocación</strong> con 1 esquirla (por si el grupo cae), y si te sobran, <strong>Poder de vida</strong> y <strong>Absolución</strong> a 5 para aguantar entre grupos. Las esquirlas de verdad van a Castigo terrestre.</p>
 
-  <div class="callout warn">
-    <strong>Variante solo-DPS puro (couga54):</strong> swap slot 4 Summon Resurrection → <strong>Prayer of Amplification</strong> (+20% Attack con multiplicadores pasivos) cuando ya hay chanter en party o content solo.
-  </div>
+  <h3>Al nivel 45, para jefes</h3>
+  <p>Whelps: <strong>Castigo terrestre a 20 primero</strong>, después el resto parejo y Luz de protección al final. Lucia lleva a 20 Oración, Castigo y Luz de protección.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Estigma</th><th>Rango</th><th>Para qué</th><th>Especializaciones</th></tr></thead>
+    <tbody>
+      <tr><td><span data-icon="cs_castigo" data-size="28"></span> <strong>Castigo terrestre</strong></td><td><strong>15 → 20</strong></td><td>Condena siempre crítica (sin enfriamiento) y el grupo recibe Defensa, Ataque y Doble golpe. De lo más importante que tienes.</td><td>5: Condena hace crítico sobre objetivos con Castigo · 10: +10 % Doble golpe (+5 % al grupo) · 15: +10 % Ataque y Defensa (+5 % al grupo) · 20: +10 s de duración</td></tr>
+      <tr><td><span data-icon="cs_oracion" data-size="28"></span> <strong>Oración de amplificación</strong></td><td><strong>10 → 20</strong></td><td>+20 % de Ataque en enfriamiento y potencia tus dos Gracias. Sin ella el Clérigo no tiene daño.</td><td>5: +20 % Amplificación de Daño JcE · 10: ×1,5 Gracia empírea · 15: ×1,5 Gracia terrestre · 20: +15 % de Ataque</td></tr>
+      <tr><td><span data-icon="cs_proteccion" data-size="28"></span> <strong>Luz de protección</strong></td><td><strong>20</strong></td><td>Curación recibida, Precisión, +10 % PV y Golpe perfecto, sin enfriamiento. Interruptor: fuera de líneas y macro. No se apila con el mantra de un Chanter.</td><td>5: +10 % de curación recibida · 10: +100 Precisión · 15: +10 % PV máx. · 20: +10 % Golpe perfecto</td></tr>
+      <tr><td><span data-icon="cs_aura_noble" data-size="28"></span> <strong>Aura noble</strong></td><td><strong>10+</strong></td><td>Un orbe que ataca contigo: casi dobla tu daño. Cuanto más alto, mejor.</td><td>5: +200 Crítico del aura · 10: +daño a objetivos con Estigma debilitante · 15: +30 % de daño a objetivos inmunes a incapacitación · 20: −1 s entre ataques del aura</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Coste en Esquirlas de Estigma</h3>
+  <table>
+    <thead><tr><th>Rango</th><th>Esquirlas por rango</th><th>Acumulado</th></tr></thead>
+    <tbody>
+      <tr><td>1 → 5</td><td>1</td><td>5</td></tr>
+      <tr><td>6 → 10</td><td>2</td><td>15</td></tr>
+      <tr><td>11 → 15</td><td>4</td><td>35</td></tr>
+      <tr><td>16 → 20</td><td>8</td><td>75</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>Nv. 23 – 39: <strong>1 esquirla por nivel</strong> · Nv. 40 – 45: <strong>2 por nivel</strong></li>
+    <li>Extra: misiones, mazmorras y logros</li>
+  </ul>
+
+  <h3>Cambios según el grupo</h3>
+  <ul>
+    <li class="stigma-row"><span data-icon="cs_absolucion" data-size="36"></span><div><strong>Absolución</strong> — <strong>con un Chanter</strong> en el grupo, en lugar de Luz de protección. La curación de estigma más fuerte, pero solo buena desde 15. Especializaciones: 5: −30 s de enfriamiento · 10: quita todos los efectos negativos · 15: +5 % de PV restaurados.</div></li>
+    <li class="stigma-row"><span data-icon="cs_poder_vida" data-size="36"></span><div><strong>Poder de vida</strong> <small>(Benevolence)</small> — curación en el tiempo para todo el grupo en santuarios; como Absolución, vale una ranura desde 15.</div></li>
+    <li class="stigma-row"><span data-icon="cs_yustiel" data-size="36"></span><div><strong>Poder de Yustiel</strong> — 10 s de tolerancia al daño para el grupo. En santuarios, en lugar de Aura noble u Oración si hace falta aguantar.</div></li>
+    <li class="stigma-row"><span data-icon="cs_resurreccion" data-size="36"></span><div><strong>Resurrección de invocación</strong> — si tu grupo muere mucho. En grupos aleatorios Lucia la quita: si el jugador revive con piedra, el estigma entra igual en 2 min de enfriamiento.</div></li>
+    <li class="stigma-row"><span data-icon="cs_voz" data-size="36"></span><div><strong>Voz de perdición</strong> — −200 Resistencia Crítica al jefe (rango 15): opción en santuarios con un segundo sanador, sobre todo al principio cuando a todos les falta crítico.</div></li>
+    <li class="stigma-row"><span data-icon="cs_explosion" data-size="36"></span><div><strong>Explosión de poder</strong> — solo donde hay que romper la barra de Tambaleo y nadie más puede (Pesadilla).</div></li>
+    <li class="stigma-row"><span data-icon="cs_salvacion" data-size="36"></span><div><strong>Salvación</strong> — SKIP: 3 s de invulnerabilidad con enfriamiento largo, y los ataques rojos la atraviesan. Mejor esquiva. <strong>Atadura</strong> y <strong>Estigma de agresión</strong> no sirven en JcE.</div></li>
+  </ul>
 
   <div class="callout info">
-    <strong>Swap si tu party tiene Chanter:</strong> Light of Protection → <strong>Absolution</strong> (couga54).<br>
-    <strong>PvP loadout:</strong> Absolution / Salvation / Yustiel's Power.
+    <strong>Resumen:</strong><br>
+    • <strong>Jefes y mazmorras:</strong> Castigo terrestre + Luz de protección + Oración de amplificación + Aura noble.<br>
+    • <strong>Con un Chanter:</strong> Luz de protección → Absolución (o Resurrección / Poder de Yustiel).<br>
+    • Whelps guarda dos preajustes de habilidades, con y sin Chanter: cada preajuste guarda sus propios rangos.
   </div>
-
-  <h3>Pick rates top-tier KR (metabot.gg)</h3>
-  <ul>
-    <li><strong>Light of Protection</strong> — 98.4% uso</li>
-    <li><strong>Noble Aura</strong> — 93.6%</li>
-    <li><strong>Earth Punishment</strong> — 91.9%</li>
-    <li><strong>Benevolence</strong> — 86.8% (en Global S1 couga sustituye por Summon Resurrection o Prayer of Amplification)</li>
-  </ul>
 </section>
 
 <section id="daevanion">
-  <h2>Daevanion Boards — Clérigo</h2>
-  <p>Los 5 boards son los mismos que Asesino (Nezekan, Zikel, Vaizel, Triniel, Azphel) pero el camino prioriza nodos de Clérigo. couga54 total ~229 puntos PvE.</p>
-
-  <table>
-    <thead><tr><th>Board</th><th>Lv</th><th>DP objetivo</th><th>Foco Clérigo</th></tr></thead>
-    <tbody>
-      <tr><td>Nezekan</td><td>12</td><td><strong>63 DP</strong></td><td>Combat Speed + CDR. Blues: Healing Enhancement + Warm Benediction</td></tr>
-      <tr><td>Zikel</td><td>20</td><td><strong>62 DP</strong></td><td>Damage Boost + Damage Tolerance. Radiant Benediction para party heal on hit</td></tr>
-      <tr><td>Vaizel ⭐</td><td>30</td><td><strong>44 DP</strong></td><td>Critical Damage Boost (sinergia con Empyrean Lord's Grace)</td></tr>
-      <tr><td>Triniel</td><td>40</td><td><strong>60 DP</strong></td><td>Multi-Hit Chance</td></tr>
-      <tr><td>Azphel</td><td>45</td><td>— solo PvP</td><td>⚠️ SKIP en PvE puro</td></tr>
-    </tbody>
-  </table>
+  <h2>Tableros Daevanion</h2>
+  <p>Daevanion sube tus habilidades del rango 10 al 14 y suma atributos. Hay <strong>5 tableros</strong>, uno por cada nivel de desbloqueo. Empiezas en el centro y solo puedes abrir un nodo que esté pegado a otro que ya tengas.</p>
 
   <div class="callout info">
-    <strong>Ruta por nodo (couga54):</strong> azules (skill) → naranjas (ataque) → pasivas → defensivos. Toma las 4 esquinas de Nezekan y Zikel. couga: <em>"Resetting a board is cheap"</em> — prioriza llenar los 229 pts.
+    <strong>Cómo leer el tablero:</strong><br>
+    • La <strong>línea dorada</strong> es la ruta JcE de couga54 (orden de Lucia): en Nezekan y Zikel las cuatro esquinas y tus habilidades; en Vaizel y Triniel, directo a las activas que usas.<br>
+    • El <strong>número</strong> de cada nodo es el orden de clic: primero los naranjas de ataque (Velocidad de Hechizo, Enfriamiento, Amplificación de Daño y de Daño Crítico, Multigolpe), luego Ataque y Crítico, luego Condena, Aura divina y Centella, luego el resto de habilidades, después los naranjas defensivos y las pasivas al final.<br>
+    • Mueve la barra hasta los pasos que ya hiciste: lo hecho se pone en <strong style="color:var(--ok)">verde</strong> y el siguiente clic <strong>parpadea</strong>. Se guarda en tu navegador.<br>
+    • La Tolerancia a Daño Crítico y la Resistencia a Multigolpe no sirven en JcE: los jefes no hacen críticos ni multigolpe. Evita los nodos de PM +50 si puedes.<br>
+    • Costes: atributo 1 · pasiva 2 · activa 3 · especial (naranja) 4. Devolver un nodo es barato: lo rehacerás muchas veces.
   </div>
 
   <div class="callout warn">
-    <strong>Corner nodes exactos Vaizel/Triniel:</strong> no verificado públicamente — requiere mapa in-game. couga provee planner interactivo sin labels concretos.
+    <strong>Otra opción (Whelps):</strong> primero los nodos azules que llevan tus activas a 12 (la segunda ranura de especialización es un gran salto), luego los naranjas de ataque y las Gracias, Ataque y Crítico, y solo al final los defensivos.
+  </div>
+
+  <div id="boardsContainer"></div>
+</section>
+
+<section id="pets">
+  <h2>Mascotas y Genus Insight</h2>
+  <p>Las mascotas dan <strong>bonificaciones pasivas permanentes</strong> aunque no estén equipadas, y el progreso se comparte por familia (genus). Se desbloquean con la misión <em>"All Geared Up"</em> del Episodio 2 (~nivel 10-11).</p>
+
+  <div class="callout info">
+    <strong>Consejo de Lucia:</strong> sube <strong>todas las mascotas a nivel 3 pronto</strong>: matar mascotas que ya subiste da los cristales para las líneas de Genus Insight. Cada mascota: 5 almas (nivel 1) + 25 (nivel 2) + 75 (nivel 3, transformación) = 105.
+  </div>
+
+  <h3>Qué tomar en cada rueda de Genus Insight (Lucia)</h3>
+  <table>
+    <thead><tr><th>Ranura</th><th>Toma</th></tr></thead>
+    <tbody>
+      <tr><td>1, 5</td><td>Bonificación de Ataque (en la 5, o Ataque máximo)</td></tr>
+      <tr><td>2, 8</td><td>PV</td></tr>
+      <tr><td>3, 6, 9</td><td>Precisión, o Bloqueo si tu Precisión ya es alta</td></tr>
+      <tr><td>4</td><td>La línea de daño de esa rueda: Amplificación de Daño, Golpe perfecto o Daño de ataque trasero</td></tr>
+      <tr><td>7</td><td>Regeneración o Aguante</td></tr>
+      <tr><td>Especial</td><td><strong>Doble golpe</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn">
+    Busca el valor más alto y <strong>bloquea una línea solo cuando esté cerca del máximo</strong>, y nunca antes de que la rueda llegue a nivel 9-10.
   </div>
 </section>
 
 <section id="stats">
-  <h2>Stats Prioritarios + Gear BiS</h2>
+  <h2>Stats y equipo</h2>
 
-  <h3>Gear lines (couga54 fuente directa Clérigo main)</h3>
-  <ol>
-    <li><strong>Weapon Damage Boost</strong></li>
-    <li><strong>Might (Attack)</strong> — tu Attack escala tu heal (via Healing Enhancement)</li>
-    <li><strong>Combat Speed</strong> — combina attack speed + cast speed</li>
-    <li><strong>Precision</strong></li>
-  </ol>
-
-  <h3>Character stats priority</h3>
-  <ol>
-    <li>Destruction</li>
-    <li>Wisdom (Crit Chance)</li>
-    <li>Illusion (CDR)</li>
-    <li>Time (Combat Speed)</li>
-    <li>Freedom (Accuracy)</li>
-    <li>Death (Crit Hit)</li>
-  </ol>
-
-  <div class="callout crit">
-    <strong>Breakpoints endgame:</strong> mínimo <strong>1,000 Accuracy</strong> y <strong>1,000 Critical Hit</strong>.
+  <div class="stat-grid">
+    <div class="stat"><div class="label">#1 — Ataque y curación</div><div class="value">Poder (Might)</div></div>
+    <div class="stat"><div class="label">#2 — Velocidad</div><div class="value">Vel. de combate</div></div>
+    <div class="stat"><div class="label">#3 — Daño</div><div class="value">Amplif. de Daño</div></div>
+    <div class="stat"><div class="label">#4 — Arma</div><div class="value">Amplif. de Daño de arma</div></div>
+    <div class="stat"><div class="label">#5 — Acierto</div><div class="value">Precisión</div></div>
+    <div class="stat"><div class="label">No en JcE</div><div class="value">Resist. / Evasión / Defensa</div></div>
   </div>
 
-  <h3>BiS Gear por slot</h3>
+  <h3>Líneas de equipo (Lucia)</h3>
+  <ul>
+    <li><strong>Arma y guarda:</strong> Amplificación de Daño de arma, Poder, Velocidad de combate, Precisión.</li>
+    <li><strong>Guantes:</strong> Velocidad de combate. <strong>Botas:</strong> Velocidad de movimiento.</li>
+    <li><strong>Accesorios:</strong> Velocidad de combate, Poder y Precisión, más una línea para Gracia terrestre o Gracia empírea.</li>
+    <li><strong>Anillos:</strong> fabrícalos en cuanto puedas: los fabricados tienen una línea más para habilidades activas. Llénalas con Condena, Resplandor de recobro, Rayo del juicio y Luz de curación o Aura divina.</li>
+  </ul>
+
+  <h3>Estadísticas divinas</h3>
+  <p>Kaeria: <strong>Destrucción</strong> (Ataque), <strong>Sabiduría</strong> (Doble golpe), <strong>Fantasía</strong> (enfriamientos), <strong>Tiempo</strong> <small>(Time, Velocidad de combate)</small>, <strong>Libertad</strong> (Precisión) y <strong>Muerte</strong> (Crítico: al Clérigo siempre le falta). Las cuatro de Lucia: Tiempo, Fantasía, Espacio y Destrucción.</p>
+  <div class="callout info">
+    <strong>Para la incursión de Ludra:</strong> al menos <strong>1.000 de Precisión</strong> y <strong>1.000 de Crítico</strong>.<br>
+    <strong>Alas:</strong> Alas de Talisra (Ataque 60, Defensa 400, Precisión 35, −4 % de enfriamientos) en la tienda de temporada por unos 250.000 puntos de temporada: ahórralos para ellas.
+  </div>
+
+  <h3>Arcana</h3>
   <table>
-    <thead><tr><th>Slot</th><th>BiS Global</th><th>Stats clave</th></tr></thead>
+    <thead><tr><th>Ranura</th><th>Conjunto / estadística</th><th>Busca habilidades</th></tr></thead>
     <tbody>
-      <tr><td><strong>Arma (Mace)</strong></td><td>Ludra's Fatal Mace (ilvl 102)</td><td>Weapon Dmg + Might</td></tr>
-      <tr><td><strong>Shield/Guard</strong></td><td>Krao Cave / Draupnir</td><td>Weapon Dmg + Might + Combat Speed + Precision</td></tr>
-      <tr><td><strong>Armadura (Chain)</strong></td><td>Krao Cave / Draupnir</td><td>HP + Attack + Crit Hit</td></tr>
-      <tr><td><strong>Guantes</strong></td><td>Draupnir</td><td>Combat Speed</td></tr>
-      <tr><td><strong>Botas</strong></td><td>Draupnir</td><td>Movement Speed</td></tr>
-      <tr><td><strong>Anillos ×2</strong></td><td>Abyssal Forge + crafting</td><td>Líneas de skills activas: Condemnation, Radiant Recovery, Judgment Thunder, Healing Light</td></tr>
-      <tr><td><strong>Theostone</strong></td><td>Cualquier dmg type PvE</td><td>Stun/Seal si PvP</td></tr>
+      <tr><td><strong>Cáliz</strong></td><td>Vitalidad (Velocidad de combate)</td><td>Lo que lleve tus habilidades clave de 16 a 20</td></tr>
+      <tr><td><strong>Pergamino</strong></td><td>Destino o Vida <small>(Destiny / Life)</small></td><td>Condena, Resplandor de recobro, Retribución terrestre, Centella</td></tr>
+      <tr><td><strong>Brújula</strong></td><td>Muerte o Libertad</td><td>Relámpagos sin puntería, Luz de curación, Aura divina, Rayo del juicio</td></tr>
+      <tr><td><strong>Campana</strong></td><td>Destrucción</td><td>Gracia empírea (evita Voluntad de supervivencia)</td></tr>
+      <tr><td><strong>Espejo</strong></td><td>Sabiduría (daño) o Fantasía (enfriamientos)</td><td>Gracia terrestre, Mejora curativa</td></tr>
     </tbody>
   </table>
-
-  <div class="callout info">
-    <strong>Nota sobre Casting Speed / Mana Regen / Crit Heal:</strong> Aion 2 los funde en <strong>Combat Speed</strong> + <strong>Healing Enhancement</strong>. Attack = stat de curación efectiva.
+  <div class="callout ok">
+    <strong>Bonos de conjunto:</strong> junta 2 + 2, o cuatro cartas de <strong>Vitalidad primigenia</strong> <small>(Primal Vigor)</small>: +60 de Ataque JcE con dos, +150 con cuatro, mientras tengas 70 % de PV o más. Al principio, una carta con las habilidades correctas vale más que una del conjunto correcto: arregla los conjuntos después.
   </div>
 
-  <h3>Pet (Genus Insight) para Clérigo</h3>
-  <p>Priorities de wheel (couga54, no especifica genus):</p>
+  <h3>Mientras subes de nivel</h3>
   <ul>
-    <li><strong>Slots 1, 5:</strong> Attack Bonus</li>
-    <li><strong>Slot 2:</strong> HP (PvE) / Crit Hit Resist (PvP)</li>
-    <li><strong>Slots 3, 6, 9:</strong> Accuracy</li>
-    <li><strong>Slot 4:</strong> Damage Boost o Critical Damage</li>
-    <li><strong>Slot 7:</strong> Regeneration</li>
-    <li><strong>Special:</strong> Double Chance</li>
+    <li>Tras el prólogo: junta 40 plumas (120 esquirlas) para mejorar pronto el amuleto; hacia el 17, amuleto a +10 y transfórmalo en la versión azul.</li>
+    <li><strong>Arma a ~+10</strong> en cualquier momento: es el mayor salto de daño mientras subes. No la empujes más antes del tope.</li>
+    <li>Nv. 15 / 20 / 25: limpia los escondites que te pillen de camino: la primera vez dan Piedras de mejora y Cristales Daevanion.</li>
+    <li>Nv. 40: Cueva de Krao pide unos 1.000 de puntuación de equipo.</li>
   </ul>
-  <p><em>Genus específico (Cogni vs Natura vs Varlan) no verificado para Clérigo en fuentes aceptadas.</em></p>
+</section>
+
+<section id="systems">
+  <h2>Sistemas de progresión (PvE)</h2>
+  <p>Los sistemas son los mismos para todas las clases; aquí solo lo que cambia para el Clérigo. El detalle completo (costes, materiales, dónde farmear) está en la <a href="asesino.html#systems">guía del Asesino</a>.</p>
+
+  <div class="callout crit">
+    <strong>Prioridades:</strong><br>
+    <strong>Alta:</strong> Mejora del equipo → Amplificación → Vinculación de alma → Arcana → Piedras de maná → Pase de batalla<br>
+    <strong>Media:</strong> Hitos de colección de mascotas, Teopiedras (endgame)<br>
+    <strong>Baja:</strong> Potencial (JcJ), Legión (individual)
+  </div>
+
+  <h3>Lo específico del Clérigo</h3>
+  <ul>
+    <li><strong>Orden de mejora:</strong> la maza primero (+15/+20, luego Amplificación +5, luego Vinculación al 100 %), después pecho y pantalones.</li>
+    <li><strong>Anillos fabricados</strong> antes que los de botín: la línea extra de habilidad activa es lo que lleva Condena y Resplandor de recobro de 16 a 20.</li>
+    <li><strong>Piedras de maná:</strong> Poder, Velocidad de combate, Amplificación de Daño de arma y Precisión. Ninguna defensiva.</li>
+    <li><strong>Arcana:</strong> cartas con Condena, Resplandor de recobro, Aura divina y Centella; Campana con Gracia empírea.</li>
+    <li><strong>Final de nivel (45):</strong> actividades Shugo para el set de recompensas del tope (equipo dorado, materiales) y barre el mapa: interrogaciones, hogueras, misiones verdes, cubos ocultos y plumas (altar nivel 30 = título).</li>
+    <li><strong>Diario:</strong> Pesadilla, pisos de Transformación según tu puntuación de equipo, mazmorras T2 antes que T3 (vigila tu energía).</li>
+  </ul>
 </section>
 
 <section id="macros">
-  <h2>Macros Esenciales</h2>
+  <h2>Macros y barra de habilidades</h2>
+  <ul style="margin:0 0 1rem 1.2rem">
+    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>.</li>
+    <li><strong>Macro del juego:</strong> mientras mantienes su tecla, pulsa tus líneas en orden y se salta lo que esté en enfriamiento.</li>
+  </ul>
+  <div class="callout warn">
+    <strong>Primero asigna la tecla:</strong> la macro no tiene tecla por defecto. Ve a <em>Ajustes → Teclas → General → Macro</em> y ponla en el <strong>clic derecho</strong>. Así la mantienes pulsada a la vez que Retribución terrestre en el clic izquierdo.
+  </div>
 
-  <h3>Macro Prayer line (DPS principal)</h3>
-  <div class="macro-box">/skill Prayer of Amplification
-/queue Earth Punishment
-/queue Chain of Torment
-/queue Condemnation</div>
+  <h3>Mientras subes de nivel (Grobs)</h3>
+  <div class="macro-box">Línea de Enlace (en la macro, clic derecho)
+  4  Rayo del juicio
+  3  Condena
+  2  Estigma debilitante
+  1  Enlace de dolor        ← la de mayor prioridad
 
-  <h3>Macro Divine line (AoE / sustain)</h3>
-  <div class="macro-box">/skill Divine Aura
-/queue Judgment Thunder</div>
+Macro: 1 paso → Línea de Enlace   10 ms
+Clic izquierdo: Retribución terrestre (mantener)
+A mano: Centella (se carga, déjala fuera de la macro), curaciones, estigmas</div>
+  <p>Enlace de dolor va primero para que Condena pueda golpear; Rayo del juicio no tiene enfriamiento y rellena los huecos. Cuando Condena llegue a rango 12 y se restablezca con crítico, pasa a la de nivel 45.</p>
 
-  <h3>Macro Elite (burst packs)</h3>
-  <div class="macro-box">/skill Debilitating Mark
-/queue Chain of Torment
-/queue Bolt
-/queue Condemnation</div>
+  <h3>Nivel 45 — configuración de Lucia</h3>
+  <p>Orden como en el juego, de arriba abajo. El 1 es la casilla de abajo, la de mayor prioridad.</p>
+  <div class="macro-box">Línea de Oración (tecla Q)
+  4  Condena
+  3  Enlace de dolor
+  2  Castigo terrestre
+  1  Oración de amplificación   ← la de mayor prioridad
 
-  <h3>Teclas recomendadas</h3>
+Línea de Aura (tecla T)
+  2  Rayo del juicio
+  1  Aura divina
+
+Línea de debilitación (tecla 1, a mano)
+  2  Estigma debilitante
+  1  Relámpagos sin puntería
+
+Línea de curación (tecla E, a mano)
+  2  Luz de curación
+  1  Luz de regeneración</div>
+  <div class="macro-box">Macro del juego (clic derecho), cada paso 10 ms:
+1  Línea de Oración
+2  Línea de Aura</div>
+  <p><strong>Teclas propias:</strong> clic izquierdo Retribución terrestre · 3 Resplandor de recobro · 4 Centella · 5 Luz de protección (interruptor) · 8 Aura noble.</p>
+  <div class="callout crit">
+    <strong>Luz de protección fuera de las líneas y de la macro:</strong> es un interruptor, y cada segunda pulsación la apagaría.
+  </div>
+
+  <h3>Otra opción: la macro de Whelps</h3>
+  <p>Con Condena a 12 y restableciéndose con crítico, la macro pulsa la línea de Castigo tres veces por cada vez que pulsa la de debilitación:</p>
+  <div class="macro-box">Línea de Castigo (sin tecla, solo la usa la macro)
+  4  Enlace de dolor
+  3  Condena
+  2  Oración de amplificación
+  1  Castigo terrestre          ← la de mayor prioridad
+
+Línea de debilitación (tecla Q)
+  4  Rayo del juicio
+  3  Luz de regeneración
+  2  Aura divina
+  1  Estigma debilitante
+
+Macro (clic derecho), cada paso 10 ms:
+1  Línea de Castigo
+2  Línea de Castigo
+3  Línea de Castigo
+4  Línea de debilitación</div>
+  <p>A mano: Centella cargada, Luz de curación para golpes pequeños, Resplandor de recobro para los grandes. Si en el Análisis de combate Condena golpea menos que Rayo del juicio, añade otro paso de la línea de Castigo (en el equipo de Whelps: 26k de DPS en vez de 22k).</p>
+
+  <h3>Teclas sugeridas</h3>
   <table>
     <thead><tr><th>Tecla</th><th>Función</th></tr></thead>
     <tbody>
-      <tr><td><code>LMB</code></td><td>Auto-attack mace</td></tr>
-      <tr><td><code>MMB</code></td><td>Macro Prayer line (/queue)</td></tr>
-      <tr><td><code>Q</code></td><td>Condemnation manual (asegurar trigger)</td></tr>
-      <tr><td><code>E</code></td><td>Divine line macro</td></tr>
-      <tr><td><code>R</code></td><td>Healing Light (reactivo)</td></tr>
-      <tr><td><code>F</code></td><td>Radiant Recovery (cleanse)</td></tr>
-      <tr><td><code>Shift+F</code></td><td>Defiance (CC break)</td></tr>
-      <tr><td><code>G</code></td><td>Light of Regeneration (HoT grupal)</td></tr>
+      <tr><td><code>Clic izquierdo</code></td><td>Retribución terrestre, sin parar</td></tr>
+      <tr><td><code>Clic derecho</code></td><td>Macro del juego (mantener)</td></tr>
+      <tr><td><code>Q</code> / <code>T</code></td><td>Línea de Oración / línea de Aura</td></tr>
+      <tr><td><code>E</code></td><td>Línea de curación</td></tr>
+      <tr><td><code>1</code></td><td>Línea de debilitación</td></tr>
+      <tr><td><code>3</code> · <code>4</code> · <code>5</code> · <code>8</code></td><td>Resplandor de recobro · Centella · Luz de protección · Aura noble</td></tr>
     </tbody>
   </table>
+</section>
+
+<section id="progress">
+  <h2>Mi Progreso</h2>
+  <p>Marca los hitos conforme los completes. El progreso se guarda localmente en tu navegador, aparte del Asesino.</p>
+  <div class="progress-bar"><div class="progress-bar-fill" id="progressFill"></div></div>
+  <div id="progressText" style="text-align:center; color:var(--text-dim); font-size:0.85rem;">0 de 0 completados</div>
+
+  <h3>Hitos de progresión</h3>
+  <div id="progressList">
+    <label class="progress-check"><input type="checkbox" data-key="p1"> Nv. 4 — Enlace de dolor y modo objetivo activado</label>
+    <label class="progress-check"><input type="checkbox" data-key="p2"> Nv. 8 — Condena en la línea de Enlace + macro de subida asignada al clic derecho</label>
+    <label class="progress-check"><input type="checkbox" data-key="p3"> Nv. 11 — Mascotas desbloqueadas (misión All Geared Up)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p4"> Nv. 12 — Tablero Nezekan empezado</label>
+    <label class="progress-check"><input type="checkbox" data-key="p5"> Nv. 14 — Centella en la barra (especialización +30 % velocidad)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p6"> Nv. ~17 — Amuleto a +10 y transformado a azul</label>
+    <label class="progress-check"><input type="checkbox" data-key="p7"> Nv. 21 — Gracia terrestre aprendida (al tope en cuanto se pueda)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p8"> Nv. 22 — Ascensión + Castigo terrestre a rango 5 en la línea de Condena</label>
+    <label class="progress-check"><input type="checkbox" data-key="p9"> Nv. 25 — Retribución terrestre y Rayo del juicio a 10</label>
+    <label class="progress-check"><input type="checkbox" data-key="p10"> Nv. 27 — Luz de protección activada (fuera de la macro)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p11"> Nv. 32 — Aura noble en la ranura 3</label>
+    <label class="progress-check"><input type="checkbox" data-key="p12"> Nv. 37 — Oración de amplificación: estigmas completos</label>
+    <label class="progress-check"><input type="checkbox" data-key="p13"> Condena a rango 12 (se restablece con crítico) + macro de nivel 45</label>
+    <label class="progress-check"><input type="checkbox" data-key="p14"> Nv. 45 — Luz de curación a 16 antes de mazmorras en grupo</label>
+    <label class="progress-check"><input type="checkbox" data-key="p15"> Condena, Resplandor de recobro, Aura divina y Centella a 16</label>
+    <label class="progress-check"><input type="checkbox" data-key="p16"> Castigo terrestre a rango 20</label>
+  </div>
+
+  <h3>Hitos de mascotas</h3>
+  <div id="progressPets">
+    <label class="progress-check"><input type="checkbox" data-key="pet1"> Primera mascota a nivel 3 (transformación)</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet2"> Todas las mascotas disponibles a nivel 3</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet3"> Una rueda de Genus Insight a nivel 9-10</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet4"> Ranura especial con Doble golpe</label>
+  </div>
+
+  <h3>Hitos de equipo</h3>
+  <div id="progressSystems">
+    <label class="progress-check"><input type="checkbox" data-key="sys1"> Maza a +10</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys2"> Maza a su tope de mejora + Amplificación +5</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys3"> Maza con Vinculación de alma al 100 %</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys4"> Dos anillos fabricados con líneas de habilidades activas</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys5"> Arcana: 4 cartas de Vitalidad primigenia (o 2 + 2)</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys6"> 1.000 de Precisión y 1.000 de Crítico (listo para Ludra)</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys7"> Alas de Talisra compradas</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys8"> Pase de batalla actual al 100 %</label>
+  </div>
 </section>
 
 <section id="credits">
   <h2>Fuentes y Verificación</h2>
-  <p>Esta guía refleja el meta del parche Global S1 (8-oct-2026). Fuentes aceptadas:</p>
+  <p>La build sigue la guía del Clérigo de couga54 (8-oct-2026, Season 1), que a su vez reúne a estos creadores. Nombres en español del cliente: metabot.gg/es_ES.</p>
   <ul>
-    <li><a href="https://couga54.github.io/aion2-guides/en/cleric/" target="_blank" rel="noopener">couga54 — Cleric guide (fuente ancla)</a></li>
-    <li><a href="https://metabot.gg/en/aion-2/classes/cleric" target="_blank" rel="noopener">Metabot — Cleric</a></li>
-    <li><a href="https://aion2.run/en/classes/cleric" target="_blank" rel="noopener">aion2.run — Cleric</a></li>
-    <li><a href="https://aion2maps.com/guides/cleric/" target="_blank" rel="noopener">aion2maps — Cleric guides</a></li>
+    <li><a href="https://couga54.github.io/aion2-guides/en/cleric/" target="_blank" rel="noopener">couga54 — Cleric (PvE, PvP, Leveling)</a></li>
+    <li><strong>Lucia</strong> — Aion 2 Cleric Guide from a Worlds 1st Rank 1 (global, 5-oct): especializaciones, rangos de estigma, macro de dos pasos, líneas de equipo, Genus Insight, alas</li>
+    <li><strong>Kaeria</strong> — guía JcE del Clérigo (cliente de Taiwán, válida para global): rangos, estigmas, pasivas, estadísticas, Daevanion, Arcana</li>
+    <li><strong>Whelps</strong> — Cleric Starter Guide (global): macro con tres pasos de Castigo y la comprobación del Análisis de combate, orden de estigmas al subir, orden de tableros</li>
+    <li><strong>aLuckyRO</strong> — Latest Cleric PVE Build for Global: especializaciones tempranas, combo Enlace → Condena, pasivas de los primeros días</li>
+    <li><strong>Grobs</strong> — AION 2 Macro Guide: macro de subida · <strong>MMO Codex</strong> — orden de habilidades al subir</li>
+    <li><a href="https://metabot.gg/es_ES/aion-2/classes/cleric" target="_blank" rel="noopener">metabot.gg — Clérigo (nombres e iconos)</a> · <a href="https://questlog.gg" target="_blank" rel="noopener">questlog.gg</a> (datos de los tableros del cliente global)</li>
   </ul>
 
   <div class="callout warn">
-    <strong>Disclaimer:</strong> game8.co descartado por tier list incorrecta. Fextralife devolvió 404 en la ruta de Clérigo al momento de redactar.
-  </div>
-
-  <div class="callout info">
-    <strong>Lagunas no verificadas:</strong> corner nodes Vaizel/Triniel exactos · DP allocation granular por nodo · pet genus específico (Cogni vs Natura vs Varlan) · Casting Speed / Mana Regen / Crit Heal como stats discretos.
+    <strong>Nombres sin confirmar en español:</strong> "Chanter" (metabot solo lista Gladiador, Templario y Asesino), "Tiempo", "Destino", "Vida" y "Vitalidad primigenia" (Arcana). Van con el inglés entre paréntesis.<br>
+    <strong>Disclaimer:</strong> si una fuente menciona cap 50, 6 ranuras de estigma o rango 25, es información de KR/TW y no aplica a global.
   </div>
 </section>
 
 </main>
 
 <footer>
-  <p>Guía Clérigo PvE · Aion 2 Global Season 1 · Actualizado 2026-10-08</p>
-  <p><a href="index.html">← Volver al inicio</a> · <a href="asesino.html">Ver Asesino</a> · <a href="https://github.com/Zentokux/aion2-asesino-build" target="_blank" rel="noopener">GitHub</a></p>
+  <p>Guía Progresiva Clérigo PvE · Aion 2 Global Season 1 · Última actualización 8-oct-2026</p>
+  <p><a href="index.html">← Volver al inicio</a> · <a href="https://github.com/Zentokux" target="_blank" rel="noopener">github.com/Zentokux</a></p>
 </footer>
 
+<script>
+// Tabs
+document.querySelectorAll('.level-tabs').forEach(tabs => {
+  tabs.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      const section = btn.closest('section');
+      section.querySelectorAll('.level-tabs button').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      section.querySelector('#' + target).classList.add('active');
+    });
+  });
+});
+
+// Progress tracking with localStorage
+const checks = document.querySelectorAll('.progress-check input');
+const progressFill = document.getElementById('progressFill');
+const progressText = document.getElementById('progressText');
+
+function updateProgress() {
+  const total = checks.length;
+  const done = Array.from(checks).filter(c => c.checked).length;
+  const pct = total > 0 ? (done / total) * 100 : 0;
+  progressFill.style.width = pct + '%';
+  progressText.textContent = done + ' de ' + total + ' completados (' + Math.round(pct) + '%)';
+}
+
+checks.forEach(check => {
+  const key = 'aion2_cleric_' + check.dataset.key;
+  let saved = null;
+  try { saved = localStorage.getItem(key); } catch (e) {}
+  if (saved === 'true') {
+    check.checked = true;
+    check.parentElement.classList.add('checked');
+  }
+  check.addEventListener('change', () => {
+    try { localStorage.setItem(key, check.checked); } catch (e) {}
+    check.parentElement.classList.toggle('checked', check.checked);
+    updateProgress();
+  });
+});
+
+updateProgress();
+
+// Load progressive planner + Daevanion boards
+if (typeof buildPlanner === 'function') buildPlanner();
+if (typeof buildAllBoards === 'function') buildAllBoards();
+
+// Smooth scroll for nav
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 70,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+<script src="icons.js?v=2026-10-08-r"></script>
+<script src="planner-clerigo.js?v=2026-10-08-r"></script>
+<script src="planner.js?v=2026-10-08-r"></script>
+<script src="daevanion-clerigo.js?v=2026-10-08-r"></script>
+<script src="daevanion.js?v=2026-10-08-r"></script>
 </body>
 </html>
