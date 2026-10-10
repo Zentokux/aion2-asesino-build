@@ -210,25 +210,25 @@ function renderLevel(lv) {
     invEl.innerHTML = '<p class="empty-msg">En este nivel no ganas puntos de habilidad.</p>';
   }
   // Puntos sobrantes (misiones secundarias, Piedras de sabiduría, Mazmorras selladas): el plan solo cuenta los de subir
-  // de nivel, así que aquí va lo que aún cabe en este nivel, siguiendo el mismo orden (PRIORITY y luego EXTRA).
-  const sim = { ...s.ranks };
-  const extraRows = [...PRIORITY, ...EXTRA].map(([id, t]) => {
-    const to = Math.min(t, rankCap(lv, SKILLS[id].unlock)), from = sim[id];
-    if (!from || from >= to) return null;
+  // de nivel, así que aquí va el rango máximo que el juego deja en este nivel, en el mismo orden (PRIORITY y luego EXTRA).
+  // Si una habilidad vuelve a salir en EXTRA con más rango (Rugido bestial 8 → 10), va en esa posición más tarde.
+  let topeRows = [];
+  [...PRIORITY, ...EXTRA].forEach(([id, t]) => {
+    if (!s.ranks[id]) return;
+    const to = Math.min(t, rankCap(lv, SKILLS[id].unlock));
+    const prev = topeRows.filter(x => x.id === id).pop();
+    if (prev && to <= prev.to) return;
+    if (prev && !prev.cost) topeRows = topeRows.filter(x => x !== prev);
     let cost = 0;
-    for (let r = from + 1; r <= to; r++) cost += skillRankCost(r);
-    sim[id] = to;
-    return { id, from, to, cost };
-  }).filter(Boolean);
-  if (extraRows.length) {
-    let acc = 0;
-    invEl.innerHTML += '<h4>🎁 ¿Te sobran puntos? (misiones secundarias, Piedras de sabiduría)</h4>'
-      + '<table class="plv-extra"><thead><tr><th>#</th><th>Habilidad</th><th>Rango</th><th>Cuesta</th><th>Acumulado</th></tr></thead><tbody>'
-      + extraRows.map((x, i) => { acc += x.cost; return `<tr><td>${i + 1}</td><td><span class="plv-extra-sk">${renderIcon(x.id, 24)}${SKILLS[x.id].name}</span></td><td>${x.from} → <b>${x.to}</b></td><td>${x.cost}</td><td>${acc}</td></tr>`; }).join('')
+    for (let r = Math.max(s.ranks[id], prev ? prev.to : 0) + 1; r <= to; r++) cost += skillRankCost(r);
+    topeRows.push({ id, to, cost });
+  });
+  if (topeRows.length && lv >= 4) {
+    invEl.innerHTML += `<h4>🎁 ¿Te sobran puntos (misiones secundarias, Piedras de sabiduría)? Lo máximo en el nivel ${lv}:</h4>`
+      + '<table class="plv-extra"><thead><tr><th>#</th><th>Habilidad</th><th>Rango máximo</th><th>Respecto al plan</th></tr></thead><tbody>'
+      + topeRows.map((x, i) => `<tr><td>${i + 1}</td><td><span class="plv-extra-sk">${renderIcon(x.id, 24)}${SKILLS[x.id].name}</span></td><td><b>${x.to}</b></td><td>${x.cost ? `+${x.cost} pts` : '✔ ya está'}</td></tr>`).join('')
       + '</tbody></table>'
-      + `<p class="plv-mini-note">Rango ${lv >= MAX_LVL ? 'máximo' : 'máximo en el nivel ' + lv}; si ya vas por delante del plan, empieza desde tu rango. Cuando el juego dice «Adquirible en el nv. X», pasa a la siguiente fila.</p>`;
-  } else if (s.spGained > 0) {
-    invEl.innerHTML += '<p class="plv-mini-note">🎁 ¿Te sobran puntos? En este nivel no cabe nada más: guárdalos para el siguiente.</p>';
+      + '<p class="plv-mini-note">Sube de arriba abajo hasta este rango. Rango = el Nv. del juego menos el (+N) verde del Daevanion. Si el juego dice «Adquirible en el nv. X», esa ya está al máximo: pasa a la siguiente.</p>';
   }
   invEl.style.display = 'block';
 
