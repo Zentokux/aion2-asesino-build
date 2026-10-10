@@ -1,0 +1,386 @@
+Hechicero Habilidad pasiva
+Invocación helada es una habilidad pasiva de Hechicero en AION 2 que se obtiene a nivel 9 y sube hasta el nivel de habilidad 40.
+Tiene un 50 % de prob. de infligir 43 (+23% Ataque) de daño adicional al atacar a un objetivo afectado por Lentitud.
+Tiempo de espera: 1s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad pasiva
+Se aprende a Nv. 9
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Invocación helada
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Tiene un 50 % de prob. de infligir 530 (+23% Ataque) de daño adicional al atacar a un objetivo afectado por Lentitud.
+Tiempo de espera: 1s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Mejora
+Invocación helada por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 43 Nv. 2 · 58 Nv. 3 · 77 Nv. 4 · 99 Nv. 5 · 117 Nv. 6 · 135 Nv. 7 · 154 Nv. 8 · 172 Nv. 9 · 194 Nv. 10 · 213 Nv. 11 · 226 Nv. 12 · 236 Nv. 13 · 250 Nv. 14 · 263 Nv. 15 · 277 Nv. 16 · 290 Nv. 17 · 300 Nv. 18 · 310 Nv. 19 · 320 Nv. 20 · 330 Nv. 21 · 340 Nv. 22 · 350 Nv. 23 · 360 Nv. 24 · 370 Nv. 25 · 380 Nv. 26 · 390 Nv. 27 · 400 Nv. 28 · 410 Nv. 29 · 420 Nv. 30 · 430 Nv. 31 · 440 Nv. 32 · 450 Nv. 33 · 460 Nv. 34 · 470 Nv. 35 · 480 Nv. 36 · 490 Nv. 37 · 500 Nv. 38 · 510 Nv. 39 · 520 Nv. 40 · 530
+Nv. 1 · 43 Nv. 40 · 530
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+43 (+23% Ataque)
+Nv. 9
+—
+2
+58 (+23% Ataque)
+Nv. 9
+1
+3
+77 (+23% Ataque)
+Nv. 12
+1
+4
+99 (+23% Ataque)
+Nv. 15
+1
+5
+117 (+23% Ataque)
+Nv. 18
+2
+6
+135 (+23% Ataque)
+Nv. 21
+2
+7
+154 (+23% Ataque)
+Nv. 24
+2
+8
+172 (+23% Ataque)
+Nv. 27
+4
+9
+194 (+23% Ataque)
+Nv. 30
+4
+10
+213 (+23% Ataque)
+Nv. 33
+4
+11
+226 (+23% Ataque)
+—
+—
+12
+236 (+23% Ataque)
+—
+—
+13
+250 (+23% Ataque)
+—
+—
+14
+263 (+23% Ataque)
+—
+—
+15
+277 (+23% Ataque)
+—
+—
+16
+290 (+23% Ataque)
+—
+—
+17
+300 (+23% Ataque)
+—
+—
+18
+310 (+23% Ataque)
+—
+—
+19
+320 (+23% Ataque)
+—
+—
+20
+330 (+23% Ataque)
+—
+—
+21
+340 (+23% Ataque)
+—
+—
+22
+350 (+23% Ataque)
+—
+—
+23
+360 (+23% Ataque)
+—
+—
+24
+370 (+23% Ataque)
+—
+—
+25
+380 (+23% Ataque)
+—
+—
+26
+390 (+23% Ataque)
+—
+—
+27
+400 (+23% Ataque)
+—
+—
+28
+410 (+23% Ataque)
+—
+—
+29
+420 (+23% Ataque)
+—
+—
+30
+430 (+23% Ataque)
+—
+—
+31
+440 (+23% Ataque)
+—
+—
+32
+450 (+23% Ataque)
+—
+—
+33
+460 (+23% Ataque)
+—
+—
+34
+470 (+23% Ataque)
+—
+—
+35
+480 (+23% Ataque)
+—
+—
+36
+490 (+23% Ataque)
+—
+—
+37
+500 (+23% Ataque)
+—
+—
+38
+510 (+23% Ataque)
+—
+—
+39
+520 (+23% Ataque)
+—
+—
+40
+530 (+23% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Invocación helada
+Estos nodos suben Invocación helada por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+2
+Nezekan
+Nv. 12
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Equipo que puede obtener Invocación helada
+920 piezas de equipo y Arcana en 11 categorías pueden obtener Invocación helada como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Campana
+8
+20%
+Nv. 4
+Campana de vitalidad
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Botas
+115
+10%
+Nv. 1
+Botas de rey dragón sabio brillante
+Capa
+115
+10%
+Nv. 1
+Capa de rey dragón sabio brillante
+Guantes
+115
+10%
+Nv. 1
+Guantes de rey dragón sabio brillante
+Yelmo
+115
+10%
+Nv. 1
+Yelmo de rey dragón sabio brillante
+Pieza inferior
+115
+10%
+Nv. 1
+Grebas de rey dragón sabio brillante
+Hombreras
+115
+10%
+Nv. 1
+Hombreras de rey dragón sabio brillante
+Pieza superior
+115
+10%
+Nv. 1
+Peto de rey dragón sabio brillante
+Pendientes
+50
+10%
+Nv. 1
+Pendientes de rey dragón sabio brillante
+Collar
+49
+10%
+Nv. 1
+Collar de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Invocación helada: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Invocación helada.
+Hechicero Habilidad pasiva 150 de 150 nv. medio 10,7 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Marca ígnea
+Nv. 1
+Toga terrestre
+Nv. 6
+Toga de llama
+Nv. 11
+Absorción de esencia
+Nv. 13
+Merced de resistencia
+Nv. 15
+Toga de helada
+Nv. 17
+Merced de mejora
+Nv. 21
+Pacto de resurrección
+Nv. 23
+Vaporización de viveza
+Nv. 25
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Invocación helada
+Invocación helada es una habilidad pasiva de Hechicero que se aprende a nivel 9 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Marca ígnea Toga terrestre Toga de llama Absorción de esencia
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Invocación helada
+¿Qué hace Invocación helada en AION 2?
+A nivel 1: Tiene un 50 % de prob. de infligir 43 (+23% Ataque) de daño adicional al atacar a un objetivo afectado por Lentitud. Tiempo de espera: 1s
+¿Cuándo aprende Invocación helada el Hechicero?
+A nivel de personaje 9. Después se puede subir hasta el nivel 40.
+¿Cómo subo Invocación helada por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Vaizel y Triniel). Invocación helada tiene 4 nodos así.
+¿Qué equipo puede obtener Invocación helada?
+920 piezas de equipo y Arcana pueden obtener Invocación helada como opción de habilidad aleatoria, hasta Nv. 4, principalmente Campana, Cáliz, Botas y Capa.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

@@ -1,0 +1,481 @@
+Hechicero Habilidad activa
+Explosión de Congelación es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 10 y sube hasta el nivel de habilidad 40. Enfriamiento en el nivel 1: 10 s.
+Inflige 395 (+155% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en estado de Congelación en un radio de 20 m. Al atacar a un objetivo con inmunidad a Incapacitación, se activa con un 7 % de prob.
+7 de daño al medidor de Tambaleo
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 10
+Nivel máx. 40
+Enfriamiento 10 s
+Alcance 20 m
+Qué hace Explosión de Congelación
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 3643 (+155% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en estado de Congelación en un radio de 20 m. Al atacar a un objetivo con inmunidad a Incapacitación, se activa con un 7 % de prob.
+7 de daño al medidor de Tambaleo
+Enfriamiento 10 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque
+Se puede usar en movimiento No, hay que estar quieto
+Especializaciones de Explosión de Congelación
+5 variantes cambian cómo funciona Explosión de Congelación. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Absorción de Puntos de Vida del 700, 700 %
+Especialización 2 · requiere nivel de habilidad 8
+Cambio a habilidad disponible en movimiento
+Especialización 3 · requiere nivel de habilidad 8
+Empuje de 2 m con un 75 % de prob.
+Especialización 4 · requiere nivel de habilidad 12
+Ignora el Bloqueo y Evasión / Acierto con golpe Crítico
+Especialización 5 · requiere nivel de habilidad 16
+50 % de prob. de reiniciar el tiempo de espera
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Explosión de Congelación por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 395 Nv. 2 · 519 Nv. 3 · 667 Nv. 4 · 791 Nv. 5 · 916 Nv. 6 · 1040 Nv. 7 · 1164 Nv. 8 · 1312 Nv. 9 · 1436 Nv. 10 · 1527 Nv. 11 · 1594 Nv. 12 · 1685 Nv. 13 · 1776 Nv. 14 · 1866 Nv. 15 · 1957 Nv. 16 · 2025 Nv. 17 · 2092 Nv. 18 · 2159 Nv. 19 · 2227 Nv. 20 · 2294 Nv. 21 · 2362 Nv. 22 · 2429 Nv. 23 · 2497 Nv. 24 · 2564 Nv. 25 · 2631 Nv. 26 · 2699 Nv. 27 · 2766 Nv. 28 · 2834 Nv. 29 · 2901 Nv. 30 · 2969 Nv. 31 · 3036 Nv. 32 · 3103 Nv. 33 · 3171 Nv. 34 · 3238 Nv. 35 · 3306 Nv. 36 · 3373 Nv. 37 · 3441 Nv. 38 · 3508 Nv. 39 · 3575 Nv. 40 · 3643
+Nv. 1 · 395 Nv. 40 · 3643
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+Puntos
+1
+395 (+155% Ataque)
+Nv. 10
+10 s
+—
+2
+519 (+155% Ataque)
+Nv. 10
+10 s
+1
+3
+667 (+155% Ataque)
+Nv. 13
+10 s
+1
+4
+791 (+155% Ataque)
+Nv. 16
+10 s
+1
+5
+916 (+155% Ataque)
+Nv. 19
+10 s
+2
+6
+1040 (+155% Ataque)
+Nv. 22
+10 s
+2
+7
+1164 (+155% Ataque)
+Nv. 25
+10 s
+2
+8
+1312 (+155% Ataque)
+Nv. 28
+10 s
+4
+9
+1436 (+155% Ataque)
+Nv. 31
+10 s
+4
+10
+1527 (+155% Ataque)
+Nv. 34
+10 s
+4
+11
+1594 (+155% Ataque)
+—
+10 s
+—
+12
+1685 (+155% Ataque)
+—
+10 s
+—
+13
+1776 (+155% Ataque)
+—
+10 s
+—
+14
+1866 (+155% Ataque)
+—
+10 s
+—
+15
+1957 (+155% Ataque)
+—
+10 s
+—
+16
+2025 (+155% Ataque)
+—
+10 s
+—
+17
+2092 (+155% Ataque)
+—
+10 s
+—
+18
+2159 (+155% Ataque)
+—
+10 s
+—
+19
+2227 (+155% Ataque)
+—
+10 s
+—
+20
+2294 (+155% Ataque)
+—
+10 s
+—
+21
+2362 (+155% Ataque)
+—
+10 s
+—
+22
+2429 (+155% Ataque)
+—
+10 s
+—
+23
+2497 (+155% Ataque)
+—
+10 s
+—
+24
+2564 (+155% Ataque)
+—
+10 s
+—
+25
+2631 (+155% Ataque)
+—
+10 s
+—
+26
+2699 (+155% Ataque)
+—
+10 s
+—
+27
+2766 (+155% Ataque)
+—
+10 s
+—
+28
+2834 (+155% Ataque)
+—
+10 s
+—
+29
+2901 (+155% Ataque)
+—
+10 s
+—
+30
+2969 (+155% Ataque)
+—
+10 s
+—
+31
+3036 (+155% Ataque)
+—
+10 s
+—
+32
+3103 (+155% Ataque)
+—
+10 s
+—
+33
+3171 (+155% Ataque)
+—
+10 s
+—
+34
+3238 (+155% Ataque)
+—
+10 s
+—
+35
+3306 (+155% Ataque)
+—
+10 s
+—
+36
+3373 (+155% Ataque)
+—
+10 s
+—
+37
+3441 (+155% Ataque)
+—
+10 s
+—
+38
+3508 (+155% Ataque)
+—
+10 s
+—
+39
+3575 (+155% Ataque)
+—
+10 s
+—
+40
+3643 (+155% Ataque)
+—
+10 s
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Explosión de Congelación
+Estos nodos suben Explosión de Congelación por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Explosión de Congelación
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Explosión de Congelación como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,54%
+Nv. 4
+Cáliz de vitalidad
+Manuscrito
+8
+16,7%
+Nv. 4
+Pergamino de vitalidad
+Arco
+74
+8,33%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,33%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,33%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,33%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,33%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,33%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,33%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,33%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,33%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,33%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Explosión de Congelación: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Explosión de Congelación.
+Hechicero Habilidad activa 146 de 150 nv. medio 11,9 97%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Flecha en llamas
+Nv. 1
+—
+—
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Explosión de llama
+Nv. 4
+5 s
+—
+Llamas sin puntería
+Nv. 5
+—
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Voto de concentración
+Nv. 12
+60 s
+100
+Llamas del infierno
+Nv. 14
+45 s
+200
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Explosión de Congelación
+Explosión de Congelación es una habilidad activa de Hechicero que se aprende a nivel 10 y sube hasta el 40. Su enfriamiento es de 10 s a nivel 1 y 10 s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Flecha en llamas Cadena gélida Quebrantamiento en llamas Viento helado
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Explosión de Congelación
+¿Qué hace Explosión de Congelación en AION 2?
+A nivel 1: Inflige 395 (+155% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en estado de Congelación en un radio de 20 m. Al atacar a un objetivo con inmunidad a Incapacitación, se activa con un 7 % de prob. 7 de daño al medidor de Tambaleo
+¿Cuál es el enfriamiento de Explosión de Congelación?
+10 segundos a nivel 1 y 10 segundos a nivel 40.
+¿Cuándo aprende Explosión de Congelación el Hechicero?
+A nivel de personaje 10. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Explosión de Congelación?
+Explosión de Congelación tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Explosión de Congelación por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Explosión de Congelación tiene 4 nodos así.
+¿Qué equipo puede obtener Explosión de Congelación?
+689 piezas de equipo y Arcana pueden obtener Explosión de Congelación como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Manuscrito, Arco y Bastón.
+¿Explosión de Congelación es físico o mágico, y se puede usar en movimiento?
+Explosión de Congelación inflige daño Mágico (Ataque) y no se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

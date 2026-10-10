@@ -1,0 +1,317 @@
+[
+ {
+  "slug": "absorb-essence",
+  "name": "Absorción de esencia",
+  "tipo": "Habilidad pasiva",
+  "lv": "13",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15760000"
+ },
+ {
+  "slug": "arctic-armor",
+  "name": "Blindaje ártico",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "90 s",
+  "id": "15230000"
+ },
+ {
+  "slug": "assault-bombardment",
+  "name": "Bombardeo de agresión",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "120 s",
+  "id": "15700000"
+ },
+ {
+  "slug": "bittercold-wind",
+  "name": "Viento helado",
+  "tipo": "Habilidad activa",
+  "lv": "3",
+  "max": "40",
+  "cd": "15 s",
+  "id": "15280000"
+ },
+ {
+  "slug": "blaze",
+  "name": "Explosión de llama",
+  "tipo": "Habilidad activa",
+  "lv": "4",
+  "max": "40",
+  "cd": "5 s",
+  "id": "15050000"
+ },
+ {
+  "slug": "cold-snap",
+  "name": "Invocación helada",
+  "tipo": "Habilidad pasiva",
+  "lv": "9",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15730000"
+ },
+ {
+  "slug": "cold-storm",
+  "name": "Tormenta helada",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15200000"
+ },
+ {
+  "slug": "curse-tree",
+  "name": "Maldición: Árbol",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "90 s",
+  "id": "15140000"
+ },
+ {
+  "slug": "defiance-sorcerer",
+  "name": "Eliminación de impacto",
+  "tipo": "Habilidad activa",
+  "lv": "16",
+  "max": "40",
+  "cd": "60 s",
+  "id": "15240000"
+ },
+ {
+  "slug": "delayed-explosion",
+  "name": "Explosión retrasada",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "30 s",
+  "id": "15320000"
+ },
+ {
+  "slug": "divine-burst",
+  "name": "Explosión de divinidad",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15360000"
+ },
+ {
+  "slug": "element-enhancement",
+  "name": "Mejora elemental",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15400000"
+ },
+ {
+  "slug": "fire-mark",
+  "name": "Marca ígnea",
+  "tipo": "Habilidad pasiva",
+  "lv": "1",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15710000"
+ },
+ {
+  "slug": "fire-wall",
+  "name": "Barrera de fuego",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15390000"
+ },
+ {
+  "slug": "firestorm",
+  "name": "Quebrantamiento en llamas",
+  "tipo": "Habilidad activa",
+  "lv": "1",
+  "max": "40",
+  "cd": "5 s",
+  "id": "15040000"
+ },
+ {
+  "slug": "flame-arrow",
+  "name": "Flecha en llamas",
+  "tipo": "Habilidad activa",
+  "lv": "1",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15210000"
+ },
+ {
+  "slug": "flame-scattershot",
+  "name": "Llamas sin puntería",
+  "tipo": "Habilidad activa",
+  "lv": "5",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15010000"
+ },
+ {
+  "slug": "frost-burst",
+  "name": "Explosión de Congelación",
+  "tipo": "Habilidad activa",
+  "lv": "10",
+  "max": "40",
+  "cd": "10 s",
+  "id": "15220000"
+ },
+ {
+  "slug": "frost",
+  "name": "Congelación",
+  "tipo": "Habilidad activa",
+  "lv": "7",
+  "max": "40",
+  "cd": "30 s",
+  "id": "15150000"
+ },
+ {
+  "slug": "glacial-smite",
+  "name": "Golpe de glaciar",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "90 s",
+  "id": "15120000"
+ },
+ {
+  "slug": "grace-of-enhancement",
+  "name": "Merced de mejora",
+  "tipo": "Habilidad pasiva",
+  "lv": "21",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15780000"
+ },
+ {
+  "slug": "grace-of-resistance",
+  "name": "Merced de resistencia",
+  "tipo": "Habilidad pasiva",
+  "lv": "15",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15770000"
+ },
+ {
+  "slug": "hellfire",
+  "name": "Llamas del infierno",
+  "tipo": "Habilidad activa",
+  "lv": "14",
+  "max": "40",
+  "cd": "45 s",
+  "id": "15060000"
+ },
+ {
+  "slug": "hibernation",
+  "name": "Hibernación",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "180 s",
+  "id": "15410000"
+ },
+ {
+  "slug": "ice-chain",
+  "name": "Cadena gélida",
+  "tipo": "Habilidad activa",
+  "lv": "1",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15090000"
+ },
+ {
+  "slug": "lumiels-space",
+  "name": "Espacio de Lumiel",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "90 s",
+  "id": "15300000"
+ },
+ {
+  "slug": "revitalization-contract-sorcerer",
+  "name": "Pacto de resurrección",
+  "tipo": "Habilidad pasiva",
+  "lv": "23",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15790000"
+ },
+ {
+  "slug": "robe-of-cold",
+  "name": "Toga de helada",
+  "tipo": "Habilidad pasiva",
+  "lv": "17",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15750000"
+ },
+ {
+  "slug": "robe-of-earth",
+  "name": "Toga terrestre",
+  "tipo": "Habilidad pasiva",
+  "lv": "6",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15720000"
+ },
+ {
+  "slug": "robe-of-flame",
+  "name": "Toga de llama",
+  "tipo": "Habilidad pasiva",
+  "lv": "11",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15740000"
+ },
+ {
+  "slug": "soul-freeze",
+  "name": "Estancado de alma",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15130000"
+ },
+ {
+  "slug": "steel-barrier",
+  "name": "Barrera de acero",
+  "tipo": "Habilidad de estigma",
+  "lv": "22",
+  "max": "25",
+  "cd": "60 s",
+  "id": "15160000"
+ },
+ {
+  "slug": "vitality-evaporation",
+  "name": "Vaporización de viveza",
+  "tipo": "Habilidad pasiva",
+  "lv": "25",
+  "max": "40",
+  "cd": "Ninguno",
+  "id": "15800000"
+ },
+ {
+  "slug": "winters-shackles",
+  "name": "Atadura invernal",
+  "tipo": "Habilidad activa",
+  "lv": "8",
+  "max": "40",
+  "cd": "45 s",
+  "id": "15110000"
+ },
+ {
+  "slug": "wish-of-concentration",
+  "name": "Voto de concentración",
+  "tipo": "Habilidad activa",
+  "lv": "12",
+  "max": "40",
+  "cd": "60 s",
+  "id": "15310000"
+ }
+]

@@ -1,0 +1,432 @@
+Eliminación de impacto es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 16 y sube hasta el nivel de habilidad 40. Enfriamiento en el nivel 1: 60 s.
+Elimina Aturdimiento, Derribo, Atadura aérea, Agarre, Congelación y Terror de sí mismo y otorga Robustez durante 5s.
+Robustez: inmunidad a efectos de estado
+No se aplican efectos que reducen el tiempo de espera.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 16
+Nivel máx. 40
+Enfriamiento 60 s
+Qué hace Eliminación de impacto
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Elimina Aturdimiento, Derribo, Atadura aérea, Agarre, Congelación y Terror de sí mismo y otorga Robustez durante 5s.
+Robustez: inmunidad a efectos de estado
+No se aplican efectos que reducen el tiempo de espera.
+Enfriamiento 21 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de efecto Mejora
+Se puede usar en movimiento Sí
+Rasgos Sin objetivo
+Especializaciones de Eliminación de impacto
+5 variantes cambian cómo funciona Eliminación de impacto. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Añade [Maldición: Árbol viejo] como segunda habilidad de cadena.
+Especialización 2 · requiere nivel de habilidad 8
+Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor
+Especialización 3 · requiere nivel de habilidad 8
+Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida
+Especialización 4 · requiere nivel de habilidad 12
+Aumento de 2 s de duración de Robustez
+Especialización 5 · requiere nivel de habilidad 16
+Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Eliminación de impacto por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nivel
+Nivel requerido
+Enfriamiento
+Puntos
+1
+Nv. 16
+60 s
+—
+2
+Nv. 16
+59 s
+1
+3
+Nv. 19
+58 s
+1
+4
+Nv. 22
+57 s
+1
+5
+Nv. 25
+56 s
+2
+6
+Nv. 28
+55 s
+2
+7
+Nv. 31
+54 s
+2
+8
+Nv. 34
+53 s
+4
+9
+Nv. 37
+52 s
+4
+10
+Nv. 40
+51 s
+4
+11
+—
+50 s
+—
+12
+—
+49 s
+—
+13
+—
+48 s
+—
+14
+—
+47 s
+—
+15
+—
+46 s
+—
+16
+—
+45 s
+—
+17
+—
+44 s
+—
+18
+—
+43 s
+—
+19
+—
+42 s
+—
+20
+—
+41 s
+—
+21
+—
+40 s
+—
+22
+—
+39 s
+—
+23
+—
+38 s
+—
+24
+—
+37 s
+—
+25
+—
+36 s
+—
+26
+—
+35 s
+—
+27
+—
+34 s
+—
+28
+—
+33 s
+—
+29
+—
+32 s
+—
+30
+—
+31 s
+—
+31
+—
+30 s
+—
+32
+—
+29 s
+—
+33
+—
+28 s
+—
+34
+—
+27 s
+—
+35
+—
+26 s
+—
+36
+—
+25 s
+—
+37
+—
+24 s
+—
+38
+—
+23 s
+—
+39
+—
+22 s
+—
+40
+—
+21 s
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Eliminación de impacto
+Estos nodos suben Eliminación de impacto por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Eliminación de impacto
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Eliminación de impacto como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Brújula
+8
+16,7%
+Nv. 4
+Brújula de vitalidad
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Arco
+74
+8,34%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,34%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,34%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,34%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,34%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,34%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,34%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,34%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,34%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,34%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Flecha en llamas
+Nv. 1
+—
+—
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Explosión de llama
+Nv. 4
+5 s
+—
+Llamas sin puntería
+Nv. 5
+—
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Explosión de Congelación
+Nv. 10
+10 s
+—
+Voto de concentración
+Nv. 12
+60 s
+100
+Llamas del infierno
+Nv. 14
+45 s
+200
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Eliminación de impacto
+Eliminación de impacto es una habilidad activa de Hechicero que se aprende a nivel 16 y sube hasta el 40. Su enfriamiento es de 60 s a nivel 1 y 21 s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Flecha en llamas Cadena gélida Quebrantamiento en llamas Viento helado
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Eliminación de impacto
+¿Qué hace Eliminación de impacto en AION 2?
+A nivel 1: Elimina Aturdimiento, Derribo, Atadura aérea, Agarre, Congelación y Terror de sí mismo y otorga Robustez durante 5s. Robustez: inmunidad a efectos de estado No se aplican efectos que reducen el tiempo de espera.
+¿Cuál es el enfriamiento de Eliminación de impacto?
+60 segundos a nivel 1 y 21 segundos a nivel 40.
+¿Cuándo aprende Eliminación de impacto el Hechicero?
+A nivel de personaje 16. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Eliminación de impacto?
+Eliminación de impacto tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Eliminación de impacto por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Eliminación de impacto tiene 4 nodos así.
+¿Qué equipo puede obtener Eliminación de impacto?
+689 piezas de equipo y Arcana pueden obtener Eliminación de impacto como opción de habilidad aleatoria, hasta Nv. 4, principalmente Brújula, Cáliz, Arco y Bastón.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

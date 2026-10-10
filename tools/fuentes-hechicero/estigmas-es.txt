@@ -1,0 +1,39 @@
+## Mejora elemental | element-enhancement | 15400000 | cd 60 s
+   Aumenta un 20 % del Ataque de Fuego y un 20 % del Ataque de Agua propio durante 22,5s.
+   5: Aumento de 200 de Precisión · 10: Efecto de [Toga de llama] x1,5 · 15: Efecto [Merced de mejora] x1,5 · 20: Aumento adicional del 10 % de Ataque de Fuego y Agua
+## Explosión retrasada | delayed-explosion | 15320000 | cd 30 s
+   Inflige 3538 (+189% Ataque) de daño de Fuego a un objetivo dentro de un rango de 20 m tras 4s. Aumenta el daño recibido del usuario un 15 % durante la espera.
+   5: Recuperación de 200 de Puntos de Maná · 10: El Tiempo de Enfriamiento de «Explosión retrasada» se reduce 10 s · 15: Cambio a habilidad de área · 20: Aumento adicional de un 10 % del daño recibido
+## Barrera de fuego | fire-wall | 15390000 | cd 60 s
+   Invoca una Barrera de fuego en la ubicación de un objetivo en un radio de 20 m que dura 3 s. Inflige 4118 (+220% Ataque) de daño a un máximo de 4 enemigos dentro del área de alcance de la Barrera de fuego (1 × 10 m) y les provoca el estado de Brasas durante 10s.
+   5: Mejora de estado de Brasas - Daño adicional al atacar · 10: La anchura de la muralla aumenta 2 m · 15: El tiempo de invocación de «Barrera de fuego» aumenta 2 s · 20: Aumento de 10 s de duración de Brasas
+## Tormenta helada | cold-storm | 15200000 | cd 60 s
+   Inflige 2995 (+160% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 5 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Ralentización. Invoca una Tormenta helada en la ubicación del objetivo que dura 7 s y aplica continuamente el estado de Congelamiento.
+   5: Mejora de estado de Congelamiento - Daño adicional al atacar · 10: Estado de Atadura durante 2 s con un 30 % de prob. · 15: Aumenta el tiempo de invocación de «Tormenta helada» en 3 s · 20: Aumento de 10 s de duración de Congelamiento
+## Golpe de glaciar | glacial-smite | 15120000 | cd 90 s
+   Inflige 4680 (+250% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m de un objetivo en un radio de 20 m.
+   5: Cuantos más objetivos se acierten, el daño aumenta un máximo del 20 % · 10: Reducción de 30 s de Tiempo de Enfriamiento · 15: 50 % de prob. de Congelación durante 3 s · 20: Ignora el Bloqueo y Evasión / Acierto con Multigolpe
+## Explosión de divinidad | divine-burst | 15360000 | cd 60 s
+   Inflige 3613 (+193,1% Ataque) de daño de Fuego a un objetivo en un radio de 20 m.
+   5: Aumento del 20 % de velocidad de habilidad · 10: Absorción de Puntos de Vida del 1000, 1000 % · 15: Aplica Empuje con un 75 % de prob. · 20: Aplica Aturdimiento durante 3 s tras empujarlo
+## Barrera de acero | steel-barrier | 15160000 | cd 60 s
+   Otorga un 40 % de Barrera de Puntos de Vida Máximos durante 60s. Aumenta la Tolerancia a Daño JcE un 10 % y la Tolerancia a Daño JcJ un 5 % mientras dura la barrera, y recupera 300 de Vigor al finalizar el efecto.
+   5: Aumento del 10 % de Velocidad de Movimiento · 10: Recuperación de Puntos de Vida a intervalos regulares · 15: Aumento adicional del 10 % de Tolerancia a Daño JcE y 5 % de Tolerancia a Daño JcJ · 20: Reducción de 15 s de Tiempo de Enfriamiento
+## Maldición: Árbol | curse-tree | 15140000 | cd 90 s
+   Convierte al objetivo situado a 20 m en un Árbol durante 10s, reduciendo su Resistencia a Fuego un 20 %, y te desplazas hacia atrás. El efecto de transformación desaparece al recibir un ataque.
+   5: Aumento del número de impactos para remover la mutación · 10: El Bloqueo y la Evasión se reducen en 200 durante 10 s tras finalizar la mutación · 15: La Resistencia de Tipo Impacto se reduce un 20 % durante 10 s tras finalizar la mutación · 20: Aplica la magia debilitante incluso si la mutación finaliza por un ataque
+## Blindaje ártico | arctic-armor | 15230000 | cd 90 s
+   Durante 22,5s, tu Tolerancia a Daño JcE aumenta un 20 % y tu Tolerancia a Daño JcJ un 10 %. Además, hay un 5 % de probabilidad de aplicar Congelación durante 3s a los enemigos situados a 7 m que te ataquen. Durante su duración, si tus Puntos de Maná están al 50 % o más, obtienes el efecto de Convers
+   5: Aumento del 20 % de la Resistencia de Tipo Impacto · 10: Efecto [Absorción de Esencia] x1,5 · 15: Efecto [Toga de helada] x1,5 · 20: Aumento adicional del 20 % de Tolerancia a Daño JcE y 10 % de Tolerancia a Daño JcJ
+## Estancado de alma | soul-freeze | 15130000 | cd 60 s
+   Inflige 3285 (+175,5% Ataque) de daño de Agua a un objetivo en un radio de 20 m y le provoca el estado de Sellado durante 5s con un 75 % de prob.
+   5: Efecto de Atadura con un 50 % de prob. durante 5 s · 10: Reducción de 1000 de Vigor · 15: Aumento de 2 s de duración de Sellado · 20: Aumento del 25 % de prob. de Sellado
+## Hibernación | hibernation | 15410000 | cd 180 s
+   Otorga Hibernación al usuario durante 5s. El usuario es inmune al daño y a los efectos de estado cuando se otorga Hibernación.
+   5: Aumento del 100 % de Curación Recibida · 10: Recuperación del 5 % de Puntos de Vida Máximos con un intervalo de 1 s durante la duración · 15: +2 s de duración · 20: Al estar en estado tipo impacto, activación de «Hibernación»
+## Espacio de Lumiel | lumiels-space | 15300000 | cd 90 s
+   Inflige 3163 (+169% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Atadura aérea durante 3s con un 75 % de prob.
+   5: Cuantos más objetivos se acierten, el daño aumenta un máximo del 20 % · 10: Adición de hab. de cadena «Sima» x2 · 15: «Sima»: aumento de 1 s de duración de Derribo · 20: «Espacio de Lumiel»: reducción de 30 s de Tiempo de Enfriamiento
+## Bombardeo de agresión | assault-bombardment | 15700000 | cd 120 s
+   Inflige 2808 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Congelación durante 3s con un 30 % de prob.
+   5: Al acertar, aumenta un 20 % del Ataque durante 5s · 10: Al acertar, 500 de daño de Puntos de Maná · 15: Aumento de 10 m de alcance · 20: Aumento del 20 % de prob. de Congelación

@@ -1,0 +1,343 @@
+Explosión retrasada habilidad de estigma de Hechicero · desde nivel 22 · nivel máx. 25
+Hechicero Habilidad de estigma
+Explosión retrasada es una habilidad de estigma de Hechicero en AION 2 que se obtiene a nivel 22 y sube hasta el nivel de habilidad 25. Enfriamiento en el nivel 1: 30 s.
+Inflige 1116 (+189% Ataque) de daño de Fuego a un objetivo dentro de un rango de 20 m tras 4s. Aumenta el daño recibido del usuario un 15 % durante la espera.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad de estigma
+Se aprende a Nv. 22
+Nivel máx. 25
+Enfriamiento 30 s
+Alcance 20 m
+Qué hace Explosión retrasada
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 3538 (+189% Ataque) de daño de Fuego a un objetivo dentro de un rango de 20 m tras 4s. Aumenta el daño recibido del usuario un 15 % durante la espera.
+Enfriamiento 30 s
+PM 200
+Nivel 25 / 25
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque Perjuicio
+Se puede usar en movimiento Sí
+Rasgos Disponible en movimiento
+Especializaciones de Explosión retrasada
+5 variantes cambian cómo funciona Explosión retrasada. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 5
+Recuperación de 200 de Puntos de Maná
+Especialización 2 · requiere nivel de habilidad 10
+El Tiempo de Enfriamiento de «Explosión retrasada» se reduce 10 s
+Especialización 3 · requiere nivel de habilidad 15
+Cambio a habilidad de área
+Especialización 4 · requiere nivel de habilidad 20
+Aumento adicional de un 10 % del daño recibido
+◆ Especialización 5
+Ignora el Bloqueo y Evasión / Acierto con golpe Crítico
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Explosión retrasada por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 25 niveles.
+Nv. 1 · 1116 Nv. 2 · 1268 Nv. 3 · 1420 Nv. 4 · 1600 Nv. 5 · 1752 Nv. 6 · 1862 Nv. 7 · 1944 Nv. 8 · 2055 Nv. 9 · 2165 Nv. 10 · 2276 Nv. 11 · 2387 Nv. 12 · 2469 Nv. 13 · 2551 Nv. 14 · 2633 Nv. 15 · 2715 Nv. 16 · 2798 Nv. 17 · 2880 Nv. 18 · 2962 Nv. 19 · 3044 Nv. 20 · 3127 Nv. 21 · 3209 Nv. 22 · 3291 Nv. 23 · 3373 Nv. 24 · 3455 Nv. 25 · 3538
+Nv. 1 · 1116 Nv. 25 · 3538
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+1116 (+189% Ataque)
+Nv. 22
+30 s
+200
+1 ★
+2
+1268 (+189% Ataque)
+Nv. 22
+30 s
+200
+1 ★
+3
+1420 (+189% Ataque)
+Nv. 22
+30 s
+200
+1 ★
+4
+1600 (+189% Ataque)
+Nv. 22
+30 s
+200
+1 ★
+5
+1752 (+189% Ataque)
+Nv. 22
+30 s
+200
+1 ★
+6
+1862 (+189% Ataque)
+Nv. 22
+30 s
+200
+2 ★
+7
+1944 (+189% Ataque)
+Nv. 22
+30 s
+200
+2 ★
+8
+2055 (+189% Ataque)
+Nv. 22
+30 s
+200
+2 ★
+9
+2165 (+189% Ataque)
+Nv. 22
+30 s
+200
+2 ★
+10
+2276 (+189% Ataque)
+Nv. 22
+30 s
+200
+2 ★
+11
+2387 (+189% Ataque)
+Nv. 22
+30 s
+200
+4 ★
+12
+2469 (+189% Ataque)
+Nv. 22
+30 s
+200
+4 ★
+13
+2551 (+189% Ataque)
+Nv. 22
+30 s
+200
+4 ★
+14
+2633 (+189% Ataque)
+Nv. 22
+30 s
+200
+4 ★
+15
+2715 (+189% Ataque)
+Nv. 22
+30 s
+200
+4 ★
+16
+2798 (+189% Ataque)
+Nv. 22
+30 s
+200
+8 ★
+17
+2880 (+189% Ataque)
+Nv. 22
+30 s
+200
+8 ★
+18
+2962 (+189% Ataque)
+Nv. 22
+30 s
+200
+8 ★
+19
+3044 (+189% Ataque)
+Nv. 22
+30 s
+200
+8 ★
+20
+3127 (+189% Ataque)
+Nv. 22
+30 s
+200
+8 ★
+21
+3209 (+189% Ataque)
+—
+30 s
+200
+—
+22
+3291 (+189% Ataque)
+—
+30 s
+200
+—
+23
+3373 (+189% Ataque)
+—
+30 s
+200
+—
+24
+3455 (+189% Ataque)
+—
+30 s
+200
+—
+25
+3538 (+189% Ataque)
+—
+30 s
+200
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Explosión retrasada: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Explosión retrasada.
+Hechicero Estigma 124 de 150 nv. medio 6,2 83%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Golpe de glaciar
+Nv. 22
+90 s
+200
+Estancado de alma
+Nv. 22
+60 s
+200
+Explosión de divinidad
+Nv. 22
+60 s
+200
+Bombardeo de agresión
+Nv. 22
+120 s
+—
+Tormenta helada
+Nv. 22
+60 s
+200
+Barrera de acero
+Nv. 22
+60 s
+—
+Barrera de fuego
+Nv. 22
+60 s
+200
+Mejora elemental
+Nv. 22
+60 s
+—
+Hibernación
+Nv. 22
+180 s
+—
+Espacio de Lumiel
+Nv. 22
+90 s
+300
+Maldición: Árbol
+Nv. 22
+90 s
+—
+Blindaje ártico
+Nv. 22
+90 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Explosión retrasada
+Explosión retrasada es una habilidad de estigma de Hechicero que se aprende a nivel 22 y sube hasta el 25. Su enfriamiento es de 30 s a nivel 1 y 30 s al máximo. Tiene 5 especializaciones y 0 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Guía de estigmas Golpe de glaciar Estancado de alma Explosión de divinidad Bombardeo de agresión
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Explosión retrasada
+¿Qué hace Explosión retrasada en AION 2?
+A nivel 1: Inflige 1116 (+189% Ataque) de daño de Fuego a un objetivo dentro de un rango de 20 m tras 4s. Aumenta el daño recibido del usuario un 15 % durante la espera.
+¿Cuál es el enfriamiento de Explosión retrasada?
+30 segundos a nivel 1 y 30 segundos a nivel 25.
+¿Cuándo aprende Explosión retrasada el Hechicero?
+A nivel de personaje 22. Después se puede subir hasta el nivel 25.
+¿Qué especializaciones tiene Explosión retrasada?
+Explosión retrasada tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Explosión retrasada es físico o mágico, y se puede usar en movimiento?
+Explosión retrasada inflige daño Mágico (Ataque y Perjuicio) y se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

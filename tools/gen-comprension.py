@@ -40,6 +40,18 @@ CLASES = {
       ('7', {'*': 'Recuperación', 'Especial': 'Tenacidad'}, {'*': 'Tenacidad', 'Especial': 'Crítico'}),
     ],
   },
+  'hechicero': {
+    'clase': 'Hechicero', 'por': 'Ataque y Crítico; Puntos de Maná para no bajar del 50 % de PM (metabot).',
+    'filas': [
+      ('1', 'Ataque Adicional', 'Ataque JcE'),
+      ('2, 8', 'Aumento de Puntos de Vida', 'Puntos de Maná'),
+      ('3, 6, 7, 9', 'Crítico', 'Precisión Adicional'),
+      ('4', {'*': 'Amplificación de Daño de JcE', 'Especial': 'Amplificación de Daño Crítico'},
+            {'Cognis': 'Amplificación de Daño Crítico', 'Feras': 'Amplificación de Daño de Arma',
+             'Naturas': 'Perforación', 'Varians': 'Crítico', 'Especial': 'Golpe'}),
+      ('5', 'Ataque Adicional', 'Ataque Máximo'),
+    ],
+  },
   'espiritualista': {
     'clase': 'Espiritualista', 'por': 'Precisión hasta 1.500 (couga54) y después Crítico.',
     'filas': [

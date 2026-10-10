@@ -1,0 +1,482 @@
+Hechicero Habilidad activa
+Explosión de llama es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 4 y sube hasta el nivel de habilidad 40. Enfriamiento en el nivel 1: 5 s.
+Inflige 198 (+193,2% Ataque) de daño de Fuego a un objetivo en un radio de 20 m con el estado de Marca ígnea y recupera 100 de los Puntos de Maná.
+7 de daño al medidor de Tambaleo
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 4
+Nivel máx. 40
+Enfriamiento 5 s
+Alcance 20 m
+Qué hace Explosión de llama
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 4289 (+193,2% Ataque) de daño de Fuego a un objetivo en un radio de 20 m con el estado de Marca ígnea y recupera 100 de los Puntos de Maná.
+7 de daño al medidor de Tambaleo
+Enfriamiento 5 s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque Perjuicio
+Se puede usar en movimiento Sí
+Rasgos Disponible en movimiento
+Especializaciones de Explosión de llama
+5 variantes cambian cómo funciona Explosión de llama. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Absorción de Puntos de Vida del 300, 300 %
+Especialización 2 · requiere nivel de habilidad 8
+Aumento del 50 % de Recuperación de Puntos de Maná
+Especialización 3 · requiere nivel de habilidad 8
+Daño diferido tras 3s
+Especialización 4 · requiere nivel de habilidad 12
+Al acertar, Multigolpe garantizado
+Especialización 5 · requiere nivel de habilidad 16
+Al acertar, el Tiempo de Enfriamiento de «Voto de concentración» se reduce 3 s
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Explosión de llama por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 198 Nv. 2 · 282 Nv. 3 · 366 Nv. 4 · 492 Nv. 5 · 647 Nv. 6 · 831 Nv. 7 · 986 Nv. 8 · 1141 Nv. 9 · 1296 Nv. 10 · 1451 Nv. 11 · 1635 Nv. 12 · 1790 Nv. 13 · 1903 Nv. 14 · 1988 Nv. 15 · 2101 Nv. 16 · 2214 Nv. 17 · 2327 Nv. 18 · 2440 Nv. 19 · 2524 Nv. 20 · 2608 Nv. 21 · 2692 Nv. 22 · 2776 Nv. 23 · 2860 Nv. 24 · 2944 Nv. 25 · 3028 Nv. 26 · 3112 Nv. 27 · 3196 Nv. 28 · 3280 Nv. 29 · 3364 Nv. 30 · 3448 Nv. 31 · 3532 Nv. 32 · 3616 Nv. 33 · 3700 Nv. 34 · 3784 Nv. 35 · 3868 Nv. 36 · 3952 Nv. 37 · 4036 Nv. 38 · 4120 Nv. 39 · 4204 Nv. 40 · 4289
+Nv. 1 · 198 Nv. 40 · 4289
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+Puntos
+1
+198 (+193,2% Ataque)
+Nv. 4
+5 s
+—
+2
+282 (+193,2% Ataque)
+Nv. 4
+5 s
+1
+3
+366 (+193,2% Ataque)
+Nv. 7
+5 s
+1
+4
+492 (+193,2% Ataque)
+Nv. 10
+5 s
+1
+5
+647 (+193,2% Ataque)
+Nv. 13
+5 s
+2
+6
+831 (+193,2% Ataque)
+Nv. 16
+5 s
+2
+7
+986 (+193,2% Ataque)
+Nv. 19
+5 s
+2
+8
+1141 (+193,2% Ataque)
+Nv. 22
+5 s
+4
+9
+1296 (+193,2% Ataque)
+Nv. 25
+5 s
+4
+10
+1451 (+193,2% Ataque)
+Nv. 28
+5 s
+4
+11
+1635 (+193,2% Ataque)
+—
+5 s
+—
+12
+1790 (+193,2% Ataque)
+—
+5 s
+—
+13
+1903 (+193,2% Ataque)
+—
+5 s
+—
+14
+1988 (+193,2% Ataque)
+—
+5 s
+—
+15
+2101 (+193,2% Ataque)
+—
+5 s
+—
+16
+2214 (+193,2% Ataque)
+—
+5 s
+—
+17
+2327 (+193,2% Ataque)
+—
+5 s
+—
+18
+2440 (+193,2% Ataque)
+—
+5 s
+—
+19
+2524 (+193,2% Ataque)
+—
+5 s
+—
+20
+2608 (+193,2% Ataque)
+—
+5 s
+—
+21
+2692 (+193,2% Ataque)
+—
+5 s
+—
+22
+2776 (+193,2% Ataque)
+—
+5 s
+—
+23
+2860 (+193,2% Ataque)
+—
+5 s
+—
+24
+2944 (+193,2% Ataque)
+—
+5 s
+—
+25
+3028 (+193,2% Ataque)
+—
+5 s
+—
+26
+3112 (+193,2% Ataque)
+—
+5 s
+—
+27
+3196 (+193,2% Ataque)
+—
+5 s
+—
+28
+3280 (+193,2% Ataque)
+—
+5 s
+—
+29
+3364 (+193,2% Ataque)
+—
+5 s
+—
+30
+3448 (+193,2% Ataque)
+—
+5 s
+—
+31
+3532 (+193,2% Ataque)
+—
+5 s
+—
+32
+3616 (+193,2% Ataque)
+—
+5 s
+—
+33
+3700 (+193,2% Ataque)
+—
+5 s
+—
+34
+3784 (+193,2% Ataque)
+—
+5 s
+—
+35
+3868 (+193,2% Ataque)
+—
+5 s
+—
+36
+3952 (+193,2% Ataque)
+—
+5 s
+—
+37
+4036 (+193,2% Ataque)
+—
+5 s
+—
+38
+4120 (+193,2% Ataque)
+—
+5 s
+—
+39
+4204 (+193,2% Ataque)
+—
+5 s
+—
+40
+4289 (+193,2% Ataque)
+—
+5 s
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Explosión de llama
+Estos nodos suben Explosión de llama por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Explosión de llama
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Explosión de llama como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,54%
+Nv. 4
+Cáliz de vitalidad
+Manuscrito
+8
+16,7%
+Nv. 4
+Pergamino de vitalidad
+Arco
+74
+8,33%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,33%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,33%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,33%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,33%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,33%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,33%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,33%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,33%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,33%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Explosión de llama: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Explosión de llama.
+Hechicero Habilidad activa 150 de 150 nv. medio 13,7 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Flecha en llamas
+Nv. 1
+—
+—
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Llamas sin puntería
+Nv. 5
+—
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Explosión de Congelación
+Nv. 10
+10 s
+—
+Voto de concentración
+Nv. 12
+60 s
+100
+Llamas del infierno
+Nv. 14
+45 s
+200
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Explosión de llama
+Explosión de llama es una habilidad activa de Hechicero que se aprende a nivel 4 y sube hasta el 40. Su enfriamiento es de 5 s a nivel 1 y 5 s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Flecha en llamas Cadena gélida Quebrantamiento en llamas Viento helado
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Explosión de llama
+¿Qué hace Explosión de llama en AION 2?
+A nivel 1: Inflige 198 (+193,2% Ataque) de daño de Fuego a un objetivo en un radio de 20 m con el estado de Marca ígnea y recupera 100 de los Puntos de Maná. 7 de daño al medidor de Tambaleo
+¿Cuál es el enfriamiento de Explosión de llama?
+5 segundos a nivel 1 y 5 segundos a nivel 40.
+¿Cuándo aprende Explosión de llama el Hechicero?
+A nivel de personaje 4. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Explosión de llama?
+Explosión de llama tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Explosión de llama por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Explosión de llama tiene 4 nodos así.
+¿Qué equipo puede obtener Explosión de llama?
+689 piezas de equipo y Arcana pueden obtener Explosión de llama como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Manuscrito, Arco y Bastón.
+¿Explosión de llama es físico o mágico, y se puede usar en movimiento?
+Explosión de llama inflige daño Mágico (Ataque y Perjuicio) y se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

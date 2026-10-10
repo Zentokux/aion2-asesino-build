@@ -1,0 +1,1048 @@
+Build de Hechicero de AION 2: Estigmas, atributos… | MetaBot.GG
+METABOT
+.gg
+•••
+TFT
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker
+Valheim
+Aniimo
+WARDOGS
+Minecraft Dungeons II
+Permafrost
+SPAM
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker
+Valheim
+Aniimo
+WARDOGS
+Minecraft Dungeons II
+Permafrost
+SPAM
+Arcade
+App de escritorio
+Clases Todo en Clases
+Todas las clases
+Roles, armas y atributos de las 8 clases
+Habilidades
+Todas las habilidades con valores por nivel
+Planificador Daevanion
+Planifica los cinco tableros Daevanion
+Builds
+Builds de la comunidad con habilidades, equipo y guías
+Clases
+Gladiador
+Mandoble cuerpo a cuerpo: habilidades, estigmas
+Templario
+Tanque de espada y escudo: habilidades
+Asesino
+Ráfaga con dagas: habilidades y estigmas
+Arquero
+Daño con arco a distancia: habilidades
+Hechicero
+Daño mágico con grimorio: habilidades
+Espiritualista
+Invocador de espíritus: habilidades
+Clérigo
+Sanador con maza: curas y habilidades
+Cantor
+Apoyo con bastón: mejoras y curas
+Objetos Todo en Objetos
+Armas
+Todas las armas con atributos y botín
+Armadura
+Cascos a capas con atributos y fuentes
+Accesorios
+Anillos, pendientes, collares y más
+Arcana
+Cartas Arcana por ranura, calidad y atributos
+Base de datos de objetos
+Busca cualquier objeto del cliente global
+Estadísticas
+Estadísticas explicadas, divinas y calculadora
+Trascendencia
+Fases de temporada, nivel de objeto y efectos
+Herramientas
+Calculadora de mejora
+Probabilidades y coste hasta +15 y más
+Fabricación
+Recetas, materiales y árboles de creación
+Conversión
+Recetas de conversión de materiales y probabilidades
+Mundo Todo en Mundo
+Mapa interactivo
+Mapas de zonas Elyos, Asmodianas y del Abismo
+Cubos ocultos
+Todas las ubicaciones de Cubos ocultos
+Mazmorras
+Mazmorras de grupo, banda y Pesadilla
+Jefes
+Ubicación de jefes, botín y desafíos
+Monstruos
+Niveles, apariciones y tablas de botín
+Misiones
+Pasos de misión, PNJ y recompensas
+Recolección
+Puntos de recolección y materiales
+Guías
+Guías de inicio, clases, nivel, equipo y endgame
+Colecciones Todo en Colecciones
+Alas
+Todas las alas con atributos y facción
+Monturas
+Monturas por género, almas y velocidad
+Títulos
+Todos los títulos y sus bonos
+Aspectos y trajes
+Piezas de traje y conjuntos
+Piedras sagradas
+Efectos de Piedras sagradas en el equipo
+Gestos
+Todos los gestos, su comando y cómo conseguirlos
+Salón de la legión
+Alquiler, decoraciones y sus efectos
+Metodología
+Cómo leemos el cliente global del juego
+Herramientas
+Guardarropa
+Pruébate armaduras, trajes y tintes en 3D
+Progresión Todo en Progresión
+Eventos y temporizadores
+Temporizadores de festivales, invasiones, asedios y Arena
+Spacetime Rift Timer
+Próxima apertura de la Grieta espaciotemporal por región, zonas de portal y misiones
+Pase Daeva
+Recompensas de temporada, EXP del pase y misiones
+Logros
+Todos los logros con objetivos, niveles y títulos
+Monedas
+Dónde ganar y gastar Kina, Puntos del Abismo y monedas
+Tiendas
+Tiendas de PNJ y de monedas con precios y límites
+Subir de nivel
+EXP por nivel y puntos obtenidos, con calculadora
+Monolitos
+Rastros por nivel y estadísticas permanentes
+Desbloqueos
+Qué se desbloquea en cada nivel y nivel de objeto
+Reinicio semanal
+Límites de entrada y días de reinicio semanal
+Legión
+Niveles de legión, miembros máximos y ventajas
+Clasificaciones
+Rangos y recompensas de clasificación de la temporada 1
+Leyendas
+Notas, cartas y registros legibles del juego
+Servidores
+Servidores por región y facción, con zonas horarias
+Jugadores Todo en Jugadores
+Armería
+Equipo, estadísticas y habilidades de cualquier personaje
+Clasificaciones
+Mayor poder de combate por región, servidor y clase
+Planificadores de build
+Gladiador
+Tanque y DPS con mandoble: habilidades, estigmas, builds
+Templario
+Tanque con espada: habilidades, estigmas, builds
+Asesino
+DPS con dagas: habilidades, estigmas, builds
+Arquero
+DPS con arco: habilidades, estigmas, builds
+Hechicero
+DPS con grimorio: habilidades, estigmas, builds
+Espiritualista
+DPS con orbe: habilidades, estigmas, builds
+Clérigo
+Sanador con maza: habilidades, estigmas, builds
+Cantor
+Sanador y DPS con báculo: habilidades, estigmas, builds
+/ Buscar
+Iniciar sesión
+…
+AION 2
+…
+Clases
+Hechicero
+Build y guía de Hechicero de AION 2 Build, habilidades y Estigmas de Hechicero de AION 2
+Daño
+El Hechicero es una clase de Daño de AION 2 que lucha con Grimorio. Tiene 35 habilidades (12 activas, 10 pasivas y 13 de estigma) y 5 tableros Daevanion.
+El Hechicero es un personaje que inflige un daño explosivo con poderosos hechizos.
+Su desventaja es que tiene poca vida y defensa, pero puede usar diversas habilidades con efectos de estado para derrotar a los enemigos antes de que logren acercarse.
+Leer Más
+Leer Menos
+MetaBot Desktop
+Gratis · Windows 10+
+AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion
+Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers
+Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo
+Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Guías para esta página
+Builds de AION 2: la mejor build PvE de cada clase
+Las ocho builds de clase una junto a otra: habilidades, Estigmas, prioridad de atributos y rotación.
+→
+Guía de Estigmas: ranuras, niveles de desbloqueo y elecciones por clase
+Cuándo se abre cada ranura de Estigma y qué Estigmas usa cada clase.
+→
+Rol Daño
+Arma principal Grimorio
+Habilidades 12 activas · 10 pasivas · 13 estigma
+Estigmas desde Nv. 22
+Tableros Daevanion 5
+PV a nv. 100 11.000
+En esta página
+Build Cómo jugar Habilidades Pasivas Estigmas Planificador Daevanion Atributos Armas
+La mejor build de Hechicero de AION 2
+La mejor build de Hechicero de AION 2 es una build de fuego en área: Voto de concentración y Mejora elemental antes de atraer, luego Llamas del infierno, Quebrantamiento en llamas y Explosión de llama sobre los objetivos con Marca ígnea, con Cadena gélida y Viento helado para controlar. Sube Ataque y Crítico, mantén tus PM por encima de la mitad para que el +105 de Crítico de Toga terrestre siga activo y suelta Barrera de fuego donde estén los grupos.
+Build PvE
+Mejores jugadores
+Basado en 150 de los mejores Hechicero · actualizado hace 7 días · Cómo lo recopilamos
+Habilidades clave
+Llamas del infierno
+Nv. 7
+100%
+Flecha en llamas
+Nv. 7
+100%
+Quebrantamiento en llamas
+Nv. 7
+100%
+Viento helado
+Nv. 7
+100%
+Explosión de llama
+Nv. 7
+100%
+Estigmas por orden de desbloqueo
+Ranura 1 · Nv. 22
+Mejora elemental
+Nv. 8
+93%
+Ranura 2 · Nv. 27
+Explosión retrasada
+Nv. 6
+83%
+Ranura 3 · Nv. 32
+Barrera de fuego
+Nv. 6
+76%
+Ranura 4 · Nv. 37
+Tormenta helada
+Nv. 4
+43%
+Rotación
+Cambios para PvP: Barrera de acero
+, Maldición: Árbol
+Abrir en el planificador de builds Comparar todas las builds de AION 2
+Prioridad de atributos
+Editorial
+Ataque Ataque plano en cada bola de fuego y en cada golpe de Llamas del infierno.
+Crítico Tu segundo atributo de daño. Toga terrestre ya añade +105 de Crítico con la mitad de los PM o más.
+Puntos de Maná La bonificación de Crítico de Toga terrestre exige que estés por encima de la mitad de los PM, así que los PM funcionan como atributo de daño para ti.
+Precisión Adicional Añádela cuando los jefes empiecen a esquivar tus hechizos.
+Puntos de Vida Mantiene vivo a un lanzador de tela frente al daño que afecta a toda la banda.
+Nuestro orden, a partir de las descripciones de atributos del cliente. Las Piedras de maná tiran estos atributos en armas y armaduras, y las Soulstones en accesorios. Probabilidades y tiradas de Piedras de maná
+Qué engastan los mejores
+Recopilando datos de piedras Por ahora tenemos el equipo engastado de 49 personajes Hechicero de nivel 45 y mostramos los porcentajes a partir de 50.
+Camino de Daevanion
+Ve primero a Zikel por los nodos duplicados de Merced de mejora cuando se abra ese tablero, y luego coge Marca ígnea y Toga terrestre de Nezekan.
+Abrir el planificador Daevanion de Hechicero
+Arma y Piedra sagrada
+Arma principal Grimorio
+Mayor nivel de objeto
+Tomo prohibido de Ludra
+Una Piedra sagrada de Fuego de área para grupos de monstruos; una Piedra sagrada de Sello para PvP.
+Guía de la Piedra sagrada Equipo y meta de los mejores jugadores de Hechicero
+Resumen de Hechicero
+El Hechicero es una clase de Daño que lucha con Grimorio. Aprende 12 habilidades activas entre el nivel 1 y el 16 (la última es Eliminación de impacto), 10 pasivas y 13 habilidades de estigma que se desbloquean a nivel 22.
+El progreso del Hechicero también pasa por 5 tableros Daevanion (Nezekan, Zikel, Vaizel, Triniel y Azphel), que se abren entre los niveles 12 y 45 y añaden atributos o niveles de habilidad. A nivel 100, un Hechicero tiene 11.000 PV base sin equipo.
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Cómo jugar Hechicero
+Ver las tres builds →
+Rotación básica, dónde brilla la clase en PvE y PvP y lo difícil que es aprenderla.
+Puntos fuertes en PvE
+El mayor daño a distancia del juego: las habilidades de Fuego marcan al objetivo para que las siguientes de Fuego golpeen más fuerte, las de Agua ralentizan y congelan para las pasivas de daño extra, y el gran hechizo cargado limpia grupos. Poca vida, así que mata antes de que lleguen.
+Puntos fuertes en PvP
+Congelar, detonar, rematar: Escarcha prepara el estallido de hielo, el estigma de explosión retardada amplifica todo lo que aciertes durante su temporizador, y el estigma de escudo o la polimorfia compran el segundo necesario. Frágil e inmóvil cuando las huidas están en enfriamiento.
+Dificultad
+Moderada. Los combos de marca de Fuego y Escarcha son intuitivos, pero debes seguir dos cadenas elementales, gestionar el maná para las pasivas que lo necesitan y mantener la distancia sin autocuración.
+De un vistazo
+Daño ★★★★★
+Supervivencia ★★☆☆☆
+Utilidad ★★★☆☆
+Facilidad de uso ★★★☆☆
+Valoraciones editoriales en una escala de 1 a 5; la guía de tier list de clases usa los mismos números.
+MetaBot Desktop
+Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas
+8
+Habilidades activas de Hechicero
+Las 12 habilidades activas en orden de desbloqueo, con enfriamiento y efecto a nivel 1. Abre una para ver todos los niveles y especializaciones.
+Icono de la habilidad Flecha en llamas Habilidad
+Se desbloquea
+Enfriamiento
+Alcance
+PM
+Efecto (nivel 1)
+Flecha en llamas
+Nv. 1
+—
+20 m
+—
+Inflige entre62 (+63% Ataque) de daño de Fuego a un objetivo en un radio de 20 m y recupera 100 de los Puntos de Maná.
+Cadena gélida
+Nv. 1
+—
+20 m
+120
+Inflige 79 (+92,5% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Ralentización…
+Quebrantamiento en llamas
+Nv. 1
+5 s
+20 m
+250
+Inflige 114 (+192,5% Ataque) de daño de Fuego a un objetivo en un radio de 20 m. 5 de daño al medidor de Tambaleo
+Viento helado
+Nv. 3
+15 s
+20 m
+150
+Invoca un Viento helado que dura 2 s en la ubicación de un objetivo en un radio de 20 m. El Viento helado inflige 238 (+232,3% Ataque) de daño de Agua a un máximo de 4 enemigos…
+Explosión de llama
+Nv. 4
+5 s
+20 m
+—
+Inflige 198 (+193,2% Ataque) de daño de Fuego a un objetivo en un radio de 20 m con el estado de Marca ígnea y recupera 100 de los Puntos de Maná. 7 de daño al medidor de Tambaleo
+Llamas sin puntería
+Nv. 5
+—
+20 m
+—
+Inflige 120 (+82,5% Ataque) de daño de Fuego a un objetivo en estado de Tambaleo en un radio de 20 m.
+Congelación
+Nv. 7
+30 s
+20 m
+100
+Inflige 178 (+94% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Congelación durante…
+Atadura invernal
+Nv. 8
+45 s
+20 m
+200
+Inflige 275 (+145% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Ralentización…
+Explosión de Congelación
+Nv. 10
+10 s
+20 m
+—
+Inflige 395 (+155% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en estado de Congelación en un radio de 20 m. Al atacar a un…
+Voto de concentración
+Nv. 12
+60 s
+—
+100
+Aumenta un 10 % del Ataque y 100 de la Precisión propio durante 10s.
+Llamas del infierno
+Nv. 14
+45 s
+20 m
+200
+Inflige 1137 (+339,3% Ataque)-3412 (+1017,8% Ataque) de daño de Fuego a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m. Fase de recarga…
+Eliminación de impacto
+Nv. 16
+60 s
+—
+—
+Elimina Aturdimiento, Derribo, Atadura aérea, Agarre, Congelación y Terror de sí mismo y otorga Robustez durante 5s. Robustez: inmunidad a efectos de estado No se aplican efectos…
+Habilidades pasivas de Hechicero
+10 bonificaciones permanentes que el Hechicero aprende al subir de nivel.
+Icono de la habilidad Marca ígnea Habilidad
+Se desbloquea
+Efecto (nivel 1)
+Marca ígnea
+Nv. 1
+Cada vez que acierta un ataque de Fuego, aplica Marca de Fuego durante 5s. Marca de Fuego: al recibir Daño de Fuego mientras está en estado de Marca de Fuego, hay un 20 % de…
+Toga terrestre
+Nv. 6
+Aumenta los Puntos de Maná máx. un 7 % y aumenta la recuperación natural de Puntos de Maná en 5. Aumenta el golpe Crítico en 105 cuando los Puntos de Maná están al 50 % o más.
+Invocación helada
+Nv. 9
+Tiene un 50 % de prob. de infligir 43 (+23% Ataque) de daño adicional al atacar a un objetivo afectado por Lentitud. Tiempo de espera: 1s
+Toga de llama
+Nv. 11
+Aumenta 100 de la Precisión, un 1 % de la Amplificación de Daño de JcE, un 0,5 % de la Amplificación de Daño JcJ y un 0,2 % de Golpe propio.
+Absorción de esencia
+Nv. 13
+Aumenta el acierto de Tipo mental y de Tipo corporal un 10,7 % y recupera 25 de Puntos de Maná al acertar un ataque. Tiempo de espera: 1s
+Merced de resistencia
+Nv. 15
+Aumenta un 11,2 % de la Resistencia de Tipo Mental y la Resistencia de Tipo Impacto propia.
+Toga de helada
+Nv. 17
+Aumenta la Defensa propia un 1 % y la Resistencia a golpes críticos en 55 y, al recibir un ataque, inflige Lentitud, que reduce la Velocidad de movimiento del objetivo un 25 %…
+Merced de mejora
+Nv. 21
+Aumenta la Amplificación de daño en JcE propia un 20 % y la Amplificación de daño en JcJ un 10 % cuando los Puntos de Maná están al 25 % o más, y tiene un 50 % de prob. de…
+Pacto de resurrección
+Nv. 23
+Al recibir un ataqueTu Resistencia a Efectos de Estado aumenta un 17 % y, Al recibir un ataque mientras estás en estado de Aturdimiento, Derribo, Atadura aérea, Congelación o…
+Vaporización de viveza
+Nv. 25
+Al acertar, si el objetivo tiene más de un 70 % de Puntos de Vida, inflige 261 (+39% Ataque) de daño. Intervalo de reactivación: 1s
+Habilidades de estigma de Hechicero
+13 habilidades de estigma se desbloquean a nivel 22 y suben hasta el 25. Es donde más difieren las builds de Hechicero.
+Icono de la habilidad Estancado de alma Habilidad
+Se desbloquea
+Enfriamiento
+Alcance
+PM
+Efecto (nivel 1)
+Estancado de alma
+Nv. 22
+60 s
+20 m
+200
+Inflige 1037 (+175,5% Ataque) de daño de Agua a un objetivo en un radio de 20 m y le provoca el estado de Sellado durante 5s con un 75 % de prob. Si el objetivo es un NPC,…
+Golpe de glaciar
+Nv. 22
+90 s
+20 m
+200
+Inflige 1477 (+250% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 4 m de un objetivo en un radio de 20 m. 20 de daño al medidor de Tambaleo
+Explosión de divinidad
+Nv. 22
+60 s
+20 m
+200
+Inflige 1140 (+193,1% Ataque) de daño de Fuego a un objetivo en un radio de 20 m. 50 de daño al medidor de Tambaleo
+Bombardeo de agresión
+Nv. 22
+120 s
+20 m
+—
+Inflige 886 (+150% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Congelación durante 3s con…
+Barrera de acero
+Nv. 22
+60 s
+—
+—
+Otorga un 16 % de Barrera de Puntos de Vida Máximos durante 60s. Aumenta la Tolerancia a Daño JcE un 10 % y la Tolerancia a Daño JcJ un 5 % mientras dura la barrera, y recupera…
+Tormenta helada
+Nv. 22
+60 s
+20 m
+200
+Inflige 945 (+160% Ataque) de daño de Agua a un máximo de 4 enemigos en un radio de 5 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Ralentización.…
+Mejora elemental
+Nv. 22
+60 s
+—
+—
+Aumenta un 20 % del Ataque de Fuego y un 20 % del Ataque de Agua propio durante 10s.
+Hibernación
+Nv. 22
+180 s
+—
+—
+Otorga Hibernación al usuario durante 5s. El usuario es inmune al daño y a los efectos de estado cuando se otorga Hibernación. Usar [Eliminar hibernación] mientras Hibernación…
+Barrera de fuego
+Nv. 22
+60 s
+20 m
+200
+Invoca una Barrera de fuego en la ubicación de un objetivo en un radio de 20 m que dura 3 s. Inflige 1300 (+220% Ataque) de daño a un máximo de 4 enemigos dentro del área de…
+Espacio de Lumiel
+Nv. 22
+90 s
+20 m
+300
+Inflige 998 (+169% Ataque) de daño a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m y les provoca el estado de Atadura aérea durante 3s…
+Maldición: Árbol
+Nv. 22
+90 s
+20 m
+—
+Convierte al objetivo situado a 20 m en un Árbol durante 10s, reduciendo su Resistencia a Fuego un 20 %, y te desplazas hacia atrás. El efecto de transformación desaparece al…
+Blindaje ártico
+Nv. 22
+90 s
+—
+—
+Durante 10s, tu Tolerancia a Daño JcE aumenta un 20 % y tu Tolerancia a Daño JcJ un 10 %. Además, hay un 5 % de probabilidad de aplicar Congelación durante 3s a los enemigos…
+Explosión retrasada
+Nv. 22
+30 s
+20 m
+200
+Inflige 1116 (+189% Ataque) de daño de Fuego a un objetivo dentro de un rango de 20 m tras 4s. Aumenta el daño recibido del usuario un 15 % durante la espera.
+Las ranuras de especialización se abren con la habilidad a nivel Nv. 8, Nv. 12 y Nv. 20.
+Tableros Daevanion de Hechicero
+Planificador Daevanion →
+5 tableros del nivel 12 al 45. Planifícalos nodo a nodo en el Planificador Daevanion.
+Tablero
+Nivel requerido
+Nodos de atributo
+Nodos de habilidad
+Puntos totales
+Nezekan
+Nv. 12
+66
+22
+134
+Zikel
+Nv. 20
+66
+22
+134
+Vaizel
+Nv. 30
+66
+22
+134
+Triniel
+Nv. 40
+94
+22
+168
+Azphel
+Nv. 45
+152
+0
+232
+Atributos base de Hechicero por nivel
+Lo que la clase gana solo al subir de nivel, sin equipo.
+Puntos de Vida
+Nv. 1 · 100
+Nv. 2 · 200
+Nv. 3 · 300
+Nv. 4 · 401
+Nv. 5 · 502
+Nv. 6 · 603
+Nv. 7 · 704
+Nv. 8 · 806
+Nv. 9 · 908
+Nv. 10 · 1010
+Nv. 11 · 1112
+Nv. 12 · 1214
+Nv. 13 · 1316
+Nv. 14 · 1419
+Nv. 15 · 1522
+Nv. 16 · 1625
+Nv. 17 · 1728
+Nv. 18 · 1832
+Nv. 19 · 1936
+Nv. 20 · 2040
+Nv. 21 · 2144
+Nv. 22 · 2248
+Nv. 23 · 2352
+Nv. 24 · 2457
+Nv. 25 · 2562
+Nv. 26 · 2667
+Nv. 27 · 2772
+Nv. 28 · 2878
+Nv. 29 · 2984
+Nv. 30 · 3090
+Nv. 31 · 3196
+Nv. 32 · 3302
+Nv. 33 · 3408
+Nv. 34 · 3515
+Nv. 35 · 3622
+Nv. 36 · 3729
+Nv. 37 · 3836
+Nv. 38 · 3944
+Nv. 39 · 4052
+Nv. 40 · 4160
+Nv. 41 · 4268
+Nv. 42 · 4376
+Nv. 43 · 4484
+Nv. 44 · 4593
+Nv. 45 · 4702
+Nv. 46 · 4811
+Nv. 47 · 4920
+Nv. 48 · 5030
+Nv. 49 · 5140
+Nv. 50 · 5250
+Nv. 51 · 5360
+Nv. 52 · 5470
+Nv. 53 · 5580
+Nv. 54 · 5691
+Nv. 55 · 5802
+Nv. 56 · 5913
+Nv. 57 · 6024
+Nv. 58 · 6136
+Nv. 59 · 6248
+Nv. 60 · 6360
+Nv. 61 · 6472
+Nv. 62 · 6584
+Nv. 63 · 6696
+Nv. 64 · 6809
+Nv. 65 · 6922
+Nv. 66 · 7035
+Nv. 67 · 7148
+Nv. 68 · 7262
+Nv. 69 · 7376
+Nv. 70 · 7490
+Nv. 71 · 7604
+Nv. 72 · 7718
+Nv. 73 · 7832
+Nv. 74 · 7947
+Nv. 75 · 8062
+Nv. 76 · 8177
+Nv. 77 · 8292
+Nv. 78 · 8408
+Nv. 79 · 8524
+Nv. 80 · 8640
+Nv. 81 · 8756
+Nv. 82 · 8872
+Nv. 83 · 8988
+Nv. 84 · 9105
+Nv. 85 · 9222
+Nv. 86 · 9339
+Nv. 87 · 9456
+Nv. 88 · 9574
+Nv. 89 · 9692
+Nv. 90 · 9810
+Nv. 91 · 9928
+Nv. 92 · 10.046
+Nv. 93 · 10.164
+Nv. 94 · 10.283
+Nv. 95 · 10.402
+Nv. 96 · 10.521
+Nv. 97 · 10.640
+Nv. 98 · 10.760
+Nv. 99 · 10.880
+Nv. 100 · 11.000
+Nv. 1 · 100
+Nv. 100 · 11.000
+Defensa Adicional
+Nv. 1 · 10
+Nv. 2 · 20
+Nv. 3 · 30
+Nv. 4 · 40
+Nv. 5 · 50
+Nv. 6 · 60
+Nv. 7 · 70
+Nv. 8 · 80
+Nv. 9 · 90
+Nv. 10 · 100
+Nv. 11 · 110
+Nv. 12 · 120
+Nv. 13 · 130
+Nv. 14 · 140
+Nv. 15 · 150
+Nv. 16 · 160
+Nv. 17 · 170
+Nv. 18 · 180
+Nv. 19 · 190
+Nv. 20 · 200
+Nv. 21 · 210
+Nv. 22 · 220
+Nv. 23 · 230
+Nv. 24 · 240
+Nv. 25 · 250
+Nv. 26 · 260
+Nv. 27 · 270
+Nv. 28 · 280
+Nv. 29 · 290
+Nv. 30 · 300
+Nv. 31 · 310
+Nv. 32 · 320
+Nv. 33 · 330
+Nv. 34 · 340
+Nv. 35 · 350
+Nv. 36 · 360
+Nv. 37 · 370
+Nv. 38 · 380
+Nv. 39 · 390
+Nv. 40 · 400
+Nv. 41 · 410
+Nv. 42 · 420
+Nv. 43 · 430
+Nv. 44 · 440
+Nv. 45 · 450
+Nv. 46 · 460
+Nv. 47 · 470
+Nv. 48 · 480
+Nv. 49 · 490
+Nv. 50 · 500
+Nv. 51 · 510
+Nv. 52 · 520
+Nv. 53 · 530
+Nv. 54 · 540
+Nv. 55 · 550
+Nv. 56 · 560
+Nv. 57 · 570
+Nv. 58 · 580
+Nv. 59 · 590
+Nv. 60 · 600
+Nv. 61 · 610
+Nv. 62 · 620
+Nv. 63 · 630
+Nv. 64 · 640
+Nv. 65 · 650
+Nv. 66 · 660
+Nv. 67 · 670
+Nv. 68 · 680
+Nv. 69 · 690
+Nv. 70 · 700
+Nv. 71 · 710
+Nv. 72 · 720
+Nv. 73 · 730
+Nv. 74 · 740
+Nv. 75 · 750
+Nv. 76 · 760
+Nv. 77 · 770
+Nv. 78 · 780
+Nv. 79 · 790
+Nv. 80 · 800
+Nv. 81 · 810
+Nv. 82 · 820
+Nv. 83 · 830
+Nv. 84 · 840
+Nv. 85 · 850
+Nv. 86 · 860
+Nv. 87 · 870
+Nv. 88 · 880
+Nv. 89 · 890
+Nv. 90 · 900
+Nv. 91 · 910
+Nv. 92 · 920
+Nv. 93 · 930
+Nv. 94 · 940
+Nv. 95 · 950
+Nv. 96 · 960
+Nv. 97 · 970
+Nv. 98 · 980
+Nv. 99 · 990
+Nv. 100 · 1000
+Nv. 1 · 10
+Nv. 100 · 1000
+Ataque Adicional
+Nv. 1 · 6
+Nv. 2 · 7
+Nv. 3 · 8
+Nv. 4 · 10
+Nv. 5 · 11
+Nv. 6 · 12
+Nv. 7 · 13
+Nv. 8 · 15
+Nv. 9 · 16
+Nv. 10 · 17
+Nv. 11 · 18
+Nv. 12 · 20
+Nv. 13 · 21
+Nv. 14 · 22
+Nv. 15 · 23
+Nv. 16 · 25
+Nv. 17 · 26
+Nv. 18 · 27
+Nv. 19 · 28
+Nv. 20 · 30
+Nv. 21 · 31
+Nv. 22 · 32
+Nv. 23 · 33
+Nv. 24 · 35
+Nv. 25 · 36
+Nv. 26 · 37
+Nv. 27 · 38
+Nv. 28 · 40
+Nv. 29 · 41
+Nv. 30 · 42
+Nv. 31 · 43
+Nv. 32 · 45
+Nv. 33 · 46
+Nv. 34 · 47
+Nv. 35 · 48
+Nv. 36 · 50
+Nv. 37 · 51
+Nv. 38 · 52
+Nv. 39 · 53
+Nv. 40 · 55
+Nv. 41 · 56
+Nv. 42 · 57
+Nv. 43 · 58
+Nv. 44 · 60
+Nv. 45 · 61
+Nv. 46 · 62
+Nv. 47 · 63
+Nv. 48 · 65
+Nv. 49 · 66
+Nv. 50 · 67
+Nv. 51 · 68
+Nv. 52 · 70
+Nv. 53 · 71
+Nv. 54 · 72
+Nv. 55 · 73
+Nv. 56 · 75
+Nv. 57 · 76
+Nv. 58 · 77
+Nv. 59 · 78
+Nv. 60 · 80
+Nv. 61 · 81
+Nv. 62 · 82
+Nv. 63 · 83
+Nv. 64 · 85
+Nv. 65 · 86
+Nv. 66 · 87
+Nv. 67 · 88
+Nv. 68 · 90
+Nv. 69 · 91
+Nv. 70 · 92
+Nv. 71 · 93
+Nv. 72 · 95
+Nv. 73 · 96
+Nv. 74 · 97
+Nv. 75 · 98
+Nv. 76 · 100
+Nv. 77 · 101
+Nv. 78 · 102
+Nv. 79 · 103
+Nv. 80 · 105
+Nv. 81 · 106
+Nv. 82 · 107
+Nv. 83 · 108
+Nv. 84 · 110
+Nv. 85 · 111
+Nv. 86 · 112
+Nv. 87 · 113
+Nv. 88 · 115
+Nv. 89 · 116
+Nv. 90 · 117
+Nv. 91 · 118
+Nv. 92 · 120
+Nv. 93 · 121
+Nv. 94 · 122
+Nv. 95 · 123
+Nv. 96 · 125
+Nv. 97 · 126
+Nv. 98 · 127
+Nv. 99 · 128
+Nv. 100 · 130
+Nv. 1 · 6
+Nv. 100 · 130
+Nivel
+Puntos de Vida
+Defensa Adicional
+Ataque Adicional
+Nv. 1
+100
+10
+6
+Nv. 10
+1010
+100
+17
+Nv. 20
+2040
+200
+30
+Nv. 30
+3090
+300
+42
+Nv. 45
+4702
+450
+61
+Nv. 60
+6360
+600
+80
+Nv. 80
+8640
+800
+105
+Nv. 100
+11.000
+1000
+130
+Mejores armas para Hechicero
+Ver todo →
+83 armas del cliente global que un Hechicero puede equipar, de mayor a menor nivel de objeto.
+Nombre
+Nivel de objeto
+Nivel requerido
+Atributos
+Categoría
+Tomo prohibido de Ludra
+102
+Nv. 45
+Ataque Máximo 473–525 · Precisión +100
+Grimorio
+Grimorio de rey dragón sombrío brillante
+102
+Nv. 45
+Ataque Máximo 473–525 · Precisión +100
+Grimorio
+Grimorio de rey dragón sabio brillante
+102
+Nv. 45
+Ataque Máximo 473–525 · Precisión +100
+Grimorio
+Grimorio de rey dragón sombrío
+94
+Nv. 45
+Ataque Máximo 436–484 · Precisión +100
+Grimorio
+Grimorio de rey dragón sabio
+94
+Nv. 45
+Ataque Máximo 436–484 · Precisión +100
+Grimorio
+Grimorio abismal
+86
+Nv. 45
+Ataque Máximo 398–442 · Precisión +100
+Grimorio
+Grimorio de Kromede iracunda
+86
+Nv. 45
+Ataque Máximo 398–442 · Precisión +100
+Grimorio
+Grimorio de rey dragón oscuro brillante
+86
+Nv. 45
+Ataque Máximo 398–442 · Precisión +100
+Grimorio
+Grimorio de rey dragón blanco brillante
+86
+Nv. 45
+Ataque Máximo 398–442 · Precisión +100
+Grimorio
+Grimorio de rey dragón oscuro
+78
+Nv. 45
+Ataque Máximo 360–400 · Precisión +100
+Grimorio
+Grimorio de rey dragón blanco
+78
+Nv. 45
+Ataque Máximo 360–400 · Precisión +100
+Grimorio
+Grimorio de Aulamus
+70
+Nv. 45
+Ataque Máximo 323–359 · Precisión +100
+Grimorio
+Hechicero de un vistazo
+El Hechicero es una clase de Daño centrada en Grimorio. Con 12 habilidades activas, 10 pasivas y 13 de estigma, más 5 tableros Daevanion, su poder depende de qué habilidades subes y qué nodos eliges. La mejor arma de Hechicero del cliente global es Tomo prohibido de Ludra, de nivel de objeto 102.
+Ver también
+Guía de tier list de clases Guía de builds de clases Planificador de build de Hechicero Todas las habilidades Planificador Daevanion de Hechicero Todas las armas Gladiador Templario Asesino
+🔍
+Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Hechicero
+¿Qué rol cumple el Hechicero en AION 2?
+El Hechicero es una clase de Daño. Lucha con Grimorio y aprende 12 habilidades activas al subir de nivel.
+¿Qué arma usa el Hechicero?
+El arma principal del Hechicero es Grimorio. La más fuerte del cliente global es Tomo prohibido de Ludra, de nivel de objeto 102.
+¿Cuántas habilidades tiene el Hechicero?
+35 habilidades: 12 activas, 10 pasivas y 13 de estigma. Las activas y pasivas suben hasta el nivel 40; las de estigma, hasta el 25.
+¿Cuándo desbloquea el Hechicero las habilidades de estigma?
+Las habilidades de estigma se desbloquean a nivel de personaje 22. Después, las ranuras de especialización se abren con la habilidad a nivel Nv. 8, Nv. 12 y Nv. 20.
+¿Cómo funcionan los tableros Daevanion del Hechicero?
+El Hechicero tiene 5 tableros Daevanion (Nezekan, Zikel, Vaizel, Triniel y Azphel) que se abren del nivel 12 al 45. Gastar puntos Daevanion en nodos añade atributos o niveles de habilidad.
+¿Cuál es la mejor arma para Hechicero?
+Por nivel de objeto, Tomo prohibido de Ludra (Único, nivel 102) es el arma de tipo Grimorio más fuerte que un Hechicero puede equipar en el cliente global.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker
+Nuevo
+Valheim
+Nuevo
+Aniimo
+Nuevo
+WARDOGS
+Nuevo
+Minecraft Dungeons II
+Nuevo
+AION 2
+Nuevo
+Permafrost
+Nuevo
+SPAM
+Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker
+Nuevo
+Valheim
+Nuevo
+Aniimo
+Nuevo
+WARDOGS
+Nuevo
+Minecraft Dungeons II
+Nuevo
+AION 2
+Nuevo
+Permafrost
+Nuevo
+SPAM
+Nuevo
+No vender mi información personal

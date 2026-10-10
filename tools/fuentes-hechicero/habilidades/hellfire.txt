@@ -1,0 +1,525 @@
+Llamas del infierno es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 14 y sube hasta el nivel de habilidad 40. Enfriamiento en el nivel 1: 45 s.
+Inflige 1137 (+339,3% Ataque)-3412 (+1017,8% Ataque) de daño de Fuego a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m.
+Fase de recarga máxima: 3
+20-35 de daño al medidor de Tambaleo
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 14
+Nivel máx. 40
+Enfriamiento 45 s
+Alcance 20 m
+Qué hace Llamas del infierno
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 8121 (+339,3% Ataque)-24.364 (+1017,8% Ataque) de daño de Fuego a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m.
+Fase de recarga máxima: 3
+20-35 de daño al medidor de Tambaleo
+Enfriamiento 45 s
+PM 200
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque
+Se puede usar en movimiento No, hay que estar quieto
+Rasgos Habilidad de carga
+Especializaciones de Llamas del infierno
+5 variantes cambian cómo funciona Llamas del infierno. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Aumento de la Velocidad de habilidad en un 30 %
+Especialización 2 · requiere nivel de habilidad 8
+Al acertar, daño continuo de Fuego durante 10s
+Especialización 3 · requiere nivel de habilidad 8
+Cambio a habilidad disponible en movimiento
+Especialización 4 · requiere nivel de habilidad 12
+Ignora el Bloqueo y Evasión / Acierto con Multigolpe
+Especialización 5 · requiere nivel de habilidad 16
+Reducción de 15 s de Tiempo de Enfriamiento
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Llamas del infierno por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 1137 Nv. 2 · 1460 Nv. 3 · 1732 Nv. 4 · 2004 Nv. 5 · 2277 Nv. 6 · 2549 Nv. 7 · 2872 Nv. 8 · 3144 Nv. 9 · 3343 Nv. 10 · 3490 Nv. 11 · 3689 Nv. 12 · 3887 Nv. 13 · 4086 Nv. 14 · 4284 Nv. 15 · 4432 Nv. 16 · 4579 Nv. 17 · 4727 Nv. 18 · 4875 Nv. 19 · 5022 Nv. 20 · 5170 Nv. 21 · 5317 Nv. 22 · 5465 Nv. 23 · 5612 Nv. 24 · 5760 Nv. 25 · 5908 Nv. 26 · 6055 Nv. 27 · 6203 Nv. 28 · 6350 Nv. 29 · 6498 Nv. 30 · 6645 Nv. 31 · 6793 Nv. 32 · 6941 Nv. 33 · 7088 Nv. 34 · 7236 Nv. 35 · 7383 Nv. 36 · 7531 Nv. 37 · 7678 Nv. 38 · 7826 Nv. 39 · 7974 Nv. 40 · 8121
+Nv. 1 · 1137 Nv. 40 · 8121
+Nivel
+Daño
+Nivel requerido
+Enfriamiento
+PM
+Puntos
+1
+1137 (+339,3% Ataque)
+Nv. 14
+45 s
+200
+—
+2
+1460 (+339,3% Ataque)
+Nv. 14
+45 s
+200
+1
+3
+1732 (+339,3% Ataque)
+Nv. 17
+45 s
+200
+1
+4
+2004 (+339,3% Ataque)
+Nv. 20
+45 s
+200
+1
+5
+2277 (+339,3% Ataque)
+Nv. 23
+45 s
+200
+2
+6
+2549 (+339,3% Ataque)
+Nv. 26
+45 s
+200
+2
+7
+2872 (+339,3% Ataque)
+Nv. 29
+45 s
+200
+2
+8
+3144 (+339,3% Ataque)
+Nv. 32
+45 s
+200
+4
+9
+3343 (+339,3% Ataque)
+Nv. 35
+45 s
+200
+4
+10
+3490 (+339,3% Ataque)
+Nv. 38
+45 s
+200
+4
+11
+3689 (+339,3% Ataque)
+—
+45 s
+200
+—
+12
+3887 (+339,3% Ataque)
+—
+45 s
+200
+—
+13
+4086 (+339,3% Ataque)
+—
+45 s
+200
+—
+14
+4284 (+339,3% Ataque)
+—
+45 s
+200
+—
+15
+4432 (+339,3% Ataque)
+—
+45 s
+200
+—
+16
+4579 (+339,3% Ataque)
+—
+45 s
+200
+—
+17
+4727 (+339,3% Ataque)
+—
+45 s
+200
+—
+18
+4875 (+339,3% Ataque)
+—
+45 s
+200
+—
+19
+5022 (+339,3% Ataque)
+—
+45 s
+200
+—
+20
+5170 (+339,3% Ataque)
+—
+45 s
+200
+—
+21
+5317 (+339,3% Ataque)
+—
+45 s
+200
+—
+22
+5465 (+339,3% Ataque)
+—
+45 s
+200
+—
+23
+5612 (+339,3% Ataque)
+—
+45 s
+200
+—
+24
+5760 (+339,3% Ataque)
+—
+45 s
+200
+—
+25
+5908 (+339,3% Ataque)
+—
+45 s
+200
+—
+26
+6055 (+339,3% Ataque)
+—
+45 s
+200
+—
+27
+6203 (+339,3% Ataque)
+—
+45 s
+200
+—
+28
+6350 (+339,3% Ataque)
+—
+45 s
+200
+—
+29
+6498 (+339,3% Ataque)
+—
+45 s
+200
+—
+30
+6645 (+339,3% Ataque)
+—
+45 s
+200
+—
+31
+6793 (+339,3% Ataque)
+—
+45 s
+200
+—
+32
+6941 (+339,3% Ataque)
+—
+45 s
+200
+—
+33
+7088 (+339,3% Ataque)
+—
+45 s
+200
+—
+34
+7236 (+339,3% Ataque)
+—
+45 s
+200
+—
+35
+7383 (+339,3% Ataque)
+—
+45 s
+200
+—
+36
+7531 (+339,3% Ataque)
+—
+45 s
+200
+—
+37
+7678 (+339,3% Ataque)
+—
+45 s
+200
+—
+38
+7826 (+339,3% Ataque)
+—
+45 s
+200
+—
+39
+7974 (+339,3% Ataque)
+—
+45 s
+200
+—
+40
+8121 (+339,3% Ataque)
+—
+45 s
+200
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Llamas del infierno
+Estos nodos suben Llamas del infierno por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Llamas del infierno
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Llamas del infierno como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,54%
+Nv. 4
+Cáliz de vitalidad
+Manuscrito
+8
+16,7%
+Nv. 4
+Pergamino de vitalidad
+Arco
+74
+8,33%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,33%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,33%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,33%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,33%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,33%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,33%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,33%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,33%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,33%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Llamas del infierno: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Llamas del infierno.
+Hechicero Habilidad activa 150 de 150 nv. medio 13,7 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Flecha en llamas
+Nv. 1
+—
+—
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Explosión de llama
+Nv. 4
+5 s
+—
+Llamas sin puntería
+Nv. 5
+—
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Explosión de Congelación
+Nv. 10
+10 s
+—
+Voto de concentración
+Nv. 12
+60 s
+100
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Llamas del infierno
+Llamas del infierno es una habilidad activa de Hechicero que se aprende a nivel 14 y sube hasta el 40. Su enfriamiento es de 45 s a nivel 1 y 45 s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Flecha en llamas Cadena gélida Quebrantamiento en llamas Viento helado
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Llamas del infierno
+¿Qué hace Llamas del infierno en AION 2?
+A nivel 1: Inflige 1137 (+339,3% Ataque)-3412 (+1017,8% Ataque) de daño de Fuego a un máximo de 4 enemigos en un radio de 4 m centrados en un objetivo en un radio de 20 m. Fase de recarga máxima: 3 20-35 de daño al medidor de Tambaleo
+¿Cuál es el enfriamiento de Llamas del infierno?
+45 segundos a nivel 1 y 45 segundos a nivel 40.
+¿Cuándo aprende Llamas del infierno el Hechicero?
+A nivel de personaje 14. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Llamas del infierno?
+Llamas del infierno tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Llamas del infierno por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Llamas del infierno tiene 4 nodos así.
+¿Qué equipo puede obtener Llamas del infierno?
+689 piezas de equipo y Arcana pueden obtener Llamas del infierno como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Manuscrito, Arco y Bastón.
+¿Llamas del infierno es físico o mágico, y se puede usar en movimiento?
+Llamas del infierno inflige daño Mágico (Ataque) y no se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

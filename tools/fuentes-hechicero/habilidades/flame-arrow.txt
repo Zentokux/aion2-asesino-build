@@ -1,0 +1,437 @@
+Flecha en llamas habilidad activa de Hechicero · desde nivel 1 · nivel máx. 40
+Hechicero Habilidad activa
+Flecha en llamas es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 1 y sube hasta el nivel de habilidad 40.
+Inflige entre62 (+63% Ataque) de daño de Fuego a un objetivo en un radio de 20 m y recupera 100 de los Puntos de Maná.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 1
+Nivel máx. 40
+Enfriamiento Ninguno
+Alcance 20 m
+Qué hace Flecha en llamas
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige entre1396 (+63% Ataque) de daño de Fuego a un objetivo en un radio de 20 m y recupera 100 de los Puntos de Maná.
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque
+Se puede usar en movimiento Sí
+Rasgos Disponible en movimiento
+Especializaciones de Flecha en llamas
+5 variantes cambian cómo funciona Flecha en llamas. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Aumento del 20 % de Recuperación de Puntos de Maná
+Especialización 2 · requiere nivel de habilidad 8
+Absorción de Puntos de Vida del 100, 100 %
+Especialización 3 · requiere nivel de habilidad 8
+Al acertar, aumento del 50 % de Multigolpe
+Especialización 4 · requiere nivel de habilidad 12
+Al activarse [Ignición], El Aumento de Amplificación de Daño de Fuego aumenta un 5 % durante 10s
+Especialización 5 · requiere nivel de habilidad 16
+Al acertar «Ignición», se restablece el Tiempo de Enfriamiento de «Explosión de llama»
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Flecha en llamas por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 62 Nv. 2 · 89 Nv. 3 · 117 Nv. 4 · 144 Nv. 5 · 185 Nv. 6 · 236 Nv. 7 · 296 Nv. 8 · 346 Nv. 9 · 397 Nv. 10 · 447 Nv. 11 · 498 Nv. 12 · 558 Nv. 13 · 609 Nv. 14 · 645 Nv. 15 · 673 Nv. 16 · 710 Nv. 17 · 746 Nv. 18 · 783 Nv. 19 · 820 Nv. 20 · 848 Nv. 21 · 875 Nv. 22 · 902 Nv. 23 · 930 Nv. 24 · 957 Nv. 25 · 985 Nv. 26 · 1012 Nv. 27 · 1039 Nv. 28 · 1067 Nv. 29 · 1094 Nv. 30 · 1122 Nv. 31 · 1149 Nv. 32 · 1176 Nv. 33 · 1204 Nv. 34 · 1231 Nv. 35 · 1259 Nv. 36 · 1286 Nv. 37 · 1313 Nv. 38 · 1341 Nv. 39 · 1368 Nv. 40 · 1396
+Nv. 1 · 62 Nv. 40 · 1396
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+62 (+63% Ataque)
+Nv. 1
+—
+2
+89 (+63% Ataque)
+Nv. 1
+1
+3
+117 (+63% Ataque)
+Nv. 4
+1
+4
+144 (+63% Ataque)
+Nv. 7
+1
+5
+185 (+63% Ataque)
+Nv. 10
+2
+6
+236 (+63% Ataque)
+Nv. 13
+2
+7
+296 (+63% Ataque)
+Nv. 16
+2
+8
+346 (+63% Ataque)
+Nv. 19
+4
+9
+397 (+63% Ataque)
+Nv. 22
+4
+10
+447 (+63% Ataque)
+Nv. 25
+4
+11
+498 (+63% Ataque)
+—
+—
+12
+558 (+63% Ataque)
+—
+—
+13
+609 (+63% Ataque)
+—
+—
+14
+645 (+63% Ataque)
+—
+—
+15
+673 (+63% Ataque)
+—
+—
+16
+710 (+63% Ataque)
+—
+—
+17
+746 (+63% Ataque)
+—
+—
+18
+783 (+63% Ataque)
+—
+—
+19
+820 (+63% Ataque)
+—
+—
+20
+848 (+63% Ataque)
+—
+—
+21
+875 (+63% Ataque)
+—
+—
+22
+902 (+63% Ataque)
+—
+—
+23
+930 (+63% Ataque)
+—
+—
+24
+957 (+63% Ataque)
+—
+—
+25
+985 (+63% Ataque)
+—
+—
+26
+1012 (+63% Ataque)
+—
+—
+27
+1039 (+63% Ataque)
+—
+—
+28
+1067 (+63% Ataque)
+—
+—
+29
+1094 (+63% Ataque)
+—
+—
+30
+1122 (+63% Ataque)
+—
+—
+31
+1149 (+63% Ataque)
+—
+—
+32
+1176 (+63% Ataque)
+—
+—
+33
+1204 (+63% Ataque)
+—
+—
+34
+1231 (+63% Ataque)
+—
+—
+35
+1259 (+63% Ataque)
+—
+—
+36
+1286 (+63% Ataque)
+—
+—
+37
+1313 (+63% Ataque)
+—
+—
+38
+1341 (+63% Ataque)
+—
+—
+39
+1368 (+63% Ataque)
+—
+—
+40
+1396 (+63% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Flecha en llamas
+Estos nodos suben Flecha en llamas por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Flecha en llamas
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Flecha en llamas como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,54%
+Nv. 4
+Cáliz de vitalidad
+Manuscrito
+8
+16,7%
+Nv. 4
+Pergamino de vitalidad
+Arco
+74
+8,33%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,33%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,33%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,33%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,33%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,33%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,33%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,33%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,33%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,33%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Flecha en llamas: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Flecha en llamas.
+Hechicero Habilidad activa 150 de 150 nv. medio 13,8 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Explosión de llama
+Nv. 4
+5 s
+—
+Llamas sin puntería
+Nv. 5
+—
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Explosión de Congelación
+Nv. 10
+10 s
+—
+Voto de concentración
+Nv. 12
+60 s
+100
+Llamas del infierno
+Nv. 14
+45 s
+200
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Flecha en llamas
+Flecha en llamas es una habilidad activa de Hechicero que se aprende a nivel 1 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Cadena gélida Quebrantamiento en llamas Viento helado Explosión de llama
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Flecha en llamas
+¿Qué hace Flecha en llamas en AION 2?
+A nivel 1: Inflige entre62 (+63% Ataque) de daño de Fuego a un objetivo en un radio de 20 m y recupera 100 de los Puntos de Maná.
+¿Cuándo aprende Flecha en llamas el Hechicero?
+A nivel de personaje 1. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Flecha en llamas?
+Flecha en llamas tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Flecha en llamas por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Flecha en llamas tiene 4 nodos así.
+¿Qué equipo puede obtener Flecha en llamas?
+689 piezas de equipo y Arcana pueden obtener Flecha en llamas como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Manuscrito, Arco y Bastón.
+¿Flecha en llamas es físico o mágico, y se puede usar en movimiento?
+Flecha en llamas inflige daño Mágico (Ataque) y se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

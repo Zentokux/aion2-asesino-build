@@ -1,0 +1,387 @@
+Marca ígnea es una habilidad pasiva de Hechicero en AION 2 que se obtiene a nivel 1 y sube hasta el nivel de habilidad 40.
+Cada vez que acierta un ataque de Fuego, aplica Marca de Fuego durante 5s.
+Marca de Fuego: al recibir Daño de Fuego mientras está en estado de Marca de Fuego, hay un 20 % de probabilidad de infligir entre 32 (+55% Ataque) de Daño adicional.
+Tiempo de Enfriamiento: 1s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad pasiva
+Se aprende a Nv. 1
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Marca ígnea
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Cada vez que acierta un ataque de Fuego, aplica Marca de Fuego durante 5s.
+Marca de Fuego: al recibir Daño de Fuego mientras está en estado de Marca de Fuego, hay un 20 % de probabilidad de infligir entre 1161 (+55% Ataque) de Daño adicional.
+Tiempo de Enfriamiento: 1s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque Perjuicio
+Marca ígnea por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 32 Nv. 2 · 56 Nv. 3 · 80 Nv. 4 · 104 Nv. 5 · 140 Nv. 6 · 184 Nv. 7 · 236 Nv. 8 · 280 Nv. 9 · 325 Nv. 10 · 369 Nv. 11 · 401 Nv. 12 · 433 Nv. 13 · 465 Nv. 14 · 489 Nv. 15 · 521 Nv. 16 · 553 Nv. 17 · 586 Nv. 18 · 618 Nv. 19 · 642 Nv. 20 · 674 Nv. 21 · 706 Nv. 22 · 730 Nv. 23 · 754 Nv. 24 · 778 Nv. 25 · 802 Nv. 26 · 826 Nv. 27 · 850 Nv. 28 · 874 Nv. 29 · 898 Nv. 30 · 921 Nv. 31 · 945 Nv. 32 · 969 Nv. 33 · 993 Nv. 34 · 1017 Nv. 35 · 1041 Nv. 36 · 1065 Nv. 37 · 1089 Nv. 38 · 1113 Nv. 39 · 1137 Nv. 40 · 1161
+Nv. 1 · 32 Nv. 40 · 1161
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+32 (+55% Ataque)
+Nv. 1
+—
+2
+56 (+55% Ataque)
+Nv. 1
+1
+3
+80 (+55% Ataque)
+Nv. 4
+1
+4
+104 (+55% Ataque)
+Nv. 7
+1
+5
+140 (+55% Ataque)
+Nv. 10
+2
+6
+184 (+55% Ataque)
+Nv. 13
+2
+7
+236 (+55% Ataque)
+Nv. 16
+2
+8
+280 (+55% Ataque)
+Nv. 19
+4
+9
+325 (+55% Ataque)
+Nv. 22
+4
+10
+369 (+55% Ataque)
+Nv. 25
+4
+11
+401 (+55% Ataque)
+—
+—
+12
+433 (+55% Ataque)
+—
+—
+13
+465 (+55% Ataque)
+—
+—
+14
+489 (+55% Ataque)
+—
+—
+15
+521 (+55% Ataque)
+—
+—
+16
+553 (+55% Ataque)
+—
+—
+17
+586 (+55% Ataque)
+—
+—
+18
+618 (+55% Ataque)
+—
+—
+19
+642 (+55% Ataque)
+—
+—
+20
+674 (+55% Ataque)
+—
+—
+21
+706 (+55% Ataque)
+—
+—
+22
+730 (+55% Ataque)
+—
+—
+23
+754 (+55% Ataque)
+—
+—
+24
+778 (+55% Ataque)
+—
+—
+25
+802 (+55% Ataque)
+—
+—
+26
+826 (+55% Ataque)
+—
+—
+27
+850 (+55% Ataque)
+—
+—
+28
+874 (+55% Ataque)
+—
+—
+29
+898 (+55% Ataque)
+—
+—
+30
+921 (+55% Ataque)
+—
+—
+31
+945 (+55% Ataque)
+—
+—
+32
+969 (+55% Ataque)
+—
+—
+33
+993 (+55% Ataque)
+—
+—
+34
+1017 (+55% Ataque)
+—
+—
+35
+1041 (+55% Ataque)
+—
+—
+36
+1065 (+55% Ataque)
+—
+—
+37
+1089 (+55% Ataque)
+—
+—
+38
+1113 (+55% Ataque)
+—
+—
+39
+1137 (+55% Ataque)
+—
+—
+40
+1161 (+55% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Marca ígnea
+Estos nodos suben Marca ígnea por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+2
+Nezekan
+Nv. 12
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Equipo que puede obtener Marca ígnea
+920 piezas de equipo y Arcana en 11 categorías pueden obtener Marca ígnea como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Campana
+8
+20%
+Nv. 4
+Campana de vitalidad
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Botas
+115
+10%
+Nv. 1
+Botas de rey dragón sabio brillante
+Capa
+115
+10%
+Nv. 1
+Capa de rey dragón sabio brillante
+Guantes
+115
+10%
+Nv. 1
+Guantes de rey dragón sabio brillante
+Yelmo
+115
+10%
+Nv. 1
+Yelmo de rey dragón sabio brillante
+Pieza inferior
+115
+10%
+Nv. 1
+Grebas de rey dragón sabio brillante
+Hombreras
+115
+10%
+Nv. 1
+Hombreras de rey dragón sabio brillante
+Pieza superior
+115
+10%
+Nv. 1
+Peto de rey dragón sabio brillante
+Pendientes
+50
+10%
+Nv. 1
+Pendientes de rey dragón sabio brillante
+Collar
+49
+10%
+Nv. 1
+Collar de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Marca ígnea: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Marca ígnea.
+Hechicero Habilidad pasiva 150 de 150 nv. medio 12,9 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Toga terrestre
+Nv. 6
+Invocación helada
+Nv. 9
+Toga de llama
+Nv. 11
+Absorción de esencia
+Nv. 13
+Merced de resistencia
+Nv. 15
+Toga de helada
+Nv. 17
+Merced de mejora
+Nv. 21
+Pacto de resurrección
+Nv. 23
+Vaporización de viveza
+Nv. 25
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Marca ígnea
+Marca ígnea es una habilidad pasiva de Hechicero que se aprende a nivel 1 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Toga terrestre Invocación helada Toga de llama Absorción de esencia
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Marca ígnea
+¿Qué hace Marca ígnea en AION 2?
+A nivel 1: Cada vez que acierta un ataque de Fuego, aplica Marca de Fuego durante 5s. Marca de Fuego: al recibir Daño de Fuego mientras está en estado de Marca de Fuego, hay un 20 % de probabilidad de infligir entre 32 (+55% Ataque) de Daño adicional. Tiempo de Enfriamiento: 1s
+¿Cuándo aprende Marca ígnea el Hechicero?
+A nivel de personaje 1. Después se puede subir hasta el nivel 40.
+¿Cómo subo Marca ígnea por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Vaizel y Triniel). Marca ígnea tiene 4 nodos así.
+¿Qué equipo puede obtener Marca ígnea?
+920 piezas de equipo y Arcana pueden obtener Marca ígnea como opción de habilidad aleatoria, hasta Nv. 4, principalmente Campana, Cáliz, Botas y Capa.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

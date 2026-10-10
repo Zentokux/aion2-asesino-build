@@ -326,7 +326,7 @@ window.SPEC_DATA = [
  {
   "k": "e_viento",
   "n": "Invocación: Espíritu de viento",
-  "r": "skip",
+  "r": "no",
   "o": [
    [
     8,

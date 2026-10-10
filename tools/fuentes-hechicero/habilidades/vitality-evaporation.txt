@@ -1,0 +1,386 @@
+Hechicero Habilidad pasiva
+Vaporización de viveza es una habilidad pasiva de Hechicero en AION 2 que se obtiene a nivel 25 y sube hasta el nivel de habilidad 40.
+Al acertar, si el objetivo tiene más de un 70 % de Puntos de Vida, inflige 261 (+39% Ataque) de daño.
+Intervalo de reactivación: 1s
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad pasiva
+Se aprende a Nv. 25
+Nivel máx. 40
+Enfriamiento Ninguno
+Qué hace Vaporización de viveza
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Al acertar, si el objetivo tiene más de un 31 % de Puntos de Vida, inflige 1001 (+39% Ataque) de daño.
+Intervalo de reactivación: 1s
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque
+Vaporización de viveza por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 261 Nv. 2 · 293 Nv. 3 · 330 Nv. 4 · 361 Nv. 5 · 384 Nv. 6 · 401 Nv. 7 · 424 Nv. 8 · 446 Nv. 9 · 469 Nv. 10 · 492 Nv. 11 · 509 Nv. 12 · 526 Nv. 13 · 543 Nv. 14 · 560 Nv. 15 · 577 Nv. 16 · 594 Nv. 17 · 611 Nv. 18 · 628 Nv. 19 · 645 Nv. 20 · 662 Nv. 21 · 679 Nv. 22 · 696 Nv. 23 · 713 Nv. 24 · 730 Nv. 25 · 747 Nv. 26 · 764 Nv. 27 · 780 Nv. 28 · 797 Nv. 29 · 814 Nv. 30 · 831 Nv. 31 · 848 Nv. 32 · 865 Nv. 33 · 882 Nv. 34 · 899 Nv. 35 · 916 Nv. 36 · 933 Nv. 37 · 950 Nv. 38 · 967 Nv. 39 · 984 Nv. 40 · 1001
+Nv. 1 · 261 Nv. 40 · 1001
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+261 (+39% Ataque)
+Nv. 25
+—
+2
+293 (+39% Ataque)
+Nv. 25
+1
+3
+330 (+39% Ataque)
+Nv. 25
+1
+4
+361 (+39% Ataque)
+Nv. 25
+1
+5
+384 (+39% Ataque)
+Nv. 25
+2
+6
+401 (+39% Ataque)
+Nv. 25
+2
+7
+424 (+39% Ataque)
+Nv. 25
+2
+8
+446 (+39% Ataque)
+Nv. 25
+4
+9
+469 (+39% Ataque)
+Nv. 25
+4
+10
+492 (+39% Ataque)
+Nv. 25
+4
+11
+509 (+39% Ataque)
+—
+—
+12
+526 (+39% Ataque)
+—
+—
+13
+543 (+39% Ataque)
+—
+—
+14
+560 (+39% Ataque)
+—
+—
+15
+577 (+39% Ataque)
+—
+—
+16
+594 (+39% Ataque)
+—
+—
+17
+611 (+39% Ataque)
+—
+—
+18
+628 (+39% Ataque)
+—
+—
+19
+645 (+39% Ataque)
+—
+—
+20
+662 (+39% Ataque)
+—
+—
+21
+679 (+39% Ataque)
+—
+—
+22
+696 (+39% Ataque)
+—
+—
+23
+713 (+39% Ataque)
+—
+—
+24
+730 (+39% Ataque)
+—
+—
+25
+747 (+39% Ataque)
+—
+—
+26
+764 (+39% Ataque)
+—
+—
+27
+780 (+39% Ataque)
+—
+—
+28
+797 (+39% Ataque)
+—
+—
+29
+814 (+39% Ataque)
+—
+—
+30
+831 (+39% Ataque)
+—
+—
+31
+848 (+39% Ataque)
+—
+—
+32
+865 (+39% Ataque)
+—
+—
+33
+882 (+39% Ataque)
+—
+—
+34
+899 (+39% Ataque)
+—
+—
+35
+916 (+39% Ataque)
+—
+—
+36
+933 (+39% Ataque)
+—
+—
+37
+950 (+39% Ataque)
+—
+—
+38
+967 (+39% Ataque)
+—
+—
+39
+984 (+39% Ataque)
+—
+—
+40
+1001 (+39% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Nodos Daevanion que mejoran Vaporización de viveza
+Estos nodos suben Vaporización de viveza por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Zikel
+Nv. 20
++1
+2
+Zikel
+Nv. 20
++1
+2
+Vaizel
+Nv. 30
++1
+2
+Triniel
+Nv. 40
++1
+2
+Equipo que puede obtener Vaporización de viveza
+920 piezas de equipo y Arcana en 11 categorías pueden obtener Vaporización de viveza como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Espejo
+8
+20%
+Nv. 4
+Espejo de vitalidad
+Botas
+115
+10%
+Nv. 1
+Botas de rey dragón sabio brillante
+Capa
+115
+10%
+Nv. 1
+Capa de rey dragón sabio brillante
+Guantes
+115
+10%
+Nv. 1
+Guantes de rey dragón sabio brillante
+Yelmo
+115
+10%
+Nv. 1
+Yelmo de rey dragón sabio brillante
+Pieza inferior
+115
+10%
+Nv. 1
+Grebas de rey dragón sabio brillante
+Hombreras
+115
+10%
+Nv. 1
+Hombreras de rey dragón sabio brillante
+Pieza superior
+115
+10%
+Nv. 1
+Peto de rey dragón sabio brillante
+Pendientes
+50
+10%
+Nv. 1
+Pendientes de rey dragón sabio brillante
+Collar
+49
+10%
+Nv. 1
+Collar de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Vaporización de viveza: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Vaporización de viveza.
+Hechicero Habilidad pasiva 150 de 150 nv. medio 12,5 100%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Marca ígnea
+Nv. 1
+Toga terrestre
+Nv. 6
+Invocación helada
+Nv. 9
+Toga de llama
+Nv. 11
+Absorción de esencia
+Nv. 13
+Merced de resistencia
+Nv. 15
+Toga de helada
+Nv. 17
+Merced de mejora
+Nv. 21
+Pacto de resurrección
+Nv. 23
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Vaporización de viveza
+Vaporización de viveza es una habilidad pasiva de Hechicero que se aprende a nivel 25 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 0 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Marca ígnea Toga terrestre Invocación helada Toga de llama
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Vaporización de viveza
+¿Qué hace Vaporización de viveza en AION 2?
+A nivel 1: Al acertar, si el objetivo tiene más de un 70 % de Puntos de Vida, inflige 261 (+39% Ataque) de daño. Intervalo de reactivación: 1s
+¿Cuándo aprende Vaporización de viveza el Hechicero?
+A nivel de personaje 25. Después se puede subir hasta el nivel 40.
+¿Cómo subo Vaporización de viveza por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Zikel, Vaizel y Triniel). Vaporización de viveza tiene 4 nodos así.
+¿Qué equipo puede obtener Vaporización de viveza?
+920 piezas de equipo y Arcana pueden obtener Vaporización de viveza como opción de habilidad aleatoria, hasta Nv. 4, principalmente Cáliz, Espejo, Botas y Capa.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

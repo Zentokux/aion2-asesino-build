@@ -13,7 +13,7 @@ foreach ($id in $Ids) {
   $vb = [regex]::Match($p, 'viewBox="0 0 (\d+) (\d+)"')
   $W = [int]$vb.Groups[1].Value; $H = [int]$vb.Groups[2].Value
   $lines = @()
-  foreach ($m in [regex]::Matches($p, '<line x1="([\d.]+)" y1="([\d.]+)" x2="([\d.]+)" y2="([\d.]+)"( class="on")?')) {
+  foreach ($m in [regex]::Matches($p, '<line x1="([\d.]+)" y1="([\d.]+)" x2="([\d.]+)" y2="([\d.]+)"(?: data-c="\d+")?( class="on")?')) {
     $lines += , @([int]([double]$m.Groups[1].Value - 0.5), [int]([double]$m.Groups[2].Value - 0.5), [int]([double]$m.Groups[3].Value - 0.5), [int]([double]$m.Groups[4].Value - 0.5), [int]($m.Groups[5].Success))
   }
   $mbBoard = $mb.boards | Where-Object { [int]$_.id -eq $id }

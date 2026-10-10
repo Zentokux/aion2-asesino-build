@@ -20,7 +20,13 @@ CLASES = {
         'summon-water-spirit': 'e_agua', 'jointstrike-curse': 'e_maldicion', 'dimensional-control': 'e_dominio',
         'summon-earth-spirit': 'e_tierra', 'rapid-scattershot': 'e_rafaga', 'defiance': 'e_eliminacion',
         'summon-wind-spirit': 'e_viento', 'souls-cry': 'e_grito_alma'}),
+    'hechicero': ('sorcerer', {
+        'hellfire': 'h_infierno', 'firestorm': 'h_quebranto', 'bittercold-wind': 'h_viento', 'blaze': 'h_explosion',
+        'wish-of-concentration': 'h_voto', 'winters-shackles': 'h_atadura', 'flame-arrow': 'h_flecha', 'ice-chain': 'h_cadena',
+        'flame-scattershot': 'h_sinpunteria', 'frost': 'h_congelacion', 'defiance': 'h_eliminacion', 'frost-burst': 'h_explo_cong'}),
 }
+# couga54 a veces pone una palabra en vez del rango objetivo
+RANGO_ES = {'leveling': 'solo subiendo', 'skip': 'no', 'alt.': 'alternativa'}
 
 def limpiar(t):
     # metabot escribe "del 70, 70 %" donde el juego dice "del 0.7 %"
@@ -34,7 +40,7 @@ for clase, (couga, iconos) in CLASES.items():
     data = json.load(open(os.path.join(SRC, f'esp-{couga}.json'), encoding='utf-8'))
     out = []
     for h in data:
-        out.append({'k': iconos[h['slug']], 'n': h['nombre'], 'r': ' → '.join(h['rango'].split()),
+        out.append({'k': iconos[h['slug']], 'n': h['nombre'], 'r': RANGO_ES.get(h['rango'], ' → '.join(h['rango'].split())),
                     'o': [[o['nv'], limpiar(o['es']), 1 if o['elige'] else 2 if o['a20'] else 0] for o in h['opciones']]})
     js = ('// Aion 2 Global S1 — Especializaciones de las habilidades activas: datos para especializaciones.js.\n'
           f'// Elección de couga54 (https://couga54.github.io/aion2-guides/en/{couga}/#skills, modo PvE) y textos del cliente\n'

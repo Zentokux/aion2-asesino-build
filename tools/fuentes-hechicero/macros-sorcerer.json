@@ -1,0 +1,173 @@
+[
+ {
+  "type": "heading",
+  "text": "Leveling progress"
+ },
+ {
+  "type": "heading",
+  "text": "Core skills"
+ },
+ {
+  "type": "heading",
+  "text": "Stigma loadout"
+ },
+ {
+  "type": "heading",
+  "text": "Key passives"
+ },
+ {
+  "type": "heading",
+  "text": "Overview"
+ },
+ {
+  "type": "heading",
+  "text": "The build in one sentence"
+ },
+ {
+  "type": "heading",
+  "text": "Global Season 1: what changes"
+ },
+ {
+  "type": "heading",
+  "text": "Skills"
+ },
+ {
+  "type": "heading",
+  "text": "Passives"
+ },
+ {
+  "type": "heading",
+  "text": "Gear & stats"
+ },
+ {
+  "type": "heading",
+  "text": "Daevanion boards"
+ },
+ {
+  "type": "heading",
+  "text": "The route on the boards"
+ },
+ {
+  "type": "heading",
+  "text": "Stigmas"
+ },
+ {
+  "type": "heading",
+  "text": "Macro & rotation"
+ },
+ {
+  "type": "heading",
+  "text": "1. Hotbar lines"
+ },
+ {
+  "type": "line",
+  "key": "4",
+  "name": "Buff line",
+  "skills_top_to_bottom": [
+   "delayed-explosion",
+   "bittercold-wind",
+   "element-enhancement"
+  ],
+  "note": "Element Enhancement goes off whenever it is ready; then the root field and the +15% damage debuff."
+ },
+ {
+  "type": "line",
+  "key": "5",
+  "name": "Concentration line",
+  "skills_top_to_bottom": [
+   "fire-wall",
+   "cold-storm",
+   "wish-of-concentration"
+  ],
+  "note": "The second buff first, then both fields under the target."
+ },
+ {
+  "type": "line",
+  "key": "1",
+  "name": "Fire line",
+  "skills_top_to_bottom": [
+   "firestorm",
+   "blaze"
+  ],
+  "note": "Blaze whenever the target carries a Fire Mark, Firestorm on its 5-second cooldown."
+ },
+ {
+  "type": "line",
+  "key": "T",
+  "name": "Ice line",
+  "skills_top_to_bottom": [
+   "ice-chain",
+   "winters-shackles"
+  ],
+  "note": "Winter's Shackles for the damage buff; Ice Chain fills the rest if you kept it — without it the line is Winter's Shackles alone."
+ },
+ {
+  "type": "heading",
+  "text": "2. In-game macro"
+ },
+ {
+  "type": "macro",
+  "steps": [
+   "1Buff line4",
+   "2Concentration line5",
+   "3Flame ArrowR",
+   "4Fire line1",
+   "5Flame ArrowR",
+   "6Ice lineT",
+   "7Flame Scattershot3"
+  ]
+ },
+ {
+  "type": "heading",
+  "text": "3. What you actually press"
+ },
+ {
+  "type": "heading",
+  "text": "4. Later: burst by hand"
+ },
+ {
+  "type": "heading",
+  "text": "Recap"
+ },
+ {
+  "type": "heading",
+  "text": "How to fight while leveling"
+ },
+ {
+  "type": "heading",
+  "text": "Leveling macro"
+ },
+ {
+  "type": "line",
+  "key": "MB5",
+  "name": "Fire line",
+  "skills_top_to_bottom": [
+   "flame-arrow",
+   "firestorm",
+   "blaze"
+  ],
+  "note": ""
+ },
+ {
+  "type": "line",
+  "key": "RMB",
+  "name": "Ice line",
+  "skills_top_to_bottom": [
+   "ice-chain",
+   "frost"
+  ],
+  "note": ""
+ },
+ {
+  "type": "heading",
+  "text": "Sources"
+ },
+ {
+  "type": "heading",
+  "text": "What's new"
+ },
+ {
+  "type": "heading",
+  "text": "Send feedback"
+ }
+]

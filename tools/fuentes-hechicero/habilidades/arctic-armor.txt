@@ -1,0 +1,289 @@
+Blindaje ártico es una habilidad de estigma de Hechicero en AION 2 que se obtiene a nivel 22 y sube hasta el nivel de habilidad 25. Enfriamiento en el nivel 1: 90 s.
+Durante 10s, tu Tolerancia a Daño JcE aumenta un 20 % y tu Tolerancia a Daño JcJ un 10 %. Además, hay un 5 % de probabilidad de aplicar Congelación durante 3s a los enemigos situados a 7 m que te ataquen. Durante su duración, si tus Puntos de Maná están al 50 % o más, obtienes el efecto de Conversión mágica.
+Conversión mágica: recibes un 50 % del daño en tus Puntos de Vida y un 10 % en tus Puntos de Maná.
+No se ve afectado por los efectos de Aumento de Duración del Tiempo de Enfriamiento.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad de estigma
+Se aprende a Nv. 22
+Nivel máx. 25
+Enfriamiento 90 s
+Qué hace Blindaje ártico
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Durante 22,5s, tu Tolerancia a Daño JcE aumenta un 20 % y tu Tolerancia a Daño JcJ un 10 %. Además, hay un 5 % de probabilidad de aplicar Congelación durante 3s a los enemigos situados a 7 m que te ataquen. Durante su duración, si tus Puntos de Maná están al 50 % o más, obtienes el efecto de Conversión mágica.
+Conversión mágica: recibes un 50 % del daño en tus Puntos de Vida y un 10 % en tus Puntos de Maná.
+No se ve afectado por los efectos de Aumento de Duración del Tiempo de Enfriamiento.
+Enfriamiento 90 s
+Nivel 25 / 25
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Mejora
+Se puede usar en movimiento Sí
+Rasgos Sin objetivo Disponible en movimiento
+Especializaciones de Blindaje ártico
+5 variantes cambian cómo funciona Blindaje ártico. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 5
+Aumento del 20 % de la Resistencia de Tipo Impacto
+Especialización 2 · requiere nivel de habilidad 10
+Efecto [Absorción de Esencia] x1,5
+Especialización 3 · requiere nivel de habilidad 15
+Efecto [Toga de helada] x1,5
+Especialización 4 · requiere nivel de habilidad 20
+Aumento adicional del 20 % de Tolerancia a Daño JcE y 10 % de Tolerancia a Daño JcJ
+◆ Especialización 5
+Cambia el efecto de Desplazamiento mágico a -40 % a los Puntos de Vida y -8 % a los Puntos de Maná
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Blindaje ártico por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 25 niveles.
+Nivel
+Nivel requerido
+Enfriamiento
+Puntos
+1
+Nv. 22
+90 s
+1 ★
+2
+Nv. 22
+90 s
+1 ★
+3
+Nv. 22
+90 s
+1 ★
+4
+Nv. 22
+90 s
+1 ★
+5
+Nv. 22
+90 s
+1 ★
+6
+Nv. 22
+90 s
+2 ★
+7
+Nv. 22
+90 s
+2 ★
+8
+Nv. 22
+90 s
+2 ★
+9
+Nv. 22
+90 s
+2 ★
+10
+Nv. 22
+90 s
+2 ★
+11
+Nv. 22
+90 s
+4 ★
+12
+Nv. 22
+90 s
+4 ★
+13
+Nv. 22
+90 s
+4 ★
+14
+Nv. 22
+90 s
+4 ★
+15
+Nv. 22
+90 s
+4 ★
+16
+Nv. 22
+90 s
+8 ★
+17
+Nv. 22
+90 s
+8 ★
+18
+Nv. 22
+90 s
+8 ★
+19
+Nv. 22
+90 s
+8 ★
+20
+Nv. 22
+90 s
+8 ★
+21
+—
+90 s
+—
+22
+—
+90 s
+—
+23
+—
+90 s
+—
+24
+—
+90 s
+—
+25
+—
+90 s
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Blindaje ártico: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Blindaje ártico.
+Hechicero Estigma 14 de 150 nv. medio 4,1 9,3%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Golpe de glaciar
+Nv. 22
+90 s
+200
+Estancado de alma
+Nv. 22
+60 s
+200
+Explosión de divinidad
+Nv. 22
+60 s
+200
+Bombardeo de agresión
+Nv. 22
+120 s
+—
+Tormenta helada
+Nv. 22
+60 s
+200
+Barrera de acero
+Nv. 22
+60 s
+—
+Barrera de fuego
+Nv. 22
+60 s
+200
+Mejora elemental
+Nv. 22
+60 s
+—
+Hibernación
+Nv. 22
+180 s
+—
+Espacio de Lumiel
+Nv. 22
+90 s
+300
+Maldición: Árbol
+Nv. 22
+90 s
+—
+Explosión retrasada
+Nv. 22
+30 s
+200
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Blindaje ártico
+Blindaje ártico es una habilidad de estigma de Hechicero que se aprende a nivel 22 y sube hasta el 25. Su enfriamiento es de 90 s a nivel 1 y 90 s al máximo. Tiene 5 especializaciones y 0 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Guía de estigmas Golpe de glaciar Estancado de alma Explosión de divinidad Bombardeo de agresión
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Blindaje ártico
+¿Qué hace Blindaje ártico en AION 2?
+A nivel 1: Durante 10s, tu Tolerancia a Daño JcE aumenta un 20 % y tu Tolerancia a Daño JcJ un 10 %. Además, hay un 5 % de probabilidad de aplicar Congelación durante 3s a los enemigos situados a 7 m que te ataquen. Durante su duración, si tus Puntos de Maná están al 50 % o más, obtienes el efecto de Conversión mágica. Conversión mágica: recibes un 50 % del daño en tus Puntos de Vida y un 10 % en tus Puntos de Maná. No se ve afectado por los efectos de Aumento de Duración del Tiempo de Enfriamiento.
+¿Cuál es el enfriamiento de Blindaje ártico?
+90 segundos a nivel 1 y 90 segundos a nivel 25.
+¿Cuándo aprende Blindaje ártico el Hechicero?
+A nivel de personaje 22. Después se puede subir hasta el nivel 25.
+¿Qué especializaciones tiene Blindaje ártico?
+Blindaje ártico tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Blindaje ártico es físico o mágico, y se puede usar en movimiento?
+Blindaje ártico inflige daño Mágico (Mejora) y se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

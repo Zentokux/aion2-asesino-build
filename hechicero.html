@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aion 2 — Guía Progresiva Hechicero PvE (Global S1)</title>
+<meta name="description" content="Guía progresiva del Hechicero PvE para Aion 2 Global Season 1. Nivel 1-45: puntos por nivel, rotaciones, estigmas, Daevanion, macros y equipo.">
+<style>
+:root {
+  --bg: #0b0d12;
+  --bg-2: #141822;
+  --bg-3: #1b2130;
+  --border: #2a3245;
+  --text: #e6eaf2;
+  --text-dim: #8f98a8;
+  --accent: #d4af37;
+  --accent-2: #c99a2e;
+  --crit: #ff4d6d;
+  --poison: #7cfc8a;
+  --stigma: #a855f7;
+  --info: #4ea8de;
+  --warn: #f59e0b;
+  --ok: #22c55e;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: linear-gradient(180deg, #0b0d12 0%, #0f1420 100%);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  min-height: 100vh;
+}
+header {
+  background: linear-gradient(135deg, #1a1f2e 0%, #0d1119 100%);
+  border-bottom: 2px solid var(--accent);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+header .subtitle {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+header .meta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+.badge {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: var(--text-dim);
+}
+.badge.ok { border-color: var(--ok); color: var(--ok); }
+.badge.warn { border-color: var(--warn); color: var(--warn); }
+
+nav {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(20, 24, 34, 0.9);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  scrollbar-width: thin;
+}
+nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+nav a:hover { color: var(--accent); background: var(--bg-3); }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+h3 {
+  color: var(--accent-2);
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.2rem;
+}
+h4 {
+  color: var(--text);
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+p { margin-bottom: 0.75rem; color: #cfd4de; }
+strong { color: var(--text); }
+
+.callout {
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid;
+}
+.callout.info { background: rgba(78, 168, 222, 0.1); border-color: var(--info); }
+.callout.warn { background: rgba(245, 158, 11, 0.1); border-color: var(--warn); }
+.callout.crit { background: rgba(255, 77, 109, 0.1); border-color: var(--crit); }
+.callout.ok { background: rgba(34, 197, 94, 0.1); border-color: var(--ok); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+th, td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+th {
+  background: #202738;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+tr:last-child td { border-bottom: none; }
+tr:hover { background: rgba(212, 175, 55, 0.05); }
+
+.tier {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--bg-3);
+}
+.tier.s { background: var(--crit); color: #fff; }
+.tier.a { background: var(--accent); color: #000; }
+.tier.b { background: var(--info); color: #fff; }
+.tier.passive { background: var(--bg-3); color: var(--text-dim); border: 1px solid var(--border); }
+.tier.stigma { background: var(--stigma); color: #fff; }
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+li { margin-bottom: 0.3rem; }
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.skill-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  transition: all 0.2s;
+}
+.skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.aion-icon-img {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: #000;
+  display: block;
+  object-fit: cover;
+}
+.aion-icon.fallback {
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: linear-gradient(135deg, #64748b, #334155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.skill-mini .aion-icon-img, .skill-mini .aion-icon {
+  border-radius: 8px;
+}
+
+/* Tooltip del Daevanion board */
+.board-tooltip {
+  position: fixed;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  max-width: 280px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.board-tooltip strong { color: var(--accent); }
+.board-tooltip em { color: var(--info); font-style: normal; }
+.board-tooltip small { color: var(--text-dim); display: block; margin-top: 0.3rem; }
+
+.board-nodes-list li.owned {
+  background: rgba(34, 197, 94, 0.15);
+  border-left: 3px solid var(--ok);
+  padding-left: 0.5rem;
+  text-decoration: line-through;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.board-nodes-list li { cursor: pointer; transition: background 0.15s; }
+.board-nodes-list li:hover { background: rgba(212, 175, 55, 0.08); }
+
+.badge.ok { color: var(--ok); border-color: var(--ok); background: rgba(34,197,94,0.1); }
+
+/* Stigma row (loadout list with icons) */
+.stigma-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--stigma);
+}
+.stigma-row > span { flex-shrink: 0; }
+.stigma-row > div { flex: 1; }
+.stigma-row .aion-icon-img, .stigma-row .aion-icon {
+  border-radius: 6px;
+  border: 2px solid var(--stigma);
+}
+
+.board-tabs button small { color: var(--text-dim); font-size: 0.7rem; font-weight: normal; display: block; }
+
+.skill-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.skill-card .icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 50%);
+}
+.skill-card .icon.i-dps { background: linear-gradient(135deg, #ff4d6d, #c9184a); border-color: #ff4d6d; }
+.skill-card .icon.i-util { background: linear-gradient(135deg, #4ea8de, #1d4ed8); border-color: #4ea8de; }
+.skill-card .icon.i-buff { background: linear-gradient(135deg, #d4af37, #92400e); border-color: #d4af37; }
+.skill-card .icon.i-stigma { background: linear-gradient(135deg, #a855f7, #6b21a8); border-color: #a855f7; }
+.skill-card .icon.i-def { background: linear-gradient(135deg, #22c55e, #166534); border-color: #22c55e; }
+.skill-card .icon.i-mov { background: linear-gradient(135deg, #06b6d4, #0e7490); border-color: #06b6d4; }
+.skill-card .icon.i-aoe { background: linear-gradient(135deg, #f59e0b, #b45309); border-color: #f59e0b; }
+.skill-card .icon.i-passive { background: linear-gradient(135deg, #64748b, #334155); border-color: #64748b; }
+.skill-card .icon .glyph { position: relative; z-index: 2; }
+
+.pet-card .icon-pet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #d4af37, #78350f);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+.skill-card .info { flex: 1; }
+.skill-card .name {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+.skill-card .desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.level-tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.level-tabs button {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.level-tabs button:hover { color: var(--accent); border-color: var(--accent); }
+.level-tabs button.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fade 0.3s ease; }
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.rotation-steps {
+  background: var(--bg-3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+  border-left: 4px solid var(--accent);
+}
+.rotation-steps ol {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+.rotation-steps li {
+  counter-increment: step;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  position: relative;
+  border-bottom: 1px dashed var(--border);
+}
+.rotation-steps li:last-child { border-bottom: none; }
+.rotation-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--accent);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.progress-check {
+  display: block;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+.progress-check:hover { color: var(--text); }
+.progress-check input {
+  margin-right: 0.5rem;
+  accent-color: var(--accent);
+  transform: scale(1.1);
+}
+.progress-check.checked { color: var(--ok); text-decoration: line-through; opacity: 0.7; }
+
+.priority-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+.priority-list .chip {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.priority-list .chip.p1 { border-color: var(--crit); color: var(--crit); }
+.priority-list .chip.p2 { border-color: var(--accent); color: var(--accent); }
+.priority-list .chip.p3 { border-color: var(--info); color: var(--info); }
+
+.macro-box {
+  background: #000;
+  color: #a0e8af;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  border: 1px solid var(--border);
+  white-space: pre;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.stat {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.stat .label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat .value {
+  font-size: 1.3rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.pet-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.pet-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  margin-bottom: 0.5rem;
+  background: #000;
+  object-fit: cover;
+  display: none;
+}
+.pet-card .pet-name { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+.pet-card .pet-genus { font-size: 0.75rem; color: var(--text-dim); }
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+  transition: width 0.3s;
+  width: 0%;
+}
+
+details {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+}
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+details[open] summary { margin-bottom: 0.75rem; }
+
+code {
+  background: #000;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--poison);
+}
+
+@media (max-width: 640px) {
+  header h1 { font-size: 1.8rem; }
+  main { padding: 1rem; }
+  section { padding: 1rem; }
+  nav ul { gap: 0.5rem; }
+  .skill-card img { width: 40px; height: 40px; }
+}
+
+/* ============ PLANIFICADOR INTERACTIVO (estilo metabot.gg) ============ */
+.planner-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+/* Nav con flechas */
+.plv-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  background: var(--bg-3);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.plv-nav-bottom { margin-top: 1.5rem; flex-wrap: wrap; }
+.plv-arrow {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  min-width: 110px;
+}
+.plv-arrow:hover:not(:disabled) {
+  background: var(--accent-2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4);
+}
+.plv-arrow:disabled {
+  background: var(--bg-2);
+  color: var(--text-dim);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.plv-current {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--text);
+}
+.plv-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+.plv-num {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: 800;
+  text-shadow: 0 2px 10px rgba(212,175,55,0.5);
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+}
+.plv-of {
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+/* Progress bar */
+.plv-progress-wrap {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem;
+}
+.plv-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--crit));
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* Slider */
+.plv-slider-wrap { margin: 0.5rem 0 1.5rem; }
+.plv-slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.plv-slider-marks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.plv-slider-marks span {
+  cursor: pointer;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.plv-slider-marks span:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Points row */
+.plv-points-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.pts-box {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.pts-box .label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.pts-box .value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-top: 0.25rem;
+  line-height: 1;
+}
+.pts-box .value.gained { color: var(--ok); }
+
+/* Special / note */
+.plv-special {
+  background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  border-left: 4px solid var(--accent);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+.plv-note {
+  background: rgba(78,168,222,0.1);
+  border-left: 4px solid var(--info);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: var(--text);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.plv-section {
+  background: var(--bg-3);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+}
+.plv-section h4 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+.empty-msg { color: var(--text-dim); font-style: italic; }
+
+/* Unlock / invest items */
+.unlock-item, .invest-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.6rem;
+  background: var(--bg-2);
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+}
+.skill-mini {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.invest-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.1rem;
+}
+.invest-change {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.invest-change b { color: var(--accent); }
+.invest-cost {
+  color: var(--ok);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.unlock-item em { color: var(--stigma); font-style: normal; font-size: 0.8rem; }
+
+/* State grid - all skills with rank bars */
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.6rem;
+}
+.state-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem;
+  transition: all 0.2s;
+}
+.state-card.locked { opacity: 0.4; }
+.state-card.maxed {
+  border-color: var(--ok);
+  background: rgba(34,197,94,0.08);
+}
+.state-card.just-changed {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(212,175,55,0.4);
+  animation: just-pulse 0.6s ease;
+}
+@keyframes just-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+.state-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.state-info { flex: 1; min-width: 0; }
+.state-name { font-weight: 600; font-size: 0.85rem; color: var(--text); }
+.state-type { font-size: 0.7rem; color: var(--text-dim); }
+.state-rank {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.state-bar {
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.state-bar-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* Quick jumps */
+.plv-quick-jumps {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plv-jump {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.15s;
+}
+.plv-jump:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+
+@media (max-width: 640px) {
+  .plv-num { font-size: 1.8rem; }
+  .plv-arrow { padding: 0.5rem 0.8rem; min-width: 90px; font-size: 0.85rem; }
+  .pts-box .value { font-size: 1.3rem; }
+  .state-grid { grid-template-columns: 1fr; }
+}
+.planner-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.planner-controls label {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.planner-controls input[type="range"] {
+  accent-color: var(--accent);
+}
+.planner-table {
+  background: var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.planner-row {
+  display: grid;
+  grid-template-columns: 70px 200px 1fr 1.5fr;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: background 0.15s;
+}
+.planner-row:hover { background: rgba(212, 175, 55, 0.05); }
+.planner-row.empty { opacity: 0.4; }
+.planner-row.zero-sp { background: rgba(78, 168, 222, 0.05); border-left: 3px solid var(--info); }
+.planner-row.milestone { background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent); }
+.planner-level {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.planner-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+.pts-gained { color: var(--ok); font-weight: 700; }
+.pts-cum { color: var(--text-dim); }
+.pts-bank { color: var(--info); }
+.planner-unlocks { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.unlock-chip {
+  background: var(--stigma);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.no-unlock, .no-action { color: var(--text-dim); font-style: italic; font-size: 0.85rem; }
+.planner-actions { display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-action {
+  background: var(--bg-2);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+  font-size: 0.85rem;
+}
+.plan-action strong { color: var(--accent); }
+.plan-action em { color: var(--ok); font-style: normal; }
+.plan-action small { color: var(--text-dim); display: block; margin-top: 0.2rem; }
+.plan-note {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.2rem 0.5rem;
+}
+.plan-special {
+  background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-left: 3px solid var(--crit);
+}
+@media (max-width: 720px) {
+  .planner-row { grid-template-columns: 60px 1fr; gap: 0.5rem; }
+  .planner-unlocks, .planner-actions { grid-column: 1 / -1; }
+  .planner-points { grid-column: 2; }
+}
+
+/* ============ DAEVANION BOARDS ============ */
+.board-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.board-tabs button {
+  background: var(--bg-3);
+  color: var(--text);
+  border: 2px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.board-tabs button:hover { background: var(--bg-2); }
+.board-tabs button.active { background: var(--accent); color: #000; }
+.board-panel { display: none; }
+.board-panel.active { display: block; animation: fade 0.3s ease; }
+.board-header h3 { margin-bottom: 0.5rem; font-size: 1.3rem; }
+.board-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.board-full { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; }
+.board-grid-wrap {
+  background: var(--bg-3);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+.board-svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.node-group {
+  transition: transform 0.15s;
+}
+.node-group:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+.node-group.unlocked circle:last-of-type {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { filter: drop-shadow(0 0 2px #22c55e); }
+  50% { filter: drop-shadow(0 0 8px #22c55e); }
+}
+.board-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.75rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.board-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.board-nodes-list {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+.board-nodes-list h4 { color: var(--accent); margin-bottom: 0.5rem; }
+.board-nodes-list ol { padding-left: 1.2rem; }
+.board-nodes-list li {
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px dashed var(--border);
+}
+.board-nodes-list li:last-child { border-bottom: none; }
+.board-nodes-list .chip {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+}
+.board-nodes-list em { color: var(--ok); font-style: normal; }
+
+/* === DAEVANION v5 — snake chart + vista progresiva === */
+.snake-wrap {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+}
+.snake-svg {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.snake-node { transition: transform 0.15s; }
+.snake-node:hover:not(.is-center) { transform: scale(1.12); transform-origin: center; }
+.snake-node.owned rect, .snake-node.owned circle:not(:last-child) {
+  stroke: #22c55e !important;
+  filter: drop-shadow(0 0 6px rgba(34,197,94,0.8));
+}
+
+/* === DAEVANION v6 — estilo tiles juego Aion 2 === */
+.tile {
+  transition: all 0.15s;
+}
+.tile.in-route {
+  cursor: pointer;
+}
+.tile.in-route:hover rect:first-child {
+  stroke: #f4c430;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(244,196,48,0.6));
+}
+.tile.owned rect {
+  stroke: #22c55e !important;
+  stroke-width: 2.5 !important;
+  filter: drop-shadow(0 0 8px rgba(34,197,94,0.9));
+}
+.snake-svg {
+  background: radial-gradient(ellipse at center, #1a1a1f 0%, #0a0b0f 100%);
+}
+
+/* === DAEVANION v4 — vista progresiva conectada === */
+.daev-intro { margin-bottom: 1rem; }
+.daev-totals-top {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background: var(--bg-3);
+  border-radius: 8px;
+  margin: 0.75rem 0;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.daev-totals-top small {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: normal;
+}
+.progressive-route {
+  list-style: none;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0.5rem 0;
+  position: relative;
+}
+.progressive-route::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  bottom: 1rem;
+  width: 4px;
+  background: linear-gradient(180deg, #f4c430 0%, #c99a2e 100%);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+.route-node {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  margin-bottom: 0.4rem;
+  background: var(--bg-3);
+  border-radius: 10px;
+  border-left: 4px solid var(--node-color, var(--border));
+  position: relative;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.route-node.center {
+  background: linear-gradient(90deg, rgba(244,196,48,0.15), var(--bg-3));
+  border-left-color: #f4c430;
+  cursor: default;
+}
+.route-node:hover:not(.center) {
+  transform: translateX(4px);
+  background: rgba(244,196,48,0.08);
+}
+.route-node.owned {
+  border-left-color: var(--ok);
+  background: rgba(34,197,94,0.08);
+}
+.route-node.owned .node-label { text-decoration: line-through; opacity: 0.6; }
+.route-node.owned .node-check { opacity: 1; }
+.node-number {
+  background: var(--node-color, var(--accent));
+  color: #000;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  box-shadow: 0 0 0 3px #0b0d12;
+  position: relative;
+  z-index: 2;
+}
+.route-node.owned .node-number { background: var(--ok); color: #fff; }
+.node-icon-wrap {
+  width: 42px;
+  height: 42px;
+  background: #000;
+  border-radius: 6px;
+  border: 2px solid var(--node-color, var(--border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.node-icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.step-glyph {
+  color: var(--node-color, #fff);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.node-info {
+  flex: 1;
+  min-width: 0;
+}
+.node-label {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.95rem;
+  margin-bottom: 0.1rem;
+}
+.node-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.node-type { color: var(--accent); }
+.node-cost { color: var(--ok); font-weight: 600; }
+.node-acum { color: var(--info); }
+.node-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ok);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .node-label { font-size: 0.85rem; }
+  .node-meta { font-size: 0.7rem; }
+  .node-icon-wrap { width: 32px; height: 32px; }
+  .node-number { width: 28px; height: 28px; font-size: 0.8rem; }
+}
+
+/* === DAEVANION v3 — mapeo visual estilo couga54 === */
+.board-grid-wrap { background: var(--bg-3); padding: 1rem; border-radius: 12px; margin: 1rem 0; overflow-x: auto; }
+.board-svg { width: 100%; max-width: 760px; height: auto; display: block; margin: 0 auto; }
+.daev-node { transition: transform 0.15s; cursor: pointer; }
+.daev-node:hover { transform: scale(1.1); transform-origin: center; }
+.daev-node.unlocked rect, .daev-node.unlocked circle { stroke: #22c55e !important; filter: drop-shadow(0 0 6px #22c55e); }
+.board-legend { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; padding: 0.75rem; background: var(--bg-3); border-radius: 8px; margin: 0.75rem 0; font-size: 0.8rem; color: var(--text-dim); }
+.board-legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 0.3rem; vertical-align: middle; border: 1px solid currentColor; }
+.board-legend .stat1-dot { background: #1b2130; border-color: #5a6478; }
+.board-legend .passive-dot { background: #22c55e; border-radius: 3px; }
+.board-legend .skill-dot { background: #4ea8de; border-radius: 3px; }
+.board-legend .special-dot { background: #f4c430; transform: rotate(45deg); border-radius: 2px; }
+.board-legend .stat23-dot { background: #4ea8de; }
+.board-legend .route-dot { background: #f4c430; height: 4px; border-radius: 2px; width: 20px; }
+.daev-totals { text-align: center; padding: 1rem; background: var(--bg-3); border-radius: 8px; margin-top: 1rem; color: var(--accent); font-size: 1.1rem; }
+.daev-totals small { color: var(--text-dim); font-size: 0.75rem; margin-left: 0.5rem; }
+.route-steps-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.4rem; margin-top: 0.5rem; }
+.route-step { display: flex; align-items: center; gap: 0.5rem; background: var(--bg-3); padding: 0.4rem 0.6rem; border-radius: 6px; cursor: pointer; border-left: 3px solid var(--border); font-size: 0.85rem; transition: all 0.15s; }
+.route-step:hover { border-left-color: var(--accent); }
+.route-step.owned { border-left-color: var(--ok); background: rgba(34,197,94,0.08); }
+.route-step.owned .step-label { text-decoration: line-through; opacity: 0.6; }
+.step-num { background: var(--accent); color: #000; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; flex-shrink: 0; }
+.route-step.owned .step-num { background: var(--ok); }
+.step-icon { width: 24px; height: 24px; border-radius: 4px; border: 1px solid var(--border); background: #000; flex-shrink: 0; }
+.step-dot { width: 10px; height: 10px; border-radius: 50%; background: #5a6478; flex-shrink: 0; }
+.step-label { flex: 1; color: var(--text-dim); font-size: 0.85rem; }
+
+/* === DAEVANION rewrite: tarjetas honestas por board === */
+.daevanion-intro { margin-bottom: 1.5rem; }
+.daevanion-order-summary {
+  background: var(--bg-3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border-left: 4px solid var(--accent);
+}
+.boards-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.board-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-left: 5px solid;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+.board-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.board-card h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+.board-card .muted { color: var(--text-dim); font-weight: normal; }
+.board-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.board-progress {
+  text-align: center;
+  background: var(--bg-2);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  min-width: 90px;
+}
+.progress-count {
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 800;
+  line-height: 1;
+}
+.board-focus, .board-corners { margin: 0.4rem 0; font-size: 0.9rem; }
+.board-focus strong, .board-corners strong { color: var(--accent); }
+.board-full-note { font-size: 0.85rem; color: var(--text-dim); margin: 0.75rem 0; }
+
+.blues-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.blue-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-2);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border-left: 3px solid var(--border);
+  transition: all 0.15s;
+}
+.blue-step:hover { border-left-color: var(--accent); }
+.blue-step.owned {
+  border-left-color: var(--ok);
+  background: rgba(34, 197, 94, 0.08);
+}
+.blue-step.owned .step-info strong { text-decoration: line-through; opacity: 0.7; }
+.blue-step.empty {
+  color: var(--text-dim);
+  font-style: italic;
+  cursor: default;
+  justify-content: center;
+}
+.step-num {
+  background: var(--accent);
+  color: #000;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.blue-step.owned .step-num { background: var(--ok); }
+.step-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid var(--stigma);
+  background: #000;
+  flex-shrink: 0;
+}
+.step-info { flex: 1; }
+.step-info strong { color: var(--text); font-size: 0.95rem; display: block; }
+.step-info small { color: var(--text-dim); font-size: 0.8rem; }
+
+/* === Daevanion v8: tablero estilo couga54 con orden de clics === */
+.planner-when { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.3rem 1rem; }
+.planner-when li { display: flex; align-items: center; gap: 0.45rem; }
+.planner-when li .aion-icon-img { border-radius: 4px; }
+.dv { background: #10141c; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin: 1rem 0; }
+.dv-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 6px; border-bottom: 1px solid var(--border); }
+.dv-tab { background: transparent; border: 0; border-radius: 8px; color: var(--text-dim); padding: 0.5rem 0.25rem; cursor: pointer; font: inherit; line-height: 1.25; }
+.dv-tab b { display: block; color: var(--text); font-size: 0.95rem; }
+.dv-tab span { font-size: 0.72rem; font-family: ui-monospace, Consolas, monospace; }
+.dv-tab i { font-style: normal; color: #e8b65a; }
+.dv-tab:hover { background: var(--bg-3); }
+.dv-tab.active { background: #1e2431; box-shadow: inset 0 -2px 0 #e8b65a; }
+.dv-body { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 1rem; padding: 1rem; align-items: start; }
+.dv-stage { background: #0a0c11; border-radius: 12px; padding: 0.6rem; border: 1px solid #1d2330; }
+.dv-svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+.dv-ring { fill: none; stroke: #e8b65a; stroke-opacity: 0.06; stroke-width: 0.02; }
+.dv-line { stroke: #3a4255; stroke-width: 0.05; }
+.dv-line.on { stroke: #e8b65a; stroke-width: 0.13; stroke-linecap: round; }
+.dv-stat { fill: #0e1117; stroke: #4a5368; stroke-width: 0.04; }
+.dv-node.on .dv-stat { fill: #d9dde6; stroke: #fff; }
+.dv-stat-core { fill: #6f9cff; opacity: 0.6; }
+.dv-special { fill: none; stroke: #f0a04b; stroke-width: 0.05; opacity: 0.55; }
+.dv-node.on .dv-special { fill: #f0a04b; stroke: #ffd29a; opacity: 1; }
+.dv-start { fill: #f3d58a; stroke: #fff3cf; stroke-width: 0.03; }
+.dv-skillbg { fill: #161b25; }
+.dv-skillframe { fill: none; stroke-width: 0.05; }
+.dv-node.tA .dv-skillframe { stroke: #6f9cff; }
+.dv-node.tP .dv-skillframe { stroke: #4fd18b; }
+.dv-node.off image { opacity: 0.32; }
+.dv-node.off .dv-skillframe { stroke-opacity: 0.35; }
+.dv-node.on.tA .dv-skillframe, .dv-node.on.tP .dv-skillframe { stroke-width: 0.07; }
+.dv-hit { cursor: pointer; }
+.dv-badge circle { fill: #e8b65a; stroke: #10141c; stroke-width: 0.035; }
+.dv-badge text { fill: #10141c; font-weight: 800; text-anchor: middle; font-family: ui-monospace, Consolas, monospace; pointer-events: none; }
+.dv-badge.done circle { fill: var(--ok); }
+.dv-badge.done text { fill: #fff; }
+.dv-badge.next circle { fill: #fff; }
+.dv-next-ring { fill: none; stroke: #fff; stroke-width: 0.06; animation: dv-pulse 1.2s ease-in-out infinite; pointer-events: none; }
+@keyframes dv-pulse { 0%, 100% { stroke-opacity: 1; } 50% { stroke-opacity: 0.15; } }
+.dv-side { display: flex; flex-direction: column; gap: 0.75rem; position: sticky; top: 4rem; }
+.dv-info { background: var(--bg-3); border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem; min-height: 6.5rem; }
+.dv-info-k { color: #e8b65a; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+.dv-info-t { color: var(--text); font-weight: 700; margin: 0.2rem 0; }
+.dv-info-m { color: var(--text-dim); font-size: 0.82rem; }
+.dv-info-w { color: var(--text); font-size: 0.85rem; margin-top: 0.35rem; }
+.dv-ctrl { background: var(--bg-3); border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem; }
+.dv-ctrl-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.dv-btn { width: 2.6rem; height: 2.6rem; border-radius: 8px; border: 1px solid var(--border); background: #10141c; color: var(--text); font-size: 1.2rem; cursor: pointer; }
+.dv-btn:hover:not(:disabled) { border-color: #e8b65a; color: #e8b65a; }
+.dv-btn:disabled { opacity: 0.35; cursor: default; }
+.dv-count { text-align: center; color: var(--text); }
+.dv-count b { color: #e8b65a; font-size: 1.2rem; }
+.dv-count small { display: block; color: var(--text-dim); font-family: ui-monospace, Consolas, monospace; }
+.dv-range { width: 100%; margin: 0.7rem 0 0.4rem; accent-color: #e8b65a; }
+.dv-hint { font-size: 0.78rem; color: var(--text-dim); line-height: 1.4; }
+.dv-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; padding: 0.7rem 1rem; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.85rem; }
+.dv-foot b { color: #e8b65a; font-size: 1rem; }
+.dv-legend { display: flex; flex-wrap: wrap; gap: 0.8rem; font-size: 0.78rem; }
+.dv-legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.dv .k { display: inline-block; width: 11px; height: 11px; flex-shrink: 0; font-style: normal; }
+.dv .k.k-stat { border-radius: 50%; background: #d9dde6; }
+.dv .k.k-pas { border: 2px solid #4fd18b; border-radius: 2px; }
+.dv .k.k-act { border: 2px solid #6f9cff; border-radius: 2px; }
+.dv .k.k-esp { background: #f0a04b; transform: rotate(45deg) scale(0.85); border-radius: 1px; }
+.dv .k.k-ruta { width: 18px; height: 4px; border-radius: 2px; background: #e8b65a; }
+.dv .k.k-num { width: 16px; height: 16px; border-radius: 50%; background: #e8b65a; color: #10141c; font-size: 0.65rem; font-weight: 800; text-align: center; line-height: 16px; }
+.dv-note { padding: 0 1rem 0.8rem; color: var(--text); font-size: 0.9rem; }
+.dv-note:empty { display: none; }
+.dv-list-wrap { border-top: 1px solid var(--border); padding: 0.8rem 1rem; }
+.dv-list-wrap summary { cursor: pointer; color: #e8b65a; font-weight: 700; }
+.dv-list { list-style: none; padding: 0; margin-top: 0.6rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.35rem; }
+.dv-list li { display: flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.5rem; border-radius: 6px; background: var(--bg-3); border-left: 3px solid transparent; cursor: pointer; font-size: 0.83rem; }
+.dv-list li:hover { border-left-color: #e8b65a; }
+.dv-list li .no { min-width: 1.6rem; height: 1.6rem; border-radius: 50%; background: #e8b65a; color: #10141c; font-weight: 800; font-size: 0.75rem; display: grid; place-items: center; }
+.dv-list li img { width: 22px; height: 22px; border-radius: 3px; }
+.dv-list li .k { margin: 0 5px; }
+.dv-list li .tx { flex: 1; color: var(--text); }
+.dv-list li .pt { color: var(--text-dim); font-family: ui-monospace, Consolas, monospace; font-size: 0.72rem; white-space: nowrap; }
+.dv-list li.tA img { outline: 2px solid #6f9cff; }
+.dv-list li.tP img { outline: 2px solid #4fd18b; }
+.dv-list li.done { opacity: 0.55; border-left-color: var(--ok); }
+.dv-list li.done .no { background: var(--ok); color: #fff; }
+.dv-list li.next { border-left-color: #fff; background: #242b3a; }
+.dv-list li.next .no { background: #fff; }
+.dv-sum { border-top: 1px solid var(--border); padding: 0.8rem 1rem 1rem; }
+.dv-sum h5 { color: var(--text-dim); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0.4rem 0; }
+.dv-sum ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.dv-chip { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--bg-3); border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.6rem; font-size: 0.8rem; color: var(--text); }
+.dv-chip img { width: 18px; height: 18px; border-radius: 3px; }
+.dv-chip b { color: #e8b65a; }
+.dv-chip.act { border-color: #6f9cff66; }
+.dv-chip.pas { border-color: #4fd18b66; }
+.dv-chip.esp { border-color: #f0a04b; }
+@media (max-width: 820px) {
+  .dv-body { grid-template-columns: 1fr; padding: 0.6rem; }
+  .dv-side { position: static; }
+  .dv-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .dv-tab b { font-size: 0.8rem; }
+  .dv-tab span { font-size: 0.62rem; }
+  .dv-stage { overflow-x: auto; padding: 0.4rem; }
+  .dv-svg { min-width: 560px; }
+}
+.invest-spec{display:block;margin-top:4px;font-size:0.82rem;color:var(--accent)}
+.rotation-steps li > .iconized{display:inline-block;vertical-align:middle;margin-right:2px}
+.rotation-steps li > .iconized img,.ri img{display:inline-block!important;border-width:1px}
+.rotation-steps a{color:var(--accent)}
+.plv-mini-note{font-size:0.8rem;color:var(--text-dim);margin:0.5rem 0 0}
+.plv-dv-btn{background:var(--bg-3);border:1px solid var(--accent);color:var(--accent);border-radius:6px;padding:2px 8px;font:inherit;font-size:0.8rem;cursor:pointer;margin:2px}
+.plv-dv-list{list-style:none;margin:0.5rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.plv-dv-list li{display:flex;align-items:center;gap:8px;padding:4px 8px;border-radius:8px;background:var(--bg-3);border:1px solid var(--border);font-size:0.84rem}
+.plv-dv-list img{border-radius:6px;flex:none}
+.plv-dv-step{flex:none;min-width:24px;text-align:center;font:700 0.72rem monospace;color:#111;background:var(--accent);border-radius:10px;padding:1px 4px}
+.plv-dv-dot{flex:none;width:16px;height:16px;margin:5px;transform:rotate(45deg);background:#f59e0b;border-radius:3px}
+.dv-plus{color:var(--info)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Guía Progresiva Hechicero PvE</h1>
+  <div class="subtitle">Aion 2: The Second Era — Daño mágico a distancia con grimorio · Nv. 1 → 45</div>
+  <div class="meta">
+    <span class="badge ok">Patch Global Season 1</span>
+    <span class="badge">Actualizado: 10-oct-2026</span>
+    <span class="badge warn">Cap Lv 45 (no 50)</span>
+    <span class="badge">PvE Focus</span>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#overview">Resumen</a></li>
+    <li><a href="#patch">Patch Actual</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#progression">Progresión 1-45</a></li>
+    <li><a href="#rotations">Rotaciones</a></li>
+    <li><a href="#stigmas">Estigmas</a></li>
+    <li><a href="#daevanion">Daevanion</a></li>
+    <li><a href="#pets">Mascotas</a></li>
+    <li><a href="#stats">Stats y equipo</a></li>
+    <li><a href="#systems">Sistemas</a></li>
+    <li><a href="#macros">Macros</a></li>
+    <li><a href="#progress">Mi Progreso</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>Resumen de la Clase</h2>
+  <p>El <strong>Hechicero</strong> <small>(Sorcerer)</small> es un lanzador a distancia de cristal que mezcla <strong>fuego y hielo</strong> con <strong>grimorio</strong>. El fuego hace el daño: <em>Marca ígnea</em> marca al objetivo y <em>Explosión de llama</em> lo cobra. El hielo ralentiza, inmoviliza y congela para que nadie te alcance. La mitad de tus bonificaciones de daño dependen del maná: con más del 50 % de PM haces más críticos y con más del 25 %, un 20 % más de daño.</p>
+
+  <div class="callout ok">
+    <strong>La build en una frase:</strong> mantén una macro que tenga siempre activas <em>Mejora elemental</em> y <em>Voto de concentración</em> y que alterne <em>Flecha en llamas</em> con tus líneas de fuego y hielo para que el PM no baje de la mitad; <em>Llamas del infierno</em>, a mano.
+  </div>
+
+  <div class="callout crit">
+    <strong>Juega en modo objetivo:</strong> con un objetivo fijado, el ataque básico <em>Flecha en llamas</em> sigue disparándose solo después de cada habilidad y recupera PM. En modo acción se para tras cada habilidad y tienes que volver a pulsar.
+  </div>
+
+  <div class="callout info">
+    <strong>Dos etapas:</strong> los primeros días al 45 tus habilidades están a 8-10 con una especialización cada una: toma las de maná y velocidad que indica cada tarjeta. Los niveles de las tarjetas (16) son el objetivo de después, de la configuración global de EUTOPIA y de guías coreanas.
+  </div>
+
+  <div class="callout warn">
+    <strong>Frágil:</strong> poca vida y sin curación propia. Mata antes de que te alcancen y no juegues nunca al 10-20 % de PM. Dificultad: media (couga54).
+  </div>
+</section>
+
+<section id="patch">
+  <h2>Patch Global Actual (Season 1)</h2>
+  <p>Esta guía refleja el parche global vigente al 10-oct-2026 (servidores abiertos el 5-oct). couga54 (actualizada el 6-oct) sigue la guía de principiante y la actualización global de aLuckyRO (2-oct) y la build global de EUTOPIA (nivel 45, nivel de objeto 1.260, 3-oct), que encabeza las tablas de daño de sus grupos.</p>
+
+  <table>
+    <thead><tr><th>Dato</th><th>Global Season 1</th><th>KR/TW Chapter 1 (NO aplica)</th></tr></thead>
+    <tbody>
+      <tr><td>Cap de nivel</td><td><strong class="tier s">45</strong></td><td>50</td></tr>
+      <tr><td>Rango máximo de estigma</td><td><strong>20</strong></td><td>25</td></tr>
+      <tr><td>Ranuras de estigma</td><td><strong>4</strong> (Nv. 22/27/32/37)</td><td>6</td></tr>
+      <tr><td>Tablero Ariel</td><td><strong>No existe</strong>: 5 tableros, el del 45 (Azphel) es solo JcJ</td><td>Sí</td></tr>
+      <tr><td>Habilidades</td><td><strong>16</strong>, no 20: la Arcana y los anillos las pasan de 16 y llegan despacio</td><td>20+</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <strong>El maná aprieta al principio:</strong> unos 3.000 PM y sin reducción de enfriamiento. Las primeras especializaciones van a PM y Velocidad de habilidad, no a daño.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Catálogo de habilidades del Hechicero</h2>
+  <p>Debajo de cada habilidad, las especializaciones que tomar (las opciones piden rango 8, 12 y 16; la tercera ranura se abre a 20). Rango objetivo de couga54 (EUTOPIA). Nombres y especializaciones del cliente en español (metabot.gg/es_ES).</p>
+
+  <div class="callout info">
+    <strong>Siete habilidades van a 16</strong> (Llamas del infierno la primera); el resto se queda en 12 o sale de la barra. Mientras una habilidad sigue a 8-10, toma la especialización que dice su tarjeta.
+  </div>
+
+  <h3>Activas clave</h3>
+  <div class="skill-grid">
+    <div class="skill-card"><span data-icon="h_infierno" data-size="48"></span><div class="info"><div class="name">Llamas del infierno <span class="tier s">16</span></div><div class="desc">Tu golpe más fuerte y el centro de la build: la n.º 1 de EUTOPIA. Cárgala entera y lánzala a mano.<br><small>8: +30 % de Velocidad de habilidad · 16: −15 s de enfriamiento. Antes de 16, aLuckyRO toma también el daño continuo de Fuego. Tercera ranura a 20: ignora Bloqueo y Evasión con Multigolpe.</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_quebranto" data-size="48"></span><div class="info"><div class="name">Quebrantamiento en llamas <span class="tier s">16</span></div><div class="desc">Enfriamiento de 5 s y mucho gasto de maná. A 12 cada quebrantamiento quita 2 s a Llamas del infierno: van en pareja.<br><small>8: −50 % de consumo de PM · 12: −2 s a Llamas del infierno por quebrantamiento · 20: +15 % de daño por quebrantamiento</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_viento" data-size="48"></span><div class="info"><div class="name">Viento helado <span class="tier s">16</span></div><div class="desc">Campo que inmoviliza. Su especialización de 16 solo acorta Congelación: sáltala cuando Congelación ya no esté en tu barra.<br><small>8: +1 s de invocación · 12: ignora Bloqueo y Evasión con golpe Crítico (EUTOPIA)</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_explosion" data-size="48"></span><div class="info"><div class="name">Explosión de llama <span class="tier s">16</span></div><div class="desc">Daño principal sobre un objetivo con Marca ígnea; recupera PM.<br><small>8: daño diferido tras 3 s (en grupo; en solitario contra un jefe difícil, Absorción de PV del 3 %, aLuckyRO) · 12: Multigolpe garantizado · 20: −3 s a Voto de concentración</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_voto" data-size="48"></span><div class="info"><div class="name">Voto de concentración <span class="tier s">16</span></div><div class="desc">Tu segunda mejora; las dos fuentes toman las mismas especializaciones.<br><small>8: +10 % de Ataque adicional · 12: +10 % de Velocidad de Hechizo · 20: −10 s a todos los enfriamientos</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_atadura" data-size="48"></span><div class="info"><div class="name">Atadura invernal <span class="tier s">16</span></div><div class="desc">La razón para subirla: +20 % de Amplificación de Daño de JcE durante 5 s al acertar. EUTOPIA toma la habilidad de cadena en lugar del −15 s.<br><small>8: +20 % de Amplificación de Daño de JcE · 16: −15 s de enfriamiento</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_flecha" data-size="48"></span><div class="info"><div class="name">Flecha en llamas <span class="tier s">16</span></div><div class="desc">Ataque básico y tu motor de maná.<br><small>Primeros días: +20 % de Recuperación de PM; +50 % de Multigolpe cuando el maná aguante · 12: +5 % de daño de Fuego 10 s al activarse Ignición · 16: Ignición restablece Explosión de llama</small></div></div></div>
+  </div>
+
+  <h3>Apoyo y utilidad</h3>
+  <div class="skill-grid">
+    <div class="skill-card"><span data-icon="h_cadena" data-size="48"></span><div class="info"><div class="name">Cadena gélida <span class="tier a">12</span></div><div class="desc">EUTOPIA saca de la barra Cadena gélida, Congelación y Explosión de Congelación: cuestan de intercalar y aportan poco daño. aLuckyRO la deja a 12: cada golpe quita 1 s a Atadura invernal.<br><small>8: +20 % de Velocidad de habilidad (o −20 % de PM si te falta maná) · 12: −1 s a Atadura invernal</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_sinpunteria" data-size="48"></span><div class="info"><div class="name">Llamas sin puntería <span class="tier a">12</span></div><div class="desc">Solo con objetivos en Tambaleo, así que puede ir en la macro.<br><small>8: habilidad en movimiento · 12: Multigolpe garantizado</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_eliminacion" data-size="48"></span><div class="info"><div class="name">Eliminación de impacto <span class="tier b">12</span></div><div class="desc">Rompe el control; recuperas el 20 % de PV al soltarte.<br><small>8: +20 % de PV · 12: +2 s de Robustez</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_congelacion" data-size="48"></span><div class="info"><div class="name">Congelación <span class="tier b">SUBIDA</span></div><div class="desc">Recupera 200 PM: útil subiendo con poco maná; sale de la barra en la configuración global del 45.<br><small>8: recuperación de 200 PM</small></div></div></div>
+    <div class="skill-card"><span data-icon="h_explo_cong" data-size="48"></span><div class="info"><div class="name">Explosión de Congelación <span class="tier b">SKIP</span></div><div class="desc">Solo contra objetivos congelados. No entra en la configuración global.</div></div></div>
+  </div>
+
+  <h3>Especializaciones de cada habilidad</h3>
+  <p>Las cinco opciones de cada habilidad activa, con el texto del juego en español, y cuál toma couga54.</p>
+  <div id="specList"></div>
+
+  <h3>Pasivas — prioridad</h3>
+  <p>Los niveles de las pasivas salen de cada pieza de armadura, los pendientes y el collar, así que van muy por delante de las activas.</p>
+  <table>
+    <thead><tr><th>Nv.</th><th>Pasiva</th><th>Prioridad</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td>11</td><td><span data-icon="h_toga_llama" data-size="28"></span> <strong>Toga de llama</strong></td><td class="tier s">⭐ Prio 1</td><td>Precisión, Amplificación de Daño de JcE y Golpe: la primera al máximo.</td></tr>
+      <tr><td>1</td><td><span data-icon="h_marca" data-size="28"></span> <strong>Marca ígnea</strong></td><td class="tier a">Prio 2</td><td>Pone la Marca ígnea que necesita Explosión de llama y quema al objetivo. Al máximo.</td></tr>
+      <tr><td>6</td><td><span data-icon="h_toga_tierra" data-size="28"></span> <strong>Toga terrestre</strong></td><td class="tier a">Prio 3</td><td>PM máximos y Crítico con el 50 % de PM o más. Al máximo.</td></tr>
+      <tr><td>21</td><td><span data-icon="h_merced_mejora" data-size="28"></span> <strong>Merced de mejora</strong></td><td class="tier a">Prio 4</td><td>+20 % de Amplificación de Daño de JcE con el 25 % de PM o más, y golpes extra.</td></tr>
+      <tr><td>25</td><td>Vaporización de viveza</td><td class="tier b">Primeros días</td><td>Daño extra con el objetivo por encima del 70 % de PV: fuerte cuando las peleas son cortas.</td></tr>
+      <tr><td>9</td><td>Invocación helada</td><td class="tier b">Extra</td><td>Daño extra contra objetivos ralentizados: Cadena gélida los mantiene así.</td></tr>
+      <tr><td>17</td><td>Toga de helada</td><td class="tier b">Incursiones</td><td>Defensa y ralentiza a quien te ataca.</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn">
+    <strong>Ojo con el maná:</strong> Toga terrestre y Merced de mejora se apagan cuando el PM baja. Nunca juegues al 10-20 % de PM.
+  </div>
+</section>
+
+<section id="progression">
+  <h2>Planificador de puntos de habilidad (nivel 1 → 45)</h2>
+  <p>Te dice, <strong>nivel por nivel</strong>, cuántos puntos ganas y <strong>en qué habilidad ponerlos</strong>. Solo cuenta los puntos que da subir de nivel: así el plan funciona aunque no hagas contenido extra.</p>
+
+  <div class="callout info">
+    <strong>Reglas del juego que respeta el plan:</strong><br>
+    • <strong>Coste por rango:</strong> rangos 2-4 = 1 punto · 5-7 = 2 · 8-10 = 4 (21 puntos para llevar una habilidad a 10). El rango 8 abre la primera especialización. Del 11 al 16 no se usan puntos: suben con Daevanion (+4), anillos y Arcana.<br>
+    • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Llamas del infierno (se aprende en el 14) tarda en llegar a 10.<br>
+    • <strong>Los estigmas no usan estos puntos:</strong> se suben con <strong>Esquirlas de Estigma</strong>.<br>
+    • <strong>Prioridad (couga54):</strong> Flecha en llamas y Cadena gélida (esta solo a 4: EUTOPIA la saca de la barra) primero; Quebrantamiento en llamas y Explosión de llama; Viento helado, Atadura invernal, Voto de concentración y Llamas del infierno. Todo a rango 8 (primeras especializaciones) y después a 10, empezando por Llamas del infierno. Lo que sobra va a Toga de llama y Marca ígnea (a 10) y Toga terrestre: el resto de niveles de pasivas sale del equipo.<br>
+    • <strong>Especializaciones:</strong> cuando una habilidad llega a rango 8, el plan te dice cuál elegir (⚙️).
+  </div>
+
+  <div class="planner-summary" id="plannerSummary"></div>
+
+  <div class="callout warn">
+    <strong>Navegación:</strong> usa las flechas ← → (o las del teclado) para avanzar nivel por nivel. La barra y los botones de salto te llevan a los hitos: nivel 4 (Explosión de llama), 12 (Nezekan y Voto de concentración), 14 (Llamas del infierno), 22 (Ascensión y estigmas), 27, 30 (Vaizel), 37 (estigmas completos) y 45.
+  </div>
+
+  <div id="plannerBody"></div>
+
+  <div class="callout ok" style="margin-top:1rem">
+    <strong>Cuándo llega cada habilidad a su rango final:</strong>
+    <ul id="plannerWhen" class="planner-when" style="margin-top:0.5rem"></ul>
+  </div>
+
+  <div class="callout ok" style="margin-top:1rem">
+    <strong>Puntos extra (Piedras de sabiduría, 1 punto cada una):</strong> salen de las mazmorras selladas y de algunas misiones. El plan no los cuenta. Con ellos adelantas lo que esté por debajo de su tope, en el mismo orden de prioridad, y lo que sobre va a:
+    <ol style="margin-top:0.5rem; padding-left:1.4rem">
+      <li><strong>Toga terrestre</strong> a 10 y <strong>Merced de mejora</strong>: las pasivas 3 y 4 de couga54.</li>
+      <li><strong>Cadena gélida</strong> y <strong>Llamas sin puntería</strong>, que couga54 deja en 12 con el equipo.</li>
+    </ol>
+    No pongas puntos en Explosión de Congelación (fuera de la configuración global) ni en Pacto de resurrección (JcJ).
+  </div>
+</section>
+
+<section id="rotations">
+  <h2>Rotación: de subir de nivel a jefes</h2>
+  <p>Todo según couga54 (aLuckyRO, EUTOPIA, Vortex Gaming, MMO Codex, Grobs). <strong>Subiendo en una frase:</strong> modo objetivo, Flecha en llamas entre habilidades para el maná, Viento helado y Llamas del infierno para los grupos. <strong>Al 45:</strong> una macro con las mejoras dentro; Llamas del infierno a mano; el maná siempre por encima de la mitad.</p>
+
+  <div class="callout crit">
+    <strong>Regla de oro:</strong> <strong>maná por encima del 50 %</strong>. Es daño, no comodidad: por encima de la mitad Toga terrestre te da Crítico, y por encima del 25 % Merced de mejora te da +20 % de daño. Por eso la macro lleva dos Flechas en llamas.
+  </div>
+
+  <div class="level-tabs">
+    <button class="active" data-tab="r1">Nv. 1-21 · subiendo</button>
+    <button data-tab="r2">Nv. 22-44 · con estigmas</button>
+    <button data-tab="r3">Nv. 45 · jefes</button>
+  </div>
+
+  <div class="tab-panel active" id="r1">
+    <h3>Nv. 1-21 — Fuego para matar, hielo para controlar</h3>
+    <div class="rotation-steps">
+      <ol>
+        <li><span data-icon="h_flecha" data-size="28"></span> <strong>Nv. 1:</strong> primeros puntos en <strong>Flecha en llamas</strong> (recupera PM en cada lanzamiento) y <span data-icon="h_cadena" data-size="28"></span> <strong>Cadena gélida</strong> para grupos. Cuando Flecha en llamas llegue a rango 8 (hacia el nivel 19), toma +20 % de Recuperación de PM.</li>
+        <li><span data-icon="h_quebranto" data-size="28"></span> <strong>Nv. 6-10:</strong> <strong>Quebrantamiento en llamas</strong> y <span data-icon="h_explosion" data-size="28"></span> <strong>Explosión de llama</strong> son tu daño a un objetivo. Explosión de llama necesita la Marca ígnea, y cualquier golpe de Fuego la pone.</li>
+        <li><span data-icon="h_viento" data-size="28"></span> <strong>Viento helado</strong> (nivel 3) inmoviliza al grupo; con la atracción lo junta.</li>
+        <li><span data-icon="h_infierno" data-size="28"></span> <strong>Llamas del infierno</strong> (nivel 14): cárgala hasta 3 para los grupos grandes, con Viento helado para retenerlos.</li>
+      </ol>
+    </div>
+    <div class="mset" data-set="fightLeveling"></div>
+  </div>
+
+  <div class="tab-panel" id="r2">
+    <h3>Nv. 22-44 — Una ranura de estigma nueva en el 22, 27, 32 y 37</h3>
+    <div class="rotation-steps">
+      <ol>
+        <li><span data-icon="hs_mejora" data-size="28"></span> <strong>22 · Mejora elemental</strong>: tu mejora principal, cada vez que esté lista. Súbela primero.</li>
+        <li><span data-icon="hs_retrasada" data-size="28"></span> <strong>27 · Explosión retrasada</strong>: +15 % de daño tuyo sobre el objetivo durante 4 s. Al principio basta con 1 punto. Si subes en solitario, couga54 pone aquí <span data-icon="hs_acero" data-size="28"></span> <strong>Barrera de acero</strong> (el Hechicero es frágil) y vuelve a Explosión retrasada en grupo.</li>
+        <li><span data-icon="hs_barrera_fuego" data-size="28"></span> <strong>32 · Barrera de fuego</strong>: campo de Fuego; Brasas añade daño en cada golpe.</li>
+        <li><span data-icon="hs_tormenta" data-size="28"></span> <strong>37 · Tormenta helada</strong>: campo de Agua con Congelamiento, que añade daño en cada golpe que aciertas dentro.</li>
+      </ol>
+    </div>
+    <p>Añade la macro del juego cuando tengas Viento helado y los estigmas (sección <a href="#macros">Macros</a>).</p>
+  </div>
+
+  <div class="tab-panel" id="r3">
+    <h3>Nv. 45 — Jefes</h3>
+    <p>Mantén la macro en el clic derecho; Llamas del infierno, cargada y a mano.</p>
+    <div class="mset" data-set="fightBoss"></div>
+  </div>
+</section>
+
+<section id="stigmas">
+  <h2>Estigmas</h2>
+  <p>En global tienes <strong>4 ranuras</strong> (se abren en los niveles 22, 27, 32 y 37) y los estigmas llegan como máximo a <strong>rango 20</strong>. Puedes aprender más estigmas, pero solo caben cuatro en la barra. Se suben con <strong>Esquirlas de Estigma</strong>, no con puntos de habilidad.</p>
+
+  <h3>Mientras subes de nivel</h3>
+  <p>Orden de las ranuras según los mejores jugadores de metabot (el mismo conjunto de couga54). couga54 los sube en este orden: Mejora elemental → Tormenta helada → Barrera de fuego → Explosión retrasada, empezando hacia 5 / 5 / 5 / 1.</p>
+  <ol>
+    <li class="stigma-row"><span data-icon="hs_mejora" data-size="36"></span><div><span class="tier stigma">Nv. 22</span> <strong>Mejora elemental</strong> <small>(Element Enhancement)</small> — a 5: +200 de Precisión.</div></li>
+    <li class="stigma-row"><span data-icon="hs_retrasada" data-size="36"></span><div><span class="tier stigma">Nv. 27</span> <strong>Explosión retrasada</strong> <small>(Delayed Explosion)</small> — 1 punto al principio; a 5 recupera 200 PM.</div></li>
+    <li class="stigma-row"><span data-icon="hs_barrera_fuego" data-size="36"></span><div><span class="tier stigma">Nv. 32</span> <strong>Barrera de fuego</strong> <small>(Fire Wall)</small> — a 5: mejora el estado de Brasas (daño adicional al atacar).</div></li>
+    <li class="stigma-row"><span data-icon="hs_tormenta" data-size="36"></span><div><span class="tier stigma">Nv. 37</span> <strong>Tormenta helada</strong> <small>(Cold Storm)</small> — a 5: mejora el estado de Congelamiento (daño adicional al atacar). Loadout completo.</div></li>
+  </ol>
+
+  <h3>Al nivel 45, para jefes</h3>
+  <p>EUTOPIA lleva exactamente estos cuatro en global. Mejora elemental a 20 primero; después los otros tres a 10.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Estigma</th><th>Rango</th><th>Para qué</th><th>Especializaciones</th></tr></thead>
+    <tbody>
+      <tr><td><span data-icon="hs_mejora" data-size="28"></span> <strong>Mejora elemental</strong></td><td><strong>20</strong></td><td>+20 % de Ataque de Fuego y de Agua (+10 % más a 20): tu mejora principal, cada vez que esté lista.</td><td>5: +200 de Precisión · 10: efecto de Toga de llama ×1,5 · 15: efecto de Merced de mejora ×1,5 · 20: +10 % de Ataque de Fuego y Agua</td></tr>
+      <tr><td><span data-icon="hs_tormenta" data-size="28"></span> <strong>Tormenta helada</strong></td><td><strong>10</strong></td><td>Campo de daño de Agua con Congelamiento: daño extra en cada golpe que aciertas dentro.</td><td>5: mejora de Congelamiento · 10: Atadura 2 s con un 30 % de prob. · 15: +3 s de invocación · 20: +10 s de Congelamiento</td></tr>
+      <tr><td><span data-icon="hs_barrera_fuego" data-size="28"></span> <strong>Barrera de fuego</strong></td><td><strong>10</strong></td><td>Campo de daño de Fuego; Brasas añade daño en cada golpe. Mejor con el jefe quieto o el grupo cruzándolo.</td><td>5: mejora de Brasas · 10: +2 m de anchura · 15: +2 s de invocación · 20: +10 s de Brasas</td></tr>
+      <tr><td><span data-icon="hs_retrasada" data-size="28"></span> <strong>Explosión retrasada</strong></td><td><strong>10</strong></td><td>El objetivo recibe un 15 % más de daño tuyo durante 4 s; a 10 baja su enfriamiento.</td><td>5: recupera 200 PM · 10: −10 s de enfriamiento · 15: cambio a habilidad de área · 20: +10 % de daño recibido</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Coste en Esquirlas de Estigma</h3>
+  <table>
+    <thead><tr><th>Rango</th><th>Esquirlas por rango</th><th>Acumulado</th></tr></thead>
+    <tbody>
+      <tr><td>1 → 5</td><td>1</td><td>5</td></tr>
+      <tr><td>6 → 10</td><td>2</td><td>15</td></tr>
+      <tr><td>11 → 15</td><td>4</td><td>35</td></tr>
+      <tr><td>16 → 20</td><td>8</td><td>75</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>Nv. 23 – 39: <strong>1 esquirla por nivel</strong> · Nv. 40 – 45: <strong>2 por nivel</strong></li>
+    <li>Tiendas (couga54): Abismo 200 por personaje, Pesadilla 35, Festival Shugo 35; los niveles y la historia dan algunas más.</li>
+  </ul>
+
+  <h3>Cambios y otros estigmas</h3>
+  <ul>
+    <li class="stigma-row"><span data-icon="hs_acero" data-size="36"></span><div><strong>Barrera de acero</strong> <small>(Steel Barrier)</small> — escudo de PV: en la ranura de Explosión retrasada mientras subes en solitario (couga54), y en la de Tormenta helada contra un jefe que te mata una y otra vez (EUTOPIA).</div></li>
+    <li class="stigma-row"><span data-icon="hs_glaciar" data-size="36"></span><div><strong>Golpe de glaciar</strong> <small>(Glacial Smite)</small> — gran golpe de área instantáneo: el cambio por Tormenta helada en peleas cortas y al farmear.</div></li>
+    <li class="stigma-row"><span data-icon="hs_divinidad" data-size="36"></span><div><strong>Explosión de divinidad</strong> <small>(Divine Burst)</small> — golpe que te aleja del objetivo, con absorción de PV a 10. El cambio de EUTOPIA cuando el grupo falla los Tambaleos.</div></li>
+    <li class="stigma-row"><span data-icon="hs_arbol" data-size="36"></span><div><strong>Maldición: Árbol</strong> — JcJ (metabot): convierte al objetivo en árbol durante 10 s; se rompe al recibir un ataque.</div></li>
+  </ul>
+
+  <div class="callout info">
+    <strong>Resumen:</strong> Mejora elemental (20) → Tormenta helada, Barrera de fuego y Explosión retrasada (10). En Taiwán aLuckyRO lleva seis: estos cuatro más Golpe de glaciar y Explosión de divinidad.
+  </div>
+</section>
+
+<section id="daevanion">
+  <h2>Tableros Daevanion</h2>
+  <p>Daevanion sube tus habilidades del rango 10 al 14 y suma atributos. Hay <strong>5 tableros</strong>, uno por cada nivel de desbloqueo. Empiezas en el centro y solo puedes abrir un nodo que esté pegado a otro que ya tengas.</p>
+
+  <div class="callout info">
+    <strong>Cómo leer el tablero:</strong><br>
+    • La <strong>línea dorada</strong> es la ruta JcE de couga54: Nezekan 69 · Zikel 50 · Vaizel 45 · Triniel 42 · Azphel 0 = <strong>206 puntos</strong>. Llamas del infierno, Quebrantamiento en llamas, Viento helado, Explosión de llama, Voto de concentración y Toga terrestre suman +4 cada una.<br>
+    • El <strong>número</strong> de cada nodo es el orden de clic: primero los nodos naranjas de Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento, luego Ataque y Amplificación de Daño, y Amplificación de Daño Crítico; al final los azules de las habilidades clave y la verde Toga terrestre.<br>
+    • Mueve la barra hasta los pasos que ya hiciste: lo hecho se pone en <strong style="color:var(--ok)">verde</strong> y el siguiente clic <strong>parpadea</strong>. Se guarda en tu navegador.<br>
+    • Costes: atributo 1 · pasiva 2 · activa 3 · especial (naranja) 4. La ruta la calcula couga54 con los datos del cliente global (questlog.gg); no sale de una guía.
+  </div>
+
+  <div class="callout warn">
+    <strong>Salta el Multigolpe y los naranjas defensivos:</strong> un Hechicero quiere daño plano; la Precisión, más tarde (couga54). metabot, a partir de los mejores jugadores: ve primero a Zikel por los nodos de Merced de mejora y luego coge Marca ígnea y Toga terrestre de Nezekan.
+  </div>
+
+  <div id="boardsContainer"></div>
+</section>
+
+<section id="pets">
+  <h2>Mascotas y Comprensión de raza</h2>
+  <p>Las mascotas dan <strong>bonificaciones pasivas permanentes</strong> aunque no estén equipadas, y el progreso se comparte por familia (genus). Se desbloquean con la misión <em>"All Geared Up"</em> del Episodio 2 (~nivel 10-11).</p>
+
+  <div class="callout info">
+    <strong>Sube todas las mascotas a nivel 3 pronto:</strong> matar mascotas que ya subiste da los cristales para las líneas de Comprensión de raza. Cada mascota: 5 almas (nivel 1) + 25 (nivel 2) + 75 (nivel 3, transformación) = 105.
+  </div>
+
+  <h3>Tus primeras 5 mascotas (Hechicero)</h3>
+  <p>metabot pone <strong>Ataque y Crítico</strong> como los dos atributos de daño del Hechicero, y la Precisión para cuando los jefes empiecen a esquivar. Por eso tres son <strong>Cognis</strong> (Crítico y Fuerza), una <strong>Feras</strong> (Precisión Adicional) y una <strong>Naturas</strong> (Precisión). Son las más fáciles de cada familia en tu zona, en el orden en que te las encuentras subiendo de nivel. Después sube todas las demás a nivel 3.</p>
+  <div id="petPlan" class="pp"></div>
+  <script>window.PET_PLAN = {"porque": {"Cogni": "Cognis: Crítico +2 y Fuerza +1 por mascota a nivel 3: Crítico es tu segundo atributo de daño (metabot).", "Fera": "Feras: Precisión Adicional +2 por mascota a nivel 3, para cuando los jefes empiecen a esquivar.", "Natura": "Naturas: Precisión +1 y Resistencia Crítica +2; abre su rueda de Comprensión de raza."}, "elyos": ["skyray", "fungie", "klaw", "krall-laborer", "krall-warrior"], "asmo": ["decomposed-lupyllini", "armadon", "rafflesia", "biruta", "dratona"]};</script>
+  <p><small>couga54 no nombra mascotas para esta clase: la selección es nuestra, con los atributos de metabot.</small></p>
+
+<!-- comprension:inicio -->
+  <h3 id="comprension">Comprensión de raza: qué poner en cada ranura</h3>
+  <p>Vale para las 5 ruedas (Cognis, Feras, Naturas, Varians y Especial); donde una rueda cambia, va su nombre. Hechicero: Ataque y Crítico; Puntos de Maná para no bajar del 50 % de PM (metabot).</p>
+  <table>
+    <thead><tr><th>Ranura</th><th>1.ª opción</th><th>Opcional</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Ataque Adicional</strong></td><td>Ataque JcE</td></tr>
+      <tr><td>2, 8</td><td><strong>Aumento de Puntos de Vida</strong></td><td>Puntos de Maná</td></tr>
+      <tr><td>3, 6, 7, 9</td><td><strong>Crítico</strong></td><td>Precisión Adicional</td></tr>
+      <tr><td>4</td><td><strong>Amplificación de Daño de JcE</strong> <small>(Especial: Amplificación de Daño Crítico)</small></td><td>Cognis: Amplificación de Daño Crítico · Feras: Amplificación de Daño de Arma · Naturas: Perforación · Varians: Crítico · Especial: Golpe</td></tr>
+      <tr><td>5</td><td><strong>Ataque Adicional</strong></td><td>Ataque Máximo</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn">
+    <strong>Ignora</strong> lo que diga <em>de Cognis / de Feras / de Naturas / de Varians</em>, <em>Frontal</em>, <em>por la Espalda</em> o <em>de Jefe</em>. Bloquea solo con la rueda en Nv. 9-10 y la línea cerca del máximo (Lucia).
+  </div>
+  <p><small>Atributos y nombres del cliente: <a href="https://wikily.gg/es/aion-2/genus-insight/cogni/slot-properties" target="_blank" rel="noopener">wikily.gg</a>. Base: Lucia (couga54); la adaptación a cada clase es nuestra.</small></p>
+  <!-- comprension:fin -->
+</section>
+
+<section id="stats">
+  <h2>Stats y equipo</h2>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="label">#1 — Daño</div><div class="value">Ataque</div></div>
+    <div class="stat"><div class="label">#2 — Daño</div><div class="value">Crítico</div></div>
+    <div class="stat"><div class="label">#3 — Daño (maná)</div><div class="value">Puntos de Maná</div></div>
+    <div class="stat"><div class="label">#4 — Acierto</div><div class="value">Precisión Adicional</div></div>
+    <div class="stat"><div class="label">Piedras de maná</div><div class="value">Ataque · Crítico · Precisión</div></div>
+    <div class="stat"><div class="label">Regla</div><div class="value">PM por encima del 50 %</div></div>
+  </div>
+  <p><small>Orden de atributos de metabot: <strong>Ataque</strong> (en cada bola de fuego y cada golpe de Llamas del infierno), <strong>Crítico</strong> (Toga terrestre ya añade +105 con la mitad de los PM o más), <strong>Puntos de Maná</strong> (la bonificación de Crítico de Toga terrestre exige estar por encima de la mitad, así que los PM son daño para ti), <strong>Precisión Adicional</strong> cuando los jefes empiecen a esquivar y <strong>Puntos de Vida</strong> para sobrevivir al daño de toda la banda. couga54: vigila los PM máximos y su regeneración hasta que tu rotación deje de quedarse seca.</small></p>
+
+  <h3>De dónde salen los niveles de habilidad</h3>
+  <ul>
+    <li><strong>10</strong> con puntos de habilidad, <strong>14</strong> con los cuatro primeros tableros Daevanion y el resto con la Arcana y los anillos: <strong>16</strong> para las siete habilidades clave en la temporada 1.</li>
+    <li><strong>Habilidades activas:</strong> salen en anillos, arma y guarda.</li>
+    <li><strong>Pasivas:</strong> en cada pieza de armadura, los pendientes y el collar.</li>
+  </ul>
+
+  <h3>Arma y Piedra sagrada (metabot)</h3>
+  <ul>
+    <li><strong>Arma:</strong> grimorio. El de mayor nivel de objeto es el <strong>Tomo prohibido de Ludra</strong>.</li>
+    <li><strong>Piedra sagrada:</strong> una de <strong>Fuego de área</strong> para grupos de monstruos (una de Sello es para JcJ).</li>
+    <li><strong>Equipo:</strong> qué nivel de equipo perseguir sigue abierto en global (couga54).</li>
+  </ul>
+
+  <h3>Mientras subes de nivel</h3>
+  <ul>
+    <li>Tras el prólogo: junta 40 plumas (120 esquirlas) para mejorar pronto el amuleto; hacia el 17, amuleto a +10 y transfórmalo en la versión azul.</li>
+    <li><strong>Arma a ~+10</strong> en cualquier momento: es el mayor salto de daño mientras subes. No la empujes más antes del tope.</li>
+    <li>Nv. 15 / 20 / 25: limpia los escondites que te pillen de camino: la primera vez dan Piedras de mejora y Cristales Daevanion.</li>
+    <li>Nv. 40: Cueva de Krao pide unos 1.000 de puntuación de equipo.</li>
+  </ul>
+</section>
+
+<section id="systems">
+  <h2>Sistemas de progresión (PvE)</h2>
+  <p>Los sistemas son los mismos para todas las clases; aquí solo lo que cambia para el Hechicero. El detalle completo (costes, materiales, dónde farmear) está en la <a href="asesino.html#systems">guía del Asesino</a>.</p>
+
+  <div class="callout crit">
+    <strong>Prioridades:</strong><br>
+    <strong>Alta:</strong> Mejora del equipo → Amplificación → Vinculación de alma → Arcana → Piedras de maná → Pase de batalla<br>
+    <strong>Media:</strong> Hitos de colección de mascotas, Teopiedras (endgame)<br>
+    <strong>Baja:</strong> Potencial (JcJ), Legión (individual)
+  </div>
+
+  <h3>Lo específico del Hechicero</h3>
+  <ul>
+    <li><strong>Orden de mejora:</strong> el grimorio primero; es lo que más sube tu daño.</li>
+    <li><strong>Anillos, arma y guarda</strong> con líneas de habilidades activas: Llamas del infierno, Quebrantamiento en llamas, Viento helado, Explosión de llama, Voto de concentración, Atadura invernal y Flecha en llamas hacia 16.</li>
+    <li><strong>Armadura, pendientes y collar</strong> con pasivas: Toga de llama, Marca ígnea, Toga terrestre, Merced de mejora.</li>
+    <li><strong>Final de nivel (45):</strong> actividades Shugo para el set de recompensas del tope (equipo dorado, materiales) y barre el mapa: interrogaciones, hogueras, misiones verdes, cubos ocultos y plumas (altar nivel 30 = título).</li>
+    <li><strong>Diario:</strong> Pesadilla, pisos de Transformación según tu puntuación de equipo, mazmorras T2 antes que T3 (vigila tu energía).</li>
+  </ul>
+</section>
+
+<section id="macros">
+  <h2>Macros y barra de habilidades</h2>
+  <p>AION 2 tiene dos herramientas distintas:</p>
+  <ul style="margin:0 0 1rem 1.2rem">
+    <li><strong>Línea de la barra:</strong> varias habilidades apiladas en un botón. Al pulsarlo lanza la de mayor prioridad que esté lista, y en AION 2 <strong>la casilla de abajo es la de mayor prioridad</strong>. Las tarjetas muestran cada línea de arriba abajo, como en el juego.</li>
+    <li><strong>Macro del juego:</strong> mientras mantienes su tecla, pulsa tus líneas en orden, cancela el final de las animaciones y se salta lo que esté en enfriamiento.</li>
+  </ul>
+  <div class="callout warn">
+    <strong>Primero asigna la tecla:</strong> la macro no tiene tecla por defecto. Ve a <em>Ajustes → Teclas → General → Macro</em> y ponla en el <strong>clic derecho</strong>. Así la mantienes pulsada a la vez que el ataque básico en el clic izquierdo.
+  </div>
+
+  <div class="level-tabs">
+    <button class="active" data-tab="m1">Nivel 45 · aLuckyRO + EUTOPIA</button>
+    <button data-tab="m2">Mientras subes de nivel</button>
+  </div>
+  <div class="tab-panel active" id="m1"><div class="mset" data-set="pve"></div></div>
+  <div class="tab-panel" id="m2"><div class="mset" data-set="leveling"></div></div>
+</section>
+
+<section id="progress">
+  <h2>Mi Progreso</h2>
+  <p>Marca los hitos conforme los completes. El progreso se guarda localmente en tu navegador, aparte de las otras clases.</p>
+  <div class="progress-bar"><div class="progress-bar-fill" id="progressFill"></div></div>
+  <div id="progressText" style="text-align:center; color:var(--text-dim); font-size:0.85rem;">0 de 0 completados</div>
+
+  <h3>Hitos de progresión</h3>
+  <div id="progressList">
+    <label class="progress-check"><input type="checkbox" data-key="p1"> Nv. 1 — Modo objetivo activado; Flecha en llamas y Cadena gélida primero</label>
+    <label class="progress-check"><input type="checkbox" data-key="p2"> Nv. 19 — Flecha en llamas a rango 8 con +20 % de Recuperación de PM</label>
+    <label class="progress-check"><input type="checkbox" data-key="p3"> Nv. 11 — Mascotas desbloqueadas (misión All Geared Up)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p4"> Nv. 12 — Tablero Nezekan empezado y Voto de concentración</label>
+    <label class="progress-check"><input type="checkbox" data-key="p5"> Nv. 14 — Llamas del infierno</label>
+    <label class="progress-check"><input type="checkbox" data-key="p6"> Nv. ~17 — Amuleto a +10 y transformado a azul</label>
+    <label class="progress-check"><input type="checkbox" data-key="p7"> Nv. 22 — Ascensión + Mejora elemental</label>
+    <label class="progress-check"><input type="checkbox" data-key="p8"> Nv. 27 — Explosión retrasada (o Barrera de acero si subes en solitario)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p9"> Nv. 32 — Barrera de fuego</label>
+    <label class="progress-check"><input type="checkbox" data-key="p10"> Nv. 37 — Tormenta helada: estigmas completos</label>
+    <label class="progress-check"><input type="checkbox" data-key="p11"> Macro del juego en el clic derecho (dos Flechas en llamas)</label>
+    <label class="progress-check"><input type="checkbox" data-key="p12"> Nv. 45 — Las siete habilidades clave a 10</label>
+    <label class="progress-check"><input type="checkbox" data-key="p13"> Explosión de llama, Quebrantamiento en llamas y Llamas del infierno a 16</label>
+    <label class="progress-check"><input type="checkbox" data-key="p14"> Mejora elemental a rango 20</label>
+    <label class="progress-check"><input type="checkbox" data-key="p15"> Tormenta helada, Barrera de fuego y Explosión retrasada a 10</label>
+  </div>
+
+  <h3>Hitos de mascotas</h3>
+  <div id="progressPets">
+    <label class="progress-check"><input type="checkbox" data-key="pet1"> Primera mascota a nivel 3 (transformación)</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet2"> Las 5 mascotas del plan a nivel 3</label>
+    <label class="progress-check"><input type="checkbox" data-key="pet3"> Todas las mascotas disponibles a nivel 3</label>
+  </div>
+
+  <h3>Hitos de equipo</h3>
+  <div id="progressSystems">
+    <label class="progress-check"><input type="checkbox" data-key="sys1"> Grimorio a +10</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys2"> Grimorio a su tope de mejora + Amplificación +5</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys3"> Grimorio con Vinculación de alma al 100 %</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys4"> Piedras de maná: Ataque, Crítico y Precisión</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys5"> PM suficientes para no bajar del 50 % en la rotación</label>
+    <label class="progress-check"><input type="checkbox" data-key="sys6"> Pase de batalla actual al 100 %</label>
+  </div>
+</section>
+
+<section id="credits">
+  <h2>Fuentes y Verificación</h2>
+  <p>La build sigue la guía del Hechicero (Sorcerer) de couga54 (6-oct-2026, Season 1), que a su vez reúne a estos creadores. Nombres, iconos, niveles de aprendizaje, especializaciones y estigmas en español del cliente: metabot.gg/es_ES.</p>
+  <ul>
+    <li><a href="https://couga54.github.io/aion2-guides/en/sorcerer/" target="_blank" rel="noopener">couga54 — Sorcerer (PvE, Leveling)</a></li>
+    <li><strong>EUTOPIA</strong> — AION 2 Sorcerer Build Guide (global, nivel 45): prioridad de habilidades (Llamas del infierno primero), especializaciones, estigmas y sus cambios, orden de Daevanion</li>
+    <li><strong>aLuckyRO</strong> — Sorcerer Guide For Skills &amp; Stigmas y Latest Sorcerer PVE Build for Global: especializaciones de los primeros días, líneas y macro, maná, modo objetivo, orden de estigmas</li>
+    <li><strong>Vortex Gaming</strong> — guía JcE coreana tras el parche de equilibrio · <strong>MMO Codex</strong> — prioridad de estigmas y subida en modo objetivo · <strong>Grobs</strong> — AION 2 Macro Guide</li>
+    <li><a href="https://metabot.gg/es_ES/aion-2/classes/sorcerer" target="_blank" rel="noopener">metabot.gg — Hechicero</a> (nombres, iconos, niveles de aprendizaje, ranuras de estigma de los mejores jugadores, orden de atributos, arma y Piedra sagrada) · <a href="https://questlog.gg" target="_blank" rel="noopener">questlog.gg</a> (datos de los tableros del cliente global)</li>
+  </ul>
+
+  <div class="callout warn">
+    <strong>Disclaimer:</strong> si una fuente menciona cap 50, 6 ranuras de estigma o rango 25, es información de KR/TW y no aplica a global. couga54 aún no tiene guía JcJ para el Hechicero.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Guía Progresiva Hechicero PvE · Aion 2 Global Season 1 · Última actualización 10-oct-2026</p>
+  <p><a href="index.html">← Volver al inicio</a> · <a href="https://github.com/Zentokux" target="_blank" rel="noopener">github.com/Zentokux</a></p>
+</footer>
+
+
+<script>
+// Tabs
+document.querySelectorAll('.level-tabs').forEach(tabs => {
+  tabs.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      const section = btn.closest('section');
+      section.querySelectorAll('.level-tabs button').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      section.querySelector('#' + target).classList.add('active');
+    });
+  });
+});
+
+// Progress tracking with localStorage
+const checks = document.querySelectorAll('.progress-check input');
+const progressFill = document.getElementById('progressFill');
+const progressText = document.getElementById('progressText');
+
+function updateProgress() {
+  const total = checks.length;
+  const done = Array.from(checks).filter(c => c.checked).length;
+  const pct = total > 0 ? (done / total) * 100 : 0;
+  progressFill.style.width = pct + '%';
+  progressText.textContent = done + ' de ' + total + ' completados (' + Math.round(pct) + '%)';
+}
+
+checks.forEach(check => {
+  const key = 'aion2_hechicero_' + check.dataset.key;
+  let saved = null;
+  try { saved = localStorage.getItem(key); } catch (e) {}
+  if (saved === 'true') {
+    check.checked = true;
+    check.parentElement.classList.add('checked');
+  }
+  check.addEventListener('change', () => {
+    try { localStorage.setItem(key, check.checked); } catch (e) {}
+    check.parentElement.classList.toggle('checked', check.checked);
+    updateProgress();
+  });
+});
+
+updateProgress();
+
+// Load progressive planner + Daevanion boards
+if (typeof buildPlanner === 'function') buildPlanner();
+if (typeof buildAllBoards === 'function') buildAllBoards();
+
+// Smooth scroll for nav
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 70,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+<script src="icons.js?v=2026-10-08-z"></script>
+<script src="planner-hechicero.js?v=2026-10-10-a"></script>
+<script src="mascotas-datos.js?v=2026-10-08-z"></script>
+<script src="mascotas.js?v=2026-10-10-a"></script>
+<script src="planner.js?v=2026-10-09-a"></script>
+<script src="macros-hechicero.js?v=2026-10-10-a"></script>
+<script src="macros.js?v=2026-10-08-z"></script>
+<script src="especializaciones-hechicero.js?v=2026-10-10-a"></script>
+<script src="especializaciones.js?v=2026-10-09-a"></script>
+<script src="daevanion-hechicero.js?v=2026-10-10-a"></script>
+<script src="daevanion.js?v=2026-10-08-z"></script>
+<script src="sidenav.js?v=2026-10-10-b"></script>
+</body>
+</html>

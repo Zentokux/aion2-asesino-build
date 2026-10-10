@@ -1,0 +1,530 @@
+[
+ {
+  "slug": "hellfire",
+  "mb": "hellfire",
+  "nombre": "Llamas del infierno",
+  "nombreEn": "Hellfire",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento de la Velocidad de habilidad en un 30 %",
+    "en": "+30% Skill Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, daño continuo de Fuego durante 10s",
+    "en": "Fire Damage over Time for 10s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Ignora el Bloqueo y Evasión / Acierto con Multigolpe",
+    "en": "Ignores Block and Evasion and lands as Multi-Hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Reducción de 15 s de Tiempo de Enfriamiento",
+    "en": "-15s cooldown",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "firestorm",
+  "mb": "firestorm",
+  "nombre": "Quebrantamiento en llamas",
+  "nombreEn": "Firestorm",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 50 % de Consumo de Puntos de Maná",
+    "en": "-50% MP Cost",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de velocidad de habilidad",
+    "en": "+20% Skill Speed",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "-60 % de Curación recibida durante 5s al acertar",
+    "en": "-60% Incoming Heal for 5s on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Reducción de 2 s de Tiempo de Enfriamiento de «Llamas del infierno» por cada quebrantamiento",
+    "en": "-2s [Hellfire] cooldown per fireball",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento del 15 % de daño por cada quebrantamiento (máx. 75 %)",
+    "en": "+15% damage per fireball, up to +75%",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "bittercold-wind",
+  "mb": "bittercold-wind",
+  "nombre": "Viento helado",
+  "nombreEn": "Bittercold Wind",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "El tiempo de invocación de «Viento helado» aumenta 1 s",
+    "en": "+1s [Bittercold Wind] summon duration",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Efecto de atracción",
+    "en": "Pull effect",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Ignora el Bloqueo y Evasión / Acierto con golpe Crítico",
+    "en": "Ignores Block and Evasion and lands as a Critical Hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, el Tiempo de Enfriamiento de [Congelación] se reduce en 1 s",
+    "en": "-1s [Frost] cooldown on hit",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "blaze",
+  "mb": "blaze",
+  "nombre": "Explosión de llama",
+  "nombreEn": "Blaze",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 300, 300 %",
+    "en": "Absorbs 3% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 50 % de Recuperación de Puntos de Maná",
+    "en": "+50% MP restored",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Daño diferido tras 3s",
+    "en": "Delayed Damage after 3s",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, el Tiempo de Enfriamiento de «Voto de concentración» se reduce 3 s",
+    "en": "-3s [Wish of Concentration] cooldown on hit",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "wish-of-concentration",
+  "mb": "wish-of-concentration",
+  "nombre": "Voto de concentración",
+  "nombreEn": "Wish of Concentration",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 10 % de Consumo de Puntos de Maná",
+    "en": "Reduces MP Cost by 10%",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento adicional del 10 % de Ataque",
+    "en": "+10% additional Attack",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento de 500 de Puntos de Maná Máximos",
+    "en": "+500 Max MP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento del 10 % de Velocidad de Hechizo",
+    "en": "+10% Combat Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Reducción de 10 s del Tiempo de Enfriamiento de todas las habilidades",
+    "en": "-10s all skill cooldowns",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "winters-shackles",
+  "mb": "winters-shackles",
+  "nombre": "Atadura invernal",
+  "nombreEn": "Winter's Shackles",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "«Atadura invernal»: 30 % de prob. de Congelación durante 3 s al acertar",
+    "en": "30% chance to inflict Frost for 3s on landing [Winter's Shackles]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar «Atadura invernal», aumento del 20 % de Amplificación de Daño de JcE y 10 % de Amplificación de Daño JcJ durante 5s",
+    "en": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Adición de hab. de cadena «Ilusión invernal» x2",
+    "en": "Adds [Winter's Illusion] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "El Tiempo de Enfriamiento de «Atadura invernal» se reduce 15 s",
+    "en": "-15s [Winter's Shackles] cooldown",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "flame-arrow",
+  "mb": "flame-arrow",
+  "nombre": "Flecha en llamas",
+  "nombreEn": "Flame Arrow",
+  "rango": "16",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de Recuperación de Puntos de Maná",
+    "en": "+20% MP restored",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 100, 100 %",
+    "en": "Absorbs 1% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar, aumento del 50 % de Multigolpe",
+    "en": "+50% Multi-Hit on hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al activarse [Ignición], El Aumento de Amplificación de Daño de Fuego aumenta un 5 % durante 10s",
+    "en": "+5% Fire Damage Boost for 10s on activating [Pyroclasm]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar «Ignición», se restablece el Tiempo de Enfriamiento de «Explosión de llama»",
+    "en": "Reset [Blaze] cooldown on landing [Pyroclasm]",
+    "elige": true,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "ice-chain",
+  "mb": "ice-chain",
+  "nombre": "Cadena gélida",
+  "nombreEn": "Ice Chain",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Reducción del 20 % de Consumo de Puntos de Maná",
+    "en": "-20% MP Cost",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Aumento del 20 % de velocidad de habilidad",
+    "en": "+20% Skill Speed",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cuantos menos objetivos se acierten, el daño aumenta un máximo del 12 %",
+    "en": "Deals up to 12% more damage when less targets are hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, el Tiempo de Enfriamiento de «Atadura invernal» se reduce 1 s",
+    "en": "-1s [Winter's Shackles] cooldown on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar «Onda helada», estado de Congelación durante 2 s con un 5 % de prob.",
+    "en": "5% chance to inflict Frost for 2s on landing [Cold Wave]",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "flame-scattershot",
+  "mb": "flame-scattershot",
+  "nombre": "Llamas sin puntería",
+  "nombreEn": "Flame Scattershot",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 500, 500 %",
+    "en": "Absorbs 5% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Recuperación de 120 de Puntos de Maná",
+    "en": "Restores 120 MP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Al acertar, Multigolpe garantizado",
+    "en": "Multi-Hit on hit",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades",
+    "en": "-1s all skill cooldowns on hit",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "frost",
+  "mb": "frost",
+  "nombre": "Congelación",
+  "nombreEn": "Frost",
+  "rango": "leveling",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Recuperación de 200 de Puntos de Maná",
+    "en": "Restores 200 MP",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Reducción de 5 s del Tiempo de Enfriamiento",
+    "en": "-5s cooldown",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al acertar Congelación, se restablece el Tiempo de Enfriamiento de «Explosión de Congelación»",
+    "en": "Reset [Frost Burst] cooldown on landing Frost",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "+25 % de acierto de congelación a objetivos PJ",
+    "en": "+25% PC target Frost Chance",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Aumento de 1 s de duración de Congelación",
+    "en": "+1s Frost duration",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "defiance",
+  "mb": "defiance-sorcerer",
+  "nombre": "Eliminación de impacto",
+  "nombreEn": "Defiance",
+  "rango": "12",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Añade [Maldición: Árbol viejo] como segunda habilidad de cadena.",
+    "en": "Adds [Curse: Old Tree] Chain Skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor",
+    "en": "Restores 1000 Stamina on using [Defiance]",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida",
+    "en": "Restores 20% HP on using [Defiance]",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Aumento de 2 s de duración de Robustez",
+    "en": "+2s Tenacity duration",
+    "elige": true,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 %",
+    "en": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ },
+ {
+  "slug": "frost-burst",
+  "mb": "frost-burst",
+  "nombre": "Explosión de Congelación",
+  "nombreEn": "Frost Burst",
+  "rango": "skip",
+  "opciones": [
+   {
+    "nv": 8,
+    "es": "Absorción de Puntos de Vida del 700, 700 %",
+    "en": "Absorbs 7% HP",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Cambio a habilidad disponible en movimiento",
+    "en": "Changes to mobile skill",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 8,
+    "es": "Empuje de 2 m con un 75 % de prob.",
+    "en": "75% chance to Knock Back 2m",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 12,
+    "es": "Ignora el Bloqueo y Evasión / Acierto con golpe Crítico",
+    "en": "Ignores Block and Evasion and lands as a Critical Hit",
+    "elige": false,
+    "a20": false
+   },
+   {
+    "nv": 16,
+    "es": "50 % de prob. de reiniciar el tiempo de espera",
+    "en": "50% chance to reset cooldown",
+    "elige": false,
+    "a20": false
+   }
+  ]
+ }
+]

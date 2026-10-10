@@ -1,0 +1,547 @@
+Sorcerer — AION 2 Global - Guides (PvE, Leveling)
+Skip to content
+AION 2 Global - Guides
+Sorcerer
+Gladiator Melee DPS · bruiser
+Ranger Ranged DPS · kiter
+Templar Tank · party buffer
+Assassin Melee DPS · burst
+Sorcerer Ranged magic DPS
+Elementalist Summoner · magic DPS
+Cleric Healer · earth and lightning damage
+Chanter Melee support · buffer
+Rift --:--
+Reset --
+--:--:--
+Guides
+Progress
+Week 1 What to finish before the first reset
+After 45 Item level route to the raid
+Gathering and crafting Professions and gold blanks
+Game settings Controls, keys, FPS and mass PvP
+Dungeons Boss mechanics with arena diagrams
+Tier list Classes ranked by content
+Trackers
+Weekly Weekly entries and energy
+World bosses Kill tracker and timers
+Sources & credits Everyone this site builds on
+EN Language
+EN English RU Русский UA Українська TR Türkçe
+All classes / Sorcerer
+PvE PvP Leveling · Global Season 1
+Sorcerer
+A glass-cannon caster that mixes fire and ice: Fire Mark and Blaze for damage, Frost and roots for control, and huge burst behind Element Enhancement.
+Updated: Oct 6, 2026 Patch: Season 1
+Source: EUTOPIA · aLuckyRO Source: MMO Codex · Grobs
+Role Ranged magic DPS
+Weapon Spellbook
+Difficulty Medium
+PvE
+PvP
+Leveling
+On this page
+Found a mistake or know a better build or guide? Suggest a change.
+No PvP guide for this class yet — know a good one from the global servers? Send a link.
+Suggest a change
+Leveling progress
+0 /22 done
+Reset progress
+Tick steps as you go. Progress is saved in this browser, separately for each class.
+Start
+Route
+Follow yellow (main story) quests only . Side content scales with your level, so nothing is lost by doing it later.
+Lv 1
+Class
+First points into Flame Arrow (restores MP on every cast) and Ice Chain for packs. At 8 take +20% MP restored — mana is your limit while leveling.
+Settings
+Class
+Use target mode , not action combat: in action mode the basic attack stops whenever you cast, and the basic attack is what keeps your MP up.
+After prologue
+Route
+Collect 40 feathers (120 shards) for an early amulet upgrade.
+Lv 6–10
+Class
+Firestorm and Blaze become your single-target damage. Blaze needs Fire Mark on the target — Fire Mark applies it from any fire hit.
+Lv 12
+Route
+Daevanion unlocks (Nezekan board). Blue nodes = +1 skill level — see your class step below.
+Lv 12
+Class
+Hellfire (charge to 3) for big pulls and Bittercold Wind to root the pack in place — Pull effect pulls them together.
+Lv 15 / 20 / 25
+Route
+Clear hideouts that are on your route — first clears give Enhance Stones and Daevanion Crystals.
+~Lv 17
+Route
+Amulet +10 , then Morph it into the blue version.
+Any time
+Route
+Weapon to ~+10 — the biggest damage jump while leveling. Don't push further before the cap.
+Lv 20
+Route
+Zikel board opens — same node priority as before.
+Lv ~22
+Route
+Ascension → stigmas unlock (4 slots in global Season 1). The slots open one at a time at levels 22, 27, 32 and 37 — you can learn more stigmas, but only that many fit on the bar. Which ones — see your class step.
+Lv ~22
+Class
+Stigmas: Element Enhancement first, then Fire Wall and Cold Storm for packs. Keep Steel Barrier while leveling solo — the Sorcerer is fragile.
+Acts 2–3
+Route
+Story only — don't get distracted by the map.
+Lv 30
+Route
+Vaizel board opens (critical damage).
+Act 4
+Route
+Side quests and solo dungeons are worth doing again here.
+Lv 40
+Route
+Triniel board opens (multi-hit; mostly PvP — can wait). Krao Cave expects about 1000 Gear Score.
+Lv 45
+Route
+Azphel board opens — PvP Damage Boost and Tolerance only, no skill nodes. For PvE keep filling the first four boards; global has no Ariel board.
+Cap
+Class
+At the cap swap Steel Barrier for Delayed Explosion in groups and push Blaze , Firestorm , Hellfire toward 16+ — see the PvE tab.
+Cap
+Route
+Shugo activities for the full level-cap reward set (gold gear, materials).
+Cap
+Route
+Sweep the map: question marks, bonfires, green quests, hidden cubes, feathers. Turn in feathers — altar Lv 30 gives a title.
+Daily
+Route
+Nightmare entry, Transformation floors as your GS allows, dungeons T2 before T3 (watch your energy).
+Build at a glance
+Core skills
+16
+Hellfire
+16
+Firestorm
+16
+Bittercold Wind
+16
+Blaze
+16
+Wish of Concentration
+Stigma loadout
+Lv 20
+Element Enhancement
+Lv 10
+Cold Storm
+Lv 10
+Fire Wall
+Lv 10
+Delayed Explosion
+Key passives
+Robe of Flame
+Fire Mark
+Robe of Earth
+Grace of Enhancement
+Overview
+The Sorcerer is a ranged glass cannon that casts both fire and ice. Fire does the damage — Fire Mark marks the target and Blaze cashes it in — while ice slows, roots and freezes so nothing reaches you. Half of your damage bonuses depend on mana: above 50% MP you crit more, above 25% you deal 20% more damage.
+The build in one sentence
+Hold one macro that keeps Element Enhancement and Wish of Concentration running and alternates Flame Arrow with your fire and ice lines so MP stays above half; cast Hellfire by hand.
+Play in target mode. With a locked target the basic attack Flame Arrow keeps firing by itself after every skill and restores MP. In action mode it stops after each skill and you have to click again.
+Two stages. In the first days at 45 your skills sit at 8–10 with one specialization each — take the mana and speed picks named in the cards. The card levels and the two highlighted picks are the later target (16), from EUTOPIA's global setup and Korean guides.
+The early setup and the macro follow aLuckyRO's Sorcerer beginner guide (video, September 15, Taiwan client) and his global update of October 2; the skill priority and the level-16 picks follow EUTOPIA's global build (level 45, item level 1,260, October 3), who tops the damage charts in his groups. Skill names and data are from the global client.
+Patch Season 1. The build is checked against guides from the global servers: 4 stigmas, cap 20.
+Global Season 1: what changes
+Global servers open on October 5, 2026 (Founder's early access from September 30). What that means for the Sorcerer:
+4 stigma slots, capped at 20. Taiwan and Korea play six; the four kept here are the ones both sources level first.
+Skills at 16, not 20. Arcana and rings are what push skills past 16, and they come slowly.
+Mana is tight at the start. About 3,000 MP and no cooldown reduction: the early picks are about MP and Skill Speed, not damage.
+PvP: everyone starts on the same limited gear and no meta has formed yet.
+Skills
+? Each skill card shows the specializations to take under its description; the dashed “20” chip is the pick for the third slot at skill level 20. “All specializations” lists every option.
+Later seven skills go to 16 — Hellfire first — and the rest stay at 12 or leave the bar. Each card says which single pick to take while the skill is still at 8–10.
+Hellfire 16
+Your biggest hit and the center of the build — EUTOPIA's number one priority. Charge it fully and cast it by hand. Before 16: +30% Skill Speed and the fire damage over time (aLuckyRO); at 16 swap the damage over time for −15s cooldown. The third slot at 20: Multi-Hit through Block and Evasion.
+8 +30% Skill Speed
+16 -15s cooldown
+All specializations
+8 +30% Skill Speed
+8 Fire Damage over Time for 10s on hit
+8 Changes to mobile skill
+12 Ignores Block and Evasion and lands as Multi-Hit
+16 -15s cooldown
+Firestorm 16
+5-second cooldown and a big mana drain — take −50% MP Cost first. At 12 every fireball takes 2s off Hellfire, so the two work as a pair. At 20 add +15% damage per fireball.
+8 -50% MP Cost
+12 -2s [Hellfire] cooldown per fireball
+All specializations
+8 -50% MP Cost
+8 +20% Skill Speed
+8 -60% Incoming Heal for 5s on hit
+12 -2s [Hellfire] cooldown per fireball
+16 +15% damage per fireball, up to +75%
+Bittercold Wind 16
+Root field: +1s duration, and at 12 a guaranteed crit through Block and Evasion (EUTOPIA). Its level-16 pick only shortens Frost — skip it once Frost is off your bar.
+8 +1s [Bittercold Wind] summon duration
+12 Ignores Block and Evasion and lands as a Critical Hit
+All specializations
+8 +1s [Bittercold Wind] summon duration
+8 Changes to mobile skill
+8 Pull effect
+12 Ignores Block and Evasion and lands as a Critical Hit
+16 -1s [Frost] cooldown on hit
+Blaze 16
+Main damage on a Fire-Marked target; restores MP. Delayed damage and Multi-Hit in a group; solo on a hard boss swap the delay for the HP absorb (aLuckyRO). At 20 add the Wish of Concentration cooldown pick.
+8 Delayed Damage after 3s
+12 Multi-Hit on hit
+All specializations
+8 Absorbs 3% HP
+8 +50% MP restored
+8 Delayed Damage after 3s
+12 Multi-Hit on hit
+16 -3s [Wish of Concentration] cooldown on hit
+Wish of Concentration 16
++10% additional Attack and +10% Combat Speed — both sources take these two. At 20 add −10s to all cooldowns.
+8 +10% additional Attack
+12 +10% Combat Speed
+All specializations
+8 Reduces MP Cost by 10%
+8 +10% additional Attack
+8 +500 Max MP
+12 +10% Combat Speed
+16 -10s all skill cooldowns
+Winter's Shackles 16
++20% PvE Damage Boost for 5s on landing — the reason to level it. With −15s cooldown at 16; EUTOPIA takes the chain skill instead.
+8 +20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]
+16 -15s [Winter's Shackles] cooldown
+All specializations
+8 Changes to mobile skill
+8 30% chance to inflict Frost for 3s on landing [Winter's Shackles]
+8 +20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]
+12 Adds [Winter's Illusion] Chain Skill
+16 -15s [Winter's Shackles] cooldown
+Flame Arrow 16
+Basic attack and your mana engine. First days: +20% MP restored; +50% Multi-Hit once mana holds. At 12: +5% elemental damage for 10s whenever Pyroclasm triggers; at 16 it resets Blaze.
+12 +5% Fire Damage Boost for 10s on activating [Pyroclasm]
+16 Reset [Blaze] cooldown on landing [Pyroclasm]
+All specializations
+8 +20% MP restored
+8 Absorbs 1% HP
+8 +50% Multi-Hit on hit
+12 +5% Fire Damage Boost for 10s on activating [Pyroclasm]
+16 Reset [Blaze] cooldown on landing [Pyroclasm]
+Ice Chain 12
+EUTOPIA takes Ice Chain, Frost and Frost Burst off the bar: they are slow to weave in and add little damage. aLuckyRO keeps Ice Chain at 12 — every hit takes 1s off Winter's Shackles. +20% Skill Speed, or −20% MP if mana runs short.
+8 +20% Skill Speed
+12 -1s [Winter's Shackles] cooldown on hit
+All specializations
+8 -20% MP Cost
+8 +20% Skill Speed
+8 Deals up to 12% more damage when less targets are hit
+12 -1s [Winter's Shackles] cooldown on hit
+16 5% chance to inflict Frost for 2s on landing [Cold Wave]
+Flame Scattershot 12
+Only on Staggered targets, so it can sit in the macro. Take the mobile pick, and Multi-Hit at 12.
+8 Changes to mobile skill
+12 Multi-Hit on hit
+All specializations
+8 Absorbs 5% HP
+8 Restores 120 MP
+8 Changes to mobile skill
+12 Multi-Hit on hit
+16 -1s all skill cooldowns on hit
+Frost leveling
+Restores 200 MP — handy while leveling and short on mana; it leaves the bar in the global endgame setup.
+8 Restores 200 MP
+8 Reset [Frost Burst] cooldown on landing Frost
+All specializations
+8 Restores 200 MP
+8 -5s cooldown
+8 Reset [Frost Burst] cooldown on landing Frost
+12 +25% PC target Frost Chance
+16 +1s Frost duration
+Defiance 12
+CC break; 20% HP back when you break free.
+8 Restores 20% HP on using [Defiance]
+12 +2s Tenacity duration
+All specializations
+8 Adds [Curse: Old Tree] Chain Skill
+8 Restores 1000 Stamina on using [Defiance]
+8 Restores 20% HP on using [Defiance]
+12 +2s Tenacity duration
+16 +50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration
+Frost Burst skip
+Only on Frozen targets. Not part of the global setup.
+All specializations
+8 Absorbs 7% HP
+8 Changes to mobile skill
+8 75% chance to Knock Back 2m
+12 Ignores Block and Evasion and lands as a Critical Hit
+16 50% chance to reset cooldown
+Passives
+Passive
+Why
+Robe of Flame
+Accuracy, PvE Damage Boost and Double Chance — the first passive to max.
+Fire Mark
+Applies Fire Mark, which Blaze needs, and burns the target. Max it.
+Robe of Earth
+Max MP and Critical Hit while MP is 50% or more. Max it.
+Grace of Enhancement
++20% PvE Damage Boost while MP is 25% or more, and extra hits.
+Vitality Evaporation
+Extra damage while the target is above 70% HP — strong early, when fights are short.
+Cold Snap
+Extra damage on slowed targets — Ice Chain keeps them slowed.
+Robe of Cold
+Defense and a slow on attackers — raids.
+Robe of Earth and Grace of Enhancement switch off when your mana runs low — never play at 10–20% MP.
+Gear & stats
+Manastones: Attack, Critical Hit, Accuracy.
+Watch Max MP and MP regen until your rotation stops running dry.
+Which gear tier to chase is still open until the global launch.
+Daevanion boards
+Daevanion takes your skills from 10 to 14 and adds stats. Each blue node gives +1 level to its skill.
+Priority: orange Combat Speed and Cooldown Reduction, then Attack and Damage Boost, then Critical Damage Boost; after that the blue nodes of Hellfire , Firestorm , Bittercold Wind , Blaze , Wish of Concentration and the green Robe of Earth .
+Skip Multi-Hit and the defensive orange nodes — a Sorcerer wants flat damage; pick up Accuracy later.
+Priority: blue nodes for Frost , Winter's Shackles , Firestorm .
+No Ariel on global: there are five boards, and the level-45 one, Azphel, gives only PvP Damage Boost and Tolerance — in PvE finish the first four.
+Azphel (level 45) is all PvP Damage Boost and Tolerance — take it.
+Board
+Unlock
+Orange nodes
+Nezekan
+Lv 12
+Combat Speed, Cooldown Reduction
+Zikel
+Lv 20
+Damage Boost, Damage Tolerance
+Vaizel
+Lv 30
+Critical Damage Boost and Tolerance
+Triniel
+Lv 40
+Multi-Hit Chance and Resist
+Azphel
+Lv 45
+PvP Damage Boost and Tolerance — no skill nodes
+The route on the boards
+The real global boards from the game data. Gold marks the cheapest path from Start to the nodes this guide takes — the blue nodes of the priority skills and the offensive orange nodes (no Multi-Hit, no tolerance); hover any node to see what it gives.
+Nezekan Lv 12 · 69 pts Zikel Lv 20 · 50 pts Vaizel Lv 30 · 45 pts Triniel Lv 40 · 42 pts Azphel Lv 45 · 0 pts
+Daevanion Crystals spent: 69 / 134 Reset
+Daevanion Crystals spent: 50 / 134 Reset
+Daevanion Crystals spent: 45 / 134 Reset
+Daevanion Crystals spent: 42 / 168 Reset
+Daevanion Crystals spent: 0 / 232 Reset
+206 points in total skill levels
+Robe of Earth +4 Wish of Concentration +4 Blaze +4 Firestorm +4 Bittercold Wind +4 Hellfire +4
+on the way: Cold Snap +2 Frost +1 Grace of Enhancement +1 Vitality Evaporation +1 Frost Burst +1 Winter's Shackles +1
+416 × Daevanion Crystal — the most you can get for the four PvE boards where they come from
+Levels 12–45: Daevanion Crystal ×136.
+Sealed dungeons (the ? on the map): Daevanion Crystal ×122.
+Regional side quests: Daevanion Crystal ×58.
+Shugo Festival Shop: Daevanion Crystal ×50 per character for Centuryroot Token ×10,500 in total — the price rises in four steps: 10 for 50, 10 for 100, 15 for 200, 15 for 400.
+Nightmare Shop (Growth tab): Daevanion Crystal ×50 per character for Phantasmal Fragment ×15,000 in total (300 each).
+The boards cost more: Nezekan, Zikel and Vaizel 134 each, Triniel 168 — 570 in total, so you can't fill them all. The route above takes the nodes that count first.
+Dungeons on the enemy faction's side give nothing for these boards. The Azphel board (level 45) is PvP only and has its own Daevanion Crystal: Azphel — it is not counted here.
+The route shown first is the recommended one. Drag the slider to see the path node by node; past the recommended amount it only fills the rest of the board in a generic order (orange nodes, Attack and Critical Hit, other skills, defense, MP last) — plan those nodes yourself and skip the passives your build doesn't use. Reset brings back the recommended route.
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+Nezekan Lv 12 · 60 pts Zikel Lv 20 · 59 pts Vaizel Lv 30 · 62 pts Triniel Lv 40 · 82 pts Azphel Lv 45 · 110 pts
+Daevanion Crystals spent: 60 / 134 Reset
+Daevanion Crystals spent: 59 / 134 Reset
+Daevanion Crystals spent: 62 / 134 Reset
+Daevanion Crystals spent: 82 / 168 Reset
+Daevanion Crystals spent: 110 / 232 Reset
+373 points in total skill levels
+Firestorm +4 Winter's Shackles +4 Frost +4
+on the way: Revitalization Contract +4 Vitality Evaporation +3 Cold Snap +2 Flame Arrow +2 Grace of Enhancement +2 Blaze +1 Robe of Cold +1 Frost Burst +1 Bittercold Wind +1 Grace of Resistance +1 Ice Chain +1
+The route shown first is the recommended one. Drag the slider to see the path node by node; past the recommended amount it only fills the rest of the board in a generic order (orange nodes, Attack and Critical Hit, other skills, defense, MP last) — plan those nodes yourself and skip the passives your build doesn't use. Reset brings back the recommended route.
+stat · 1 passive · 2 skill · 3 special · 4 stat · 2–3 route
+Boards and costs come from the global client data (questlog.gg); the path is calculated, not taken from a video. Stat values may still change at launch — check the in-game board before committing a full route.
+Stigmas
+Leveling order: Element Enhancement → Cold Storm → Fire Wall → Delayed Explosion. On a fresh character they start at about 5 / 5 / 5 / 1.
+Element Enhancement Lv 20
++20% Fire and Water Attack (+10% more at 20) — your main buff, used every time it is ready. Max it first.
+5 +200 Accuracy
+10 x1.5 [Robe of Flame] effect
+15 x1.5 [Grace of Enhancement] effect
+20 +10% additional Fire and Water Attack
+All specializations
+5 +200 Accuracy
+10 x1.5 [Robe of Flame] effect
+15 x1.5 [Grace of Enhancement] effect
+20 +10% additional Fire and Water Attack
+Cold Storm Lv 10
+Water DoT field with Frostbite: extra damage on every hit you land inside it.
+5 Enhanced Frostbite - Grants extra damage when landing an attack
+10 30% chance to inflict Root for 2s
+All specializations
+5 Enhanced Frostbite - Grants extra damage when landing an attack
+10 30% chance to inflict Root for 2s
+15 +3s [Cold Storm] summoning duration
+20 +10s Frostbite duration
+Fire Wall Lv 10
+Fire DoT field; Embers adds extra damage on each hit. Best when the boss stands still or the pack walks through it.
+5 Enhanced Embers - Grants extra damage when landing an attack
+10 +2m wall width
+All specializations
+5 Enhanced Embers - Grants extra damage when landing an attack
+10 +2m wall width
+15 +2s [Fire Wall] summoning duration
+20 +10s Embers duration
+Delayed Explosion Lv 10
+The target takes +15% damage from you for 4s; level 10 cuts its cooldown. One point is enough at first.
+5 Restores 200 MP
+10 -10s [Delayed Explosion] cooldown
+All specializations
+5 Restores 200 MP
+10 -10s [Delayed Explosion] cooldown
+15 Changes to AoE Skill
+20 +10% additional Damage Taken
+Glacial Smite alt.
+Big instant AoE hit, stronger on packs; the swap for Cold Storm on short fights and farming.
+5 Up to +20% damage when more targets hit
+10 -30s cooldown
+All specializations
+5 Up to +20% damage when more targets hit
+10 -30s cooldown
+15 50% chance to inflict Frost for 3s
+20 Ignores Block and Evasion and lands as Multi-Hit
+Divine Burst alt.
+Hit that throws you back from the target, with an HP absorb at 10 — a safety tool once you have spare shards.
+5 +20% Skill Speed
+10 Absorbs 10% HP
+All specializations
+5 +20% Skill Speed
+10 Absorbs 10% HP
+15 75% chance to inflict Knock Back
+20 Inflict Stun for 3s after Knock Back
+Steel Barrier alt.
+Shield worth 16% of Max HP — keep it while leveling solo, and swap it in for Cold Storm on a boss that keeps killing you (EUTOPIA).
+5 +10% Move Speed
+10 HP Regen at fixed intervals
+All specializations
+5 +10% Move Speed
+10 HP Regen at fixed intervals
+15 +10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase
+20 -15s cooldown
+aLuckyRO's Taiwan setup runs six stigmas: these four plus Glacial Smite and Divine Burst. EUTOPIA runs exactly these four on global; Divine Burst is his swap when the group misses stagger checks.
+270 × Stigma Shard — from the shops, plus a few for levels and the story where they come from
+Abyss shop: Stigma Shard ×50 per step, four steps per character (200 in all) — Abyss Points ×10,000, 15,000, 20,000 and 25,000 each.
+Nightmare Shop (Growth tab): Stigma Shard ×35 per character for Phantasmal Fragment ×1,500 each — 52,500 in total.
+Shugo Festival Shop: Stigma Shard ×35 per character for Centuryroot Token ×300 each — 10,500 in total.
+Levels and the main story give a few more.
+Macro & rotation
+? The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+AION 2 has two separate tools:
+Hotbar line — several skills stacked on one hotbar button. Pressing it casts the highest-priority skill that's ready, and in AION 2 the bottom slot has the highest priority . The cards show each line top to bottom as in the game.
+In-game macro — while you hold its key, it presses your hotbar buttons in order and cancels animation tails. Skills on cooldown are skipped.
+1. Hotbar lines
+4 Buff line
+3
+Delayed Explosion
+2
+Bittercold Wind
+1
+Element Enhancement
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Element Enhancement goes off whenever it is ready; then the root field and the +15% damage debuff.
+5 Concentration line
+3
+Fire Wall
+2
+Cold Storm
+1
+Wish of Concentration
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+The second buff first, then both fields under the target.
+1 Fire line
+2
+Firestorm
+1
+Blaze
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Blaze whenever the target carries a Fire Mark, Firestorm on its 5-second cooldown.
+T Ice line
+2
+Ice Chain
+1
+Winter's Shackles
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Winter's Shackles for the damage buff; Ice Chain fills the rest if you kept it — without it the line is Winter's Shackles alone.
+Flame Arrow sits alone on R , Hellfire on 2 , Flame Scattershot on 3 .
+2. In-game macro
+Bind a macro key in Settings → Key settings → Gameplay → Macro. Every step with the same delay:
+1 Buff line 4
+2 Concentration line 5
+3 Flame Arrow R
+4 Fire line 1
+5 Flame Arrow R
+6 Ice line T
+7 Flame Scattershot 3
+Delay: 10 ms with a ping under 50; 40–50 ms with a ping of 80–100 and more.
+How to check it: watch your character while the macro runs. Afterimages ("shadows") behind it mean animations are being cancelled and the delay is fine.
+Why two Flame Arrows: they refill mana between the expensive skills, so MP stays above 50% and both mana passives stay on.
+The steps come from aLuckyRO's macro window (September 15, Taiwan client); Frost and Frost Burst were taken out after EUTOPIA's global setup. Flame Scattershot as the last step follows what aLuckyRO says (it fires by itself on a staggered boss).
+3. What you actually press
+Hold The macro key — nothing else.
+By hand Hellfire : stop, charge it fully, go back to the macro.
+Low mana If MP still drops, let go of the macro, fire a few Flame Arrow s and continue.
+4. Later: burst by hand
+Once your gear carries cooldown reduction, Korean players take the buffs out of the macro and open a burst window by hand:
+Delayed Explosion just before the tank pulls.
+Element Enhancement and Wish of Concentration .
+Fire Wall + Cold Storm under the boss.
+Bittercold Wind , then Winter's Shackles for the +20% damage boost.
+Hellfire charged to 3, then the macro.
+Recap
+First days: skills at 8–10 with the mana and speed picks; one macro with the buffs inside; target mode.
+Later: Hellfire, Firestorm, Bittercold Wind, Blaze, Wish of Concentration, Winter's Shackles, Flame Arrow 16; Ice Chain 12 or off the bar.
+Stigmas: Element Enhancement 20, Cold Storm 10, Fire Wall 10, Delayed Explosion 10.
+Mana: keep it above 50% — that is damage, not comfort.
+How to fight while leveling
+Packs: Bittercold Wind (root + pull) → Hellfire → Ice Chain until they drop.
+Elites: Fire Mark → Blaze → Firestorm , kiting with Ice Chain slows.
+Mana: use target mode so the basic attack keeps running, and weave Flame Arrow.
+Low HP: Steel Barrier and distance — the Sorcerer has no heal.
+Leveling macro
+? The macro key is not bound by default: bind it in Settings → Key Settings → General → Macro. Bind it to RMB — then you hold it together with the basic attack on LMB.
+Early on, two lines are enough: the Fire line on MB5 and the Ice line on RMB. Add the in-game macro once Bittercold Wind and your stigmas are in.
+MB5 Fire line
+3
+Flame Arrow
+2
+Firestorm
+1
+Blaze
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+RMB Ice line
+2
+Ice Chain
+1
+Frost
+In-game order, top to bottom. 1 = highest priority — the bottom slot.
+Sources
+aLuckyRO — AION 2 Sorcerer Guide For Skills & Stigmas | Macros & Daevanion Setup — the early setup at 45: first specializations, hotbar lines and the macro, mana management, targeting mode, Daevanion order
+EUTOPIA — AION 2 Sorcerer Build Guide - Best PvE Skills, Macro & Rotation — global level-45 setup: skill priority (Hellfire first), specializations, stigmas and their swaps, Daevanion order
+aLuckyRO — AION 2 Latest Sorcerer PVE Build for Global — early specializations, the Firestorm → Hellfire and Ice Chain → Winter's Shackles combos, stigma order
+Vortex Gaming — Sorcerer PvE guide after the balance patch — skill levels, specializations, stigmas, opener and macro (Korean servers)
+MMO Codex — Aion 2 Sorcerer guide — stigma priority, macro order, leveling in target mode
+questlog.gg — skill data and names from the global client
+Grobs — AION 2 Macro Guide — how hotbar lines and the in-game macro work
+All sources and creators →
+Send feedback
+AION 2 Global - Guides
+Unofficial fan site, not affiliated with NCSOFT. AION 2 and its skill icons are © NCSOFT.
+Guides are collected from content creators — all credit goes to them; the site is put together with the help of Claude (AI).
+Last checked: Oct 10, 2026 .
+All sources and creators · Changelog · Send feedback
+Esc
+What's new
+Oct 10, 2026
+Daevanion boards: a slider for the leveling path — drag the slider under a board tab to see the order to take the nodes in: first the guide's route, then the rest of the board (suggested by a site visitor).
+Got it
+Full changelog →
+Send feedback
+What is wrong or outdated, or which guide should be added? A link to a source or a screenshot helps a lot.
+Your message
+Contact for a reply (optional)
+Sent together with the message:
+Send
+Cancel

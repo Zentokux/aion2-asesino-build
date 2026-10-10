@@ -1,0 +1,72 @@
+## Llamas del infierno 16
+    8 * Aumento de la Velocidad de habilidad en un 30 % | +30% Skill Speed
+    8   Al acertar, daño continuo de Fuego durante 10s | Fire Damage over Time for 10s on hit
+    8   Cambio a habilidad disponible en movimiento | Changes to mobile skill
+    12   Ignora el Bloqueo y Evasión / Acierto con Multigolpe | Ignores Block and Evasion and lands as Multi-Hit
+    16 * Reducción de 15 s de Tiempo de Enfriamiento | -15s cooldown
+## Quebrantamiento en llamas 16
+    8 * Reducción del 50 % de Consumo de Puntos de Maná | -50% MP Cost
+    8   Aumento del 20 % de velocidad de habilidad | +20% Skill Speed
+    8   -60 % de Curación recibida durante 5s al acertar | -60% Incoming Heal for 5s on hit
+    12 * Reducción de 2 s de Tiempo de Enfriamiento de «Llamas del infierno» por cada quebrantamiento | -2s [Hellfire] cooldown per fireball
+    16   Aumento del 15 % de daño por cada quebrantamiento (máx. 75 %) | +15% damage per fireball, up to +75%
+## Viento helado 16
+    8 * El tiempo de invocación de «Viento helado» aumenta 1 s | +1s [Bittercold Wind] summon duration
+    8   Cambio a habilidad disponible en movimiento | Changes to mobile skill
+    8   Efecto de atracción | Pull effect
+    12 * Ignora el Bloqueo y Evasión / Acierto con golpe Crítico | Ignores Block and Evasion and lands as a Critical Hit
+    16   Al acertar, el Tiempo de Enfriamiento de [Congelación] se reduce en 1 s | -1s [Frost] cooldown on hit
+## Explosión de llama 16
+    8   Absorción de Puntos de Vida del 300, 300 % | Absorbs 3% HP
+    8   Aumento del 50 % de Recuperación de Puntos de Maná | +50% MP restored
+    8 * Daño diferido tras 3s | Delayed Damage after 3s
+    12 * Al acertar, Multigolpe garantizado | Multi-Hit on hit
+    16   Al acertar, el Tiempo de Enfriamiento de «Voto de concentración» se reduce 3 s | -3s [Wish of Concentration] cooldown on hit
+## Voto de concentración 16
+    8   Reducción del 10 % de Consumo de Puntos de Maná | Reduces MP Cost by 10%
+    8 * Aumento adicional del 10 % de Ataque | +10% additional Attack
+    8   Aumento de 500 de Puntos de Maná Máximos | +500 Max MP
+    12 * Aumento del 10 % de Velocidad de Hechizo | +10% Combat Speed
+    16   Reducción de 10 s del Tiempo de Enfriamiento de todas las habilidades | -10s all skill cooldowns
+## Atadura invernal 16
+    8   Cambio a habilidad disponible en movimiento | Changes to mobile skill
+    8   «Atadura invernal»: 30 % de prob. de Congelación durante 3 s al acertar | 30% chance to inflict Frost for 3s on landing [Winter's Shackles]
+    8 * Al acertar «Atadura invernal», aumento del 20 % de Amplificación de Daño de JcE y 10 % de Amplificación de Daño JcJ durante 5s | +20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]
+    12   Adición de hab. de cadena «Ilusión invernal» x2 | Adds [Winter's Illusion] Chain Skill
+    16 * El Tiempo de Enfriamiento de «Atadura invernal» se reduce 15 s | -15s [Winter's Shackles] cooldown
+## Flecha en llamas 16
+    8   Aumento del 20 % de Recuperación de Puntos de Maná | +20% MP restored
+    8   Absorción de Puntos de Vida del 100, 100 % | Absorbs 1% HP
+    8   Al acertar, aumento del 50 % de Multigolpe | +50% Multi-Hit on hit
+    12 * Al activarse [Ignición], El Aumento de Amplificación de Daño de Fuego aumenta un 5 % durante 10s | +5% Fire Damage Boost for 10s on activating [Pyroclasm]
+    16 * Al acertar «Ignición», se restablece el Tiempo de Enfriamiento de «Explosión de llama» | Reset [Blaze] cooldown on landing [Pyroclasm]
+## Cadena gélida 12
+    8   Reducción del 20 % de Consumo de Puntos de Maná | -20% MP Cost
+    8 * Aumento del 20 % de velocidad de habilidad | +20% Skill Speed
+    8   Cuantos menos objetivos se acierten, el daño aumenta un máximo del 12 % | Deals up to 12% more damage when less targets are hit
+    12 * Al acertar, el Tiempo de Enfriamiento de «Atadura invernal» se reduce 1 s | -1s [Winter's Shackles] cooldown on hit
+    16   Al acertar «Onda helada», estado de Congelación durante 2 s con un 5 % de prob. | 5% chance to inflict Frost for 2s on landing [Cold Wave]
+## Llamas sin puntería 12
+    8   Absorción de Puntos de Vida del 500, 500 % | Absorbs 5% HP
+    8   Recuperación de 120 de Puntos de Maná | Restores 120 MP
+    8 * Cambio a habilidad disponible en movimiento | Changes to mobile skill
+    12 * Al acertar, Multigolpe garantizado | Multi-Hit on hit
+    16   Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades | -1s all skill cooldowns on hit
+## Congelación leveling
+    8 * Recuperación de 200 de Puntos de Maná | Restores 200 MP
+    8   Reducción de 5 s del Tiempo de Enfriamiento | -5s cooldown
+    8 * Al acertar Congelación, se restablece el Tiempo de Enfriamiento de «Explosión de Congelación» | Reset [Frost Burst] cooldown on landing Frost
+    12   +25 % de acierto de congelación a objetivos PJ | +25% PC target Frost Chance
+    16   Aumento de 1 s de duración de Congelación | +1s Frost duration
+## Eliminación de impacto 12
+    8   Añade [Maldición: Árbol viejo] como segunda habilidad de cadena. | Adds [Curse: Old Tree] Chain Skill
+    8   Al lanzar «Eliminación de impacto», recuperación de 1000 de Vigor | Restores 1000 Stamina on using [Defiance]
+    8 * Al lanzar «Eliminación de impacto», recuperación del 20 % de Puntos de Vida | Restores 20% HP on using [Defiance]
+    12 * Aumento de 2 s de duración de Robustez | +2s Tenacity duration
+    16   Durante la duración de Robustez, la Tolerancia a Daño JcE aumenta un 50 % y la Tolerancia a Daño JcJ un 25 % | +50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration
+## Explosión de Congelación skip
+    8   Absorción de Puntos de Vida del 700, 700 % | Absorbs 7% HP
+    8   Cambio a habilidad disponible en movimiento | Changes to mobile skill
+    8   Empuje de 2 m con un 75 % de prob. | 75% chance to Knock Back 2m
+    12   Ignora el Bloqueo y Evasión / Acierto con golpe Crítico | Ignores Block and Evasion and lands as a Critical Hit
+    16   50 % de prob. de reiniciar el tiempo de espera | 50% chance to reset cooldown

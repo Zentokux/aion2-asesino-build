@@ -1,0 +1,436 @@
+Llamas sin puntería habilidad activa de Hechicero · desde nivel 5 · nivel máx. 40
+Hechicero Habilidad activa
+Llamas sin puntería es una habilidad activa de Hechicero en AION 2 que se obtiene a nivel 5 y sube hasta el nivel de habilidad 40.
+Inflige 120 (+82,5% Ataque) de daño de Fuego a un objetivo en estado de Tambaleo en un radio de 20 m.
+Leer Más Leer Menos
+MetaBot Desktop Gratis · Windows 10+ AION 2
+Builds de clase y el Planificador Daevanion
+Planificador Daevanion Planifica tableros nodo a nodo y guarda builds
+Mapa del mundo y trackers Cubos ocultos, rastros empíreos y todos los spawns
+Buscador de farmeo Dónde cae cualquier objeto, por probabilidad
+Descargar gratis Más información
+Validada por Overwolf — segura ante el anti-cheat
+Clase Hechicero
+Tipo Habilidad activa
+Se aprende a Nv. 5
+Nivel máx. 40
+Enfriamiento Ninguno
+Alcance 20 m
+Qué hace Llamas sin puntería
+El texto del juego al nivel máximo; mueve el control para ver cualquier nivel.
+Inflige 1867 (+82,5% Ataque) de daño de Fuego a un objetivo en estado de Tambaleo en un radio de 20 m.
+Nivel 40 / 40
+«+X % de ataque» es la parte de tu ataque que se suma al daño base, así que el daño real depende del equipo.
+Tipo de daño Mágico
+Tipo de efecto Ataque Perjuicio
+Se puede usar en movimiento No, hay que estar quieto
+Especializaciones de Llamas sin puntería
+5 variantes cambian cómo funciona Llamas sin puntería. Cada una requiere su objeto de estigma y un nivel mínimo de habilidad.
+Especialización 1 · requiere nivel de habilidad 8
+Absorción de Puntos de Vida del 500, 500 %
+Especialización 2 · requiere nivel de habilidad 8
+Recuperación de 120 de Puntos de Maná
+Especialización 3 · requiere nivel de habilidad 8
+Cambio a habilidad disponible en movimiento
+Especialización 4 · requiere nivel de habilidad 12
+Al acertar, Multigolpe garantizado
+Especialización 5 · requiere nivel de habilidad 16
+Al acertar, reducción de 1s de Tiempo de Enfriamiento de todas las habilidades
+MetaBot Desktop Ten tu build de Hechicero abierta mientras juegas
+Builds recomendadas de PvE de endgame, subida de nivel y PvP para cada clase, con niveles de habilidad, estigmas y la rotación de apertura.
+Builds de PvE de endgame, Subida de nivel 1–45 y PvP por clase
+Niveles de habilidad, ranuras de estigma y rotación de apertura
+Crecimiento de atributos, habilidades y tableros Daevanion de las 8 clases
+Descargar para Windows Más información Descarga gratuita
+Clases con builds recomendadas 8
+Llamas sin puntería por nivel
+Nivel de personaje, enfriamiento, coste de PM y puntos para cada uno de los 40 niveles.
+Nv. 1 · 120 Nv. 2 · 156 Nv. 3 · 210 Nv. 4 · 276 Nv. 5 · 355 Nv. 6 · 421 Nv. 7 · 487 Nv. 8 · 553 Nv. 9 · 619 Nv. 10 · 698 Nv. 11 · 764 Nv. 12 · 813 Nv. 13 · 848 Nv. 14 · 897 Nv. 15 · 945 Nv. 16 · 993 Nv. 17 · 1041 Nv. 18 · 1077 Nv. 19 · 1113 Nv. 20 · 1149 Nv. 21 · 1185 Nv. 22 · 1221 Nv. 23 · 1257 Nv. 24 · 1293 Nv. 25 · 1329 Nv. 26 · 1364 Nv. 27 · 1400 Nv. 28 · 1436 Nv. 29 · 1472 Nv. 30 · 1508 Nv. 31 · 1544 Nv. 32 · 1580 Nv. 33 · 1616 Nv. 34 · 1652 Nv. 35 · 1687 Nv. 36 · 1723 Nv. 37 · 1759 Nv. 38 · 1795 Nv. 39 · 1831 Nv. 40 · 1867
+Nv. 1 · 120 Nv. 40 · 1867
+Nivel
+Daño
+Nivel requerido
+Puntos
+1
+120 (+82,5% Ataque)
+Nv. 5
+—
+2
+156 (+82,5% Ataque)
+Nv. 5
+1
+3
+210 (+82,5% Ataque)
+Nv. 8
+1
+4
+276 (+82,5% Ataque)
+Nv. 11
+1
+5
+355 (+82,5% Ataque)
+Nv. 14
+2
+6
+421 (+82,5% Ataque)
+Nv. 17
+2
+7
+487 (+82,5% Ataque)
+Nv. 20
+2
+8
+553 (+82,5% Ataque)
+Nv. 23
+4
+9
+619 (+82,5% Ataque)
+Nv. 26
+4
+10
+698 (+82,5% Ataque)
+Nv. 29
+4
+11
+764 (+82,5% Ataque)
+—
+—
+12
+813 (+82,5% Ataque)
+—
+—
+13
+848 (+82,5% Ataque)
+—
+—
+14
+897 (+82,5% Ataque)
+—
+—
+15
+945 (+82,5% Ataque)
+—
+—
+16
+993 (+82,5% Ataque)
+—
+—
+17
+1041 (+82,5% Ataque)
+—
+—
+18
+1077 (+82,5% Ataque)
+—
+—
+19
+1113 (+82,5% Ataque)
+—
+—
+20
+1149 (+82,5% Ataque)
+—
+—
+21
+1185 (+82,5% Ataque)
+—
+—
+22
+1221 (+82,5% Ataque)
+—
+—
+23
+1257 (+82,5% Ataque)
+—
+—
+24
+1293 (+82,5% Ataque)
+—
+—
+25
+1329 (+82,5% Ataque)
+—
+—
+26
+1364 (+82,5% Ataque)
+—
+—
+27
+1400 (+82,5% Ataque)
+—
+—
+28
+1436 (+82,5% Ataque)
+—
+—
+29
+1472 (+82,5% Ataque)
+—
+—
+30
+1508 (+82,5% Ataque)
+—
+—
+31
+1544 (+82,5% Ataque)
+—
+—
+32
+1580 (+82,5% Ataque)
+—
+—
+33
+1616 (+82,5% Ataque)
+—
+—
+34
+1652 (+82,5% Ataque)
+—
+—
+35
+1687 (+82,5% Ataque)
+—
+—
+36
+1723 (+82,5% Ataque)
+—
+—
+37
+1759 (+82,5% Ataque)
+—
+—
+38
+1795 (+82,5% Ataque)
+—
+—
+39
+1831 (+82,5% Ataque)
+—
+—
+40
+1867 (+82,5% Ataque)
+—
+—
+★ = puntos de estigma; los demás niveles cuestan puntos de habilidad.
+Nodos Daevanion que mejoran Llamas sin puntería
+Estos nodos suben Llamas sin puntería por encima de su tope normal.
+Tablero
+Nivel requerido
+Niveles de habilidad
+Coste en puntos
+Nezekan
+Nv. 12
++1
+3
+Zikel
+Nv. 20
++1
+3
+Vaizel
+Nv. 30
++1
+3
+Triniel
+Nv. 40
++1
+3
+Equipo que puede obtener Llamas sin puntería
+689 piezas de equipo y Arcana en 12 categorías pueden obtener Llamas sin puntería como opción de habilidad aleatoria para Hechicero al ligarse al alma, hasta Nv. 4.
+Categoría
+Objetos
+Probabilidad
+Nivel máx.
+Mayor nivel de objeto
+Brújula
+8
+16,7%
+Nv. 4
+Brújula de vitalidad
+Cáliz
+8
+4,55%
+Nv. 4
+Cáliz de vitalidad
+Arco
+74
+8,34%
+Nv. 1
+Arco fatal de Ludra
+Bastón
+74
+8,34%
+Nv. 1
+Lanza de destino de Ludra
+Daga
+68
+8,34%
+Nv. 1
+Garra de Ludra
+Espadón
+68
+8,34%
+Nv. 1
+Cuchilla aniquiladora de Ludra
+Arma de Puño
+68
+8,34%
+Nv. 1
+Corazón de Ludra
+Maza
+68
+8,34%
+Nv. 1
+Maza aniquiladora de Ludra
+Grimorio
+68
+8,34%
+Nv. 1
+Tomo prohibido de Ludra
+Orbe
+68
+8,34%
+Nv. 1
+Joya abismal de Ludra
+Espada larga
+68
+8,34%
+Nv. 1
+Espada escamada de Ludra
+Anillo
+49
+8,34%
+Nv. 1
+Anillo de rey dragón sabio brillante
+La probabilidad es la proporción del grupo de opciones de habilidad de la clase en una pieza. La pieza de mayor nivel de objeto de cada categoría se enlaza como ejemplo.
+Llamas sin puntería: uso entre los mejores jugadores
+Porcentaje de los mejores jugadores registrados de cada clase (nivel 45, mayor poder de combate) que usan Llamas sin puntería.
+Hechicero Habilidad activa 147 de 150 nv. medio 10,6 98%
+Tasas de uso, no una valoración de fuerza. Se recalculan cada 6 horas con los personajes que registra MetaBot.
+Otras habilidades de Hechicero de este tipo
+Habilidad
+Se desbloquea
+Enfriamiento
+PM
+Flecha en llamas
+Nv. 1
+—
+—
+Cadena gélida
+Nv. 1
+—
+120
+Quebrantamiento en llamas
+Nv. 1
+5 s
+250
+Viento helado
+Nv. 3
+15 s
+150
+Explosión de llama
+Nv. 4
+5 s
+—
+Congelación
+Nv. 7
+30 s
+100
+Atadura invernal
+Nv. 8
+45 s
+200
+Explosión de Congelación
+Nv. 10
+10 s
+—
+Voto de concentración
+Nv. 12
+60 s
+100
+Llamas del infierno
+Nv. 14
+45 s
+200
+Eliminación de impacto
+Nv. 16
+60 s
+—
+Datos leídos del cliente global de AION 2 (build 0.0.4387.0). Cómo leemos los archivos del juego
+Resumen de Llamas sin puntería
+Llamas sin puntería es una habilidad activa de Hechicero que se aprende a nivel 5 y sube hasta el 40. Su enfriamiento es de — s a nivel 1 y — s al máximo. Tiene 5 especializaciones y 4 nodos Daevanion que añaden niveles.
+Ver también
+Guía de la clase Hechicero Planificador Daevanion de Hechicero Build de Hechicero Flecha en llamas Cadena gélida Quebrantamiento en llamas Viento helado
+🔍 Help us maintain accuracy! If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Preguntas sobre Llamas sin puntería
+¿Qué hace Llamas sin puntería en AION 2?
+A nivel 1: Inflige 120 (+82,5% Ataque) de daño de Fuego a un objetivo en estado de Tambaleo en un radio de 20 m.
+¿Cuándo aprende Llamas sin puntería el Hechicero?
+A nivel de personaje 5. Después se puede subir hasta el nivel 40.
+¿Qué especializaciones tiene Llamas sin puntería?
+Llamas sin puntería tiene 5 especializaciones. Cada una se activa con su objeto de estigma cuando la habilidad alcanza el nivel requerido; la lista de arriba muestra qué cambia cada una.
+¿Cómo subo Llamas sin puntería por encima de su nivel máximo?
+Elige sus nodos de nivel de habilidad en los tableros Daevanion (Nezekan, Zikel, Vaizel y Triniel). Llamas sin puntería tiene 4 nodos así.
+¿Qué equipo puede obtener Llamas sin puntería?
+689 piezas de equipo y Arcana pueden obtener Llamas sin puntería como opción de habilidad aleatoria, hasta Nv. 4, principalmente Brújula, Cáliz, Arco y Bastón.
+¿Llamas sin puntería es físico o mágico, y se puede usar en movimiento?
+Llamas sin puntería inflige daño Mágico (Ataque y Perjuicio) y no se puede usar en movimiento.
+Juegos asociados
+Ark Survival Ascended
+Redes Sociales
+Discord
+Facebook
+Twitter
+Producto
+App de Escritorio
+Programa de Creadores
+Para agentes de IA
+Reportar Error
+Empresa
+Sobre Nosotros
+Política editorial
+Metodología de Datos
+Contáctanos
+Legal
+Términos de Servicio
+Política de Privacidad
+Juegos
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+League of Legends
+Teamfight Tactics
+Valorant
+Deadlock
+Marvel Rivals
+Counter-Strike 2
+Dark and Darker
+MARVEL Tōkon
+RuneScape: Dragonwilds
+Palworld
+Slay the Spire 2
+The Blood of Dawnwalker Nuevo
+Valheim Nuevo
+Aniimo Nuevo
+WARDOGS Nuevo
+Minecraft Dungeons II Nuevo
+AION 2 Nuevo
+Permafrost Nuevo
+SPAM Nuevo
+No vender mi información personal

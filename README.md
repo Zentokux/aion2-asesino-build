@@ -1,9 +1,9 @@
-# Aion 2 — Guías progresivas PvE (Asesino, Clérigo y Espiritualista)
+# Aion 2 — Guías progresivas PvE (Asesino, Clérigo, Espiritualista y Hechicero)
 
-Guías interactivas en español para **Aion 2 Global Season 1** (nivel máximo 45), de nivel 1 a endgame. Siguen la guía de [couga54](https://couga54.github.io/aion2-guides/en/) (Arthars, Lucia, Kaeria, Whelps, Evripides, DankRNG, aLuckyRO, Grobs) con los nombres del cliente en español (metabot.gg/es_ES).
+Guías interactivas en español para **Aion 2 Global Season 1** (nivel máximo 45), de nivel 1 a endgame. Siguen la guía de [couga54](https://couga54.github.io/aion2-guides/en/) (Arthars, Lucia, Kaeria, Whelps, Evripides, DankRNG, EUTOPIA, aLuckyRO, Grobs) con los nombres del cliente en español (metabot.gg/es_ES).
 
 - **Online:** https://zentokux.github.io/aion2-asesino-build/
-- **Asesino:** `asesino.html` · **Clérigo:** `clerigo.html` · **Espiritualista:** `espiritualista.html`
+- **Asesino:** `asesino.html` · **Clérigo:** `clerigo.html` · **Espiritualista:** `espiritualista.html` · **Hechicero:** `hechicero.html`
 
 ## Contenido de cada guía
 
