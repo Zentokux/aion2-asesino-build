@@ -1826,22 +1826,53 @@ code {
   <div id="petGallery" data-familia="Cogni" data-destacar="skyray,fungie,klaw,krall-laborer,krall-warrior,decomposed-lupyllini,armadon,rafflesia,biruta,dratona"></div>
   <p><small>Retratos y fuentes de almas: <a href="https://wikily.gg/aion-2/pets" target="_blank" rel="noopener">wikily.gg</a>. Verteron es la zona Elyos y Altgard la Asmodiana. Los nombres de mascotas y monstruos van en inglés: no están confirmados en el cliente en español.</small></p>
 
-  <h3>Qué tomar en cada rueda de Comprensión de raza (Lucia)</h3>
-  <p>Lucia lo explica en la guía del Clérigo de couga54, pero las ruedas son las mismas para todas las clases. Para el Asesino, la línea de daño de la ranura 4 es el <strong>Daño de ataque trasero</strong> cuando salga.</p>
+<!-- comprension:inicio -->
+  <h3 id="comprension">Comprensión de raza: solo atributos globales</h3>
+  <p>Cada familia tiene su rueda de 9 ranuras (una por nivel de Comprensión, del 1 al 9). Las líneas que llevan el nombre de la raza (<em>Ataque de Cognis</em>, <em>Precisión de Fera</em>…) <strong>solo funcionan contra monstruos de esa raza</strong> (metabot). Las demás valen contra todo: <em>Ataque JcE</em> contra cualquier monstruo, <em>Ataque de Jefe</em> contra cualquier jefe, y Ataque adicional, Crítico o Precisión siempre.</p>
   <table>
-    <thead><tr><th>Ranura</th><th>Toma</th></tr></thead>
+    <thead><tr><th>Rareza de la línea</th><th>Qué puede salir</th><th>Aparece desde</th></tr></thead>
     <tbody>
-      <tr><td>1, 5</td><td>Bonificación de Ataque (en la 5, o Ataque máximo)</td></tr>
-      <tr><td>2, 8</td><td>PV</td></tr>
-      <tr><td>3, 6, 9</td><td>Precisión, o Bloqueo si tu Precisión ya es alta</td></tr>
-      <tr><td>4</td><td>La línea de daño de esa rueda: Amplificación de Daño, Golpe perfecto o Daño de ataque trasero</td></tr>
-      <tr><td>7</td><td>Regeneración o Aguante</td></tr>
-      <tr><td>Especial</td><td><strong>Doble golpe</strong></td></tr>
+      <tr><td>Común · <span style="color:#22c55e">Raro</span></td><td>Solo líneas de raza, PV o PM</td><td>Nv. 1</td></tr>
+      <tr><td><span style="color:#3b82f6">Legendario</span></td><td>Globales: Ataque JcE, de Jefe, Frontal, por la Espalda; Precisión JcE; Defensa JcE</td><td>Nv. 4 (5 %)</td></tr>
+      <tr><td><span style="color:#eab308">Único</span> · <span style="color:#f97316">Épico</span></td><td>Globales fuertes: Ataque adicional, Ataque máximo, Penetración, Crítico, Aumento de Precisión y los % de Amplificación de Daño</td><td>Nv. 7 (1 %) · Nv. 9 (1 %)</td></tr>
     </tbody>
   </table>
   <div class="callout warn">
-    Busca el valor más alto y <strong>bloquea una línea solo cuando esté cerca del máximo</strong>, y nunca antes de que la rueda llegue a nivel 9-10.
+    <strong>Regla:</strong> nunca bloquees una línea Común o Rara: siempre es de raza (o PV/PM). Hasta el Nv. 6 analiza solo para subir la rueda (cada ranura analizada da 100 de experiencia; cada mascota nueva, 500) y <strong>bloquea únicamente líneas globales</strong>. En el Análisis automático deja todas las líneas "de Cognis/Fera/Natura/Varian" en <em>Sin seleccionar</em>. Lucia: bloquea solo cuando la línea esté cerca del máximo, y nunca antes de que la rueda llegue a nivel 9-10.
   </div>
+
+  <h4>Qué buscar en cada ranura (Asesino, JcE)</h4>
+  <p>Para el Asesino: <strong>Crítico</strong> (Estocada al corazón solo se reinicia con un crítico) y <strong>golpes por la espalda</strong> (Emboscada, Impacto trasero).</p>
+  <table>
+    <thead><tr><th>Ranura</th><th><span style="color:#3b82f6">Legendario</span> (Nv. 4+)</th><th><span style="color:#eab308">Único</span> / <span style="color:#f97316">Épico</span> (Nv. 7+)</th></tr></thead>
+    <tbody>
+      <tr><td>1, 5</td><td>Ataque por la Espalda (6-12); si no, Ataque JcE</td><td>Ataque adicional (Lucia); en la 5 también Ataque máximo</td></tr>
+      <tr><td>2, 8</td><td>Defensa JcE: no gastes cristales</td><td>Puntos de Vida o Aumento de PV (Lucia)</td></tr>
+      <tr><td>3, 6, 9</td><td>Ataque Crítico por la Espalda (10-20); si no, Precisión JcE</td><td>Crítico o Aumento de Precisión (Lucia: Precisión, o Bloqueo si ya vas sobrado)</td></tr>
+      <tr><td>4</td><td>Ataque JcE</td><td>Ver tabla de la ranura 4</td></tr>
+      <tr><td>7</td><td>Ataque JcE</td><td>Crítico o Aumento de Precisión (daño); Regeneración o Aguante si te cuesta sobrevivir (Lucia)</td></tr>
+    </tbody>
+  </table>
+  <div class="callout info">
+    <strong>Análisis automático:</strong> marca solo las líneas de la tabla. Valor mínimo: en Legendario 10 de 12 (Ataque) o 25 de 30 (Precisión JcE); en Único/Épico, cerca del máximo que muestra el juego.
+  </div>
+
+  <h4>Ranura 4 según la rueda (Asesino)</h4>
+  <p>La ranura 4 es la única que cambia de familia a familia. Las cuatro ruedas tienen <strong>Amplificación de Daño JcE</strong> (Único 1,5-3 %, Épico 2-4 %), que vale contra cualquier monstruo y es la cifra más alta para JcE; la <em>Amplificación de Daño de Cognis/Fera…</em> (hasta 4,8 %) solo vale contra una raza: no la bloquees.</p>
+  <table>
+    <thead><tr><th>Rueda</th><th>Toma (JcE)</th><th>Línea propia de la rueda (Lucia, también vale en JcJ)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Varian</strong></td><td>Amplificación de Daño por la Espalda (la mejor del Asesino) o Amplificación de Daño JcE</td><td>Amplificación de Daño por la Espalda</td></tr>
+      <tr><td><strong>Cogni</strong></td><td>Amplificación de Daño JcE; Amplificación de Daño Crítico también encaja con el Asesino</td><td>Amplificación de Daño</td></tr>
+      <tr><td><strong>Fera</strong></td><td>Amplificación de Daño JcE</td><td>Amplificación de Daño</td></tr>
+      <tr><td><strong>Natura</strong></td><td>Amplificación de Daño JcE</td><td>Golpe perfecto</td></tr>
+      <tr><td><strong>Especial</strong></td><td colspan="2">Ranura 4: Doble golpe (Lucia) o Amplificación de Daño por la Espalda; ranura 7: Crítico o Aumento de Precisión.</td></tr>
+    </tbody>
+  </table>
+  <p><small>La rueda Especial no tiene líneas de raza: todas sus líneas son globales en cualquier rareza (pero con valores bajos en Común y Raro), y no tiene Amplificación de Daño JcE.</small></p>
+
+  <p><small>Líneas por ranura y rareza: <a href="https://wikily.gg/aion-2/genus-insight/cogni/slot-properties" target="_blank" rel="noopener">wikily.gg</a> (393 por rueda). Qué hace cada línea: <a href="https://metabot.gg/es_ES/aion-2/stats" target="_blank" rel="noopener">metabot</a>. Tabla base: Lucia en la guía del Clérigo de couga54; la adaptación a cada clase y a líneas solo globales es nuestra. Nombres del cliente en español según metabot y capturas del juego; alguno puede variar ligeramente.</small></p>
+  <!-- comprension:fin -->
 </section>
 
 <section id="stats">
@@ -2085,7 +2116,7 @@ code {
 </main>
 
 <footer>
-  <p>Guía Progresiva Asesino PvE · Aion 2 Global Season 1 · Última actualización 9-oct-2026</p>
+  <p>Guía Progresiva Asesino PvE · Aion 2 Global Season 1 · Última actualización 10-oct-2026</p>
   <p>Construida con investigación verificada por múltiples agentes · <a href="https://github.com/Zentokux" target="_blank" rel="noopener">github.com/Zentokux</a></p>
 </footer>
 

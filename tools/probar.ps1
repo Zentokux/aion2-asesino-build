@@ -15,7 +15,7 @@ if(q.get("lv")&&window.renderLevel){currentLvl=+q.get("lv");renderLevel(currentL
 var broken=[].filter.call(document.images,function(i){return i.complete&&i.naturalWidth===0}).map(function(i){return i.src.split("/").pop()});
 var d=document.createElement("pre");d.style.cssText="position:fixed;top:0;left:0;right:0;z-index:9999;background:#300;color:#fff;font:12px monospace;padding:4px;white-space:pre-wrap;margin:0";
 d.textContent="ERRORES: "+(window.__errs.join(" | ")||"ninguno")+" | imgs rotas: "+(broken.join(",")||"0")+"\n"+out.join("\n");document.body.appendChild(d);
-var el=document.getElementById(q.get("at")||"x");if(el)el.scrollIntoView();},500)});</script>
+var el=document.getElementById(q.getAll("at").pop()||"x");if(el)el.scrollIntoView();},500)});</script>
 '@
 if ($Section -ne 'all') { $inj += '<style>body>header,body>nav,section:not(#' + $Section + '){display:none!important}</style>' }
 [IO.File]::WriteAllText("$s\$Page", $t.Replace('<head>', '<head>' + $inj), (New-Object Text.UTF8Encoding($false)))
