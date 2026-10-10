@@ -11,8 +11,10 @@ Guías interactivas en español para **Aion 2 Global Season 1** (nivel máximo 4
 - **Habilidades** con sus especializaciones, **rotación** por tramos (subiendo, con estigmas, jefes al 45) y **estigmas**.
 - **Tableros Daevanion** reales del juego con la ruta JcE numerada en orden de clic.
 - **Macros en gráfico** como en couga54: barra de ejemplo con iconos (si couga54 la muestra), líneas apiladas, pasos de la macro del juego y lo que pulsas.
-- **Mascotas:** las 5 primeras a subir según la clase y tu facción, y la galería de las 206 con su retrato y dónde sueltan almas.
-- Equipo, Arcana, Genus Insight, sistemas de progresión y un **checklist de progreso** que se guarda en tu navegador.
+- **Mascotas:** las 5 primeras a subir según la clase y tu facción.
+- **Comprensión de raza:** qué poner en cada ranura (1.ª opción y opcional) para las 5 ruedas, solo con atributos que sirven contra todo (sin líneas de raza, Frontal, por la Espalda ni de Jefe), con los nombres del cliente.
+- **Menú lateral «Dónde poner puntos»:** acceso rápido a puntos de habilidad, esquirlas de estigma, puntos Daevanion, Comprensión de raza, stats y rotaciones.
+- Equipo, Arcana, sistemas de progresión y un **checklist de progreso** que se guarda en tu navegador.
 
 ## Archivos
 
@@ -21,13 +23,14 @@ Guías interactivas en español para **Aion 2 Global Season 1** (nivel máximo 4
 | `planner.js` + `planner-<clase>.js` | Planificador (motor común + datos de cada clase) |
 | `daevanion.js` + `daevanion-<clase>.js` | Tableros Daevanion |
 | `macros.js` + `macros-<clase>.js` | Barras y macros en gráfico |
-| `mascotas.js` + `mascotas-datos.js` | Galería y plan de mascotas |
+| `mascotas.js` + `mascotas-datos.js` | Plan de las primeras 5 mascotas |
+| `sidenav.js` | Menú lateral «Dónde poner puntos» |
 | `icons/` | Iconos de habilidades (metabot.gg) y retratos de mascotas (wikily.gg) |
-| `tools/` | Scripts que extraen los datos de las fuentes y prueban las páginas |
+| `tools/` | Scripts que extraen los datos de las fuentes y prueban las páginas (`gen-comprension.py` genera la tabla de Comprensión de raza y `comprobar-comprension.py` la valida contra los datos del juego) |
 
 ## Patch actual
 
-Refleja **Aion 2 Global Season 1** al **8-oct-2026**: nivel máximo 45, 4 ranuras de estigma (22/27/32/37), estigmas hasta rango 20, sin tablero Ariel. Lo que sea de KR/TW Capítulo 1 (nivel 50, 6 ranuras, rango 25) no aplica.
+Refleja **Aion 2 Global Season 1** al **10-oct-2026**: nivel máximo 45, 4 ranuras de estigma (22/27/32/37), estigmas hasta rango 20, sin tablero Ariel. Lo que sea de KR/TW Capítulo 1 (nivel 50, 6 ranuras, rango 25) no aplica.
 
 ## Progreso local
 
