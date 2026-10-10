@@ -40,7 +40,9 @@ function rankCap(lv, unlock) {
   return Math.min(10, 2 + Math.floor((lv - unlock) / 3));
 }
 
-function computeState() {
+// extra / extraLv: puntos de Piedras de sabiduría (misiones secundarias verdes, Mazmorras selladas) que el jugador
+// dice tener; se suman al banco en su nivel real y, con ellos, lo que sobre de PRIORITY va a EXTRA hasta el tope del nivel.
+function computeState(extra = 0, extraLv = 0) {
   const states = {};
   const ranks = {};
   Object.keys(SKILLS).forEach(id => { ranks[id] = 0; });
@@ -53,6 +55,7 @@ function computeState() {
     const spGained = SP_PER_LEVEL[lv];
     cum += spGained;
     bank += spGained;
+    if (extra && lv === extraLv) bank += extra;
 
     const unlocks = [];
     Object.entries(SKILLS).forEach(([id, s]) => {
@@ -79,7 +82,7 @@ function computeState() {
       }
     };
     buy(PRIORITY);
-    const coreDone = PRIORITY.every(([id, t]) => ranks[id] >= Math.min(t, rankCap(MAX_LVL, SKILLS[id].unlock)));
+    const coreDone = PRIORITY.every(([id, t]) => ranks[id] >= Math.min(t, rankCap(extra ? lv : MAX_LVL, SKILLS[id].unlock)));
     if (coreDone) buy(EXTRA);
 
     // Esquirlas de Estigma: se gastan en el orden de STIGMA_ORDER, sin saltar a uno más barato
@@ -152,10 +155,17 @@ window.dvOpenBoard = dvOpenBoard;
 function plGet(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : v; } catch (e) { return def; } }
 function plSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 let currentLvl = parseInt(plGet(PLANNER_KEY, '1'), 10);
+let extraSP = Math.max(0, parseInt(plGet(PLANNER_KEY + '_extra', '0'), 10) || 0);
+const EXTRA_CACHE = {};
+function stateAt(lv) {
+  if (!extraSP) return STATES[lv];
+  const k = extraSP + '@' + lv;
+  return EXTRA_CACHE[k] || (EXTRA_CACHE[k] = computeState(extraSP, lv)[lv]);
+}
 if (!(currentLvl >= 1 && currentLvl <= MAX_LVL)) currentLvl = 1;
 
 function renderLevel(lv) {
-  const s = STATES[lv];
+  const s = stateAt(lv);
   if (!s) return;
 
   const lvlNum = document.getElementById('plvLvlNum');
@@ -167,7 +177,7 @@ function renderLevel(lv) {
 
   document.getElementById('plvSP').innerHTML = `
     <div class="pts-box"><div class="label">Ganas en este nivel</div><div class="value gained">+${s.spGained}</div></div>
-    <div class="pts-box"><div class="label">Ganados en total</div><div class="value">${s.cum}</div></div>
+    <div class="pts-box"><div class="label">Ganados en total</div><div class="value">${s.cum + extraSP}</div>${extraSP ? `<div class="label">${s.cum} de nivel + ${extraSP} extra</div>` : ''}</div>
     <div class="pts-box"><div class="label">Gastas aquí</div><div class="value">${s.spent}</div></div>
     <div class="pts-box"><div class="label">Te quedan sin gastar</div><div class="value" style="color:var(--info)">${s.bank}</div></div>
   `;
@@ -344,6 +354,11 @@ function initPlanner() {
         ${JUMPS.slice(1).map(l => `<span data-lv="${l}">${l}</span>`).join('')}
       </div>
     </div>
+    <div class="plv-extra-in">
+      <label for="plvExtra">🎁 Puntos extra que ya tienes (Piedras de sabiduría):</label>
+      <input type="number" id="plvExtra" min="0" max="400" step="1" value="${extraSP || ''}" placeholder="0">
+      <small>Cada misión secundaria verde da 1 Piedra de sabiduría (= 1 punto) y cada Mazmorra sellada de tu facción 2. Pon tu nivel real y el plan se recalcula con ellos.</small>
+    </div>
     <div class="plv-points-row" id="plvSP"></div>
     <div id="plvNotes"></div>
     <div class="plv-section" id="plvUnlocks"></div>
@@ -364,6 +379,11 @@ function initPlanner() {
   document.getElementById('plvNext').addEventListener('click', () => changeLevel(1));
   document.getElementById('plvPrev2').addEventListener('click', () => changeLevel(-1));
   document.getElementById('plvNext2').addEventListener('click', () => changeLevel(1));
+  document.getElementById('plvExtra').addEventListener('input', e => {
+    extraSP = Math.max(0, Math.min(400, parseInt(e.target.value, 10) || 0));
+    plSet(PLANNER_KEY + '_extra', String(extraSP));
+    renderLevel(currentLvl);
+  });
   document.getElementById('plvSlider').addEventListener('input', e => {
     currentLvl = parseInt(e.target.value, 10);
     renderLevel(currentLvl);
