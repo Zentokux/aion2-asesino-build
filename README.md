@@ -13,6 +13,7 @@ Guías interactivas en español para **Aion 2 Global Season 1** (nivel máximo 4
 - **Macros en gráfico** como en couga54: barra de ejemplo con iconos (si couga54 la muestra), líneas apiladas, pasos de la macro del juego y lo que pulsas.
 - **Mascotas:** las 5 primeras a subir según la clase y tu facción.
 - **Comprensión de raza:** qué poner en cada ranura (1.ª opción y opcional) para las 5 ruedas, solo con atributos que sirven contra todo (sin líneas de raza, Frontal, por la Espalda ni de Jefe), con los nombres del cliente.
+- **Farmeo de equipo:** la ruta de nivel de objeto después del 45 (Draupnir → Vakron → Trascendencia → Caverna del Cuerno Feroz) y la regla de las expediciones: mata a todos los jefes, el cubo final sale mejor.
 - **Menú lateral «Dónde poner puntos»:** acceso rápido a puntos de habilidad, esquirlas de estigma, puntos Daevanion, Comprensión de raza, stats y rotaciones.
 - Equipo, Arcana, sistemas de progresión y un **checklist de progreso** que se guarda en tu navegador.
 

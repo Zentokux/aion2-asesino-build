@@ -7,6 +7,7 @@
     ['daevanion', 'Puntos Daevanion', '🌌'],
     ['comprension', 'Comprensión de raza', '🐾'],
     ['stats', 'Stats y equipo', '🛡️'],
+    ['farmeo', 'Farmeo de equipo', '⚔️'],
     ['rotations', 'Rotaciones', '🔁']
   ];
   var css = '' +
