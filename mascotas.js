@@ -37,10 +37,10 @@
   document.head.appendChild(st);
 
   const FAMILIAS = [
-    { g: 'Cogni', efecto: 'Puntos de Vida +30, Crítico +2, Might +1' },
-    { g: 'Natura', efecto: 'Stamina +9, Resistencia Crítica +2, Precision +1' },
-    { g: 'Fera', efecto: 'Velocidad de montura en tierra +3, Precisión +2, Dexterity +1' },
-    { g: 'Varian', efecto: '−0,3 % de coste de aguante al esprintar en montura, Evasión +2, Constitution +1' },
+    { g: 'Cogni', efecto: 'Puntos de Vida +30, Crítico +2, Fuerza +1' },
+    { g: 'Natura', efecto: 'Aguante +9, Resistencia Crítica +2, Precisión +1' },
+    { g: 'Fera', efecto: 'Velocidad de montura en tierra +3, Precisión +2, Destreza +1' },
+    { g: 'Varian', efecto: '−0,3 % de coste de aguante al esprintar en montura, Evasión +2, Físico +1' },
     { g: 'Special', label: 'Especial', efecto: 'Sin bono de familia: se compran o salen de cofres' },
   ];
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
