@@ -1,0 +1,26 @@
+// Generado por tools/extraer-niveles.py desde metabot.gg/es_ES (tabla "Nivel requerido").
+// Nivel de personaje que pide cada rango 1-10. planner.js lo usa como tope por nivel.
+const SKILL_REQ = {
+  e_fusion: [14, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+  e_combustion: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  e_fuego: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  e_impacto: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  e_agua: [3, 3, 6, 9, 12, 15, 18, 21, 24, 27],
+  e_maldicion: [4, 4, 7, 10, 13, 16, 19, 22, 25, 28],
+  e_dominio: [8, 8, 11, 14, 17, 20, 23, 26, 29, 32],
+  e_rafaga: [5, 5, 8, 11, 14, 17, 20, 23, 26, 29],
+  e_tierra: [7, 7, 10, 13, 16, 19, 22, 25, 28, 31],
+  e_viento: [10, 10, 13, 16, 19, 22, 25, 28, 31, 34],
+  e_grito_alma: [12, 12, 15, 18, 21, 24, 27, 30, 33, 36],
+  e_eliminacion: [16, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+  e_golpe_espiritu: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  e_concentracion: [15, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+  e_unificacion: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
+  e_revitalizacion: [13, 13, 16, 19, 22, 25, 28, 31, 34, 37],
+  e_descenso: [9, 9, 12, 15, 18, 21, 24, 27, 30, 33],
+  e_retroceso: [17, 17, 20, 23, 26, 29, 32, 35, 38, 41],
+  e_erosion: [11, 11, 14, 17, 20, 23, 26, 29, 32, 35],
+  e_comunion: [21, 21, 21, 21, 21, 21, 21, 21, 21, 21],
+  e_proteccion: [6, 6, 9, 12, 15, 18, 21, 24, 27, 30],
+  e_pacto: [23, 23, 23, 23, 23, 23, 23, 23, 23, 23],
+};

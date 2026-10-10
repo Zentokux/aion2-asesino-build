@@ -24,7 +24,7 @@ const SKILLS = {
   rear:         { name: 'Impacto trasero',         nameEn: 'Rear Smite',          color: '#d4af37', unlock: 11, cap: 10, type: 'Pasiva clave',  note: 'La pasiva más fuerte: daño por la espalda y JcE.' },
   exploit:      { name: 'Explotar debilidades',    nameEn: 'Exploit Weakness',    color: '#d4af37', unlock: 6,  cap: 10, type: 'Pasiva clave',  note: 'Más daño contra objetivos debilitados.' },
   assault:      { name: 'Postura de agresión',     nameEn: 'Assault Stance',      color: '#d4af37', unlock: 13, cap: 10, type: 'Pasiva clave',  note: 'Aumenta tu daño.' },
-  determination:{ name: 'Determinación',           nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva clave',  note: 'Daño contra objetivos con poca vida. Se aprende en el 25: a nivel 45 su tope es 8.' },
+  determination:{ name: 'Determinación',           nameEn: 'Determination',       color: '#d4af37', unlock: 25, cap: 10, type: 'Pasiva clave',  note: 'Daño contra objetivos con poca vida. Se aprende en el 25 y no tiene tope por nivel (metabot): puede ir a 10 en cuanto la aprendes.' },
   // Pasivas solo con puntos sobrantes o que no se suben
   sixthsense:   { name: 'Maximización de sexto sentido', nameEn: 'Heightened Sixth Sense', color: '#a3a3a3', unlock: 1, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo con puntos extra: no vale una línea de equipo.' },
   ambushstance: { name: 'Postura de emboscada',    nameEn: 'Ambush Stance',       color: '#a3a3a3', unlock: 17, cap: 10, type: 'Pasiva (sobrantes)', note: 'Solo con puntos extra.' },

@@ -1,0 +1,26 @@
+// Generado por tools/extraer-niveles.py desde metabot.gg/es_ES (tabla "Nivel requerido").
+// Nivel de personaje que pide cada rango 1-10. planner.js lo usa como tope por nivel.
+const SKILL_REQ = {
+  c_retribucion: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  c_rayo: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  c_condena: [8, 8, 11, 14, 17, 20, 23, 26, 29, 32],
+  c_centella: [14, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+  c_aura: [3, 3, 6, 9, 12, 15, 18, 21, 24, 27],
+  c_enlace: [4, 4, 7, 10, 13, 16, 19, 22, 25, 28],
+  c_relampagos: [5, 5, 8, 11, 14, 17, 20, 23, 26, 29],
+  c_estigma: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  c_curacion: [10, 10, 13, 16, 19, 22, 25, 28, 31, 34],
+  c_resplandor: [12, 12, 15, 18, 21, 24, 27, 30, 33, 36],
+  c_regeneracion: [7, 7, 10, 13, 16, 19, 22, 25, 28, 31],
+  c_eliminacion: [16, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+  c_gracia_empirea: [9, 9, 12, 15, 18, 21, 24, 27, 30, 33],
+  c_gracia_terrestre: [21, 21, 21, 21, 21, 21, 21, 21, 21, 21],
+  c_mejora: [11, 11, 14, 17, 20, 23, 26, 29, 32, 35],
+  c_favor_radiante: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
+  c_favor_calido: [1, 1, 4, 7, 10, 13, 16, 19, 22, 25],
+  c_velo: [13, 13, 16, 19, 22, 25, 28, 31, 34, 37],
+  c_oracion_conc: [17, 17, 20, 23, 26, 29, 32, 35, 38, 41],
+  c_favor_empireo: [6, 6, 9, 12, 15, 18, 21, 24, 27, 30],
+  c_bloqueo: [15, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+  c_voluntad: [23, 23, 23, 23, 23, 23, 23, 23, 23, 23],
+};

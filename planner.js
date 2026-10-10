@@ -20,6 +20,21 @@ const SP_PER_LEVEL = {
 };
 const MAX_LVL = 45;
 
+// Piedras de sabiduría (1 punto de habilidad cada una) que se consiguen mientras subes, por facción.
+// Misiones secundarias verdes (regionales): 58 por facción, 1 piedra cada una, al nivel de la misión (aion2.wiki.fextralife.com/Regional_Quests).
+// Mazmorras selladas de tu facción: 2 piedras cada una, al nivel recomendado (metabot.gg leveling guide). Las del otro bando no dan.
+const PIEDRAS = {
+  elyos:    { verdes: {12:1, 14:1, 16:6, 22:5, 30:6, 33:2, 36:1, 37:4, 41:1, 45:31},
+              selladas: {10:5, 15:11, 20:6, 25:13, 30:16, 35:4, 40:5, 45:1} },
+  asmo:     { verdes: {12:1, 14:1, 16:6, 22:5, 27:1, 30:5, 32:3, 33:2, 37:2, 44:1, 45:31},
+              selladas: {10:13, 15:11, 20:7, 25:5, 30:7, 35:10, 40:7, 45:1} },
+};
+// modo: 0 = solo subir de nivel · 1 = + misiones verdes · 2 = + misiones verdes y Mazmorras selladas
+function piedrasAt(lv, modo, faccion) {
+  const P = PIEDRAS[faccion] || PIEDRAS.elyos;
+  return (modo >= 1 ? P.verdes[lv] || 0 : 0) + (modo >= 2 ? 2 * (P.selladas[lv] || 0) : 0);
+}
+
 // Esquirlas de Estigma (metabot, cliente global 2.0.3.0): 1 con la 3.ª Ascensión (nivel 22), 1 por nivel del 23 al 39
 // y 2 por nivel del 40 al 45 (30 en total). Coste por rango: 1-5 = 1 · 6-10 = 2 · 11-15 = 4 · 16-20 = 8.
 // Cada clase define STIGMA_ORDER = [[id, rango], ...]: en qué orden gastarlas (aprender cuesta 1).
@@ -35,18 +50,22 @@ function skillRankCost(toRank) {
   return 0;
 }
 // Tope de rango por nivel de personaje
-function rankCap(lv, unlock) {
+// Si niveles-<clase>.js trae SKILL_REQ (metabot: nivel que pide cada rango), manda esa tabla: algunas pasivas
+// (Determinación del Asesino, Gracia terrestre del Clérigo…) no tienen tope por nivel tras aprenderse.
+function rankCap(lv, unlock, id) {
+  const req = (typeof SKILL_REQ !== 'undefined' && id) ? SKILL_REQ[id] : null;
+  if (req) return req.filter(n => n <= lv).length;
   if (lv < unlock) return 0;
   return Math.min(10, 2 + Math.floor((lv - unlock) / 3));
 }
 
 // extra / extraLv: puntos de Piedras de sabiduría (misiones secundarias verdes, Mazmorras selladas) que el jugador
 // dice tener; se suman al banco en su nivel real y, con ellos, lo que sobre de PRIORITY va a EXTRA hasta el tope del nivel.
-function computeState(extra = 0, extraLv = 0) {
+function computeState(extra = 0, extraLv = 0, modo = 0, faccion = 'elyos') {
   const states = {};
   const ranks = {};
   Object.keys(SKILLS).forEach(id => { ranks[id] = 0; });
-  let cum = 0, bank = 0;
+  let cum = 0, bank = 0, xCum = 0;
   const stRanks = {};
   Object.keys(STIGMAS).forEach(id => { stRanks[id] = 0; });
   let shCum = 0, shBank = 0;
@@ -56,6 +75,8 @@ function computeState(extra = 0, extraLv = 0) {
     cum += spGained;
     bank += spGained;
     if (extra && lv === extraLv) bank += extra;
+    const xGained = piedrasAt(lv, modo, faccion);
+    xCum += xGained; bank += xGained;
 
     const unlocks = [];
     Object.entries(SKILLS).forEach(([id, s]) => {
@@ -69,7 +90,7 @@ function computeState(extra = 0, extraLv = 0) {
       for (let again = true; again;) {
         again = false;
         for (const [id, target] of list) {
-          const lim = Math.min(target, rankCap(lv, SKILLS[id].unlock));
+          const lim = Math.min(target, rankCap(lv, SKILLS[id].unlock, id));
           if (ranks[id] >= lim) continue;
           const c = skillRankCost(ranks[id] + 1);
           if (bank < c) continue;
@@ -82,7 +103,7 @@ function computeState(extra = 0, extraLv = 0) {
       }
     };
     buy(PRIORITY);
-    const coreDone = PRIORITY.every(([id, t]) => ranks[id] >= Math.min(t, rankCap(extra ? lv : MAX_LVL, SKILLS[id].unlock)));
+    const coreDone = PRIORITY.every(([id, t]) => ranks[id] >= Math.min(t, rankCap(extra || modo ? lv : MAX_LVL, SKILLS[id].unlock, id)));
     if (coreDone) buy(EXTRA);
 
     // Esquirlas de Estigma: se gastan en el orden de STIGMA_ORDER, sin saltar a uno más barato
@@ -106,15 +127,18 @@ function computeState(extra = 0, extraLv = 0) {
     const shardInv = Object.entries(shBought).map(([id, b]) => ({ id, from: b.from, to: stRanks[id], cost: b.cost }));
 
     const investments = Object.entries(bought).map(([id, b]) => ({ id, skill: SKILLS[id], from: b.from, to: ranks[id], cost: b.cost }));
-    const capped = PRIORITY.filter(([id, t]) => ranks[id] > 0 && ranks[id] < t && ranks[id] >= rankCap(lv, SKILLS[id].unlock)).map(([id]) => id);
+    const capped = PRIORITY.filter(([id, t]) => ranks[id] > 0 && ranks[id] < t && ranks[id] >= rankCap(lv, SKILLS[id].unlock, id)).map(([id]) => id);
     const m = MILESTONES[lv] || {};
-    states[lv] = { lvl: lv, spGained, cum, bank, spent, special: m.special, note: m.note, unlocks, investments, capped, ranks: { ...ranks },
+    states[lv] = { lvl: lv, spGained, cum, bank, xGained, xCum, spent, special: m.special, note: m.note, unlocks, investments, capped, ranks: { ...ranks },
       shGained, shCum, shBank, shardInv, stRanks: { ...stRanks } };
   }
   return states;
 }
 
-const STATES = computeState();
+function plGet0(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : v; } catch (e) { return def; } }
+let extraModo = Math.min(2, Math.max(0, parseInt(plGet0('aion2_extra_modo', '1'), 10) || 0));
+let faccion = plGet0('aion2_faccion', 'elyos') === 'asmo' ? 'asmo' : 'elyos';
+let STATES = computeState(0, 0, extraModo, faccion);
 
 // Daevanion (daevanion-<clase>.js + daevanion.js): ruta de couga54 por tablero, calculada con dvOrder().
 // Cada nodo de habilidad de la ruta da +1; los puntos salen de misiones secundarias, Mazmorras selladas
@@ -155,12 +179,21 @@ window.dvOpenBoard = dvOpenBoard;
 function plGet(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : v; } catch (e) { return def; } }
 function plSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 let currentLvl = parseInt(plGet(PLANNER_KEY, '1'), 10);
-let extraSP = Math.max(0, parseInt(plGet(PLANNER_KEY + '_extra', '0'), 10) || 0);
+// Puntos totales que marca el juego (gastados + sin gastar) en el nivel real del jugador: en ESE nivel el plan
+// usa exactamente esos puntos (los de subir de nivel + el resto como extra), sin depender del selector.
+let tot = null;
+try { tot = JSON.parse(plGet(PLANNER_KEY + '_total', 'null')); } catch (e) {}
+if (!tot || !(tot.lv >= 1 && tot.lv <= MAX_LVL) || !(tot.total > 0)) tot = null;
 const EXTRA_CACHE = {};
+function cumNivel(lv) { let c = 0; for (let l = 1; l <= lv; l++) c += SP_PER_LEVEL[l]; return c; }
 function stateAt(lv) {
-  if (!extraSP) return STATES[lv];
-  const k = extraSP + '@' + lv;
-  return EXTRA_CACHE[k] || (EXTRA_CACHE[k] = computeState(extraSP, lv)[lv]);
+  if (!tot || tot.lv !== lv) return STATES[lv];
+  const k = tot.total + '@' + lv;
+  if (!EXTRA_CACHE[k]) {
+    const lump = Math.max(0, tot.total - cumNivel(lv));
+    EXTRA_CACHE[k] = { ...computeState(lump, lv, 0, faccion)[lv], lump };
+  }
+  return EXTRA_CACHE[k];
 }
 if (!(currentLvl >= 1 && currentLvl <= MAX_LVL)) currentLvl = 1;
 
@@ -176,11 +209,15 @@ function renderLevel(lv) {
   if (slider && slider.value != lv) slider.value = lv;
 
   document.getElementById('plvSP').innerHTML = `
-    <div class="pts-box"><div class="label">Ganas en este nivel</div><div class="value gained">+${s.spGained}</div></div>
-    <div class="pts-box"><div class="label">Ganados en total</div><div class="value">${s.cum + extraSP}</div>${extraSP ? `<div class="label">${s.cum} de nivel + ${extraSP} extra</div>` : ''}</div>
+    <div class="pts-box"><div class="label">Ganas en este nivel</div><div class="value gained">+${s.spGained + s.xGained}</div>${s.xGained ? `<div class="label">${s.spGained} de nivel + ${s.xGained} de piedras</div>` : ''}</div>
+    <div class="pts-box"><div class="label">Ganados en total</div><div class="value">${s.cum + s.xCum + (s.lump || 0)}</div>${s.xCum + (s.lump || 0) ? `<div class="label">${s.cum} de nivel + ${s.xCum + (s.lump || 0)} extra${s.lump !== undefined ? ' (tu juego)' : ''}</div>` : ''}</div>
     <div class="pts-box"><div class="label">Gastas aquí</div><div class="value">${s.spent}</div></div>
     <div class="pts-box"><div class="label">Te quedan sin gastar</div><div class="value" style="color:var(--info)">${s.bank}</div></div>
   `;
+
+  const tIn = document.getElementById('plvTotal'), tNote = document.getElementById('plvTotalNote');
+  if (tIn && document.activeElement !== tIn) tIn.value = tot && tot.lv === lv ? tot.total : '';
+  if (tNote) tNote.textContent = tot ? (tot.lv === lv ? `✔ Este nivel usa tus ${tot.total} puntos del juego.` : `Guardado: ${tot.total} puntos en el nivel ${tot.lv} (ve a ese nivel para verlo).`) : '';
 
   const notesHtml = [];
   if (s.special) notesHtml.push(`<div class="plv-special">${s.special}</div>`);
@@ -225,7 +262,7 @@ function renderLevel(lv) {
   let topeRows = [];
   [...PRIORITY, ...EXTRA].forEach(([id, t]) => {
     if (!s.ranks[id]) return;
-    const to = Math.min(t, rankCap(lv, SKILLS[id].unlock));
+    const to = Math.min(t, rankCap(lv, SKILLS[id].unlock, id));
     const prev = topeRows.filter(x => x.id === id).pop();
     if (prev && to <= prev.to) return;
     if (prev && !prev.cost) topeRows = topeRows.filter(x => x !== prev);
@@ -286,7 +323,7 @@ function renderLevel(lv) {
   const skillCards = Object.entries(SKILLS).map(([id, sk]) => {
     const rank = s.ranks[id];
     const unlocked = rank > 0;
-    const cap = rankCap(lv, sk.unlock);
+    const cap = rankCap(lv, sk.unlock, id);
     const pct = (rank / sk.cap * 100).toFixed(0);
     const atCap = unlocked && rank >= cap && rank < 10;
     return `<div class="state-card ${unlocked ? '' : 'locked'} ${rank >= 10 ? 'maxed' : ''} ${changed.has(id) ? 'just-changed' : ''}" title="${sk.note}">
@@ -355,9 +392,20 @@ function initPlanner() {
       </div>
     </div>
     <div class="plv-extra-in">
-      <label for="plvExtra">🎁 Puntos extra que ya tienes (Piedras de sabiduría):</label>
-      <input type="number" id="plvExtra" min="0" max="400" step="1" value="${extraSP || ''}" placeholder="0">
-      <small>Cada misión secundaria verde da 1 Piedra de sabiduría (= 1 punto) y cada Mazmorra sellada de tu facción 2. Pon tu nivel real y el plan se recalcula con ellos.</small>
+      <label for="plvModo">🎁 Puntos extra (Piedras de sabiduría):</label>
+      <select id="plvModo">
+        <option value="0"${extraModo === 0 ? ' selected' : ''}>Solo subir de nivel</option>
+        <option value="1"${extraModo === 1 ? ' selected' : ''}>+ misiones secundarias verdes</option>
+        <option value="2"${extraModo === 2 ? ' selected' : ''}>+ misiones verdes y Mazmorras selladas</option>
+      </select>
+      <select id="plvFaccion" aria-label="Facción">
+        <option value="elyos"${faccion === 'elyos' ? ' selected' : ''}>Elyos</option>
+        <option value="asmo"${faccion === 'asmo' ? ' selected' : ''}>Asmodianos</option>
+      </select>
+      <label for="plvTotal">Puntos totales en tu juego:</label>
+      <input type="number" id="plvTotal" min="0" max="500" step="1" placeholder="ej. 183">
+      <span id="plvTotalNote" class="plv-total-note"></span>
+      <small>Lo más exacto: ponte en tu nivel real y escribe los puntos de habilidad que llevas en total (gastados + sin gastar). Ese nivel se calcula con ellos. El selector sirve para ver los demás niveles: cada misión secundaria verde da 1 Piedra de sabiduría (= 1 punto) y cada Mazmorra sellada de tu facción 2. Siempre en el orden de couga54.</small>
     </div>
     <div class="plv-points-row" id="plvSP"></div>
     <div id="plvNotes"></div>
@@ -379,9 +427,22 @@ function initPlanner() {
   document.getElementById('plvNext').addEventListener('click', () => changeLevel(1));
   document.getElementById('plvPrev2').addEventListener('click', () => changeLevel(-1));
   document.getElementById('plvNext2').addEventListener('click', () => changeLevel(1));
-  document.getElementById('plvExtra').addEventListener('input', e => {
-    extraSP = Math.max(0, Math.min(400, parseInt(e.target.value, 10) || 0));
-    plSet(PLANNER_KEY + '_extra', String(extraSP));
+  const recalcular = () => {
+    STATES = computeState(0, 0, extraModo, faccion);
+    window.PLANNER_STATES = STATES;
+    Object.keys(EXTRA_CACHE).forEach(k => delete EXTRA_CACHE[k]);
+    initPlanner();
+  };
+  document.getElementById('plvModo').addEventListener('change', e => {
+    extraModo = parseInt(e.target.value, 10) || 0; plSet('aion2_extra_modo', String(extraModo)); recalcular();
+  });
+  document.getElementById('plvFaccion').addEventListener('change', e => {
+    faccion = e.target.value === 'asmo' ? 'asmo' : 'elyos'; plSet('aion2_faccion', faccion); recalcular();
+  });
+  document.getElementById('plvTotal').addEventListener('input', e => {
+    const v = Math.min(500, parseInt(e.target.value, 10) || 0);
+    tot = v > 0 ? { lv: currentLvl, total: v } : null;
+    plSet(PLANNER_KEY + '_total', JSON.stringify(tot));
     renderLevel(currentLvl);
   });
   document.getElementById('plvSlider').addEventListener('input', e => {
@@ -394,7 +455,7 @@ function initPlanner() {
   document.querySelectorAll('.plv-jump').forEach(btn => {
     btn.addEventListener('click', () => { currentLvl = parseInt(btn.dataset.jump, 10); renderLevel(currentLvl); });
   });
-  document.addEventListener('keydown', e => {
+  if (!window.__plvKeys) window.__plvKeys = true, document.addEventListener('keydown', e => {
     if (document.activeElement && document.activeElement.tagName === 'INPUT') return;
     const planner = document.getElementById('progression');
     if (!planner) return;
@@ -412,7 +473,7 @@ function initPlanner() {
     const at10 = (ids, r = 10) => ids.filter(id => final.ranks[id] >= r).length;
     const note = S.passivesNote ? ` <small>+ ${SKILLS[S.passivesNote].name} ${final.ranks[S.passivesNote]}</small>` : '';
     sum.innerHTML = `
-      <div class="stat"><div class="label">Puntos del 1 al 45</div><div class="value">${final.cum}</div></div>
+      <div class="stat"><div class="label">Puntos del 1 al 45</div><div class="value">${final.cum + final.xCum}</div></div>
       <div class="stat"><div class="label">Sin gastar al 45</div><div class="value" style="color:var(--ok)">${final.bank}</div></div>
       <div class="stat"><div class="label">${S.activesLabel}</div><div class="value">${at10(S.actives)} / ${S.actives.length}</div></div>
       <div class="stat"><div class="label">${S.passivesLabel}</div><div class="value">${at10(S.passives, S.passivesTarget || 10)} / ${S.passives.length}${note}</div></div>
@@ -421,7 +482,7 @@ function initPlanner() {
     if (when) {
       when.innerHTML = S.when.map(([id, r]) => {
         const l = reach(id, r);
-        const txt = l ? `a rango ${r}: nivel ${l}` : `queda en rango ${final.ranks[id]} al 45` + (final.ranks[id] >= rankCap(MAX_LVL, SKILLS[id].unlock) ? ' (su tope)' : '');
+        const txt = l ? `a rango ${r}: nivel ${l}` : `queda en rango ${final.ranks[id]} al 45` + (final.ranks[id] >= rankCap(MAX_LVL, SKILLS[id].unlock, id) ? ' (su tope)' : '');
         return `<li>${renderIcon(id, 22)} <strong>${SKILLS[id].name}</strong> ${txt}</li>`;
       }).join('');
     }

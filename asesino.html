@@ -1479,7 +1479,7 @@ code {
 .rotation-steps a{color:var(--accent)}
 .plv-mini-note{font-size:0.8rem;color:var(--text-dim);margin:0.5rem 0 0}
 .plv-extra{font-size:0.85rem;margin:0.4rem 0}.plv-extra td,.plv-extra th{padding:0.3rem 0.5rem}.plv-extra-sk{display:inline-flex;align-items:center;gap:6px}
-.plv-extra-in{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.8rem;margin:0.8rem 0;padding:0.7rem 0.9rem;border:1px solid var(--border, #2a3142);border-radius:10px}.plv-extra-in label{font-weight:600}.plv-extra-in input{width:5.5rem;padding:0.35rem 0.5rem;font-size:1rem;border-radius:6px;border:1px solid var(--border, #2a3142);background:transparent;color:inherit}.plv-extra-in small{flex-basis:100%;color:var(--text-dim)}
+.plv-extra-in{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.8rem;margin:0.8rem 0;padding:0.7rem 0.9rem;border:1px solid var(--border, #2a3142);border-radius:10px}.plv-extra-in label{font-weight:600}.plv-extra-in select,.plv-extra-in input{width:auto;max-width:100%;padding:0.35rem 0.5rem;font-size:1rem;border-radius:6px;border:1px solid var(--border, #2a3142);background:transparent;color:inherit}.plv-extra-in input{width:5.5rem}.plv-extra-in option{color:#000}.plv-total-note{color:var(--ok, #22c55e);font-size:0.85rem}.plv-extra-in small{flex-basis:100%;color:var(--text-dim)}
 .plv-dv-btn{background:var(--bg-3);border:1px solid var(--accent);color:var(--accent);border-radius:6px;padding:2px 8px;font:inherit;font-size:0.8rem;cursor:pointer;margin:2px}
 .plv-dv-list{list-style:none;margin:0.5rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
 .plv-dv-list li{display:flex;align-items:center;gap:8px;padding:4px 8px;border-radius:8px;background:var(--bg-3);border:1px solid var(--border);font-size:0.84rem}
@@ -1624,12 +1624,12 @@ code {
 
 <section id="progression">
   <h2>Planificador de puntos de habilidad (nivel 1 → 45)</h2>
-  <p>Te dice, <strong>nivel por nivel</strong>, cuántos puntos ganas y <strong>en qué habilidad ponerlos</strong>. Solo cuenta los 203 puntos que da subir de nivel: así el plan funciona aunque no hagas contenido extra.</p>
+  <p>Te dice, <strong>nivel por nivel</strong>, cuántos puntos ganas y <strong>en qué habilidad ponerlos</strong>. Por defecto cuenta solo los puntos de subir de nivel (203). En <strong>🎁 Puntos extra</strong> puedes sumar las Piedras de sabiduría de las misiones secundarias verdes y de las Mazmorras selladas: el plan se recalcula nivel por nivel, en el mismo orden.</p>
 
   <div class="callout info">
     <strong>Reglas del juego que respeta el plan:</strong><br>
     • <strong>Coste por rango:</strong> rangos 2-4 = 1 punto · 5-7 = 2 · 8-10 = 4 (21 puntos para llevar una habilidad a 10). El rango 8 abre la primera especialización. Del 11 al 20 no se usan puntos: suben con Daevanion, anillos y Arcana.<br>
-    • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Estocada al corazón (se aprende en el 4) no llega a 10 hasta el nivel 28, y Determinación (en el 25) se queda en 8 al llegar al 45.<br>
+    • <strong>Tope por nivel:</strong> al aprender una habilidad puede llegar a rango 2, y después +1 cada 3 niveles de personaje. Por eso Estocada al corazón (se aprende en el 4) no llega a 10 hasta el nivel 28. Excepción: <strong>Determinación</strong> (se aprende en el 25) no tiene tope por nivel: puedes subirla a 10 en cuanto la aprendas (niveles exactos de cada rango: metabot).<br>
     • <strong>Los estigmas no usan estos puntos:</strong> se suben con <strong>Esquirlas de Estigma</strong> (rangos 1-5 = 1 · 6-10 = 2 · 11-15 = 4 · 16-20 = 8; 75 esquirlas hasta el 20).<br>
     • <strong>Prioridad (couga54):</strong> primero Corte rápido y Rugido bestial a 8 (subida); luego Estocada al corazón y Explosión de insignia; Emboscada y Desenfreno de tormenta; y las pasivas Impacto trasero, Explotar debilidades, Postura de agresión y Determinación.<br>
     • <strong>Especializaciones:</strong> cuando una habilidad llega a rango 8, el plan te dice cuál elegir (⚙️).
@@ -2173,10 +2173,11 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 </script>
 <script src="icons.js?v=2026-10-08-w"></script>
-<script src="planner-asesino.js?v=2026-10-08-w"></script>
+<script src="planner-asesino.js?v=2026-10-10-a"></script>
 <script src="mascotas-datos.js?v=2026-10-08-y"></script>
 <script src="mascotas.js?v=2026-10-10-a"></script>
-<script src="planner.js?v=2026-10-10-c"></script>
+<script src="niveles-asesino.js?v=2026-10-10-a"></script>
+<script src="planner.js?v=2026-10-10-g"></script>
 <script src="macros-asesino.js?v=2026-10-08-w"></script>
 <script src="macros.js?v=2026-10-08-w"></script>
 <script src="especializaciones-asesino.js?v=2026-10-09-a"></script>
