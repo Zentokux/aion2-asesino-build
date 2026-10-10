@@ -209,6 +209,27 @@ function renderLevel(lv) {
   } else {
     invEl.innerHTML = '<p class="empty-msg">En este nivel no ganas puntos de habilidad.</p>';
   }
+  // Puntos sobrantes (misiones secundarias, Piedras de sabiduría, Mazmorras selladas): el plan solo cuenta los de subir
+  // de nivel, así que aquí va lo que aún cabe en este nivel, siguiendo el mismo orden (PRIORITY y luego EXTRA).
+  const sim = { ...s.ranks };
+  const extraRows = [...PRIORITY, ...EXTRA].map(([id, t]) => {
+    const to = Math.min(t, rankCap(lv, SKILLS[id].unlock)), from = sim[id];
+    if (!from || from >= to) return null;
+    let cost = 0;
+    for (let r = from + 1; r <= to; r++) cost += skillRankCost(r);
+    sim[id] = to;
+    return { id, from, to, cost };
+  }).filter(Boolean);
+  if (extraRows.length) {
+    let acc = 0;
+    invEl.innerHTML += '<h4>🎁 ¿Te sobran puntos? (misiones secundarias, Piedras de sabiduría)</h4>'
+      + '<table class="plv-extra"><thead><tr><th>#</th><th>Habilidad</th><th>Rango</th><th>Cuesta</th><th>Acumulado</th></tr></thead><tbody>'
+      + extraRows.map((x, i) => { acc += x.cost; return `<tr><td>${i + 1}</td><td><span class="plv-extra-sk">${renderIcon(x.id, 24)}${SKILLS[x.id].name}</span></td><td>${x.from} → <b>${x.to}</b></td><td>${x.cost}</td><td>${acc}</td></tr>`; }).join('')
+      + '</tbody></table>'
+      + `<p class="plv-mini-note">Rango ${lv >= MAX_LVL ? 'máximo' : 'máximo en el nivel ' + lv}; si ya vas por delante del plan, empieza desde tu rango. Cuando el juego dice «Adquirible en el nv. X», pasa a la siguiente fila.</p>`;
+  } else if (s.spGained > 0) {
+    invEl.innerHTML += '<p class="plv-mini-note">🎁 ¿Te sobran puntos? En este nivel no cabe nada más: guárdalos para el siguiente.</p>';
+  }
   invEl.style.display = 'block';
 
   // Esquirlas de Estigma
